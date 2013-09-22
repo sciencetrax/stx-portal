@@ -1,8 +1,9 @@
+/*
 describe( 'AppCtrl', function() {
   describe( 'isCurrentUrl', function() {
     var AppCtrl, $location, $scope;
 
-    beforeEach( module( 'ngBoilerplate' ) );
+    beforeEach( module( 'stxPortal' ) );
 
     beforeEach( inject( function( $controller, _$location_, $rootScope ) {
       $location = _$location_;
@@ -15,3 +16,4 @@ describe( 'AppCtrl', function() {
     }));
   });
 });
+*/

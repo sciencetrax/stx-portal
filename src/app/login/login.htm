@@ -1,0 +1,55 @@
+﻿<div class="update-view">
+	<!-- MENU NAVBAR -->
+	<nav class="navbar navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<img src="//stxmedia.blob.core.windows.net/content/images/studytrax-logo-white-and-orange-200x20.png" class="navbar-brand" />
+		</div>
+
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#/home/summary">{{LS.menu.logASubjectIn}}</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- CONTENT -->
+	<div class="content">
+		<header>
+			<h1>{{LS.pages.login.heading}}</h1>
+		</header>
+		<section>
+			<div class="hidden-xs col-sm-4 col-md-4"></div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<fieldset>
+					<div data-role="form-group">
+						<label for="username" class="control-label">{{LS.pages.login.username}}</label>
+						<input ng-model="data.authorization.username" type="text" required='true' maxlength='30' autofocus="autofocus" class="form-control" placeholder="Username" autofocus="autofocus" />
+					</div>
+					<div data-role="form-group">
+						<label for="password" class="control-label">{{LS.pages.login.password}}</label>
+						<input ng-model="data.authorization.password" type='password' required='true' class="form-control" placeholder="Password" />
+					</div>
+					<div data-role="form-group">
+						<button name="submit" type="submit" ng-click="data.login()" class="btn btn-primary form-control">{{LS.pages.login.login}}</button>
+					</div>
+					<div data-role="form-group">
+						<a href="#" class="btn form-control">{{LS.pages.login.enroll}}</a>
+					</div>
+					<div data-role="form-group">
+						<a href="#" class="btn form-control">{{LS.pages.login.register}}</a>
+					</div>
+					<div data-role="form-group">
+						<a href="#" class="btn form-control">{{LS.pages.login.forgotUsernameOrPassword}}</a>
+					</div>
+				</fieldset>
+			</div>
+			<div class="hidden-xs col-sm-4 col-md-4"></div>
+		</section>
+	</div>
+</div>
