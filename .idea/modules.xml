@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ng-boilerplate.iml" filepath="$PROJECT_DIR$/.idea/ng-boilerplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/stx-portal.iml" filepath="$PROJECT_DIR$/.idea/stx-portal.iml" />
     </modules>
   </component>
 </project>
