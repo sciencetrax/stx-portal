@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\temp\stx-portal\.idea\ng-boilerplate.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma/karma-unit.tpl.js" afterPath="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/stx-portal.iml" afterPath="$PROJECT_DIR$/.idea/stx-portal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379829094475" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379829416797" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828188350" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
@@ -47,7 +41,16 @@
       <file leaf-file-name="Gruntfile.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="277" column="11" selection-start="7569" selection-end="7576" vertical-scroll-proportion="0.3327616">
+            <state line="291" column="6" selection-start="7819" selection-end="7819" vertical-scroll-proportion="0.728988">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="karma-unit.tpl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/karma/karma-unit.tpl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="20" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,8 +141,8 @@
         <option value="$PROJECT_DIR$/build/karma-unit.js" />
         <option value="$PROJECT_DIR$/src/app/about/about.js" />
         <option value="$PROJECT_DIR$/build.config.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
       </list>
     </option>
   </component>
@@ -324,6 +327,15 @@
       <created>1379827167587</created>
       <updated>1379827167587</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixing build issues">
+      <created>1379829134635</created>
+      <updated>1379829134635</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixing build issues">
+      <created>1379829356147</created>
+      <updated>1379829356147</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -500,14 +512,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/karma/karma-unit.tpl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="292" selection-end="292" vertical-scroll-proportion="0.3207547">
+        <state line="5" column="20" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="11" selection-start="7569" selection-end="7576" vertical-scroll-proportion="0.3327616">
+        <state line="291" column="6" selection-start="7819" selection-end="7819" vertical-scroll-proportion="0.728988">
           <folding />
         </state>
       </provider>
