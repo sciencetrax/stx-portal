@@ -1,4 +1,13 @@
-angular.module('stxPortal', ['stxServices', 'ngResource', 'ngCookies']).
+angular.module('stx', [
+        'ngResource',
+        'stxServices',
+        'templates-app',
+        'templates-common',
+        'stx.home',
+        'ngCookies',
+        'ui.state',
+        'ui.route'
+    ]).
     config(function ($httpProvider) {
         $httpProvider.responseInterceptors.push(function ($rootScope, $location, $q, $log) {
             function success(response) {
@@ -24,12 +33,17 @@ angular.module('stxPortal', ['stxServices', 'ngResource', 'ngCookies']).
             };
         });
     })
+
+    .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+        $urlRouterProvider.otherwise( '/home' );
+    })
+    /*
     .config(function ($routeProvider) {
         $routeProvider
 //            .when('/about',						{ controller: AboutCtrl,				templateUrl: 'about/about.htm' })
 //            .when('/changePassword',				{ controller: ChangePasswordCtrl,		templateUrl: 'changePassword.htm' })
-            .when('/home/:navParams', { controller: HomeController, templateUrl: 'home/home.htm' })
-            .when('/login', { controller: LoginController, templateUrl: 'login/login.htm' })
+            .when('/home/:navParams', { controller: 'HomeController', templateUrl: 'home/home.tpl.html' })
+//            .when('/login', { controller: LoginController, templateUrl: 'login/login.htm' })
 //            .when('/updateAccount',				{ controller: UpdateAccountCtrl,		templateUrl: 'account/updateAccount.htm' })
 //            .when('/updateVariableGroup',		{ controller: UpdateVariableGroupCtrl,	templateUrl: 'updateVariableGroup.htm' })
 //            .when('/viewEncounter/:navParams',	{ controller: ViewEncounterCtrl,		templateUrl: 'viewEncounter.htm' })
@@ -37,6 +51,7 @@ angular.module('stxPortal', ['stxServices', 'ngResource', 'ngCookies']).
             .otherwise({ redirectTo: '/home/summary' })
         ;
     })
+    */
     .run(['$rootScope', "$http", "$cookieStore", "$route", "$location", "AuthorizationContext", function ($rootScope, $http, $cookieStore, $route, $location, AuthorizationContext) {
         $rootScope.authenticate = function (authorization) {
             $http.defaults.headers.common['X-Authorization'] = authorization;
@@ -51,7 +66,7 @@ angular.module('stxPortal', ['stxServices', 'ngResource', 'ngCookies']).
         $rootScope.handleAuthentication = function () {
             var authorization = $cookieStore.get('authorization');
             if (authorization == null) {
-                $location.path('/login');
+                //$location.path('/login');
                 return;
             }
             $cookieStore.remove('authorization');

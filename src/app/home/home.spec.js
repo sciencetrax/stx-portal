@@ -4,6 +4,7 @@
  * build process will exclude all `.spec.js` files from the build
  * automatically.
  */
+/*
 describe( 'home section', function() {
   beforeEach( module( 'stxPortal.home' ) );
 
@@ -12,3 +13,4 @@ describe( 'home section', function() {
   }));
 });
 
+*/
