@@ -1,0 +1,30 @@
+﻿<h1>Account</h1>
+<div style="text-align: center">
+	<a href="#/updateAccount" class="btn">Edit</a>
+	<a href="#" class="btn">Change Password</a>
+</div>
+<	
+<div class="row">
+	<div class="col-xs-4">Username:</div>
+	<div class="col-xs-8">{{data.user.username}}</div>
+</div>
+<div class="row">
+	<div class="col-xs-4">Name:</div>
+	<div class="col-xs-8">
+		{{data.user.firstName}} 
+		{{data.user.middleInitial}} 
+		{{data.user.lastName}}
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-4">Email Address:</div>
+	<div class="col-xs-8">
+		{{data.user.emailAddress}} 
+	</div>
+</div>
+<h2>Other</h2>
+<ul class="list-group">
+	<li ng-repeat="item in data.projectVariableGroups" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
+		<div ng-include src="'variable-group-summary.htm'"></div>
+	</li>
+</ul>

@@ -1,0 +1,22 @@
+﻿<ul class="nav nav-tabs">
+	<li><a href="#/home/details-schedule" data-toggle="tab">Schedule</a></li>
+	<li><a href="#/home/details-injuries" data-toggle="tab">Injuries</a></li>
+	<li><a href="#/home/details-adverseEvents" data-toggle="tab">Adverse Event</a></li>
+</ul>
+<div id="schedule" class="hide">
+	<ul class="list-group">
+		<li ng-repeat="item in data.encounters | orderBy:'dueDate':true | filter:allowedEncounter" class="list-group-item">
+			<a href="#/viewEncounter/--{{item.intervalId}}">{{item.name}}
+			</a>
+			<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
+		</li>
+	</ul>
+	<a href="#" class="btn">More</a>
+</div>
+<div id="injuries" class="hide">
+	<small><a href="#">Add</a></small>
+</div>
+<div id="adverseEvents" class="hide">
+	<small><a href="#">Add</a></small>
+	<div />
+</div>

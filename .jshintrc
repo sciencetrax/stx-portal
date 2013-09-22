@@ -1,0 +1,13 @@
+{
+    "curly": true,
+    "expr": true,
+    "immed": true,
+    "laxbreak": true,
+    "loopfunc": true,
+    "sub": true,
+    "boss": true,
+    "eqnull": true,
+    "globals": {
+        "angular": false
+    }
+}

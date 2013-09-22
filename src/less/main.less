@@ -1,0 +1,184 @@
+/**
+ * This is the main application stylesheet. It should include or import all
+ * stylesheets used throughout the application as this is the only stylesheet in
+ * the Grunt configuration that is automatically processed.
+ */
+
+
+/**
+ * First, we include the Twitter Bootstrap LESS files. Only the ones used in the
+ * project should be imported as the rest are just wasting space.
+ */
+
+/*
+@import '../../vendor/bootstrap/less/mixins.less';
+@import '../../vendor/bootstrap/less/reset.less';
+@import '../../vendor/bootstrap/less/utilities.less';
+@import '../../vendor/bootstrap/less/scaffolding.less';
+@import '../../vendor/bootstrap/less/type.less';
+@import '../../vendor/bootstrap/less/grid.less';
+@import '../../vendor/bootstrap/less/layouts.less';
+@import '../../vendor/bootstrap/less/navs.less';
+@import '../../vendor/bootstrap/less/navbar.less';
+@import '../../vendor/bootstrap/less/buttons.less';
+@import '../../vendor/bootstrap/less/button-groups.less';
+@import '../../vendor/bootstrap/less/dropdowns.less';
+@import '../../vendor/bootstrap/less/responsive.less';
+
+@import '../../vendor/bootstrap/less/bootstrap.less';
+*/
+/**/
+@import '../../vendor/bootstrap/less/mixins.less';
+@import '../../vendor/bootstrap/less/utilities.less';
+
+@import '../../vendor/bootstrap/less/buttons.less';
+@import '../../vendor/bootstrap/less/button-groups.less';
+@import '../../vendor/bootstrap/less/dropdowns.less';
+@import '../../vendor/bootstrap/less/forms.less';
+@import '../../vendor/bootstrap/less/grid.less';
+@import '../../vendor/bootstrap/less/navbar.less';
+@import '../../vendor/bootstrap/less/navs.less';
+@import '../../vendor/bootstrap/less/scaffolding.less';
+@import '../../vendor/bootstrap/less/type.less';
+/**/
+
+/**
+ * This is our main variables file. It in turn imports the `variables` file from
+ * Twitter Bootstrap. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+
+@import 'variables.less';
+
+
+
+
+body {
+  font-size: 1.25em;
+  min-width: 320px;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  white-space: nowrap;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  font-size: 1.5em;
+  padding: 0 !important;
+}
+
+.list-group-item a {
+  display: block !important;
+  margin-right: 40px;
+  overflow: hidden;
+  padding: 10px !important;
+  position: relative !important;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.list-group-item .badge {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.footer {
+  background: black;
+  min-height: inherit !important;
+}
+.footer .btn {
+  height: 40px;
+}
+.footer,
+.footer a {
+  color: lightgray;
+}
+
+.content {
+  margin: 10px;
+}
+.content {
+  margin-top: 60px;
+}
+.content .list-group {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+.badge.complete {
+  background: #6CC417 !important;
+}
+.badge.incomplete {
+  background: #F9966B !important;
+  color: black;
+}
+
+
+.navbar-toggle {
+  background: #5C8CC7;
+}
+.footer .btn {
+  background: inherit;
+}
+.footer .btn.active {
+  background: #F0592B;
+}
+.footer .btn-group {
+  border-top: solid 1px slategrey;
+}
+.footer .btn-group .btn + .btn {
+  border-left: solid 1px slategrey;
+}
+
+.navbar .nav a {
+  font-size: 1.5em;
+}
+
+
+.studytrax{
+  color: Black !important;
+}
+.studytrax a {
+  color: #F0592B !important;
+}
+.studytrax .navbar .navbar-brand,
+.studytrax .navbar a {
+  border: none;
+  color: whitesmoke !important;
+}
+.studytrax .navbar,
+.studytrax .footer {
+  background: #2A4E7A !important;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+
+
+.resolution-xs {
+  font-size: 1.5em;
+}
+
+.update-view header h1 {
+  text-align: center;
+}
+
+
+
+
+
+
+
+@import '../app/home/home.less';
+

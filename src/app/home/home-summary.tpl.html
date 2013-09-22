@@ -1,0 +1,16 @@
+﻿<div>The following items are incomplete.  Please complete them.</div>
+<ul class="list-group">
+	<li ng-repeat="item in data.incompleteProjectVariableGroups" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
+		<div ng-include src="'variable-group-summary.htm'"></div>
+	</li>
+	<li ng-repeat="item in data.encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
+		<a href="#/viewEncounter/forms--{{item.intervalId}}">{{item.name}}</a>
+		<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
+	</li>
+</ul>
+
+<h3>Actions</h3>
+<div class="btn-group">
+	<a href="#" class="btn">New Injury</a>
+	<a href="#" class="btn">New Adverse Event</a>
+</div>
