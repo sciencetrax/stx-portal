@@ -3,6 +3,7 @@ angular.module('stx', [
         'stxServices',
         'templates-app',
         'templates-common',
+        'stx.login',
         'stx.home',
         'ngCookies',
         'ui.state',
@@ -37,21 +38,6 @@ angular.module('stx', [
     .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
         $urlRouterProvider.otherwise( '/home' );
     })
-    /*
-    .config(function ($routeProvider) {
-        $routeProvider
-//            .when('/about',						{ controller: AboutCtrl,				templateUrl: 'about/about.htm' })
-//            .when('/changePassword',				{ controller: ChangePasswordCtrl,		templateUrl: 'changePassword.htm' })
-            .when('/home/:navParams', { controller: 'HomeController', templateUrl: 'home/home.tpl.html' })
-//            .when('/login', { controller: LoginController, templateUrl: 'login/login.htm' })
-//            .when('/updateAccount',				{ controller: UpdateAccountCtrl,		templateUrl: 'account/updateAccount.htm' })
-//            .when('/updateVariableGroup',		{ controller: UpdateVariableGroupCtrl,	templateUrl: 'updateVariableGroup.htm' })
-//            .when('/viewEncounter/:navParams',	{ controller: ViewEncounterCtrl,		templateUrl: 'viewEncounter.htm' })
-//            .when('/viewReport',					{ controller: ViewReportCtrl,			templateUrl: 'viewReport.htm' })
-            .otherwise({ redirectTo: '/home/summary' })
-        ;
-    })
-    */
     .run(['$rootScope', "$http", "$cookieStore", "$route", "$location", "AuthorizationContext", function ($rootScope, $http, $cookieStore, $route, $location, AuthorizationContext) {
         $rootScope.authenticate = function (authorization) {
             $http.defaults.headers.common['X-Authorization'] = authorization;
@@ -66,15 +52,11 @@ angular.module('stx', [
         $rootScope.handleAuthentication = function () {
             var authorization = $cookieStore.get('authorization');
             if (authorization == null) {
-                //$location.path('/login');
+                $location.path('/login');
                 return;
             }
             $cookieStore.remove('authorization');
             this.authenticate(authorization);
-        };
-        $rootScope.removeAuthorization = function () {
-            $cookieStore.remove('authorization');
-            $http.defaults.headers.common['X-Authorization'] = null;
         };
         $rootScope.handleAuthentication();
     }]);

@@ -120,7 +120,10 @@ module.exports = function ( grunt ) {
       build_appjs: {
         files: [
           {
-            src: [ '<%= app_files.js %>' ],
+            src: [
+                '<%= app_files.js_ordered %>',
+                '<%= app_files.js %>'
+            ],
             dest: '<%= build_dir %>/',
             cwd: '.',
             expand: true
@@ -130,7 +133,9 @@ module.exports = function ( grunt ) {
       build_vendorjs: {
         files: [
           {
-            src: [ '<%= vendor_files.js %>' ],
+            src: [
+                '<%= vendor_files.js %>'
+            ],
             dest: '<%= build_dir %>/',
             cwd: '.',
             expand: true
@@ -192,7 +197,10 @@ module.exports = function ( grunt ) {
       compile: {
         files: [
           {
-            src: [ '<%= app_files.js %>' ],
+            src: [
+                '<%= app_files.js_ordered %>',
+                '<%= app_files.js %>'
+            ],
             cwd: '<%= build_dir %>',
             dest: '<%= build_dir %>',
             expand: true
@@ -255,6 +263,7 @@ module.exports = function ( grunt ) {
      */
     jshint: {
       src: [
+          '<%= app_files.js_ordered %>',
         '<%= app_files.js %>'
       ],
       test: [
@@ -332,6 +341,7 @@ module.exports = function ( grunt ) {
         dir: '<%= build_dir %>',
         src: [
           '<%= vendor_files.js %>',
+          '<%= app_files.js_ordered %>',
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
           '<%= html2js.app.dest %>',
@@ -411,6 +421,7 @@ module.exports = function ( grunt ) {
        */
       jssrc: {
         files: [
+            //F
           '<%= app_files.js %>'
         ],
         tasks: [ 'jshint:src', 'karma:unit:run', 'copy:build_appjs' ]

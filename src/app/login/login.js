@@ -1,21 +1,41 @@
-var LoginController = BaseController.extend({
-    $scope: null,
-    init: function ($scope, $location, Authorization) {
-        this._super($scope);
-        $scope.$root.removeAuthorization();
-        $scope.data = {
-            authorization: new Authorization(),
-            login: function() {
-                this.authorization.portalCode = "pt";
-                this.authorization.$save(function(result) {
-                    $scope.$root.authenticate(result.authorization);
-                    $location.path("/home/summary");
-                }, function(response) {
-                    var errorCode = response.data.errorCode;
-                    bootbox.alert(LS.errorMessages.get(errorCode));
+var LoginController;
+(function () {
+    "use strict";
+
+    LoginController = BaseController.extend({
+        init: function ($scope, $location, Authorization, SecurityService) {
+            var _controller = this;
+            _controller._super($scope);
+
+            SecurityService.removeAuthorization();
+            var authorization = new Authorization();
+            $scope.authorization = authorization;
+            $scope.login = function () {
+                authorization.portalCode = "pt";
+                authorization.$save(function (data) {
+                    SecurityService.authorize(data.authorization);
+                    $location.path("/");
+                }, function (data) {
+                    _controller._handleError(data.data);
                 });
-            }
-        };
-    }
-});
-LoginController.$inject = ['$scope', '$location', 'Authorization'];
+            };
+        }
+    });
+    LoginController.$inject = ['$scope', '$location', 'Authorization', 'SecurityService'];
+
+    angular.module('stx.login', [
+            'ui.state',
+            'stx.SecurityService',
+            'stx.webServices'
+        ])
+        .config(function config($stateProvider) {
+            $stateProvider.state('login', {
+                url: '/login',
+                controller: 'LoginController',
+                templateUrl: 'login/login.tpl.html',
+                data: { pageTitle: 'Login' }
+            });
+        })
+        .controller("LoginController", LoginController)
+    ;
+}());

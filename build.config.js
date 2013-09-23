@@ -20,11 +20,16 @@ module.exports = {
      * app's unit tests.
      */
     app_files: {
-        js: [ 'src/**/*.js', '!src/**/*.spec.js', '!src/assets/**/*.js' ],
+        js_ordered: [
+            'src/app/common/script/baseController.js',
+            'src/**/authorizedBaseController.js'
+        ],
+        js: [
+            'src/**/*.js',
+            '!src/**/*.spec.js',
+            '!src/assets/**/*.js'
+        ],
         jsunit: [ 'src/**/*.spec.js', 'vendor/stx/**/*.spec.js' ],
-
-//        coffee: [ 'src/**/*.coffee', '!src/**/*.spec.coffee' ],
-//        coffeeunit: [ 'src/**/*.spec.coffee' ],
 
         atpl: [ 'src/app/**/*.tpl.html' ],
         ctpl: [ 'src/common/**/*.tpl.html' ],
@@ -38,7 +43,8 @@ module.exports = {
      */
     test_files: {
         js: [
-            'vendor/angular-mocks/angular-mocks.js'
+            'vendor/angular-mocks/angular-mocks.js',
+            'vendor/bootbox/bootbox-mock.js'
         ]
     },
 
@@ -62,6 +68,7 @@ module.exports = {
      */
     vendor_files: {
         js: [
+            'vendor/jquery/jquery.js',
             'vendor/angular/angular.js',
             'vendor/angular-cookies/angular-cookies.js',
             'vendor/angular-resource/angular-resource.js',
@@ -69,7 +76,13 @@ module.exports = {
             'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
             'vendor/angular-ui-router/release/angular-ui-router.js',
             'vendor/angular-ui-utils/modules/route/route.js',
-            'vendor/stx/navigableHash.js'
+            'vendor/bootbox/bootbox.js',
+            'vendor/stx/Class.js',
+            'vendor/stx/navigableHash.js',
+            'vendor/stx/baseController.js',
+            'vendor/stx/authorizedBaseController.js',
+            '!vendor/stx/bootbox-mock.js',
+            'vendor/stx/*.js'
         ],
         jsunit:  [
             'vendor/stx/**/*.spec.js'
