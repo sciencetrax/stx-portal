@@ -3,10 +3,26 @@ var HomeController;
     "use strict";
 
     HomeController = AuthorizedBaseController.extend({
+        ScheduledEncounter: null,
+        SubjectVariableGroupSummary: null,
         init: function ($scope, $routeParams, SubjectVariableGroupSummary, ScheduledEncounter) {
             this._super($scope);
+            this.ScheduledEncounter = ScheduledEncounter;
+            this.SubjectVariableGroupSummary = SubjectVariableGroupSummary;
+            this.getIncompleteVariableGroups();
+            this.getScheduledEncounters();
+        },
+        getScheduledEncounters: function() {
+            this.$scope.encounters = this.ScheduledEncounter.query({
+                customerId: this.customerId,
+                projectId: this.projectId,
+                siteId: this.siteId,
+                subjectId: this.subjectId
+            });
+        },
+        getIncompleteVariableGroups: function() {
             var incompleteProjectVariableGroups = [];
-            var summaries = SubjectVariableGroupSummary.query({
+            var summaries = this.SubjectVariableGroupSummary.query({
                 customerId: this.customerId,
                 projectId: this.projectId,
                 siteId: this.siteId,
@@ -19,25 +35,11 @@ var HomeController;
                     }
                 }
             });
-
-            /*
-             var encounters = ScheduledEncounter.query({
-             customerId: authorizationContext.customerId,
-             projectId: authorizationContext.projectId,
-             siteId: authorizationContext.siteId,
-             subjectId: authorizationContext.subjectId
-             });
-             $scope.data = $.extend(new BaseData(), {
-             projectVariableGroups: summaries,
-             incompleteProjectVariableGroups: incompleteProjectVariableGroups,
-
-             encounters: encounters
-             });
-             $scope.data.init($routeParams, "summary", "");
-             */
+            this.$scope.projectVariableGroups = summaries;
+            this.$scope.incompleteProjectVariableGroups = incompleteProjectVariableGroups;
         }
     });
-    HomeController.$inject = ['$scope', '$routeParams', 'SubjectVariableGroupSummary'];
+    HomeController.$inject = ['$scope', '$routeParams', 'SubjectVariableGroupSummary', 'ScheduledEncounter'];
 
     angular.module('stx.home', [
             'stx.webServices',

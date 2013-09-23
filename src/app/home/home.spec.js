@@ -14,7 +14,7 @@ describe('HomeController', function () {
     });
 
 
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, /*_$location_, _$cookieStore_, _$rootScope_,*/ _$controller_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $rootScope = _$rootScope_;
@@ -30,11 +30,30 @@ describe('HomeController', function () {
                 ]
             }
         };
-        $httpBackend.when('GET', '/customers/100/projects/200/sites/500/subjects/300/variablegroupsummaries').respond({ authorization: 'AuthCode' });
+        $httpBackend.when('GET', '/customers/100/projects/200/sites/500/subjects/300/scheduledencounters').respond(HttpStatusCodes.ok, [
+            { name: 'Baseline' },
+            { name: 'Month 1' },
+            { name: 'Month 2' },
+            { name: 'Month 3' }
+        ]);
+        $httpBackend.when('GET', '/customers/100/projects/200/sites/500/subjects/300/variablegroupsummaries').respond(HttpStatusCodes.ok, [
+            { percentComplete: 0.1 },
+            { percentComplete: 0.2 },
+            { percentComplete: 1 }
+        ]);
         controller = $controller('HomeController', { $scope: $scope });
+        $httpBackend.flush();
     }));
 
-    it('should have a dummy test', inject(function () {
-        expect(true).toBeTruthy();
+    it('should add 3 variable groups to the scope', inject(function () {
+        expect($scope.projectVariableGroups.length).toBe(3);
+    }));
+
+    it('should add 4 encounters to the scope', inject(function () {
+        expect($scope.encounters.length).toBe(4);
+    }));
+
+    it('should add 2 incomplete variable groups to the scope', inject(function () {
+        expect($scope.incompleteProjectVariableGroups.length).toBe(2);
     }));
 });
