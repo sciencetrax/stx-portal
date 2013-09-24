@@ -25,8 +25,8 @@ var LoginController;
 
     angular.module('stx.login', [
             'ui.state',
-            'stx.SecurityService',
-            'stx.webServices'
+            'stxSecurityService',
+            'stxWebServices'
         ])
         .config(function config($stateProvider) {
             $stateProvider.state('login', {

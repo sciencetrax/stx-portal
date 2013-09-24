@@ -11,12 +11,11 @@ describe('LoginController', function () {
 
     beforeEach(module('stx.login'));
 
-    beforeEach(function() {
-        angular.module('stx.webServices')
-            .value('baseUrl', '/');
-    });
+    beforeEach(inject(function(_WebServiceConfig_) {
+        _WebServiceConfig_.baseUrl = '/';
+    }));
 
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$controller_, _SecurityService_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$controller_, _WebServiceConfig_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $location = _$location_;
@@ -26,7 +25,8 @@ describe('LoginController', function () {
         SecurityService = _SecurityService_;
         $controller = _$controller_;
 
-        $httpBackend.when('POST', '/authorization?portalCode=pt&username=UN&password=PW').respond({ authorization: 'AuthCode' });
+
+        $httpBackend.when('POST', '/authorization?portalCode=pt&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
         $httpBackend.when('POST', '/authorization?portalCode=pt&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
         $httpBackend.when('GET', '/authorizationcontext').respond({ userId: 101 });
     }));
@@ -51,6 +51,7 @@ describe('LoginController', function () {
         it('should remove the auth header', inject(function () {
             expect($http.defaults.headers.common[SecurityService.AUTH_HEADER]).toBe(null);
         }));
+        /**/
     });
     describe('login', function () {
         beforeEach(inject(function () {
@@ -63,6 +64,7 @@ describe('LoginController', function () {
 
         it('should set authorization context', inject(function () {
             $scope.login();
+            $rootScope.$apply(); // fix for angular 1.1.4
             $httpBackend.flush();
             expect($rootScope.authorizationContext).not.toBe(null);
             expect($rootScope.authorizationContext.userId).toBe(101);
@@ -70,6 +72,7 @@ describe('LoginController', function () {
 
         it('should redirect to "/" on successful login', inject(function () {
             $scope.login();
+            $rootScope.$apply(); // fix for angular 1.1.4
             $httpBackend.flush();
             expect($location.path()).toBe('/');
         }));
@@ -77,8 +80,10 @@ describe('LoginController', function () {
         it('should bootbox is used to display error messages when an http error occurs', inject(function () {
             $scope.authorization.password = 'badPW';
             $scope.login();
+            $rootScope.$apply(); // fix for angular 1.1.4
             $httpBackend.flush();
             expect(bootbox.alertmessage).toBe(LS.errorMessages.InvalidUsernameOrPassword);
         }));
     });
+    /**/
 });

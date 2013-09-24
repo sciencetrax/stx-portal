@@ -9,7 +9,6 @@ var SecurityService;
         AuthorizationContext: null,
         AUTH_HEADER: "X-Authorization",
         init: function () {
-
         },
         authorize: function (authorization) {
             var _this = this;
@@ -19,13 +18,21 @@ var SecurityService;
             });
         },
         handleAuthentication: function () {
-            var authorization = this.$cookieStore.get('authorization');
+            var authorization = this.$cookieStore.get(this.AUTH_HEADER);
             if (authorization == null) {
                 this.$location.path('/login');
                 return;
             }
-            $cookieStore.remove('authorization');
-            this.authenticate(authorization);
+            this.$cookieStore.remove(this.AUTH_HEADER);
+            this.authorize(authorization);
+            this.$location.path('/');
+        },
+        handleHttpError: function(statusCode, responseData) {
+            if (statusCode == HttpStatusCodes.internalServerError) {
+                bootbox.alert(responseData);
+            } else if (statusCode == HttpStatusCodes.unauthorized) {
+                this.handleAuthentication();
+            }
         },
         removeAuthorization: function () {
             this.$cookieStore.remove(this.AUTH_HEADER);
@@ -46,9 +53,9 @@ var SecurityService;
         }]
     });
 
-    angular.module('stx.SecurityService', [
+    angular.module('stxSecurityService', [
             'ngCookies',
-            'stx.webServices'
+            'stxWebServices'
         ])
         .provider('SecurityService', SecurityServiceProvider);
 

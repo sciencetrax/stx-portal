@@ -72,6 +72,7 @@ module.exports = {
             'vendor/angular/angular.js',
             'vendor/angular-cookies/angular-cookies.js',
             'vendor/angular-resource/angular-resource.js',
+            'vendor/angular-route/angular-route.js',
             'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
             'vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js',
             'vendor/angular-ui-router/release/angular-ui-router.js',
@@ -82,7 +83,8 @@ module.exports = {
             'vendor/stx/baseController.js',
             'vendor/stx/authorizedBaseController.js',
             '!vendor/stx/bootbox-mock.js',
-            'vendor/stx/*.js'
+            'vendor/stx/*.js',
+            '!vendor/stx/*.spec.js'
         ],
         jsunit:  [
             'vendor/stx/**/*.spec.js'
