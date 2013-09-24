@@ -1,27 +1,41 @@
-﻿var applicationPath = "/StudyTrax/";
-var serviceActions = { update: { method: "PUT" } };
+﻿var serviceActions = { update: { method: "PUT" } };
 
-var m = angular.module('stx.webServices', [
+var m = angular.module('stxWebServices', [
             'ngResource'
         ])
-        .value('baseUrl', 'api/')
-        .factory('Authorization', ['$resource', 'baseUrl', function ($resource, baseUrl) {
-            return $resource(baseUrl + 'authorization?portalCode=:portalCode&username=:username&password=:password', {
+        .provider('WebServiceConfig', function () {
+            this.baseUrl = '/api/';
+            var _this = this;
+            this.setBaseUrl = function (url) {
+                this.baseUrl = url;
+            };
+
+            var instance = {
+                getBaseUrl: function () {
+                    return _this.baseUrl;
+                }
+            };
+            this.$get = function () {
+                return instance;
+            };
+        })
+
+        .factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+            return $resource(WebServicesConfig.getBaseUrl() + 'authorization?portalCode=:portalCode&username=:username&password=:password', {
                 portalCode: '@portalCode',
                 username: '@username',
                 password: '@password'
             });
         }])
-        .factory('AuthorizationContext', ['$resource', 'baseUrl', function ($resource, baseUrl) {
-            return $resource(baseUrl + 'authorizationcontext');
+        .factory('AuthorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+            return $resource(WebServicesConfig.getBaseUrl() + 'authorizationcontext');
         }])
-        .factory('SubjectVariableGroupSummary', ['$resource', 'baseUrl', function ($resource, baseUrl) {
-            return $resource(baseUrl + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries');
+        .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries');
         }])
-        .factory('ScheduledEncounter', ['$resource', 'baseUrl', function ($resource, baseUrl) {
-            return $resource(baseUrl + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters');
+        .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters');
         }])
-
 
         .factory('Account', ['$resource', '$http', function ($resource, $http) {
             return $resource(applicationPath + 'api/customers/:customerId/users/:id', {

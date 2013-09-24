@@ -28,12 +28,13 @@ angular.module('stx', [
     .config(['$httpProvider', function ($httpProvider) {
         $httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
     }])
-
     .config(function myAppConfig($urlRouterProvider) {
         $urlRouterProvider.otherwise('/home');
     })
-    .run(["SecurityService", 'WebServiceConfig', function (SecurityService, webServices) {
-        webServices.baseUrl = "http://localhost/StudyTrax/api/";
+    .config(function myAppConfig(WebServiceConfigProvider) {
+        WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
+    })
+    .run(["SecurityService", function (SecurityService) {
         SecurityService.handleAuthentication();
     }]);
 

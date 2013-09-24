@@ -24,7 +24,7 @@ describe('App', function () {
 
     describe('run (not authenticated)', function () {
         it('should set the baseUrl for the web services config', inject(function () {
-            expect(WebServiceConfig.baseUrl).toBe('http://localhost/StudyTrax/api/');
+            expect(WebServiceConfig.getBaseUrl()).toBe('/StudyTrax/api/');
         }));
 
         it('should redirect to the login page', inject(function () {

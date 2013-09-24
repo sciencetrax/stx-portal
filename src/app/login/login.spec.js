@@ -11,10 +11,6 @@ describe('LoginController', function () {
 
     beforeEach(module('stx.login'));
 
-    beforeEach(inject(function(_WebServiceConfig_) {
-        _WebServiceConfig_.baseUrl = '/';
-    }));
-
     beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$controller_, _WebServiceConfig_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
@@ -26,9 +22,9 @@ describe('LoginController', function () {
         $controller = _$controller_;
 
 
-        $httpBackend.when('POST', '/authorization?portalCode=pt&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
-        $httpBackend.when('POST', '/authorization?portalCode=pt&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
-        $httpBackend.when('GET', '/authorizationcontext').respond({ userId: 101 });
+        $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
+        $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
+        $httpBackend.when('GET', '/api/authorizationcontext').respond({ userId: 101 });
     }));
 
     describe('constructor', function () {
