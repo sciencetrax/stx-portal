@@ -9,18 +9,17 @@ angular.module('stx', [
         'ui.state',
         'ui.route'
     ])
-    .factory('SecurityResponseErrorInterceptor', ['$q', function ($q) {
+    .factory('SecurityResponseErrorInterceptor', ['$q', '$rootScope', function ($q, $rootScope) {
         return {
-            requestError: function (rejection) {
-                // This is a horrible hack.  Problem is that injecting SecurityService will
-                // cause a CircularDependency error because ServiceLocator uses $http.
-                SecurityService.instance.handleHttpError(response.status, response.data);
-                return $q.reject(rejection);
-            },
             responseError: function (rejection) {
-                // This is a horrible hack.  Problem is that injecting SecurityService will
-                // cause a CircularDependency error because ServiceLocator uses $http.
-                SecurityService.instance.handleHttpError(response.status, response.data);
+                $rootScope.$broadcast('httpError', rejection);
+                /*
+                if (rejection.status == HttpStatusCodes.internalServerError) {
+                    bootbox.alert(rejection.data);
+                } else if (rejection.status == HttpStatusCodes.unauthorized) {
+                    this.handleAuthentication();
+                }
+*/
                 return $q.reject(rejection);
             }
         };

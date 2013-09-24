@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\WebServices.js" afterPath="$PROJECT_DIR$/src/app/common/script/webServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/script/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/common/script/SecurityService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.spec.js" afterPath="$PROJECT_DIR$/src/app/app.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.spec.js" afterPath="$PROJECT_DIR$/src/app/login/login.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379982848430" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984331556" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984065620" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
@@ -27,7 +25,7 @@
     <file path="/build.config.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379957129177" ignored="false" />
     <file path="/Gruntfile-old.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872380975" ignored="false" />
     <file path="/bower.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872800412" ignored="false" />
-    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379983700211" ignored="false" />
+    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379992858844" ignored="false" />
     <file path="/home.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379963891467" ignored="false" />
     <file path="/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379959194261" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/home/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379877849823" ignored="false" />
@@ -62,7 +60,7 @@
     <file path="/webServices.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984258105" ignored="false" />
     <file path="$PROJECT_DIR$/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379966774639" ignored="false" />
     <file path="$PROJECT_DIR$/build/templates-app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379974675425" ignored="false" />
-    <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379982342470" ignored="false" />
+    <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379993264585" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.3348485">
+            <state line="20" column="17" selection-start="480" selection-end="755" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityService.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/common/script/SecurityService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="42" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.5924242">
               <folding />
             </state>
           </provider>
@@ -153,14 +160,14 @@
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/src/app/login/login.js" />
-        <option value="$PROJECT_DIR$/src/app/common/script/SecurityService.js" />
         <option value="$PROJECT_DIR$/src/app/common/script/SecurityService.spec.js" />
         <option value="$PROJECT_DIR$/src/app/home/home.js" />
         <option value="$PROJECT_DIR$/src/app/home/home.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
         <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
         <option value="$PROJECT_DIR$/src/app/app.spec.js" />
         <option value="$PROJECT_DIR$/src/app/common/script/webServices.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/common/script/SecurityService.js" />
       </list>
     </option>
   </component>
@@ -629,7 +636,11 @@
       <created>1379982852820</created>
       <updated>1379982852820</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding more unit tests">
+      <created>1379984335064</created>
+      <updated>1379984335064</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/script/SecurityService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="493" selection-end="513" vertical-scroll-proportion="0.21610169">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="2578" selection-end="2578" vertical-scroll-proportion="0.0">
@@ -830,7 +834,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.3348485">
+        <state line="20" column="17" selection-start="480" selection-end="755" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/script/SecurityService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="42" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.5924242">
           <folding />
         </state>
       </provider>

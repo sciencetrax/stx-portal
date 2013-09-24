@@ -10,6 +10,12 @@ var SecurityService;
         AUTH_HEADER: "X-Authorization",
         init: function () {
         },
+        initialize: function() {
+            var _this = this;
+            this.$rootScope.$on('httpError', function(event, message) {
+                _this.handleError(message.status, message.data);
+            });
+        },
         authorize: function (authorization) {
             var _this = this;
             this.$http.defaults.headers.common['X-Authorization'] = authorization;
@@ -27,7 +33,7 @@ var SecurityService;
             this.authorize(authorization);
             this.$location.path('/');
         },
-        handleHttpError: function(statusCode, responseData) {
+        handleError: function(statusCode, responseData) {
             if (statusCode == HttpStatusCodes.internalServerError) {
                 bootbox.alert(responseData);
             } else if (statusCode == HttpStatusCodes.unauthorized) {
@@ -49,6 +55,7 @@ var SecurityService;
             this.instance.$cookieStore = $cookieStore;
             this.instance.$rootScope = $rootScope;
             this.instance.AuthorizationContext = AuthorizationContext;
+            this.instance.initialize();
             return this.instance;
         }]
     });
