@@ -5,28 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/portal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380006522948" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380040247683" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012023871" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
     <file path="/app.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984189317" ignored="false" />
-    <file path="/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380004092072" ignored="false" />
+    <file path="/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380045386853" ignored="false" />
     <file path="/navigableHash.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379868338792" ignored="false" />
     <file path="/README.md" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379869333724" ignored="false" />
     <file path="/navigableHash.spec.jjs" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379868679821" ignored="false" />
     <file path="/navigableHash.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379873546812" ignored="false" />
-    <file path="/Gruntfile.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012533653" ignored="false" />
+    <file path="/Gruntfile.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380046335164" ignored="false" />
     <file path="/build.config.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379957129177" ignored="false" />
     <file path="/Gruntfile-old.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872380975" ignored="false" />
     <file path="/bower.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872800412" ignored="false" />
-    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379995620310" ignored="false" />
+    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380041272943" ignored="false" />
     <file path="/home.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379999835264" ignored="false" />
     <file path="/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379999546761" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/home/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379877849823" ignored="false" />
@@ -70,7 +70,7 @@
     <file path="/home-profile.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003162541" ignored="false" />
     <file path="/locale-en.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003258065" ignored="false" />
     <file path="/home-summary.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003963440" ignored="false" />
-    <file path="/portal.xml" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012735892" ignored="false" />
+    <file path="/portal.xml" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380047056211" ignored="false" />
     <file path="/package.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012649555" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,43 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="49" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/common/script/SecurityService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="45" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waiting.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/common/waiting.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waiting.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="32" selection-start="435" selection-end="435" vertical-scroll-proportion="0.30769232">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="57" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +139,7 @@
       <file leaf-file-name="build.config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.0">
+            <state line="70" column="0" selection-start="2500" selection-end="2945" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,25 +148,16 @@
       <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="608" column="44" selection-start="17410" selection-end="17410" vertical-scroll-proportion="0.0">
+            <state line="538" column="22" selection-start="14730" selection-end="14730" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uglify.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bootstrap/assets/js/uglify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14865" selection-start="15346" selection-end="15347" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portal.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="portal.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/portal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="52" selection-start="618" selection-end="618" vertical-scroll-proportion="0.38141027">
+            <state line="32" column="31" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,16 +175,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="-13.076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="664" selection-end="664" vertical-scroll-proportion="-9.807693">
+            <state line="27" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
@@ -181,7 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/account/update.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/account/update.js" />
         <option value="$PROJECT_DIR$/src/app/about/about.js" />
         <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
@@ -192,11 +209,12 @@
         <option value="$PROJECT_DIR$/src/app/home/home.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/home/home.less" />
         <option value="$PROJECT_DIR$/src/less/main.less" />
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/build.config.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
         <option value="$PROJECT_DIR$/src/portal.xml" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/build.config.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -260,123 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,28 +322,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -451,14 +331,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="280" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="298" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="302" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ng-boilerplate" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="305" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="984" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="977" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="984" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="297" />
     <property name="GoToClass.includeJavaFiles" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
@@ -509,7 +389,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -607,28 +487,32 @@
       <created>1380006527788</created>
       <updated>1380006527788</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added code to generate the portal XML file.">
+      <created>1380012895282</created>
+      <updated>1380012895282</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19273128" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28414097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2835165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16435432" sideWeight="0.71585906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16394307" sideWeight="0.71648353" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -676,7 +560,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Importing more code from old source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to generate the portal XML file." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -696,6 +580,7 @@
     <MESSAGE value="Adding unit tests to home.spec.js" />
     <MESSAGE value="Adding more unit tests" />
     <MESSAGE value="Importing more code from old source" />
+    <MESSAGE value="Added code to generate the portal XML file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,88 +588,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/home/home-details.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="824" selection-end="824" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="64" selection-start="283" selection-end="283" vertical-scroll-proportion="-1.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/variable-group-summary.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="664" selection-end="664" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular-bootstrap/ui-bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="77" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.38709676">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2986" selection-end="2986" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home-profile.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="3761" selection-end="3761" vertical-scroll-proportion="0.56729376">
-          <folding />
-        </state>
+        <state line="185" column="0" selection-start="3761" selection-end="3761" vertical-scroll-proportion="0.56729376" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/secure-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="820" selection-end="820" vertical-scroll-proportion="0.54202896">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
+        <state line="22" column="0" selection-start="820" selection-end="820" vertical-scroll-proportion="0.54202896" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bootstrap/assets/js/uglify.js">
@@ -794,9 +610,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/src/app/common/script/baseController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="608" column="44" selection-start="17410" selection-end="17410" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="57" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="31" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -808,9 +638,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/portal.xml">
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="52" selection-start="618" selection-end="618" vertical-scroll-proportion="0.38141027">
+        <state line="538" column="22" selection-start="14730" selection-end="14730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="2500" selection-end="2945" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-17.653847">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/script/SecurityService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="45" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="435" selection-end="435" vertical-scroll-proportion="0.30769232">
           <folding />
         </state>
       </provider>

@@ -15,25 +15,120 @@
                 sendEncounterDueNotifications="True">
             <pages>
                 <!-- CSS CONTENT -->
-                <page code="css" path="assets/<%= pkg.name %>-<%= pkg.version %>.css" pageType="css">
+                <page code="css" path="codecss" pageType="css">
                     <![CDATA[
                     <%= css %>
 					]]>
                 </page>
 
                 <!-- JS CONTENT -->
-                <page code="js" path="assets/<%= pkg.name %>-<%= pkg.version %>.js" pageType="css">
+                <page code="js" path="codejs" pageType="JavaScript">
                     <![CDATA[
                     <%= js %>
 					]]>
                 </page>
 
-                <page code="index_html" path="index.html" pageType="css">
+                <page code="index">
                     <![CDATA[
                     <%= html %>
                     ]]>
                 </page>
             </pages>
+            <!-- **********************************************************************
+                             EMAIL TEMPLATES
+                 ********************************************************************** -->
+            <emailTemplates>
+                <!-- ACCOUNT VERIFICATION-->
+                <emailTemplate type="Account Verification" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%">
+                    <p>Welcome!  Your %PortalName% account has been set up.  To begin using your account, you must first verify your email address by clicking the following link (or copying and pasting it into your browser). After verifying your email address, you will be prompted to create a password.</p>
+
+                    <p>%EmailAddressVerificationUrl%</p>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team
+                    </p>
+                </emailTemplate>
+
+                <!-- FORGOT PASSWORD -->
+                <emailTemplate type="Forgot Password" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Password Reset for %PortalName%">
+                    <p>We received a request to reset the password for your %PortalName% account (%UserName%).  To reset your password, please click the following link (or copy and paste it into your browser):</p>
+
+                    <p>%ResetPasswordUrl:ExpirationHours=2%</p>
+
+                    <p>This link is only valid for 2 hours.  If the link has expired, you can request to reset your password again from %LoginUrl%.</p>
+
+                    <p>Your password has not been changed yet and will not be changed until you use the link above and change your password.</p>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team
+                    </p>
+                </emailTemplate>
+
+                <!-- FORGOT USER NAME -->
+                <emailTemplate type="Forgot User Name" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Username Request for %PortalName%">
+                    <p>We received a request to send you your %PortalName% username.  If you have multiple accounts attached to this email address, they will be listed below separated by commas.</p>
+
+                    <table>
+                        <tr>
+                            <td>Login URL:</td>
+                            <td>%LoginUrl%</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>%UserName%</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team
+                    </p>
+                </emailTemplate>
+
+                <!-- WELCOME -->
+                <emailTemplate type="Welcome" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Welcome To %PortalName%">
+                    <p>Welcome!  Thank you for your participation.  Your %PortalName% account is ready for use.  Please keep the following information for your records:</p>
+
+                    <table>
+                        <tr>
+                            <td>Login URL:</td>
+                            <td>%LoginUrl%</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>%UserName%</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team
+                    </p>
+                </emailTemplate>
+
+                <!-- ENCOUNTER DUE -->
+                <emailTemplate type="Encounter Due" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Encounter Due Notification for %IntervalName%">
+                    <p>This is a reminder that your %IntervalName% encounter is due on %ExpectedDueDate%.  Please log in using the following information:</p>
+
+                    <table>
+                        <tr>
+                            <td>Login URL:</td>
+                            <td>%LoginUrl%</td>
+                        </tr>
+                        <tr>
+                            <td>Username:</td>
+                            <td>%UserName%</td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team
+                    </p>
+                </emailTemplate>
+            </emailTemplates>
         </portal>
     </portals>
 </studyTrax>

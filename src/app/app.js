@@ -29,20 +29,15 @@ angular.module('stx', [
     .config(function myAppConfig(WebServiceConfigProvider) {
         WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
     })
+    .controller('ApplicationController', ['$scope', function ApplicationController($scope) {
+        $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+            if (angular.isDefined(toState.data.pageTitle)) {
+                $scope.pageTitle = toState.data.pageTitle + ' | StudyTrax';
+            }
+        });
+    }])
     .run(['SecurityService', function (SecurityService) {
         SecurityService.handleAuthentication();
-    }]);
+    }])
 
-
-/*
- controller('AppCtrl', function AppCtrl($scope, $location) {
- $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
- if (angular.isDefined(toState.data.pageTitle)) {
- $scope.pageTitle = toState.data.pageTitle + ' | ngBoilerplate';
- }
- });
- })
-
- ;
-
- */
+;

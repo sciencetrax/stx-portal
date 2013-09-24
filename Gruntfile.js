@@ -180,6 +180,7 @@ module.exports = function ( grunt ) {
         src: [
           '<%= vendor_files.js %>',
           'module.prefix',
+          '<%= app_files.js_ordered %>',
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.app.dest %>',
           '<%= html2js.common.dest %>',
@@ -530,7 +531,13 @@ module.exports = function ( grunt ) {
    * minifying your code.
    */
   grunt.registerTask( 'compile', [
-    'recess:compile', 'copy:compile_assets', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile'
+    'recess:compile',
+      'copy:compile_assets',
+      'ngmin',
+      'concat:compile_js',
+      'uglify',
+      'index:compile',
+      'portal:compile'
   ]);
   grunt.registerTask( 'prt', [
       'portal:compile'
@@ -596,9 +603,29 @@ module.exports = function ( grunt ) {
 
         var js = grunt.file.read(this.data.dir + '/' + jsFiles);
         js = js.replace(/\#/g, "\\#");
+        /*jshint -W100 */
         // The following line replaces an invalid character '' with a space.  It is not a displayable character (0x0B)
+        /*jshint -W048 */
         js = js.replace(/\/g, " ");
+
+
+
+        grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
+            process: function ( contents, path ) {
+                return grunt.template.process( contents, {
+                    data: {
+                        scripts: ['#URL(js)'],
+                        styles: ['#URL(css)'],
+                        version: grunt.config( 'pkg.version' )
+                    }
+                });
+            }
+        });
+
         var index = grunt.file.read(this.data.dir + '/index.html');
+
+//        index = index.replace("assets/.*[.]js", " ");
+
         grunt.file.copy('src/portal.xml', this.data.dir + '/portal.xml', {
             process: function ( contents, path ) {
                 return grunt.template.process( contents, {
@@ -608,6 +635,18 @@ module.exports = function ( grunt ) {
                         js: js,
                         created: new Date(),
                         pkg: grunt.config( 'pkg' )
+                    }
+                });
+            }
+        });
+
+        grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
+            process: function ( contents, path ) {
+                return grunt.template.process( contents, {
+                    data: {
+                        scripts: jsFiles,
+                        styles: cssFiles,
+                        version: grunt.config( 'pkg.version' )
                     }
                 });
             }
