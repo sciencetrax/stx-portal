@@ -1,0 +1,39 @@
+<!--
+    Name:           <%= pkg.name %>
+    Description:    <%= pkg.description %>
+    Author:         <%= pkg.author %>
+    Version:        <%= pkg.version %>
+-->
+<studyTrax type="Portal" created="<%= created %>" version="330">
+    <portals>
+        <portal name="<%= pkg.name %>"
+                description="<%= pkg.description %>"
+                code="<%= pkg.name %>"
+                userType="<%= pkg.portalType %>"
+                allowRegistration="<%= pkg.allowRegistration %>"
+                allowAnonymousDataEntry="<%= pkg.allowAnonymousDataEntry %>"
+                sendEncounterDueNotifications="True">
+            <pages>
+                <!-- CSS CONTENT -->
+                <page code="css" path="assets/<%= pkg.name %>-<%= pkg.version %>.css" pageType="css">
+                    <![CDATA[
+                    <%= css %>
+					]]>
+                </page>
+
+                <!-- JS CONTENT -->
+                <page code="js" path="assets/<%= pkg.name %>-<%= pkg.version %>.js" pageType="css">
+                    <![CDATA[
+                    <%= js %>
+					]]>
+                </page>
+
+                <page code="index_html" path="index.html" pageType="css">
+                    <![CDATA[
+                    <%= html %>
+                    ]]>
+                </page>
+            </pages>
+        </portal>
+    </portals>
+</studyTrax>

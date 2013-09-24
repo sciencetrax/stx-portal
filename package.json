@@ -1,6 +1,10 @@
 {
   "author": "Leslie Hanks",
   "name": "stx-portal",
+  "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
+  "portalType": "Subject",
+  "allowRegistration": "True",
+  "allowAnonymousDataEntry": "True",
   "version": "0.0.1",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {

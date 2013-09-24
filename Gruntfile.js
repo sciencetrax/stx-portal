@@ -364,6 +364,21 @@ module.exports = function ( grunt ) {
         ]
       }
     },
+    portal: {
+      /**
+       * When it is time to have a completely compiled application, we can
+       * alter the above to include only a single JavaScript and a single CSS
+       * file. Now we're back!
+       */
+      compile: {
+        dir: '<%= compile_dir %>',
+        src: [
+          '<%= concat.compile_js.dest %>',
+          '<%= vendor_files.css %>',
+          '<%= recess.compile.dest %>'
+        ]
+      }
+    },
 
     /**
      * This task compiles the karma template so that changes to its file array
@@ -517,6 +532,9 @@ module.exports = function ( grunt ) {
   grunt.registerTask( 'compile', [
     'recess:compile', 'copy:compile_assets', 'ngmin', 'concat:compile_js', 'uglify', 'index:compile'
   ]);
+  grunt.registerTask( 'prt', [
+      'portal:compile'
+  ]);
 
   /**
    * A utility function to get all app JavaScript sources.
@@ -563,6 +581,38 @@ module.exports = function ( grunt ) {
       }
     });
   });
+
+    grunt.registerMultiTask( 'portal', 'Process portal.xml template', function () {
+        var dirRE = new RegExp( '^('+grunt.config('build_dir')+'|'+grunt.config('compile_dir')+')\/', 'g' );
+        var jsFiles = filterForJS( this.filesSrc ).map( function ( file ) {
+            return file.replace( dirRE, '' );
+        });
+        var cssFiles = filterForCSS( this.filesSrc ).map( function ( file ) {
+            return file.replace( dirRE, '' );
+        });
+
+        var css = grunt.file.read(this.data.dir + '/' + cssFiles);
+        css = css.replace(/\#/g, "\\#");
+
+        var js = grunt.file.read(this.data.dir + '/' + jsFiles);
+        js = js.replace(/\#/g, "\\#");
+        // The following line replaces an invalid character '' with a space.  It is not a displayable character (0x0B)
+        js = js.replace(/\/g, " ");
+        var index = grunt.file.read(this.data.dir + '/index.html');
+        grunt.file.copy('src/portal.xml', this.data.dir + '/portal.xml', {
+            process: function ( contents, path ) {
+                return grunt.template.process( contents, {
+                    data: {
+                        html: index,
+                        css: css,
+                        js: js,
+                        created: new Date(),
+                        pkg: grunt.config( 'pkg' )
+                    }
+                });
+            }
+        });
+    });
 
   /**
    * In order to avoid having to specify manually the files needed for karma to
