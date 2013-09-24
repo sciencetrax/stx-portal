@@ -14,7 +14,6 @@ var LoginController;
                 authorization.portalCode = "pt";
                 authorization.$save(function (data) {
                     SecurityService.authorize(data.authorization);
-                    $location.path("/");
                 }, function (data) {
                     _controller._handleError(data.data);
                 });

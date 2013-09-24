@@ -3,8 +3,10 @@ angular.module('stx', [
         'stxWebServices',
         'templates-app',
         'templates-common',
-        'stx.login',
+        'stx.about',
+        'stx.common',
         'stx.home',
+        'stx.login',
         'ngCookies',
         'ui.state',
         'ui.route'
@@ -13,13 +15,6 @@ angular.module('stx', [
         return {
             responseError: function (rejection) {
                 $rootScope.$broadcast('httpError', rejection);
-                /*
-                if (rejection.status == HttpStatusCodes.internalServerError) {
-                    bootbox.alert(rejection.data);
-                } else if (rejection.status == HttpStatusCodes.unauthorized) {
-                    this.handleAuthentication();
-                }
-*/
                 return $q.reject(rejection);
             }
         };
@@ -28,12 +23,12 @@ angular.module('stx', [
         $httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
     }])
     .config(function myAppConfig($urlRouterProvider) {
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/home/summary');
     })
     .config(function myAppConfig(WebServiceConfigProvider) {
         WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
     })
-    .run(["SecurityService", function (SecurityService) {
+    .run(['SecurityService', function (SecurityService) {
         SecurityService.handleAuthentication();
     }]);
 

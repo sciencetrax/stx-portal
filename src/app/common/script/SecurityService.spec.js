@@ -63,6 +63,8 @@ describe('SecurityService', function () {
         beforeEach(inject(function () {
             $cookieStore.put(SecurityService.AUTH_HEADER, "authToken");
             SecurityService.handleAuthentication();
+            $rootScope.$apply(); // fix for angular 1.1.4
+            $httpBackend.flush();
         }));
 
         it('should redirect to the login page', inject(function () {

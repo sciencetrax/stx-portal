@@ -1,4 +1,4 @@
-describe('BaseController', function () {
+describe('AuthorizedBaseController', function () {
     var $scope;
     var controller;
 

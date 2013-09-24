@@ -19,9 +19,16 @@ var SecurityService;
         authorize: function (authorization) {
             var _this = this;
             this.$http.defaults.headers.common['X-Authorization'] = authorization;
+            var dest = this.$location.path();
+            if (dest === "/login") {
+                dest = "/";
+            }
             this.$rootScope.authorizationContext = this.AuthorizationContext.get({}, function (data) {
                 _this.$cookieStore.put(_this.AUTH_HEADER, authorization);
+                _this.$rootScope.$broadcast('authorizationContextReady');
+                _this.$location.path(dest);
             });
+            _this.$location.path('/waiting');
         },
         handleAuthentication: function () {
             var authorization = this.$cookieStore.get(this.AUTH_HEADER);
@@ -31,7 +38,6 @@ var SecurityService;
             }
             this.$cookieStore.remove(this.AUTH_HEADER);
             this.authorize(authorization);
-            this.$location.path('/');
         },
         handleError: function(statusCode, responseData) {
             if (statusCode == HttpStatusCodes.internalServerError) {

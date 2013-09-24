@@ -4,6 +4,7 @@ describe('LoginController', function () {
     var $location;
     var $cookieStore;
     var $rootScope;
+    var $urlRouter;
     var $scope;
     var $controller;
     var SecurityService;
@@ -11,12 +12,13 @@ describe('LoginController', function () {
 
     beforeEach(module('stx.login'));
 
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$controller_, _WebServiceConfig_, _SecurityService_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$urlRouter_, _$controller_, _WebServiceConfig_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $location = _$location_;
         $cookieStore = _$cookieStore_;
         $rootScope = _$rootScope_;
+        $urlRouter = _$urlRouter_;
         $scope = $rootScope.$new();
         SecurityService = _SecurityService_;
         $controller = _$controller_;
