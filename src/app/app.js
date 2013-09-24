@@ -4,6 +4,7 @@ angular.module('stx', [
         'templates-app',
         'templates-common',
         'stx.about',
+        'stx.account',
         'stx.common',
         'stx.home',
         'stx.login',

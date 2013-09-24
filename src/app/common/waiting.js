@@ -12,11 +12,11 @@ var WaitingController;
     angular.module('stx.common', [
             'ui.state'
         ])
-        .config(function config($stateProvider) {
+        .config(function($stateProvider) {
             $stateProvider.state('waiting', {
                 url: '/waiting',
                 controller: 'WaitingController',
-                templateUrl: 'common/about.tpl.html',
+                templateUrl: 'common/waiting.tpl.html',
                 data: { pageTitle: 'waiting' }
             })
             ;

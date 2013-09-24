@@ -8,9 +8,9 @@
     <!-- FOOTER NAVBAR -->
     <div class="navbar navbar-fixed-bottom footer">
         <div class="btn-group btn-group-justified">
-            <a href="#/home/summary" class="btn">Summary</a>
-            <a href="#/home/details" class="btn">Details</a>
-            <a href="#/home/profile" class="btn">Profile</a>
+            <a ui-route="/home/summary" href="#/home/summary" class="btn" ng-class="{active:$uiRoute}">Summary</a>
+            <a ui-route="/home/details" href="#/home/details" class="btn" ng-class="{active:$uiRoute}">Details</a>
+            <a ui-route="/home/profile" href="#/home/profile" class="btn" ng-class="{active:$uiRoute}">Profile</a>
         </div>
     </div>
 </div>

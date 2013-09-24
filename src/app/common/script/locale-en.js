@@ -12,6 +12,11 @@
 		logASubjectIn: "Log a subject in"
 	},
 	pages: {
+        account: {
+            update: {
+                heading: "Update Account"
+            }
+        },
 		login: {
 			heading: "Login",
 			username: "Username",

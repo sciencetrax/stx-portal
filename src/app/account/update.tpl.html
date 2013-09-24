@@ -1,0 +1,50 @@
+<div class="update-view">
+    <!-- MENU NAVBAR -->
+    <div ng-include="src='common/secure-menu.tpl.htm'"></div>
+
+    <!-- CONTENT -->
+    <div class="content update-page">
+        <header>
+            <h1>{{LS.pages.account.update.heading}}</h1>
+        </header>
+        <section>
+            <form name="formName" role="form" class="form-inline">
+                <fieldset>
+                    <!-- USERNAME -->
+                    <div data-role="form-group">
+                        <label for="username" class="control-label">Username</label>
+                        <input ng-model="data.account.username" meta-validate="data.metadata.username" class="form-control" />
+                    </div>
+
+                    <div id="name-fields">
+                        <!-- FIRST NAME -->
+                        <div data-role="form-group">
+                            <label for="firstname" class="control-label">First Name</label>
+                            <input ng-model="data.account.firstname" meta-validate="data.metadata.firstname" class="form-control" />
+                        </div>
+
+                        <!-- MIDDLE INITIAL -->
+                        <div data-role="form-group">
+                            <label for="middleInitial" class="control-label">Middle Initial</label>
+                            <input ng-model="data.account.middleInitial" meta-validate="data.metadata.middleInitial" class="form-control" />
+                        </div>
+
+                        <!-- LAST NAME -->
+                        <div data-role="form-group">
+                            <label for="lastName" class="control-label">Last Name</label>
+                            <input ng-model="data.account.lastName" meta-validate="data.metadata.lastName" class="form-control" />
+                        </div>
+                    </div>
+                    <!-- EMAIL ADDRESS -->
+                    <div data-role="form-group">
+                        <label for="emailAddress" class="control-label">Email Address</label>
+                        <input ng-model="data.account.emailAddress" meta-validate="data.metadata.emailAddress" class="form-control" />
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button name="submit" type="submit" ng-click="data.update()" class="btn btn-primary form-control" ng-disabled="formName.$invalid || !data.isDirty(data.account)">Save</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+</div>

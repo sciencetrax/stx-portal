@@ -48,7 +48,7 @@ var HomeController;
             'stxWebServices',
             'ui.state'
         ])
-        .config(function config($stateProvider) {
+        .config(function($stateProvider) {
             $stateProvider.state('home', {
                 url: '/home',
                 controller: 'HomeController',

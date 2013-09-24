@@ -1,9 +1,9 @@
 ﻿<div>The following items are incomplete.  Please complete them.</div>
 <ul class="list-group">
-	<li ng-repeat="item in data.incompleteProjectVariableGroups" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
-		<div ng-include src="'variable-group-summary.htm'"></div>
+	<li ng-repeat="item in incompleteProjectVariableGroups" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
+		<div ng-include src="'common/variable-group-summary.tpl.html'"></div>
 	</li>
-	<li ng-repeat="item in data.encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
+	<li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
 		<a href="#/viewEncounter/forms--{{item.intervalId}}">{{item.name}}</a>
 		<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
 	</li>

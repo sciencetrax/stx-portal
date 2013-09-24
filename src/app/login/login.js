@@ -27,7 +27,7 @@ var LoginController;
             'stxSecurityService',
             'stxWebServices'
         ])
-        .config(function config($stateProvider) {
+        .config(function($stateProvider) {
             $stateProvider.state('login', {
                 url: '/login',
                 controller: 'LoginController',

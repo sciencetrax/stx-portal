@@ -12,7 +12,7 @@ var AboutController;
     angular.module('stx.about', [
             'ui.state'
         ])
-        .config(function config($stateProvider) {
+        .config(function($stateProvider) {
             $stateProvider.state('about', {
                 url: '/about',
                 controller: 'AboutController',
