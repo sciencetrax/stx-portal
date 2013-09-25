@@ -67,13 +67,6 @@ describe('LoginController', function () {
             expect($rootScope.authorizationContext.userId).toBe(101);
         }));
 
-        it('should redirect to "/" on successful login', inject(function () {
-            $scope.login();
-            $rootScope.$apply(); // fix for angular 1.1.4
-            $httpBackend.flush();
-            expect($location.path()).toBe('/');
-        }));
-
         it('should bootbox is used to display error messages when an http error occurs', inject(function () {
             $scope.authorization.password = 'badPW';
             $scope.login();

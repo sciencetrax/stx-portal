@@ -19,30 +19,16 @@ var SecurityService;
         authorize: function (authorization) {
             var _this = this;
             this.$http.defaults.headers.common[this.AUTH_HEADER] = authorization;
-            var dest = this.$location.path();
-            if (dest === "/login") {
-                dest = "/";
-            }
+            _this.$rootScope.$broadcast('authorizationContextLoading');
             this.$rootScope.authorizationContext = this.authorizationContext.get({}, function (data) {
                 _this.$cookieStore.put(_this.AUTH_HEADER, authorization);
-                _this.$location.path(dest);
-                _this.$rootScope.$broadcast('authoricationContextReady');
+                _this.$rootScope.$broadcast('authorizationContextReady');
             });
-            _this.$location.path('/waiting');
-        },
-        getSecurityProfile: function() {
-            return {
-                customerId: this.authorizationContext.customerId,
-                projectId: this.authorizationContext.subject.projects[0].projectId,
-                subjectId: this.authorizationContext.subject.id,
-                siteId: this.authorizationContext.subject.projects[0].siteId,
-                userId: this.authorizationContext.userId
-            };
         },
         handleAuthentication: function () {
             var authorization = this.$cookieStore.get(this.AUTH_HEADER);
             if (authorization == null) {
-                this.$location.path('/login');
+                this.$rootScope.$broadcast('notAuthorized');
                 return;
             }
             this.$cookieStore.remove(this.AUTH_HEADER);

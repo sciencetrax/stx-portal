@@ -20,30 +20,38 @@ angular.module('stx', [
             }
         };
     }])
-    .config(['$httpProvider', function ($httpProvider) {
+    .config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider', function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
         $httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
-    }])
-    .config(function myAppConfig($urlRouterProvider) {
         $urlRouterProvider.otherwise('/home/summary');
-    })
-    .config(function myAppConfig(WebServiceConfigProvider) {
         WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
-    })
-    .controller('ApplicationController', ['$scope', 'SecurityService', function ApplicationController($scope, SecurityService) {
-        $scope.$root.LS = LS;
-        this.$rootScope.$on('httpError', function(event, message) {
+    }])
+    .controller('ApplicationController', ['$scope', '$location', 'SecurityService', function($scope, $location, SecurityService) {
+        var targetLocation = $location.path();
+        if (targetLocation == "/login") {
+            targetLocation = "/";
+        }
+        $scope.$on('httpError', function(event, message) {
             SecurityService.handleError(message.status, message.data);
         });
-        $scope.$on('authorizationContextReady', function(event, message) {
+        $scope.$on('notAuthorized', function() {
+            $location.path('/login');
+        });
+        $scope.$on('authorizationContextLoading', function() {
+            $location.path('/waiting');
+        });
+        $scope.$on('authorizationContextReady', function() {
+            $location.path(targetLocation);
         });
         $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
-            if (angular.isDefined(toState.data.pageTitle)) {
+            if (angular.isDefined(toState.data) && angular.isDefined(toState.data.pageTitle)) {
                 $scope.pageTitle = toState.data.pageTitle + ' | StudyTrax';
             }
         });
+
+        SecurityService.handleAuthentication();
+        $scope.$root.LS = LS;
     }])
     .run(['SecurityService', function (SecurityService) {
-        SecurityService.handleAuthentication();
     }])
 
 ;

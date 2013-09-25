@@ -51,24 +51,30 @@ describe('SecurityService', function () {
         beforeEach(inject(function () {
             $http.defaults.headers.common[SecurityService.AUTH_HEADER] = null;
             $cookieStore.remove(SecurityService.AUTH_HEADER);
+            spyOn($rootScope, '$broadcast').andCallThrough();
             SecurityService.handleAuthentication();
         }));
 
         it('should redirect to the login page', inject(function () {
-            expect($location.path()).toBe('/login');
+            expect($rootScope.$broadcast).toHaveBeenCalledWith('notAuthorized');
         }));
     });
 
     describe('handleAuthentication (authenticated)', function () {
         beforeEach(inject(function () {
             $cookieStore.put(SecurityService.AUTH_HEADER, "authToken");
+            spyOn($rootScope, '$broadcast').andCallThrough();
             SecurityService.handleAuthentication();
             $rootScope.$apply(); // fix for angular 1.1.4
-            $httpBackend.flush();
         }));
 
-        it('should redirect to the login page', inject(function () {
-            expect($location.path()).toBe('/');
+        it('should broadcast the "authorizationContextLoading" event', inject(function () {
+            expect($rootScope.$broadcast).toHaveBeenCalledWith('authorizationContextLoading');
+        }));
+
+        it('should broadcast the "authorizationContextReady" event', inject(function () {
+            $httpBackend.flush();
+            expect($rootScope.$broadcast).toHaveBeenCalledWith('authorizationContextReady');
         }));
     });
 
