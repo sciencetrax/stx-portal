@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.spec.js" afterPath="$PROJECT_DIR$/src/app/app.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.spec.js" afterPath="$PROJECT_DIR$/src/app/login/login.spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081592626" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084814435" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084483299" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
@@ -49,7 +46,7 @@
     <file path="/AuthenticationService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379946061834" ignored="false" />
     <file path="/SecurityService.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380083598564" ignored="false" />
     <file path="/AuthorizationContext.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379947922524" ignored="false" />
-    <file path="/login.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380076992735" ignored="false" />
+    <file path="/login.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085513386" ignored="false" />
     <file path="/httpStatusCode.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379951863936" ignored="false" />
     <file path="/errorCodes.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379951939090" ignored="false" />
     <file path="/bootbox-mock.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379952106836" ignored="false" />
@@ -60,7 +57,7 @@
     <file path="/webServices.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984258105" ignored="false" />
     <file path="$PROJECT_DIR$/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379966774639" ignored="false" />
     <file path="$PROJECT_DIR$/build/templates-app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379974675425" ignored="false" />
-    <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380075878673" ignored="false" />
+    <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085479610" ignored="false" />
     <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081027058" ignored="false" />
     <file path="/waiting.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380002203553" ignored="false" />
     <file path="/about.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003275961" ignored="false" />
@@ -96,7 +93,7 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+            <state line="30" column="74" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,25 +111,25 @@
       <file leaf-file-name="login.spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0">
+            <state line="69" column="0" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityService.spec.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SecurityService.spec.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2992" selection-end="3087" vertical-scroll-proportion="0.0">
+            <state line="34" column="56" selection-start="1404" selection-end="1633" vertical-scroll-proportion="0.49169436">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.spec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.spec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.9435216">
+            <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,7 +147,7 @@
       <file leaf-file-name="SecurityService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,11 +191,11 @@
         <option value="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
         <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
-        <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
         <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/core/SecurityService.js" />
         <option value="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" />
         <option value="$PROJECT_DIR$/src/app/app.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/core/SecurityService.js" />
       </list>
     </option>
   </component>
@@ -581,7 +578,11 @@
       <created>1380081598051</created>
       <updated>1380081598051</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Refactoring the code to make it more modular">
+      <created>1380084818183</created>
+      <updated>1380084818183</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -650,7 +651,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code to generate the portal XML file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring the code to make it more modular" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -671,6 +672,7 @@
     <MESSAGE value="Adding more unit tests" />
     <MESSAGE value="Importing more code from old source" />
     <MESSAGE value="Added code to generate the portal XML file." />
+    <MESSAGE value="Refactoring the code to make it more modular" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -727,37 +729,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2120" selection-end="2120" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2992" selection-end="3087" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -785,7 +759,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.9435216">
+        <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="74" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="56" selection-start="1404" selection-end="1633" vertical-scroll-proportion="0.49169436">
           <folding />
         </state>
       </provider>

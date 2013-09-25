@@ -63,8 +63,9 @@ describe('LoginController', function () {
             $scope.login();
             $rootScope.$apply(); // fix for angular 1.1.4
             $httpBackend.flush();
-            expect($rootScope.authorizationContext).not.toBe(null);
-            expect($rootScope.authorizationContext.userId).toBe(101);
+            expect(SecurityService.authorizationContext).not.toBe(null);
+            expect(SecurityService.authorizationContext).not.toBe(undefined);
+            expect(SecurityService.authorizationContext.userId).toBe(101);
         }));
 
         it('should bootbox is used to display error messages when an http error occurs', inject(function () {
