@@ -130,6 +130,18 @@ module.exports = function ( grunt ) {
           }
         ]
       },
+      build_vendorcss: {
+        files: [
+          {
+            src: [
+                '<%= vendor_files.css %>'
+            ],
+            dest: '<%= build_dir %>/',
+            cwd: '.',
+            expand: true
+          }
+        ]
+      },
       build_vendorjs: {
         files: [
           {
@@ -366,11 +378,6 @@ module.exports = function ( grunt ) {
       }
     },
     portal: {
-      /**
-       * When it is time to have a completely compiled application, we can
-       * alter the above to include only a single JavaScript and a single CSS
-       * file. Now we're back!
-       */
       compile: {
         dir: '<%= compile_dir %>',
         src: [
@@ -523,7 +530,7 @@ module.exports = function ( grunt ) {
   grunt.registerTask( 'build', [
     'clean', 'html2js', 'jshint', 'recess:build',
     'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
-    'copy:build_appjs', 'copy:build_vendorjs', 'index:build'
+    'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build'
   ]);
 
   /**
@@ -535,13 +542,14 @@ module.exports = function ( grunt ) {
       'copy:compile_assets',
       'ngmin',
       'concat:compile_js',
-      'uglify',
+      // We have this commented out for now because it does not produce valid code.  It
+      // is not clear if this is due to a bug in uglify or our own code.
+//      'uglify',
       'index:compile',
       'portal:compile'
   ]);
-  grunt.registerTask( 'prt', [
-      'portal:compile'
-  ]);
+
+  grunt.registerTask('ponly', ['portal:compile']);
 
   /**
    * A utility function to get all app JavaScript sources.
@@ -589,69 +597,70 @@ module.exports = function ( grunt ) {
     });
   });
 
-    grunt.registerMultiTask( 'portal', 'Process portal.xml template', function () {
-        var dirRE = new RegExp( '^('+grunt.config('build_dir')+'|'+grunt.config('compile_dir')+')\/', 'g' );
-        var jsFiles = filterForJS( this.filesSrc ).map( function ( file ) {
-            return file.replace( dirRE, '' );
-        });
-        var cssFiles = filterForCSS( this.filesSrc ).map( function ( file ) {
-            return file.replace( dirRE, '' );
-        });
-
-        var css = grunt.file.read(this.data.dir + '/' + cssFiles);
-        css = css.replace(/\#/g, "\\#");
-
-        var js = grunt.file.read(this.data.dir + '/' + jsFiles);
-        js = js.replace(/\#/g, "\\#");
-        /*jshint -W100 */
-        // The following line replaces an invalid character '' with a space.  It is not a displayable character (0x0B)
-        /*jshint -W048 */
-        js = js.replace(/\/g, " ");
-
-
-
-        grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
-            process: function ( contents, path ) {
-                return grunt.template.process( contents, {
-                    data: {
-                        scripts: ['#URL(js)'],
-                        styles: ['#URL(css)'],
-                        version: grunt.config( 'pkg.version' )
-                    }
-                });
-            }
-        });
-
-        var index = grunt.file.read(this.data.dir + '/index.html');
-
-//        index = index.replace("assets/.*[.]js", " ");
-
-        grunt.file.copy('src/portal.xml', this.data.dir + '/portal.xml', {
-            process: function ( contents, path ) {
-                return grunt.template.process( contents, {
-                    data: {
-                        html: index,
-                        css: css,
-                        js: js,
-                        created: new Date(),
-                        pkg: grunt.config( 'pkg' )
-                    }
-                });
-            }
-        });
-
-        grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
-            process: function ( contents, path ) {
-                return grunt.template.process( contents, {
-                    data: {
-                        scripts: jsFiles,
-                        styles: cssFiles,
-                        version: grunt.config( 'pkg.version' )
-                    }
-                });
-            }
-        });
+grunt.registerMultiTask( 'portal', 'Process portal.xml template', function () {
+    var dirRE = new RegExp( '^('+grunt.config('build_dir')+'|'+grunt.config('compile_dir')+')\/', 'g' );
+    var jsFiles = filterForJS( this.filesSrc ).map( function ( file ) {
+        return file.replace( dirRE, '' );
     });
+    var cssFiles = filterForCSS( this.filesSrc ).map( function ( file ) {
+        return file.replace( dirRE, '' );
+    });
+
+    var css = grunt.file.read(this.data.dir + '/' + cssFiles);
+    var js = grunt.file.read(this.data.dir + '/' + jsFiles);
+
+    // We need to escape all the #'s for the portal.
+    css = css.replace(/\#/g, "\\#");
+    js = js.replace(/\#/g, "\\#");
+
+    /*jshint -W100 */
+    // The following line replaces an invalid character '' with a space.  It is not a displayable character (0x0B)
+    /*jshint -W048 */
+    js = js.replace(/\/g, " ");
+
+    // Create  a version of index.html that uses the dynamic include functionality to
+    // link in the css and js files.
+    grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
+        process: function ( contents, path ) {
+            return grunt.template.process( contents, {
+                data: {
+                    scripts: ['#URL(js)'],
+                    styles: ['#URL(css)'],
+                    version: grunt.config( 'pkg.version' )
+                }
+            });
+        }
+    });
+
+    var index = grunt.file.read(this.data.dir + '/index.html');
+    // Run the portal.xml template
+    grunt.file.copy('src/portal.xml', this.data.dir + '/portal.xml', {
+        process: function ( contents, path ) {
+            return grunt.template.process( contents, {
+                data: {
+                    html: index,
+                    css: css,
+                    js: js,
+                    created: new Date(),
+                    pkg: grunt.config( 'pkg' )
+                }
+            });
+        }
+    });
+
+    // Reset the index.html back to normal
+    grunt.file.copy('src/index.html', this.data.dir + '/index.html', {
+        process: function ( contents, path ) {
+            return grunt.template.process( contents, {
+                data: {
+                    scripts: jsFiles,
+                    styles: cssFiles,
+                    version: grunt.config( 'pkg.version' )
+                }
+            });
+        }
+    });
+});
 
   /**
    * In order to avoid having to specify manually the files needed for karma to

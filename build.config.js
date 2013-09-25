@@ -69,10 +69,19 @@ module.exports = {
     vendor_files: {
         js: [
             'vendor/jquery/jquery.js',
+//            'vendor/jquery-ui/ui/jquery-ui.js',
+//            'vendor/jquery-ui/ui/jquery.ui.widget.js',
+//            'vendor/jquery-ui/ui/jquery.ui.button.js',
+//            'vendor/jquery-ui/ui/jquery.ui.draggable.js',
+//            'vendor/jquery-ui/ui/jquery.ui.mouse.js',s
+//            'vendor/jquery-ui/ui/jquery.ui.position.js',
+//            'vendor/jquery-ui/ui/jquery.ui.resizable.js',
+//            'vendor/jquery-ui/ui/jquery.ui.dialog.js',
+
             'vendor/angular/angular.js',
             'vendor/angular-cookies/angular-cookies.js',
             'vendor/angular-resource/angular-resource.js',
-            'vendor/angular-route/angular-route.js',
+//            'vendor/angular-route/angular-route.js',
             'vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
             'vendor/angular-ui-router/release/angular-ui-router.js',
             'vendor/angular-ui-utils/modules/route/route.js',
@@ -82,14 +91,19 @@ module.exports = {
             'vendor/stx/navigableHash.js',
             'vendor/stx/baseController.js',
             'vendor/stx/authorizedBaseController.js',
-            '!vendor/stx/bootbox-mock.js',
             'vendor/stx/*.js',
+            '!vendor/stx/bootbox-mock.js',
             '!vendor/stx/*.spec.js'
         ],
         jsunit:  [
             'vendor/stx/**/*.spec.js'
         ],
         css: [
+            'vendor/jquery-ui/themes/base/jquery.ui.core.css',
+            'vendor/jquery-ui/themes/base/jquery.ui.accordion.css',
+            'vendor/jquery-ui/themes/base/jquery.ui.button.css',
+            'vendor/jquery-ui/themes/base/jquery.ui.dialog.css',
+            'vendor/jquery-ui/themes/base/jquery.ui.resizable.css'
         ],
         assets: [
         ]
