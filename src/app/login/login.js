@@ -5,14 +5,14 @@
             'ui.state',
             'stx.core'
         ])
-        .config(function($stateProvider) {
+        .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('login', {
                 url: '/login',
                 controller: 'LoginController',
                 templateUrl: 'login/login.tpl.html',
                 data: { pageTitle: 'Login' }
             });
-        })
+        }])
         .controller("LoginController", ['$scope', '$location', 'Authorization', 'SystemService', 'SecurityService', function ($scope, $location, Authorization, SystemService, SecurityService) {
             SecurityService.removeAuthorization();
 

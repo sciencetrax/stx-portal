@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.spec.js" afterPath="$PROJECT_DIR$/src/app/login/login.spec.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\forms\variableGroupUpdate.js" afterPath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\forms\variableGroupUpdate.tpl.html" afterPath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" afterPath="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.js" afterPath="$PROJECT_DIR$/src/app/home/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.js" afterPath="$PROJECT_DIR$/src/app/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js" afterPath="$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/account/update.js" afterPath="$PROJECT_DIR$/src/app/account/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/waiting.js" afterPath="$PROJECT_DIR$/src/app/common/waiting.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084814435" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085591566" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084483299" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
@@ -22,8 +33,8 @@
     <file path="/build.config.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379957129177" ignored="false" />
     <file path="/Gruntfile-old.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872380975" ignored="false" />
     <file path="/bower.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872800412" ignored="false" />
-    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380082490599" ignored="false" />
-    <file path="/home.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380080273675" ignored="false" />
+    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085939131" ignored="false" />
+    <file path="/home.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086017802" ignored="false" />
     <file path="/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380076738912" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/home/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379877849823" ignored="false" />
     <file path="$PROJECT_DIR$/../ng-boilerplate/src/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379881300036" ignored="false" />
@@ -58,19 +69,20 @@
     <file path="$PROJECT_DIR$/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379966774639" ignored="false" />
     <file path="$PROJECT_DIR$/build/templates-app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379974675425" ignored="false" />
     <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085479610" ignored="false" />
-    <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081027058" ignored="false" />
+    <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086121784" ignored="false" />
     <file path="/waiting.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380002203553" ignored="false" />
     <file path="/about.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003275961" ignored="false" />
-    <file path="/about.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081088461" ignored="false" />
-    <file path="/update.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081057240" ignored="false" />
+    <file path="/about.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086161690" ignored="false" />
+    <file path="/update.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086432938" ignored="false" />
     <file path="/home-profile.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003162541" ignored="false" />
-    <file path="/locale-en.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003258065" ignored="false" />
+    <file path="/locale-en.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085948698" ignored="false" />
     <file path="/home-summary.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003963440" ignored="false" />
     <file path="/portal.xml" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380047056211" ignored="false" />
     <file path="/package.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012649555" ignored="false" />
     <file path="/ErrorService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380077202624" ignored="false" />
     <file path="/incompleteVariableGroupSummariesFilter.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380080801825" ignored="false" />
-    <file path="/variableGroupUpdate.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081211444" ignored="false" />
+    <file path="/variableGroupUpdate.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086520379" ignored="false" />
+    <file path="/metaValidateDirective.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086467858" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +105,7 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="74" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
+            <state line="3" column="23" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,61 +114,79 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="11" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityService.spec.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="56" selection-start="1404" selection-end="1633" vertical-scroll-proportion="0.49169436">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="9" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="556" column="34" selection-start="15146" selection-end="15146" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autofocusDirective.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updateVariableGroup.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.36710963">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/about/about.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metaValidateDirective.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -180,22 +210,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/home/home.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/home/home.js" />
-        <option value="$PROJECT_DIR$/src/app/core/baseController.js" />
-        <option value="$PROJECT_DIR$/src/app/account/update.js" />
-        <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
-        <option value="$PROJECT_DIR$/src/app/about/about.js" />
-        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
-        <option value="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
-        <option value="$PROJECT_DIR$/build.config.js" />
-        <option value="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" />
         <option value="$PROJECT_DIR$/src/app/app.spec.js" />
         <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
         <option value="$PROJECT_DIR$/src/app/core/SecurityService.js" />
+        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/login/login.js" />
+        <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
+        <option value="$PROJECT_DIR$/src/app/about/about.js" />
+        <option value="$PROJECT_DIR$/build.config.js" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/src/app/account/update.js" />
+        <option value="$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js" />
+        <option value="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" />
+        <option value="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home.js" />
+        <option value="$PROJECT_DIR$/src/app/forms/updateVariableGroup.js" />
       </list>
     </option>
   </component>
@@ -262,24 +292,6 @@
               <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -310,28 +322,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,7 +365,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,7 +379,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="karma" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,7 +624,11 @@
       <created>1380084818183</created>
       <updated>1380084818183</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Refactoring the code to make it more modular">
+      <created>1380085595843</created>
+      <updated>1380085595843</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -680,93 +726,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="704" selection-end="704" vertical-scroll-proportion="0.4624">
+        <state line="17" column="14" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.5504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/ErrorService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="521" selection-end="521" vertical-scroll-proportion="0.408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.7790698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="11" selection-start="1361" selection-end="1361" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="2001" selection-end="2001" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="74" selection-start="1803" selection-end="1803" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -778,16 +747,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/stx.core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="56" selection-start="1404" selection-end="1633" vertical-scroll-proportion="0.49169436">
+        <state line="6" column="32" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="9" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="556" column="34" selection-start="15146" selection-end="15146" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.36710963">
           <folding />
         </state>
       </provider>

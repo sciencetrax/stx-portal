@@ -99,11 +99,6 @@ module.exports = {
             'vendor/stx/**/*.spec.js'
         ],
         css: [
-            'vendor/jquery-ui/themes/base/jquery.ui.core.css',
-            'vendor/jquery-ui/themes/base/jquery.ui.accordion.css',
-            'vendor/jquery-ui/themes/base/jquery.ui.button.css',
-            'vendor/jquery-ui/themes/base/jquery.ui.dialog.css',
-            'vendor/jquery-ui/themes/base/jquery.ui.resizable.css'
         ],
         assets: [
         ]

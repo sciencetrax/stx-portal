@@ -4,7 +4,7 @@
     angular.module('stx.common', [
             'ui.state'
         ])
-        .config(function($stateProvider) {
+        .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('waiting', {
                 url: '/waiting',
                 controller: 'WaitingController',
@@ -12,7 +12,7 @@
                 data: { pageTitle: 'waiting' }
             })
             ;
-        })
+        }])
         .controller("WaitingController", function() {
 
         })

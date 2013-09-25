@@ -544,7 +544,7 @@ module.exports = function ( grunt ) {
       'concat:compile_js',
       // We have this commented out for now because it does not produce valid code.  It
       // is not clear if this is due to a bug in uglify or our own code.
-//      'uglify',
+      'uglify',
       'index:compile',
       'portal:compile'
   ]);

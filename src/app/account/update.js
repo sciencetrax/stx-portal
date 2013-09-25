@@ -4,7 +4,7 @@
     angular.module('stx.account', [
             'ui.state'
         ])
-        .config(function($stateProvider) {
+        .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('accountUpdate2', {
                 url: '/account/update',
                 controller: 'AccountUpdateController',
@@ -12,7 +12,7 @@
                 data: { pageTitle: 'Account Update' }
             })
             ;
-        })
+        }])
         .controller('AccountUpdateController', function() {
 
         })

@@ -1,4 +1,6 @@
 ﻿var LOCALE = {
+    appName: "StudyTRAX",
+
 	errorMessages: {
 		AccountLocked: "Your account has been locked.",
 		EmailAddressNotVerified: "Your email address has not been verified.",

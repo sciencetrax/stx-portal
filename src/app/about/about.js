@@ -4,7 +4,7 @@
     angular.module('stx.about', [
             'ui.state'
         ])
-        .config(function($stateProvider) {
+        .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('about', {
                 url: '/about',
                 controller: 'AboutController',
@@ -12,7 +12,7 @@
                 data: { pageTitle: 'About' }
             })
             ;
-        })
+        }])
         .controller("AboutController", function() {
 
         })

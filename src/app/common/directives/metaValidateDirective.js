@@ -1,5 +1,5 @@
 ﻿angular.module('metaValidate', [])
-    .directive('metaValidate', function ($compile) {
+    .directive('metaValidate', ['$compile', function ($compile) {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
@@ -37,5 +37,5 @@
                 });
             }
         };
-    })
+    }])
 ;

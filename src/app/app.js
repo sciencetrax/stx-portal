@@ -27,7 +27,8 @@ angular.module('stx', [
     }])
     .controller('ApplicationController', ['$scope', '$location', 'SecurityService', function($scope, $location, SecurityService) {
         var targetLocation = $location.path();
-        if (targetLocation == "/login") {
+        if (targetLocation == "/login"
+            || targetLocation == "/waiting") {
             targetLocation = "/";
         }
         $scope.$on('httpError', function(event, message) {
@@ -44,14 +45,11 @@ angular.module('stx', [
         });
         $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
             if (angular.isDefined(toState.data) && angular.isDefined(toState.data.pageTitle)) {
-                $scope.pageTitle = toState.data.pageTitle + ' | StudyTrax';
+                $scope.pageTitle = toState.data.pageTitle + ' | ' + LS.appName;
             }
         });
 
         SecurityService.handleAuthentication();
         $scope.$root.LS = LS;
     }])
-    .run(['SecurityService', function (SecurityService) {
-    }])
-
 ;
