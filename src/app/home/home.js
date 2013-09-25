@@ -26,7 +26,7 @@
             };
 
             $scope.projectVariableGroups = SubjectVariableGroupSummary.query(securityProfile, function (data) {
-                $scope.incompleteProjectVariableGroups = $filter('incompleteVariableGroupSummaries')(data);
+                $scope.incompleteSummaries = $filter('incompleteVariableGroupSummaries')(data);
             });
             $scope.encounters = ScheduledEncounter.query(securityProfile);
         }])

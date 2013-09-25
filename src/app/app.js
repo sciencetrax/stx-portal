@@ -6,6 +6,7 @@ angular.module('stx', [
         'stx.account',
         'stx.common',
         'stx.core',
+        'stx.forms',
         'stx.home',
         'stx.login',
         'ngCookies',

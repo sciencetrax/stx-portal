@@ -50,6 +50,6 @@ describe('HomeController', function () {
     }));
 
     it('should add 2 incomplete variable groups to the scope', inject(function () {
-        expect($scope.incompleteProjectVariableGroups.length).toBe(2);
+        expect($scope.incompleteSummaries.length).toBe(2);
     }));
 });

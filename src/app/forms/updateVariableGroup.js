@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    angular.module('stx.forms.updateVariableGroup', [
+    angular.module('stx.forms.update.variablegroup', [
             'ui.state'
         ])
         .config(['$stateProvider', function($stateProvider) {
@@ -14,7 +14,6 @@
             ;
         }])
         .controller("UpdateVariableGroupController", function() {
-
         })
     ;
 }());
