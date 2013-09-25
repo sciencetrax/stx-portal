@@ -1,13 +1,5 @@
-var AboutController;
 (function () {
     "use strict";
-
-    AboutController = AuthorizedBaseController.extend({
-        init: function ($scope) {
-            this._super($scope);
-        }
-    });
-    AboutController.$inject = ['$scope'];
 
     angular.module('stx.about', [
             'ui.state'
@@ -21,7 +13,9 @@ var AboutController;
             })
             ;
         })
-        .controller("AboutController", AboutController)
+        .controller("AboutController", function() {
+
+        })
     ;
 }());
 

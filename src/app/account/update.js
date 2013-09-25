@@ -1,13 +1,5 @@
-var AccountUpdateController;
 (function () {
     "use strict";
-
-    AccountUpdateController = AuthorizedBaseController.extend({
-        init: function ($scope) {
-            this._super($scope);
-        }
-    });
-    AccountUpdateController = ['$scope'];
 
     angular.module('stx.account', [
             'ui.state'
@@ -21,7 +13,9 @@ var AccountUpdateController;
             })
             ;
         })
-        .controller('AccountUpdateController', AccountUpdateController)
+        .controller('AccountUpdateController', function() {
+
+        })
     ;
 }());
 

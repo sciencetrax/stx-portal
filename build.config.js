@@ -44,7 +44,7 @@ module.exports = {
     test_files: {
         js: [
             'vendor/angular-mocks/angular-mocks.js',
-            'vendor/bootbox/bootbox-mock.js'
+            'vendor/stx/bootbox-mock.js'
         ]
     },
 

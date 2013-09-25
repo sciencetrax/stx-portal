@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/ErrorService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/stx.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.tpl.html" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\SecurityService.spec.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\WebServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\authorizedBaseController.js" afterPath="$PROJECT_DIR$/src/app/core/authorizedBaseController.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\authorizedBaseController.spec.js" afterPath="$PROJECT_DIR$/src/app/core/authorizedBaseController.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\baseController.js" afterPath="$PROJECT_DIR$/src/app/core/baseController.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\baseController.spec.js" afterPath="$PROJECT_DIR$/src/app/core/baseController.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\windows-phone-8-fix.js" afterPath="$PROJECT_DIR$/src/app/core/windows-phone-8-fix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.js" afterPath="$PROJECT_DIR$/src/app/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.spec.js" afterPath="$PROJECT_DIR$/src/app/home/home.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.js" afterPath="$PROJECT_DIR$/src/app/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.spec.js" afterPath="$PROJECT_DIR$/src/app/login/login.spec.js" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\authorizedBaseController.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\authorizedBaseController.spec.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\baseController.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\baseController.spec.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\script\locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" afterPath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/karma/karma-unit.tpl.js" afterPath="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/account/update.js" afterPath="$PROJECT_DIR$/src/app/account/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" afterPath="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/waiting.js" afterPath="$PROJECT_DIR$/src/app/common/waiting.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380074777106" ignored="false" />
+    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380080965780" ignored="false" />
     <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
     <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012023871" ignored="false" />
     <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
@@ -76,11 +68,11 @@
     <file path="$PROJECT_DIR$/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379966774639" ignored="false" />
     <file path="$PROJECT_DIR$/build/templates-app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379974675425" ignored="false" />
     <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380075878673" ignored="false" />
-    <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380000597935" ignored="false" />
+    <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081027058" ignored="false" />
     <file path="/waiting.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380002203553" ignored="false" />
     <file path="/about.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003275961" ignored="false" />
-    <file path="/about.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380001176192" ignored="false" />
-    <file path="/update.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003610847" ignored="false" />
+    <file path="/about.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081088461" ignored="false" />
+    <file path="/update.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081057240" ignored="false" />
     <file path="/home-profile.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003162541" ignored="false" />
     <file path="/locale-en.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003258065" ignored="false" />
     <file path="/home-summary.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003963440" ignored="false" />
@@ -88,6 +80,7 @@
     <file path="/package.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012649555" ignored="false" />
     <file path="/ErrorService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380077202624" ignored="false" />
     <file path="/incompleteVariableGroupSummariesFilter.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380080801825" ignored="false" />
+    <file path="/variableGroupUpdate.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380081211444" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,80 +99,7 @@
     <favorites_list name="stx-portal" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseController.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/baseController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="incompleteVariableGroupSummariesFilter.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityService.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="44" selection-start="3142" selection-end="3142" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1221" selection-end="1332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.spec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -197,12 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/core/baseController.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/core/authorizedBaseController.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/core/SecurityService.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
-        <option value="$PROJECT_DIR$/src/app/core/ErrorService.js" />
         <option value="$PROJECT_DIR$/src/app/core/stx.core.js" />
         <option value="$PROJECT_DIR$/src/app/core/SecurityService.spec.js" />
         <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
@@ -210,9 +124,15 @@
         <option value="$PROJECT_DIR$/src/app/login/login.js" />
         <option value="$PROJECT_DIR$/src/app/home/home.spec.js" />
         <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
         <option value="$PROJECT_DIR$/src/app/home/home.js" />
         <option value="$PROJECT_DIR$/src/app/core/baseController.js" />
+        <option value="$PROJECT_DIR$/src/app/account/update.js" />
+        <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
+        <option value="$PROJECT_DIR$/src/app/about/about.js" />
+        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
+        <option value="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
+        <option value="$PROJECT_DIR$/build.config.js" />
+        <option value="$PROJECT_DIR$/karma/karma-unit.tpl.js" />
       </list>
     </option>
   </component>
@@ -276,6 +196,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -316,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
+              <option name="myItemId" value="forms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,7 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="account" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,7 +312,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="about" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="karma" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,7 +507,11 @@
       <created>1380074781450</created>
       <updated>1380074781450</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added code to generate the portal XML file.">
+      <created>1380080969740</created>
+      <updated>1380080969740</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -553,7 +523,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28303966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16394307" sideWeight="0.7169604" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16394307" sideWeight="0.7169604" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -638,27 +608,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="3628" selection-end="3628" vertical-scroll-proportion="0.2784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/ErrorService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="42" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="29" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0544">
@@ -669,20 +618,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/core/stx.core.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="28" selection-start="155" selection-end="155" vertical-scroll-proportion="0.136">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/authorizedBaseController.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/baseController.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0816">
           <folding />
         </state>
       </provider>
@@ -715,37 +650,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
+    <entry file="file://$PROJECT_DIR$/karma/karma-unit.tpl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1221" selection-end="1332" vertical-scroll-proportion="0.0">
+        <state line="29" column="7" selection-start="755" selection-end="755" vertical-scroll-proportion="0.5712">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4352">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="24" selection-start="573" selection-end="573" vertical-scroll-proportion="0.3536">
+        <state line="17" column="14" selection-start="704" selection-end="704" vertical-scroll-proportion="0.4624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="481" selection-end="481" vertical-scroll-proportion="0.544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="23" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.5504">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.6944444">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/baseController.js">
+    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="521" selection-end="521" vertical-scroll-proportion="0.408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1221" selection-end="1332" vertical-scroll-proportion="0.9456">
           <folding />
         </state>
       </provider>
