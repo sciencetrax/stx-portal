@@ -1,12 +1,11 @@
 describe('SecurityService', function () {
-    beforeEach(module('stxSecurityService'));
+    beforeEach(module('stx.core'));
     var $http;
     var $httpBackend;
     var $location;
     var $cookieStore;
     var $rootScope;
     var SecurityService;
-
     beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
@@ -47,6 +46,7 @@ describe('SecurityService', function () {
             expect($http.defaults.headers.common[SecurityService.AUTH_HEADER]).toBe('authToken');
         }));
     });
+
     describe('handleAuthentication (not authenticated)', function () {
         beforeEach(inject(function () {
             $http.defaults.headers.common[SecurityService.AUTH_HEADER] = null;

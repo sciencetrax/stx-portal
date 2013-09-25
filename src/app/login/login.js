@@ -1,31 +1,9 @@
-var LoginController;
 (function () {
     "use strict";
 
-    LoginController = BaseController.extend({
-        init: function ($scope, $location, Authorization, SecurityService) {
-            var _controller = this;
-            _controller._super($scope);
-
-            SecurityService.removeAuthorization();
-            var authorization = new Authorization();
-            $scope.authorization = authorization;
-            $scope.login = function () {
-                authorization.portalCode = "pt";
-                authorization.$save(function (data) {
-                    SecurityService.authorize(data.authorization);
-                }, function (data) {
-                    _controller._handleError(data.data);
-                });
-            };
-        }
-    });
-    LoginController.$inject = ['$scope', '$location', 'Authorization', 'SecurityService'];
-
     angular.module('stx.login', [
             'ui.state',
-            'stxSecurityService',
-            'stxWebServices'
+            'stx.core'
         ])
         .config(function($stateProvider) {
             $stateProvider.state('login', {
@@ -35,6 +13,18 @@ var LoginController;
                 data: { pageTitle: 'Login' }
             });
         })
-        .controller("LoginController", LoginController)
+        .controller("LoginController", ['$scope', '$location', 'Authorization', 'SystemService', 'SecurityService', function ($scope, $location, Authorization, SystemService, SecurityService) {
+            SecurityService.removeAuthorization();
+
+            $scope.authorization = new Authorization();
+            $scope.login = function () {
+                $scope.authorization.portalCode = "pt";
+                $scope.authorization.$save(function (data) {
+                    SecurityService.authorize(data.authorization);
+                }, function (data) {
+                    SystemService.handleError(data.data);
+                });
+            };
+        }])
     ;
 }());

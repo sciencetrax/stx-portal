@@ -5,32 +5,33 @@ describe('HomeController', function () {
     var $scope;
     var $controller;
     var controller;
+    var SecurityService;
 
     beforeEach(module('stx.home'));
 
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $rootScope = _$rootScope_;
         $scope = $rootScope.$new();
         $controller = _$controller_;
-        $rootScope.authorizationContext = {
+        SecurityService = _SecurityService_;
+        SecurityService.authorizationContext = {
             customerId: 100,
-            projectId: 200,
             subject: {
-                id: 300,
+                id: 200,
                 projects: [
-                    {projectId: 400, siteId: 500 }
+                    {projectId: 300, siteId: 400 }
                 ]
             }
         };
-        $httpBackend.when('GET', '/api/customers/100/projects/200/sites/500/subjects/300/scheduledencounters').respond(HttpStatusCodes.ok, [
+        $httpBackend.when('GET', '/api/customers/100/projects/300/sites/400/subjects/200/scheduledencounters').respond(HttpStatusCodes.ok, [
             { name: 'Baseline' },
             { name: 'Month 1' },
             { name: 'Month 2' },
             { name: 'Month 3' }
         ]);
-        $httpBackend.when('GET', '/api/customers/100/projects/200/sites/500/subjects/300/variablegroupsummaries').respond(HttpStatusCodes.ok, [
+        $httpBackend.expect('GET', '/api/customers/100/projects/300/sites/400/subjects/200/variablegroupsummaries').respond(HttpStatusCodes.ok, [
             { percentComplete: 0.1 },
             { percentComplete: 0.2 },
             { percentComplete: 1 }

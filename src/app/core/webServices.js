@@ -1,6 +1,6 @@
 ﻿var serviceActions = { update: { method: "PUT" } };
 
-var m = angular.module('stxWebServices', [
+angular.module('stx.core.webService', [
             'ngResource'
         ])
         .provider('WebServiceConfig', function () {
@@ -27,7 +27,7 @@ var m = angular.module('stxWebServices', [
                 password: '@password'
             });
         }])
-        .factory('AuthorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
             return $resource(WebServicesConfig.getBaseUrl() + 'authorizationcontext');
         }])
         .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {

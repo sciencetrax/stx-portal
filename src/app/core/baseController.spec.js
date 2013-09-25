@@ -1,7 +1,7 @@
 describe('BaseController', function () {
     var $scope;
     var controller;
-
+/*
     beforeEach(inject(function(_$rootScope_, _$controller_) {
         $scope = _$rootScope_.$new();
         controller = _$controller_('BaseController', { $scope: $scope });
@@ -20,4 +20,5 @@ describe('BaseController', function () {
             expect(bootbox.alertmessage).toBe(LS.errorMessages.AccountLocked);
         }));
     });
+    /**/
 });

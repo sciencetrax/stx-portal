@@ -23,6 +23,7 @@ describe('LoginController', function () {
         SecurityService = _SecurityService_;
         $controller = _$controller_;
 
+        $rootScope.LS = LS;
 
         $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
         $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
@@ -41,7 +42,6 @@ describe('LoginController', function () {
         it('should not be null', inject(function () {
             expect(LoginController).not.toBe(null);
         }));
-
         it('should remove the cookie', inject(function () {
             expect($cookieStore.get(SecurityService.AUTH_HEADER)).toBe(undefined);
         }));
@@ -49,7 +49,6 @@ describe('LoginController', function () {
         it('should remove the auth header', inject(function () {
             expect($http.defaults.headers.common[SecurityService.AUTH_HEADER]).toBe(null);
         }));
-        /**/
     });
     describe('login', function () {
         beforeEach(inject(function () {
@@ -83,5 +82,4 @@ describe('LoginController', function () {
             expect(bootbox.alertmessage).toBe(LS.errorMessages.InvalidUsernameOrPassword);
         }));
     });
-    /**/
 });

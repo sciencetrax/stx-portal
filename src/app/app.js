@@ -1,11 +1,11 @@
 angular.module('stx', [
         'ngResource',
-        'stxWebServices',
         'templates-app',
         'templates-common',
         'stx.about',
         'stx.account',
         'stx.common',
+        'stx.core',
         'stx.home',
         'stx.login',
         'ngCookies',
@@ -29,7 +29,13 @@ angular.module('stx', [
     .config(function myAppConfig(WebServiceConfigProvider) {
         WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
     })
-    .controller('ApplicationController', ['$scope', function ApplicationController($scope) {
+    .controller('ApplicationController', ['$scope', 'SecurityService', function ApplicationController($scope, SecurityService) {
+        $scope.$root.LS = LS;
+        this.$rootScope.$on('httpError', function(event, message) {
+            SecurityService.handleError(message.status, message.data);
+        });
+        $scope.$on('authorizationContextReady', function(event, message) {
+        });
         $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
             if (angular.isDefined(toState.data.pageTitle)) {
                 $scope.pageTitle = toState.data.pageTitle + ' | StudyTrax';
