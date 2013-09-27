@@ -8,7 +8,7 @@
             $stateProvider.state('accountUpdate2', {
                 url: '/account/update',
                 controller: 'AccountUpdateController',
-                templateUrl: 'account/update.tpl.html',
+                templateUrl: 'account/view.tpl.html',
                 data: { pageTitle: 'Account Update' }
             })
             ;

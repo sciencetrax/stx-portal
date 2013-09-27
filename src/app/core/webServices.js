@@ -37,6 +37,11 @@ angular.module('stx.core.webService', [
             return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters');
         }])
 
+
+
+
+
+
         .factory('Account', ['$resource', '$http', function ($resource, $http) {
             return $resource(applicationPath + 'api/customers/:customerId/users/:id', {
                 customerId: '@customerId',

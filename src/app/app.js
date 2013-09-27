@@ -1,17 +1,18 @@
 angular.module('stx', [
         'ngResource',
+        'ngCookies',
+        'ui.state',
+        'ui.route',
         'templates-app',
         'templates-common',
         'stx.about',
         'stx.account',
         'stx.common',
         'stx.core',
-        'stx.forms',
+        'stx.encounters',
         'stx.home',
         'stx.login',
-        'ngCookies',
-        'ui.state',
-        'ui.route'
+        'stx.variablegroups'
     ])
     .factory('SecurityResponseErrorInterceptor', ['$q', '$rootScope', function ($q, $rootScope) {
         return {

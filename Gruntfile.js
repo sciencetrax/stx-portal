@@ -595,6 +595,17 @@ module.exports = function ( grunt ) {
         });
       }
     });
+    grunt.file.copy('src/variableGroupUpdate.html', this.data.dir + '/variableGroupUpdate.html', {
+      process: function ( contents, path ) {
+          return grunt.template.process( contents, {
+              data: {
+                  scripts: jsFiles,
+                  styles: cssFiles,
+                  version: grunt.config( 'pkg.version' )
+              }
+          });
+      }
+    });
   });
 
 grunt.registerMultiTask( 'portal', 'Process portal.xml template', function () {

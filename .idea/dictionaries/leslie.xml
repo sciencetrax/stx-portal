@@ -4,6 +4,8 @@
       <w>bootbox</w>
       <w>jsunit</w>
       <w>tpls</w>
+      <w>variablegroup</w>
+      <w>variablegroups</w>
     </words>
   </dictionary>
 </component>

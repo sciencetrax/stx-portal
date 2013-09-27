@@ -30,7 +30,10 @@ var SecurityService;
             });
         },
         handleAuthentication: function () {
-            var authorization = this.$cookieStore.get(this.AUTH_HEADER);
+            var authorization;
+            try {
+                authorization = this.$cookieStore.get(this.AUTH_HEADER);
+            } catch (e) {}
             if (authorization == null) {
                 this.$rootScope.$broadcast('notAuthorized');
                 return;

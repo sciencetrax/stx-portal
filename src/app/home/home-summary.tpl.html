@@ -4,7 +4,7 @@
 		<div ng-include src="'common/variableGroupSummary.tpl.html'"></div>
 	</li>
 	<li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
-		<a href="#/viewEncounter/forms--{{item.intervalId}}">{{item.name}}</a>
+		<a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">{{item.name}}</a>
 		<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
 	</li>
 </ul>

@@ -1,0 +1,10 @@
+<div>
+    <h1>Forms
+        <small>All Incomplete</small>
+    </h1>
+    <ul class="list-group">
+        <li ng-repeat="item in encounter.variableGroups" class="list-group-item" variablegroupid="{{item.id}}">
+            <div ng-include src="'common/variableGroupSummary.tpl.html'"></div>
+        </li>
+    </ul>
+</div>

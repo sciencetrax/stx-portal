@@ -1,85 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/forms/forms.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\variable-group-summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="Fixed bug where dependency injection was being inferred that was breaking the minification.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/site.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/variableGroupUpdate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\forms\forms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\forms\updateVariableGroup.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\forms\updateVariableGroup.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.js" afterPath="$PROJECT_DIR$/src/app/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.spec.js" afterPath="$PROJECT_DIR$/src/app/home/home.spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.js" afterPath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html" afterPath="$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/leslie.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/leslie.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/account/update.js" afterPath="$PROJECT_DIR$/src/app/account/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380125472765" ignored="false" />
-    <file path="/.gitignore" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379827423942" ignored="false" />
-    <file path="/a.dummy" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084483299" ignored="false" />
-    <file path="/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379828139920" ignored="false" />
-    <file path="/app.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380084729599" ignored="false" />
-    <file path="/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380074952862" ignored="false" />
-    <file path="/navigableHash.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379868338792" ignored="false" />
-    <file path="/README.md" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379869333724" ignored="false" />
-    <file path="/navigableHash.spec.jjs" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379868679821" ignored="false" />
-    <file path="/navigableHash.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379873546812" ignored="false" />
-    <file path="/Gruntfile.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380054935248" ignored="false" />
-    <file path="/build.config.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379957129177" ignored="false" />
-    <file path="/Gruntfile-old.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872380975" ignored="false" />
-    <file path="/bower.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379872800412" ignored="false" />
-    <file path="/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085939131" ignored="false" />
-    <file path="/home.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380087133659" ignored="false" />
-    <file path="/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380087152796" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/home/home.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379877849823" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/src/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379881300036" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/home/home.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379876702756" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/bower.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379876680445" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/src/less/main.less" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379876849494" ignored="false" />
-    <file path="/main.less" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380005158678" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/build.config.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379880546192" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/Gruntfile.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379880546192" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/vendor/stx/navigableHash.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379878977991" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379878216868" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/build/karma-unit.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379878216868" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/src/app/app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379880559634" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/karma/karma-unit.tpl.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379880546192" ignored="false" />
-    <file path="$PROJECT_DIR$/../ng-boilerplate/package.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379880546192" ignored="false" />
-    <file path="/home.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380004342913" ignored="false" />
-    <file path="$PROJECT_DIR$/build/assets/stx-portal-0.0.1.css" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379883529352" ignored="false" />
-    <file path="/baseController.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379955969131" ignored="false" />
-    <file path="/login.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380078334153" ignored="false" />
-    <file path="/AuthenticationService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379946061834" ignored="false" />
-    <file path="/SecurityService.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380083598564" ignored="false" />
-    <file path="/AuthorizationContext.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379947922524" ignored="false" />
-    <file path="/login.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085513386" ignored="false" />
-    <file path="/httpStatusCode.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379951863936" ignored="false" />
-    <file path="/errorCodes.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379951939090" ignored="false" />
-    <file path="/bootbox-mock.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379952106836" ignored="false" />
-    <file path="/baseController.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379953732262" ignored="false" />
-    <file path="/WebServices.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379955284741" ignored="false" />
-    <file path="/authorizedBaseController.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380002312817" ignored="false" />
-    <file path="/fragment.js2" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379994347505" ignored="false" />
-    <file path="/webServices.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379984258105" ignored="false" />
-    <file path="$PROJECT_DIR$/build/index.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379966774639" ignored="false" />
-    <file path="$PROJECT_DIR$/build/templates-app.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1379974675425" ignored="false" />
-    <file path="/SecurityService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085479610" ignored="false" />
-    <file path="/waiting.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086121784" ignored="false" />
-    <file path="/waiting.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380002203553" ignored="false" />
-    <file path="/about.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003275961" ignored="false" />
-    <file path="/about.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086161690" ignored="false" />
-    <file path="/update.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086432938" ignored="false" />
-    <file path="/home-profile.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380003162541" ignored="false" />
-    <file path="/locale-en.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380085948698" ignored="false" />
-    <file path="/home-summary.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380087232232" ignored="false" />
-    <file path="/portal.xml" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380047056211" ignored="false" />
-    <file path="/package.json" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380012649555" ignored="false" />
-    <file path="/ErrorService.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380077202624" ignored="false" />
-    <file path="/incompleteVariableGroupSummariesFilter.spec.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380080801825" ignored="false" />
-    <file path="/variableGroupUpdate.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380088253150" ignored="false" />
-    <file path="/metaValidateDirective.js" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380086467858" ignored="false" />
-    <file path="/variable-group-summary.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380088147136" ignored="false" />
-    <file path="/updateVariableGroup.tpl.html" changelist="13797414-dc01-4665-bb16-2135688abd4d" time="1380089374913" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,44 +51,47 @@
       <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="23" selection-start="1636" selection-end="1655" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="473" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.spec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
+      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="41" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
+            <state line="18" column="46" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.js">
+      <file leaf-file-name="view-details.tpl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.1981352" vertical-offset="0" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/forms/forms.js">
+      <file leaf-file-name="view-reports.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="3" column="35" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateVariableGroup.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.js">
+      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="36" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+              <folding>
+                <marker date="1380255321494" expanded="true" signature="1546:1794" placeholder="[...]" />
+                <marker date="1380255321494" expanded="true" signature="1620:1793" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,28 +99,17 @@
       <file leaf-file-name="home-summary.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="49" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+            <state line="6" column="73" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variableGroupSummary.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
+      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+            <state line="6" column="10" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateVariableGroup.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="84" selection-start="200" selection-end="200" vertical-scroll-proportion="0.079254076">
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -176,16 +117,7 @@
       <file leaf-file-name="home.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="665" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="90" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -209,22 +141,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/about/about.js" />
-        <option value="$PROJECT_DIR$/build.config.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/src/app/account/update.js" />
-        <option value="$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js" />
-        <option value="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" />
-        <option value="$PROJECT_DIR$/src/app/forms/variableGroupUpdate.js" />
-        <option value="$PROJECT_DIR$/src/app/common/variable-group-summary.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/home/home.js" />
-        <option value="$PROJECT_DIR$/src/app/home/home.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/variablegroup/variableGroup.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/variablegroup/update.js" />
         <option value="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/variableGroupUpdate.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/encounters.js" />
+        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/module.js" />
         <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/forms/forms.js" />
-        <option value="$PROJECT_DIR$/src/app/forms/updateVariableGroup.js" />
-        <option value="$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
       </list>
     </option>
   </component>
@@ -302,6 +234,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-ui-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -342,7 +292,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encounters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,50 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,21 +387,22 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\temp\stx-portal\src\app\forms" />
-      <recent name="C:\temp\stx-portal\src\app\home" />
-      <recent name="C:\temp\stx-portal\src\app\core" />
+      <recent name="C:\temp\stx-portal\src\app\encounters" />
       <recent name="C:\temp\stx-portal\src" />
-      <recent name="C:\temp\stx-portal\src\app\common" />
+      <recent name="C:\temp\stx-portal\src\app\variablegroup" />
+      <recent name="C:\temp\stx-portal\src\less" />
+      <recent name="C:\temp\stx-portal\src\app\forms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\temp\stx-portal\src\app\core" />
@@ -462,12 +413,26 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Firefox">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -477,18 +442,14 @@
       <setting name="preferredDebugBrowser" value="CHROME" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="false" name="Firefox" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="firefox" />
-        <option name="fileUrl" value="file://$PROJECT_DIR$/build/index.html" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Firefox" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" engineId="firefox" uri="file://$PROJECT_DIR$/build/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -609,17 +570,23 @@
       <created>1380086931304</created>
       <updated>1380086931304</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixed bug where dependency injection was being inferred that was breaking the minification.">
+      <created>1380125681489</created>
+      <updated>1380125681489</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19273128" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16394307" sideWeight="0.69162995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.6615385" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -629,7 +596,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30837005" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -640,58 +606,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Fixing build issues" />
     <MESSAGE value="importing more code from old project" />
     <MESSAGE value="Adding unit tests" />
@@ -701,6 +618,7 @@
     <MESSAGE value="Added code to generate the portal XML file." />
     <MESSAGE value="Refactoring the code to make it more modular" />
     <MESSAGE value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,105 +626,124 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.config.js">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="3912" selection-end="3912" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="556" column="34" selection-start="15146" selection-end="15146" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/directives/metaValidateDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/about/about.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="41" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.0">
+        <state line="48" column="0" selection-start="4054" selection-end="4054" vertical-scroll-proportion="0.7692308" vertical-offset="166" max-vertical-offset="1037">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
+    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+        <state line="12" column="14" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding>
+            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: '/variablegroups/update'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="23" selection-start="1636" selection-end="1655" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding>
+            <marker date="1380254517953" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0">
+        <state line="13" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/forms/forms.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="36" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <folding>
+            <marker date="1380255321494" expanded="true" signature="1546:1794" placeholder="[...]" />
+            <marker date="1380255321494" expanded="true" signature="1620:1793" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.js">
+    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+        <state line="6" column="73" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="665" vertical-scroll-proportion="-0.0">
+        <state line="6" column="0" selection-start="90" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/forms/updateVariableGroup.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="84" selection-start="200" selection-end="200" vertical-scroll-proportion="0.079254076">
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="14" column="0" selection-start="473" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="35" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="436" selection-end="436" vertical-scroll-proportion="0.35664335" vertical-offset="0" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="46" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.1981352" vertical-offset="0" max-vertical-offset="858">
+          <folding />
         </state>
       </provider>
     </entry>
