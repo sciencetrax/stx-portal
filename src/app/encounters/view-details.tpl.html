@@ -2,9 +2,16 @@
     <h1>Forms
         <small>All Incomplete</small>
     </h1>
-    <ul class="list-group">
-        <li ng-repeat="item in encounter.variableGroups" class="list-group-item" variablegroupid="{{item.id}}">
-            <div ng-include src="'common/variableGroupSummary.tpl.html'"></div>
-        </li>
-    </ul>
+    <div id="variable-panel-code">
+        <input id='NotCollectedVariableGroupIds' type='hidden'/>
+        <input id='NotCollectedVariableIds' type='hidden'/>
+    </div>
+
+    <div class="DataEntryPanel">
+        <ul class="list-group">
+            <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
+                <div ng-include src="'common/variableGroupSummary.tpl.html'"></div>
+            </li>
+        </ul>
+    </div>
 </div>

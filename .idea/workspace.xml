@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="Fixed bug where dependency injection was being inferred that was breaking the minification.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/site.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/variableGroupUpdate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
-      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\forms\forms.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\forms\updateVariableGroup.js" afterPath="" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\forms\updateVariableGroup.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/leslie.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/leslie.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/account/update.js" afterPath="$PROJECT_DIR$/src/app/account/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -60,16 +42,25 @@
       <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="46" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+            <state line="27" column="51" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-details.tpl.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="view-details.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.1981352" vertical-offset="0" max-vertical-offset="858">
+            <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variableGroupSummary.tpl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.039627038" vertical-offset="0" max-vertical-offset="858">
               <folding />
             </state>
           </provider>
@@ -87,11 +78,8 @@
       <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-              <folding>
-                <marker date="1380255321494" expanded="true" signature="1546:1794" placeholder="[...]" />
-                <marker date="1380255321494" expanded="true" signature="1620:1793" placeholder="{...}" />
-              </folding>
+            <state line="38" column="37" selection-start="1814" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,7 +87,16 @@
       <file leaf-file-name="home-summary.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="73" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
+            <state line="15" column="6" selection-start="739" selection-end="739" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="7" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-27.923077" vertical-offset="294" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -108,7 +105,7 @@
       <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+            <state line="7" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -142,7 +139,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/app/variablegroup/variableGroup.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/variablegroup/update.js" />
         <option value="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
         <option value="$PROJECT_DIR$/src/variableGroupUpdate.html" />
@@ -151,11 +147,12 @@
         <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/module.js" />
         <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
         <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
+        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
       </list>
     </option>
@@ -271,28 +268,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,19 +549,24 @@
       <created>1380125681489</created>
       <updated>1380125681489</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Adding support for updating encounters">
+      <created>1380259118416</created>
+      <updated>1380259118417</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19273128" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.6615385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.6615385" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -596,7 +576,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -618,7 +597,8 @@
     <MESSAGE value="Added code to generate the portal XML file." />
     <MESSAGE value="Refactoring the code to make it more modular" />
     <MESSAGE value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
+    <MESSAGE value="Adding support for updating encounters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding support for updating encounters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -626,20 +606,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="4054" selection-end="4054" vertical-scroll-proportion="0.7692308" vertical-offset="166" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="14" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
@@ -670,23 +636,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding>
-            <marker date="1380255321494" expanded="true" signature="1546:1794" placeholder="[...]" />
-            <marker date="1380255321494" expanded="true" signature="1620:1793" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="73" selection-start="484" selection-end="484" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
@@ -726,23 +675,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
+    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+        <state line="15" column="6" selection-start="739" selection-end="739" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="37" selection-start="1814" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="7" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-27.923077" vertical-offset="294" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+        <state line="7" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="51" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.1981352" vertical-offset="0" max-vertical-offset="858">
+        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.039627038" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>

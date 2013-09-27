@@ -36,6 +36,9 @@ angular.module('stx.core.webService', [
         .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
             return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters');
         }])
+        .factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript?intervalId=:intervalId&encounterId=encounterId');
+        }])
 
 
 
