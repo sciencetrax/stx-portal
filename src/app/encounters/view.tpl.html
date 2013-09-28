@@ -8,14 +8,15 @@
         <div ui-view></div>
     </div>
 
-    Route: {{"" + $state.includes('encountersView.details')}}
-
     <!-- FOOTER NAVBAR -->
     <div class="navbar navbar-fixed-bottom footer">
         <div class="btn-group btn-group-justified">
-            <a ui-sref="encountersView({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})" class="btn" ng-class="{active:$state.includes('encountersView.details')}">Details</a>
-            <!--<a ui-route="/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}" href="#/encounters/view/{{encounter.intervalId}}/{{encounter.encounterId}}" class="btn" ng-class="{active:$uiRoute}">Details</a>-->
-            <a ui-route="/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}/reports" href="#/encounters/view/{{encounter.intervalId}}/{{encounter.encounterId}}/reports" class="btn" ng-class="{active:$uiRoute}">Reports</a>
+            <a class="btn"
+               ui-sref="encounters.view({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})"
+               ng-class="{active:$state.includes('encounters.view.details')}">{{ LS.pages.encounters.view.details }}</a>
+            <a class="btn"
+               ui-sref="encounters.view({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})"
+               ng-class="{active:$state.includes('encounters.view.reports')}">Reports</a>
         </div>
     </div>
 </div>

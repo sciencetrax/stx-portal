@@ -30,20 +30,23 @@
                 }, function (data) {
                     $('#VariableToolsMenu').remove();
                     var dataEntryPanel = $('.DataEntryPanel');
+
+                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
+                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
+                    for (var index = 0; index < data.dependentVariables.length; index++) {
+                        var variable = data.dependentVariables[index];
+                        dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
+                    }
+
                     var scriptDiv = $('#variable-panel-code');
                     var script = $('<script/>');
                     script.append(data.project);
                     script.append(data.interval);
                     script.append(data.encounter);
-                    scriptDiv.html(script);
-
-                    for (var index = 0; index < data.dependentVariables.length; index++) {
-                        var variable = data.dependentVariables[index];
-                        dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "'>" + variable.value + "</input>");
-                    }
                     script.append(data.initialize);
                     script.append("\r\n$(document).trigger('pageLoad');");
-//                scriptDiv.append("<script>" + data.initialize + " $(document).trigger('pageLoad');" + "</script>");
+                    scriptDiv.html(script);
+
                     $('.DataEntryPanel li.hide').removeClass('hide');
                 });
 

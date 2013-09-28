@@ -19,6 +19,12 @@
                 heading: "Update Account"
             }
         },
+        encounters: {
+            view: {
+                details: "Details",
+                reports: "Reports"
+            }
+        },
 		login: {
 			heading: "Login",
 			username: "Username",
