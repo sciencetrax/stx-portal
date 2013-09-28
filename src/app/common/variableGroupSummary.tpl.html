@@ -1,2 +1,2 @@
-﻿<a ui-route="/forms/update/variablegroup" href="variableGroupUpdate.html?id={{item.id}}">{{item.name}}</a>
+﻿<a ui-route="/forms/update/variablegroup" href="#/variablegroups/update/{{item.id}}">{{item.name}}</a>
 <span class="badge" ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>

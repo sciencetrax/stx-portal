@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/NavigationService.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/common/directives/backButton.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/common/directives/backButton.spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/common/directives/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/webServices.spec.js" />
+      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\stx.core.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/about/about.js" afterPath="$PROJECT_DIR$/src/app/about/about.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" afterPath="$PROJECT_DIR$/src/app/common/directives/autofocusDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/home.js" afterPath="$PROJECT_DIR$/src/app/home/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" afterPath="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.js" afterPath="$PROJECT_DIR$/src/app/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.spec.js" afterPath="$PROJECT_DIR$/src/app/login/login.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/module.js" afterPath="$PROJECT_DIR$/src/app/encounters/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/account/update.js" afterPath="$PROJECT_DIR$/src/app/account/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/waiting.js" afterPath="$PROJECT_DIR$/src/app/common/waiting.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,73 +56,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="473" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="51" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1003">
+            <state line="27" column="58" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.31432974" vertical-offset="255" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-details.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
+      <file leaf-file-name="module.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variableGroupSummary.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.039627038" vertical-offset="0" max-vertical-offset="858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-reports.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="37" selection-start="1814" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-summary.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="6" selection-start="739" selection-end="739" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="7" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-27.923077" vertical-offset="294" max-vertical-offset="1139">
+            <state line="21" column="158" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -105,16 +77,7 @@
       <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="90" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+            <state line="10" column="18" selection-start="223" selection-end="223" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
@@ -138,22 +101,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/variablegroup/variableGroup.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroup/update.js" />
-        <option value="$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html" />
-        <option value="$PROJECT_DIR$/src/variableGroupUpdate.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/encounters.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/module.js" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
+        <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/about/about.js" />
+        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
+        <option value="$PROJECT_DIR$/src/app/login/login.js" />
+        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
+        <option value="$PROJECT_DIR$/src/app/home/home.js" />
+        <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
+        <option value="$PROJECT_DIR$/src/app/account/update.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/common/directives/backButton.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/module.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
       </list>
     </option>
   </component>
@@ -220,6 +183,10 @@
               <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -232,10 +199,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-ui-router" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +299,10 @@
               <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -346,14 +313,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="280" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="298" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="302" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ng-boilerplate" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="305" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="984" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="977" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="984" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="297" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="291" />
@@ -373,11 +340,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\temp\stx-portal\src\app\core" />
+      <recent name="C:\temp\stx-portal\src\app\common\directives" />
+      <recent name="C:\temp\stx-portal\vendor\stx" />
       <recent name="C:\temp\stx-portal\src\app\encounters" />
       <recent name="C:\temp\stx-portal\src" />
-      <recent name="C:\temp\stx-portal\src\app\variablegroup" />
-      <recent name="C:\temp\stx-portal\src\less" />
-      <recent name="C:\temp\stx-portal\src\app\forms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\temp\stx-portal\src\app\core" />
@@ -388,6 +355,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.Firefox">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -398,23 +373,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -553,29 +520,33 @@
       <created>1380259118416</created>
       <updated>1380259118417</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Adding support for updating encounters">
+      <created>1380302616592</created>
+      <updated>1380302616593</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19273128" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33846155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24395604" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.6615385" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.756044" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24395604" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -606,120 +577,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
+    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/release/angular-ui-router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding>
-            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380254442388" expanded="true" signature="-1:-1" placeholder="{&quot;url&quot;: '/variablegroups/update'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="884">
+        <state line="81" column="26" selection-start="2584" selection-end="2594" vertical-scroll-proportion="0.33223686" vertical-offset="1175" max-vertical-offset="25211">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
+    <entry file="file://$PROJECT_DIR$/build.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding>
-            <marker date="1380254517953" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+        <state line="86" column="32" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.77883095" vertical-offset="969" max-vertical-offset="1921">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="90" selection-end="155" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+        <state line="11" column="42" selection-start="411" selection-end="411" vertical-scroll-proportion="0.4047619" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="91" selection-end="91" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="473" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="5" column="22" selection-start="169" selection-end="169" vertical-scroll-proportion="0.18930958" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-reports.tpl.html">
+    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="106" selection-end="106" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="238">
+        <state line="66" column="62" selection-start="2380" selection-end="2380" vertical-scroll-proportion="0.33184856" vertical-offset="973" max-vertical-offset="4318">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+        <state line="5" column="22" selection-start="148" selection-end="148" vertical-scroll-proportion="0.18398269" vertical-offset="0" max-vertical-offset="1122">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
+    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="436" selection-end="436" vertical-scroll-proportion="0.35664335" vertical-offset="0" max-vertical-offset="858">
+        <state line="4" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="612">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home-summary.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="6" selection-start="739" selection-end="739" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
+        <state line="4" column="22" selection-start="145" selection-end="145" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="37" selection-start="1814" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="7" selection-start="4537" selection-end="4537" vertical-scroll-proportion="-27.923077" vertical-offset="294" max-vertical-offset="1139">
+        <state line="4" column="16" selection-start="84" selection-end="90" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="357">
+        <state line="10" column="18" selection-start="223" selection-end="223" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/directives/backButton.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="76" selection-start="855" selection-end="855" vertical-scroll-proportion="0.62554115" vertical-offset="187" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/stx/JsExtensions.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.94588745" vertical-offset="437" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="158" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="1606" selection-end="1606" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/variableGroupSummary.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.039627038" vertical-offset="0" max-vertical-offset="858">
+        <state line="27" column="58" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.31432974" vertical-offset="255" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>

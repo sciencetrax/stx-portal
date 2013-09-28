@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('stx.common', [
-            'ui.state'
+            'ui.router'
         ])
         .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('waiting', {

@@ -69,7 +69,8 @@ module.exports = {
     vendor_files: {
         js: [
             'vendor/jquery/jquery.js',
-//            'vendor/jquery-ui/ui/jquery-ui.js',
+            'vendor/jquery-form/jquery.form.js',
+            'vendor/jquery-ui/ui/jquery-ui.js',
 //            'vendor/jquery-ui/ui/jquery.ui.widget.js',
 //            'vendor/jquery-ui/ui/jquery.ui.button.js',
 //            'vendor/jquery-ui/ui/jquery.ui.draggable.js',

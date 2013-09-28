@@ -1,8 +1,7 @@
 angular.module('stx', [
         'ngResource',
         'ngCookies',
-        'ui.state',
-        'ui.route',
+        'ui.router',
         'templates-app',
         'templates-common',
         'stx.about',
@@ -25,9 +24,9 @@ angular.module('stx', [
     .config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider', function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
         $httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
         $urlRouterProvider.otherwise('/home/summary');
-        WebServiceConfigProvider.setBaseUrl("/StudyTrax/api/");
+        WebServiceConfigProvider.configure("/StudyTrax", "api/");
     }])
-    .controller('ApplicationController', ['$scope', '$location', 'SecurityService', function($scope, $location, SecurityService) {
+    .controller('ApplicationController', ['$scope', '$window', '$location', 'SecurityService', function($scope, $window, $location, SecurityService) {
         var targetLocation = $location.path();
         if (targetLocation == "/login"
             || targetLocation == "/waiting") {

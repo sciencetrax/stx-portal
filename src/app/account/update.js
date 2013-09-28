@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('stx.account', [
-            'ui.state'
+            'ui.router'
         ])
         .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('accountUpdate2', {

@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('stx.about', [
-            'ui.state'
+            'ui.router'
         ])
         .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('about', {
@@ -13,9 +13,9 @@
             })
             ;
         }])
-        .controller("AboutController", function() {
+        .controller("AboutController", [function() {
 
-        })
+        }])
     ;
 }());
 

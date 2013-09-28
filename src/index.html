@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 <html ng-app="stx" ng-controller="ApplicationController">
-  <head>
+<head>
     <title ng-bind="pageTitle"></title>
 
     <!-- font awesome from BootstrapCDN -->
     <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
-    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
-
-    <!--<script src/login="//codeorigin.jquery.com/jquery-2.0.3.min.js"></script>-->
-    <!--<script src="//codeorigin.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>-->
-
-    <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
-
-    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>-->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-cookies.min.js"></script>-->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-resource.min.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="<%= file %>"/>
+    <% }); %>
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
-    <script type="text/javascript" src="<%= file %>"></script><% }); %>
+    <script type="text/javascript" src="<%= file %>"></script>
+    <% }); %>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-      <link href='/StudyTrax/Content/themes/base/jquery-ui.css' rel='stylesheet' type='text/css' />
-      <link href='/StudyTrax/_content/css/VariablePanel.css' rel='stylesheet' type='text/css' />
-      <script src='/StudyTrax/_content/js/st.utils.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.Dialog.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.PopupDialog.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.Business.Utils.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariableMetaData.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculation.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculator.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.ContextMenu.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.ControlFunctions.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Controller.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Utils.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.VisualAnalogScale.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Validation.js' type='text/javascript'></script>
-      <script src='/StudyTrax/_content/js/stx.VariablePanel.Variable.js' type='text/javascript'></script>
-      <script src='/StudyTrax/Areas/app/Scripts/stx/core.js' type='text/javascript'></script>
-      <script src='/StudyTrax/Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
-      <script src='/StudyTrax/Areas/app/Scripts/stx/stx.SessionTimer.js' type='text/javascript'></script>
-      <script src='/StudyTrax/app/VariablePanel/IntervalExpressionScript?customerIdRaw=100&projectIdRaw=7354&intervalIdRaw=5678' type='text/javascript'></script>
+    <link href='/StudyTrax/Content/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'/>
+    <link href='/StudyTrax/_content/css/VariablePanel.css' rel='stylesheet' type='text/css'/>
+    <script src='/StudyTrax/_content/js/st.utils.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.Dialog.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.PopupDialog.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.Business.Utils.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariableMetaData.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculation.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculator.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.ContextMenu.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.ControlFunctions.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Controller.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Utils.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.VisualAnalogScale.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Validation.js' type='text/javascript'></script>
+    <script src='/StudyTrax/_content/js/stx.VariablePanel.Variable.js' type='text/javascript'></script>
+    <script src='/StudyTrax/Areas/app/Scripts/stx/core.js' type='text/javascript'></script>
+    <script src='/StudyTrax/Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
+    <script src='/StudyTrax/Areas/app/Scripts/stx/stx.SessionTimer.js' type='text/javascript'></script>
 
-      <script src='/StudyTrax/app/VariablePanel/VariableGroupScript?projectIdRaw=7354&variableGroupIdentities=55768,55769&externalVariableGroupIds=' type='text/javascript'></script>
+    <!--<script src='/StudyTrax/app/VariablePanel/VariableGroupInitScript?includeProjectVariableGroups=true&projectIdRaw=7354&intervalIdRaw=5678&encounterIdRaw=&subjectIdRaw=192' type='text/javascript'></script>-->
 
-      <!--<script src='/StudyTrax/app/VariablePanel/VariableGroupInitScript?includeProjectVariableGroups=true&projectIdRaw=7354&intervalIdRaw=5678&encounterIdRaw=&subjectIdRaw=192' type='text/javascript'></script>-->
-
-      <!--<script src='/StudyTrax/app/VariablePanel/ProjectSubjectExpressionScript?projectId=dC2io66e+NSU2RQOIuF+kg==' type='text/javascript'></script>-->
-      <!--<script src='/StudyTrax/app/VariablePanel/VariableGroupScript?projectId=dC2io66e+NSU2RQOIuF+kg==&variableGroupIdentities=NH2mKOJsZBKJhXWP3xwVP1x6pkbLWOC4SX6EP6gDLVY=&externalVariableGroupIds=' type='text/javascript'></script>-->
+    <!--<script src='/StudyTrax/app/VariablePanel/ProjectSubjectExpressionScript?projectId=dC2io66e+NSU2RQOIuF+kg==' type='text/javascript'></script>-->
+    <!--<script src='/StudyTrax/app/VariablePanel/VariableGroupScript?projectId=dC2io66e+NSU2RQOIuF+kg==&variableGroupIdentities=NH2mKOJsZBKJhXWP3xwVP1x6pkbLWOC4SX6EP6gDLVY=&externalVariableGroupIds=' type='text/javascript'></script>-->
 
 
-  </head>
-  <body class="studytrax">
-    <div ui-view></div>
-  </body>
+</head>
+<body class="studytrax">
+<div ui-view></div>
+</body>
 </html>

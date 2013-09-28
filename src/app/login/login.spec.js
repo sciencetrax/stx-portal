@@ -25,8 +25,8 @@ describe('LoginController', function () {
 
         $rootScope.LS = LS;
 
-        $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
-        $httpBackend.when('POST', '/api/authorization?portalCode=pt&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
+        $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
+        $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
         $httpBackend.when('GET', '/api/authorizationcontext').respond({ userId: 101 });
     }));
 

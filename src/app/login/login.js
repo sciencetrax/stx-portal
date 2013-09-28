@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('stx.login', [
-            'ui.state',
+            'ui.router',
             'stx.core'
         ])
         .config(['$stateProvider', function($stateProvider) {
@@ -18,7 +18,7 @@
 
             $scope.authorization = new Authorization();
             $scope.login = function () {
-                $scope.authorization.portalCode = "pt";
+                $scope.authorization.portalCode = "test";
                 $scope.authorization.$save(function (data) {
                     SecurityService.authorize(data.authorization);
                 }, function (data) {

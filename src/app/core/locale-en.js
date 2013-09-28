@@ -30,7 +30,13 @@
 		},
 		register: {
             register: "Register"
-		}
+		},
+        variableGroups: {
+            update: {
+                cancel: "Cancel",
+                save: "Save"
+            }
+        }
 	}
 };
 

@@ -7,6 +7,7 @@ var SecurityService;
         $location: null,
         $rootScope: null,
         AuthorizationContextResource: null,
+        authorization: null,
         authorizationContext: null,
         AUTH_HEADER: "X-Authorization",
         init: function () {
@@ -22,6 +23,7 @@ var SecurityService;
             this.$http.defaults.headers.common[this.AUTH_HEADER] = authorization;
             _this.$rootScope.$broadcast('authorizationContextLoading');
             this.AuthorizationContextResource.get({}, function (data) {
+                _this.authorization = authorization;
                 _this.authorizationContext = data;
                 // We want to wait for success before we put the cookie.  This
                 // ensures that the authorization is valid before we remember it.

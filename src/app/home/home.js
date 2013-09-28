@@ -3,7 +3,7 @@
     angular.module('stx.home', [
             'stx.core',
             'stx.home.incompleteVariableGroupSummaries',
-            'ui.state'
+            'ui.router'
         ])
         .config(['$stateProvider', function ($stateProvider) {
             $stateProvider.state('home', {

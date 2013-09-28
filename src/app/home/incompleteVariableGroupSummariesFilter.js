@@ -2,7 +2,7 @@
     "use strict";
     angular.module('stx.home.incompleteVariableGroupSummaries', [
             'stx.core',
-            'ui.state'
+            'ui.router'
         ])
         .filter('incompleteVariableGroupSummaries', function () {
             return function (summaries) {

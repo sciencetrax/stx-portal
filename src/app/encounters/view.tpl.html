@@ -1,14 +1,20 @@
 <div>
     <div ng-include="src='common/secure-menu.tpl.html'"></div>
+
+    <div class="variable-panel-scripts"></div>
+
     <!-- CONTENT -->
     <div class="content">
         <div ui-view></div>
     </div>
 
+    Route: {{"" + $state.includes('encountersView.details')}}
+
     <!-- FOOTER NAVBAR -->
     <div class="navbar navbar-fixed-bottom footer">
         <div class="btn-group btn-group-justified">
-            <a ui-route="/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}/details" href="#/encounters/view/{{encounter.intervalId}}/{{encounter.encounterId}}/details" class="btn" ng-class="{active:$uiRoute}">Details</a>
+            <a ui-sref="encountersView({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})" class="btn" ng-class="{active:$state.includes('encountersView.details')}">Details</a>
+            <!--<a ui-route="/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}" href="#/encounters/view/{{encounter.intervalId}}/{{encounter.encounterId}}" class="btn" ng-class="{active:$uiRoute}">Details</a>-->
             <a ui-route="/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}/reports" href="#/encounters/view/{{encounter.intervalId}}/{{encounter.encounterId}}/reports" class="btn" ng-class="{active:$uiRoute}">Reports</a>
         </div>
     </div>

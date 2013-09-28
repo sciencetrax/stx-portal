@@ -1,62 +1,93 @@
 ﻿var serviceActions = { update: { method: "PUT" } };
 
 angular.module('stx.core.webService', [
-            'ngResource'
-        ])
-        .provider('WebServiceConfig', function () {
-            this.baseUrl = '/api/';
-            var _this = this;
-            this.setBaseUrl = function (url) {
-                this.baseUrl = url;
-            };
+        'ngResource'
+    ])
+    .provider('WebServiceConfig', function () {
+        this.applicationPath = '/';
+        this.apiBase = 'api/';
 
-            var instance = {
-                getBaseUrl: function () {
-                    return _this.baseUrl;
-                }
-            };
-            this.$get = function () {
-                return instance;
-            };
-        })
+        this.configure = function (applicationPath, apiBase) {
+            this.applicationPath = applicationPath;
+            this.apiBase = apiBase;
+        };
 
-        .factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-            return $resource(WebServicesConfig.getBaseUrl() + 'authorization?portalCode=:portalCode&username=:username&password=:password', {
-                portalCode: '@portalCode',
-                username: '@username',
-                password: '@password'
-            });
-        }])
-        .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-            return $resource(WebServicesConfig.getBaseUrl() + 'authorizationcontext');
-        }])
-        .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries');
-        }])
-        .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters');
-        }])
-        .factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-            return $resource(WebServicesConfig.getBaseUrl() + 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript?intervalId=:intervalId&encounterId=encounterId');
-        }])
+        this.getApplicationPath = function () {
+            return this.applicationPath;
+        };
+        this.getApiBase = function () {
+            return this.apiBase;
+        };
+
+        var _this = this;
+        var instance = {
+            getApplicationPath: function() {
+                return _this.getApplicationPath();
+            },
+            getBaseUrl: function () {
+                return UrlUtils.combine(_this.getApplicationPath(), _this.getApiBase());
+            }
+        };
+        this.$get = function () {
+            return instance;
+        };
+    })
+
+    .factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'authorization?portalCode=:portalCode&username=:username&password=:password'), {
+            portalCode: '@portalCode',
+            username: '@username',
+            password: '@password'
+        });
+    }])
+    .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'authorizationcontext'));
+    }])
+    .factory('DataEntryForm', ['$http', 'WebServiceConfig', function ($http, WebServicesConfig) {
+        return {
+            get: function (projectId, portalId, intervalId, encounterId, variableGroupId) {
+                var _this = this;
+                return $http({
+                        method: 'GET',
+                        url: _this.getUrl(),
+                        params: {
+                            portalId: portalId,
+                            intervalId: intervalId,
+                            encounterId: encounterId,
+                            projectId: projectId,
+                            variableGroupId: variableGroupId
+                        }
+                    }
+                );
+            },
+            getUrl: function() {
+                return UrlUtils.combine(WebServicesConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');
+            }
+        };
+    }])
+    .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
+    }])
+    .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'));
+    }])
+    .factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
+        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript'));
+    }])
 
 
-
-
-
-
-        .factory('Account', ['$resource', '$http', function ($resource, $http) {
-            return $resource(applicationPath + 'api/customers/:customerId/users/:id', {
-                customerId: '@customerId',
-                id: '@id'
-            }, serviceActions);
-        }])
-        .factory('Metadata', ['$resource', function ($resource) {
-            return $resource(applicationPath + 'api/metadata/:entityType');
-        }])
-        .factory('Session', ['$resource', function ($resource) {
-            return $resource(applicationPath + 'api/sessions/:id', {
-                id: '@id'
-            });
-        }])
-    ;
+    .factory('Account', ['$resource', '$http', function ($resource, $http) {
+        return $resource(applicationPath + 'api/customers/:customerId/users/:id', {
+            customerId: '@customerId',
+            id: '@id'
+        }, serviceActions);
+    }])
+    .factory('Metadata', ['$resource', function ($resource) {
+        return $resource(applicationPath + 'api/metadata/:entityType');
+    }])
+    .factory('Session', ['$resource', function ($resource) {
+        return $resource(applicationPath + 'api/sessions/:id', {
+            id: '@id'
+        });
+    }])
+;
