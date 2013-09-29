@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\autofocusDirective.js" afterPath="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\autofocusDirective.spec.js" afterPath="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\backButton.js" afterPath="$PROJECT_DIR$/src/app/core/directives/backButton.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\backButton.spec.js" afterPath="$PROJECT_DIR$/src/app/core/directives/backButton.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\metaValidateDirective.js" afterPath="$PROJECT_DIR$/src/app/core/directives/metaValidateDirective.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\module.js" afterPath="$PROJECT_DIR$/src/app/core/directives/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/module.js" afterPath="$PROJECT_DIR$/src/app/core/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -48,7 +29,16 @@
       <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
+            <state line="24" column="42" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="39" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -84,7 +74,7 @@
       <file leaf-file-name="update.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="31" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.5574273" vertical-offset="469" max-vertical-offset="1394">
+            <state line="8" column="62" selection-start="269" selection-end="269" vertical-scroll-proportion="0.20826952" vertical-offset="0" max-vertical-offset="1377">
               <folding />
             </state>
           </provider>
@@ -773,7 +763,11 @@
       <created>1380412306163</created>
       <updated>1380412306163</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Adding support for updating encounters">
+      <created>1380431642416</created>
+      <updated>1380431642416</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -836,13 +830,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="20" selection-start="126" selection-end="140" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="65" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
@@ -917,13 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="90" column="53" selection-start="4168" selection-end="4239" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="2329">
@@ -931,9 +911,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="42" selection-start="1211" selection-end="1211" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="39" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="31" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.5574273" vertical-offset="469" max-vertical-offset="1394">
+        <state line="8" column="62" selection-start="269" selection-end="269" vertical-scroll-proportion="0.20826952" vertical-offset="0" max-vertical-offset="1377">
           <folding />
         </state>
       </provider>

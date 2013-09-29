@@ -7,26 +7,25 @@
             'ui.router'
         ])
         .config(['$stateProvider', function ($stateProvider) {
-            $stateProvider.state('variableGroupUpdate', {
-                url: '/variablegroups/update/{variableGroupId}/{intervalId}/{encounterId}',
-                controller: 'VariableGroupUpdateController',
-                templateUrl: 'variablegroups/update.tpl.html',
-                data: { pageTitle: 'Variable Group | Update' }
-            })
+            $stateProvider
+                .state('variablegroups', {
+                    abstract: true,
+                    url: "/variablegroups",
+                    template: "<div ui-view></div>"
+                })
+                .state('variablegroupsUpdate', {
+                    url: '/variablegroups/update/{variableGroupId}/{intervalId}/{encounterId}',
+                    controller: 'variablegroups.update.controller',
+                    templateUrl: 'variablegroups/update.tpl.html',
+                    data: { pageTitle: 'Variable Group | Update' }
+                })
             ;
         }])
-        .controller("VariableGroupUpdateController", ['$scope', '$http', '$window', '$stateParams', '$location', 'SecurityService', 'NavigationService', 'DataEntryForm',
+        .controller("variablegroups.update.controller", ['$scope', '$http', '$window', '$stateParams', '$location', 'SecurityService', 'NavigationService', 'DataEntryForm',
             function ($scope, $http, $window, $stateParams, $location, SecurityService, NavigationService, DataEntryForm) {
                 var authorizationContext = SecurityService.authorizationContext;
-                var params = {
-                    portalId: authorizationContext.portalId,
-                    intervalId: $stateParams.intervalId,
-                    encounterId: $stateParams.encounterId,
-                    projectId: authorizationContext.projectId,
-                    variableGroupId: $stateParams.variableGroupId
-                };
-
                 var dataEntryPanel = $('.DataEntryPanel');
+
                 DataEntryForm.loadScript(
                     SecurityService.authorizationContext.customerId,
                     SecurityService.authorizationContext.subject.projects[0].projectId,
@@ -34,7 +33,7 @@
                     SecurityService.authorizationContext.subject.id,
                     $stateParams.intervalId,
                     $stateParams.encounterId,
-                    false, function() {
+                    false, function () {
                         DataEntryForm.get(
                                 authorizationContext.projectId,
                                 authorizationContext.portalId,
