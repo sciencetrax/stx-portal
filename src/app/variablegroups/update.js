@@ -44,7 +44,7 @@
                             .success(function (data) {
                                 stx.VariablePanel.Utils.notCollectedVariablesId = null;
                                 stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
-                                dataEntryPanel.append(data);
+                                dataEntryPanel.html(data);
                                 $(document).trigger('pageLoad');
                             });
                     });

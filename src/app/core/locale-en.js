@@ -25,6 +25,11 @@
                 reports: "Reports"
             }
         },
+        home: {
+            summary: "Summary",
+            details: "Details",
+            profile: "Profile"
+        },
 		login: {
 			heading: "Login",
 			username: "Username",

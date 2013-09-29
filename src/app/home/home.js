@@ -17,7 +17,9 @@
             .state('home.profile', { url: '/profile', templateUrl: 'home/home-profile.tpl.html', controller: 'HomeController' })
             ;
         }])
-        .controller("HomeController", ['$scope', '$filter', 'SecurityService', 'SubjectVariableGroupSummary', 'ScheduledEncounter', function ($scope, $filter, SecurityService, SubjectVariableGroupSummary, ScheduledEncounter) {
+        .controller("HomeController", ['$scope', '$state', '$filter', 'SecurityService', 'SubjectVariableGroupSummary', 'ScheduledEncounter', function ($scope, $state, $filter, SecurityService, SubjectVariableGroupSummary, ScheduledEncounter) {
+            $scope.LSPage = LS.pages.home;
+            $scope.$state = $state;
             var securityProfile = {
                 customerId: SecurityService.authorizationContext.customerId,
                 projectId: SecurityService.authorizationContext.subject.projects[0].projectId,

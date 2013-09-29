@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="stx" ng-controller="ApplicationController">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title ng-bind="pageTitle"></title>
 
     <!-- font awesome from BootstrapCDN -->
@@ -38,5 +39,17 @@
 </head>
 <body class="studytrax">
 <div ui-view></div>
+
+    <!--<script>-->
+        <!--if (navigator.userAgent.match(/IEMobile\/10\.0/)) {-->
+            <!--var msViewportStyle = document.createElement("style");-->
+            <!--msViewportStyle.appendChild(-->
+                    <!--document.createTextNode(-->
+                            <!--"@-ms-viewport{width:auto!important}"-->
+                    <!--)-->
+            <!--);-->
+            <!--document.getElementsByTagName("head")[0].appendChild(msViewportStyle);-->
+        <!--}-->
+    <!--</script>-->
 </body>
 </html>
