@@ -2,17 +2,15 @@
     <div ng-include="src='common/secure-menu.tpl.html'"></div>
     <!-- CONTENT -->
     <div class="content">
+        <div data-role="form-group">
+            <div class="DataEntryPanel"></div>
+        </div>
+
         <div class="hidden-xs col-sm-4 col-md-4"></div>
         <div class="col-xs-12 col-sm-4 col-md-4">
             <div data-role="form-group">
-                <div class="DataEntryPanel"></div>
-            </div>
-
-            <div data-role="form-group">
-                <button class="btn form-control" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
-            </div>
-            <div data-role="form-group">
-                <a class="btn form-control" back-button>{{LS.pages.variableGroups.update.cancel}}</a>
+                <button class="btn btn-primary form-control" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
+                <a class="btn btn-default form-control" back-button>{{LS.pages.variableGroups.update.cancel}}</a>
             </div>
         </div>
         <div class="hidden-xs col-sm-4 col-md-4"></div>
