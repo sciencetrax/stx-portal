@@ -15,11 +15,6 @@ body {
 //  text-overflow: ellipsis;
 //  white-space: nowrap;
 }
-.list-group-item .badge {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
 /*
 .list-group-item {
   border-left: none;
@@ -39,12 +34,6 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.list-group-item .badge {
-  font-size: 1.25em;
-  position: absolute;
-  right: 10px;
-  top: 20px;
-}
 .footer {
   background: black;
   min-height: inherit !important;
@@ -61,15 +50,22 @@ body {
 .content {
   margin: 10px;
 }
-.content .list-group {
-  margin-left: -10px;
-  margin-right: -10px;
-}
 /**/
 .content {
   margin-top: 60px;
 }
+.content .list-group {
+  font-size: 1.5em;
+  margin-left: -15px;
+  smargin-right: -10px;
+}
 
+.list-group-item .badge {
+  font-size: 1em;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
 .badge.complete {
   background: #6CC417 !important;
 }
