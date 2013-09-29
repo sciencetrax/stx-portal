@@ -6,7 +6,7 @@
     var $rootScope;
     var element;
 
-    beforeEach(module('common.directives.autofocus'));
+    beforeEach(module('stx.core.directives.autofocus'));
 
     beforeEach(inject(function (_$window_, _$location_, _$compile_, _$rootScope_) {
         $window = _$window_;

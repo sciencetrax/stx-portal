@@ -4,6 +4,7 @@
     "immed": true,
     "laxbreak": true,
     "loopfunc": true,
+    "multistr": true,
     "sub": true,
     "boss": true,
     "eqnull": true,

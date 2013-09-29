@@ -6,7 +6,7 @@
     var $rootScope;
     var element;
 
-    beforeEach(module('common.directives.backButton'));
+    beforeEach(module('stx.core.directives.backButton'));
 
     beforeEach(inject(function (_$window_, _$location_, _$compile_, _$rootScope_) {
         $window = _$window_;

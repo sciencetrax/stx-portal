@@ -1,4 +1,4 @@
-﻿angular.module('common.directives.backButton', [])
+﻿angular.module('stx.core.directives.backButton', [])
     .directive('backButton', ['$window', function($window){
     return {
         restrict: 'A',

@@ -15,40 +15,18 @@
         .controller("stx.encounters.view.details.controller", [
             function () {
             }])
-        .controller("stx.encounters.view.details.controller", ['$scope', '$state', '$stateParams', 'SecurityService', 'VariablePanelScript', 'ScheduledEncounter',
-            function ($scope, $state, $stateParams, SecurityService, VariablePanelScript, ScheduledEncounter) {
+        .controller("stx.encounters.view.details.controller", ['$scope', '$state', '$stateParams', 'SecurityService', 'VariablePanelScript', 'DataEntryForm', 'ScheduledEncounter',
+            function ($scope, $state, $stateParams, SecurityService, VariablePanelScript, DataEntryForm, ScheduledEncounter) {
                 $('#VariableToolsMenu').remove();
 
-                VariablePanelScript.get({
-                    customerId: SecurityService.authorizationContext.customerId,
-                    projectId: SecurityService.authorizationContext.subject.projects[0].projectId,
-                    siteId: SecurityService.authorizationContext.subject.projects[0].siteId,
-                    subjectId: SecurityService.authorizationContext.subject.id,
-                    intervalId: $stateParams.intervalId,
-                    encounterId: $stateParams.encounterId,
-                    includeProjectVariableGroups: false
-                }, function (data) {
-                    $('#VariableToolsMenu').remove();
-                    var dataEntryPanel = $('.DataEntryPanel');
-
-                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
-                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
-                    for (var index = 0; index < data.dependentVariables.length; index++) {
-                        var variable = data.dependentVariables[index];
-                        dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
-                    }
-
-                    var scriptDiv = $('#variable-panel-code');
-                    var script = $('<script/>');
-                    script.append(data.project);
-                    script.append(data.interval);
-                    script.append(data.encounter);
-                    script.append(data.initialize);
-                    script.append("\r\n$(document).trigger('pageLoad');");
-                    scriptDiv.html(script);
-
-                    $('.DataEntryPanel li.hide').removeClass('hide');
-                });
+                DataEntryForm.loadScript(
+                    SecurityService.authorizationContext.customerId,
+                    SecurityService.authorizationContext.subject.projects[0].projectId,
+                    SecurityService.authorizationContext.subject.projects[0].siteId,
+                    SecurityService.authorizationContext.subject.id,
+                    $stateParams.intervalId,
+                    $stateParams.encounterId,
+                    false);
 
                 ScheduledEncounter.query({
                     customerId: SecurityService.authorizationContext.customerId,

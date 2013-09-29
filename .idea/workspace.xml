@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\autofocusDirective.js" afterPath="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\autofocusDirective.spec.js" afterPath="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.spec.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\backButton.js" afterPath="$PROJECT_DIR$/src/app/core/directives/backButton.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\backButton.spec.js" afterPath="$PROJECT_DIR$/src/app/core/directives/backButton.spec.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\metaValidateDirective.js" afterPath="$PROJECT_DIR$/src/app/core/directives/metaValidateDirective.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\common\directives\module.js" afterPath="$PROJECT_DIR$/src/app/core/directives/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/module.js" afterPath="$PROJECT_DIR$/src/app/core/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -29,37 +45,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view-details.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
+      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.4009434" vertical-offset="0" max-vertical-offset="636">
+            <state line="30" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
+      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="476">
+            <state line="90" column="53" selection-start="4168" selection-end="4239" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="angular-ui-router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/release/angular-ui-router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1344" column="18" selection-start="51540" selection-end="51540" vertical-scroll-proportion="0.0" vertical-offset="22512" max-vertical-offset="25211">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="1122">
+            <state line="49" column="31" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.5574273" vertical-offset="469" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+      <file leaf-file-name="backButton.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/backButton.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="10" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="935">
+            <state line="11" column="4" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="module.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -83,22 +126,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/home/home-summary.tpl.html" />
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/about/about.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-        <option value="$PROJECT_DIR$/src/app/login/login.js" />
-        <option value="$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js" />
-        <option value="$PROJECT_DIR$/src/app/home/home.js" />
-        <option value="$PROJECT_DIR$/src/app/common/waiting.js" />
-        <option value="$PROJECT_DIR$/src/app/account/update.js" />
-        <option value="$PROJECT_DIR$/src/app/common/directives/backButton.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/module.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/build.config.js" />
+        <option value="$PROJECT_DIR$/.jshintrc" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/less/site.less" />
+        <option value="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/backButton.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/backButton.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/core/module.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/module.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/autofocusDirective.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
+        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
+        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
       </list>
     </option>
   </component>
@@ -194,7 +237,179 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-ui-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-ui-router" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -235,28 +450,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="variablegroups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,7 +515,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,10 +542,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,11 +581,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\temp\stx-portal\src\less" />
       <recent name="C:\temp\stx-portal\src\app\core" />
       <recent name="C:\temp\stx-portal\src\app\common\directives" />
       <recent name="C:\temp\stx-portal\vendor\stx" />
       <recent name="C:\temp\stx-portal\src\app\encounters" />
-      <recent name="C:\temp\stx-portal\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\temp\stx-portal\src\app\core" />
@@ -576,7 +769,11 @@
       <created>1380411132610</created>
       <updated>1380411132610</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Adding support for updating encounters">
+      <created>1380412306163</created>
+      <updated>1380412306163</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -587,12 +784,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19273128" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24395604" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25384617" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.756044" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16341592" sideWeight="0.74615383" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24395604" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25384617" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
@@ -629,114 +826,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/account/update.js">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="411" selection-end="411" vertical-scroll-proportion="0.4047619" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/waiting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="91" selection-end="91" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="62" selection-start="2380" selection-end="2380" vertical-scroll-proportion="0.33184856" vertical-offset="973" max-vertical-offset="4318">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/about/about.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="84" selection-end="90" vertical-scroll-proportion="0.14718615" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/directives/backButton.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="76" selection-start="855" selection-end="855" vertical-scroll-proportion="0.62554115" vertical-offset="187" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stx/JsExtensions.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.94588745" vertical-offset="437" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="103" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="145" selection-end="145" vertical-scroll-proportion="0.10271903" vertical-offset="0" max-vertical-offset="662">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="68" selection-start="1668" selection-end="1700" vertical-scroll-proportion="0.73343605" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.5238829" vertical-offset="153" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="65" selection-start="565" selection-end="565" vertical-scroll-proportion="0.41087613" vertical-offset="0" max-vertical-offset="662">
+        <state line="34" column="0" selection-start="2375" selection-end="2375" vertical-scroll-proportion="-15.307693" vertical-offset="180" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="693" selection-end="693" vertical-scroll-proportion="0.4009434" vertical-offset="0" max-vertical-offset="636">
+        <state line="6" column="20" selection-start="126" selection-end="140" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/angular-ui-router/release/angular-ui-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1344" column="18" selection-start="51540" selection-end="51540" vertical-scroll-proportion="0.0" vertical-offset="22512" max-vertical-offset="25211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="1" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.6777409" vertical-offset="612" max-vertical-offset="2686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="839" selection-end="839" vertical-scroll-proportion="0.569378" vertical-offset="0" max-vertical-offset="627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="761" selection-end="761" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/autofocusDirective.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="32" selection-start="357" selection-end="357" vertical-scroll-proportion="0.31240427" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/autofocusDirective.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="90" selection-end="90" vertical-scroll-proportion="0.05206738" vertical-offset="0" max-vertical-offset="653">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/backButton.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="186" selection-end="186" vertical-scroll-proportion="0.20826952" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/backButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="4" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="42" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="53" selection-start="4168" selection-end="4239" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="31" selection-start="2692" selection-end="2692" vertical-scroll-proportion="0.5574273" vertical-offset="469" max-vertical-offset="1394">
           <folding />
         </state>
       </provider>

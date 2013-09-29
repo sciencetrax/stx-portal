@@ -1,4 +1,4 @@
-﻿angular.module('common.directives.autofocus', [])
+﻿angular.module('stx.core.directives.autofocus', [])
     .directive('autofocus',[function () {
         return {
             restrict: 'A',

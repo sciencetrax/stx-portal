@@ -6,7 +6,7 @@
 
     <div class="DataEntryPanel">
         <ul class="list-group">
-            <li ng-repeat="item in encounter.variableGroups" class="list-group-item" variablegroupid="{{item.id}}">
+            <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
                 <a ui-route="/forms/update/variablegroup" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">{{item.name}}</a>
                 <span class="badge" ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
             </li>

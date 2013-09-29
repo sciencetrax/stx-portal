@@ -43,7 +43,7 @@ angular.module('stx.core.webService', [
     .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
         return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'authorizationcontext'));
     }])
-    .factory('DataEntryForm', ['$http', 'WebServiceConfig', function ($http, WebServicesConfig) {
+    .factory('DataEntryForm', ['$http', 'WebServiceConfig', 'VariablePanelScript', function ($http, WebServicesConfig, VariablePanelScript) {
         return {
             get: function (projectId, portalId, intervalId, encounterId, variableGroupId) {
                 var _this = this;
@@ -59,6 +59,44 @@ angular.module('stx.core.webService', [
                         }
                     }
                 );
+            },
+            loadScript: function(customerId, projectId, siteId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {
+                VariablePanelScript.get({
+                    customerId: customerId,
+                    projectId: projectId,
+                    siteId: siteId,
+                    subjectId: subjectId,
+                    intervalId: intervalId,
+                    encounterId: encounterId,
+                    includeProjectVariableGroups: includeProjectVariableGroups
+                }, function (data) {
+                    $('#VariableToolsMenu').remove();
+                    stx.VariablePanel.Utils.notCollectedVariablesId = null;
+                    stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
+                    var dataEntryPanel = $('.DataEntryPanel');
+
+                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
+                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
+                    for (var index = 0; index < data.dependentVariables.length; index++) {
+                        var variable = data.dependentVariables[index];
+                        dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
+                    }
+
+                    var scriptDiv = $('#variable-panel-code');
+                    var script = $('<script/>');
+                    script.append(data.project);
+                    script.append(data.interval);
+                    script.append(data.encounter);
+                    script.append(data.initialize);
+                    script.append("$(document).trigger('pageLoad');");
+                    scriptDiv.html(script);
+
+                    $('.DataEntryPanel li.hide').removeClass('hide');
+
+                    if (successCallback !== undefined) {
+                        successCallback();
+                    }
+                });
             },
             getUrl: function() {
                 return UrlUtils.combine(WebServicesConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');

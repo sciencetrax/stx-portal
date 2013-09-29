@@ -3,6 +3,7 @@
 
     angular.module('stx.variablegroups.update', [
             'stx.core.navigationService',
+            'stx.core.directives.backButton',
             'ui.router'
         ])
         .config(['$stateProvider', function ($stateProvider) {
@@ -26,15 +27,27 @@
                 };
 
                 var dataEntryPanel = $('.DataEntryPanel');
-                DataEntryForm.get(
-                        authorizationContext.projectId,
-                        authorizationContext.portalId,
-                        $stateParams.intervalId,
-                        $stateParams.encounterId,
-                        $stateParams.variableGroupId
-                    )
-                    .success(function (data) {
-                        dataEntryPanel.html(data);
+                DataEntryForm.loadScript(
+                    SecurityService.authorizationContext.customerId,
+                    SecurityService.authorizationContext.subject.projects[0].projectId,
+                    SecurityService.authorizationContext.subject.projects[0].siteId,
+                    SecurityService.authorizationContext.subject.id,
+                    $stateParams.intervalId,
+                    $stateParams.encounterId,
+                    false, function() {
+                        DataEntryForm.get(
+                                authorizationContext.projectId,
+                                authorizationContext.portalId,
+                                $stateParams.intervalId,
+                                $stateParams.encounterId,
+                                $stateParams.variableGroupId
+                            )
+                            .success(function (data) {
+                                stx.VariablePanel.Utils.notCollectedVariablesId = null;
+                                stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
+                                dataEntryPanel.append(data);
+                                $(document).trigger('pageLoad');
+                            });
                     });
 
                 $scope.save = function () {
@@ -45,6 +58,9 @@
                     form.ajaxSubmit({
                         headers: { "X-Authorization": SecurityService.authorization },
                         success: function (data) {
+                            stx.VariablePanel.Utils.notCollectedVariablesId = null;
+                            stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
+
                             dataEntryPanel.html(data);
                             if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
                                 NavigationService.back();

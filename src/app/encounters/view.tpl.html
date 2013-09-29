@@ -12,10 +12,10 @@
     <div class="navbar navbar-fixed-bottom footer">
         <div class="btn-group btn-group-justified">
             <a class="btn"
-               ui-sref="encounters.view({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})"
+               href="#/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}/details"
                ng-class="{active:$state.includes('encounters.view.details')}">{{ LS.pages.encounters.view.details }}</a>
             <a class="btn"
-               ui-sref="encounters.view({intervalId: stateParams.intervalId, encounterId: stateParams.encounterId})"
+               href="#/encounters/view/{{stateParams.intervalId}}/{{stateParams.encounterId}}/reports"
                ng-class="{active:$state.includes('encounters.view.reports')}">Reports</a>
         </div>
     </div>
