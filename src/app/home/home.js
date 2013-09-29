@@ -17,6 +17,10 @@
             .state('home.profile', { url: '/profile', templateUrl: 'home/home-profile.tpl.html', controller: 'HomeController' })
             ;
         }])
+        .controller("home.details.controller", ['$scope', '$state', '$filter', 'SecurityService', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
+            function ($scope, $state, $filter, SecurityService, SubjectVariableGroupSummary, ScheduledEncounter) {
+
+        }])
         .controller("HomeController", ['$scope', '$state', '$filter', 'SecurityService', 'SubjectVariableGroupSummary', 'ScheduledEncounter', function ($scope, $state, $filter, SecurityService, SubjectVariableGroupSummary, ScheduledEncounter) {
             $scope.LSPage = LS.pages.home;
             $scope.$state = $state;

@@ -4,12 +4,13 @@
     angular.module('stx.encounters.view', [
             'ui.router'
         ])
-        .controller("stx.encounters.view.controller", ['$scope', '$state', '$stateParams', 'SecurityService', 'ScheduledEncounter',
-            function ($scope, $state, $stateParams, SecurityService, ScheduledEncounter) {
+        .controller("stx.encounters.view.controller", ['$scope', '$location', '$state', '$stateParams', 'SecurityService', 'ScheduledEncounter',
+            function ($scope, $location, $state, $stateParams, SecurityService, ScheduledEncounter) {
                 $scope.$state = $state;
                 $scope.stateParams = $stateParams;
                 if ($state.current.name === 'encounters.view') {
-                    $state.go('encounters.view.details');
+                    $location.path('/encounters/view/{0}/{1}/details'.format($stateParams.intervalId, $stateParams.encounterId)).replace();
+//                    $state.go('encounters.view.details');
                 }
 
                 ScheduledEncounter.query({
@@ -37,7 +38,6 @@
                     $stateParams.intervalId,
                     $stateParams.encounterId,
                     false);
-
             }])
     ;
 }());

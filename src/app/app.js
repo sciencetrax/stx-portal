@@ -5,7 +5,7 @@ angular.module('stx', [
         'templates-app',
         'templates-common',
         'stx.about',
-        'stx.account',
+        'stx.accounts',
         'stx.common',
         'stx.core',
         'stx.encounters',
@@ -30,7 +30,7 @@ angular.module('stx', [
         var targetLocation = $location.path();
         if (targetLocation == "/login"
             || targetLocation == "/waiting") {
-            targetLocation = "/";
+            targetLocation = "/home/summary";
         }
         $scope.$on('httpError', function(event, message) {
             SecurityService.handleError(message.status, message.data);
@@ -42,7 +42,7 @@ angular.module('stx', [
             $location.path('/waiting');
         });
         $scope.$on('authorizationContextReady', function() {
-            $location.path(targetLocation);
+            $location.path(targetLocation).replace();
         });
         $scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
             if (angular.isDefined(toState.data) && angular.isDefined(toState.data.pageTitle)) {

@@ -1,17 +1,29 @@
-﻿<div>The following items are incomplete.  Please complete them.</div>
+﻿<div class="btn-group pull-right">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        New <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a>New Injury</a></li>
+        <li><a>New Adverse Event</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+
+        <h2>
+            TODO's
+        </h2>
 <ul class="list-group">
+    <!-- INCOMPLETE VARIABLE GROUPS -->
 	<li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
         <a ui-route="/forms/update/variablegroup" href="#/variablegroups/update/{{item.id}}//">{{item.name}}</a>
         <span class="badge" ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
 	</li>
+
+    <!-- INCOMPLETE ENCOUNTERS -->
 	<li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
 		<a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">{{item.name}}</a>
 		<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
 	</li>
 </ul>
 
-<h3>Actions</h3>
-<div class="btn-group">
-	<a href="#" class="btn">New Injury</a>
-	<a href="#" class="btn">New Adverse Event</a>
-</div>
