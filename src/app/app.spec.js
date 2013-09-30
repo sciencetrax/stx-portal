@@ -26,10 +26,11 @@ describe('App', function () {
         SecurityService = _SecurityService_;
         WebServiceConfig = _WebServiceConfig_;
         controller = $controller('ApplicationController', { $scope: $scope });
+        $rootScope.$apply();
     }));
 
     describe('ApplicationController', function () {
-        beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$controller_, _$rootScope_, _WebServiceConfig_, _SecurityService_) {
+        beforeEach(inject(function () {
         }));
 
         it('should redirect to "/" once the authorization context is ready', inject(function () {
@@ -45,7 +46,7 @@ describe('App', function () {
         }));
 
         it('should redirect to the login page when not authorized', inject(function () {
-            expect($location.path()).toBe('/login');
+            expect($location.path()).toBe('/accounts/login');
         }));
 
         it('should set LS on $scope', inject(function () {

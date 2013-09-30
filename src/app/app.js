@@ -27,18 +27,18 @@ angular.module('stx', [
     }])
     .controller('ApplicationController', ['$scope', '$window', '$location', 'SecurityService', function($scope, $window, $location, SecurityService) {
         var targetLocation = $location.path();
-        if (targetLocation == "/login"
-            || targetLocation == "/waiting") {
+        if (targetLocation == "/accounts/login"
+            || targetLocation == "/common/waiting") {
             targetLocation = "/home/summary";
         }
         $scope.$on('httpError', function(event, message) {
             SecurityService.handleError(message.status, message.data);
         });
         $scope.$on('notAuthorized', function() {
-            $location.path('/login');
+            $location.path('/accounts/login');
         });
         $scope.$on('authorizationContextLoading', function() {
-            $location.path('/waiting');
+            $location.path('/common/waiting');
         });
         $scope.$on('authorizationContextReady', function() {
             $location.path(targetLocation).replace();

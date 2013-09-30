@@ -1,3 +1,4 @@
+var PORTAL_CODE = "test";
 describe('LoginController', function () {
     var $http;
     var $httpBackend;
@@ -10,7 +11,7 @@ describe('LoginController', function () {
     var SecurityService;
     var LoginController;
 
-    beforeEach(module('stx.login'));
+    beforeEach(module('stx.accounts.login'));
 
     beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$urlRouter_, _$controller_, _WebServiceConfig_, _SecurityService_) {
         $http = _$http_;

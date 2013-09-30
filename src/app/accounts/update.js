@@ -6,21 +6,6 @@
             'stx.core.webService',
             'stx.core.directives.metaValidate'
         ])
-        .config(['$stateProvider', function ($stateProvider) {
-            $stateProvider
-                .state('accounts', {
-                    abstract: true,
-                    url: '/accounts',
-                    template: '<div ui-view></div>'
-                })
-                .state('accounts.update', {
-                    url: '/accounts/update',
-                    controller: 'accounts.update.controller',
-                    templateUrl: 'accounts/update.tpl.html',
-                    data: { pageTitle: 'Account Update' }
-                })
-            ;
-        }])
         .controller('accounts.update.controller',['$scope', 'Metadata', 'Account', 'SecurityService', function ($scope, Metadata, Account, SecurityService) {
             $scope.LSPage = LS.pages.accounts.update;
             $scope.metadata = {};
