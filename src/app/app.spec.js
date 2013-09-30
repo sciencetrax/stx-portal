@@ -26,6 +26,7 @@ describe('App', function () {
         SecurityService = _SecurityService_;
         WebServiceConfig = _WebServiceConfig_;
         controller = $controller('ApplicationController', { $scope: $scope });
+        $httpBackend.when('GET', '/StudyTrax/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
         $rootScope.$apply();
     }));
 

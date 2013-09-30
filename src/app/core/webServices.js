@@ -34,7 +34,7 @@ angular.module('stx.core.webService', [
     })
 
     .factory('Account', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/users/:userId'), {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/accounts/:userId'), {
             customerId: '@customerId',
             id: '@id'
         }, serviceActions);
@@ -111,6 +111,9 @@ angular.module('stx.core.webService', [
     }])
     .factory('Metadata', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
+    }])
+    .factory('Portal', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:code'));
     }])
     .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));

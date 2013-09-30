@@ -10,12 +10,15 @@ var SecurityService;
         authorization: null,
         authorizationContext: null,
         AUTH_HEADER: "X-Authorization",
+        portal: null,
+        Portal: null,
+
         init: function () {
         },
-        initialize: function() {
-            var _this = this;
-            this.$rootScope.$on('httpError', function(event, message) {
-                _this.handleError(message.status, message.data);
+        initialize: function () {
+            this.portal = this.Portal.get({
+                code: PORTAL_CODE,
+                includeProject: true
             });
         },
         authorize: function (authorization) {
@@ -35,7 +38,8 @@ var SecurityService;
             var authorization;
             try {
                 authorization = this.$cookieStore.get(this.AUTH_HEADER);
-            } catch (e) {}
+            } catch (e) {
+            }
             if (authorization == null) {
                 this.$rootScope.$broadcast('notAuthorized');
                 return;
@@ -43,7 +47,7 @@ var SecurityService;
             this.$cookieStore.remove(this.AUTH_HEADER);
             this.authorize(authorization);
         },
-        handleError: function(statusCode, responseData) {
+        handleError: function (statusCode, responseData) {
             if (statusCode == HttpStatusCodes.internalServerError) {
                 bootbox.alert(responseData);
             } else if (statusCode == HttpStatusCodes.unauthorized) {
@@ -59,15 +63,17 @@ var SecurityService;
     var SecurityServiceProvider = Class.extend({
         instance: new SecurityService(),
 
-        $get: ['$http', '$location', '$cookieStore', '$rootScope', 'authorizationContext', function ($http, $location, $cookieStore, $rootScope, AuthorizationContext) {
-            this.instance.$http = $http;
-            this.instance.$location = $location;
-            this.instance.$cookieStore = $cookieStore;
-            this.instance.$rootScope = $rootScope;
-            this.instance.AuthorizationContextResource = AuthorizationContext;
-            this.instance.initialize();
-            return this.instance;
-        }]
+        $get: ['$http', '$location', '$cookieStore', '$rootScope', 'authorizationContext', 'Portal',
+            function ($http, $location, $cookieStore, $rootScope, AuthorizationContext, Portal) {
+                this.instance.$http = $http;
+                this.instance.$location = $location;
+                this.instance.$cookieStore = $cookieStore;
+                this.instance.$rootScope = $rootScope;
+                this.instance.AuthorizationContextResource = AuthorizationContext;
+                this.instance.Portal = Portal;
+                this.instance.initialize();
+                return this.instance;
+            }]
     });
 
     angular.module('stx.core.securityService', [

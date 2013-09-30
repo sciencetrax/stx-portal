@@ -49,7 +49,11 @@ angular.module('stx', [
             }
         });
 
-        SecurityService.handleAuthentication();
+        if (targetLocation == '/accounts/register') {
+            SecurityService.removeAuthorization();
+        } else {
+            SecurityService.handleAuthentication();
+        }
         $scope.$root.LS = LS;
     }])
 ;

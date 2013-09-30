@@ -5,18 +5,21 @@ describe('SecurityService', function () {
     var $location;
     var $cookieStore;
     var $rootScope;
+    var WebServiceConfig;
     var SecurityService;
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _SecurityService_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _WebServiceConfig_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $location = _$location_;
         $cookieStore = _$cookieStore_;
         $rootScope = _$rootScope_;
+        WebServiceConfig = _WebServiceConfig_;
         SecurityService = _SecurityService_;
 
         $http.defaults.headers.common[SecurityService.AUTH_HEADER] = 'authToken';
         $cookieStore.put(SecurityService.AUTH_HEADER, 'authToken');
         $httpBackend.when('GET', '/api/authorizationcontext').respond({ subject: { projects: [ {siteId: 100} ] }});
+        $httpBackend.when('GET', '/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
     }));
 
     describe('authorize', function () {

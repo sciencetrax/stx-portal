@@ -8,12 +8,13 @@ describe('LoginController', function () {
     var $urlRouter;
     var $scope;
     var $controller;
+    var Portal;
     var SecurityService;
-    var LoginController;
+    var controller;
 
     beforeEach(module('stx.accounts.login'));
 
-    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$urlRouter_, _$controller_, _WebServiceConfig_, _SecurityService_) {
+    beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$urlRouter_, _$controller_, _WebServiceConfig_, _Portal_, _SecurityService_) {
         $http = _$http_;
         $httpBackend = _$httpBackend_;
         $location = _$location_;
@@ -21,6 +22,7 @@ describe('LoginController', function () {
         $rootScope = _$rootScope_;
         $urlRouter = _$urlRouter_;
         $scope = $rootScope.$new();
+        Portal = _Portal_;
         SecurityService = _SecurityService_;
         $controller = _$controller_;
 
@@ -29,20 +31,24 @@ describe('LoginController', function () {
         $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
         $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
         $httpBackend.when('GET', '/api/authorizationcontext').respond({ userId: 101 });
+        $httpBackend.when('GET', '/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
     }));
 
     describe('constructor', function () {
-        beforeEach(inject(function (_$http_, _$location_, _$cookieStore_, _$rootScope_, $controller, _SecurityService_) {
+        beforeEach(inject(function () {
             $http.defaults.headers.common[SecurityService.AUTH_HEADER] = 'authToken';
             $cookieStore.put(SecurityService.AUTH_HEADER, 'authToken');
-            LoginController = $controller('LoginController', {
+            controller = $controller('LoginController', {
                 $scope: $scope
             });
+            $rootScope.$apply();
+            $httpBackend.flush();
         }));
 
         it('should not be null', inject(function () {
-            expect(LoginController).not.toBe(null);
+            expect(controller).not.toBe(null);
         }));
+
         it('should remove the cookie', inject(function () {
             expect($cookieStore.get(SecurityService.AUTH_HEADER)).toBe(undefined);
         }));
@@ -50,10 +56,21 @@ describe('LoginController', function () {
         it('should remove the auth header', inject(function () {
             expect($http.defaults.headers.common[SecurityService.AUTH_HEADER]).toBe(null);
         }));
+
+        describe('$scope', function () {
+            it('LSPage should be assigned to the appropriate page resource', inject(function () {
+                expect($scope.LSPage).toBe(LS.pages.accounts.login);
+            }));
+
+            it('portal.name should "Test Portal"', inject(function () {
+                expect($scope.portal.name).toBe("TestPortal");
+            }));
+
+        });
     });
     describe('login', function () {
         beforeEach(inject(function () {
-            LoginController = $controller('LoginController', {
+            controller = $controller('LoginController', {
                 $scope: $scope
             });
             $scope.authorization.username = 'UN';

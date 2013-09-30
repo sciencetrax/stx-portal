@@ -3,7 +3,7 @@
 
 	errorMessages: {
 		AccountLocked: "Your account has been locked.",
-		EmailAddressNotVerified: "Your email address has not been verified.",
+		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		InvalidUsernameOrPassword: "Invalid username or password.",
 		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
 		PasswordExpired: "Your password has expired.",
@@ -15,6 +15,25 @@
 	},
 	pages: {
         accounts: {
+            login: {
+                heading: "Login",
+                username: "Username",
+                password: "Password",
+                login: "Login",
+                enroll: "Enroll",
+                register: "Sign up",
+                forgotUsernameOrPassword: "Forgot your username or password?"
+            },
+            register: {
+                heading: "Register",
+
+                confirm: "Confirm",
+                firstName: "First Name",
+                lastName: "Last Name",
+                middleInitial: "Middle Initial",
+                password: "Password",
+                username: "Username"
+            },
             update: {
                 heading: "Update Account"
             }
@@ -30,18 +49,6 @@
             details: "Details",
             profile: "Profile"
         },
-		login: {
-			heading: "Login",
-			username: "Username",
-			password: "Password",
-			login: "Login",
-			enroll: "Enroll",
-			register: "Sign up",
-			forgotUsernameOrPassword: "Forgot your username or password?"
-		},
-		register: {
-            register: "Register"
-		},
         variableGroups: {
             update: {
                 cancel: "Cancel",
