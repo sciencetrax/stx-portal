@@ -1,8 +1,17 @@
-﻿angular.module('metaValidate', [])
+﻿angular.module('stx.core.directives.metaValidate', [])
     .directive('metaValidate', ['$compile', function ($compile) {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
+                var md = scope.$eval(attrs.metaValidate);
+                scope.$watch(attrs.metaValidate, function (value) {
+                    var md = value;
+                    if (md === undefined) {
+                        return;
+                    }
+                    element.attr("name", md.name);
+                });
+                /*
                 scope.$watch(attrs.metaValidate, function (value) {
                     var md = scope.$eval(attrs.metaValidate);
                     if (md === undefined) {
@@ -35,6 +44,7 @@
                         element.attr("max", md.length);
                     }
                 });
+                /**/
             }
         };
     }])

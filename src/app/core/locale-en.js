@@ -14,7 +14,7 @@
 		logASubjectIn: "Log a subject in"
 	},
 	pages: {
-        account: {
+        accounts: {
             update: {
                 heading: "Update Account"
             }

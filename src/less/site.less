@@ -1,3 +1,4 @@
+
 body {
   font-size: 1.5em;
   min-width: 320px;
@@ -26,16 +27,7 @@ body {
 .footer .btn {
   height: 40px;
 }
-/*
-.footer,
-.footer a {
-  color: lightgray;
-}
 
-/**/
-.content {
-  margin-top: 60px;
-}
 .content .list-group {
   font-size: 1.5em;
   margin-left: -15px;
@@ -89,6 +81,11 @@ body {
   background: #F0592B !important;
 }
 
+.form-control {
+  margin-bottom: 10px;
+}
+
+
 .studytrax{
   color: Black !important;
 }
@@ -106,10 +103,11 @@ body {
   background: #2A4E7A !important;
 }
 
+/*
 .form-control {
   margin-bottom: 10px;
 }
-
+/**/
 
 
 .resolution-xs {
@@ -121,11 +119,11 @@ body {
 }
 
 
-.visible-xs-inline-block {
+.visible-xs-inline {
   display: inline !important;
 }
-@media (min-width: 767px) {
-  .visible-xs-inline-block {
+@media (min-width: @screen-phone) {
+  .visible-xs-inline {
     display: none !important;
   }
 }

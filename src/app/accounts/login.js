@@ -1,19 +1,19 @@
 (function () {
     "use strict";
 
-    angular.module('stx.login', [
+    angular.module('stx.accounts.login', [
             'ui.router',
             'stx.core'
         ])
         .config(['$stateProvider', function($stateProvider) {
             $stateProvider.state('login', {
-                url: '/login',
-                controller: 'LoginController',
-                templateUrl: 'login/login.tpl.html',
+                url: '/accounts/login',
+                controller: 'accounts.login.controller',
+                templateUrl: 'account/login.tpl.html',
                 data: { pageTitle: 'Login' }
             });
         }])
-        .controller("LoginController", ['$scope', '$location', 'Authorization', 'SystemService', 'SecurityService', function ($scope, $location, Authorization, SystemService, SecurityService) {
+        .controller("accounts.login.controller", ['$scope', '$location', 'Authorization', 'SystemService', 'SecurityService', function ($scope, $location, Authorization, SystemService, SecurityService) {
             SecurityService.removeAuthorization();
 
             $scope.authorization = new Authorization();

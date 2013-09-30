@@ -33,17 +33,23 @@ angular.module('stx.core.webService', [
         };
     })
 
-    .factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'authorization?portalCode=:portalCode&username=:username&password=:password'), {
+    .factory('Account', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/users/:userId'), {
+            customerId: '@customerId',
+            id: '@id'
+        }, serviceActions);
+    }])
+    .factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorization?portalCode=:portalCode&username=:username&password=:password'), {
             portalCode: '@portalCode',
             username: '@username',
             password: '@password'
         });
     }])
-    .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'authorizationcontext'));
+    .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorizationcontext'));
     }])
-    .factory('DataEntryForm', ['$http', 'WebServiceConfig', 'VariablePanelScript', function ($http, WebServicesConfig, VariablePanelScript) {
+    .factory('DataEntryForm', ['$http', 'WebServiceConfig', 'VariablePanelScript', function ($http, WebServiceConfig , VariablePanelScript) {
         return {
             get: function (projectId, portalId, intervalId, encounterId, variableGroupId) {
                 var _this = this;
@@ -99,30 +105,24 @@ angular.module('stx.core.webService', [
                 });
             },
             getUrl: function() {
-                return UrlUtils.combine(WebServicesConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');
+                return UrlUtils.combine(WebServiceConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');
             }
         };
     }])
-    .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
+    .factory('Metadata', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
     }])
-    .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'));
+    .factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
     }])
-    .factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServicesConfig) {
-        return $resource(UrlUtils.combine(WebServicesConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript'));
+    .factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'));
+    }])
+    .factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript'));
     }])
 
 
-    .factory('Account', ['$resource', '$http', function ($resource, $http) {
-        return $resource(applicationPath + 'api/customers/:customerId/users/:id', {
-            customerId: '@customerId',
-            id: '@id'
-        }, serviceActions);
-    }])
-    .factory('Metadata', ['$resource', function ($resource) {
-        return $resource(applicationPath + 'api/metadata/:entityType');
-    }])
     .factory('Session', ['$resource', function ($resource) {
         return $resource(applicationPath + 'api/sessions/:id', {
             id: '@id'
