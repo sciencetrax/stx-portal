@@ -20,9 +20,9 @@
                     $scope.authorization.$save(function (data) {
                         SecurityService.authorize(data.authorization);
                     }, function (data) {
-                        if (data.data.errorCode == 'EmailAddressNotVerified') {
+                        if (data.data.errorCode != null) {
                             $scope.error = {
-                                code: LS.errorMessages.get(data.data.errorCode),
+                                code: data.data.errorCode,
                                 message: LS.errorMessages.get(data.data.errorCode)
                             };
                         } else {
@@ -32,7 +32,8 @@
                 };
 
                 $scope.resendVerificationEmail = function() {
-
+                    this.error = null;
+                    this.successMessage = this.LSPage.verificationEmailSent;
                 };
             }])
     ;

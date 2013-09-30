@@ -10,20 +10,22 @@
     </ul>
 </div>
 
-        <h2>
-            TODO's
-        </h2>
-<ul class="list-group">
+<h2>TODO's</h2>
+<ul class="nav">
     <!-- INCOMPLETE VARIABLE GROUPS -->
-	<li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
-        <a ui-route="/forms/update/variablegroup" href="#/variablegroups/update/{{item.id}}//">{{item.name}}</a>
-        <span class="badge" ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
-	</li>
+    <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}" class="list-group-item">
+        <a href="#/variablegroups/update/{{item.id}}//">{{item.name}}
+            <span class="badge pull-right"
+                  ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+        </a>
+    </li>
 
     <!-- INCOMPLETE ENCOUNTERS -->
-	<li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete" class="list-group-item">
-		<a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">{{item.name}}</a>
-		<span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
-	</li>
+    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete"
+        class="list-group-item">
+        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">{{item.name}}
+            <span class="badge pull-right {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
+        </a>
+    </li>
 </ul>
 

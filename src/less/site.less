@@ -1,124 +1,5 @@
-
-body {
-  font-size: 1.5em;
-  min-width: 320px;
-  overflow-x: hidden;
-  margin-bottom: 50px;
-  padding: 5px;
-}
-
-.list-group-item {
-  padding: 0px;
-}
-.list-group-item a {
-  display: block !important;
-  margin-right: 100px;
-  overflow: hidden;
-  padding: 10px 15px !important;
-  position: relative !important;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.footer {
-  background: black;
-  min-height: inherit !important;
-}
-.footer .btn {
-  height: 40px;
-}
-
-.content .list-group {
-  font-size: 1.5em;
-  margin-left: -15px;
-  margin-right: -10px;
-}
-
-.list-group-item .badge {
-  font-size: .8em;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
-.badge.complete {
-  background: #6CC417 !important;
-}
-.badge.incomplete {
-  background: #F9966B !important;
-  color: black;
-}
-
-
-.footer .btn {
-  background: inherit;
-}
-.footer .btn.active {
-  background: #F0592B;
-}
-.footer .btn-group {
-  border-top: solid 1px slategrey;
-}
-.footer .btn-group .btn + .btn {
-  border-left: solid 1px slategrey;
-}
-
-.navbar-inverse {
-  color: white;
-}
-.navbar-btn{
-  background: #5C8CC7;
-  color: white;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.navbar-btn:hover {
-  background: #F7A288 !important;
-}
-.navbar .nav a {
-  font-size: 1.5em;
-}
-.navbar .nav a:hover {
-  background: #F0592B !important;
-}
-
-.form-control {
-  margin-bottom: 10px;
-}
-
-
-.studytrax{
-  color: Black !important;
-}
-.studytrax a:not(.btn) {
-  color: #F0592B;
-}
-
-.studytrax .navbar .navbar-brand,
-.studytrax .navbar a {
-  border: none;
-  color: whitesmoke !important;
-}
-.studytrax .navbar,
-.studytrax .footer {
-  background: #2A4E7A !important;
-}
-
-/*
-.form-control {
-  margin-bottom: 10px;
-}
-/**/
-
-
-.resolution-xs {
-  font-size: 1.5em;
-}
-
-.update-view header h1 {
-  text-align: center;
-}
-
-
+// FIX: Bootstrap 3.0 does not appropriately display elements that were originally
+// display: inline.  This adds a new class to fix that.
 .visible-xs-inline {
   display: inline !important;
 }
@@ -127,3 +8,47 @@ body {
     display: none !important;
   }
 }
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
+ul.nav li.list-group-item {
+  padding: 0px;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+
+
+.resolution-xs {
+  font-size: 1.5em;
+}
+
+
+
+.navbar-btn:hover {
+  background: #F7A288 !important;
+}
+
+.badge.complete {
+  background: #6CC417 !important;
+}
+.badge.incomplete {
+  background: #F9966B !important;
+  color: black;
+}
+.footer .btn {
+  background: @footer-bg;
+  color: @footer-color;
+}
+.footer .btn.active {
+  background: @footer-btn-active-bg;
+  color: @footer-btn-active-color;
+}
+
+
+

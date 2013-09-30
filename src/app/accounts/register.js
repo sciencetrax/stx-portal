@@ -18,9 +18,21 @@
                     account.customerId = $scope.portal.project.customerId;
                     account.portalId = $scope.portal.id;
                     account.projectId = $scope.portal.project.id;
+                    /**/
                     Account.save(account, function (response) {
                         account.lastUpdateDate = response.lastUpdateDate;
+                    }, function(data) {
+                        if (data.data.errorCode != null) {
+                            $(window).scrollTop(0);
+                            $scope.error = {
+                                code: data.data.errorCode,
+                                message: LS.errorMessages.get(data.data.errorCode)
+                            };
+                        } else {
+                            SystemService.handleError(data.data);
+                        }
                     });
+                    /***/
                 };
             }])
     ;

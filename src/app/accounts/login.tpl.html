@@ -11,11 +11,16 @@
 			<div class="col-xs-12 col-sm-4 col-md-4">
 
                 <!-- ERROR MESSAGES -->
-                <div class="alert alert-danger" ng-class="{hide: error === undefined}">
+                <div class="alert alert-danger" ng-class="{hide: error == null}">
                     {{error.message}}
                     <div class="text-center">
-                    <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.message === 'EmailAddressNotVerified'}">Resend Email</div>
+                        <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">Resend Email</div>
                     </div>
+                </div>
+
+                <!-- SUCCESS MESSAGES -->
+                <div class="alert alert-success" ng-class="{hide: successMessage == null}">
+                    {{successMessage}}
                 </div>
 
 				<fieldset>

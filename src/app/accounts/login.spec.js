@@ -30,6 +30,7 @@ describe('LoginController', function () {
 
         $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=PW').respond(HttpStatusCodes.ok, { authorization: 'AuthCode' });
         $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=badPW').respond(HttpStatusCodes.unauthorized, { errorCode: 'InvalidUsernameOrPassword' });
+        $httpBackend.when('POST', '/api/authorization?portalCode=test&username=UN&password=expiredPassword').respond(HttpStatusCodes.unauthorized, { errorCode: 'PasswordExpired' });
         $httpBackend.when('GET', '/api/authorizationcontext').respond({ userId: 101 });
         $httpBackend.when('GET', '/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
     }));
@@ -86,12 +87,20 @@ describe('LoginController', function () {
             expect(SecurityService.authorizationContext.userId).toBe(101);
         }));
 
-        it('should bootbox is used to display error messages when an http error occurs', inject(function () {
+        it('should give an error message when a bad password is provided', inject(function () {
             $scope.authorization.password = 'badPW';
             $scope.login();
             $rootScope.$apply(); // fix for angular 1.1.4
             $httpBackend.flush();
-            expect(bootbox.alertmessage).toBe(LS.errorMessages.InvalidUsernameOrPassword);
+            expect($scope.error.message).toBe(LS.errorMessages.InvalidUsernameOrPassword);
+        }));
+
+        it('should give an error message when the password is expired', inject(function () {
+            $scope.authorization.password = 'expiredPassword';
+            $scope.login();
+            $rootScope.$apply(); // fix for angular 1.1.4
+            $httpBackend.flush();
+            expect($scope.error.message).toBe(LS.errorMessages.PasswordExpired);
         }));
     });
 });
