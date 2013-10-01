@@ -3,6 +3,7 @@
 .visible-xs-inline {
   display: inline !important;
 }
+
 @media (min-width: @screen-phone) {
   .visible-xs-inline {
     display: none !important;
@@ -13,41 +14,55 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   margin-bottom: 50px;
-  padding: 5px;
 }
 
 ul.nav li.list-group-item {
   padding: 0px;
 }
+
 .form-control {
   margin-bottom: 10px;
 }
-
-
-.resolution-xs {
-  font-size: 1.5em;
-}
-
-
 
 .navbar-btn:hover {
   background: #F7A288 !important;
 }
 
-.badge.complete {
-  background: #6CC417 !important;
+.text-badge {
+  line-height: 18px;
+  display: block;
+  vertical-align: middle;
+  div {
+    display: inline-block !important;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+  }
+  span {
+    .badge;
+    .pull-right;
+  }
+  .complete {
+    background: @brand-success !important;
+  }
+  .incomplete {
+    background: @brand-warning !important;
+    color: black;
+  }
 }
-.badge.incomplete {
-  background: #F9966B !important;
-  color: black;
-}
-.footer .btn {
-  background: @footer-bg;
-  color: @footer-color;
-}
-.footer .btn.active {
-  background: @footer-btn-active-bg;
-  color: @footer-btn-active-color;
+
+.footer {
+  .btn {
+    background: @footer-bg;
+    color: @footer-color;
+  }
+
+  .btn.active {
+    background: @footer-btn-active-bg;
+    color: @footer-btn-active-color;
+  }
 }
 
 

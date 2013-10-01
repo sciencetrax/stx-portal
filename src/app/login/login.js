@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    angular.module('stx.accounts.login', [
+    angular.module('stx.login.login', [
             'ui.router',
             'stx.core'
         ])

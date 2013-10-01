@@ -6,22 +6,7 @@
             'stx.core.directives.backButton',
             'ui.router'
         ])
-        .config(['$stateProvider', function ($stateProvider) {
-            $stateProvider
-                .state('variablegroups', {
-                    abstract: true,
-                    url: "/variablegroups",
-                    template: "<div ui-view></div>"
-                })
-                .state('variablegroupsUpdate', {
-                    url: '/variablegroups/update/{variableGroupId}/{intervalId}/{encounterId}',
-                    controller: 'variablegroups.update.controller',
-                    templateUrl: 'variablegroups/update.tpl.html',
-                    data: { pageTitle: 'Variable Group | Update' }
-                })
-            ;
-        }])
-        .controller("variablegroups.update.controller", ['$scope', '$http', '$window', '$stateParams', '$location', 'SecurityService', 'NavigationService', 'DataEntryForm',
+        .controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$stateParams', '$location', 'SecurityService', 'NavigationService', 'DataEntryForm',
             function ($scope, $http, $window, $stateParams, $location, SecurityService, NavigationService, DataEntryForm) {
                 var authorizationContext = SecurityService.authorizationContext;
                 var dataEntryPanel = $('.DataEntryPanel');

@@ -1,15 +1,15 @@
-<div>
-    <h1>Forms
-        <small>All Incomplete</small>
-    </h1>
-    <div id="variable-panel-code"></div>
+<h1>Forms
+    <small>All Incomplete</small>
+</h1>
+<div id="variable-panel-code"></div>
 
-    <div class="DataEntryPanel">
-        <ul class="list-group">
-            <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
-                <a ui-route="/forms/update/variablegroup" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">{{item.name}}</a>
-                <span class="badge" ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
-            </li>
-        </ul>
-    </div>
+<div class="DataEntryPanel">
+    <ul class="nav">
+        <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
+            <a class="text-badge" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">
+                <div>{{item.name}}</div>
+                <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+            </a>
+        </li>
+    </ul>
 </div>

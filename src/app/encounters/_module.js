@@ -10,7 +10,10 @@
                 .state('encounters', {
                     abstract: true,
                     url: '/encounters',
-                    template: '<div ui-view></div>'
+                    views: {
+                        'menu': { templateUrl: 'common/secure-menu.tpl.html' },
+                        'content': { template: '<div ui-view></div>' }
+                    }
                 })
                 .state('encounters.view', {
                     url: '/view/{intervalId}/{encounterId}',

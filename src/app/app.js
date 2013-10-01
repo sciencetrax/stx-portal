@@ -10,6 +10,7 @@ angular.module('stx', [
         'stx.core',
         'stx.encounters',
         'stx.home',
+        'stx.login',
         'stx.variablegroups'
     ])
     .factory('SecurityResponseErrorInterceptor', ['$q', '$rootScope', function ($q, $rootScope) {
@@ -22,20 +23,26 @@ angular.module('stx', [
     }])
     .config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider', function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
         $httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
-        $urlRouterProvider.otherwise('/home/summary');
+        $urlRouterProvider
+            .when('/', '/home/index/summary')
+            .when('/home', '/home/index/summary')
+            .when('/login', '/login/login')
+            .when('/register', '/login/register')
+            .when('/subjectLogin', '/login/subjectLogin')
+            .otherwise('/');
         WebServiceConfigProvider.configure("/StudyTrax", "api/");
     }])
     .controller('ApplicationController', ['$scope', '$window', '$location', 'SecurityService', function($scope, $window, $location, SecurityService) {
         var targetLocation = $location.path();
-        if (targetLocation == "/accounts/login"
+        if (targetLocation == "/login/login"
             || targetLocation == "/common/waiting") {
-            targetLocation = "/home/summary";
+            targetLocation = "/home/index/summary";
         }
         $scope.$on('httpError', function(event, message) {
             SecurityService.handleError(message.status, message.data);
         });
         $scope.$on('notAuthorized', function() {
-            $location.path('/accounts/login');
+            $location.path('/login/login');
         });
         $scope.$on('authorizationContextLoading', function() {
             $location.path('/common/waiting');

@@ -7,7 +7,7 @@ describe('HomeController', function () {
     var controller;
     var SecurityService;
 
-    beforeEach(module('stx.home'));
+    beforeEach(module('stx.home.index'));
 
     beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_, _SecurityService_) {
         $http = _$http_;

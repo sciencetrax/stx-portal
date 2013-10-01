@@ -1,0 +1,15 @@
+<div class='container'>
+    <div ui-view></div>
+
+    <!-- FOOTER NAVBAR -->
+    <div class="navbar-inverse navbar-fixed-bottom footer">
+        <div class="btn-group btn-group-justified">
+            <a href="#/home/index/summary" class="btn" ng-class="{active:$state.includes('home.index.summary')}">{{
+                LSPage.summary }}</a>
+            <a href="#/home/index/details" class="btn" ng-class="{active:$state.includes('home.index.details')}">{{
+                LSPage.details }}</a>
+            <a href="#/home/index/profile" class="btn" ng-class="{active:$state.includes('home.index.profile')}">{{
+                LSPage.profile }}</a>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,7 @@
-<div>
-    <div ng-include="src='common/back-button-menu.tpl.html'"></div>
-
+<div class="container">
     <div class="variable-panel-scripts"></div>
 
-    <!-- CONTENT -->
-    <div class="content">
-        <div ui-view>Loading...</div>
-    </div>
+    <div ui-view>Loading...</div>
 
     <!-- FOOTER NAVBAR -->
     <div class="navbar-inverse navbar-fixed-bottom footer" ng-class="{hide: encounter.reports.length == 0}">

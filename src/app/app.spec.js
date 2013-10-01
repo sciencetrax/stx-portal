@@ -47,7 +47,7 @@ describe('App', function () {
         }));
 
         it('should redirect to the login page when not authorized', inject(function () {
-            expect($location.path()).toBe('/accounts/login');
+            expect($location.path()).toBe('/login/login');
         }));
 
         it('should set LS on $scope', inject(function () {

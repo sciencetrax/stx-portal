@@ -12,7 +12,7 @@ describe('LoginController', function () {
     var SecurityService;
     var controller;
 
-    beforeEach(module('stx.accounts.login'));
+    beforeEach(module('stx.login.login'));
 
     beforeEach(inject(function (_$http_, _$httpBackend_, _$location_, _$cookieStore_, _$rootScope_, _$urlRouter_, _$controller_, _WebServiceConfig_, _Portal_, _SecurityService_) {
         $http = _$http_;

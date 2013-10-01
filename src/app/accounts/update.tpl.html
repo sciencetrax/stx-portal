@@ -42,12 +42,13 @@
                            class="form-control"/>
                 </div>
 
-                <!-- SUBMIT BUTTON -->
-                <button ng-click="update()" class="btn btn-primary form-control"
-                        <!--ng-disabled="formName.$invalid || !isDirty(account)"-->
-                        >
-                    Save
-                </button>
+
+                <!-- SAVE BUTTON -->
+                <button ng-click="update()" class="btn btn-primary form-control" ng-disabled="formName.$invalid">Save</button>
+
+                <!-- CANCEL BUTTON -->
+                <a back-button class="btn btn-default form-control"
+                   ng-disabled="formName.$invalid">Cancel</a>
             </fieldset>
         </form>
     </div>

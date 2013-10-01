@@ -3,23 +3,23 @@
 	<button ng-click="$state.go('accounts.update')" class="btn btn-default">Edit</button>
 	<button href="#" class="btn btn-default">Change Password</button>
 </div>
-<	
+
 <div class="row">
 	<div class="col-xs-4">Username:</div>
-	<div class="col-xs-8">{{data.user.username}}</div>
+	<div class="col-xs-8">{{account.username}}</div>
 </div>
 <div class="row">
 	<div class="col-xs-4">Name:</div>
 	<div class="col-xs-8">
-		{{data.user.firstName}} 
-		{{data.user.middleInitial}} 
-		{{data.user.lastName}}
+		{{account.firstName}}
+		{{account.middleInitial}}
+		{{account.lastName}}
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-4">Email Address:</div>
 	<div class="col-xs-8">
-		{{data.user.emailAddress}} 
+		{{account.emailAddress}}
 	</div>
 </div>
 <h2>Other</h2>

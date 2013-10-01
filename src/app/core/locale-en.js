@@ -18,12 +18,13 @@
         accounts: {
             login: {
                 heading: "Login",
-                username: "Username",
-                password: "Password",
-                login: "Login",
                 enroll: "Enroll",
+                forgotUsernameOrPassword: "Forgot username / password",
+                login: "Login",
+                password: "Password",
                 register: "Sign up",
-                forgotUsernameOrPassword: "Forgot your username or password?",
+                resendVerificationEmail: "Resend Email",
+                username: "Username",
                 verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
             },
             register: {

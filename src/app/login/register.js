@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    angular.module('stx.accounts.register', [
+    angular.module('stx.login.register', [
             'ui.router',
             'stx.core.webService',
             'stx.core.directives.metaValidate'
