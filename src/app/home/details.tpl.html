@@ -1,14 +1,16 @@
 ﻿<ul class="nav nav-tabs">
-    <li><a data-target="#schedule" data-toggle="tab">Schedule</a></li>
+    <li><a data-target="#schedule" data-toggle="tab">{{LSPage.schedule}}</a></li>
     <li><a data-target="#injuries" data-toggle="tab">Injuries</a></li>
     <li><a data-target="#adverseEvents" data-toggle="tab">Adverse Event</a></li>
 </ul>
 <div class="tab-content">
     <div id="schedule" class="tab-pane">
-        <ul class="list-group">
+        <ul class="nav">
             <li ng-repeat="item in encounters | orderBy:'dueDate':true " class="list-group-item">
-                <a href="#/viewEncounter/--{{item.intervalId}}">{{item.name}}</a>
-                <span class="badge {{item.dataCompletionStatus}}">{{item.percentComplete}}%</span>
+                <a class="text-badge" href="#/viewEncounter/--{{item.intervalId}}">
+                    <div>{{item.name}}</div>
+                <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
+                </a>
             </li>
         </ul>
     </div>

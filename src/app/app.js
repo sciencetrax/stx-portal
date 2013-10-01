@@ -32,12 +32,25 @@ angular.module('stx', [
             .otherwise('/');
         WebServiceConfigProvider.configure("/StudyTrax", "api/");
     }])
-    .controller('ApplicationController', ['$scope', '$window', '$location', 'SecurityService', function($scope, $window, $location, SecurityService) {
+    .controller('ApplicationController', ['$scope', '$window', '$location', '$state', 'SecurityService', function($scope, $window, $location, $state, SecurityService) {
+        $scope.safeApply = function(fn) {
+            var phase = this.$root.$$phase;
+            if(phase == '$apply' || phase == '$digest') {
+                if(fn && (typeof(fn) === 'function')) {
+                    fn();
+                }
+            } else {
+                this.$apply(fn);
+            }
+        };
+        $scope.$state = $state;
+
         var targetLocation = $location.path();
         if (targetLocation == "/login/login"
             || targetLocation == "/common/waiting") {
             targetLocation = "/home/index/summary";
         }
+
         $scope.$on('httpError', function(event, message) {
             SecurityService.handleError(message.status, message.data);
         });

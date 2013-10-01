@@ -2,9 +2,11 @@
     "use strict";
     angular.module('stx.home', [
             'stx.core',
+            'stx.home.details',
+            'stx.home.incompleteVariableGroupSummaries',
             'stx.home.index',
             'stx.home.profile',
-            'stx.home.incompleteVariableGroupSummaries',
+            'stx.home.summary',
             'ui.router'
         ])
         .config(['$stateProvider', function ($stateProvider) {
@@ -19,19 +21,19 @@
                 })
                 .state('home.index', {
                     url: '/index',
-                    controller: 'HomeController',
+                    controller: 'IndexController',
                     templateUrl: 'home/index.tpl.html',
                     data: { pageTitle: 'Home' }
                 })
                 .state('home.index.summary', {
                     url: '/summary',
                     templateUrl: 'home/summary.tpl.html',
-                    controller: 'HomeController'
+                    controller: 'SummaryController'
                 })
                 .state('home.index.details', {
                     url: '/details',
                     templateUrl: 'home/details.tpl.html',
-                    controller: 'HomeController'
+                    controller: 'DetailsController'
                 })
                 .state('home.index.profile', {
                     url: '/profile',

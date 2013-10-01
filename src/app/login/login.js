@@ -7,13 +7,12 @@
         ])
         .controller("LoginController", ['$scope', '$state', '$location', 'Authorization', 'Portal', 'SystemService', 'SecurityService',
             function ($scope, $state, $location, Authorization, Portal, SystemService, SecurityService) {
-                $scope.$state = $state;
-                $scope.LSPage = LS.pages.accounts.login;
+//                $scope.$state = $state;
+//                $scope.LSPage = LS.pages.accounts.login;
 
                 SecurityService.removeAuthorization();
 
                 $scope.portal = SecurityService.portal;
-
                 $scope.authorization = new Authorization();
                 $scope.login = function () {
                     $scope.authorization.portalCode = PORTAL_CODE;
