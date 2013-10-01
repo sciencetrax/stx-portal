@@ -13,7 +13,8 @@
     "bootbox": "~4.0.0",
     "jquery": "~2.0.3",
     "jquery-ui": "~1.10.3",
-    "jquery-form": "~3.37.0"
+    "jquery-form": "~3.37.0",
+    "angular-scenario": "~1.0.8"
   },
   "dependencies": {}
 }

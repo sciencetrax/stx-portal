@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title ng-bind="pageTitle"></title>
     <script>
+        var WEB_SERVICES_URL = '/StudyTrax';
         var PORTAL_CODE = 'test';
     </script>
 
@@ -18,27 +19,27 @@
     <script type="text/javascript" src="<%= file %>"></script>
     <% }); %>
 
-    <link href='/StudyTrax/Content/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'/>
-    <link href='/StudyTrax/_content/css/VariablePanel.css' rel='stylesheet' type='text/css'/>
-    <script src='/StudyTrax/_content/js/st.utils.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.Dialog.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.PopupDialog.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.Business.Utils.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariableMetaData.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculation.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Calculator.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.ContextMenu.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.ControlFunctions.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Controller.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Utils.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.VisualAnalogScale.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Validation.js' type='text/javascript'></script>
-    <script src='/StudyTrax/_content/js/stx.VariablePanel.Variable.js' type='text/javascript'></script>
-    <script src='/StudyTrax/Areas/app/Scripts/stx/core.js' type='text/javascript'></script>
-    <script src='/StudyTrax/Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
+    <link href='http://localhost/StudyTrax/Content/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'/>
+    <link href='http://localhost/StudyTrax/_content/css/VariablePanel.css' rel='stylesheet' type='text/css'/>
+    <script src='http://localhost/StudyTrax/_content/js/st.utils.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.Dialog.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.PopupDialog.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.Business.Utils.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariableMetaData.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Calculation.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Calculator.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.ContextMenu.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.ControlFunctions.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Controller.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Utils.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.UIAdapters.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.VisualAnalogScale.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Validation.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/_content/js/stx.VariablePanel.Variable.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/Areas/app/Scripts/stx/core.js' type='text/javascript'></script>
+    <script src='http://localhost/StudyTrax/Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
 </head>
 <body class="studytrax">
     <div ui-view="menu"></div>

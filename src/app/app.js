@@ -30,7 +30,7 @@ angular.module('stx', [
 			.when('/register', '/login/register')
 			.when('/subjectLogin', '/login/subjectLogin')
 			.otherwise('/');
-		WebServiceConfigProvider.configure("/StudyTrax", "api/");
+		WebServiceConfigProvider.configure(WEB_SERVICES_URL, "api/");
 	}])
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'SecurityService',
 		function ($scope, $window, $location, $state, $stateParams, SecurityService) {
@@ -49,9 +49,6 @@ angular.module('stx', [
 			$scope.$on('$stateNotFound',
 				function(event, unfoundState, fromState, fromParams){
 					bootbox.alert("State Not Found:" + unfoundState.to);
-//					console.log(unfoundState.to); // "lazy.state"
-//					console.log(unfoundState.toParams); // {a:1, b:2}
-//					console.log(unfoundState.options); // {inherit:false} + default options
 				});
 			var targetLocation = $location.path();
 			if (targetLocation == "/login/login"

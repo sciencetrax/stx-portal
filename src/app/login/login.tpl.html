@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-sm-offset-4 col-sm-4">
 
         <!-- ERROR MESSAGES -->
-        <div class="alert alert-danger" ng-class="{hide: error == null}">
+        <div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
             {{error.message}}
             <div class="text-center">
                 <div ng-click="resendVerificationEmail()" class="btn btn-danger"
@@ -19,28 +19,28 @@
         </div>
 
         <fieldset>
-            <div data-role="form-group">
+            <div>
                 <label for="username" class="control-label">{{LSPage.username}}</label>
-                <input ng-model="authorization.username" type="text" required='true' maxlength='30'
+                <input id="username" ng-model="authorization.username" type="text" required='true' maxlength='30'
                        class="form-control" placeholder="{{LSPage.username}}" autofocus="autofocus"/>
             </div>
-            <div data-role="form-group">
+            <div>
                 <label for="password" class="control-label">{{LSPage.password}}</label>
-                <input ng-model="authorization.password" type='password' required='true' class="form-control"
+                <input id="password" ng-model="authorization.password" type='password' required='true' class="form-control"
                        placeholder="{{LSPage.password}}"/>
             </div>
-            <div data-role="form-group">
-                <button name="submit" type="submit" ng-click="login()" class="btn btn-primary form-control">
+            <div>
+                <button ng-click="login()" class="btn btn-primary form-control login">
                     {{LSPage.login}}
                 </button>
             </div>
-            <div data-role="form-group" ng-class="{hide: !portal.allowAnonymousDataEntry}">
-                <a href="#" class="btn btn-success form-control">{{LSPage.enroll}}</a>
+            <div ng-class="{hide: !portal.allowAnonymousDataEntry}">
+                <a href="#" class="btn btn-success form-control enroll">{{LSPage.enroll}}</a>
             </div>
-            <div data-role="form-group" ng-class="{hide: !portal.allowRegistration}">
-                <a href="#/register" class="btn btn-success form-control">{{LSPage.register}}</a>
+            <div ng-class="{hide: !portal.allowRegistration}">
+                <a href="#/register" class="btn btn-success form-control register">{{LSPage.register}}</a>
             </div>
-            <div data-role="form-group">
+            <div>
                 <a href="#" class="btn btn-default form-control">{{LSPage.forgotUsernameOrPassword}}</a>
             </div>
         </fieldset>

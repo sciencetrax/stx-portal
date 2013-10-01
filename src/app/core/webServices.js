@@ -93,7 +93,7 @@ angular.module('stx.core.webService', [
 					_this.loadScript2(data);
                 });
             },
-			loadScript2: function(script) {
+			loadScript2: function(scriptToLoad) {
 				$('#VariableToolsMenu').remove();
 				stx.VariablePanel.Utils.notCollectedVariablesId = null;
 				stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
@@ -101,17 +101,17 @@ angular.module('stx.core.webService', [
 
 				dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
 				dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
-				for (var index = 0; index < data.dependentVariables.length; index++) {
-					var variable = data.dependentVariables[index];
+				for (var index = 0; index < scriptToLoad.dependentVariables.length; index++) {
+					var variable = scriptToLoad.dependentVariables[index];
 					dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
 				}
 
 				var scriptDiv = $('#variable-panel-code');
 				var script = $('<script/>');
-				script.append(data.project);
-				script.append(data.interval);
-				script.append(data.encounter);
-				script.append(data.initialize);
+				script.append(scriptToLoad.project);
+				script.append(scriptToLoad.interval);
+				script.append(scriptToLoad.encounter);
+				script.append(scriptToLoad.initialize);
 				script.append("$(document).trigger('pageLoad');");
 				scriptDiv.html(script);
 

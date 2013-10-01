@@ -27,11 +27,16 @@ module.exports = {
         js: [
             'src/**/*.js',
             '!src/**/*.spec.js',
+            '!src/**/*.fixture.js',
+            '!src/**/*.scenario.js',
             '!src/assets/**/*.js'
         ],
         jsunit: [ 'src/**/*.spec.js', 'vendor/stx/**/*.spec.js' ],
 
-        atpl: [ 'src/app/**/*.tpl.html' ],
+		jsfixture: [ 'src/**/*.fixture.js' ],
+		jsscenario: [ 'src/**/*.scenario.js' ],
+
+		atpl: [ 'src/app/**/*.tpl.html' ],
         ctpl: [ 'src/common/**/*.tpl.html' ],
 
         html: [ 'src/index.html' ],
