@@ -1,13 +1,19 @@
-<h1>Forms
-    <small>All Incomplete</small>
-</h1>
+<!-- HEADING -->
+<h3 class="text-ellipsis">{{ encounter.name }}</h3>
+
+<!-- VARIABLE PANEL SCRIPT -->
 <div id="variable-panel-code"></div>
 
+<!-- DATA ENTRY PANEL-->
 <div class="DataEntryPanel">
     <ul class="nav">
+        <!-- VARIABLE GROUP -->
         <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
             <a class="text-badge" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">
+                <!-- NAME -->
                 <div>{{item.name}}</div>
+
+                <!-- PERCENT COMPLETE -->
                 <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
             </a>
         </li>

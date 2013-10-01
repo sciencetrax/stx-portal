@@ -12,10 +12,10 @@
                 var dataEntryPanel = $('.DataEntryPanel');
 
                 DataEntryForm.loadScript(
-                    SecurityService.authorizationContext.customerId,
-                    SecurityService.authorizationContext.subject.projects[0].projectId,
-                    SecurityService.authorizationContext.subject.projects[0].siteId,
-                    SecurityService.authorizationContext.subject.id,
+                    authorizationContext.customerId,
+                    subject.projects[0].projectId,
+                    subject.projects[0].siteId,
+                    subject.id,
                     $stateParams.intervalId,
                     $stateParams.encounterId,
                     false, function () {

@@ -66,7 +66,21 @@ angular.module('stx.core.webService', [
                     }
                 );
             },
+            enrollScript: function(customerId, projectId, siteId, intervalId) {
+				var _this = this;
+                VariablePanelScript.get({
+                    customerId: customerId,
+                    projectId: projectId,
+                    siteId: siteId,
+                    intervalId: intervalId,
+                    encounterId: encounterId,
+                    includeProjectVariableGroups: includeProjectVariableGroups
+                }, function (data) {
+					_this.loadScript2(data);
+                });
+            },
             loadScript: function(customerId, projectId, siteId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {
+				var _this = this;
                 VariablePanelScript.get({
                     customerId: customerId,
                     projectId: projectId,
@@ -76,34 +90,37 @@ angular.module('stx.core.webService', [
                     encounterId: encounterId,
                     includeProjectVariableGroups: includeProjectVariableGroups
                 }, function (data) {
-                    $('#VariableToolsMenu').remove();
-                    stx.VariablePanel.Utils.notCollectedVariablesId = null;
-                    stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
-                    var dataEntryPanel = $('.DataEntryPanel');
-
-                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
-                    dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
-                    for (var index = 0; index < data.dependentVariables.length; index++) {
-                        var variable = data.dependentVariables[index];
-                        dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
-                    }
-
-                    var scriptDiv = $('#variable-panel-code');
-                    var script = $('<script/>');
-                    script.append(data.project);
-                    script.append(data.interval);
-                    script.append(data.encounter);
-                    script.append(data.initialize);
-                    script.append("$(document).trigger('pageLoad');");
-                    scriptDiv.html(script);
-
-                    $('.DataEntryPanel li.hide').removeClass('hide');
-
-                    if (successCallback !== undefined) {
-                        successCallback();
-                    }
+					_this.loadScript2(data);
                 });
             },
+			loadScript2: function(script) {
+				$('#VariableToolsMenu').remove();
+				stx.VariablePanel.Utils.notCollectedVariablesId = null;
+				stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
+				var dataEntryPanel = $('.DataEntryPanel');
+
+				dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
+				dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
+				for (var index = 0; index < data.dependentVariables.length; index++) {
+					var variable = data.dependentVariables[index];
+					dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
+				}
+
+				var scriptDiv = $('#variable-panel-code');
+				var script = $('<script/>');
+				script.append(data.project);
+				script.append(data.interval);
+				script.append(data.encounter);
+				script.append(data.initialize);
+				script.append("$(document).trigger('pageLoad');");
+				scriptDiv.html(script);
+
+				$('.DataEntryPanel li.hide').removeClass('hide');
+
+				if (successCallback !== undefined) {
+					successCallback();
+				}
+			},
             getUrl: function() {
                 return UrlUtils.combine(WebServiceConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');
             }

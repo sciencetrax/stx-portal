@@ -4,40 +4,38 @@
     angular.module('stx.encounters.view', [
             'ui.router'
         ])
-        .controller("stx.encounters.view.controller", ['$scope', '$location', '$state', '$stateParams', 'SecurityService', 'ScheduledEncounter',
-            function ($scope, $location, $state, $stateParams, SecurityService, ScheduledEncounter) {
-                $scope.$state = $state;
-                $scope.stateParams = $stateParams;
+        .controller("ViewController", ['$scope', '$state', '$stateParams', '$location', 'DataEntryForm', 'ScheduledEncounter', 'SecurityService',
+            function ($scope, $state, $stateParams, $location, DataEntryForm, ScheduledEncounter, SecurityService) {
                 if ($state.current.name === 'encounters.view') {
                     $location.path('/encounters/view/{0}/{1}/details'.format($stateParams.intervalId, $stateParams.encounterId)).replace();
-//                    $state.go('encounters.view.details');
                 }
 
-                ScheduledEncounter.query({
-                    customerId: SecurityService.authorizationContext.customerId,
-                    projectId: SecurityService.authorizationContext.subject.projects[0].projectId,
-                    siteId: SecurityService.authorizationContext.subject.projects[0].siteId,
-                    subjectId: SecurityService.authorizationContext.subject.id,
-                    $filter: 'IntervalId eq ' + $stateParams.intervalId //+ ' and EncounterId eq ' + $stateParams.encounterId
-                }, function (data) {
-                    $scope.encounter = data[0];
-                });
-            }])
-        .controller("stx.encounters.view.reports.controller", [
-            function () {
-            }])
-        .controller("stx.encounters.view.details.controller", ['$scope', '$state', '$stateParams', 'SecurityService', 'VariablePanelScript', 'DataEntryForm', 'ScheduledEncounter',
-            function ($scope, $state, $stateParams, SecurityService, VariablePanelScript, DataEntryForm, ScheduledEncounter) {
-                $('#VariableToolsMenu').remove();
+				var authorizationContext = SecurityService.authorizationContext;
+				var subject = authorizationContext.subject;
+				ScheduledEncounter.query({
+					customerId: authorizationContext.customerId,
+					projectId: subject.projects[0].projectId,
+					siteId: subject.projects[0].siteId,
+					subjectId: subject.id,
+					$filter: 'IntervalId eq ' + $stateParams.intervalId //+ ' and EncounterId eq ' + $stateParams.encounterId
+				}, function (data) {
+					$scope.encounter = data[0];
+				});
 
-                DataEntryForm.loadScript(
-                    SecurityService.authorizationContext.customerId,
-                    SecurityService.authorizationContext.subject.projects[0].projectId,
-                    SecurityService.authorizationContext.subject.projects[0].siteId,
-                    SecurityService.authorizationContext.subject.id,
-                    $stateParams.intervalId,
-                    $stateParams.encounterId,
-                    false);
+				// Not sure why but the following is here because the DetailController is not being instantiated
+				DataEntryForm.loadScript(
+					authorizationContext.customerId,
+					subject.projects[0].projectId,
+					subject.projects[0].siteId,
+					subject.id,
+					$stateParams.intervalId,
+					$stateParams.encounterId,
+					false);
+
+
+            }])
+        .controller("ReportController", [
+            function () {
             }])
     ;
 }());

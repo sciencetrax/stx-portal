@@ -60,7 +60,7 @@ describe('LoginController', function () {
 
         describe('$scope', function () {
             it('LSPage should be assigned to the appropriate page resource', inject(function () {
-                expect($scope.LSPage).toBe(LS.pages.accounts.login);
+                expect($scope.LSPage).toBe(LS.pages.login.login);
             }));
 
             it('portal.name should "Test Portal"', inject(function () {

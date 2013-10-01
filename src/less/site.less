@@ -28,16 +28,20 @@ ul.nav li.list-group-item {
   background: #F7A288 !important;
 }
 
+.text-ellipsis {
+  display: inline-block !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .text-badge {
   line-height: 18px;
   display: block;
   vertical-align: middle;
   div {
-    display: inline-block !important;
     margin-top: 3px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    .text-ellipsis;
     width: 80%;
   }
   span {
@@ -65,5 +69,12 @@ ul.nav li.list-group-item {
   }
 }
 
-
-
+.pct-10 { width: 10% }
+.pct-20 { width: 20% }
+.pct-30 { width: 30% }
+.pct-40 { width: 40% }
+.pct-50 { width: 50% }
+.pct-60 { width: 60% }
+.pct-70 { width: 70% }
+.pct-80 { width: 80% }
+.pct-90 { width: 90% }

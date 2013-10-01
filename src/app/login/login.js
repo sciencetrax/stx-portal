@@ -7,8 +7,7 @@
         ])
         .controller("LoginController", ['$scope', '$state', '$location', 'Authorization', 'Portal', 'SystemService', 'SecurityService',
             function ($scope, $state, $location, Authorization, Portal, SystemService, SecurityService) {
-//                $scope.$state = $state;
-//                $scope.LSPage = LS.pages.accounts.login;
+                $scope.LSPage = LS.pages.login.login;
 
                 SecurityService.removeAuthorization();
 

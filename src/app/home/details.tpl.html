@@ -1,4 +1,17 @@
-﻿<ul class="nav nav-tabs">
+﻿<!-- FILTER -->
+<div class="btn-group">
+    <!-- ALL -->
+    <button type="button" class="btn btn-default"
+            ng-model="encounterFilter"
+            ng-click="setFilter('all')">All</button>
+
+    <!-- INCOMPLETE -->
+    <button type="button" class="btn btn-default"
+            ng-model="encounterFilter"
+            ng-click="setFilter('incomplete')">Incomplete</button>
+</div>
+
+<ul class="nav nav-tabs">
     <li><a data-target="#schedule" data-toggle="tab">{{LSPage.schedule}}</a></li>
     <li><a data-target="#injuries" data-toggle="tab">Injuries</a></li>
     <li><a data-target="#adverseEvents" data-toggle="tab">Adverse Event</a></li>
@@ -6,8 +19,8 @@
 <div class="tab-content">
     <div id="schedule" class="tab-pane">
         <ul class="nav">
-            <li ng-repeat="item in encounters | orderBy:'dueDate':true " class="list-group-item">
-                <a class="text-badge" href="#/viewEncounter/--{{item.intervalId}}">
+            <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true " class="list-group-item">
+                <a class="text-badge" href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
                     <div>{{item.name}}</div>
                 <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
                 </a>

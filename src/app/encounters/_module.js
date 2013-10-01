@@ -2,6 +2,7 @@
     "use strict";
 
     angular.module('stx.encounters', [
+            'stx.encounters.details',
             'stx.encounters.view'
         ])
 
@@ -17,12 +18,20 @@
                 })
                 .state('encounters.view', {
                     url: '/view/{intervalId}/{encounterId}',
-                    controller: 'stx.encounters.view.controller',
+                    controller: 'ViewController',
                     templateUrl: 'encounters/view.tpl.html',
                     data: { pageTitle: 'Encounter' }
                 })
-                .state('encounters.view.details', { url: '/details', templateUrl: 'encounters/view-details.tpl.html', controller: 'stx.encounters.view.details.controller' })
-                .state('encounters.view.reports', { url: '/reports', templateUrl: 'encounters/view-reports.tpl.html', controller: 'stx.encounters.view.reports.controller' })
+                .state('encounters.view.details', {
+                    url: '/details',
+					controller: 'DetailsController',
+                    templateUrl: 'encounters/view-details.tpl.html'
+                })
+                .state('encounters.view.reports', {
+                    url: '/reports',
+					controller: 'ReportController',
+                    templateUrl: 'encounters/view-reports.tpl.html'
+                })
             ;
         }])
     ;
