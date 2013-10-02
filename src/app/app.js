@@ -52,8 +52,11 @@ angular.module('stx', [
 				});
 			var targetLocation = $location.path();
 			if (targetLocation == "/login/login"
-				|| targetLocation == "/login"
-				|| targetLocation == "/common/waiting") {
+				|| targetLocation == "/login") {
+				SecurityService.removeAuthorization();
+				targetLocation = "/home/index/summary";
+			}
+			if (targetLocation == "/common/waiting") {
 				targetLocation = "/home/index/summary";
 			}
 
