@@ -20,7 +20,7 @@ ul.nav li.list-group-item {
   padding: 0px;
 }
 
-.form-control {
+.btn.form-control {
   margin-bottom: 10px;
 }
 
@@ -80,27 +80,51 @@ ul.nav li.list-group-item {
 .pct-80 { width: 80% }
 .pct-90 { width: 90% }
 
+.form-control {
+  margin-bottom: 10px;
+}
+
+.error {
+  display: block;
+  color: darken(@brand-danger, 15%) !important;
+  text-align: right;
+}
 
 [required] {
-  border-width: 3px;
-  border-coler: darken(@input-border, 50%);
+  border-width: 2px;
+  border-coler: darken(@input-border, 80%);
   .placeholder(darken(@input-border, 50%));
 }
-.ng-dirty.ng-invalid {
+input.ng-dirty.ng-invalid {
+  background: lighten(@brand-danger, 35%) !important;
   border-color: lighten(@brand-danger, 15%) !important;
 }
-.remaining-chars {
-  padding-right: 6em;
-}
 .remaining-chars-value.negative {
-  color: lighten(@brand-danger, 15%);
+  color: lighten(@brand-danger, 10%);
 }
 .remaining-chars-value {
   color: @input-color-placeholder;
   display: block;
   float: right;
   font-size: .8em;
-  position: relative;
-  top: -40px;
-  right: 10px;
  }
+
+.password-strength {
+  background: @input-color-placeholder;
+  display: inline-block !important;
+  height: 15px;
+  width: 20px;
+  position: relative !important;
+  top: 3px;
+  margin-left: 5px;
+  float: right;
+}
+.password-strength-weak {
+  background: @brand-danger;
+}
+.password-strength-ok {
+  background: @brand-warning;
+}
+.password-strength-strong {
+  background: @brand-success;
+}

@@ -48,26 +48,28 @@
             <!-- EMAIL ADDRESS -->
             <div>
                 <label for="emailAddress" class="control-label">Email Address</label>
-                <input id="emailAddress" ng-model="account.emailAddress" meta-validate="metadata.emailAddress" class="form-control"/>
+                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" meta-validate="metadata.emailAddress" class="form-control"/>
+                <small class="error" ng-show="theForm.emailAddress.$error.email">Invalid email address.</small>
             </div>
 
             <!-- PASSWORD -->
             <div>
                 <label for="password" class="control-label">{{LSPage.password}}</label>
-                <input id="password" type="password" ng-model="account.password" meta-validate="metadata.password" class="form-control"/>
+                <input id="password" type="password" ng-model="account.password" meta-validate="metadata.password" class="form-control" check-strength/>
             </div>
 
             <!-- CONFIRM PASSWORD -->
             <div>
                 <label for="confirmPassword" class="control-label">{{LSPage.confirmPassword}}</label>
                 <input id="confirmPassword"
+                       name="confirmPassword"
                        type="password"
                        ng-class="{errorHighlight: $dirty && $invalid}"
                        ng-model="confirmPassword"
                        meta-validate="metadata.password"
                        class="form-control"
                        value-matches="password"/>
-                <span ng-show="theForm.confirmPassword.$error">BLah Blah Blah</span>
+                <small class="error" ng-show="theForm.confirmPassword.$error.valueMatches">Does not match password.</small>
             </div>
 
             <!-- SIGN UP BUTTON -->

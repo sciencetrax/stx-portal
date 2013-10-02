@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/directives/metaValidate.spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/directives/valueMatches.js" />
-      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\directives\metaValidateDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\core\directives\metaValidateDirective.spec.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/login.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/register.js" afterPath="$PROJECT_DIR$/src/app/login/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/directives/_module.js" afterPath="$PROJECT_DIR$/src/app/core/directives/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" afterPath="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/register.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/register.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/directives/valueMatches.js" afterPath="$PROJECT_DIR$/src/app/core/directives/valueMatches.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -39,19 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="68" selection-start="952" selection-end="952" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="50" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1564">
+            <state line="93" column="27" selection-start="3113" selection-end="3118" vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1734">
               <folding />
             </state>
           </provider>
@@ -60,16 +42,25 @@
       <file leaf-file-name="metaValidate.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+            <state line="46" column="0" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="valueMatches.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/directives/valueMatches.js">
+      <file leaf-file-name="login.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+            <state line="36" column="89" selection-start="1703" selection-end="1703" vertical-scroll-proportion="-17.23077" vertical-offset="164" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="19" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
@@ -78,7 +69,7 @@
       <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/site.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-8.076923" vertical-offset="1167" max-vertical-offset="1887">
+            <state line="112" column="39" selection-start="2031" selection-end="2031" vertical-scroll-proportion="-12.0" vertical-offset="1592" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -87,25 +78,34 @@
       <file leaf-file-name="variables.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="-5.144737" vertical-offset="0" max-vertical-offset="10642">
+            <state line="20" column="10" selection-start="515" selection-end="515" vertical-scroll-proportion="-4.6666665" vertical-offset="102" max-vertical-offset="10642">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mixins.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/mixins.less">
+      <file leaf-file-name="variables.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/variables.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="3" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-5.117647" vertical-offset="674" max-vertical-offset="12393">
+            <state line="23" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-7.6666665" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metaValidate.spec.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.spec.js">
+      <file leaf-file-name="register.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="2" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5924933" vertical-offset="0" max-vertical-offset="1394">
+            <state line="62" column="101" selection-start="2778" selection-end="2778" vertical-scroll-proportion="-17.653847" vertical-offset="595" max-vertical-offset="1496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="valueMatches.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/valueMatches.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.18230563" vertical-offset="0" max-vertical-offset="746">
               <folding />
             </state>
           </provider>
@@ -114,7 +114,7 @@
       <file leaf-file-name="register.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/login/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="44" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="765">
+            <state line="11" column="33" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -138,22 +138,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/vendor/stx/navigableHash.spec.js" />
-        <option value="$PROJECT_DIR$/vendor/stx/JsExtensions.spec.js" />
         <option value="$PROJECT_DIR$/vendor/stx/JsExtensions.js" />
         <option value="$PROJECT_DIR$/vendor/stx/navigableHash.js" />
         <option value="$PROJECT_DIR$/src/app/core/directives/metaValidateDirective.spec.js" />
         <option value="$PROJECT_DIR$/src/app/login/register.js" />
         <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/vendor/bootstrap/less/variables.less" />
-        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
-        <option value="$PROJECT_DIR$/src/less/site.less" />
         <option value="$PROJECT_DIR$/src/app/core/directives/metaValidateDirective.js" />
-        <option value="$PROJECT_DIR$/src/app/login/register.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/directives/valueMatches.js" />
-        <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
         <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/less/variables.less" />
+        <option value="$PROJECT_DIR$/src/app/login/register.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
+        <option value="$PROJECT_DIR$/src/less/site.less" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/valueMatches.js" />
       </list>
     </option>
   </component>
@@ -221,24 +221,6 @@
               <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -277,72 +259,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="less" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-ui-utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-ui-utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-ui-utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -775,13 +691,18 @@
       <created>1380679339608</created>
       <updated>1380679339608</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Working on validation directives">
+      <created>1380703081204</created>
+      <updated>1380703081204</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -797,7 +718,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24725275" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -822,7 +742,8 @@
     <MESSAGE value="Adding support for updating encounters" />
     <MESSAGE value="Working on the login page" />
     <MESSAGE value="Adding e2e tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding e2e tests" />
+    <MESSAGE value="Working on validation directives" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on validation directives" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,34 +751,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="20" selection-start="2787" selection-end="2787" vertical-scroll-proportion="0.5670241" vertical-offset="988" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stx/navigableHash.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="171" selection-end="171" vertical-scroll-proportion="0.09115282" vertical-offset="0" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stx/navigableHash.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="47" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.22520107" vertical-offset="716" max-vertical-offset="1462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stx/JsExtensions.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="135" selection-end="135" vertical-scroll-proportion="0.06836461" vertical-offset="0" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/angular-ui-utils/modules/validate/validate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
@@ -879,65 +772,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="25" selection-start="638" selection-end="638" vertical-scroll-proportion="0.45576409" vertical-offset="51" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="3" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-5.117647" vertical-offset="674" max-vertical-offset="12393">
+        <state line="55" column="3" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.38269794" vertical-offset="674" max-vertical-offset="12393">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="27" selection-start="3113" selection-end="3118" vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="1734">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="50" selection-start="2377" selection-end="2377" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1564">
+        <state line="35" column="19" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="44" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="765">
+        <state line="11" column="33" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="89" selection-start="1703" selection-end="1703" vertical-scroll-proportion="-17.23077" vertical-offset="164" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="-5.144737" vertical-offset="0" max-vertical-offset="10642">
+        <state line="20" column="10" selection-start="515" selection-end="515" vertical-scroll-proportion="-4.6666665" vertical-offset="102" max-vertical-offset="10642">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/site.less">
+    <entry file="file://$PROJECT_DIR$/src/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="1370" selection-end="1370" vertical-scroll-proportion="-8.076923" vertical-offset="1167" max-vertical-offset="1887">
+        <state line="23" column="0" selection-start="1078" selection-end="1078" vertical-scroll-proportion="-7.6666665" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="68" selection-start="952" selection-end="952" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1462">
+        <state line="62" column="101" selection-start="2778" selection-end="2778" vertical-scroll-proportion="-17.653847" vertical-offset="595" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/directives/valueMatches.js">
+    <entry file="file://$PROJECT_DIR$/src/less/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+        <state line="112" column="39" selection-start="2031" selection-end="2031" vertical-scroll-proportion="-12.0" vertical-offset="1592" max-vertical-offset="2312">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.0" vertical-offset="444" max-vertical-offset="1190">
+        <state line="46" column="0" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/valueMatches.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="663" selection-end="663" vertical-scroll-proportion="0.5924933" vertical-offset="0" max-vertical-offset="1394">
+        <state line="8" column="0" selection-start="247" selection-end="247" vertical-scroll-proportion="0.18230563" vertical-offset="0" max-vertical-offset="746">
           <folding />
         </state>
       </provider>
