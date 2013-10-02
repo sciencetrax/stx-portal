@@ -11,14 +11,13 @@ module.exports = function ( karma ) {
 		files: [
 			'vendor/**/navigableHash.js',
 			'src/**/locale-en.js',
-			// Include all scenario tests
 			'src/**/*.scenario.*',
 
 			// Serve the contents of the "dist" folder as static files
 			{pattern: 'build/**/*', watched: false, included: false, served: true}
 		],
 		proxies: {
-			'/': 'http://localhost/ws-stx/',
+			'/': 'http://localhost:9020/base/build/',
 			'/StudyTrax/': 'http://localhost/StudyTrax/'
 		},
 

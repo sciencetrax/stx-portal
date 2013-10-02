@@ -3,7 +3,6 @@ var WEB_SERVICES_URL = 'http://localhost/StudyTrax';
 describe('ApplicationController', function () {
 	describe('smoke test', function () {
 		beforeEach(function () {
-//			browser().reload()
 			browser().navigateTo('/index.html#/login');
 		});
 
@@ -11,7 +10,7 @@ describe('ApplicationController', function () {
 			expect(browser().location().path()).toBe('/login/login');
 		});
 
-		it('register', function () {
+		xit('register', function () {
  			expect(browser().location().path()).toBe('/login/login');
 			element('.btn.register').click();
 			input('account.username', '3');
