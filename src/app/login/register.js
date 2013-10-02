@@ -3,12 +3,13 @@
 
     angular.module('stx.login.register', [
             'ui.router',
+            'ui.validate',
             'stx.core.webService',
             'stx.core.directives.metaValidate'
         ])
         .controller('RegisterController', ['$scope', 'Metadata', 'Account', 'SecurityService',
             function ($scope, Metadata, Account, SecurityService) {
-                $scope.LSPage = LS.pages.accounts.register;
+                $scope.LSPage = LS.pages.login.register;
                 $scope.metadata = Metadata.get({ entityType: 'account'});
                 $scope.portal = SecurityService.portal;
                 $scope.account = new Account();

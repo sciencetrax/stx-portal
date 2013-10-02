@@ -33,6 +33,7 @@ ul.nav li.list-group-item {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 }
 
 .text-badge {
@@ -78,3 +79,28 @@ ul.nav li.list-group-item {
 .pct-70 { width: 70% }
 .pct-80 { width: 80% }
 .pct-90 { width: 90% }
+
+
+[required] {
+  border-width: 3px;
+  border-coler: darken(@input-border, 50%);
+  .placeholder(darken(@input-border, 50%));
+}
+.ng-dirty.ng-invalid {
+  border-color: lighten(@brand-danger, 15%) !important;
+}
+.remaining-chars {
+  padding-right: 6em;
+}
+.remaining-chars-value.negative {
+  color: lighten(@brand-danger, 15%);
+}
+.remaining-chars-value {
+  color: @input-color-placeholder;
+  display: block;
+  float: right;
+  font-size: .8em;
+  position: relative;
+  top: -40px;
+  right: 10px;
+ }

@@ -64,8 +64,9 @@
             },
             register: {
                 heading: "Register",
-
-                confirm: "Confirm",
+                confirmEmailAddress: "Confirm Email Address",
+                confirmPassword: "Confirm Password",
+                emailAddress: "Email Address",
                 firstName: "First Name",
                 lastName: "Last Name",
                 middleInitial: "Middle Initial",

@@ -49,7 +49,7 @@ angular.module('stx', [
 
 			$scope.resendVerificationEmail = function() {
 				this.error = null;
-				this.successMessage = this.LS.verificationEmailSent;
+				this.successMessage = this.LS.common.verificationEmailSent;
 			};
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;
@@ -86,7 +86,7 @@ angular.module('stx', [
 				}
 			});
 
-			if (targetLocation == '/accounts/register') {
+			if (targetLocation == '/login/register') {
 				SecurityService.removeAuthorization();
 			} else {
 				SecurityService.handleAuthentication();

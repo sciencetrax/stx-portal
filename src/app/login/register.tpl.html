@@ -14,19 +14,23 @@
         {{successMessage}}
     </div>
 
-    <form name="formName" role="form" class="form-horizontal">
+    <form name="theForm" role="form">
         <fieldset>
             <!-- USERNAME -->
             <div>
                 <label for="username" class="control-label">Username</label>
-                <input id="username" ng-model="account.username" meta-validate="metadata.username" class="form-control"/>
+                <input id="username"
+                       ng-model="account.username"
+                       ng-class="{errorHighlight: $dirty && $invalid}"
+                       meta-validate="metadata.username"
+                       class="form-control"/>
             </div>
 
             <div ng-class="{hide: !portal.project.showSubjectName}">
                 <!-- FIRST NAME -->
                 <div>
                     <label for="firstname" class="control-label">First Name</label>
-                    <input id="firstname" ng-model="account.firstname" meta-validate="metadata.firstname" class="form-control"/>
+                    <input id="firstname" ng-model="account.firstname" meta-validate="metadata.firstName" class="form-control"/>
                 </div>
 
                 <!-- MIDDLE INITIAL -->
@@ -53,11 +57,24 @@
                 <input id="password" type="password" ng-model="account.password" meta-validate="metadata.password" class="form-control"/>
             </div>
 
+            <!-- CONFIRM PASSWORD -->
+            <div>
+                <label for="confirmPassword" class="control-label">{{LSPage.confirmPassword}}</label>
+                <input id="confirmPassword"
+                       type="password"
+                       ng-class="{errorHighlight: $dirty && $invalid}"
+                       ng-model="confirmPassword"
+                       meta-validate="metadata.password"
+                       class="form-control"
+                       value-matches="password"/>
+                <span ng-show="theForm.confirmPassword.$error">BLah Blah Blah</span>
+            </div>
+
             <!-- SIGN UP BUTTON -->
-            <button ng-click="update()" class="btn btn-primary form-control sign-up" ng-disabled="formName.$invalid">Sign Up</button>
+            <button ng-click="update()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">Sign Up</button>
 
             <!-- CANCEL BUTTON -->
-            <a href="#/login" class="btn btn-default form-control cancel" ng-disabled="formName.$invalid">Cancel</a>
+            <a href="#/login" class="btn btn-default form-control cancel">Cancel</a>
         </fieldset>
     </form>
 </div>

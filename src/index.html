@@ -44,13 +44,11 @@
 <body class="studytrax">
     <div ui-view="menu"></div>
 
-    <div class="container">
-        <!-- ERROR MESSAGES -->
-        <div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
-            {{error.message}}
-            <div class="text-center">
-                <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
-            </div>
+    <!-- ERROR MESSAGES -->
+    <div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
+        {{error.message}}
+        <div class="text-center">
+            <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
         </div>
     </div>
 
