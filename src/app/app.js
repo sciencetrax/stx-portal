@@ -30,10 +30,27 @@ angular.module('stx', [
 			.when('/register', '/login/register')
 			.when('/subjectLogin', '/login/subjectLogin')
 			.otherwise('/');
-		WebServiceConfigProvider.configure(WEB_SERVICES_URL, "api/");
+		WebServiceConfigProvider.configure('/StudyTrax', "api/");
 	}])
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'SecurityService',
 		function ($scope, $window, $location, $state, $stateParams, SecurityService) {
+			function getTargetLocation() {
+				var targetLocation = $location.path();
+				if (targetLocation == "/login/login"
+					|| targetLocation == "/login") {
+					SecurityService.removeAuthorization();
+					targetLocation = "/home/index/summary";
+				}
+				if (targetLocation == "/common/waiting") {
+					targetLocation = "/home/index/summary";
+				}
+				return targetLocation;
+			}
+
+			$scope.resendVerificationEmail = function() {
+				this.error = null;
+				this.successMessage = this.LS.verificationEmailSent;
+			};
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;
 				if (phase == '$apply' || phase == '$digest') {
@@ -50,16 +67,7 @@ angular.module('stx', [
 				function(event, unfoundState, fromState, fromParams){
 					bootbox.alert("State Not Found:" + unfoundState.to);
 				});
-			var targetLocation = $location.path();
-			if (targetLocation == "/login/login"
-				|| targetLocation == "/login") {
-				SecurityService.removeAuthorization();
-				targetLocation = "/home/index/summary";
-			}
-			if (targetLocation == "/common/waiting") {
-				targetLocation = "/home/index/summary";
-			}
-
+			var targetLocation = getTargetLocation();
 			$scope.$on('httpError', function (event, message) {
 				SecurityService.handleError(message.status, message.data);
 			});
@@ -83,6 +91,6 @@ angular.module('stx', [
 			} else {
 				SecurityService.handleAuthentication();
 			}
-			$scope.$root.LS = LS;
+			$scope.LS = LS;
 		}])
 ;

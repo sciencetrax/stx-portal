@@ -4,7 +4,9 @@
     common: {
         _new: "New",
         cancel: "Cancel",
-        save: "Save"
+		resendVerificationEmail: "Resend Email",
+        save: "Save",
+		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
     },
 
     errorMessages: {
@@ -58,9 +60,7 @@
                 login: "Login",
                 password: "Password",
                 register: "Sign up",
-                resendVerificationEmail: "Resend Email",
-                username: "Username",
-                verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
+                username: "Username"
             },
             register: {
                 heading: "Register",

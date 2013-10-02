@@ -14,13 +14,17 @@ module.exports = function ( karma ) {
       'src/**/*.js'
     ],
     exclude: [
+      'src/**/*.fixture.js',
+      'src/**/*.scenario.js',
       'src/assets/**/*.js'
     ],
     frameworks: [ 'jasmine' ],
-    plugins: [ 'karma-jasmine', 'karma-firefox-launcher', 'karma-chrome-launcher', 'karma-phantomjs-launcher', 'karma-coffee-preprocessor' ],
-    preprocessors: {
-      '**/*.coffee': 'coffee',
-    },
+    plugins: [
+    	'karma-jasmine',
+    	'karma-firefox-launcher',
+    	'karma-chrome-launcher',
+    	'karma-phantomjs-launcher'
+    ],
 
     /**
      * How to report, by default.

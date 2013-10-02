@@ -19,7 +19,7 @@
                         SecurityService.authorize(data.authorization);
                     }, function (data) {
                         if (data.data.errorCode != null) {
-                            $scope.error = {
+                            $scope.$root.error = {
                                 code: data.data.errorCode,
                                 message: LS.errorMessages.get(data.data.errorCode)
                             };
@@ -27,11 +27,6 @@
                             SystemService.handleError(data.data);
                         }
                    });
-                };
-
-                $scope.resendVerificationEmail = function() {
-                    this.error = null;
-                    this.successMessage = this.LSPage.verificationEmailSent;
                 };
             }])
     ;

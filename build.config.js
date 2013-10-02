@@ -31,7 +31,10 @@ module.exports = {
             '!src/**/*.scenario.js',
             '!src/assets/**/*.js'
         ],
-        jsunit: [ 'src/**/*.spec.js', 'vendor/stx/**/*.spec.js' ],
+        jsunit: [
+			'src/**/*.spec.js',
+			'vendor/stx/**/*.spec.js'
+		],
 
 		jsfixture: [ 'src/**/*.fixture.js' ],
 		jsscenario: [ 'src/**/*.scenario.js' ],
