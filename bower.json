@@ -4,7 +4,7 @@
   "devDependencies": {
     "angular": "1.2.0-rc.2",
     "angular-bootstrap": "~0.3.0",
-    "angular-cookies": "~1.0.7",
+    "angular-cookies": "1.2.0-rc.2",
     "angular-mocks": "1.2.0-rc.2",
     "angular-resource": "1.2.0-rc.2",
     "angular-ui-router": "0.2.0",
@@ -14,7 +14,7 @@
     "jquery": "~2.0.3",
     "jquery-ui": "~1.10.3",
     "jquery-form": "~3.37.0",
-    "angular-scenario": "~1.0.8"
+    "angular-scenario": "1.2.0-rc.2"
   },
   "dependencies": {}
 }

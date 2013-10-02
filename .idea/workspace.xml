@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/login/login.scenario.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/login/register.scenario.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scenario.js" afterPath="$PROJECT_DIR$/src/app/app.scenario.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,7 +29,7 @@
       <file leaf-file-name="bower.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="33" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1342812" vertical-offset="0" max-vertical-offset="633">
+            <state line="16" column="35" selection-start="485" selection-end="485" vertical-scroll-proportion="0.42969984" vertical-offset="0" max-vertical-offset="633">
               <folding />
             </state>
           </provider>
@@ -478,7 +474,11 @@
       <created>1380675963637</created>
       <updated>1380675963637</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Adding e2e tests">
+      <created>1380677514283</created>
+      <updated>1380677514283</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -642,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="137" selection-end="137" vertical-scroll-proportion="0.1342812" vertical-offset="0" max-vertical-offset="633">
+        <state line="16" column="35" selection-start="485" selection-end="485" vertical-scroll-proportion="0.42969984" vertical-offset="0" max-vertical-offset="633">
           <folding />
         </state>
       </provider>
