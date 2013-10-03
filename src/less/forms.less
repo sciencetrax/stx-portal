@@ -1,0 +1,50 @@
+.error {
+  display: block;
+  color: darken(@brand-danger, 15%) !important;
+  text-align: right;
+  position: relative;
+  top: -5px;
+}
+
+input {
+  padding-left: 40px;
+}
+[required] {
+  border-width: 3px;
+  border-coler: darken(@input-border, 80%);
+  .placeholder(darken(@input-border, 50%));
+}
+input.ng-dirty.ng-invalid {
+  background: lighten(@brand-danger, 35%) !important;
+  border-color: lighten(@brand-danger, 15%) !important;
+}
+.remaining-chars-value.negative {
+  color: lighten(@brand-danger, 10%);
+}
+.remaining-chars-value {
+  color: @input-color-placeholder;
+  display: block;
+  float: right;
+  font-size: .8em;
+ }
+
+.password-strength {
+  background: @input-color-placeholder;
+  border-radius: 50%;
+  display: inline-block !important;
+  height: 15px;
+  width: 15px;
+  position: relative !important;
+  top: 4px;
+  margin-left: 5px;
+  float: right;
+}
+.password-strength-weak {
+  background: @brand-danger;
+}
+.password-strength-ok {
+  background: @brand-warning;
+}
+.password-strength-strong {
+  background: @brand-success;
+}

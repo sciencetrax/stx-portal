@@ -1,41 +1,37 @@
 // FIX: Bootstrap 3.0 does not appropriately display elements that were originally
 // display: inline.  This adds a new class to fix that.
+.hidden-xs-inline,
+.hidden-xs-inline-block {
+  display: none !important;
+}
+@media (min-width: @screen-xs-max) {
+  .hidden-xs-inline {
+    display: inline !important;
+  }
+  .hidden-xs-inline-block {
+    display: inline-block !important;
+  }
+}
 .visible-xs-inline {
   display: inline !important;
 }
-
-@media (min-width: @screen-phone) {
-  .visible-xs-inline {
+.visible-xs-inline-block {
+  display: inline-block !important;
+}
+@media (min-width: @screen-xs-max) {
+  .visible-xs-inline,
+  .visible-xs-inline-block {
     display: none !important;
   }
 }
 
-body {
-  min-width: 320px;
-  overflow-x: hidden;
-  margin-bottom: 50px;
-}
-
-ul.nav li.list-group-item {
-  padding: 0px;
-}
-
-.btn.form-control {
-  margin-bottom: 10px;
-}
-
-.navbar-btn:hover {
-  background: #F7A288 !important;
-}
-
 .text-ellipsis {
-  display: inline-block !important;
+  display: inline-block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
 }
-
 .text-badge {
   line-height: 18px;
   display: block;
@@ -44,8 +40,8 @@ ul.nav li.list-group-item {
     margin-top: 3px;
     .text-ellipsis;
     width: 80%;
-    @media screen and (max-width: 320px) {
-       width: 180px;
+    @media screen and (max-width: @screen-xs-max) {
+      width: 180px;
     }
   }
   span {
@@ -61,6 +57,56 @@ ul.nav li.list-group-item {
   }
 }
 
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  margin-bottom: 50px;
+}
+
+ul.nav li.list-group-item {
+  padding: 0px;
+}
+
+// This adds space between buttons in a form (see login page)
+.form-control {
+  margin-bottom: 10px;
+}
+
+/*****************************************************************/
+// NAVBAR
+/*****************************************************************/
+.navbar-inverse {
+  color: @navbar-inverse-color;
+}
+.navbar-heading {
+  .text-ellipsis;
+  padding: 12px;
+  text-align: right;
+  @media (max-width: @screen-xs-max) {
+    width: 180px;
+  }
+  @media (min-width: @screen-xs-max) {
+    width: 220px;
+  }
+}
+.navbar .btn {
+  padding: 3px 5px;
+}
+.navbar-inverse .navbar-btn {
+  background: @navbar-inverse-btn-bg;
+  color: @navbar-inverse-btn-color;
+}
+.navbar-btn {
+  margin: 5px;
+}
+.navbar-btn:hover {
+  background: #F7A288 !important;
+}
+
+
+/*****************************************************************/
+// FOOTER
+/*****************************************************************/
 .footer {
   .btn {
     background: @footer-bg;
@@ -73,6 +119,7 @@ ul.nav li.list-group-item {
   }
 }
 
+/*
 .pct-10 { width: 10% }
 .pct-20 { width: 20% }
 .pct-30 { width: 30% }
@@ -82,58 +129,9 @@ ul.nav li.list-group-item {
 .pct-70 { width: 70% }
 .pct-80 { width: 80% }
 .pct-90 { width: 90% }
+*/
 
-.form-control {
-  margin-bottom: 10px;
-}
 
-.error {
-  display: block;
-  color: darken(@brand-danger, 15%) !important;
-  text-align: right;
-  position: relative;
-  top: -5px;
-}
 
-input {
-  padding-left: 40px;
-}
-[required] {
-  border-width: 3px;
-  border-coler: darken(@input-border, 80%);
-  .placeholder(darken(@input-border, 50%));
-}
-input.ng-dirty.ng-invalid {
-  background: lighten(@brand-danger, 35%) !important;
-  border-color: lighten(@brand-danger, 15%) !important;
-}
-.remaining-chars-value.negative {
-  color: lighten(@brand-danger, 10%);
-}
-.remaining-chars-value {
-  color: @input-color-placeholder;
-  display: block;
-  float: right;
-  font-size: .8em;
- }
 
-.password-strength {
-  background: @input-color-placeholder;
-  border-radius: 50%;
-  display: inline-block !important;
-  height: 15px;
-  width: 15px;
-  position: relative !important;
-  top: 4px;
-  margin-left: 5px;
-  float: right;
-}
-.password-strength-weak {
-  background: @brand-danger;
-}
-.password-strength-ok {
-  background: @brand-warning;
-}
-.password-strength-strong {
-  background: @brand-success;
-}
+@import 'forms.less';

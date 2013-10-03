@@ -21,20 +21,21 @@ angular.module('stx', [
 			}
 		};
 	}])
-	.config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider', function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
-		$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
-		$urlRouterProvider
-			.when('/', '/home/index/summary')
-			.when('/forgot', '/login/forgot')
-			.when('/home', '/home/index/summary')
-			.when('/login', '/login/login')
-			.when('/register', '/login/register')
-			.when('/subjectLogin', '/login/subjectLogin')
-			.otherwise('/');
-		WebServiceConfigProvider.configure('/StudyTrax', "api/");
-	}])
-	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'SecurityService',
-		function ($scope, $window, $location, $state, $stateParams, SecurityService) {
+	.config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider',
+		function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
+			$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
+			$urlRouterProvider
+				.when('/', '/home/index/summary')
+				.when('/forgot', '/login/forgot')
+				.when('/home', '/home/index/summary')
+				.when('/login', '/login/login')
+				.when('/register', '/login/register')
+				.when('/subjectLogin', '/login/subjectLogin')
+				.otherwise('/');
+			WebServiceConfigProvider.configure('/StudyTrax', "api/");
+		}])
+	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', '$navigation', 'SecurityService',
+		function ($scope, $window, $location, $state, $stateParams, $navigation, SecurityService) {
 			function getTargetLocation() {
 				var targetLocation = $location.path();
 				if (targetLocation == "/login/login"
@@ -48,7 +49,7 @@ angular.module('stx', [
 				return targetLocation;
 			}
 
-			$scope.resendVerificationEmail = function() {
+			$scope.resendVerificationEmail = function () {
 				$scope.error = null;
 				$scope.successMessage = this.LS.common.verificationEmailSent;
 			};
@@ -62,10 +63,11 @@ angular.module('stx', [
 					$scope.$apply(fn);
 				}
 			};
+			$scope.$navigation = $navigation;
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
 			$scope.$on('$stateNotFound',
-				function(event, unfoundState, fromState, fromParams){
+				function (event, unfoundState, fromState, fromParams) {
 					bootbox.alert("State Not Found:" + unfoundState.to);
 				});
 			var targetLocation = getTargetLocation();
@@ -79,6 +81,7 @@ angular.module('stx', [
 				$location.path('/common/waiting');
 			});
 			$scope.$on('authorizationContextReady', function () {
+				$scope.authorizationContext = SecurityService.authorizationContext;
 				$location.path(targetLocation).replace();
 			});
 			$scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
@@ -95,4 +98,5 @@ angular.module('stx', [
 			}
 			$scope.LS = LS;
 		}])
+
 ;

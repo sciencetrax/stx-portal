@@ -12,7 +12,7 @@
     </ul>
 </div>
 
-<h2>{{ LSPage.heading }}</h2>
+<h3>Welcome</h3>
 <ul class="nav">
     <!-- INCOMPLETE VARIABLE GROUPS -->
     <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}"
@@ -22,6 +22,9 @@
             <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
         </a>
     </li>
+    </ul>
+        &nbsp;
+    <ul class="nav">
 
     <!-- INCOMPLETE ENCOUNTERS -->
     <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete"

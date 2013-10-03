@@ -23,7 +23,7 @@
                     url: '/index',
                     controller: 'IndexController',
                     templateUrl: 'home/index.tpl.html',
-                    data: { pageTitle: 'Home' }
+                    data: { pageTitle: 'Home', isHome: true }
                 })
                 .state('home.index.summary', {
                     url: '/summary',
