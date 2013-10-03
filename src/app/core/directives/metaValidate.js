@@ -5,7 +5,7 @@
 			link: function (scope, element, attrs, controller) {
 				var md = null;
 				var remainingChars = null;
-				scope.$watch(attrs.metaValidate, function (value) {
+				scope.$watch(attrs.stMetaValidate, function (value) {
 					if (value === undefined) {
 						return;
 					}

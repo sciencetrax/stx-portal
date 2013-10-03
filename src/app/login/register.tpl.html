@@ -8,50 +8,49 @@
             <!-- USERNAME -->
             <div>
                 <label for="username" class="control-label">{{ LSPage.username }}</label>
-                <input id="username" ng-model="account.username" meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control" st-autofocus/>
+                <input id="username" ng-model="account.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control" st-autofocus/>
             </div>
 
             <div ng-class="{hide: !portal.project.showSubjectName}">
                 <!-- FIRST NAME -->
                 <div>
                     <label for="firstname" class="control-label">{{ LSPage.firstName }}</label>
-                    <input id="firstname" ng-model="account.firstname" meta-validate="metadata.firstName" class="form-control"/>
+                    <input id="firstname" ng-model="account.firstname" st-meta-validate="metadata.firstName" class="form-control"/>
                 </div>
 
                 <!-- MIDDLE INITIAL -->
                 <div>
                     <label for="middleInitial" class="control-label">{{ LSPage.middleInitial }}</label>
-                    <input id="middleInitial" ng-model="account.middleInitial" meta-validate="metadata.middleInitial" class="form-control"/>
+                    <input id="middleInitial" ng-model="account.middleInitial" st-meta-validate="metadata.middleInitial" class="form-control"/>
                 </div>
 
                 <!-- LAST NAME -->
                 <div>
                     <label for="lastName" class="control-label">{{ LSPage.lastName }}</label>
-                    <input id="lastName" ng-model="account.lastName" meta-validate="metadata.lastName" class="form-control"/>
+                    <input id="lastName" ng-model="account.lastName" st-meta-validate="metadata.lastName" class="form-control"/>
                 </div>
             </div>
 
             <!-- EMAIL ADDRESS -->
             <div>
                 <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
-                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" meta-validate="metadata.emailAddress" class="form-control"/>
+                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control"/>
                 <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
             </div>
 
             <!-- CONFIRM EMAIL ADDRESS -->
             <div>
                 <label for="confirmmailAddress" class="control-label">{{ LSPage.confirmEmailAddress }}</label>
-                <input id="confirmmailAddress" name="confirmmailAddress" type="email" ng-model="confirmmailAddress" meta-validate="metadata.emailAddress" class="form-control"
-                       value-matches="emailAddress"/>
+                <input id="confirmmailAddress" name="confirmmailAddress" type="email" ng-model="confirmmailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-value-matches="emailAddress"/>
 
                 <!-- VALUE MATCHES ERROR -->
-                <small class="error" ng-show="theForm.confirmmailAddress.$error.valueMatches">{{ LSPage.errors.emailAddressValueMatches }}</small>
+                <small class="error" ng-show="theForm.confirmmailAddress.$error.stValueMatches">{{ LSPage.errors.emailAddressValueMatches }}</small>
             </div>
 
             <!-- PASSWORD -->
             <div>
                 <label for="password" class="control-label">{{LSPage.password}}</label>
-                <input id="password" type="password" ng-model="account.password" meta-validate="metadata.password" class="form-control" check-strength/>
+                <input id="password" type="password" ng-model="account.password" st-meta-validate="metadata.password" class="form-control" st-check-strength/>
             </div>
 
             <!-- CONFIRM PASSWORD -->
@@ -62,11 +61,11 @@
                        type="password"
                        ng-class="{errorHighlight: $dirty && $invalid}"
                        ng-model="confirmPassword"
-                       meta-validate="metadata.password"
+                       st-meta-validate="metadata.password"
                        class="form-control"
-                       value-matches="password"/>
+                       st-value-matches="password"/>
                 <!-- VALUE MATCHES ERROR -->
-                <small class="error" ng-show="theForm.confirmPassword.$error.valueMatches">{{ LSPage.errors.confirmPasswordValueMatches }}</small>
+                <small class="error" ng-show="theForm.confirmPassword.$error.stValueMatches">{{ LSPage.errors.confirmPasswordValueMatches }}</small>
             </div>
 
             <!-- SIGN UP BUTTON -->
