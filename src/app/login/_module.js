@@ -11,7 +11,7 @@
                     abstract: true,
                     url: '/login',
                     views: {
-                        'menu':     { templateUrl: 'login/login-menu.tpl.html' },
+                        'menu':     { templateUrl: 'common/menu/login-menu.tpl.html' },
                         'content':  { template: '<div ui-view></div>' }
                     }
                 })

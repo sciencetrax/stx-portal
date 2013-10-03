@@ -5,6 +5,7 @@
         _new: "New",
         cancel: "Cancel",
 //		loading: "Loading...",
+		logASubjectIn: "Log a subject in",
 		resendVerificationEmail: "Resend Email",
         save: "Save",
 		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
