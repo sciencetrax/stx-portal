@@ -90,10 +90,10 @@ angular.module('stx.core.webService', [
                     encounterId: encounterId,
                     includeProjectVariableGroups: includeProjectVariableGroups
                 }, function (data) {
-					_this.loadScript2(data);
+					_this.loadScript2(data, successCallback);
                 });
             },
-			loadScript2: function(scriptToLoad) {
+			loadScript2: function(scriptToLoad, successCallback) {
 				$('#VariableToolsMenu').remove();
 				stx.VariablePanel.Utils.notCollectedVariablesId = null;
 				stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;

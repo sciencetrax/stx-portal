@@ -4,7 +4,7 @@
     angular.module('stx.accounts.update', [
             'ui.router',
             'stx.core.webService',
-            'stx.core.directives.metaValidate'
+            'stx.core.directives'
         ])
         .controller('accounts.update.controller',['$scope', 'Metadata', 'Account', 'SecurityService', function ($scope, Metadata, Account, SecurityService) {
             $scope.LSPage = LS.pages.accounts.update;

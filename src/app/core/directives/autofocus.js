@@ -1,5 +1,5 @@
-﻿angular.module('stx.core.directives.autofocus', [])
-    .directive('autofocus',[function () {
+﻿angular.module('stx.core.directives')
+    .directive('stAutofocus',[function () {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {

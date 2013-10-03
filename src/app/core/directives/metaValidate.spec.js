@@ -5,7 +5,7 @@
 	var $scope;
 	var $rootScope;
 
-	beforeEach(module('stx.core.directives.metaValidate'));
+	beforeEach(module('stx.core.directives'));
 
 	beforeEach(inject(function (_$window_, _$location_, _$compile_, _$rootScope_) {
 		$window = _$window_;

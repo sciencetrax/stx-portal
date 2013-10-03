@@ -15,6 +15,11 @@
                         'content':  { template: '<div ui-view></div>' }
                     }
                 })
+                .state('login.forgot', {
+                    url: '/forgot',
+                    templateUrl: 'login/forgot.tpl.html',
+                    data: { pageTitle: LS.pages.login.forgot.heading }
+                })
                 .state('login.login', {
                     url: '/login',
                     controller: 'LoginController',
@@ -26,6 +31,11 @@
                     controller: 'RegisterController',
                     templateUrl: 'login/register.tpl.html',
                     data: { pageTitle: 'Sign Up' }
+                })
+                .state('login.confirmEmail', {
+                    url: '/confirmEmail',
+                    templateUrl: 'login/confirmEmail.tpl.html',
+                    data: { pageTitle: 'Confirm Email' }
                 })
             ;
         }])

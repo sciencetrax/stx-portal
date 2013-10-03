@@ -1,5 +1,5 @@
-﻿angular.module('stx.core.directives.backButton', [])
-    .directive('backButton', ['$window', function($window){
+﻿angular.module('stx.core.directives')
+    .directive('stBackButton', ['$window', function($window){
     return {
         restrict: 'A',
 

@@ -15,7 +15,14 @@
     <link rel="stylesheet" type="text/css" href="<%= file %>"/>
     <% }); %>
 
+    <!--[if lt IE 9]>
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<script src="vendor/bootstrap/assets/js/html5shiv.js"></script>-->
+    <!--<script src="vendor/bootstrap/assets/js/respond.min.js"></script>-->
+    <![endif]-->
+
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
+
     <script type="text/javascript" src="<%= file %>"></script>
     <% }); %>
 
@@ -43,19 +50,6 @@
 </head>
 <body class="studytrax">
     <div ui-view="menu"></div>
-
-    <!-- ERROR MESSAGES -->
-    <div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
-        {{error.message}}
-        <div class="text-center">
-            <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
-        </div>
-    </div>
-
-    <!-- SUCCESS MESSAGES -->
-    <div class="alert alert-success" ng-class="{hide: successMessage == null}">
-        {{successMessage}}
-    </div>
 
     <div ui-view="content"></div>
 </body>

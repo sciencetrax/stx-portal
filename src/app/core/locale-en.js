@@ -4,6 +4,7 @@
     common: {
         _new: "New",
         cancel: "Cancel",
+//		loading: "Loading...",
 		resendVerificationEmail: "Resend Email",
         save: "Save",
 		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
@@ -17,7 +18,8 @@
         NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
         PasswordExpired: "Your password has expired.",
         RemainigSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
-        RequiredFieldMissing: "A required field was not specified."
+        RequiredFieldMissing: "A required field was not specified.",
+        UsernameExist: "Please enter a different username.  That username is taken."
     },
     menu: {
         logASubjectIn: "Log a subject in"
@@ -53,10 +55,14 @@
             }
         },
         login: {
+			forgot: {
+				heading: "Forgot Username / Password"
+			},
             login: {
                 heading: "Login",
                 enroll: "Enroll",
                 forgotUsernameOrPassword: "Forgot username / password",
+                loggingIn: "Logging In...",
                 login: "Login",
                 password: "Password",
                 register: "Sign up",
@@ -64,6 +70,7 @@
             },
             register: {
                 heading: "Register",
+				cancel: "Cancel",
                 confirmEmailAddress: "Confirm Email Address",
                 confirmPassword: "Confirm Password",
                 emailAddress: "Email Address",
@@ -71,7 +78,13 @@
                 lastName: "Last Name",
                 middleInitial: "Middle Initial",
                 password: "Password",
-                username: "Username"
+                signUp: "Sign Up",
+                username: "Username",
+				errors: {
+					confirmPasswordValueMatches: "Does not match password.",
+					emailAddressEmail: "Invalid email address.",
+					emailAddressValueMatches: "Does not match Email Address."
+				}
             }
         },
         variableGroups: {

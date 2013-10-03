@@ -6,7 +6,7 @@
     var $rootScope;
     var element;
 
-    beforeEach(module('stx.core.directives.backButton'));
+    beforeEach(module('stx.core.directives'));
 
     beforeEach(inject(function (_$window_, _$location_, _$compile_, _$rootScope_) {
         $window = _$window_;
@@ -18,7 +18,7 @@
         $location.path('/start');
         $location.path('/current');
 
-        element = angular.element('<div back-button></div>');
+        element = angular.element('<div st-back-button></div>');
         var compiled = $compile(element);
         compiled($scope);
         $scope.$digest();

@@ -1,17 +1,16 @@
-﻿angular.module('stx.core.directives.valueMatches', [
-		'ui.validate'
-	])
-	.directive('valueMatches', [function () {
+﻿angular.module('stx.core.directives')
+	.directive('stValueMatches', [function () {
 		return {
 			require: 'ngModel',
 			link: function (scope, elem, attrs, ctrl) {
-				var firstPassword = '#' + attrs.valueMatches;
+				var firstPassword = '#' + attrs.stValueMatches;
 
-
-				elem.add(firstPassword).on('keyup', function () {
+				// Need to listen to both controls and only fire errors when both have values
+				// might want to listen for blur instead of keyup
+				elem.on('keyup', function () {
 					scope.$apply(function () {
 						var v = elem.val() === $(firstPassword).val();
-						ctrl.$setValidity('valueMatches', v);
+						ctrl.$setValidity('stValueMatches', v);
 					});
 				});
 			}

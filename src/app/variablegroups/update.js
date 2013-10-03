@@ -2,13 +2,13 @@
     "use strict";
 
     angular.module('stx.variablegroups.update', [
-            'stx.core.navigationService',
-            'stx.core.directives.backButton',
+            'stx.core',
             'ui.router'
         ])
-        .controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$stateParams', '$location', 'SecurityService', 'NavigationService', 'DataEntryForm',
-            function ($scope, $http, $window, $stateParams, $location, SecurityService, NavigationService, DataEntryForm) {
+        .controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$stateParams', '$location', '$navigation', 'SecurityService', 'DataEntryForm',
+            function ($scope, $http, $window, $stateParams, $location, $navigation, SecurityService, DataEntryForm) {
                 var authorizationContext = SecurityService.authorizationContext;
+				var subject = authorizationContext.subject;
                 var dataEntryPanel = $('.DataEntryPanel');
 
                 DataEntryForm.loadScript(
@@ -47,7 +47,7 @@
 
                             dataEntryPanel.html(data);
                             if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
-                                NavigationService.back();
+                                $navigation.back();
                                 $scope.$apply();
                             }
                         }

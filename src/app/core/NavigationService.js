@@ -1,29 +1,30 @@
-var NavigationService;
 (function () {
-    "use strict";
-    NavigationService = Class.extend({
-        $window: null,
-        $location: null,
+	"use strict";
+	var NavigationService = Class.extend({
+		history: [],
 
-        init: function () {
-        },
+		initialize: function ($rootScope, $state) {
+			$rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
 
-        back: function() {
-            this.$window.history.back();
-        }
-    });
+			});
+		},
+		go: function () {
 
-    angular.module('stx.core.navigationService', [
-            'ngCookies'
-        ])
-        .provider('NavigationService', Class.extend({
-            instance: new NavigationService(),
+		},
 
-            $get: ['$window', '$location', function ($window, $location) {
-                this.instance.$window = $window;
-                this.instance.$location = $location;
-                return this.instance;
-            }]
-        }))
-    ;
+		back: function () {
+			this.$window.history.back();
+		}
+	});
+
+	angular.module('stx.core')
+		.provider('$navigation', Class.extend({
+			instance: new NavigationService(),
+
+			$get: ['$rootScope', function ($rootScope) {
+				this.instance.initialize($rootScope);
+				return this.instance;
+			}]
+		}))
+	;
 }());

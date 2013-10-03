@@ -5,10 +5,10 @@
             'ui.router',
             'ui.validate',
             'stx.core.webService',
-            'stx.core.directives.metaValidate'
+            'stx.core.directives'
         ])
-        .controller('RegisterController', ['$scope', 'Metadata', 'Account', 'SecurityService',
-            function ($scope, Metadata, Account, SecurityService) {
+        .controller('RegisterController', ['$scope', '$location', 'Metadata', 'Account', 'SecurityService',
+            function ($scope, $location, Metadata, Account, SecurityService) {
                 $scope.LSPage = LS.pages.login.register;
                 $scope.metadata = Metadata.get({ entityType: 'account'});
                 $scope.portal = SecurityService.portal;
@@ -21,7 +21,7 @@
                     account.projectId = $scope.portal.project.id;
 
                     Account.save(account, function (response) {
-                        account.lastUpdateDate = response.lastUpdateDate;
+                        $location.path('/login/confirmEmail');
                     }, function(data) {
                         if (data.data.errorCode != null) {
                             $(window).scrollTop(0);

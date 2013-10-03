@@ -1,55 +1,51 @@
-<!-- CONTENT -->
-<div class="container">
+<div class="col-xs-12 col-sm-offset-4 col-sm-4">
     <h1>{{LSPage.heading}}</h1>
 
-    <!-- ERROR MESSAGES -->
-    <div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
-        {{error.message}}
-        <div class="text-center">
-        </div>
-    </div>
-
-    <!-- SUCCESS MESSAGES -->
-    <div class="alert alert-success" ng-class="{hide: successMessage == null}">
-        {{successMessage}}
-    </div>
+    <div ng-include src="'common/error-panel.tpl.html'"/>
 
     <form name="theForm" role="form">
         <fieldset>
             <!-- USERNAME -->
             <div>
-                <label for="username" class="control-label">Username</label>
-                <input id="username"
-                       ng-model="account.username"
-                       ng-class="{errorHighlight: $dirty && $invalid}"
-                       meta-validate="metadata.username"
-                       class="form-control"/>
+                <label for="username" class="control-label">{{ LSPage.username }}</label>
+                <input id="username" ng-model="account.username" meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control" st-autofocus/>
             </div>
 
             <div ng-class="{hide: !portal.project.showSubjectName}">
                 <!-- FIRST NAME -->
                 <div>
-                    <label for="firstname" class="control-label">First Name</label>
+                    <label for="firstname" class="control-label">{{ LSPage.firstName }}</label>
                     <input id="firstname" ng-model="account.firstname" meta-validate="metadata.firstName" class="form-control"/>
                 </div>
 
                 <!-- MIDDLE INITIAL -->
                 <div>
-                    <label for="middleInitial" class="control-label">Middle Initial</label>
+                    <label for="middleInitial" class="control-label">{{ LSPage.middleInitial }}</label>
                     <input id="middleInitial" ng-model="account.middleInitial" meta-validate="metadata.middleInitial" class="form-control"/>
                 </div>
 
                 <!-- LAST NAME -->
                 <div>
-                    <label for="lastName" class="control-label">Last Name</label>
+                    <label for="lastName" class="control-label">{{ LSPage.lastName }}</label>
                     <input id="lastName" ng-model="account.lastName" meta-validate="metadata.lastName" class="form-control"/>
                 </div>
             </div>
+
             <!-- EMAIL ADDRESS -->
             <div>
-                <label for="emailAddress" class="control-label">Email Address</label>
+                <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
                 <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" meta-validate="metadata.emailAddress" class="form-control"/>
-                <small class="error" ng-show="theForm.emailAddress.$error.email">Invalid email address.</small>
+                <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
+            </div>
+
+            <!-- CONFIRM EMAIL ADDRESS -->
+            <div>
+                <label for="confirmmailAddress" class="control-label">{{ LSPage.confirmEmailAddress }}</label>
+                <input id="confirmmailAddress" name="confirmmailAddress" type="email" ng-model="confirmmailAddress" meta-validate="metadata.emailAddress" class="form-control"
+                       value-matches="emailAddress"/>
+
+                <!-- VALUE MATCHES ERROR -->
+                <small class="error" ng-show="theForm.confirmmailAddress.$error.valueMatches">{{ LSPage.errors.emailAddressValueMatches }}</small>
             </div>
 
             <!-- PASSWORD -->
@@ -69,14 +65,15 @@
                        meta-validate="metadata.password"
                        class="form-control"
                        value-matches="password"/>
-                <small class="error" ng-show="theForm.confirmPassword.$error.valueMatches">Does not match password.</small>
+                <!-- VALUE MATCHES ERROR -->
+                <small class="error" ng-show="theForm.confirmPassword.$error.valueMatches">{{ LSPage.errors.confirmPasswordValueMatches }}</small>
             </div>
 
             <!-- SIGN UP BUTTON -->
-            <button ng-click="update()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">Sign Up</button>
+            <button ng-click="update()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LSPage.signUp }}</button>
 
             <!-- CANCEL BUTTON -->
-            <a href="#/login" class="btn btn-default form-control cancel">Cancel</a>
+            <a href="#/login" class="btn btn-default form-control cancel">{{ LSPage.cancel }}</a>
         </fieldset>
     </form>
 </div>

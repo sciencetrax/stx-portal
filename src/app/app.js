@@ -25,6 +25,7 @@ angular.module('stx', [
 		$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
 		$urlRouterProvider
 			.when('/', '/home/index/summary')
+			.when('/forgot', '/login/forgot')
 			.when('/home', '/home/index/summary')
 			.when('/login', '/login/login')
 			.when('/register', '/login/register')

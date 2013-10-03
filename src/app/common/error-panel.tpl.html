@@ -1,0 +1,13 @@
+﻿<!-- ERROR MESSAGES -->
+<div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
+    {{error.message}}
+    <div class="text-center">
+        <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
+    </div>
+</div>
+
+<!-- SUCCESS MESSAGES -->
+<div class="alert alert-success" ng-class="{hide: successMessage == null}">
+    {{successMessage}}
+</div>
+

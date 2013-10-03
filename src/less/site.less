@@ -44,6 +44,9 @@ ul.nav li.list-group-item {
     margin-top: 3px;
     .text-ellipsis;
     width: 80%;
+    @media screen and (max-width: 320px) {
+       width: 180px;
+    }
   }
   span {
     .badge;
@@ -88,10 +91,15 @@ ul.nav li.list-group-item {
   display: block;
   color: darken(@brand-danger, 15%) !important;
   text-align: right;
+  position: relative;
+  top: -5px;
 }
 
+input {
+  padding-left: 40px;
+}
 [required] {
-  border-width: 2px;
+  border-width: 3px;
   border-coler: darken(@input-border, 80%);
   .placeholder(darken(@input-border, 50%));
 }
@@ -111,11 +119,12 @@ input.ng-dirty.ng-invalid {
 
 .password-strength {
   background: @input-color-placeholder;
+  border-radius: 50%;
   display: inline-block !important;
   height: 15px;
-  width: 20px;
+  width: 15px;
   position: relative !important;
-  top: 3px;
+  top: 4px;
   margin-left: 5px;
   float: right;
 }
