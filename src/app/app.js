@@ -49,8 +49,8 @@ angular.module('stx', [
 			}
 
 			$scope.resendVerificationEmail = function() {
-				this.error = null;
-				this.successMessage = this.LS.common.verificationEmailSent;
+				$scope.error = null;
+				$scope.successMessage = this.LS.common.verificationEmailSent;
 			};
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;
@@ -59,7 +59,7 @@ angular.module('stx', [
 						fn();
 					}
 				} else {
-					this.$apply(fn);
+					$scope.$apply(fn);
 				}
 			};
 			$scope.$state = $state;
@@ -87,7 +87,8 @@ angular.module('stx', [
 				}
 			});
 
-			if (targetLocation == '/login/register') {
+			if (targetLocation == '/login/register'
+				|| targetLocation == '/login/forgot') {
 				SecurityService.removeAuthorization();
 			} else {
 				SecurityService.handleAuthentication();
