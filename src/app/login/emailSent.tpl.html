@@ -1,0 +1,19 @@
+<div class="col-xs-12 col-sm-offset-4 col-sm-4">
+    <h3 class="text-center">{{ LSPage.heading }}</h3>
+    <div class="alert alert-success">
+        <div ng-show="{{ $stateParams.type == 'register' }}">
+            An email has been sent containing a link to allow you to verify your email address. Please
+            click this link to finish setting up your account.
+        </div>
+        <div ng-show="{{ $stateParams.type == 'forgotPassword' }}">
+            An email has been sent containing a link to allow you to verify your email address. Please
+            click this link to finish setting up your account.
+        </div>
+        <div ng-show="{{ $stateParams.type == 'forgotUsername' }}">
+            An email has been sent containing a link to allow you to verify your email address. Please
+            click this link to finish setting up your account.
+        </div>
+    </div>
+
+    <a href="#/login" class="btn btn-primary form-control">{{ LSPage.returnToLoginPage }}</a>
+</div>

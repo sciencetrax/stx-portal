@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\temp\stx-portal\src\app\common\back-button-menu.tpl.html" afterPath="" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\login-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/login/emailSent.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/login/forgot.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\home\profile.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\home\profile.spec.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.spec.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\home\profile.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\confirmEmail.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/emailSent.tpl.html" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\forgot.html" afterPath="$PROJECT_DIR$/src/app/login/forgot.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/_module.js" afterPath="$PROJECT_DIR$/src/app/accounts/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/_module.js" afterPath="$PROJECT_DIR$/src/app/home/_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/_module.js" afterPath="$PROJECT_DIR$/src/app/login/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/login.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.js" afterPath="$PROJECT_DIR$/src/app/accounts/update.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -30,91 +43,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
+      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.8082409" vertical-offset="0" max-vertical-offset="816">
+            <state line="15" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/details.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="summary.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/summary.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="secure-menu.tpl.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/common/secure-menu.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="112" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.38696256" vertical-offset="44" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/view.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/_module.js">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="63" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+            <state line="32" column="0" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-menu.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html">
+      <file leaf-file-name="update.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="10" selection-start="909" selection-end="909" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="527">
+            <state line="4" column="45" selection-start="90" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.scenario.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/register.scenario.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="35" selection-start="3774" selection-end="3774" vertical-scroll-proportion="-45.76923" vertical-offset="0" max-vertical-offset="1411">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="42" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="secure-menu.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/common/secure-menu.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="70" selection-start="510" selection-end="679" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="748">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/forms.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="39" selection-start="681" selection-end="681" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="metaValidate.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="55" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+            <state line="16" column="18" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -138,22 +142,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/home/index.js" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/core/navigationService.js" />
-        <option value="$PROJECT_DIR$/src/app/home/_module.js" />
-        <option value="$PROJECT_DIR$/src/less/forms.less" />
-        <option value="$PROJECT_DIR$/src/less/main.less" />
-        <option value="$PROJECT_DIR$/vendor/bootstrap/less/variables.less" />
-        <option value="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
-        <option value="$PROJECT_DIR$/src/less/site.less" />
-        <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
-        <option value="$PROJECT_DIR$/src/app/login/register.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
-        <option value="$PROJECT_DIR$/src/app/login/login-menu.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/forgot.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/forgot.js" />
+        <option value="$PROJECT_DIR$/src/app/login/emailSent.js" />
         <option value="$PROJECT_DIR$/src/app/login/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/login/login.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/emailSent.tpl.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/home/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/view.spec.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/update.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/view.js" />
+        <option value="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
       </list>
     </option>
   </component>
@@ -308,7 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,6 +331,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="encounters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,16 +395,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\temp\stx-portal\src\less" />
       <recent name="C:\temp\stx-portal\src\app\login" />
+      <recent name="C:\temp\stx-portal\src\less" />
       <recent name="C:\temp\stx-portal\src\app\core\directives" />
       <recent name="C:\temp\stx-portal\src\app\common" />
       <recent name="C:\temp\stx-portal\src\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\temp\stx-portal\src\app\accounts" />
       <recent name="C:\temp\stx-portal\src\app\common\menus" />
       <recent name="C:\temp\stx-portal\src\app\login" />
-      <recent name="C:\temp\stx-portal\src\app\accounts" />
       <recent name="C:\temp\stx-portal\vendor\stx" />
       <recent name="C:\temp\stx-portal\src\app\core" />
     </key>
@@ -649,7 +679,11 @@
       <created>1380838393804</created>
       <updated>1380838393804</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Working on login pages">
+      <created>1380839010669</created>
+      <updated>1380839010669</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,12 +694,12 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945055" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15054946" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20295203" sideWeight="0.75054944" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20295203" sideWeight="0.8494505" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24945055" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15054946" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33039647" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
@@ -707,114 +741,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/responsive-utilities.less">
+    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="13" selection-start="1966" selection-end="1966" vertical-scroll-proportion="1.5427574" vertical-offset="459" max-vertical-offset="3842">
+        <state line="30" column="78" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/mixins.less">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="21" selection-start="4054" selection-end="4054" vertical-scroll-proportion="0.382906" vertical-offset="2445" max-vertical-offset="12393">
+        <state line="11" column="112" selection-start="477" selection-end="477" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/variables.less">
+    <entry file="file://$PROJECT_DIR$/src/app/home/_module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="547" selection-end="569" vertical-scroll-proportion="-4.3333335" vertical-offset="0" max-vertical-offset="493">
+        <state line="36" column="0" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="275" column="6" selection-start="8446" selection-end="8472" vertical-scroll-proportion="-3.881579" vertical-offset="4380" max-vertical-offset="10642">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="3" selection-start="1785" selection-end="1785" vertical-scroll-proportion="-8.333333" vertical-offset="1088" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/register.scenario.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="657">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="55" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/forms.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="39" selection-start="681" selection-end="681" vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/secure-menu.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="70" selection-start="510" selection-end="679" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="748">
+        <state line="19" column="41" selection-start="644" selection-end="644" vertical-scroll-proportion="0.4511173" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
+        <state line="18" column="40" selection-start="747" selection-end="747" vertical-scroll-proportion="0.34497207" vertical-offset="59" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="35" selection-start="3774" selection-end="3774" vertical-scroll-proportion="-45.76923" vertical-offset="0" max-vertical-offset="1411">
+        <state line="57" column="60" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.8701117" vertical-offset="346" max-vertical-offset="1785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/_module.js">
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+        <state line="30" column="0" selection-start="702" selection-end="986" vertical-scroll-proportion="0.4273743" vertical-offset="204" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="10" selection-start="909" selection-end="909" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="527">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="716">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="16" column="18" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.8082409" vertical-offset="0" max-vertical-offset="816">
+        <state line="4" column="45" selection-start="90" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="503" selection-end="503" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/details.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="747">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/summary.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="509" selection-end="509" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/secure-menu.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="112" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.38696256" vertical-offset="44" max-vertical-offset="765">
           <folding />
         </state>
       </provider>

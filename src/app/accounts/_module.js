@@ -2,7 +2,8 @@
     "use strict";
 
     angular.module('stx.accounts', [
-            'stx.accounts.update'
+			'ui.router',
+			'stx.core'
         ])
         .config(['$stateProvider', function ($stateProvider) {
             $stateProvider
@@ -16,10 +17,15 @@
                 })
                 .state('accounts.update', {
                     url: '/update',
-                    controller: 'accounts.update.controller',
+                    controller: 'AccountsUpdateController',
                     templateUrl: 'accounts/update.tpl.html',
                     data: { pageTitle: 'Account Update' }
                 })
+				.state('accounts.view', {
+					url: '/view',
+					controller: 'AccountsViewController',
+					templateUrl: 'accounts/view.tpl.html'
+				})
             ;
         }])
     ;

@@ -1,11 +1,9 @@
 (function () {
     "use strict";
-    angular.module('stx.home.profile', [
-            'stx.core'
-        ])
-        .controller("ProfileController", ['$scope', 'Account', 'SecurityService',
+    angular.module('stx.accounts')
+        .controller("AccountsViewController", ['$scope', 'Account', 'SecurityService',
             function ($scope, Account, SecurityService) {
-                $scope.LSPage = LS.pages.home.profile;
+                $scope.LSPage = LS.pages.accounts.view;
                 $scope.account = Account.get({
                     customerId: SecurityService.authorizationContext.customerId,
                     id: SecurityService.authorizationContext.userId

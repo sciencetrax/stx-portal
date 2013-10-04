@@ -5,7 +5,6 @@
             'stx.home.details',
             'stx.home.incompleteVariableGroupSummaries',
             'stx.home.index',
-            'stx.home.profile',
             'stx.home.summary',
             'ui.router'
         ])
@@ -34,11 +33,6 @@
                     url: '/details',
                     templateUrl: 'home/details.tpl.html',
                     controller: 'DetailsController'
-                })
-                .state('home.index.profile', {
-                    url: '/profile',
-                    templateUrl: 'home/profile.tpl.html',
-                    controller: 'ProfileController'
                 })
             ;
         }])

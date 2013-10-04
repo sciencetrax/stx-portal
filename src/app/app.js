@@ -26,6 +26,7 @@ angular.module('stx', [
 			$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
 			$urlRouterProvider
 				.when('/', '/home/index/summary')
+				.when('/accounts', '/accounts/view')
 				.when('/forgot', '/login/forgot')
 				.when('/home', '/home/index/summary')
 				.when('/login', '/login/login')
@@ -38,9 +39,7 @@ angular.module('stx', [
 		function ($scope, $window, $location, $state, $stateParams, $navigation, SecurityService) {
 			function getTargetLocation() {
 				var targetLocation = $location.path();
-				if (targetLocation == "/login/login"
-					|| targetLocation == "/login") {
-					SecurityService.removeAuthorization();
+				if (targetLocation.startsWith("/login")) {
 					targetLocation = "/home/index/summary";
 				}
 				if (targetLocation == "/common/waiting") {
@@ -90,8 +89,7 @@ angular.module('stx', [
 				}
 			});
 
-			if (targetLocation == '/login/register'
-				|| targetLocation == '/login/forgot') {
+			if (targetLocation.startsWith('/login')) {
 				SecurityService.removeAuthorization();
 			} else {
 				SecurityService.handleAuthentication();

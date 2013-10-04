@@ -15,9 +15,16 @@
                         'content':  { template: '<div ui-view></div>' }
                     }
                 })
+				.state('login.emailSent', {
+					url: '/emailSent/{type}',
+					controller: 'EmailSentController',
+					templateUrl: 'login/emailSent.tpl.html',
+					data: { pageTitle: 'Confirm Email' }
+				})
                 .state('login.forgot', {
                     url: '/forgot',
-                    templateUrl: 'login/forgot.tpl.html',
+					controller: 'ForgotController',
+					templateUrl: 'login/forgot.tpl.html',
                     data: { pageTitle: LS.pages.login.forgot.heading }
                 })
                 .state('login.login', {
@@ -31,11 +38,6 @@
                     controller: 'RegisterController',
                     templateUrl: 'login/register.tpl.html',
                     data: { pageTitle: 'Sign Up' }
-                })
-                .state('login.confirmEmail', {
-                    url: '/confirmEmail',
-                    templateUrl: 'login/confirmEmail.tpl.html',
-                    data: { pageTitle: 'Confirm Email' }
                 })
             ;
         }])

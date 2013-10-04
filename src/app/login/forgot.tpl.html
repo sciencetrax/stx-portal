@@ -1,0 +1,34 @@
+<div class="col-xs-12 col-sm-offset-4 col-sm-4">
+    <form name="theForm" role="form">
+        <div>
+            <!-- FORGOT USERNAME HEADING -->
+            <h4 class="text-center">{{ LSPage.forgotUsername }}</h4>
+            <h6 class="text-center"><small>{{ LSPage.forgotUsernameMessage }}</small></h6>
+
+            <!-- EMAIL ADDRESS -->
+            <div>
+                <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
+                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-autofocus/>
+                <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <button ng-click="requestUsername()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+        </div>
+        <div>
+            <!-- FORGOT PASSWORD HEADING -->
+            <h4 class="text-center">{{ LSPage.forgotPassword }}</h4>
+            <h6 class="text-center"><small>{{ LSPage.forgotPasswordMessage }}</small></h6>
+
+            <!-- USERNAME -->
+            <div>
+                <label for="username" class="control-label">{{ LSPage.username }}</label>
+                <input id="username" ng-model="account.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control"/>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <button ng-click="requestPassword()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+
+        </div>
+    </form>
+</div>
