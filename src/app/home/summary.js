@@ -11,7 +11,13 @@
                     { name: "AdverseEvent" },
                     { name: "Injury" }
                 ];
-            }])
+
+				$scope.incompleteSubjectEncounters = function (item) {
+					return item.percentComplete < 0.999
+						&& (item.viewable || item.creatable || item.editable);
+
+				};
+			}])
     ;
 }());
 

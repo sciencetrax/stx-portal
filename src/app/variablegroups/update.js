@@ -47,7 +47,7 @@
 
                             dataEntryPanel.html(data);
                             if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
-                                $navigation.back();
+                                $window.history.back();
                                 $scope.$apply();
                             }
                         }

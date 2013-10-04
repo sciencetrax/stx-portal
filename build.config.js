@@ -87,9 +87,11 @@ module.exports = {
             'vendor/angular-ui-router/release/angular-ui-router.js',
 			'vendor/angular-ui-utils/modules/validate/validate.js',
             'vendor/bootbox/bootbox.js',
+
 			'vendor/bootstrap/assets/js/html5shiv.js',
 			'vendor/bootstrap/assets/js/respond.min.js',
             'vendor/bootstrap/dist/js/bootstrap.js',
+
             'vendor/stx/Class.js',
             'vendor/stx/jsExtensions.js',
             'vendor/stx/navigableHash.js',
@@ -105,6 +107,7 @@ module.exports = {
         css: [
         ],
         assets: [
-        ]
+			'vendor/bootstrap/fonts/**/*.*',
+		]
     }
 };

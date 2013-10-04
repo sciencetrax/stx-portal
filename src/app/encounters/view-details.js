@@ -5,7 +5,7 @@
 			'ui.router',
 			'stx.encounters.view'
 		])
-		.controller("DetailsController", ['$scope', '$stateParams', 'SecurityService', 'DataEntryForm', 'ScheduledEncounter',
+		.controller("EncounterViewDetailsController", ['$scope', '$stateParams', 'SecurityService', 'DataEntryForm', 'ScheduledEncounter',
 			function ($scope, $stateParams, SecurityService, DataEntryForm, ScheduledEncounter) {
 				$('#VariableToolsMenu').remove();
 

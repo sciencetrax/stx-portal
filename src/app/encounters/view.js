@@ -21,18 +21,6 @@
 				}, function (data) {
 					$scope.encounter = data[0];
 				});
-
-				// Not sure why but the following is here because the DetailController is not being instantiated
-				DataEntryForm.loadScript(
-					authorizationContext.customerId,
-					subject.projects[0].projectId,
-					subject.projects[0].siteId,
-					subject.id,
-					$stateParams.intervalId,
-					$stateParams.encounterId,
-					false);
-
-
             }])
         .controller("ReportController", [
             function () {

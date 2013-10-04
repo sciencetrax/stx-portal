@@ -24,7 +24,7 @@
                 })
                 .state('encounters.view.details', {
                     url: '/details',
-					controller: 'DetailsController',
+					controller: 'EncounterViewDetailsController',
                     templateUrl: 'encounters/view-details.tpl.html'
                 })
                 .state('encounters.view.reports', {

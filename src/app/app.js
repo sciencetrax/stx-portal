@@ -35,8 +35,8 @@ angular.module('stx', [
 				.otherwise('/');
 			WebServiceConfigProvider.configure('/StudyTrax', "api/");
 		}])
-	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', '$navigation', 'SecurityService',
-		function ($scope, $window, $location, $state, $stateParams, $navigation, SecurityService) {
+	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', '$navigation', 'EmailRequest', 'SecurityService',
+		function ($scope, $window, $location, $state, $stateParams, $navigation, EmailRequest, SecurityService) {
 			function getTargetLocation() {
 				var targetLocation = $location.path();
 				if (targetLocation.startsWith("/login")) {
@@ -48,9 +48,16 @@ angular.module('stx', [
 				return targetLocation;
 			}
 
-			$scope.resendVerificationEmail = function () {
-				$scope.error = null;
-				$scope.successMessage = this.LS.common.verificationEmailSent;
+			$scope.resendVerificationEmail = function (username, password) {
+				var emailRequest = new EmailRequest();
+				emailRequest.portalId = SecurityService.portal.id;
+				emailRequest.emailType = "AccountVerification";
+				emailRequest.username = username;
+				emailRequest.password = password;
+				EmailRequest.save(emailRequest, function () {
+					$scope.error = null;
+					$scope.successMessage = this.LS.common.verificationEmailSent;
+				});
 			};
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;

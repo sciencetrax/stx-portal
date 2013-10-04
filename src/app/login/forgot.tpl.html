@@ -8,12 +8,15 @@
             <!-- EMAIL ADDRESS -->
             <div>
                 <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
-                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-autofocus/>
+                <input id="emailAddress" name="emailAddress" type="email" ng-model="emailRequest.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-autofocus/>
                 <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
             </div>
 
             <!-- SUBMIT BUTTON -->
             <button ng-click="requestUsername()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+
+            <!-- CANCEL BUTTON -->
+            <a href="#/login" class="btn btn-default form-control sign-up">{{ LS.common.cancel }}</a>
         </div>
         <div>
             <!-- FORGOT PASSWORD HEADING -->
@@ -23,11 +26,14 @@
             <!-- USERNAME -->
             <div>
                 <label for="username" class="control-label">{{ LSPage.username }}</label>
-                <input id="username" ng-model="account.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control"/>
+                <input id="username" ng-model="emailRequest.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control"/>
             </div>
 
             <!-- SUBMIT BUTTON -->
             <button ng-click="requestPassword()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+
+            <!-- CANCEL BUTTON -->
+            <a href="#/login" class="btn btn-default form-control sign-up">{{ LS.common.cancel }}</a>
 
         </div>
     </form>

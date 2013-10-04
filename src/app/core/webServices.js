@@ -126,6 +126,15 @@ angular.module('stx.core.webService', [
             }
         };
     }])
+	.factory('EmailRequest', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:portalId/emailrequests?emailType=:emailType&username=:username&password=:password&emailAddress=:emailAddress'), {
+			portalId: "@portalId",
+			emailType: "@emailType",
+			emailAddress: '@emailAddress',
+			username: '@username',
+			password: '@password'
+		});
+	}])
     .factory('Metadata', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
     }])

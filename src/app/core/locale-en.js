@@ -30,7 +30,12 @@
     pages: {
         accounts: {
             update: {
-                heading: "Update Account"
+                heading: "Update Account",
+				emailAddress: "Email Address",
+				firstName: "First Name",
+				lastName: "Last Name",
+				middleInitial: "Middle Initial",
+				username: "Username"
             }
         },
         common: {

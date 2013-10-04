@@ -22,7 +22,7 @@
     </li>
 
     <!-- INCOMPLETE ENCOUNTERS -->
-    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: data.encounterDueAndIncomplete"
+    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters"
         class="list-group-item">
         <a class="text-badge" href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
             <div>{{item.name}}</div>
