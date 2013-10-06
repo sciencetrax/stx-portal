@@ -11,6 +11,7 @@ angular.module('stx', [
 		'stx.encounters',
 		'stx.home',
 		'stx.login',
+		'stx.reports',
 		'stx.variablegroups'
 	])
 	.factory('SecurityResponseErrorInterceptor', ['$q', '$rootScope', function ($q, $rootScope) {
