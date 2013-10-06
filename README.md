@@ -1,4 +1,4 @@
-# [stx-portal](https://github.com/sciencetrax/stx-portal) [![Build Status](https://api.travis-ci.org/sciencetrax/stx-portal.png)](https://travis-ci.org/joshdmiller/ng-boilerplate)
+# [stx-portal](https://github.com/sciencetrax/stx-portal) [![Build Status](https://api.travis-ci.org/sciencetrax/stx-portal.png)](https://travis-ci.org/sciencetrax/stx-portal)
 
 An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 

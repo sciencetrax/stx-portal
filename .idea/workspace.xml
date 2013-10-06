@@ -49,7 +49,7 @@
       <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6545">
+            <state line="0" column="174" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6545">
               <folding />
             </state>
           </provider>
@@ -541,7 +541,11 @@
       <created>1381048879613</created>
       <updated>1381048879613</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Updating README.md">
+      <created>1381049626846</created>
+      <updated>1381049626846</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -592,7 +596,8 @@
     <MESSAGE value="Working on responsive design" />
     <MESSAGE value="Working on login pages" />
     <MESSAGE value="Redesigning pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesigning pages" />
+    <MESSAGE value="Updating README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -705,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6545">
+        <state line="0" column="174" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6545">
           <folding />
         </state>
       </provider>
