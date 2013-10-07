@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/accounts/resetPassword.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/SecurityService.js" afterPath="$PROJECT_DIR$/src/app/core/SecurityService.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\register.js" afterPath="$PROJECT_DIR$/src/app/accounts/register.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\register.scenario.js" afterPath="$PROJECT_DIR$/src/app/accounts/register.scenario.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\register.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/_module.js" afterPath="$PROJECT_DIR$/src/app/accounts/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/_module.js" afterPath="$PROJECT_DIR$/src/app/login/_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/forgot.js" afterPath="$PROJECT_DIR$/src/app/login/forgot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/register.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/register.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.js" afterPath="$PROJECT_DIR$/src/app/reports/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/reports/view.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -38,37 +31,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="resetPassword.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="resetPassword.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.49562684" vertical-offset="0" max-vertical-offset="686">
+            <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="register.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/register.js">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="65" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+            <state line="18" column="68" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+      <file leaf-file-name="emailSent.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/login/emailSent.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="3014" selection-end="3014" vertical-scroll-proportion="0.0" vertical-offset="1303" max-vertical-offset="2363">
+            <state line="3" column="52" selection-start="188" selection-end="196" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resetPassword.tpl.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="resetPassword.tpl.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="194" selection-end="219" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="867">
+            <state line="5" column="0" selection-start="194" selection-end="219" vertical-scroll-proportion="-0.18030304" vertical-offset="204" max-vertical-offset="867">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forgot.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/login/forgot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="63" selection-start="772" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -77,7 +79,7 @@
       <file leaf-file-name="login.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="21" selection-end="139" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="816">
+            <state line="15" column="25" selection-start="628" selection-end="628" vertical-scroll-proportion="-3.8076923" vertical-offset="156" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -86,14 +88,32 @@
       <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
+            <state line="24" column="70" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/login/_module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="43" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="80" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1972">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="register.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="21" selection-start="805" selection-end="805" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1462">
               <folding />
@@ -119,13 +139,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/common/secure-menu.tpl.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/src/app/reports/view.js" />
         <option value="$PROJECT_DIR$/src/app/reports/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/app.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
         <option value="$PROJECT_DIR$/vendor/stx/JsExtensions.js" />
         <option value="$PROJECT_DIR$/vendor/stx/JsExtensions.spec.js" />
         <option value="$PROJECT_DIR$/src/app/login/forgot.js" />
@@ -135,6 +151,10 @@
         <option value="$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/login/register.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/accounts/resetPassword.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/login/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
       </list>
     </option>
   </component>
@@ -257,28 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encounters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -648,13 +646,18 @@
       <created>1381049677220</created>
       <updated>1381049677220</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Implementing the reset password page">
+      <created>1381166705531</created>
+      <updated>1381166705531</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21758242" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -670,7 +673,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -700,7 +702,8 @@
     <MESSAGE value="Working on login pages" />
     <MESSAGE value="Redesigning pages" />
     <MESSAGE value="Updating README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating README.md" />
+    <MESSAGE value="Implementing the reset password page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing the reset password page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -708,34 +711,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="74" selection-start="6673" selection-end="6673" vertical-scroll-proportion="0.42696628" vertical-offset="2301" max-vertical-offset="3043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="243" selection-end="301" vertical-scroll-proportion="0.18710692" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3468" selection-end="3468" vertical-scroll-proportion="0.6273585" vertical-offset="1284" max-vertical-offset="1955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/SecurityService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="71" selection-start="836" selection-end="836" vertical-scroll-proportion="0.5078616" vertical-offset="153" max-vertical-offset="1615">
@@ -753,13 +728,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="53" selection-start="526" selection-end="526" vertical-scroll-proportion="0.22844176" vertical-offset="53" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
@@ -787,35 +755,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login/login.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="21" selection-end="139" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="816">
+        <state line="15" column="25" selection-start="628" selection-end="628" vertical-scroll-proportion="-3.8076923" vertical-offset="156" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="194" selection-end="219" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="867">
+        <state line="26" column="80" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/register.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="70" selection-start="812" selection-end="812" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="43" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/forgot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="63" selection-start="772" selection-end="803" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="805" selection-end="805" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/register.js">
+    <entry file="file://$PROJECT_DIR$/src/app/login/emailSent.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+        <state line="3" column="52" selection-start="188" selection-end="196" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="68" selection-start="959" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.49562684" vertical-offset="0" max-vertical-offset="686">
+        <state line="20" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="194" selection-end="219" vertical-scroll-proportion="-0.18030304" vertical-offset="204" max-vertical-offset="867">
           <folding />
         </state>
       </provider>

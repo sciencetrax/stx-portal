@@ -31,7 +31,7 @@ angular.module('stx', [
 				.when('/forgot', '/login/forgot')
 				.when('/home', '/home/index/summary')
 				.when('/login', '/login/login')
-				.when('/register', '/login/register')
+				.when('/register', '/accounts/register')
 				.when('/subjectLogin', '/login/subjectLogin')
 //				.otherwise('/')
 				;
@@ -99,6 +99,7 @@ angular.module('stx', [
 			});
 
 			if (targetLocation.startsWith('/login')
+				|| targetLocation.startsWith('/accounts/register')
 				|| targetLocation.startsWith('/accounts/resetPassword')) {
 				SecurityService.removeAuthorization();
 			} else {

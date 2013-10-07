@@ -3,6 +3,7 @@
 
     angular.module('stx.accounts', [
 			'ui.router',
+			'ui.validate',
 			'stx.core'
         ])
         .config(['$stateProvider', function ($stateProvider) {
@@ -14,6 +15,17 @@
                         'menu': { templateUrl: 'common/secure-menu.tpl.html' },
                         'content': { template: '<div ui-view></div>' }
                     }
+                })
+                .state('accounts.register', {
+					url: '/register',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsRegisterController',
+							templateUrl: 'accounts/register.tpl.html',
+							data: { pageTitle: 'Register' }
+						}
+					}
                 })
                 .state('accounts.resetPassword', {
 					url: '/resetPassword/{token}',

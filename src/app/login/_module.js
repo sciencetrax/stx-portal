@@ -2,8 +2,7 @@
     "use strict";
 
     angular.module('stx.login', [
-            'stx.login.login',
-            'stx.login.register'
+            'stx.login.login'
         ])
         .config(['$stateProvider', function ($stateProvider) {
             $stateProvider
