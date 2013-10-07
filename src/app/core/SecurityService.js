@@ -16,10 +16,13 @@ var SecurityService;
         init: function () {
         },
         initialize: function () {
+			var _this = this;
             this.portal = this.Portal.get({
                 code: PORTAL_CODE,
                 includeProject: true
-            });
+            }, function() {
+				_this.$rootScope.$broadcast('portalReady');
+			});
         },
         authorize: function (authorization) {
             var _this = this;
@@ -34,6 +37,9 @@ var SecurityService;
                 _this.$rootScope.$broadcast('authorizationContextReady');
             });
         },
+		authorizeUrl: function(url) {
+			return UrlUtils.addParameter(url, this.AUTH_HEADER, this.authorization);
+		},
         handleAuthentication: function () {
             var authorization;
             try {

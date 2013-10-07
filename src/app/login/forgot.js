@@ -2,8 +2,8 @@
     "use strict";
 
     angular.module('stx.login')
-        .controller("ForgotController", ['$scope', '$state', '$location', 'EmailRequest', 'Metadata', 'Portal', 'SystemService', 'SecurityService',
-            function ($scope, $state, $location, EmailRequest, Metadata, Portal, SystemService, SecurityService) {
+        .controller("ForgotController", ['$window', '$scope', '$state', '$location', 'EmailRequest', 'Metadata', 'Portal', 'SystemService', 'SecurityService',
+            function ($window, $scope, $state, $location, EmailRequest, Metadata, Portal, SystemService, SecurityService) {
 				$scope.LSPage = LS.pages.login.forgot;
 				$scope.metadata = Metadata.get({ entityType: 'account'});
 				$scope.emailRequest = new EmailRequest();
@@ -17,7 +17,13 @@
 					});
 				};
 				$scope.requestPassword = function () {
-					$location.path('/login/emailSent/forgotPassword');
+					var emailRequest = $scope.emailRequest;
+					emailRequest.emailType = "ForgotPassword";
+					emailRequest.loginUrl = UrlUtils.getHostAndPath($window.location.href) + "#/login";
+					emailRequest.returnUrl = UrlUtils.getHostAndPath($window.location.href) + "#/accounts/resetPassword/{token}";
+					EmailRequest.save(emailRequest, function () {
+						$location.path('/login/emailSent/forgotPassword');
+					});
 				};
 			}])
     ;

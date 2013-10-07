@@ -17,8 +17,8 @@
 				$scope.LSPage = LS.pages.reports.view;
 				$scope.report = EncounterReport.get(securityProfile);
 
-				$scope.pdfUrl = UrlUtils.combine(WebServiceConfig.getBaseUrl(),
-						'customers/{0}/projects/{1}/sites/{2}/subjects/{3}/encounters/{4}/reports/{5}?pdf=true')
+				var pdfUrl = UrlUtils.combine(WebServiceConfig.getBaseUrl(),
+						'customers/{0}/projects/{1}/sites/{2}/subjects/{3}/encounters/{4}/reports/{5}?pdfContentsOnly=true')
 					.format(
 						securityProfile.customerId,
 						securityProfile.projectId,
@@ -27,14 +27,7 @@
 						securityProfile.encounterId,
 						securityProfile.reportId
 					);
-
-
-				$scope.downloadPdf = function () {
-					securityProfile.pdf = true;
-					var pdf = EncounterReport.get(securityProfile, function (data) {
-						alert(data);
-					});
-				};
+				$scope.pdfUrl = SecurityService.authorizeUrl(pdfUrl);
 			}])
 	;
 }());

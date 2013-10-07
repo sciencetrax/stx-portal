@@ -33,7 +33,8 @@ angular.module('stx', [
 				.when('/login', '/login/login')
 				.when('/register', '/login/register')
 				.when('/subjectLogin', '/login/subjectLogin')
-				.otherwise('/');
+//				.otherwise('/')
+				;
 			WebServiceConfigProvider.configure('/StudyTrax', "api/");
 		}])
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', '$navigation', 'EmailRequest', 'SecurityService',
@@ -97,7 +98,8 @@ angular.module('stx', [
 				}
 			});
 
-			if (targetLocation.startsWith('/login')) {
+			if (targetLocation.startsWith('/login')
+				|| targetLocation.startsWith('/accounts/resetPassword')) {
 				SecurityService.removeAuthorization();
 			} else {
 				SecurityService.handleAuthentication();

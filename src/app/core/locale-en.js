@@ -29,6 +29,16 @@
 	},
 	pages: {
 		accounts: {
+			resetPassword: {
+				heading: "Reset Password",
+				changePassword: "Change Password",
+				confirmPassword: "Confirm Password",
+				password: "Password",
+				username: "Username",
+				errors: {
+					confirmPasswordValueMatches: "Does not match password."
+				}
+			},
 			update: {
 				heading: "Update Account",
 				emailAddress: "Email Address",
@@ -90,7 +100,6 @@
 			},
 			register: {
 				heading: "Register",
-				cancel: "Cancel",
 				confirmEmailAddress: "Confirm Email Address",
 				confirmPassword: "Confirm Password",
 				emailAddress: "Email Address",

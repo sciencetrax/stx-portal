@@ -15,6 +15,17 @@
                         'content': { template: '<div ui-view></div>' }
                     }
                 })
+                .state('accounts.resetPassword', {
+					url: '/resetPassword/{token}',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsResetPasswordController',
+							templateUrl: 'accounts/resetPassword.tpl.html',
+							data: { pageTitle: 'Reset Password' }
+						}
+					}
+                })
                 .state('accounts.update', {
                     url: '/update',
                     controller: 'AccountsUpdateController',

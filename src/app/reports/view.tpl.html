@@ -1,6 +1,10 @@
 ﻿<div class="col-xs-12 col-sm-offset-3 col-sm-6">
+    <!-- DOWNLOAD PDF BUTTON -->
     <a href="{{ pdfUrl }}" class="btn btn-default pull-right">{{ LSPage.pdf }}</a>
+
+    <!-- REPORT NAME -->
     <h3>{{report.name}}</h3>
 
+    <!-- HTML REPORT -->
     <div st-append="report.html" class="well"></div>
 </div>

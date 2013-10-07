@@ -9,7 +9,7 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 Install Node.js and then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
+$ git clone git://github.com/sciencetrax/stx-portal
 $ cd ng-boilerplate
 $ sudo npm -g install grunt-cli karma bower
 $ npm install
@@ -17,7 +17,7 @@ $ bower install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Finally, open `file:///path/to/stx-portal/build/index.html` in your browser.
 
 Happy hacking!
 
