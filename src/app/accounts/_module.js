@@ -12,7 +12,7 @@
                     abstract: true,
                     url: '/accounts',
                     views: {
-                        'menu': { templateUrl: 'common/secure-menu.tpl.html' },
+                        'menu': { templateUrl: 'common/menu/secure-menu.tpl.html' },
                         'content': { template: '<div ui-view></div>' }
                     }
                 })
