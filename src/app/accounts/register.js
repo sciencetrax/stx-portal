@@ -2,8 +2,8 @@
     "use strict";
     angular.module('stx.accounts')
         .controller('AccountsRegisterController',
-			['$scope', '$location', 'Metadata', 'Account', 'SecurityService', 'SystemService',
-            function ($scope, $location, Metadata, Account, SecurityService, SystemService) {
+			['$scope', '$location', 'Metadata', 'Account', 'SecurityService',
+            function ($scope, $location, Metadata, Account, SecurityService) {
                 $scope.LSPage = LS.pages.login.register;
                 $scope.metadata = Metadata.get({ entityType: 'account'});
                 $scope.portal = SecurityService.portal;
@@ -17,16 +17,6 @@
 
                     Account.save(account, function (response) {
                         $location.path('/login/emailSent/register');
-                    }, function(data) {
-                        if (data.data.errorCode != null) {
-							$(window).scrollTop(0);
-							$scope.error = {
-                                code: data.data.errorCode,
-                                message: LS.errorMessages.get(data.data.errorCode)
-                            };
-                        } else {
-                            SystemService.handleError(data.data);
-                        }
                     });
                 };
             }])

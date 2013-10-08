@@ -14,17 +14,47 @@ angular.module('stx', [
 		'stx.reports',
 		'stx.variablegroups'
 	])
-	.factory('SecurityResponseErrorInterceptor', ['$q', '$rootScope', function ($q, $rootScope) {
-		return {
-			responseError: function (rejection) {
-				$rootScope.$broadcast('httpError', rejection);
-				return $q.reject(rejection);
-			}
-		};
-	}])
+	.factory('SecurityResponseErrorInterceptor',
+		['$q', '$rootScope',
+			function ($q, $rootScope) {
+				return {
+					responseError: function (rejection) {
+						$rootScope.$broadcast('httpError', rejection);
+						return $q.reject(rejection);
+					}
+				};
+			}])
+	.factory('errorInterceptor',
+		['$q', '$rootScope',
+			function ($q, $rootScope) {
+				return {
+					response: function(response) {
+						$rootScope.error = null;
+						$rootScope.success = null;
+						return response || $q.when(response);
+					},
+					responseError: function (rejection) {
+						$(window).scrollTop(0);
+						var error = rejection.data;
+						if (error.errorCode != null) {
+							$rootScope.error = {
+								code: error.errorCode,
+								message: LS.errorMessages.get(error.errorCode)
+							};
+							if ($('#errors').length === 0) {
+								bootbox.alert($rootScope.error.message);
+							}
+						} else {
+							bootbox.alert(error.errorCode);
+						}
+						return $q.reject(rejection);
+					}
+				};
+			}])
 	.config(['$httpProvider', '$urlRouterProvider', 'WebServiceConfigProvider',
 		function ($httpProvider, $urlRouterProvider, WebServiceConfigProvider) {
 			$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
+			$httpProvider.interceptors.push('errorInterceptor');
 			$urlRouterProvider
 				.when('/', '/home/index/summary')
 				.when('/accounts', '/accounts/view')
@@ -34,14 +64,15 @@ angular.module('stx', [
 				.when('/register', '/accounts/register')
 				.when('/subjectLogin', '/login/subjectLogin')
 //				.otherwise('/')
-				;
+			;
 			WebServiceConfigProvider.configure('/StudyTrax', "api/");
 		}])
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', '$navigation', 'EmailRequest', 'SecurityService',
 		function ($scope, $window, $location, $state, $stateParams, $navigation, EmailRequest, SecurityService) {
 			function getTargetLocation() {
 				var targetLocation = $location.path();
-				if (targetLocation.startsWith("/login")) {
+				if (targetLocation.startsWith("/login")
+					|| targetLocation.startsWith('/accounts/resetPassword')) {
 					targetLocation = "/home/index/summary";
 				}
 				if (targetLocation == "/common/waiting") {
@@ -50,17 +81,6 @@ angular.module('stx', [
 				return targetLocation;
 			}
 
-			$scope.resendVerificationEmail = function (username, password) {
-				var emailRequest = new EmailRequest();
-				emailRequest.portalId = SecurityService.portal.id;
-				emailRequest.emailType = "AccountVerification";
-				emailRequest.username = username;
-				emailRequest.password = password;
-				EmailRequest.save(emailRequest, function () {
-					$scope.error = null;
-					$scope.successMessage = this.LS.common.verificationEmailSent;
-				});
-			};
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;
 				if (phase == '$apply' || phase == '$digest') {
@@ -98,9 +118,11 @@ angular.module('stx', [
 				}
 			});
 
-			if (targetLocation.startsWith('/login')
-				|| targetLocation.startsWith('/accounts/register')
-				|| targetLocation.startsWith('/accounts/resetPassword')) {
+			var currentPath = $location.path();
+			if (currentPath.startsWith('/login')
+				|| currentPath.startsWith('/accounts/emailAddressVerified')
+				|| currentPath.startsWith('/accounts/register')
+				|| currentPath.startsWith('/accounts/resetPassword')) {
 				SecurityService.removeAuthorization();
 			} else {
 				SecurityService.handleAuthentication();

@@ -8,6 +8,7 @@
 //		loading: "Loading...",
 		logASubjectIn: "Log a subject in",
 		resendVerificationEmail: "Resend Email",
+		returnToLoginPage: "Return To Login Page",
 		save: "Save",
 		submit: "Submit",
 		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
@@ -20,6 +21,7 @@
 		InvalidUsernameOrPassword: "Invalid username or password.",
 		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
 		PasswordExpired: "Your password has expired.",
+		PasswordNotDifferent: "The new password must be different from the old password.",
 		RemainigSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
 		RequiredFieldMissing: "A required field was not specified.",
 		UsernameExist: "Please enter a different username.  That username is taken."
@@ -29,11 +31,16 @@
 	},
 	pages: {
 		accounts: {
+			emailAddressVerified: {
+				heading: "Email Address Verified",
+				message: "Your email address has been verified."
+			},
 			resetPassword: {
 				heading: "Reset Password",
 				changePassword: "Change Password",
 				confirmPassword: "Confirm Password",
 				password: "Password",
+				passwordChangedMessage: "Your password has been changed.  Please return to the login page to login.",
 				username: "Username",
 				errors: {
 					confirmPasswordValueMatches: "Does not match password."

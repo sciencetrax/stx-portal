@@ -1,4 +1,6 @@
 {
+  "portalCode": "std",
+
   "author": "Leslie Hanks",
   "name": "stx-portal",
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",

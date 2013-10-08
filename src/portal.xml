@@ -28,9 +28,28 @@
 					]]>
                 </page>
 
-                <page code="index">
+                <page code="index" pageType="Login">
                     <![CDATA[
                     <%= html %>
+                    ]]>
+                </page>
+
+                <page code="verifyEmailAddress" pageType="VerifyEmail">
+                    <![CDATA[
+                        <script>
+                            window.location.href = "index#/accounts/emailAddressVerified";
+                        </script>
+                    ]]>
+                </page>
+
+                <page code="resetPassword" pageType="resetPassword">
+                    <![CDATA[
+                        <script>
+                            function getQueryStringParameter (sVar) {
+                                return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+                            }
+                            window.location.href = "index#/accounts/resetPassword/" + getQueryStringParameter("P");
+                        </script>
                     ]]>
                 </page>
             </pages>

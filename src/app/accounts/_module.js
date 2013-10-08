@@ -16,6 +16,17 @@
                         'content': { template: '<div ui-view></div>' }
                     }
                 })
+                .state('accounts.emailAddressVerified', {
+					url: '/emailAddressVerified',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsEmailAddressVerifiedController',
+							templateUrl: 'accounts/emailAddressVerified.tpl.html',
+							data: { pageTitle: 'Register' }
+						}
+					}
+                })
                 .state('accounts.register', {
 					url: '/register',
 					views: {

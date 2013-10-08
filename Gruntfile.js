@@ -257,7 +257,7 @@ module.exports = function (grunt) {
 				dest: '<%= recess.build.dest %>',
 				options: {
 					compile: true,
-					compress: true,
+					compress: false,
 					noUnderscores: false,
 					noIDs: false,
 					zeroUnits: false
@@ -618,17 +618,7 @@ module.exports = function (grunt) {
 					data: {
 						scripts: jsFiles,
 						styles: cssFiles,
-						version: grunt.config('pkg.version')
-					}
-				});
-			}
-		});
-		grunt.file.copy('src/variableGroupUpdate.html', this.data.dir + '/variableGroupUpdate.html', {
-			process: function (contents, path) {
-				return grunt.template.process(contents, {
-					data: {
-						scripts: jsFiles,
-						styles: cssFiles,
+						portalCode: grunt.config('pkg.portalCode'),
 						version: grunt.config('pkg.version')
 					}
 				});
@@ -665,6 +655,7 @@ module.exports = function (grunt) {
 					data: {
 						scripts: ['#URL(js)'],
 						styles: ['#URL(css)'],
+						portalCode: '#Portal.Code',
 						version: grunt.config('pkg.version')
 					}
 				});
@@ -694,6 +685,7 @@ module.exports = function (grunt) {
 					data: {
 						scripts: jsFiles,
 						styles: cssFiles,
+						portalCode: grunt.config('pkg.portalCode'),
 						version: grunt.config('pkg.version')
 					}
 				});

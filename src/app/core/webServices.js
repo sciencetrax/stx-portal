@@ -149,7 +149,11 @@ angular.module('stx.core.webService', [
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
     }])
     .factory('PasswordReset', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'passwordReset/:token'));
+        return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:portalId/passwordReset/:token?password=:password'), {
+			portalId: "@portalId",
+			token: "@token",
+			password: "@password"
+		}, serviceActions);
     }])
     .factory('Portal', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:code'));
