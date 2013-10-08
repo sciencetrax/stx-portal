@@ -7,6 +7,7 @@
   "portalType": "Subject",
   "allowRegistration": "True",
   "allowAnonymousDataEntry": "True",
+  "sendEncounterDueNotifications": "True",
   "version": "0.0.1",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {

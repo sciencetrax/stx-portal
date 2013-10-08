@@ -19,8 +19,8 @@
 				$scope.requestPassword = function () {
 					var emailRequest = $scope.emailRequest;
 					emailRequest.emailType = "ForgotPassword";
-					emailRequest.loginUrl = UrlUtils.getHostAndPath($window.location.href) + "#/login";
-					emailRequest.returnUrl = UrlUtils.getHostAndPath($window.location.href) + "#/accounts/resetPassword/{token}";
+//					emailRequest.loginUrl = UrlUtils.getHostAndPath($window.location.href) + "#/login";
+//					emailRequest.returnUrl = UrlUtils.getHostAndPath($window.location.href) + "#/accounts/resetPassword/{token}";
 					EmailRequest.save(emailRequest, function () {
 						$location.path('/login/emailSent/forgotPassword');
 					});

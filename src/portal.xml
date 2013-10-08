@@ -12,7 +12,7 @@
                 userType="<%= pkg.portalType %>"
                 allowRegistration="<%= pkg.allowRegistration %>"
                 allowAnonymousDataEntry="<%= pkg.allowAnonymousDataEntry %>"
-                sendEncounterDueNotifications="True">
+                sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
             <pages>
                 <!-- CSS CONTENT -->
                 <page code="css" path="codecss" pageType="css">
