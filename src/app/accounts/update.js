@@ -12,7 +12,6 @@
 					id: authorizationContextResolver.data.userId
 				});
 				$scope.update = function () {
-//                $scope.account.update();
 					var account = this.account;
 					Account.update(account, function (response) {
 						$location.path("/accounts/view");
