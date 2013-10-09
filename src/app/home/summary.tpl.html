@@ -5,12 +5,10 @@
         <li ng-repeat="item in encounterActions | orderBy: 'name'">
             <a>{{ LS.common._new }} {{ item.name }}</a>
         </li>
-        <!--<li class="divider"></li>-->
-        <!--<li><a href="#">Separated link</a></li>-->
     </ul>
 </div>
 
-<h3>{{ LSPage.heading }}</h3>
+<div class="page-heading" title="{{ LSPage.heading }}">{{ LSPage.heading }}</div>
 <ul class="nav">
     <!-- INCOMPLETE VARIABLE GROUPS -->
     <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}"

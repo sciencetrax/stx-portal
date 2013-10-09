@@ -5,6 +5,9 @@
     <!-- REPORT NAME -->
     <h3>{{report.name}}</h3>
 
-    <!-- HTML REPORT -->
+    <!--
+        HTML REPORT
+        We use the st-append directive so that the HTML in the report does not get escaped.
+    -->
     <div st-append="report.html" class="well"></div>
 </div>

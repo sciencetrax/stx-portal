@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js" afterPath="$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.js" afterPath="$PROJECT_DIR$/src/app/accounts/update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/directives/pageHeading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/directives/append.js" afterPath="$PROJECT_DIR$/src/app/core/directives/append.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/directives/backButton.js" afterPath="$PROJECT_DIR$/src/app/core/directives/backButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/emailSent.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/emailSent.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/enroll.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/enroll.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/login.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/reports/view.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -27,91 +41,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/reports/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="20" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/reports/_module.js">
+      <file leaf-file-name="enroll.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="57" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+            <state line="1" column="23" selection-start="49" selection-end="73" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/_module.js">
+      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+            <state line="14" column="14" selection-start="809" selection-end="809" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
+      <file leaf-file-name="view-details.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailAddressVerified.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js">
+      <file leaf-file-name="view-details.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+            <state line="1" column="23" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="459">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enroll.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
+      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/reports/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="62" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="765">
+            <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
+      <file leaf-file-name="pageHeading.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/pageHeading.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="16" column="65" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="resetPassword.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
+      <file leaf-file-name="autofocus.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/autofocus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
+      <file leaf-file-name="append.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/append.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.41827768" vertical-offset="0" max-vertical-offset="569">
+            <state line="4" column="59" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stateExt.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/stateExt.js">
+      <file leaf-file-name="metaValidate.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445">
+            <state line="16" column="25" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -135,22 +149,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/accounts/view.js" />
-        <option value="$PROJECT_DIR$/src/app/core/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/core/dependencyResolver.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/core/navigationService.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/home/index.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/login/emailSent.js" />
-        <option value="$PROJECT_DIR$/src/app/login/enroll.js" />
-        <option value="$PROJECT_DIR$/src/app/login/forgot.js" />
-        <option value="$PROJECT_DIR$/src/app/login/login.spec.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-        <option value="$PROJECT_DIR$/src/app/core/stateExt.js" />
-        <option value="$PROJECT_DIR$/src/app/reports/view.js" />
-        <option value="$PROJECT_DIR$/src/app/reports/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/update.js" />
+        <option value="$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/login.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/emailSent.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/backButton.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/accounts/enroll.tpl.html" />
+        <option value="$PROJECT_DIR$/src/less/site.less" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/pageHeading.js" />
+        <option value="$PROJECT_DIR$/src/app/core/directives/append.js" />
+        <option value="$PROJECT_DIR$/src/app/reports/view.tpl.html" />
       </list>
     </option>
   </component>
@@ -214,6 +228,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -232,7 +300,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,9 +424,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\temp\stx-portal\src\app\core\directives" />
       <recent name="C:\temp\stx-portal\src\app\core" />
       <recent name="C:\temp\stx-portal\src\app\accounts" />
-      <recent name="C:\temp\stx-portal\src\app\core\directives" />
       <recent name="C:\temp\stx-portal\src\app\reports" />
       <recent name="C:\temp\stx-portal\src\app\login" />
     </key>
@@ -648,7 +756,11 @@
       <created>1381306958153</created>
       <updated>1381306958153</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Minor refactoring">
+      <created>1381307588845</created>
+      <updated>1381307588845</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -661,7 +773,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34615386" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20295203" sideWeight="0.65384614" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20295203" sideWeight="0.65384614" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34615386" sideWeight="0.5002636" order="9" side_tool="true" content_ui="tabs" />
@@ -704,7 +816,8 @@
     <MESSAGE value="Implementing default error handling and email address verification" />
     <MESSAGE value="Tweaking css for generating the portal.xml." />
     <MESSAGE value="Refactored how navigation is handled" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored how navigation is handled" />
+    <MESSAGE value="Minor refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,114 +825,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/login/emailSent.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="737" selection-end="737" vertical-scroll-proportion="0.0" vertical-offset="321" max-vertical-offset="1207">
+        <state line="2" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.062615104" vertical-offset="0" max-vertical-offset="543">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/emailSent.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/backButton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="53" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+        <state line="12" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.35852373" vertical-offset="0" max-vertical-offset="569">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/enroll.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1139">
+        <state line="2" column="23" selection-start="41" selection-end="65" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/login/forgot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="102" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.spec.js">
+    <entry file="file://$PROJECT_DIR$/src/app/login/forgot.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="37" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1802">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
+    <entry file="file://$PROJECT_DIR$/src/less/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
+        <state line="154" column="1" selection-start="2813" selection-end="2814" vertical-scroll-proportion="-10.769231" vertical-offset="2338" max-vertical-offset="2941">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/stateExt.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1445">
+        <state line="1" column="23" selection-start="49" selection-end="73" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/reports/view.js">
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+        <state line="14" column="14" selection-start="809" selection-end="809" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/reports/_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="57" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="62" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/metaValidate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="16" column="25" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view-details.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.41827768" vertical-offset="0" max-vertical-offset="569">
+        <state line="1" column="23" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/pageHeading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="65" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/autofocus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/directives/append.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="59" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/reports/view.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/reports/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
