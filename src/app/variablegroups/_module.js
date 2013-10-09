@@ -9,7 +9,12 @@
                 .state('variablegroups', {
                     abstract: true,
                     url: "/variablegroups",
-                    views: {
+					data: {
+						depends: [
+							'authorizationContextResolver'
+						]
+					},
+					views: {
                         'menu': { templateUrl: 'common/menu/secure-menu.tpl.html' },
                         'content': { template: '<div ui-view></div>' }
                     }

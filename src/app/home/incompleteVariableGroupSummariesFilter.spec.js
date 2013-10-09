@@ -2,7 +2,7 @@ describe('incompleteVariableGroupSummaries', function () {
     var $filter;
     var result;
 
-    beforeEach(module('stx.home.incompleteVariableGroupSummaries'));
+    beforeEach(module('stx.home'));
     beforeEach(inject(function (_$filter_) {
         $filter = _$filter_;
         var summaries = [

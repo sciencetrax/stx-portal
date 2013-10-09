@@ -2,8 +2,8 @@
     "use strict";
 
     angular.module('stx.login')
-        .controller("EmailSentController", ['$scope', '$state', '$location', 'Metadata', 'Portal', 'SecurityService',
-            function ($scope, $state, $location, Metadata, Portal, SecurityService) {
+        .controller("EmailSentController", ['$scope',
+            function ($scope) {
 				$scope.LSPage = LS.pages.login.emailSent;
 			}])
     ;

@@ -1,16 +1,14 @@
 (function () {
     "use strict";
 
-    angular.module('stx.encounters.view', [
-            'ui.router'
-        ])
-        .controller("ViewController", ['$scope', '$state', '$stateParams', '$location', 'DataEntryForm', 'ScheduledEncounter', 'SecurityService',
-            function ($scope, $state, $stateParams, $location, DataEntryForm, ScheduledEncounter, SecurityService) {
+    angular.module('stx.encounters')
+        .controller("EncountersViewController", ['$scope', '$state', '$stateParams', '$location', 'authorizationContextResolver', 'DataEntryForm', 'ScheduledEncounter',
+            function ($scope, $state, $stateParams, $location, authorizationContextResolver, DataEntryForm, ScheduledEncounter) {
                 if ($state.current.name === 'encounters.view') {
                     $location.path('/encounters/view/{0}/{1}/details'.format($stateParams.intervalId, $stateParams.encounterId)).replace();
                 }
 
-				var authorizationContext = SecurityService.authorizationContext;
+				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				ScheduledEncounter.query({
 					customerId: authorizationContext.customerId,
@@ -22,7 +20,7 @@
 					$scope.encounter = data[0];
 				});
             }])
-        .controller("ReportController", [
+        .controller("EncountersReportController", [
             function () {
             }])
     ;

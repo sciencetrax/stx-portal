@@ -1,6 +1,6 @@
 (function () {
     var moduleName = 'stx.home';
-    var controllerName = 'SummaryController';
+    var controllerName = 'HomeSummaryController';
 
     describe(controllerName, function () {
         var $http;

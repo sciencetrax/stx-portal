@@ -10,6 +10,11 @@
                 .state('reports', {
                     abstract: true,
                     url: '/reports',
+					data: {
+						depends: [
+							'authorizationContextResolver'
+						]
+					},
                     views: {
                         'menu': { templateUrl: 'common/menu/secure-menu.tpl.html' },
                         'content': { template: '<div ui-view></div>' }

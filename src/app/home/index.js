@@ -1,13 +1,9 @@
 (function () {
     "use strict";
-    angular.module('stx.home.index', [
-            'stx.core',
-            'stx.home.incompleteVariableGroupSummaries',
-            'ui.router'
-        ])
-        .controller("IndexController", ['$scope', '$filter', 'SecurityService', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
-            function ($scope, $filter, SecurityService, SubjectVariableGroupSummary, ScheduledEncounter) {
-                var authorizationContext = SecurityService.authorizationContext;
+    angular.module('stx.home')
+        .controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
+            function ($scope, $filter, authorizationContextResolver, SubjectVariableGroupSummary, ScheduledEncounter) {
+                var authorizationContext = authorizationContextResolver.data;
                 var subject = authorizationContext.subject;
                 var securityProfile = {
                     customerId: authorizationContext.customerId,

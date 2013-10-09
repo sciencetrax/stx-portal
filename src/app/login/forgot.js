@@ -2,12 +2,13 @@
     "use strict";
 
     angular.module('stx.login')
-        .controller("ForgotController", ['$window', '$scope', '$state', '$location', 'EmailRequest', 'Metadata', 'Portal', 'SecurityService',
-            function ($window, $scope, $state, $location, EmailRequest, Metadata, Portal, SecurityService) {
+        .controller("ForgotController", ['$window', '$scope', '$state', '$location', 'portalResolver', 'EmailRequest', 'Metadata', 'Portal',
+            function ($window, $scope, $state, $location, portalResolver, EmailRequest, Metadata, Portal) {
+				var portal = portalResolver.data;
 				$scope.LSPage = LS.pages.login.forgot;
 				$scope.metadata = Metadata.get({ entityType: 'account'});
 				$scope.emailRequest = new EmailRequest();
-				$scope.emailRequest.portalId = SecurityService.portal.id;
+				$scope.emailRequest.portalId = portal.id;
 
 				$scope.requestUsername = function () {
 					var emailRequest = $scope.emailRequest;

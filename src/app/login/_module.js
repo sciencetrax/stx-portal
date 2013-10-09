@@ -6,14 +6,26 @@
         ])
         .config(['$stateProvider', function ($stateProvider) {
             $stateProvider
+				/*
+				.state('root',{
+					url: '',
+					data: {
+						depends: [
+							'portalResolver'
+						]
+					}
+				})
+				*/
                 .state('login', {
                     abstract: true,
                     url: '/login',
                     views: {
                         'menu':     { templateUrl: 'common/menu/login-menu.tpl.html' },
                         'content':  { template: '<div ui-view></div>' }
-                    }
-                })
+                    },
+					data: {
+					}
+				})
 				.state('login.emailSent', {
 					url: '/emailSent/{type}',
 					controller: 'EmailSentController',
@@ -30,7 +42,13 @@
                     url: '/login',
                     controller: 'LoginController',
                     templateUrl: 'login/login.tpl.html',
-                    data: { pageTitle: 'Login' }
+                    data: {
+						pageTitle: 'Login',
+						depends: [
+							'portalResolver'
+						]
+
+					}
                 })
                 .state('login.register', {
                     url: '/register',

@@ -1,9 +1,6 @@
 (function () {
 	"use strict";
-	angular.module('stx.home.incompleteVariableGroupSummaries', [
-			'stx.core',
-			'ui.router'
-		])
+	angular.module('stx.home')
 		.filter('incompleteVariableGroupSummaries', function () {
 			return function (summaries) {
 				var incompleteSummaries = [];

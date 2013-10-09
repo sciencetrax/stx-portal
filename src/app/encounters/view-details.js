@@ -1,15 +1,12 @@
 (function () {
 	"use strict";
 
-	angular.module('stx.encounters.details', [
-			'ui.router',
-			'stx.encounters.view'
-		])
-		.controller("EncounterViewDetailsController", ['$scope', '$stateParams', 'SecurityService', 'DataEntryForm', 'ScheduledEncounter',
-			function ($scope, $stateParams, SecurityService, DataEntryForm, ScheduledEncounter) {
+	angular.module('stx.encounters')
+		.controller("EncountersViewDetailsController", ['$scope', '$stateParams', 'authorizationContextResolver', 'DataEntryForm',
+			function ($scope, $stateParams, authorizationContextResolver, DataEntryForm) {
 				$('#VariableToolsMenu').remove();
 
-				var authorizationContext = SecurityService.authorizationContext;
+				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 
 				DataEntryForm.loadScript(

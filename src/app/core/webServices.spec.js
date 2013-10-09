@@ -1,4 +1,4 @@
-describe('SecurityService', function () {
+describe('webServices', function () {
     beforeEach(module('stx.core.webService'));
     var $http;
     var $httpBackend;

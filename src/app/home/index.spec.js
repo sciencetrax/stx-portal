@@ -1,6 +1,6 @@
 (function () {
-    var moduleName = 'stx.home.index';
-    var controllerName = 'IndexController';
+    var moduleName = 'stx.home';
+    var controllerName = 'HomeIndexController';
 
     describe(controllerName, function () {
         var $http;
@@ -9,17 +9,17 @@
         var $scope;
         var $controller;
         var controller;
-        var SecurityService;
+		var authorizationContextResolver;
 
         beforeEach(module(moduleName));
-        beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_, _SecurityService_) {
+        beforeEach(inject(function (_$http_, _$httpBackend_, _$rootScope_, _$controller_, _authorizationContextResolver_) {
             $http = _$http_;
             $httpBackend = _$httpBackend_;
             $rootScope = _$rootScope_;
             $scope = $rootScope.$new();
             $controller = _$controller_;
-            SecurityService = _SecurityService_;
-            SecurityService.authorizationContext = {
+			authorizationContextResolver = _authorizationContextResolver_;
+			authorizationContextResolver.data = {
                 customerId: 100,
                 subject: {
                     id: 200,

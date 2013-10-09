@@ -1,10 +1,7 @@
 (function () {
     "use strict";
-    angular.module('stx.home.summary', [
-            'ui.router',
-            'stx.core'
-        ])
-        .controller("SummaryController", ['$scope',
+    angular.module('stx.home')
+        .controller("HomeSummaryController", ['$scope',
             function ($scope) {
                 $scope.LSPage = LS.pages.home.index.summary;
                 $scope.encounterActions = [

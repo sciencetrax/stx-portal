@@ -2,14 +2,14 @@
 	"use strict";
 
 	angular.module('stx.accounts')
-		.controller('AccountsUpdateController', ['$scope', '$location', 'Metadata', 'Account', 'SecurityService',
-			function ($scope, $location, Metadata, Account, SecurityService) {
+		.controller('AccountsUpdateController', ['$scope', '$location', 'Metadata', 'Account', 'authorizationContextResolver',
+			function ($scope, $location, Metadata, Account, authorizationContextResolver) {
 				$scope.LSPage = LS.pages.accounts.update;
 				$scope.metadata = {};
 				$scope.metadata = Metadata.get({ entityType: 'account'});
 				$scope.account = Account.get({
-					customerId: SecurityService.authorizationContext.customerId,
-					id: SecurityService.authorizationContext.userId
+					customerId: authorizationContextResolver.data.customerId,
+					id: authorizationContextResolver.data.userId
 				});
 				$scope.update = function () {
 //                $scope.account.update();

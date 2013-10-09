@@ -2,8 +2,7 @@
     "use strict";
 
     angular.module('stx.encounters', [
-            'stx.encounters.details',
-            'stx.encounters.view'
+            'ui.router'
         ])
 
         .config(['$stateProvider', function ($stateProvider) {
@@ -11,25 +10,31 @@
                 .state('encounters', {
                     abstract: true,
                     url: '/encounters',
-                    views: {
+					data: {
+						secure: true,
+						depends: [
+							'authorizationContextResolver'
+						]
+					},
+					views: {
                         'menu': { templateUrl: 'common/menu/secure-menu.tpl.html' },
                         'content': { template: '<div ui-view></div>' }
                     }
                 })
                 .state('encounters.view', {
                     url: '/view/{intervalId}/{encounterId}',
-                    controller: 'ViewController',
+                    controller: 'EncountersViewController',
                     templateUrl: 'encounters/view.tpl.html',
                     data: { pageTitle: 'Encounter' }
                 })
                 .state('encounters.view.details', {
                     url: '/details',
-					controller: 'EncounterViewDetailsController',
+					controller: 'EncountersViewDetailsController',
                     templateUrl: 'encounters/view-details.tpl.html'
                 })
                 .state('encounters.view.reports', {
                     url: '/reports',
-					controller: 'ReportController',
+					controller: 'EncountersReportController',
                     templateUrl: 'encounters/view-reports.tpl.html'
                 })
             ;

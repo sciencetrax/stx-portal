@@ -46,7 +46,7 @@ angular.module('stx.core.webService', [
             password: '@password'
         });
     }])
-    .factory('authorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+    .factory('AuthorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
         return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorizationcontext'));
     }])
     .factory('DataEntryForm', ['$http', 'WebServiceConfig', 'VariablePanelScript', function ($http, WebServiceConfig , VariablePanelScript) {
@@ -77,6 +77,18 @@ angular.module('stx.core.webService', [
                     includeProjectVariableGroups: includeProjectVariableGroups
                 }, function (data) {
 					_this.loadScript2(data);
+                });
+            },
+            loadEnrollmentScript: function(customerId, projectId, siteId, intervalId, successCallback) {
+				var _this = this;
+                VariablePanelScript.get({
+                    customerId: customerId,
+                    projectId: projectId,
+                    siteId: siteId,
+                    intervalId: intervalId,
+                    includeProjectVariableGroups: false
+                }, function (data) {
+					_this.loadScript2(data, successCallback);
                 });
             },
             loadScript: function(customerId, projectId, siteId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {

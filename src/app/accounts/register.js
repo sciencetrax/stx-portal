@@ -2,11 +2,11 @@
     "use strict";
     angular.module('stx.accounts')
         .controller('AccountsRegisterController',
-			['$scope', '$location', 'Metadata', 'Account', 'SecurityService',
-            function ($scope, $location, Metadata, Account, SecurityService) {
+			['$scope', '$location', 'portalResolver', 'Metadata', 'Account',
+            function ($scope, $location, portalResolver, Metadata, Account) {
                 $scope.LSPage = LS.pages.login.register;
                 $scope.metadata = Metadata.get({ entityType: 'account'});
-                $scope.portal = SecurityService.portal;
+                $scope.portal = portalResolver.data;
                 $scope.account = new Account();
 
                 $scope.update = function () {

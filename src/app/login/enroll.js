@@ -6,10 +6,10 @@
             'stx.core.webService',
             'stx.core.directives.metaValidate'
         ])
-        .controller('EnrollController', ['$scope', 'DataEntryForm', 'SecurityService',
-            function ($scope, DataEntryForm, SecurityService) {
+        .controller('EnrollController', ['$scope', 'portalResolver', 'DataEntryForm',
+            function ($scope, portalResolver, DataEntryForm) {
                 $scope.LSPage = LS.pages.accounts.enroll;
-                $scope.portal = SecurityService.portal;
+                $scope.portal = portalResolver.data;
 
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,

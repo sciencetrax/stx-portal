@@ -18,6 +18,7 @@
 		AccountLocked: "Your account has been locked.",
 		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		EnrollmentFull: "Sorry, but the project is full.  No more subjects can sign up at this time.",
+		EnrollmentIntervalNotConfigured: "The enrollment interval has not been setup",
 		InvalidUsernameOrPassword: "Invalid username or password.",
 		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
 		PasswordExpired: "Your password has expired.",
@@ -34,6 +35,9 @@
 			emailAddressVerified: {
 				heading: "Email Address Verified",
 				message: "Your email address has been verified."
+			},
+			enroll: {
+
 			},
 			resetPassword: {
 				heading: "Reset Password",

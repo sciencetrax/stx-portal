@@ -6,8 +6,8 @@
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
   "portalType": "Subject",
   "allowRegistration": "True",
-  "allowAnonymousDataEntry": "True",
-  "sendEncounterDueNotifications": "True",
+  "allowAnonymousDataEntry": "False",
+  "sendEncounterDueNotifications": "False",
   "version": "0.0.1",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {

@@ -5,9 +5,9 @@
             'stx.core',
             'ui.router'
         ])
-        .controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$stateParams', '$location', '$navigation', 'SecurityService', 'DataEntryForm',
-            function ($scope, $http, $window, $stateParams, $location, $navigation, SecurityService, DataEntryForm) {
-                var authorizationContext = SecurityService.authorizationContext;
+        .controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$stateParams', '$location', 'stateExt', '$navigation', 'authorizationContextResolver', 'DataEntryForm',
+            function ($scope, $http, $window, $stateParams, $location, stateExt, $navigation, authorizationContextResolver, DataEntryForm) {
+                var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
                 var dataEntryPanel = $('.DataEntryPanel');
 
@@ -40,7 +40,7 @@
                     var queryString = action.substring(action.indexOf("?") + 1);
                     form.attr('action', DataEntryForm.getUrl() + "?" + queryString);
                     form.ajaxSubmit({
-                        headers: { "X-Authorization": SecurityService.authorization },
+                        headers: { "X-Authorization": stateExt.authorization },
                         success: function (data) {
                             stx.VariablePanel.Utils.notCollectedVariablesId = null;
                             stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;

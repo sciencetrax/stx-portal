@@ -13,27 +13,6 @@
 
 		},
 
-		isHome: function() {
-
-		},
-
-		getTargetLocation: function () {
-			var targetLocation = this.$location.path();
-			if (targetLocation == "/login/login"
-				|| targetLocation == "/login") {
-				SecurityService.removeAuthorization();
-				targetLocation = "/home/index/summary";
-			}
-			if (targetLocation == "/common/waiting") {
-				targetLocation = "/home/index/summary";
-			}
-			return targetLocation;
-		},
-
-		go: function () {
-
-		},
-
 		back: function () {
 			this.$window.history.back();
 		}
