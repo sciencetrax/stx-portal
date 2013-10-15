@@ -1,5 +1,8 @@
-<div class="col-xs-12 col-sm-offset-4 col-sm-4">
-    <st-page-heading />
+<div class="center-page" ng-hide="ready">
+    <div ng-include src="'common/loading.tpl.html'" />
+</div>
+<div class="view-content col-xs-12 col-sm-offset-4 col-sm-4" ng-show="ready">
+    <div class='page-heading' title='{{ LSPage.heading }}'>{{ LSPage.heading }}</div>
 
     <!-- ERROR PANEL -->
     <div ng-include src="'common/error-panel.tpl.html'"/>

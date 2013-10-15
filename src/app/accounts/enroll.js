@@ -8,32 +8,37 @@
 					$scope.LSPage = LS.pages.accounts.enroll;
 					$scope.portal = portal;
 
+
+					// http://lhstx.com/StudyTrax/api/
+					// customers/projects/7354/sites/105/intervals/5678/variablePanelScript?includeProjectVariableGroups=false
 					if (portal.enrollmentIntervalId == null) {
 						$scope.error = {
 							errorCode: "EnrollmentIntervalNotConfigured",
 							message: $scope.LS.errorMessages.get('EnrollmentIntervalNotConfigured')
 						};
 					} else {
-						var dataEntryPanel = $('.DataEntryPanel');
 						DataEntryForm.loadEnrollmentScript(
+							portal.project.customerId,
 							portal.projectId,
 							portal.siteId,
 							portal.enrollmentIntervalId, function () {
 								DataEntryForm.get(
-										authorizationContext.projectId,
-										authorizationContext.portalId,
-										$stateParams.intervalId,
-										$stateParams.encounterId,
-										$stateParams.variableGroupId
+										portal.projectId,
+										portal.id,
+										portal.enrollmentIntervalId
 									)
 									.success(function (data) {
+										var dataEntryPanel = $('.DataEntryPanel');
 										stx.VariablePanel.Utils.notCollectedVariablesId = null;
 										stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
 										dataEntryPanel.html(data);
 										$(document).trigger('pageLoad');
+										$scope.ready = true;
 									});
 							});
 					}
-				}])
+				}
+			]
+		)
 	;
 }());

@@ -56,6 +56,7 @@ angular.module('stx', [
 			$httpProvider.interceptors.push('SecurityResponseErrorInterceptor');
 			$httpProvider.interceptors.push('errorInterceptor');
 			$urlRouterProvider
+				.when('', '/')
 				.when('/', '/home/index/summary')
 				.when('/accounts', '/accounts/view')
 				.when('/enroll', '/accounts/enroll')

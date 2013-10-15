@@ -12,9 +12,9 @@
 			link: function (scope, element, attrs) {
 				if (attrs.text === undefined) {
 					if (scope.$parent.LSPage) {
-						scope.name = scope.$parent.LSPage.heading;
+						scope.text = scope.$parent.LSPage.heading;
 					} else {
-						scope.name = "$scope.LSPage not defined";
+						scope.text = "$scope.LSPage not defined";
 					}
 				}
 			}

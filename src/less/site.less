@@ -165,4 +165,26 @@ ul.nav li.list-group-item {
   margin-top: (@navbar-height + (@grid-gutter-width/2));
 }
 
+.center-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.loading {
+  color: @link-color;
+  text-align: center;
+}
+.loading > img {
+  display: block;
+  left: -3px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.center-page .loading {
+  margin-left: -22px;
+  margin-top: -22px;
+}
+
+
 @import 'forms.less';

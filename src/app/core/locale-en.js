@@ -37,7 +37,7 @@
 				message: "Your email address has been verified."
 			},
 			enroll: {
-
+				heading: "Enroll"
 			},
 			resetPassword: {
 				heading: "Reset Password",
