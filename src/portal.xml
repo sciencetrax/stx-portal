@@ -10,8 +10,8 @@
                 description="<%= pkg.description %>"
                 code="<%= pkg.name %>"
                 userType="<%= pkg.portalType %>"
-                allowRegistration="<%= pkg.allowRegistration %>"
-                allowAnonymousDataEntry="<%= pkg.allowAnonymousDataEntry %>"
+                allowRegistration="<%= pkg.registration %>"
+                allowAnonymousDataEntry="<%= pkg.anonymousDataEntry %>"
                 sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
             <pages>
                 <!-- CSS CONTENT -->
@@ -32,6 +32,10 @@
                     <![CDATA[
                     <%= html %>
                     ]]>
+                </page>
+
+                <page code="failedScreeningMessage" pageType="Fragment">
+                    Thank you for taking the survey. ...
                 </page>
 
                 <page code="verifyEmailAddress" pageType="VerifyEmail">

@@ -72,14 +72,22 @@
 					data: {
 						pageTitle: 'Account Update',
 						depends: [
-							'authorizationContextResolver'
+							'authorizationContextResolver',
+							'portalResolver'
 						]
 					}
 				})
 				.state('accounts.view', {
 					url: '/view',
 					controller: 'AccountsViewController',
-					templateUrl: 'accounts/view.tpl.html'
+					templateUrl: 'accounts/view.tpl.html',
+					data: {
+						pageTitle: 'Account',
+						depends: [
+							'authorizationContextResolver',
+							'portalResolver'
+						]
+					}
 				})
 			;
 		}])

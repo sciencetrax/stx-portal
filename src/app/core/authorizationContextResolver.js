@@ -1,18 +1,23 @@
 (function () {
 	"use strict";
 	angular.module('stx.core')
-		.service('portalResolver',
-			['$q', 'Portal', function ($q, Portal) {
+		.service('authorizationContextResolver',
+			['$q', 'AuthorizationContext', function ($q, AuthorizationContext) {
 				return {
 					data: null,
 					resolved: false,
 
-					resolve: function () {
+					reset: function() {
+						this.data = null;
+						this.resolved = false;
+					},
+
+					resolve: function (onResolved) {
 						var _this = this;
 
 						var deferred = $q.defer();
 						if (_this.data == null) {
-							_this.data = Portal.get({ code: PORTAL_CODE, includeProject: true }, function () {
+							_this.data = AuthorizationContext.get({}, function () {
 								_this.resolved = true;
 								deferred.resolve();
 							});

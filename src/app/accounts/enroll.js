@@ -2,11 +2,40 @@
 	"use strict";
 	angular.module('stx.accounts')
 		.controller('AccountsEnrollController',
-			['$scope', '$stateParams', '$location', 'portalResolver', 'Metadata', 'Account', 'DataEntryForm',
-				function ($scope, $stateParams, $location, portalResolver, Metadata, Account, DataEntryForm) {
+			['$scope', '$state', '$stateParams', '$location', 'stateExt', 'portalResolver', 'Metadata', 'Account', 'AuthorizationContext', 'DataEntryForm',
+				function ($scope, $state, $stateParams, $location, stateExt, portalResolver, Metadata, Account, AuthorizationContext, DataEntryForm) {
+					stateExt.removeAuthorization();
 					var portal = portalResolver.data;
 					$scope.LSPage = LS.pages.accounts.enroll;
 					$scope.portal = portal;
+					$scope.save = function () {
+						var form = $('.DataEntryPanel form');
+						var action = form.attr('action');
+						var queryString = action.substring(action.indexOf("?") + 1);
+						form.attr('action', DataEntryForm.getUrl() + "?" + queryString);
+						form.ajaxSubmit({
+							success: function (data) {
+								stx.VariablePanel.Utils.notCollectedVariablesId = null;
+								stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
+								var dataEntryPanel = $('.DataEntryPanel');
+								dataEntryPanel.html(data);
+								$(document).trigger('pageLoad');
+
+								if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
+									var authorization = $('#Form_Authorization').val();
+									var isEnrolled = $('#Form_IsEnrolled').val();
+									if (isEnrolled && portal.registration) {
+										stateExt.authorize(authorization, false);
+										$state.go('accounts.update');
+									} else if (!isEnrolled) {
+										// Redirect to error page.
+									} else {
+										// Redirect to thank you pate.
+									}
+								}
+							}
+						});
+					};
 
 
 					// http://lhstx.com/StudyTrax/api/

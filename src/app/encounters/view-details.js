@@ -9,17 +9,22 @@
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 
-				DataEntryForm.loadScript(
-					authorizationContext.customerId,
-					subject.projects[0].projectId,
-					subject.projects[0].siteId,
-					subject.id,
-					$stateParams.intervalId,
-					$stateParams.encounterId,
-					false);
+				$scope.$on("encounterReady", function () {
+					DataEntryForm.loadScript(
+						authorizationContext.customerId,
+						subject.projects[0].projectId,
+						subject.projects[0].siteId,
+						subject.id,
+						$stateParams.intervalId,
+						$stateParams.encounterId,
+						false, function () {
+							$scope.ready = true;
+						});
+				});
 
 				$scope.encounterFilter = 'all';
 			}])
+
 	;
 }());
 

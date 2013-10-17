@@ -139,6 +139,9 @@ angular.module('stx.core.webService', [
 				}
 			};
 		}])
+	.factory('DataEntryStatus', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'dataentrystatus'));
+	}])
 	.factory('EmailRequest', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:portalId/emailrequests?emailType=:emailType&username=:username&password=:password&emailAddress=:emailAddress'), {
 			portalId: "@portalId",

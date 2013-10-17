@@ -1,21 +1,27 @@
-<!-- HEADING -->
-<st-page-heading text="encounter.name"></st-page-heading>
+<div class="center-page" ng-hide="ready">
+    <div ng-include src="'common/loading.tpl.html'"/>
+</div>
 
-<!-- VARIABLE PANEL SCRIPT -->
-<div id="variable-panel-code"></div>
+<div class="view-content col-xs-12 col-sm-offset-4 col-sm-4" ng-show="ready">
+    <!-- HEADING -->
+    <st-page-heading text="encounter.name"></st-page-heading>
 
-<!-- DATA ENTRY PANEL-->
-<div class="DataEntryPanel">
-    <ul class="nav">
-        <!-- VARIABLE GROUP -->
-        <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
-            <a class="text-badge" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">
-                <!-- NAME -->
-                <div>{{item.name}}</div>
+    <!-- VARIABLE PANEL SCRIPT -->
+    <div id="variable-panel-code"></div>
 
-                <!-- PERCENT COMPLETE -->
-                <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
-            </a>
-        </li>
-    </ul>
+    <!-- DATA ENTRY PANEL-->
+    <div class="DataEntryPanel">
+        <ul class="nav">
+            <!-- VARIABLE GROUP -->
+            <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
+                <a class="text-badge" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">
+                    <!-- NAME -->
+                    <div>{{item.name}}</div>
+
+                    <!-- PERCENT COMPLETE -->
+                    <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

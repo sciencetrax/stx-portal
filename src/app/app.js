@@ -44,8 +44,10 @@ angular.module('stx', [
 							if ($('#errors').length === 0) {
 								bootbox.alert($rootScope.error.message);
 							}
-						} else {
+						} else if (error != null) {
 							bootbox.alert(error);
+						} else {
+							bootbox.alert("An HTTP error occurred.  Status: " + rejection.status);
 						}
 						return $q.reject(rejection);
 					}

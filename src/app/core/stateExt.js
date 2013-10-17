@@ -2,6 +2,7 @@
 	"use strict";
 	var StateExt = Class.extend({
 		AUTH_HEADER: "X-Authorization",
+		authorizationContextResolver: null,
 		authorization: null,
 		targetParams: null,
 		targetState: null,
@@ -11,40 +12,44 @@
 		$location: null,
 		$state: null,
 
-		initialize: function ($cookieStore, $http, $injector, $location, $state) {
+		initialize: function ($cookieStore, $http, $injector, $location, $state, authorizationContextResolver) {
 			this.$cookieStore = $cookieStore;
 			this.$http = $http;
 			this.$injector = $injector;
 			this.$location = $location;
 			this.$state = $state;
+			this.authorizationContextResolver = authorizationContextResolver;
 
 			this.authorization = this.$cookieStore.get(this.AUTH_HEADER);
 			this.$http.defaults.headers.common[this.AUTH_HEADER] = this.authorization;
 		},
 
-		authorize: function(authorization) {
+		authorize: function (authorization, navigateAfterAuthorization) {
+			navigateAfterAuthorization = navigateAfterAuthorization == null ? true : navigateAfterAuthorization;
 			this.authorization = authorization;
 			this.$http.defaults.headers.common[this.AUTH_HEADER] = authorization;
 			this.$cookieStore.put(this.AUTH_HEADER, authorization);
 
-			if (this.targetState == null) {
-				this.$location.path('/');
-			} else {
-				this.$state.transitionTo(this.targetState, this.targetParams);
-				this.targetState = null;
-				this.targetParams = null;
+			if (navigateAfterAuthorization) {
+				if (this.targetState == null) {
+					this.$location.path('/');
+				} else {
+					this.$state.transitionTo(this.targetState, this.targetParams);
+					this.targetState = null;
+					this.targetParams = null;
+				}
 			}
 		},
 
-		authorizeUrl: function(url) {
+		authorizeUrl: function (url) {
 			return UrlUtils.addParameter(url, this.AUTH_HEADER, this.authorization);
 		},
 
-		isAuthorized: function() {
+		isAuthorized: function () {
 			return this.authorization != null;
 		},
 
-		onStateChangeStart: function(event, toState, toParams, fromState, fromParams) {
+		onStateChangeStart: function (event, toState, toParams, fromState, fromParams) {
 			if (event.defaultPrevented) {
 				return;
 			}
@@ -57,7 +62,8 @@
 			}
 		},
 
-		removeAuthorization: function() {
+		removeAuthorization: function () {
+			this.authorizationContextResolver.reset();
 			this.authorization = null;
 			this.$http.defaults.headers.common[this.AUTH_HEADER] = null;
 			this.$cookieStore.remove(this.AUTH_HEADER);
@@ -68,9 +74,9 @@
 		.provider('stateExt', Class.extend({
 			instance: new StateExt(),
 
-			$get: ['$cookieStore', '$http', '$injector', '$location', '$state',
-				function ($cookieStore, $http, $injector, $location, $state) {
-					this.instance.initialize($cookieStore, $http, $injector, $location, $state);
+			$get: ['$cookieStore', '$http', '$injector', '$location', '$state', 'authorizationContextResolver',
+				function ($cookieStore, $http, $injector, $location, $state, authorizationContextResolver) {
+					this.instance.initialize($cookieStore, $http, $injector, $location, $state, authorizationContextResolver);
 					return this.instance;
 				}
 			]

@@ -18,6 +18,7 @@
 					$filter: 'IntervalId eq ' + $stateParams.intervalId //+ ' and EncounterId eq ' + $stateParams.encounterId
 				}, function (data) {
 					$scope.encounter = data[0];
+					$scope.$broadcast("encounterReady");
 				});
             }])
         .controller("EncountersReportController", [
