@@ -6,17 +6,21 @@
     <!-- ERROR PANEL -->
     <div ng-include src="'common/error-panel.tpl.html'"/>
 
-    <form name="theForm">
+    <form name="theForm" novalidate="">
         <!-- USERNAME -->
         <div>
             <label for="username" class="control-label">{{LSPage.username}}</label>
-            <input id="username" ng-model="authorization.username" placeholder="{{LSPage.username}}" type="text" required='true' class="form-control" st-autofocus/>
+            <input id="username"
+                   data-placement="top"
+                   data-original-title="Username"
+                   data-toggle="tooltip"
+                   ng-model="authorization.username" type="text" required='true' class="form-control" st-autofocus/>
         </div>
 
         <!-- PASSWORD -->
         <div>
             <label for="password" class="control-label">{{LSPage.password}}</label>
-            <input id="password" ng-model="authorization.password" placeholder="{{LSPage.password}}" type='password' required='true' class="form-control"/>
+            <input id="password" ng-model="authorization.password" type='password' required='true' class="form-control"/>
         </div>
 
         <!-- LOGIN BUTTON -->
@@ -25,12 +29,12 @@
         </div>
 
         <!-- ENROLL BUTTON -->
-        <div ng-class="{hide: !portal.anonymousInterval}">
+        <div ng-show="portal.anonymousInterval">
             <a id="enrollBtn" href="#/enroll" class="btn btn-success form-control enroll">{{LSPage.enroll}}</a>
         </div>
 
         <!-- REGISTER BUTTON -->
-        <div ng-class="{hide: !portal.registration}">
+        <div ng-show="!portal.anonymousInterval && portal.registration">
             <a href="#/register" class="btn btn-success form-control register">{{LSPage.register}}</a>
         </div>
 

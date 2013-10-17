@@ -14,6 +14,13 @@ input {
   border-coler: darken(@input-border, 80%);
   .placeholder(darken(@input-border, 50%));
 }
+/*
+.ng-dirty.ng-valid {
+  background: lighten(@brand-success, 40%) !important;
+  border-color: lighten(@brand-success, 20%) !important;
+}
+*/
+.submit-attempted .ng-invalid,
 input.ng-dirty.ng-invalid {
   background: lighten(@brand-danger, 35%) !important;
   border-color: lighten(@brand-danger, 15%) !important;

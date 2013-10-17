@@ -10,6 +10,7 @@
 						return;
 					}
 					md = value;
+					/*
 					if (!String.isNullEmptyOrUndefined(md.name)) {
 						var name = md.name.camelCase();
 						if (element.attr("name") == null) {
@@ -17,6 +18,7 @@
 						}
 						element.attr("placeholder", scope.LSPage.get(name));
 					}
+					*/
 					if (md.type === "int"
 						|| md.type === "float"
 						|| md.type === "decimal"
@@ -24,8 +26,8 @@
 						element.attr("type", "number");
 					} else if (md.type === "datetime") {
 						element.attr("type", "datetime");
-					} else if (md.type === "text" &&
-						element.attr("type") == null) {
+					} else if (md.type === "text"
+						&& element.attr("type") == null) {
 						element.attr("type", "text");
 					}
 					if (md.isRequired) {

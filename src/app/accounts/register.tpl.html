@@ -1,24 +1,26 @@
 <!-- HEADING -->
 <div class="col-xs-12">
-    <st-page-heading />
+    <!--<st-page-heading />-->
 </div>
 <div class="col-xs-12 col-sm-offset-4 col-sm-4">
     <!-- ERROR PANEL -->
     <div ng-include src="'common/error-panel.tpl.html'"/>
 
-    <form name="theForm" role="form">
+    <form name="theForm" role="form" st-submit="update()" novalidate>
         <fieldset>
             <!-- USERNAME -->
             <div>
                 <label for="username" class="control-label">{{ LSPage.username }}</label>
-                <input id="username" ng-model="account.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control" st-autofocus/>
+                <input id="username" name="username" required ng-model="account.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control" st-autofocus/>
+                <small class="error" ng-show="theForm.checkError(theForm.username, 'required')">{{ LS.common.errors.required }}</small>
             </div>
 
             <div ng-class="{hide: !portal.project.showSubjectName}">
                 <!-- FIRST NAME -->
                 <div>
-                    <label for="firstname" class="control-label">{{ LSPage.firstName }}</label>
-                    <input id="firstname" ng-model="account.firstname" st-meta-validate="metadata.firstName" class="form-control"/>
+                    <label for="firstName" class="control-label">{{ LSPage.firstName }}</label>
+                    <input id="firstName" name="firstName" required ng-model="account.firstname" st-meta-validate="metadata.firstName" class="form-control"/>
+                    <small class="error" ng-show="theForm.checkError(theForm.firstName, 'required')">{{ LS.common.errors.required }}</small>
                 </div>
 
                 <!-- MIDDLE INITIAL -->
@@ -30,49 +32,45 @@
                 <!-- LAST NAME -->
                 <div>
                     <label for="lastName" class="control-label">{{ LSPage.lastName }}</label>
-                    <input id="lastName" ng-model="account.lastName" st-meta-validate="metadata.lastName" class="form-control"/>
+                    <input id="lastName" name="lastName" required ng-model="account.lastName" st-meta-validate="metadata.lastName" class="form-control"/>
+                    <small class="error" ng-show="theForm.checkError(theForm.lastName, 'required')">{{ LS.common.errors.required }}</small>
                 </div>
             </div>
 
             <!-- EMAIL ADDRESS -->
             <div>
                 <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
-                <input id="emailAddress" name="emailAddress" type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control"/>
-                <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
+                <input id="emailAddress" name="emailAddress" required type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control"/>
+                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'required')">{{ LS.common.errors.required }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'email')">{{ LSPage.errors.emailAddressEmail }}</small>
             </div>
 
             <!-- CONFIRM EMAIL ADDRESS -->
             <div>
-                <label for="confirmmailAddress" class="control-label">{{ LSPage.confirmEmailAddress }}</label>
-                <input id="confirmmailAddress" name="confirmmailAddress" type="email" ng-model="confirmmailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-value-matches="emailAddress"/>
-
-                <!-- VALUE MATCHES ERROR -->
-                <small class="error" ng-show="theForm.confirmmailAddress.$error.stValueMatches">{{ LSPage.errors.emailAddressValueMatches }}</small>
+                <label for="confirmEmailAddress" class="control-label">{{ LSPage.confirmEmailAddress }}</label>
+                <input id="confirmEmailAddress" name="confirmEmailAddress" required stype="email" ng-model="confirmmailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-value-matches="emailAddress"/>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'required')">{{ LS.common.errors.required }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'stValueMatches')">{{ LSPage.errors.emailAddressValueMatches }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'email')">{{ LSPage.errors.emailAddressEmail }}</small>
             </div>
 
             <!-- PASSWORD -->
             <div>
                 <label for="password" class="control-label">{{LSPage.password}}</label>
-                <input id="password" type="password" ng-model="account.password" st-meta-validate="metadata.password" class="form-control" st-check-strength/>
+                <input id="password" name="password" required type="password" ng-model="account.password" st-meta-validate="metadata.password" class="form-control" st-check-strength/>
+                <small class="error" ng-show="theForm.checkError(theForm.password, 'required')">{{ LS.common.errors.required }}</small>
             </div>
 
             <!-- CONFIRM PASSWORD -->
             <div>
                 <label for="confirmPassword" class="control-label">{{LSPage.confirmPassword}}</label>
-                <input id="confirmPassword"
-                       name="confirmPassword"
-                       type="password"
-                       ng-class="{errorHighlight: $dirty && $invalid}"
-                       ng-model="confirmPassword"
-                       st-meta-validate="metadata.password"
-                       class="form-control"
-                       st-value-matches="password"/>
-                <!-- VALUE MATCHES ERROR -->
+                <input id="confirmPassword" name="confirmPassword" required type="password" ng-model="confirmPassword" st-meta-validate="metadata.password" class="form-control" st-value-matches="password"/>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmPassword, 'required')">{{ LS.common.errors.required }}</small>
                 <small class="error" ng-show="theForm.confirmPassword.$error.stValueMatches">{{ LSPage.errors.confirmPasswordValueMatches }}</small>
             </div>
 
             <!-- SIGN UP BUTTON -->
-            <button ng-click="update()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LSPage.signUp }}</button>
+            <button type="submit" class="btn btn-primary form-control sign-up" ng-disableds="theForm.$invalid">{{ LSPage.signUp }}</button>
 
             <!-- CANCEL BUTTON -->
             <a href="#/login" class="btn btn-default form-control cancel">{{ LS.common.cancel }}</a>

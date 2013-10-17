@@ -29,7 +29,10 @@
 					emailRequest.password = $scope.authorization.password;
 
                     $scope.authorization.portalCode = PORTAL_CODE;
-                    $scope.authorization.$save(function (data) {
+					// we make a copy to save so that the form doesn't show invalid
+					// prior to navigating away.
+					var authorization = angular.copy($scope.authorization);
+                    Authorization.save(authorization, function (data) {
                         stateExt.authorize(data.authorization);
                     }, function (data) {
 						$scope.loggingIn = false;

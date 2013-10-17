@@ -2,6 +2,9 @@
 	appName: "StudyTRAX",
 
 	common: {
+		errors: {
+			required: "Required"
+		},
 		_new: "New",
 		actions: "Actions",
 		cancel: "Cancel",
