@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/authorizationContextResolver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/_module.js" afterPath="$PROJECT_DIR$/src/app/accounts/_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/enroll.js" afterPath="$PROJECT_DIR$/src/app/accounts/enroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/login.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/portalResolver.js" afterPath="$PROJECT_DIR$/src/app/core/portalResolver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/stateExt.js" afterPath="$PROJECT_DIR$/src/app/core/stateExt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.js" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/login.js" afterPath="$PROJECT_DIR$/src/app/login/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.js" afterPath="$PROJECT_DIR$/src/app/accounts/register.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -43,52 +31,25 @@
       <file leaf-file-name="enroll.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="81" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+            <state line="6" column="51" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/site.less">
+      <file leaf-file-name="register.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="3" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-20.923077" vertical-offset="493" max-vertical-offset="3315">
+            <state line="36" column="67" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="1037">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
+      <file leaf-file-name="login.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="1887">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authorizationContextResolver.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/authorizationContextResolver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="639" selection-end="639" vertical-scroll-proportion="0.73037034" vertical-offset="0" max-vertical-offset="675">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dependencyResolver.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/dependencyResolver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
+            <state line="24" column="18" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.48740742" vertical-offset="79" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -97,7 +58,7 @@
       <file leaf-file-name="update.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="13" column="0" selection-start="401" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
@@ -148,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view-details.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/view-details.js" />
@@ -158,12 +118,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/portal.xml" />
         <option value="$PROJECT_DIR$/src/app/login/login.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/enroll.js" />
         <option value="$PROJECT_DIR$/src/less/site.less" />
         <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
         <option value="$PROJECT_DIR$/src/app/core/stateExt.js" />
         <option value="$PROJECT_DIR$/src/app/core/authorizationContextResolver.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/enroll.js" />
+        <option value="$PROJECT_DIR$/src/app/login/login.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
       </list>
     </option>
   </component>
@@ -308,28 +269,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encounters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -757,7 +696,11 @@
       <created>1381865590795</created>
       <updated>1381865590795</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="working on enrollment page">
+      <created>1381983069304</created>
+      <updated>1381983069304</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +758,8 @@
     <MESSAGE value="Refactored how navigation is handled" />
     <MESSAGE value="Minor refactoring" />
     <MESSAGE value="added loading indicator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added loading indicator" />
+    <MESSAGE value="working on enrollment page" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on enrollment page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,30 +767,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="56" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="104" selection-end="182" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="74" selection-start="5204" selection-end="5204" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="3434">
-          <folding>
-            <marker date="1381956211131" expanded="true" signature="-1:-1" placeholder="[...]" />
-            <marker date="1381956211131" expanded="true" signature="-1:-1" placeholder="[...]" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="57" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.32740742" vertical-offset="408" max-vertical-offset="1122">
@@ -861,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1528" selection-end="1528" vertical-scroll-proportion="0.89037037" vertical-offset="79" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/dependencyResolver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
@@ -875,44 +788,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="3" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-20.923077" vertical-offset="493" max-vertical-offset="3315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="44" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="81" selection-start="1310" selection-end="1310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="747" selection-end="747" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
@@ -931,9 +809,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="401" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/authorizationContextResolver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="639" selection-end="639" vertical-scroll-proportion="0.73037034" vertical-offset="0" max-vertical-offset="675">
+        <state line="21" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.5288889" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7377778" vertical-offset="1173" max-vertical-offset="1887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="971" selection-end="971" vertical-scroll-proportion="0.6296296" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/site.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="3" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.8382126" vertical-offset="493" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="14" selection-start="5240" selection-end="5252" vertical-scroll-proportion="0.6676737" vertical-offset="2006" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/forgot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="639" selection-end="687" vertical-scroll-proportion="0.3525926" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="51" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="67" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="18" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.48740742" vertical-offset="79" max-vertical-offset="799">
           <folding />
         </state>
       </provider>

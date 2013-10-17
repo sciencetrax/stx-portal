@@ -18,6 +18,7 @@
                 $scope.authorization = new Authorization();
 				$scope.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
+					emailRequest.emailType = "EmailAddressVerification";
 					EmailRequest.save(emailRequest, function () {
 						$scope.successMessage = $scope.LS.common.verificationEmailSent;
 					});

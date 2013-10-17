@@ -26,7 +26,7 @@
 									var isEnrolled = $('#Form_IsEnrolled').val();
 									if (isEnrolled && portal.registration) {
 										stateExt.authorize(authorization, false);
-										$state.go('accounts.update');
+										$state.go('accounts.register');
 									} else if (!isEnrolled) {
 										// Redirect to error page.
 									} else {
