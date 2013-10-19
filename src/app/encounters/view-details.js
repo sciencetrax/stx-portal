@@ -18,11 +18,14 @@
 						$stateParams.intervalId,
 						$stateParams.encounterId,
 						false, function () {
-							$scope.ready = true;
+							$scope.$root.loaded = true;
 						});
 				});
 
 				$scope.encounterFilter = 'all';
+				if ($scope.encounterReady) {
+					$scope.$broadcast("encounterReady");
+				}
 			}])
 
 	;

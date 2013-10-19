@@ -1,7 +1,10 @@
-<div class="col-xs-12 col-sm-offset-3 col-sm-6">
+<div class="page" >
+    <header class="noactions">
+        <h1>{{ encounter.name }}</h1>
+    </header>
     <div class="variable-panel-scripts"></div>
 
-    <div ui-view>Loading...</div>
+    <div ui-view></div>
 
     <!-- FOOTER NAVBAR -->
     <div class="navbar-inverse navbar-fixed-bottom footer" ng-class="{hide: encounter.reports.length == 0}">

@@ -1,13 +1,10 @@
 (function () {
     "use strict";
     angular.module('stx.home')
-        .controller("HomeSummaryController", ['$scope',
-            function ($scope) {
+        .controller("HomeSummaryController", ['$scope', 'portalResolver',
+            function ($scope, portalResolver) {
                 $scope.LSPage = LS.pages.home.index.summary;
-                $scope.encounterActions = [
-                    { name: "AdverseEvent" },
-                    { name: "Injury" }
-                ];
+                $scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;
 
 				$scope.incompleteSubjectEncounters = function (item) {
 					return item.percentComplete < 0.999

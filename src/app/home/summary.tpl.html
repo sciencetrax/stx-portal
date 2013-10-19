@@ -1,28 +1,26 @@
-﻿<!-- NEW ENCOUNTER BUTTON -->
-<div class="btn-group pull-right">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu">
-        <li ng-repeat="item in encounterActions | orderBy: 'name'">
-            <a>{{ LS.common._new }} {{ item.name }}</a>
-        </li>
-    </ul>
-</div>
+﻿<header>
+    <h1 title="{{ LSPage.heading }}">{{ LSPage.heading }}</h1>
+    <!-- NEW ENCOUNTER BUTTON -->
+    <div class="actions">
+        <button type="button" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+            <li ng-repeat="item in encounterActions | orderBy: 'name'"><a>{{ LS.common._new }} {{ item.name }}</a></li>
+        </ul>
+    </div>
+</header>
 
-<div class="page-heading" title="{{ LSPage.heading }}">{{ LSPage.heading }}</div>
-<ul class="nav">
+<ul class="text-badge-list">
     <!-- INCOMPLETE VARIABLE GROUPS -->
-    <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}"
-        class="list-group-item">
-        <a class="text-badge" href="#/variablegroups/update/{{item.id}}//">
+    <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
+        <a href="#/variablegroups/update/{{item.id}}//">
             <div>{{item.name}}</div>
             <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
         </a>
     </li>
 
     <!-- INCOMPLETE ENCOUNTERS -->
-    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters"
-        class="list-group-item">
-        <a class="text-badge" href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
+    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters">
+        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
             <div>{{item.name}}</div>
             <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
         </a>

@@ -97,7 +97,8 @@ angular.module('stx', [
 					$scope.pageTitle = toState.data.pageTitle + ' | ' + LS.appName;
 				}
 			});
-			$scope.$navigation = $navigation;
+			$scope.$root.loaded = true;
+//			$scope.$navigation = $navigation;
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
 			$scope.LS = LS;

@@ -12,7 +12,8 @@
 					data: {
 						secure: true,
 						depends: [
-							'authorizationContextResolver'
+							'authorizationContextResolver',
+							'portalResolver'
 						]
 					},
                     views: {

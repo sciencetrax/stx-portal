@@ -60,6 +60,15 @@
 				lastName: "Last Name",
 				middleInitial: "Middle Initial",
 				username: "Username"
+			},
+			view: {
+				heading: "Account",
+				changePassword: "Change Password",
+				edit: "Edit",
+				emailAddress: "Email Address",
+				name: "Name",
+				personalInformation: "Background",
+				username: "Username"
 			}
 		},
 		common: {
@@ -79,7 +88,8 @@
 				summary: {
 					heading: "Action Items"
 				},
-				details: {
+				timeline: {
+					heading: "Timeline",
 					schedule: "Schedule",
 					addEncounter: "Add {0}"
 				}

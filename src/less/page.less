@@ -1,0 +1,94 @@
+.page-content {
+  margin-top: (@navbar-height + (@grid-gutter-width/2));
+
+  .make-xs-column(12);
+
+//  .make-sm-column-offset(3);
+//  .make-sm-column(6);
+
+  .make-md-column-offset(1);
+  .make-md-column(10);
+
+  .make-lg-column-offset(1);
+  .make-lg-column(10);
+}
+
+.page header {
+  border: none;
+  margin-bottom: .25em;
+}
+
+.page header h1 {
+  .h3;
+  .text-center;
+  .text-ellipsis;
+  margin-top: 0px;
+  padding: @padding-base-vertical @padding-base-horizontal;
+  @media (max-width: @screen-xs-max) {
+    background: orange !important;
+    width: 65%;
+  }
+  @media (min-width: @screen-xs) {
+    background: yellow !important;
+    width: 75%;
+  }
+  @media (min-width: @screen-sm) {
+    background: red !important;
+    width: 85%;
+  }
+  @media (min-width: @screen-md) {
+    background: blue !important;
+    width: 85%;
+  }
+  @media (min-width: @screen-lg) {
+    background: green !important;
+  }
+}
+.page header.noactions h1 {
+  width: 100%;
+}
+
+
+.page header .actions {
+  .btn-group;
+  .pull-right;
+
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
+.page header .actions > button {
+  .btn;
+  .btn-default;
+}
+
+.center-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+
+
+section h1 {
+  .h4;
+}
+
+.entity-list {
+  .nav;
+
+  & > li {
+    .list-group-item;
+    padding: 0px;
+  }
+}
+
+.text-badge-list {
+  .entity-list;
+}
+
+.text-badge-list li > a {
+  .text-badge;
+}

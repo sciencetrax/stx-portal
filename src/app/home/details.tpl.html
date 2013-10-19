@@ -1,37 +1,21 @@
-﻿<div>
+﻿<header>
+    <h1 title="{{ LSPage.heading }}">{{ LSPage.heading }}</h1>
     <!-- FILTER -->
-    <div class="btn-group pull-right">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-filter"></span><span class="caret"></span></button>
+    <div class="actions">
+        <button type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-filter"></span><span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
             <li ng-class="{active: encounterFilter == 'all'}"><a ng-click="setFilter('all')">All</a></li>
             <li ng-class="{active: encounterFilter == 'incomplete'}"><a ng-click="setFilter('incomplete')">Incomplete</a></li>
         </ul>
     </div>
+</header>
 
-    <ul class="nav nav-tabs">
-        <li><a data-target="#schedule" data-toggle="tab">{{LSPage.schedule}}</a></li>
-        <li><a data-target="#injuries" data-toggle="tab">Injuries</a></li>
-        <li><a data-target="#adverseEvents" data-toggle="tab">Adverse Event</a></li>
-    </ul>
-    <div class="tab-content">
-        <div id="schedule" class="tab-pane">
-            <ul class="nav">
-                <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true " class="list-group-item">
-                    <a class="text-badge" href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
-                        <div>{{item.name}}</div>
-                        <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
-                    </a>
-                </li>
-                <li ng-show="(encounters | filter:byCompletness).length == 0">asdf</li>
-            </ul>
-        </div>
-
-        <div id="injuries" class="tab-pane">
-            <small><a href="#">Add Injury</a></small>
-        </div>
-        <div id="adverseEvents" class="tab-pane">
-            <small><a href="#">Add Adverse Event</a></small>
-            <div/>
-        </div>
-    </div>
-</div>
+<ul class="text-badge-list">
+    <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true ">
+        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
+            <div>{{item.name}}</div>
+            <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
+        </a>
+    </li>
+    <li ng-show="(encounters | filter:byCompletness).length == 0">No items to display.</li>
+</ul>

@@ -4,6 +4,7 @@
     angular.module('stx.encounters')
         .controller("EncountersViewController", ['$scope', '$state', '$stateParams', '$location', 'authorizationContextResolver', 'DataEntryForm', 'ScheduledEncounter',
             function ($scope, $state, $stateParams, $location, authorizationContextResolver, DataEntryForm, ScheduledEncounter) {
+				$scope.$root.loaded = false;
                 if ($state.current.name === 'encounters.view') {
                     $location.path('/encounters/view/{0}/{1}/details'.format($stateParams.intervalId, $stateParams.encounterId)).replace();
                 }
@@ -18,6 +19,7 @@
 					$filter: 'IntervalId eq ' + $stateParams.intervalId //+ ' and EncounterId eq ' + $stateParams.encounterId
 				}, function (data) {
 					$scope.encounter = data[0];
+					$scope.encounterReady = true;
 					$scope.$broadcast("encounterReady");
 				});
             }])

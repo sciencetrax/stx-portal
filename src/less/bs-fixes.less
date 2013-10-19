@@ -1,0 +1,31 @@
+// FIX: Bootstrap 3.0 does not appropriately display elements that were originally
+// display: inline.  This adds a new class to fix that.
+.hidden-xs-inline,
+.hidden-xs-inline-block {
+  display: none !important;
+}
+
+@media (min-width: @screen-xs-max) {
+  .hidden-xs-inline {
+    display: inline !important;
+  }
+
+  .hidden-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+.visible-xs-inline {
+  display: inline !important;
+}
+
+.visible-xs-inline-block {
+  display: inline-block !important;
+}
+
+@media (min-width: @screen-xs-max) {
+  .visible-xs-inline,
+  .visible-xs-inline-block {
+    display: none !important;
+  }
+}
