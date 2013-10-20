@@ -10,6 +10,7 @@
 		cancel: "Cancel",
 //		loading: "Loading...",
 		logASubjectIn: "Log a subject in",
+		login: "Login",
 		resendVerificationEmail: "Resend Email",
 		returnToLoginPage: "Return To Login Page",
 		save: "Save",

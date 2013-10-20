@@ -1,46 +1,51 @@
-    <!-- CONTENT -->
-    <div class="container">
-        <h1>{{LS.pages.account.update.heading}}</h1>
+<!-- CONTENT -->
+<h1>{{LS.pages.account.update.heading}}</h1>
 
-        <form name="theForm" role="form">
-            <fieldset>
-                <!-- USERNAME -->
-                <div data-role="form-group">
-                    <label for="username" class="control-label">Username</label>
-                    <input id="username" ng-model="account.username" st-meta-validate="metadata.username" class="form-control"/>
-                </div>
+<form name="theForm" role="form" class="update">
+    <fieldset>
+        <!-- USERNAME -->
+        <div>
+            <label for="username">Username</label>
 
-                <div id="name-fields">
-                    <!-- FIRST NAME -->
-                    <div data-role="form-group">
-                        <label for="firstname" class="control-label">First Name</label>
-                        <input id="firstName" ng-model="account.firstname" st-meta-validate="metadata.firstName" class="form-control"/>
-                    </div>
+            <div><input id="username" ng-model="account.username" st-meta-validate="metadata.username"/></div>
+        </div>
 
-                    <!-- MIDDLE INITIAL -->
-                    <div data-role="form-group">
-                        <label for="middleInitial" class="control-label">Middle Initial</label>
-                        <input id="middleInitial" ng-model="account.middleInitial" st-meta-validate="metadata.middleInitial" class="form-control"/>
-                    </div>
+        <!-- FIRST NAME -->
+        <div ng-class="{hide: !portal.project.showSubjectName}">
+            <label for="firstname">First Name</label>
 
-                    <!-- LAST NAME -->
-                    <div data-role="form-group">
-                        <label for="lastName" class="control-label">Last Name</label>
-                        <input id="lastName" ng-model="account.lastName" st-meta-validate="metadata.lastName" class="form-control"/>
-                    </div>
-                </div>
+            <div><input id="firstName" ng-model="account.firstname" st-meta-validate="metadata.firstName"/></div>
+        </div>
 
-                <!-- EMAIL ADDRESS -->
-                <div data-role="form-group">
-                    <label for="emailAddress" class="control-label">Email Address</label>
-                    <input id="emailAddress" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control"/>
-                </div>
+        <!-- MIDDLE INITIAL -->
+        <div ng-class="{hide: !portal.project.showSubjectName}">
+            <label for="middleInitial">Middle Initial</label>
 
-                <!-- SAVE BUTTON -->
-                <button ng-click="update()" class="btn btn-primary form-control" ng-disabled="formName.$invalid">Save</button>
+            <div><input id="middleInitial" ng-model="account.middleInitial" st-meta-validate="metadata.middleInitial"/></div>
+        </div>
 
-                <!-- CANCEL BUTTON -->
-                <button ng-click="alert('asdf')" class="btn btn-default form-control">Cancel</button>
-            </fieldset>
-        </form>
-    </div>
+        <!-- LAST NAME -->
+        <div ng-class="{hide: !portal.project.showSubjectName}">
+            <label for="lastName">Last Name</label>
+
+            <div><input id="lastName" ng-model="account.lastName" st-meta-validate="metadata.lastName"/></div>
+        </div>
+
+        <!-- EMAIL ADDRESS -->
+        <div>
+            <label for="emailAddress">Email Address</label>
+
+            <div><input id="emailAddress" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress"/></div>
+        </div>
+
+        <div class="buttons">
+            <div>
+            <!-- SAVE BUTTON -->
+            <button ng-click="update()" ng-disabled="formName.$invalid">Save</button>
+
+            <!-- CANCEL BUTTON -->
+            <a href="#/accounts/view">Cancel</button>
+        </div>
+        </div>
+    </fieldset>
+</form>

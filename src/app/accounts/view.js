@@ -1,8 +1,8 @@
 (function () {
     "use strict";
     angular.module('stx.accounts')
-        .controller("AccountsViewController", ['$scope', 'authorizationContextResolver', 'Account', 'SubjectVariableGroupSummary',
-            function ($scope, authorizationContextResolver, Account, SubjectVariableGroupSummary) {
+        .controller("AccountsViewController", ['$scope', 'authorizationContextResolver', 'portalResolver', 'Account', 'SubjectVariableGroupSummary',
+            function ($scope, authorizationContextResolver, portalResolver, Account, SubjectVariableGroupSummary) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -13,7 +13,8 @@
 				};
 
                 $scope.LSPage = LS.pages.accounts.view;
-                $scope.account = Account.get({
+				$scope.portal = portalResolver.data;
+				$scope.account = Account.get({
                     customerId: authorizationContext.customerId,
                     id: authorizationContext.userId
                 });

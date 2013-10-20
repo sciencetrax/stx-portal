@@ -43,6 +43,17 @@
 						}
 					}
 				})
+				.state('accounts.forgot', {
+					url: '/forgot',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'ForgotController',
+							templateUrl: 'accounts/forgot.tpl.html',
+							data: { pageTitle: LS.pages.login.forgot.heading }
+						}
+					}
+				})
 				.state('accounts.login', {
 					url: '/login',
 					views: {

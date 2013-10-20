@@ -17,7 +17,7 @@
             <div>{{ LSPage.username }}</div>
             <div>{{account.username}}</div>
         </li>
-        <li>
+        <li ng-class="{hide: !portal.project.showSubjectName}">
             <div>{{ LSPage.name }}</div>
             <div> {{account.firstName}} {{account.middleInitial}} {{account.lastName}}</div>
         </li>
@@ -29,7 +29,7 @@
 </section>
 <section class="col-sm-6">
     <h1>{{ LSPage.personalInformation }}</h1>
-    <ul class="text-badge-list">
+    <ul class="entity-list">
         <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
             <a href="#/variablegroups/update/{{item.id}}//">
                 <div>{{item.name}}</div>

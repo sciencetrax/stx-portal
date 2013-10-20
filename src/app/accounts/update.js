@@ -2,9 +2,10 @@
 	"use strict";
 
 	angular.module('stx.accounts')
-		.controller('AccountsUpdateController', ['$scope', '$location', 'Metadata', 'Account', 'authorizationContextResolver',
-			function ($scope, $location, Metadata, Account, authorizationContextResolver) {
+		.controller('AccountsUpdateController', ['$scope', '$location', 'portalResolver', 'Metadata', 'Account', 'authorizationContextResolver',
+			function ($scope, $location, portalResolver, Metadata, Account, authorizationContextResolver) {
 				$scope.LSPage = LS.pages.accounts.update;
+				$scope.portal = portalResolver.data;
 				$scope.metadata = {};
 				$scope.metadata = Metadata.get({ entityType: 'account'});
 				$scope.account = Account.get({

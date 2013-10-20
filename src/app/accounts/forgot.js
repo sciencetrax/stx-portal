@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    angular.module('stx.login')
+    angular.module('stx.accounts')
         .controller("ForgotController", ['$window', '$scope', '$state', '$location', 'portalResolver', 'EmailRequest', 'Metadata', 'Portal',
             function ($window, $scope, $state, $location, portalResolver, EmailRequest, Metadata, Portal) {
 				var portal = portalResolver.data;

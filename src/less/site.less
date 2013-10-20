@@ -37,15 +37,15 @@
     .pull-right;
   }
 }
-
-.badge.complete {
-  background: @brand-success !important;
-}
-
-.badge.incomplete {
-  background: @brand-warning !important;
-  color: black;
-}
+//
+//.badge.complete {
+//  background: @brand-success !important;
+//}
+//
+//.badge.incomplete {
+//  background: @brand-warning !important;
+//  color: black;
+//}
 
 body {
   min-width: 320px;
@@ -53,9 +53,9 @@ body {
   margin-bottom: 150px;
 }
 
-ul.nav li.list-group-item {
-  padding: 0px;
-}
+//ul.nav li.list-group-item {
+//  padding: 0px;
+//}
 
 /*****************************************************************/
 // NAVBAR
@@ -64,34 +64,31 @@ ul.nav li.list-group-item {
   color: @navbar-inverse-color;
 }
 
-.navbar-heading {
-  .text-ellipsis;
-  padding: 12px;
-  text-align: right;
-  @media (max-width: @screen-xs-max) {
-    width: 180px;
-  }
-  @media (min-width: @screen-xs-max) {
-    width: 220px;
-  }
-}
+//.navbar-heading {
+//  .text-ellipsis;
+//  padding: 12px;
+//  text-align: right;
+//  @media (max-width: @screen-xs-max) {
+//    width: 180px;
+//  }
+//  @media (min-width: @screen-xs-max) {
+//    width: 220px;
+//  }
+//}
 
-.navbar .btn {
-  padding: 3px 5px;
-}
-
-.navbar-inverse .navbar-btn {
-  background: @navbar-inverse-btn-bg;
-  color: @navbar-inverse-btn-color;
-}
+//.navbar .btn {
+//  padding: 3px 5px;
+//}
 
 .navbar-btn {
+  background: @navbar-inverse-btn-bg;
+  color: @navbar-inverse-btn-color;
   margin: 5px;
+  &:hover {
+    background: #F7A288 !important;
+  }
 }
 
-.navbar-btn:hover {
-  background: #F7A288 !important;
-}
 
 /*****************************************************************/
 // FOOTER

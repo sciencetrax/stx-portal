@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\forgot.js" afterPath="$PROJECT_DIR$/src/app/accounts/forgot.js" />
+      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\forgot.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/forgot.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/_module.js" afterPath="$PROJECT_DIR$/src/app/accounts/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/_module.js" afterPath="$PROJECT_DIR$/src/app/login/_module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/page.less" afterPath="$PROJECT_DIR$/src/less/page.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.js" afterPath="$PROJECT_DIR$/src/app/accounts/update.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/update.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -24,64 +37,7 @@
     <favorites_list name="stx-portal" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-              <folding>
-                <marker date="1382222784027" expanded="true" signature="111:451" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="summary.tpl.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/home/summary.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="42" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.53496504" vertical-offset="0" max-vertical-offset="858">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stringDate.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/filters/stringDate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="details.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/home/details.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="854" selection-end="854" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/site.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-1.0" vertical-offset="816" max-vertical-offset="3400">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/page.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="30" selection-start="528" selection-end="528" vertical-scroll-proportion="13.333333" vertical-offset="1122" max-vertical-offset="1955">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -99,22 +55,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/accounts/login.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/login/forgot.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/update.tpl.html" />
-        <option value="$PROJECT_DIR$/vendor/stx/windows-phone-8-fix.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
-        <option value="$PROJECT_DIR$/src/less/page.less" />
-        <option value="$PROJECT_DIR$/src/app/home/details.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/core/filters/incompleteVariableGroupSummariesFilter.js" />
-        <option value="$PROJECT_DIR$/src/app/core/filters/_module.js" />
         <option value="$PROJECT_DIR$/build.config.js" />
         <option value="$PROJECT_DIR$/src/app/core/filters/stringDate.js" />
-        <option value="$PROJECT_DIR$/src/less/site.less" />
         <option value="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/login/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/app.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/forgot.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/forgot.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
+        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html" />
+        <option value="$PROJECT_DIR$/src/less/site.less" />
+        <option value="$PROJECT_DIR$/src/less/page.less" />
+        <option value="$PROJECT_DIR$/src/app/accounts/update.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/update.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/accounts/view.js" />
+        <option value="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
       </list>
     </option>
   </component>
@@ -232,6 +188,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -269,6 +265,98 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -694,7 +782,11 @@
       <created>1382288905032</created>
       <updated>1382288905032</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Building out tablet views">
+      <created>1382288938851</created>
+      <updated>1382288938851</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -762,116 +854,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.575" vertical-offset="44" max-vertical-offset="884">
+        <state line="25" column="0" selection-start="1066" selection-end="1136" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.8095238" vertical-offset="0" max-vertical-offset="840">
+        <state line="12" column="48" selection-start="546" selection-end="546" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/login/forgot.tpl.html">
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/responsive-utilities.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.87857145" vertical-offset="197" max-vertical-offset="1037">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3842">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="3409" selection-end="3409" vertical-scroll-proportion="0.73690474" vertical-offset="333" max-vertical-offset="1207">
+        <state line="245" column="64" selection-start="7360" selection-end="7360" vertical-scroll-proportion="-5.4313726" vertical-offset="3888" max-vertical-offset="10642">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/navbar.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-          <folding>
-            <marker date="1382222784027" expanded="true" signature="111:451" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="0" selection-start="7421" selection-end="7421" vertical-scroll-proportion="0.63774914" vertical-offset="2533" max-vertical-offset="3434">
+        <state line="151" column="29" selection-start="3462" selection-end="3462" vertical-scroll-proportion="-4.5394735" vertical-offset="2222" max-vertical-offset="10659">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="707" column="92" selection-start="22181" selection-end="22181" vertical-scroll-proportion="0.54390246" vertical-offset="11573" max-vertical-offset="12393">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/page.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="30" selection-start="528" selection-end="528" vertical-scroll-proportion="13.333333" vertical-offset="1122" max-vertical-offset="1955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/details.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="854" selection-end="854" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="134" selection-end="134" vertical-scroll-proportion="0.115384616" vertical-offset="0" max-vertical-offset="884">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/incompleteVariableGroupSummariesFilter.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/filters/_module.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="67" selection-end="67" vertical-scroll-proportion="0.03846154" vertical-offset="0" max-vertical-offset="884">
+        <state line="21" column="92" selection-start="796" selection-end="796" vertical-scroll-proportion="0.4160839" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.config.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="30" selection-start="3635" selection-end="3635" vertical-scroll-proportion="0.71153843" vertical-offset="1122" max-vertical-offset="2091">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/filters/stringDate.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+        <state line="32" column="21" selection-start="830" selection-end="830" vertical-scroll-proportion="0.61538464" vertical-offset="0" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.44230768" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="347" selection-end="388" vertical-scroll-proportion="0.13461539" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/page.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="553" selection-end="553" vertical-scroll-proportion="0.3877551" vertical-offset="153" max-vertical-offset="1955">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/site.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="829" selection-end="829" vertical-scroll-proportion="-1.0" vertical-offset="816" max-vertical-offset="3400">
+        <state line="71" column="19" selection-start="1147" selection-end="1290" vertical-scroll-proportion="0.4177671" vertical-offset="859" max-vertical-offset="3349">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/summary.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="42" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.53496504" vertical-offset="0" max-vertical-offset="858">
+        <state line="20" column="19" selection-start="775" selection-end="840" vertical-scroll-proportion="0.2773893" vertical-offset="102" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="115" selection-end="115" vertical-scroll-proportion="0.039627038" vertical-offset="0" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/update.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="14" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.4848485" vertical-offset="111" max-vertical-offset="969">
           <folding />
         </state>
       </provider>
