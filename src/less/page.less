@@ -1,3 +1,24 @@
+/**/
+.page header h1 {
+  @media (max-width: @screen-xs-max) {
+    background: orange !important;
+  }
+  @media (min-width: @screen-xs) {
+    background: yellow !important;
+  }
+  @media (min-width: @screen-sm) {
+    background: red !important;
+  }
+  @media (min-width: @screen-md) {
+    background: blue !important;
+  }
+  @media (min-width: @screen-lg) {
+    background: green !important;
+  }
+}
+/**/
+
+
 .page-content {
   margin-top: (@navbar-height + (@grid-gutter-width/2));
 
@@ -25,23 +46,18 @@
   margin-top: 0px;
   padding: @padding-base-vertical @padding-base-horizontal;
   @media (max-width: @screen-xs-max) {
-    background: orange !important;
     width: 65%;
   }
   @media (min-width: @screen-xs) {
-    background: yellow !important;
     width: 75%;
   }
   @media (min-width: @screen-sm) {
-    background: red !important;
     width: 85%;
   }
   @media (min-width: @screen-md) {
-    background: blue !important;
     width: 85%;
   }
   @media (min-width: @screen-lg) {
-    background: green !important;
   }
 }
 .page header.noactions h1 {

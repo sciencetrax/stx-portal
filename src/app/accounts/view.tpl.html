@@ -1,42 +1,40 @@
-﻿<div class="page">
-    <header>
-        <h1>{{ LSPage.heading }}</h1>
+﻿<header>
+    <h1>{{ LSPage.heading }}</h1>
 
-        <div class="actions">
-            <button type="button" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#/accounts/update">{{ LSPage.edit }}</a></li>
-                <li><a>{{ LSPage.changePassword }}</a></li>
-            </ul>
-        </div>
-    </header>
+    <div class="actions">
+        <button type="button" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#/accounts/update">{{ LSPage.edit }}</a></li>
+            <li><a>{{ LSPage.changePassword }}</a></li>
+        </ul>
+    </div>
+</header>
 
-    <section class="col-sm-6">
-        <h1>{{ "Profile" }}</h1>
-        <ul class="attribute-table">
-            <li>
-                <div>{{ LSPage.username }}</div>
-                <div>{{account.username}}</div>
-            </li>
-            <li>
-                <div>{{ LSPage.name }}</div>
-                <div> {{account.firstName}} {{account.middleInitial}} {{account.lastName}}</div>
-            </li>
-            <li>
-                <div>{{ LSPage.emailAddress }}</div>
-                <div>{{ account.emailAddress }}</div>
-            </li>
-        </ul>
-    </section>
-    <section class="col-sm-6">
-        <h1>{{ LSPage.personalInformation }}</h1>
-        <ul class="text-badge-list">
-            <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
-                <a href="#/variablegroups/update/{{item.id}}//">
-                    <div>{{item.name}}</div>
-                    <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
-                </a>
-            </li>
-        </ul>
-    </section>
-</div>
+<section class="col-sm-6">
+    <h1>{{ "Profile" }}</h1>
+    <ul class="attribute-table">
+        <li>
+            <div>{{ LSPage.username }}</div>
+            <div>{{account.username}}</div>
+        </li>
+        <li>
+            <div>{{ LSPage.name }}</div>
+            <div> {{account.firstName}} {{account.middleInitial}} {{account.lastName}}</div>
+        </li>
+        <li>
+            <div>{{ LSPage.emailAddress }}</div>
+            <div>{{ account.emailAddress }}</div>
+        </li>
+    </ul>
+</section>
+<section class="col-sm-6">
+    <h1>{{ LSPage.personalInformation }}</h1>
+    <ul class="text-badge-list">
+        <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
+            <a href="#/variablegroups/update/{{item.id}}//">
+                <div>{{item.name}}</div>
+                <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+            </a>
+        </li>
+    </ul>
+</section>

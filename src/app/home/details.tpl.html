@@ -10,10 +10,10 @@
     </div>
 </header>
 
-<ul class="text-badge-list">
+<ul class="entity-list">
     <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true ">
-        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
-            <div>{{item.name}}</div>
+        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}" class="entity">
+            <div class="name">{{item.name}}</div>
             <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
         </a>
     </li>

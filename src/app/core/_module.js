@@ -4,6 +4,7 @@
 		'ngCookies',
 		'ui.router',
 		'stx.core.directives',
+		'stx.core.filters',
 		'stx.core.webService'
 	])
 	;

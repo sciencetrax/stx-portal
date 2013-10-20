@@ -22,6 +22,7 @@
 						});
 				});
 
+
 				$scope.encounterFilter = 'all';
 				if ($scope.encounterReady) {
 					$scope.$broadcast("encounterReady");

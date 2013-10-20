@@ -11,6 +11,6 @@ describe('ApplicationController', function () {
 	});
 
 	it('should redirect to the login page', function () {
-		expect(browser().location().path()).toBe('/login/login');
+		expect(browser().location().path()).toBe('/account/login');
 	});
 });

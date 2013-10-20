@@ -1,40 +1,55 @@
-<div class="col-xs-12 col-sm-offset-4 col-sm-4">
-    <form name="theForm" role="form">
+<!-- FORGOT PASSWORD HEADING -->
+<header class="noactions">
+    <h1 title="{{portal.name}}">{{ LSPage.forgotUsername }}</h1>
+    <h6 class="text-center">
+        <small>{{ LSPage.forgotUsernameMessage }}</small>
+    </h6>
+</header>
+<form name="usernameForm" role="form" class="update">
+    <!-- EMAIL ADDRESS -->
+    <div>
+        <label for="emailAddress">{{ LSPage.emailAddress }}</label>
+
         <div>
-            <!-- FORGOT USERNAME HEADING -->
-            <h4 class="text-center">{{ LSPage.forgotUsername }}</h4>
-            <h6 class="text-center"><small>{{ LSPage.forgotUsernameMessage }}</small></h6>
-
-            <!-- EMAIL ADDRESS -->
-            <div>
-                <label for="emailAddress" class="control-label">{{ LSPage.emailAddress }}</label>
-                <input id="emailAddress" name="emailAddress" type="email" ng-model="emailRequest.emailAddress" st-meta-validate="metadata.emailAddress" class="form-control" st-autofocus/>
-                <small class="error" ng-show="theForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
-            </div>
-
+            <input id="emailAddress" name="emailAddress" type="email" ng-model="emailRequest.emailAddress" st-meta-validate="metadata.emailAddress" st-autofocus/>
+            <small class="error" ng-show="usernameForm.emailAddress.$error.email">{{ LSPage.errors.emailAddressEmail }}</small>
+        </div>
+    </div>
+    <div class="buttons">
+        <div>
             <!-- SUBMIT BUTTON -->
-            <button ng-click="requestUsername()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+            <button ng-click="requestUsername()" class="primary-btn" ng-disabled="usernameForm.$invalid">{{ LS.common.submit }}</button>
 
             <!-- CANCEL BUTTON -->
-            <a href="#/login" class="btn btn-default form-control sign-up">{{ LS.common.cancel }}</a>
+            <a href="#/login">{{ LS.common.cancel }}</a>
         </div>
+    </div>
+</form>
+
+<!-- FORGOT PASSWORD HEADING -->
+<header class="noactions">
+    <h1 class="text-center">{{ LSPage.forgotPassword }}</h1>
+    <h6 class="text-center">
+        <small>{{ LSPage.forgotPasswordMessage }}</small>
+    </h6>
+</header>
+<form name="passwordForm" role="form" class="update">
+    <!-- USERNAME -->
+    <div>
+        <label for="username">{{ LSPage.username }}</label>
+
         <div>
-            <!-- FORGOT PASSWORD HEADING -->
-            <h4 class="text-center">{{ LSPage.forgotPassword }}</h4>
-            <h6 class="text-center"><small>{{ LSPage.forgotPasswordMessage }}</small></h6>
+            <input id="username" ng-model="emailRequest.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}"/>
+        </div>
+    </div>
 
-            <!-- USERNAME -->
-            <div>
-                <label for="username" class="control-label">{{ LSPage.username }}</label>
-                <input id="username" ng-model="emailRequest.username" st-meta-validate="metadata.username" ng-class="{errorHighlight: $dirty && $invalid}" class="form-control"/>
-            </div>
-
+    <div class="buttons">
+        <div>
             <!-- SUBMIT BUTTON -->
-            <button ng-click="requestPassword()" class="btn btn-primary form-control sign-up" ng-disabled="theForm.$invalid">{{ LS.common.submit }}</button>
+            <button ng-click="requestPassword()" class="primary-btn" ng-disabled="passwordForm.$invalid">{{ LS.common.submit }}</button>
 
             <!-- CANCEL BUTTON -->
-            <a href="#/login" class="btn btn-default form-control sign-up">{{ LS.common.cancel }}</a>
-
+            <a href="#/login">{{ LS.common.cancel }}</a>
         </div>
-    </form>
-</div>
+    </div>
+</form>

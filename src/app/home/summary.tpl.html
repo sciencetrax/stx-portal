@@ -9,20 +9,25 @@
     </div>
 </header>
 
-<ul class="text-badge-list">
+<ul class="entity-list">
     <!-- INCOMPLETE VARIABLE GROUPS -->
     <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
-        <a href="#/variablegroups/update/{{item.id}}//">
-            <div>{{item.name}}</div>
-            <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+        <a href="#/variablegroups/update/{{item.id}}//" class="entity">
+            <div class="name">{{ item.name }}</div>
+            <div class="percent-complete">
+                <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
+            </div>
         </a>
     </li>
 
     <!-- INCOMPLETE ENCOUNTERS -->
     <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters">
-        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}">
-            <div>{{item.name}}</div>
-            <span class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</span>
+        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}" class="entity encounter">
+            <div class="name">{{ item.name }}</div>
+            <div class="due-date hidden-xs">due {{ item.dueDate | stringDate }}</div>
+            <div class="percent-complete">
+                <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+            </div>
         </a>
     </li>
 </ul>

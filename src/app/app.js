@@ -64,7 +64,7 @@ angular.module('stx', [
 				.when('/enroll', '/accounts/enroll')
 				.when('/forgot', '/login/forgot')
 				.when('/home', '/home/index/summary')
-				.when('/login', '/login/login')
+				.when('/login', '/accounts/login')
 				.when('/register', '/accounts/register')
 				.when('/subjectLogin', '/login/subjectLogin')
 //				.otherwise('/')

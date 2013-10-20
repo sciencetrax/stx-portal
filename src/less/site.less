@@ -14,7 +14,7 @@
   line-height: 18px;
   display: block;
   vertical-align: middle;
-  div {
+  & > div {
     margin-top: 3px;
 
     .text-ellipsis;
@@ -36,28 +36,25 @@
     .badge;
     .pull-right;
   }
-  .complete {
-    background: @brand-success !important;
-  }
-  .incomplete {
-    background: @brand-warning !important;
-    color: black;
-  }
+}
+
+.badge.complete {
+  background: @brand-success !important;
+}
+
+.badge.incomplete {
+  background: @brand-warning !important;
+  color: black;
 }
 
 body {
   min-width: 320px;
   overflow-x: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 ul.nav li.list-group-item {
   padding: 0px;
-}
-
-// This adds space between buttons in a form (see login page)
-.form-control {
-  margin-bottom: 10px;
 }
 
 /*****************************************************************/
@@ -119,8 +116,8 @@ ul.nav li.list-group-item {
 }
 
 .loading {
-//  border: solid 1px lighten(@link-color, 15%);
-//  background: whitesmoke;
+  //  border: solid 1px lighten(@link-color, 15%);
+  //  background: whitesmoke;
   color: @link-color;
   margin-left: auto;
   margin-right: auto;
@@ -153,3 +150,45 @@ ul.nav li.list-group-item {
 @import 'bs-fixes.less';
 @import 'page.less';
 @import 'forms.less';
+
+.entity-list {
+  .due-date,
+  .name {
+    .text-overflow;
+  }
+
+  .entity {
+    .row;
+  }
+  .name {
+    .make-xs-column(8);
+  }
+  .percent-complete {
+    text-align: right;
+    .make-xs-column(4);
+    & > div {
+      .badge;
+    }
+    .complete {
+      background: @brand-success !important;
+    }
+    .incomplete {
+      background: @brand-warning !important;
+      color: black;
+    }
+  }
+  .encounter {
+    .name {
+      .make-sm-column(6);
+    }
+    .due-date {
+      .make-sm-column(4);
+    }
+    .percent-complete {
+      .make-sm-column(2);
+    }
+  }
+}
+.entity-list .encounter .name {
+  .make-sm-column(6);
+}

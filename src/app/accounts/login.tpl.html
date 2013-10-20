@@ -1,0 +1,47 @@
+﻿<header class="noactions">
+    <h1 title="{{portal.name}}">{{portal.name}}</h1>
+</header>
+<div class="login-page">
+    <!-- ERROR PANEL -->
+    <div ng-include src="'common/error-panel.tpl.html'"/>
+
+    <form name="theForm" class="update" novalidate="">
+        <!-- USERNAME -->
+        <div>
+            <label for="username">{{LSPage.username}}</label>
+
+            <div><input id="username" ng-model="authorization.username" type="text" required='true' st-autofocus/></div>
+        </div>
+
+        <!-- PASSWORD -->
+        <div>
+            <label for="password">{{LSPage.password}}</label>
+
+            <div><input id="password" ng-model="authorization.password" type='password' required='true'/></div>
+        </div>
+
+        <div class="buttons">
+            <!-- LOGIN BUTTON -->
+            <div>
+                <button id="loginBtn" ng-click="login()" class="login-btn" ng-disabled="theForm.$invalid" data-loading-text="{{ LSPage.loggingIn }}">{{LSPage.login}}</button>
+            </div>
+
+            <!-- ENROLL BUTTON -->
+            <div ng-show="portal.anonymousInterval">
+                <button href="#/enroll" class="enroll-btn">{{LSPage.enroll}}</button>
+                <!--<a id="enrollBtn" href="#/enroll" class="enroll-btn">{{LSPage.enroll}}</a>-->
+            </div>
+
+            <!-- REGISTER BUTTON -->
+            <div ng-show="!portal.anonymousInterval && portal.registration">
+                <button ng-click="$state.go('accounts.register')" class="register-btn">{{LSPage.register}}</button>
+                <!--<a href="#/register" class="register-btn">{{LSPage.register}}</a>-->
+            </div>
+
+            <!-- FORGOT USERNAME/PASSWORD BUTTON-->
+            <div>
+                <a id="forgotBtn" href="#/forgot">{{LSPage.forgotUsernameOrPassword}}</a>
+            </div>
+        </div>
+    </form>
+</div>

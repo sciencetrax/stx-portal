@@ -6,7 +6,7 @@ describe('ApplicationController', function () {
 		});
 
 		xit('register', function () {
- 			expect(browser().location().path()).toBe('/login/login');
+ 			expect(browser().location().path()).toBe('/account/login');
 			element('.btn.register').click();
 			input('account.username', '3');
 			input('account.FirstName', 'John');

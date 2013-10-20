@@ -43,7 +43,9 @@ module.exports = {
         ctpl: [ 'src/common/**/*.tpl.html' ],
 
         html: [ 'src/index.html' ],
-        less: 'src/less/main.less'
+        less: [
+			'src/less/main.less'
+		]
     },
 
     /**
@@ -91,6 +93,8 @@ module.exports = {
 			'vendor/bootstrap/assets/js/html5shiv.js',
 			'vendor/bootstrap/assets/js/respond.min.js',
             'vendor/bootstrap/dist/js/bootstrap.js',
+
+            'vendor/moment/min/moment-with-langs.js',
 
             'vendor/stx/Class.js',
             'vendor/stx/jsExtensions.js',

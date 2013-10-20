@@ -43,6 +43,17 @@
 						}
 					}
 				})
+				.state('accounts.login', {
+					url: '/login',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'LoginController',
+							templateUrl: 'accounts/login.tpl.html',
+							data: { pageTitle: 'Login' }
+						}
+					}
+				})
 				.state('accounts.register', {
 					url: '/register',
 					views: {
