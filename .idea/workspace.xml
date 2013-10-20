@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="General cleanup">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/filters/_module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/accounts/login.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/accounts/register.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/filters/stringDate.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\login.js" afterPath="$PROJECT_DIR$/src/app/accounts/login.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\login.scenario.js" afterPath="$PROJECT_DIR$/src/app/accounts/login.scenario.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\login.spec.js" afterPath="$PROJECT_DIR$/src/app/accounts/login.spec.js" />
-      <change type="MOVED" beforePath="C:\temp\stx-portal\src\app\login\login.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/login.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/_module.js" afterPath="$PROJECT_DIR$/src/app/accounts/_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/_module.js" afterPath="$PROJECT_DIR$/src/app/core/_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/_module.js" afterPath="$PROJECT_DIR$/src/app/login/_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.js" afterPath="$PROJECT_DIR$/src/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/app.scenario.js" afterPath="$PROJECT_DIR$/src/app/app.scenario.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.config.js" afterPath="$PROJECT_DIR$/build.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/details.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/details.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/forgot.js" afterPath="$PROJECT_DIR$/src/app/login/forgot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/login/forgot.tpl.html" afterPath="$PROJECT_DIR$/src/app/login/forgot.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/forms.less" afterPath="$PROJECT_DIR$/src/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/page.less" afterPath="$PROJECT_DIR$/src/less/page.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.scenario.js" afterPath="$PROJECT_DIR$/src/app/accounts/register.scenario.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/site.less" afterPath="$PROJECT_DIR$/src/less/site.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/summary.js" afterPath="$PROJECT_DIR$/src/app/home/summary.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/summary.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/summary.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/update.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view-details.js" afterPath="$PROJECT_DIR$/src/app/encounters/view-details.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -300,28 +269,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,13 +690,18 @@
       <created>1382142827900</created>
       <updated>1382142827900</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Building out tablet views">
+      <created>1382288905032</created>
+      <updated>1382288905032</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -765,7 +717,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34395605" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -778,7 +729,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fixing build issues" />
     <MESSAGE value="importing more code from old project" />
     <MESSAGE value="Adding unit tests" />
     <MESSAGE value="Adding unit tests to home.spec.js" />
@@ -803,7 +753,8 @@
     <MESSAGE value="added loading indicator" />
     <MESSAGE value="working on enrollment page" />
     <MESSAGE value="General cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="General cleanup" />
+    <MESSAGE value="Building out tablet views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Building out tablet views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
