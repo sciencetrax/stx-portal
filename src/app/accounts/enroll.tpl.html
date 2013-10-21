@@ -1,19 +1,19 @@
-<div class="center-page" ng-hide="ready">
-    <div ng-include src="'common/loading.tpl.html'" />
-</div>
-<div class="view-content col-xs-12 col-sm-offset-4 col-sm-4" ng-show="ready">
-    <div class='page-heading' title='{{ LSPage.heading }}'>{{ LSPage.heading }}</div>
-
+<header class="noactions">
+    <h1 title="{{portal.name}}">{{ LSPage.heading }}</h1>
+</header>
+<div class="stx-form">
     <!-- ERROR PANEL -->
     <div ng-include src="'common/error-panel.tpl.html'"/>
 
     <!-- CONTENT -->
-    <div data-role="form-group">
+    <span class="container">
         <div class="DataEntryPanel"></div>
-    </div>
+    </span>
 
-    <div data-role="form-group">
-        <button class="btn btn-primary form-control" ng-click="save()">{{LS.common.save}}</button>
-        <a class="btn btn-default form-control" back-button>{{LS.common.cancel}}</a>
+    <div class="buttons">
+        <div>
+            <button ng-click="save()">{{LS.common.save}}</button>
+            <a href="#/login" class="cancel">{{LS.common.cancel}}</a>
+        </div>
     </div>
 </div>

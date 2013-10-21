@@ -1,8 +1,10 @@
 <div class="content">
     <h1>Reports</h1>
-    <ul class="list-group">
-        <li ng-repeat="item in encounter.reports" class="list-group-item" reportid="{{item.id}}">
-            <a href="#/reports/view/{{ encounter.encounterId }}/{{ item.id }}">{{item.name}}</a>
+    <ul class="entity-list">
+        <li ng-repeat="item in encounter.reports" reportid="{{item.id}}">
+            <a class="entity" href="#/reports/view/{{ encounter.encounterId }}/{{ item.id }}">
+                {{item.name}}
+            </a>
         </li>
     </ul>
 </div>

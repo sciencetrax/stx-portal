@@ -5,7 +5,7 @@
     <!-- ERROR PANEL -->
     <div ng-include src="'common/error-panel.tpl.html'"/>
 
-    <form name="theForm" class="update" novalidate="">
+    <form name="theForm" class="stx-form" novalidate="">
         <!-- USERNAME -->
         <div>
             <label for="username">{{LSPage.username}}</label>
@@ -28,14 +28,12 @@
 
             <!-- ENROLL BUTTON -->
             <div ng-show="portal.anonymousInterval">
-                <button href="#/enroll" class="enroll-btn">{{LSPage.enroll}}</button>
-                <!--<a id="enrollBtn" href="#/enroll" class="enroll-btn">{{LSPage.enroll}}</a>-->
+                <button ng-click="$state.go('accounts.enroll')" class="enroll-btn">{{LSPage.enroll}}</button>
             </div>
 
             <!-- REGISTER BUTTON -->
             <div ng-show="!portal.anonymousInterval && portal.registration">
                 <button ng-click="$state.go('accounts.register')" class="register-btn">{{LSPage.register}}</button>
-                <!--<a href="#/register" class="register-btn">{{LSPage.register}}</a>-->
             </div>
 
             <!-- FORGOT USERNAME/PASSWORD BUTTON-->

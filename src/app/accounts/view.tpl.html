@@ -31,9 +31,11 @@
     <h1>{{ LSPage.personalInformation }}</h1>
     <ul class="entity-list">
         <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
-            <a href="#/variablegroups/update/{{item.id}}//">
-                <div>{{item.name}}</div>
-                <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+            <a href="#/variablegroups/update/{{item.id}}//" class="entity compact">
+                <div class="name">{{item.name}}</div>
+                <div class="percent-complete">
+                    <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
+                </div>
             </a>
         </li>
     </ul>

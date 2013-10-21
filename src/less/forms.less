@@ -3,18 +3,12 @@
   color: darken(@brand-danger, 15%) !important;
   text-align: right;
   position: relative;
-  top: -5px;
 }
+
 //
 //input {
 ////  padding-left: 40px;
 //}
-
-[required] {
-  border-width: 3px;
-  border-coler: darken(@input-border, 80%);
-  .placeholder(darken(@input-border, 50%));
-}
 
 /*
 .ng-dirty.ng-valid {
@@ -28,43 +22,8 @@ input.ng-dirty.ng-invalid {
   border-color: lighten(@brand-danger, 15%) !important;
 }
 
-.remaining-chars-value.negative {
-  color: lighten(@brand-danger, 10%);
-}
-
-.remaining-chars-value {
-  color: @input-color-placeholder;
-  display: block;
-  float: right;
-  font-size: .8em;
-}
-
-.password-strength {
-  background: @input-color-placeholder;
-  border-radius: 50%;
-  display: inline-block !important;
-  height: 15px;
-  width: 15px;
-  position: relative !important;
-  top: 4px;
-  margin-left: 5px;
-  float: right;
-}
-
-.password-strength-weak {
-  background: @brand-danger;
-}
-
-.password-strength-ok {
-  background: @brand-warning;
-}
-
-.password-strength-strong {
-  background: @brand-success;
-}
-
 // LAYOUT
-form.update {
+.stx-form {
   .form-horizontal;
   & > div,
   & > fieldset > div {
@@ -128,7 +87,7 @@ form.update {
   }
 
   div.buttons + div.buttons {
-//    margin-bottom: (@grid-gutter-width / 2);
+    //    margin-bottom: (@grid-gutter-width / 2);
   }
 
   // Put space between buttons next to each other
@@ -160,7 +119,70 @@ form.update {
     .primary-btn {
       .btn-primary;
     }
+
+    .enroll-btn,
+    .register-btn,
+    .save-btn,
+    .sign-up-btn{
+      .btn-success;
+    }
+    .login-btn {
+      .btn-primary;
+    }
   }
 
+  [required] {
+    border-width: 3px;
+    border-coler: darken(@input-border, 80%);
+    .placeholder(darken(@input-border, 50%));
+  }
+  .remaining-chars-value.negative {
+    color: lighten(@brand-danger, 10%);
+  }
+
+  .remaining-chars-value {
+    color: @input-color-placeholder;
+    display: block;
+    float: right;
+    font-size: .8em;
+    position: absolute;
+    @media (max-width: @screen-sm-max) {
+      top: -25px;
+      right: (@grid-gutter-width / 2);
+    }
+    @media (min-width: @screen-sm) {
+      top: @padding-base-vertical + 2;
+      right: (@grid-gutter-width);
+    }
+  }
+  @media (min-width: @screen-sm) {
+    input {
+      padding-right: (@grid-gutter-width * 3);
+    }
+  }
+
+  .password-strength {
+    background: @input-color-placeholder;
+    border-radius: 50%;
+    display: inline-block !important;
+    height: 15px;
+    width: 15px;
+    position: relative !important;
+    top: 4px;
+    margin-left: 5px;
+    float: right;
+  }
+
+  .password-strength-weak {
+    background: @brand-danger;
+  }
+
+  .password-strength-ok {
+    background: @brand-warning;
+  }
+
+  .password-strength-strong {
+    background: @brand-success;
+  }
 }
 

@@ -13,7 +13,10 @@
     <!-- INCOMPLETE VARIABLE GROUPS -->
     <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
         <a href="#/variablegroups/update/{{item.id}}//" class="entity">
+            <!-- NAME -->
             <div class="name">{{ item.name }}</div>
+
+            <!-- PERCENT COMPLETE -->
             <div class="percent-complete">
                 <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
             </div>
@@ -23,8 +26,12 @@
     <!-- INCOMPLETE ENCOUNTERS -->
     <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters">
         <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}" class="entity encounter">
+            <!-- NAME -->
             <div class="name">{{ item.name }}</div>
+
             <div class="due-date hidden-xs">due {{ item.dueDate | stringDate }}</div>
+
+            <!-- PERCENT COMPLETE -->
             <div class="percent-complete">
                 <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
             </div>

@@ -5,18 +5,18 @@
     <div id="variable-panel-code"></div>
 
     <!-- DATA ENTRY PANEL-->
-    <div class="DataEntryPanel">
-        <ul class="nav">
-            <!-- VARIABLE GROUP -->
-            <li ng-repeat="item in encounter.variableGroups" class="list-group-item hide" variablegroupid="{{item.id}}">
-                <a class="text-badge" href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}">
-                    <!-- NAME -->
-                    <div>{{item.name}}</div>
+    <ul class="entity-list DataEntryPanel" ng-show="loaded">
+        <!-- VARIABLE GROUP -->
+        <li ng-repeat="item in encounter.variableGroups" variablegroupid="{{item.id}}">
+            <a href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}" class="entity">
+                <!-- NAME -->
+                <div class="name">{{item.name}}</div>
 
-                    <!-- PERCENT COMPLETE -->
-                    <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+                <!-- PERCENT COMPLETE -->
+                <div class="percent-complete">
+                    <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
+                </div>
+            </a>
+        </li>
+    </ul>
 </div>

@@ -1,42 +1,43 @@
 .text-ellipsis {
-  display: inline-block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  &:active {
-    text-overflow: normal;
-    white-space: normal;
-  }
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    &:active {
+        text-overflow: normal;
+        white-space: normal;
+    }
 }
 
 .text-badge {
-  line-height: 18px;
-  display: block;
-  vertical-align: middle;
-  & > div {
-    margin-top: 3px;
+    line-height: 18px;
+    display: block;
+    vertical-align: middle;
+    & > div {
+        margin-top: 3px;
 
-    .text-ellipsis;
-    width: 70%;
-    /*
-    width: 80%;
-    @media (min-width: 100px) and (max-width: 479px) {
-      width: 70%;
+        .text-ellipsis;
+        width: 70%;
+        /*
+        width: 80%;
+        @media (min-width: 100px) and (max-width: 479px) {
+          width: 70%;
+        }
+        @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
+          width: 80%;
+        }
+        @media (min-width: @screen-sm) {
+          width: 85%;
+        }
+        */
     }
-    @media (min-width: @screen-xs) and (max-width: @screen-xs-max) {
-      width: 80%;
+    span {
+        .badge;
+        .pull-right;
     }
-    @media (min-width: @screen-sm) {
-      width: 85%;
-    }
-    */
-  }
-  span {
-    .badge;
-    .pull-right;
-  }
 }
+
 //
 //.badge.complete {
 //  background: @brand-success !important;
@@ -48,9 +49,10 @@
 //}
 
 body {
-  min-width: 320px;
-  overflow-x: hidden;
-  margin-bottom: 150px;
+    min-width: 320px;
+    overflow-x: hidden;
+    margin-top: (@navbar-height + (@grid-gutter-width/2));
+    margin-bottom: (@navbar-height + (@grid-gutter-width/2));
 }
 
 //ul.nav li.list-group-item {
@@ -61,7 +63,7 @@ body {
 // NAVBAR
 /*****************************************************************/
 .navbar-inverse {
-  color: @navbar-inverse-color;
+    color: @navbar-inverse-color;
 }
 
 //.navbar-heading {
@@ -81,67 +83,66 @@ body {
 //}
 
 .navbar-btn {
-  background: @navbar-inverse-btn-bg;
-  color: @navbar-inverse-btn-color;
-  margin: 5px;
-  &:hover {
-    background: #F7A288 !important;
-  }
+    background: @navbar-inverse-btn-bg;
+    color: @navbar-inverse-btn-color;
+    margin: 5px;
+    &:hover {
+        background: #F7A288 !important;
+    }
 }
-
 
 /*****************************************************************/
 // FOOTER
 /*****************************************************************/
 .footer {
-  .btn {
-    background: @footer-bg;
-    color: @footer-color;
-  }
+    .btn {
+        background: @footer-bg;
+        color: @footer-color;
+    }
 
-  .btn.active {
-    background: @footer-btn-active-bg;
-    color: @footer-btn-active-color;
-  }
+    .btn.active {
+        background: @footer-btn-active-bg;
+        color: @footer-btn-active-color;
+    }
 }
 
 .navbar-brand {
-  @media (max-width: 359px) {
-    padding-top: 18px;
-    width: 170px;
-  }
+    @media (max-width: 359px) {
+        padding-top: 18px;
+        width: 170px;
+    }
 }
 
 .loading {
-  //  border: solid 1px lighten(@link-color, 15%);
-  //  background: whitesmoke;
-  color: @link-color;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 100px;
-  text-align: center;
-  height: 100px;
-  width: 100px;
+    //  border: solid 1px lighten(@link-color, 15%);
+    //  background: whitesmoke;
+    color: @link-color;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
 }
 
 .attribute-table {
-  .nav;
-  & > li {
-    .list-group-item;
-    .row;
-    margin-left: 0;
-    margin-right: 0;
-    padding: .25em;
-    div {
-      .text-ellipsis;
+    .nav;
+    & > li {
+        .list-group-item;
+        .row;
+        margin-left: 0;
+        margin-right: 0;
+        padding: .25em;
+        div {
+            .text-ellipsis;
 
-      .make-xs-column(6);
-      .make-sm-column(6);
-      .make-md-column(6);
-      .make-lg-column(6);
+            .make-xs-column(6);
+            .make-sm-column(6);
+            .make-md-column(6);
+            .make-lg-column(6);
+        }
     }
-  }
 }
 
 @import 'bs-fixes.less';
@@ -149,43 +150,74 @@ body {
 @import 'forms.less';
 
 .entity-list {
-  .due-date,
-  .name {
-    .text-overflow;
-  }
+    .nav;
 
-  .entity {
-    .row;
-  }
-  .name {
-    .make-xs-column(8);
-  }
-  .percent-complete {
-    text-align: right;
-    .make-xs-column(4);
-    & > div {
-      .badge;
+    & > li {
+        .list-group-item;
+        padding: 0px;
     }
-    .complete {
-      background: @brand-success !important;
-    }
-    .incomplete {
-      background: @brand-warning !important;
-      color: black;
-    }
-  }
-  .encounter {
+
+    .due-date,
     .name {
-      .make-sm-column(6);
+        .text-overflow;
     }
-    .due-date {
-      .make-sm-column(4);
+
+    .entity {
+        .row;
+        .container;
+    }
+
+    // Variable Group / Encounter fields
+    .name {
+        .make-xs-column(8);
+        .make-sm-column(10);
     }
     .percent-complete {
-      .make-sm-column(2);
+        text-align: right;
+        .make-xs-column(4);
+        .make-sm-column(2);
+
+        & > div,
+        & > span {
+            .badge;
+        }
+        .complete {
+            background: @brand-success !important;
+        }
+        .incomplete {
+            background: @brand-warning !important;
+            color: black;
+        }
     }
-  }
+    .compact .name {
+        .make-sm-column(8);
+        .make-md-column(9);
+    }
+    .compact .percent-complete {
+        .make-sm-column(4);
+        .make-md-column(3);
+    }
+
+    // Encounter fields
+    .encounter {
+        .name {
+            .make-sm-column(6);
+        }
+        .due-date {
+            .make-sm-column(4);
+        }
+        .percent-complete {
+            .make-sm-column(2);
+        }
+    }
+    .entity > div:first-child {
+        padding-left: 0 !important;
+    }
+    .entity > div:last-child {
+        padding-right: 0 !important;
+    }
 }
+
 .entity-list .encounter .name {
-  .make-sm-column(6);
+    .make-sm-column(6);
 }

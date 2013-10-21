@@ -84,8 +84,8 @@
 		},
 		home: {
 			index: {
-				summaryTab: "Summary",
-				detailsTab: "Details",
+				summaryTab: "Action Items",
+				detailsTab: "Timeline",
 				summary: {
 					heading: "Action Items"
 				},
