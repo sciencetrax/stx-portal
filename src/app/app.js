@@ -25,8 +25,8 @@ angular.module('stx', [
 				};
 			}])
 	.factory('errorInterceptor',
-		['$q', '$rootScope',
-			function ($q, $rootScope) {
+		['$q', '$rootScope', '$location',
+			function ($q, $rootScope, $location) {
 				return {
 					response: function (response) {
 						$rootScope.error = null;
@@ -44,9 +44,13 @@ angular.module('stx', [
 							if ($('#errors').length === 0) {
 								bootbox.alert($rootScope.error.message);
 							}
-						} else if (error != null) {
+						} else if (!String.isNullEmptyOrUndefined(error)) {
 							bootbox.alert(error);
 						} else {
+							if (rejection.status == 401) {
+								$location.path("/login");
+								return $q.reject(rejection);
+							}
 							bootbox.alert("An HTTP error occurred.  Status: " + rejection.status);
 						}
 						return $q.reject(rejection);
@@ -60,6 +64,7 @@ angular.module('stx', [
 			$urlRouterProvider
 				.when('', '/')
 				.when('/', '/home/index/summary')
+				.when('/about', '/about/index')
 				.when('/accounts', '/accounts/view')
 				.when('/enroll', '/accounts/enroll')
 				.when('/forgot', '/accounts/forgot')
@@ -72,8 +77,8 @@ angular.module('stx', [
 			WebServiceConfigProvider.configure('/StudyTrax', "api/");
 		}]
 	)
-	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'stateExt', '$navigation',
-		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, stateExt, $navigation) {
+	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
+		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, session, stateExt) {
 			$scope.safeApply = function (fn) {
 				var phase = this.$root.$$phase;
 				if (phase == '$apply' || phase == '$digest') {
@@ -97,11 +102,20 @@ angular.module('stx', [
 					$scope.pageTitle = toState.data.pageTitle + ' | ' + LS.appName;
 				}
 			});
+
+			$scope.$root.session = session;
 			$scope.$root.loaded = true;
-//			$scope.$navigation = $navigation;
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
 			$scope.LS = LS;
+
+			$scope.$root.$on("sessionExpirationWarning", function() {
+				bootbox.alert("Session is about to expire");
+			});
+
+			$scope.$root.$on("sessionExpired", function() {
+				$location.path("/login");
+			});
 		}
 	])
 ;

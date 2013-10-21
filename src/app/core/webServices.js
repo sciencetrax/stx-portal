@@ -44,7 +44,12 @@ angular.module('stx.core.webService', [
 			portalCode: '@portalCode',
 			username: '@username',
 			password: '@password'
-		});
+		}, serviceActions);
+	}])
+	.factory('AuthorizationUpdate', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorization?remainingSeconds=:remainingSeconds'), {
+			remainingSeconds: "@remainingSeconds"
+		}, serviceActions);
 	}])
 	.factory('AuthorizationContext', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorizationcontext'));
@@ -161,6 +166,9 @@ angular.module('stx.core.webService', [
 			reportId: '@reportId'
 		});
 	}])
+	.factory('EnrollmentVariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/intervals/:intervalId/variablePanelScript'));
+	}])
 	.factory('Metadata', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
 	}])
@@ -180,17 +188,12 @@ angular.module('stx.core.webService', [
 	.factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'));
 	}])
-	.factory('EnrollmentVariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/intervals/:intervalId/variablePanelScript'));
+	.factory('Session', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'session/:id'), {
+			id: "@id"
+		});
 	}])
 	.factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript'));
-	}])
-
-
-	.factory('Session', ['$resource', function ($resource) {
-		return $resource(applicationPath + 'api/sessions/:id', {
-			id: '@id'
-		});
 	}])
 ;

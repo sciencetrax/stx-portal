@@ -40,8 +40,8 @@ describe('LoginController', function () {
 
     describe('constructor', function () {
         beforeEach(inject(function () {
-            $http.defaults.headers.common[stateExt.AUTH_HEADER] = 'authToken';
-            $cookieStore.put(stateExt.AUTH_HEADER, 'authToken');
+            $http.defaults.headers.common[Constants.AuthHeader] = 'authToken';
+            $cookieStore.put(Constants.AuthHeader, 'authToken');
             controller = $controller('LoginController', {
                 $scope: $scope
             });
@@ -54,11 +54,11 @@ describe('LoginController', function () {
         }));
 
         it('should remove the cookie', inject(function () {
-            expect($cookieStore.get(stateExt.AUTH_HEADER)).toBe(undefined);
+            expect($cookieStore.get(Constants.AuthHeader)).toBe(undefined);
         }));
 
         it('should remove the auth header', inject(function () {
-            expect($http.defaults.headers.common[stateExt.AUTH_HEADER]).toBe(null);
+            expect($http.defaults.headers.common[Constants.AuthHeader]).toBe(null);
         }));
 
         describe('$scope', function () {

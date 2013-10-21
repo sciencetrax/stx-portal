@@ -2,9 +2,9 @@
 	"use strict";
 	angular.module('stx.accounts')
 		.controller('AccountsEnrollController',
-			['$scope', '$state', '$stateParams', '$location', 'stateExt', 'portalResolver', 'Metadata', 'Account', 'AuthorizationContext', 'DataEntryForm',
-				function ($scope, $state, $stateParams, $location, stateExt, portalResolver, Metadata, Account, AuthorizationContext, DataEntryForm) {
-					stateExt.removeAuthorization();
+			['$scope', '$state', '$stateParams', '$location', 'session', 'portalResolver', 'Metadata', 'Account', 'AuthorizationContext', 'DataEntryForm',
+				function ($scope, $state, $stateParams, $location, session, portalResolver, Metadata, Account, AuthorizationContext, DataEntryForm) {
+					session.removeAuthorization();
 					var portal = portalResolver.data;
 					$scope.LSPage = LS.pages.accounts.enroll;
 					$scope.portal = portal;
@@ -25,7 +25,7 @@
 									var authorization = $('#Form_Authorization').val();
 									var isEnrolled = $('#Form_IsEnrolled').val();
 									if (isEnrolled && portal.registration) {
-										stateExt.authorize(authorization, false);
+										session.authorize(authorization, portal.sessionTimeoutSeconds * 1000);
 										$state.go('accounts.register');
 									} else if (!isEnrolled) {
 										// Redirect to error page.

@@ -5,9 +5,9 @@
             'ui.router',
             'stx.core'
         ])
-        .controller("LoginController", ['$scope', '$state', '$stateParams', '$location', 'stateExt', 'Authorization', 'EmailRequest', 'portalResolver',
-            function ($scope, $state, $stateParams, $location, stateExt, Authorization, EmailRequest, portalResolver) {
-                stateExt.removeAuthorization();
+        .controller("LoginController", ['$scope', '$state', '$stateParams', '$location', 'session', 'stateExt', 'Authorization', 'EmailRequest', 'portalResolver',
+            function ($scope, $state, $stateParams, $location, session, stateExt, Authorization, EmailRequest, portalResolver) {
+                session.removeAuthorization();
 				var portal = portalResolver.data;
 
 				var emailRequest = new EmailRequest();
@@ -33,7 +33,7 @@
 					// prior to navigating away.
 					var authorization = angular.copy($scope.authorization);
                     Authorization.save(authorization, function (data) {
-                        stateExt.authorize(data.authorization);
+                        stateExt.authorizeAndNavigate(data.authorization, portal.sessionTimeoutSeconds * 1000);
                     }, function (data) {
 						$scope.loggingIn = false;
 						$('#loginBtn').button('reset');
