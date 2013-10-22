@@ -25,7 +25,10 @@
                     url: '/index',
                     controller: 'HomeIndexController',
                     templateUrl: 'home/index.tpl.html',
-                    data: { pageTitle: 'Home', isHome: true }
+                    data: {
+						navigation: 'reset',
+						pageTitle: 'Home', isHome: true
+					}
                 })
                 .state('home.index.summary', {
                     url: '/summary',

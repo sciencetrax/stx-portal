@@ -23,7 +23,10 @@
                     url: '/update/{variableGroupId}/{intervalId}/{encounterId}',
                     controller: 'VariableGroupUpdate',
                     templateUrl: 'variablegroups/update.tpl.html',
-                    data: { pageTitle: 'Variable Group Update' }
+                    data: {
+						navigation: 'ignore',
+						pageTitle: 'Variable Group Update'
+					}
                 })
             ;
         }])

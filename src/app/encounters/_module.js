@@ -25,7 +25,10 @@
                     url: '/view/{intervalId}/{encounterId}',
                     controller: 'EncountersViewController',
                     templateUrl: 'encounters/view.tpl.html',
-                    data: { pageTitle: 'Encounter' }
+                    data: {
+						navigation: 'updateTop',
+						pageTitle: 'Encounter'
+					}
                 })
                 .state('encounters.view.details', {
                     url: '/details',

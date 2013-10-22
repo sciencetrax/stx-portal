@@ -50,11 +50,23 @@
     <script src='/StudyTrax/Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
 </head>
 <body class="studytrax">
+    <div id="sessionExpirationDialog" class="modal fade" tabindex="-1" data-keyboard="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    {{ LS.common.sessionExpirationWarning }}
+                    <h3>{{ $root.session.remainingSeconds | timeInterval }}</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">{{ LS.common.renew }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div ui-view="menu"></div>
 
-    <div class="page">
-        <div ui-view="content" class="page-content"></div>
-    </div>
+    <div ui-view="content" class="page"></div>
 
     <div ng-include src="'common/loading.tpl.html'"/>
 

@@ -5,6 +5,7 @@
 		sessionTimeoutMilliseconds: null,
 		lastActivityTime: null,
 		lastServerUpdateTime: null,
+		remainingSeconds: null,
 		_processTimer: null,
 		_updateServerMilliseconds: 60 * 1000,
 		_warningMilliseconds: 50 * 1000,
@@ -92,6 +93,7 @@
 		_warningFired: false,
 		_processSession: function () {
 			var remainingSeconds = (this.sessionTimeoutMilliseconds / 1000) - this.lastActivityTime.getElapsedSeconds();
+			this.remainingSeconds = remainingSeconds;
 			var shouldWarn = remainingSeconds <= this._warningMilliseconds / 1000;
 			if (!this._warningFired && shouldWarn) {
 				this._warningFired = true;

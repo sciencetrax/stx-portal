@@ -94,7 +94,7 @@
 					data: {
 						pageTitle: 'Account Update',
 						depends: [
-							'authorizationContextResolver',
+							'authorziationContextResolver',
 							'portalResolver'
 						]
 					}

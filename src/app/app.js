@@ -72,7 +72,6 @@ angular.module('stx', [
 				.when('/login', '/accounts/login')
 				.when('/register', '/accounts/register')
 				.when('/subjectLogin', '/login/subjectLogin')
-//				.otherwise('/')
 			;
 			WebServiceConfigProvider.configure('/StudyTrax', "api/");
 		}]
@@ -110,10 +109,11 @@ angular.module('stx', [
 			$scope.LS = LS;
 
 			$scope.$root.$on("sessionExpirationWarning", function() {
-				bootbox.alert("Session is about to expire");
+				$('#sessionExpirationDialog').modal('show');
 			});
 
 			$scope.$root.$on("sessionExpired", function() {
+				$('#sessionExpirationDialog').modal('hide');
 				$location.path("/login");
 			});
 		}

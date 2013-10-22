@@ -11,9 +11,11 @@
 //		loading: "Loading...",
 		logASubjectIn: "Log a subject in",
 		login: "Login",
+		renew: "Renew",
 		resendVerificationEmail: "Resend Email",
 		returnToLoginPage: "Return To Login Page",
 		save: "Save",
+		sessionExpirationWarning: "Your session is about to expire.  Click the renew button below to renew.",
 		submit: "Submit",
 		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
 	},

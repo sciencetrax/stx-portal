@@ -1,19 +1,13 @@
-<div class="col-xs-12 col-sm-offset-4 col-sm-4">
-    <!-- CONTENT -->
-    <div class="content">
-        <div data-role="form-group">
-            <div class="DataEntryPanel">
-                <div style="text-align: center">Loading...</div>
-            </div>
-        </div>
+<!-- CONTENT -->
+<div class="stx-form">
+    <div class="container">
+        <div class="DataEntryPanel"></div>
+    </div>
 
-        <div class="hidden-xs col-sm-4 col-md-4"></div>
-        <div class="col-xs-12 col-sm-4 col-md-4">
-            <div data-role="form-group">
-                <button class="btn btn-primary form-control" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
-                <a class="btn btn-default form-control" back-button>{{LS.pages.variableGroups.update.cancel}}</a>
-            </div>
+    <div class="buttons">
+        <div>
+            <button class="save-btn" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
+            <a back-button>{{LS.pages.variableGroups.update.cancel}}</a>
         </div>
-        <div class="hidden-xs col-sm-4 col-md-4"></div>
     </div>
 </div>

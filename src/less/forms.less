@@ -1,8 +1,8 @@
 .error {
-  display: block;
-  color: darken(@brand-danger, 15%) !important;
-  text-align: right;
-  position: relative;
+    display: block;
+    color: darken(@brand-danger, 15%) !important;
+    text-align: right;
+    position: relative;
 }
 
 //
@@ -18,171 +18,171 @@
 */
 .submit-attempted .ng-invalid,
 input.ng-dirty.ng-invalid {
-  background: lighten(@brand-danger, 35%) !important;
-  border-color: lighten(@brand-danger, 15%) !important;
+    background: lighten(@brand-danger, 35%) !important;
+    border-color: lighten(@brand-danger, 15%) !important;
 }
 
 // LAYOUT
 .stx-form {
-  .form-horizontal;
-  & > div,
-  & > fieldset > div {
-    .form-group;
-    margin-bottom: (@grid-gutter-width / 2);
-  }
-
-  & > div > div,
-  & > fieldset > div > div {
-    .make-sm-column(8);
-  }
-
-  // CONTROLS
-  a,
-  button,
-  input {
-    .form-control;
-  }
-
-  // LABEL
-  label {
-    .make-sm-column(4);
-    .control-label;
-    @media (min-width: @screen-sm) {
-      text-align: right;
-    }
-  }
-
-  /*****************************************************************************/
-  // BUTTONS
-  /*****************************************************************************/
-  div.buttons > div {
-    .make-sm-column(12);
-  }
-  // Anchors should be sized the same as buttons, but we want them to appear as
-  // hyperlinks.  This should be used for all secondary actions per the
-  // website: http://www.lukew.com/ff/entry.asp?571
-  div.buttons a {
-    .btn;
-    border: none !important;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    color: @link-color;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  div.buttons button {
-    .btn;
-    .btn-default;
-  }
-  // Fix the button width and center them on tablets+.
-  div.buttons a,
-  div.buttons button {
-    @media (min-width: @screen-sm) {
-      margin-left: auto;
-      margin-right: auto;
-      width: 300px;
-    }
-  }
-
-  div.buttons + div.buttons {
-    //    margin-bottom: (@grid-gutter-width / 2);
-  }
-
-  // Put space between buttons next to each other
-  div.buttons {
-    // We want space after all buttons except the last button.
-    div {
-      margin-bottom: (@grid-gutter-width / 2);
-      .text-center;
-    }
-    div:last-child {
-      margin-bottom: 0;
+    .form-horizontal;
+    & > div,
+    & > fieldset > div {
+        .form-group;
+        margin-bottom: (@grid-gutter-width / 2);
     }
 
-    a + a,
-    a + button,
-    button + a,
-    button + button {
-      // We want to put space between the top and bottom of buttons when they are vertical
-      @media (max-width: @screen-sm-max) {
-        margin-top: (@grid-gutter-width / 2);
-      }
-      // When the buttons are side by side, we don't want space at the top, but rather on the sides.
-      @media (min-width: @screen-sm) {
-        margin-left: (@grid-gutter-width / 2);
-        margin-right: (@grid-gutter-width / 2);
-        margin-top: 0;
-      }
-    }
-    .primary-btn {
-      .btn-primary;
+    & > div > div,
+    & > fieldset > div > div {
+        .make-sm-column(8);
     }
 
-    .enroll-btn,
-    .register-btn,
-    .save-btn,
-    .sign-up-btn{
-      .btn-success;
-    }
-    .login-btn {
-      .btn-primary;
-    }
-  }
-
-  [required] {
-    border-width: 3px;
-    border-coler: darken(@input-border, 80%);
-    .placeholder(darken(@input-border, 50%));
-  }
-  .remaining-chars-value.negative {
-    color: lighten(@brand-danger, 10%);
-  }
-
-  .remaining-chars-value {
-    color: @input-color-placeholder;
-    display: block;
-    float: right;
-    font-size: .8em;
-    position: absolute;
-    @media (max-width: @screen-sm-max) {
-      top: -25px;
-      right: (@grid-gutter-width / 2);
-    }
-    @media (min-width: @screen-sm) {
-      top: @padding-base-vertical + 2;
-      right: (@grid-gutter-width);
-    }
-  }
-  @media (min-width: @screen-sm) {
+    // CONTROLS
+    a,
+    button,
     input {
-      padding-right: (@grid-gutter-width * 3);
+        .form-control;
     }
-  }
 
-  .password-strength {
-    background: @input-color-placeholder;
-    border-radius: 50%;
-    display: inline-block !important;
-    height: 15px;
-    width: 15px;
-    position: relative !important;
-    top: 4px;
-    margin-left: 5px;
-    float: right;
-  }
+    // LABEL
+    label {
+        .make-sm-column(4);
+        .control-label;
+        @media (min-width: @screen-sm) {
+            text-align: right;
+        }
+    }
 
-  .password-strength-weak {
-    background: @brand-danger;
-  }
+    /*****************************************************************************/
+    // BUTTONS
+    /*****************************************************************************/
+    div.buttons > div {
+        .make-sm-column(12);
+    }
+    // Anchors should be sized the same as buttons, but we want them to appear as
+    // hyperlinks.  This should be used for all secondary actions per the
+    // website: http://www.lukew.com/ff/entry.asp?571
+    div.buttons a {
+        .btn;
+        border: none !important;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        color: @link-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    div.buttons button {
+        .btn;
+        .btn-default;
+    }
+    // Fix the button width and center them on tablets+.
+    div.buttons a,
+    div.buttons button {
+        @media (min-width: @screen-sm) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+    }
 
-  .password-strength-ok {
-    background: @brand-warning;
-  }
+    div.buttons + div.buttons {
+        //    margin-bottom: (@grid-gutter-width / 2);
+    }
 
-  .password-strength-strong {
-    background: @brand-success;
-  }
+    // Put space between buttons next to each other
+    div.buttons {
+        // We want space after all buttons except the last button.
+        div {
+            margin-bottom: (@grid-gutter-width / 2);
+            .text-center;
+        }
+        div:last-child {
+            margin-bottom: 0;
+        }
+
+        a + a,
+        a + button,
+        button + a,
+        button + button {
+            // We want to put space between the top and bottom of buttons when they are vertical
+            @media (max-width: @screen-sm-max) {
+                margin-top: (@grid-gutter-width / 2);
+            }
+            // When the buttons are side by side, we don't want space at the top, but rather on the sides.
+            @media (min-width: @screen-sm) {
+                margin-left: (@grid-gutter-width / 2);
+                margin-right: (@grid-gutter-width / 2);
+                margin-top: 0;
+            }
+        }
+        .primary-btn {
+            .btn-primary;
+        }
+
+        .enroll-btn,
+        .register-btn,
+        .sign-up-btn {
+            .btn-success;
+        }
+        .save-btn,
+        .login-btn {
+            .btn-primary;
+        }
+    }
+
+    [required] {
+        border-width: 3px;
+        border-coler: darken(@input-border, 80%);
+        .placeholder(darken(@input-border, 50%));
+    }
+    .remaining-chars-value.negative {
+        color: lighten(@brand-danger, 10%);
+    }
+
+    .remaining-chars-value {
+        color: @input-color-placeholder;
+        display: block;
+        float: right;
+        font-size: .8em;
+        position: absolute;
+        @media (max-width: @screen-sm-max) {
+            top: -25px;
+            right: (@grid-gutter-width / 2);
+        }
+        @media (min-width: @screen-sm) {
+            top: @padding-base-vertical + 2;
+            right: (@grid-gutter-width);
+        }
+    }
+    @media (min-width: @screen-sm) {
+        input {
+            padding-right: (@grid-gutter-width * 3);
+        }
+    }
+
+    .password-strength {
+        background: @input-color-placeholder;
+        border-radius: 50%;
+        display: inline-block !important;
+        height: 15px;
+        width: 15px;
+        position: relative !important;
+        top: 4px;
+        margin-left: 5px;
+        float: right;
+    }
+
+    .password-strength-weak {
+        background: @brand-danger;
+    }
+
+    .password-strength-ok {
+        background: @brand-warning;
+    }
+
+    .password-strength-strong {
+        background: @brand-success;
+    }
 }
 

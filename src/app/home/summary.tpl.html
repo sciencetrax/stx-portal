@@ -29,7 +29,7 @@
             <!-- NAME -->
             <div class="name">{{ item.name }}</div>
 
-            <div class="due-date hidden-xs">due {{ item.dueDate | stringDate }}</div>
+            <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
 
             <!-- PERCENT COMPLETE -->
             <div class="percent-complete">
