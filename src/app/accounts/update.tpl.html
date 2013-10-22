@@ -1,20 +1,26 @@
 <!-- CONTENT -->
 <h1>{{LS.pages.account.update.heading}}</h1>
 
-<form name="theForm" role="form" class="stx-form">
+<form name="theForm" role="form" st-submit="update()" class="stx-form" novalidate>
     <fieldset>
         <!-- USERNAME -->
         <div>
             <label for="username">Username</label>
 
-            <div><input id="username" ng-model="account.username" st-meta-validate="metadata.username"/></div>
+            <div>
+                <input id="username" name="username" required ng-model="account.username" st-meta-validate="metadata.username"/>
+                <small class="error" ng-show="theForm.checkError(theForm.username, 'required')">{{ LS.common.errors.required }}</small>
+            </div>
         </div>
 
         <!-- FIRST NAME -->
         <div ng-class="{hide: !portal.project.showSubjectName}">
             <label for="firstname">First Name</label>
 
-            <div><input id="firstName" ng-model="account.firstname" st-meta-validate="metadata.firstName"/></div>
+            <div>
+                <input id="firstName" name="firstName" required ng-model="account.firstName" st-meta-validate="metadata.firstName"/>
+                <small class="error" ng-show="theForm.checkError(theForm.firstName, 'required')">{{ LS.common.errors.required }}</small>
+            </div>
         </div>
 
         <!-- MIDDLE INITIAL -->
@@ -28,24 +34,30 @@
         <div ng-class="{hide: !portal.project.showSubjectName}">
             <label for="lastName">Last Name</label>
 
-            <div><input id="lastName" ng-model="account.lastName" st-meta-validate="metadata.lastName"/></div>
+            <div>
+                <input id="lastName" name="lastName" required ng-model="account.lastName" st-meta-validate="metadata.lastName"/>
+                <small class="error" ng-show="theForm.checkError(theForm.lastName, 'required')">{{ LS.common.errors.required }}</small>
+            </div>
         </div>
 
         <!-- EMAIL ADDRESS -->
         <div>
             <label for="emailAddress">Email Address</label>
 
-            <div><input id="emailAddress" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress"/></div>
+            <div>
+                <input id="emailAddress" name="emailAddress" required type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress"/>
+                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'required')">{{ LS.common.errors.required }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'email')">{{ LS.common.errors.emailAddressEmail }}</small>
+            </div>
         </div>
 
         <div class="buttons">
             <div>
             <!-- SAVE BUTTON -->
-            <button ng-click="update()" ng-disabled="formName.$invalid">Save</button>
+            <button class="save-btn" ng-disabled="formName.$invalid">Save</button>
 
             <!-- CANCEL BUTTON -->
-            <a href="#/accounts/view">Cancel</button>
-        </div>
+            <a href="#/accounts/view">Cancel</a>
         </div>
     </fieldset>
 </form>

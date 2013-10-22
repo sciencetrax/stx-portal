@@ -4,7 +4,7 @@
 		.controller('AccountsRegisterController',
 			['$scope', '$location', 'portalResolver', 'session', 'stateExt', 'AuthorizationContext', 'EmailRequest', 'Metadata', 'Account',
 				function ($scope, $location, portalResolver, session, stateExt, AuthorizationContext, EmailRequest, Metadata, Account) {
-					$scope.LSPage = LS.pages.login.register;
+					$scope.LSPage = LS.pages.accounts.register;
 					$scope.metadata = Metadata.get({ entityType: 'account'});
 					$scope.portal = portalResolver.data;
 					if (!session.isAuthorized()) {

@@ -21,6 +21,18 @@
 						'content': { template: '<div ui-view></div>' }
 					}
 				})
+				.state('accounts.changePassword', {
+					url: '/changePassword',
+					controller: 'AccountsChangePasswordController',
+					templateUrl: 'accounts/changePassword.tpl.html',
+					data: {
+						pageTitle: 'ChangePassword',
+						depends: [
+							'authorizationContextResolver',
+							'portalResolver'
+						]
+					}
+				})
 				.state('accounts.emailAddressVerified', {
 					url: '/emailAddressVerified',
 					views: {
@@ -94,7 +106,7 @@
 					data: {
 						pageTitle: 'Account Update',
 						depends: [
-							'authorziationContextResolver',
+							'authorizationContextResolver',
 							'portalResolver'
 						]
 					}

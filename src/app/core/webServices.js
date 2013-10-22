@@ -172,6 +172,14 @@ angular.module('stx.core.webService', [
 	.factory('Metadata', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'metadata/:entityType'));
 	}])
+	.factory('Password', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/users/:userId/password/:newPassword?oldPassword=:oldPassword'), {
+			customerId: "@customerId",
+			userId: "@userId",
+			newPassword: "@newPassword",
+			oldPassword: "@oldPassword"
+		});
+	}])
 	.factory('PasswordReset', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:portalId/passwordReset/:token?password=:password'), {
 			portalId: "@portalId",

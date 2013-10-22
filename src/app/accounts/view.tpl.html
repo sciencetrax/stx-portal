@@ -4,8 +4,8 @@
     <div class="actions">
         <button type="button" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
-            <li><a href="#/accounts/update">{{ LSPage.edit }}</a></li>
-            <li><a>{{ LSPage.changePassword }}</a></li>
+            <li><a ng-click="$state.go('accounts.update')">{{ LSPage.edit }}</a></li>
+            <li><a ng-click="$state.go('accounts.changePassword')">{{ LSPage.changePassword }}</a></li>
         </ul>
     </div>
 </header>

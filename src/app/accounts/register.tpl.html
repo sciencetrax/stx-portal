@@ -51,7 +51,7 @@
             <div>
                 <input id="emailAddress" name="emailAddress" required type="email" ng-model="account.emailAddress" st-meta-validate="metadata.emailAddress"/>
                 <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'required')">{{ LS.common.errors.required }}</small>
-                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'email')">{{ LSPage.errors.emailAddressEmail }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.emailAddress, 'email')">{{ LS.common.errors.emailAddressEmail }}</small>
             </div>
         </div>
 
@@ -63,8 +63,8 @@
                 <input id="confirmEmailAddress" name="confirmEmailAddress" required stype="email" ng-model="confirmmailAddress" st-meta-validate="metadata.emailAddress"
                        st-value-matches="emailAddress"/>
                 <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'required')">{{ LS.common.errors.required }}</small>
-                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'stValueMatches')">{{ LSPage.errors.emailAddressValueMatches }}</small>
-                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'email')">{{ LSPage.errors.emailAddressEmail }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'stValueMatches')">{{ LS.common.errors.emailAddressValueMatches }}</small>
+                <small class="error" ng-show="theForm.checkError(theForm.confirmEmailAddress, 'email')">{{ LS.common.errors.emailAddressEmail }}</small>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
             <div>
                 <input id="confirmPassword" name="confirmPassword" required type="password" ng-model="confirmPassword" st-meta-validate="metadata.password" st-value-matches="password"/>
                 <small class="error" ng-show="theForm.checkError(theForm.confirmPassword, 'required')">{{ LS.common.errors.required }}</small>
-                <small class="error" ng-show="theForm.confirmPassword.$error.stValueMatches">{{ LSPage.errors.confirmPasswordValueMatches }}</small>
+                <small class="error" ng-show="theForm.confirmPassword.$error.stValueMatches">{{ LS.common.errors.confirmPasswordValueMatches }}</small>
             </div>
         </div>
 

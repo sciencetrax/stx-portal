@@ -15,7 +15,12 @@
 
 				var remainingTime = format.replace('hh', hours);
 				remainingTime = remainingTime.replace('mm', minutes);
-				remainingTime = remainingTime.replace('ss', seconds);
+				if (minutes > 5) {
+					remainingTime = remainingTime.replace(':ss', '');
+					remainingTime += " min.";
+				} else {
+					remainingTime = remainingTime.replace('ss', seconds);
+				}
 				if (remainingTime.startsWith("0:")) {
 					remainingTime = remainingTime.substring(2);
 				}

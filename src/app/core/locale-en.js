@@ -3,21 +3,25 @@
 
 	common: {
 		errors: {
-			required: "Required"
+			required: "Required",
+			confirmPasswordValueMatches: "Does not match password.",
+			emailAddressEmail: "Invalid email address.",
+			emailAddressValueMatches: "Does not match Email Address."
 		},
 		_new: "New",
 		actions: "Actions",
 		cancel: "Cancel",
-//		loading: "Loading...",
 		logASubjectIn: "Log a subject in",
 		login: "Login",
+		no: "No",
 		renew: "Renew",
 		resendVerificationEmail: "Resend Email",
 		returnToLoginPage: "Return To Login Page",
 		save: "Save",
 		sessionExpirationWarning: "Your session is about to expire.  Click the renew button below to renew.",
 		submit: "Submit",
-		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address."
+		verificationEmailSent: "An email has been sent.  If you do not receive the email shortly, please check your SPAM folder.  Please click the link in the email to verify your address.",
+		yes: "Yes"
 	},
 
 	errorMessages: {
@@ -25,11 +29,13 @@
 		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		EnrollmentFull: "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		EnrollmentIntervalNotConfigured: "The enrollment interval has not been setup",
+		InvalidPassword: "Invalid password.",
 		InvalidUsernameOrPassword: "Invalid username or password.",
 		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
+		PasswordCannotReuse: "That password cannot be reused yet.",
 		PasswordExpired: "Your password has expired.",
 		PasswordNotDifferent: "The new password must be different from the old password.",
-		RemainigSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
+		RemainingSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
 		RequiredFieldMissing: "A required field was not specified.",
 		UsernameExist: "Please enter a different username.  That username is taken."
 	},
@@ -38,12 +44,30 @@
 	},
 	pages: {
 		accounts: {
+			changePassword: {
+				heading: "Change Password",
+				confirmPassword: "Confirm Password",
+				newPassword: "New Password",
+				password: "Password"
+			},
 			emailAddressVerified: {
 				heading: "Email Address Verified",
 				message: "Your email address has been verified."
 			},
 			enroll: {
 				heading: "Enroll"
+			},
+			register: {
+				heading: "Register",
+				confirmEmailAddress: "Confirm Email Address",
+				confirmPassword: "Confirm Password",
+				emailAddress: "Email Address",
+				firstName: "First Name",
+				lastName: "Last Name",
+				middleInitial: "Middle Initial",
+				password: "Password",
+				signUp: "Sign Up",
+				username: "Username"
 			},
 			resetPassword: {
 				heading: "Reset Password",
@@ -124,23 +148,6 @@
 				password: "Password",
 				register: "Sign up",
 				username: "Username"
-			},
-			register: {
-				heading: "Register",
-				confirmEmailAddress: "Confirm Email Address",
-				confirmPassword: "Confirm Password",
-				emailAddress: "Email Address",
-				firstName: "First Name",
-				lastName: "Last Name",
-				middleInitial: "Middle Initial",
-				password: "Password",
-				signUp: "Sign Up",
-				username: "Username",
-				errors: {
-					confirmPasswordValueMatches: "Does not match password.",
-					emailAddressEmail: "Invalid email address.",
-					emailAddressValueMatches: "Does not match Email Address."
-				}
 			}
 		},
 		reports: {

@@ -1,6 +1,32 @@
 <!--<div ng-include src="'common/loading.tpl.html'"/>-->
 
-<div>
+
+<section class="col-sm-6">
+    <ul class="attribute-table">
+        <li>
+            <div>{{ "Due" }}</div>
+            <div>{{ encounter.dueDate | moment:'fromNow' }}</div>
+        </li>
+        <li>
+            <div>{{ "Created" }}</div>
+            <div>{{ encounter.createDate | moment:'format':"LL" }}</div>
+        </li>
+        <li>
+            <div>{{ "Created" }}</div>
+            <div>{{ encounter.createDate | moment:'calendar' }}</div>
+        </li>
+        <li>
+            <div>{{ "Complete" }}</div>
+            <div>{{ encounter.percentComplete * 100 | number:1 }}%</div>
+        </li>
+        <li>
+            <div>{{ "Read Only" }}</div>
+            <div>{{ !encounter.editable | yesNo }}</div>
+        </li>
+    </ul>
+</section>
+
+<div class="col-sm-6">
     <!-- VARIABLE PANEL SCRIPT -->
     <div id="variable-panel-code"></div>
 

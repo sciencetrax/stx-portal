@@ -1,15 +1,3 @@
-.error {
-    display: block;
-    color: darken(@brand-danger, 15%) !important;
-    text-align: right;
-    position: relative;
-}
-
-//
-//input {
-////  padding-left: 40px;
-//}
-
 /*
 .ng-dirty.ng-valid {
   background: lighten(@brand-success, 40%) !important;
@@ -37,7 +25,6 @@ input.ng-dirty.ng-invalid {
     }
 
     // CONTROLS
-    a,
     button,
     input {
         .form-control;
@@ -63,14 +50,7 @@ input.ng-dirty.ng-invalid {
     // website: http://www.lukew.com/ff/entry.asp?571
     div.buttons a {
         .btn;
-        border: none !important;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-        color: @link-color;
-        &:hover {
-            text-decoration: underline;
-        }
+        .btn-link;
     }
     div.buttons button {
         .btn;
@@ -80,14 +60,8 @@ input.ng-dirty.ng-invalid {
     div.buttons a,
     div.buttons button {
         @media (min-width: @screen-sm) {
-            margin-left: auto;
-            margin-right: auto;
             width: 300px;
         }
-    }
-
-    div.buttons + div.buttons {
-        //    margin-bottom: (@grid-gutter-width / 2);
     }
 
     // Put space between buttons next to each other
@@ -184,5 +158,30 @@ input.ng-dirty.ng-invalid {
     .password-strength-strong {
         background: @brand-success;
     }
+}
+
+// Draws the form with the input fields that do not stretch across the entire page.
+.stx-form.compact {
+    label {
+        .make-lg-column(5);
+    }
+    & > div > div,
+    & > fieldset > div > div {
+        .make-sm-column(5);
+        .make-lg-column(3);
+    }
+    & > div.buttons > div,
+    & > fieldset > div.buttons > div,
+    & > fieldset .button > div > div {
+        .make-sm-column(12);
+        .make-lg-column(12);
+    }
+}
+
+.error {
+    display: block;
+    color: darken(@brand-danger, 15%) !important;
+    text-align: right;
+    position: relative;
 }
 

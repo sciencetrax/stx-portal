@@ -30,6 +30,7 @@
         <!-- SYSTEM MENU -->
         <ul class="nav navbar-nav navbar-right">
             <!--<li><div class="navbar-heading hidden-xs">user: {{ authorizationContext.username }}</div></li>-->
+            <li class="hidden-xs"><a>Session: {{ $root.session.remainingSeconds | timeInterval }}</a></li>
             <li><a href="#/login">Logout</a></li>
         </ul>
     </div>
