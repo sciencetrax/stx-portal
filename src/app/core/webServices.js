@@ -194,7 +194,22 @@ angular.module('stx.core.webService', [
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
 	}])
 	.factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'));
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/intervals/:intervalId/scheduledencounters/:id'), {
+			customerId: '@customerId',
+			projectId: '@projectId',
+			siteId: '@siteId',
+			subjectId: '@subjectId',
+			intervalId: '@intervalId',
+			id: '@id'
+		});
+	}])
+	.factory('ScheduledEncounterList', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'), {
+			customerId: '@customerId',
+			projectId: '@projectId',
+			siteId: '@siteId',
+			intervalId: '@intervalId'
+		});
 	}])
 	.factory('Session', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'session/:id'), {

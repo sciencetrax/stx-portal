@@ -1,7 +1,9 @@
 <!-- CONTENT -->
-<h1>{{LS.pages.account.update.heading}}</h1>
+<header class="noactions">
+    <h1>{{LSPage.heading}}</h1>
+</header>
 
-<form name="theForm" role="form" st-submit="update()" class="stx-form" novalidate>
+<form name="theForm" role="form" st-submit="update()" class="stx-form compact2" novalidate>
     <fieldset>
         <!-- USERNAME -->
         <div>
@@ -53,11 +55,11 @@
 
         <div class="buttons">
             <div>
-            <!-- SAVE BUTTON -->
-            <button class="save-btn" ng-disabled="formName.$invalid">Save</button>
+                <!-- SAVE BUTTON -->
+                <button class="save-btn" ng-disabled="formName.$invalid">Save</button>
 
-            <!-- CANCEL BUTTON -->
-            <a href="#/accounts/view">Cancel</a>
-        </div>
+                <!-- CANCEL BUTTON -->
+                <a href="#/accounts/view">Cancel</a>
+            </div>
     </fieldset>
 </form>
