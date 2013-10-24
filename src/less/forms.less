@@ -26,7 +26,7 @@ input.ng-dirty.ng-invalid {
 
     // CONTROLS
     button,
-    input {
+    input:not([type='radio']) {
         .form-control;
     }
 
@@ -106,9 +106,7 @@ input.ng-dirty.ng-invalid {
     }
 
     [required] {
-        border-width: 3px;
-        border-coler: darken(@input-border, 80%);
-        .placeholder(darken(@input-border, 50%));
+        .required-input();
     }
     .remaining-chars-value.negative {
         color: lighten(@brand-danger, 10%);

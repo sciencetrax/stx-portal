@@ -31,6 +31,7 @@
             WebServiceConfig = _WebServiceConfig_;
             controller = $controller(controllerName, { $scope: $scope });
             $httpBackend.when('GET', '/StudyTrax/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
+            $httpBackend.when('GET', '/StudyTrax/api/authorizationcontext').respond();
             $rootScope.$apply();
         }));
 

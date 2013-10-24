@@ -29,7 +29,7 @@
                 }
             };
             $httpBackend.when('GET', '/api/portals/' + PORTAL_CODE + "?includeProject=true").respond({ name: "TestPortal" });
-            $httpBackend.when('GET', '/api/customers/100/projects/300/sites/400/subjects/200/scheduledencounters').respond(HttpStatusCodes.ok, [
+            $httpBackend.when('GET', '/api/customers/100/projects/300/sites/400/subjects/200/intervals/scheduledencounters').respond(HttpStatusCodes.ok, [
                 { name: 'Baseline' },
                 { name: 'Month 1' },
                 { name: 'Month 2' },

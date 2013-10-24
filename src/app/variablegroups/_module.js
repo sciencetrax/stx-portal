@@ -24,7 +24,7 @@
                     controller: 'VariableGroupUpdate',
                     templateUrl: 'variablegroups/update.tpl.html',
                     data: {
-						navigation: 'ignore',
+						history: 'exclude',
 						pageTitle: 'Variable Group Update'
 					}
                 })

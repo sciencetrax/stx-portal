@@ -97,6 +97,7 @@ angular.module('stx', [
 				dependencyResolver.onStateChangeStart(event, toState, toParams, fromState, fromParams);
 			});
 			$scope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+				stateExt.onStateChangeSuccess(event, toState, toParams, fromState, fromParams);
 				if (angular.isDefined(toState.data) && angular.isDefined(toState.data.pageTitle)) {
 					$scope.pageTitle = toState.data.pageTitle + ' | ' + LS.appName;
 				}
@@ -106,6 +107,7 @@ angular.module('stx', [
 			$scope.$root.loaded = true;
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
+			$scope.stateExt = stateExt;
 			$scope.LS = LS;
 
 			$scope.$root.$on("sessionExpirationWarning", function() {
@@ -116,6 +118,9 @@ angular.module('stx', [
 				$('#sessionExpirationDialog').modal('hide');
 				$location.path("/login");
 			});
+			$scope.$root.back = function(state, params) {
+				$scope.stateExt.back(state, params);
+			};
 		}
 	])
 ;

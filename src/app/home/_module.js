@@ -10,7 +10,7 @@
                     abstract: true,
                     url: '/home',
 					data: {
-						secure: true,
+						history: 'reset',
 						depends: [
 							'authorizationContextResolver',
 							'portalResolver'

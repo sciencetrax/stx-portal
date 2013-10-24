@@ -1,13 +1,11 @@
 <!-- CONTENT -->
 <div class="stx-form">
-    <div class="container">
-        <div class="DataEntryPanelHolder"></div>
-    </div>
+    <div class="DataEntryPanelHolder"></div>
 
     <div class="buttons">
         <div>
             <button class="save-btn" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
-            <a back-button>{{LS.pages.variableGroups.update.cancel}}</a>
+            <a ng-click="back('home.index.summary')">{{LS.pages.variableGroups.update.cancel}}</a>
         </div>
     </div>
 </div>

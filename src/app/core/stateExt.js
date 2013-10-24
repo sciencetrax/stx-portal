@@ -7,6 +7,7 @@
 		$location: null,
 		$state: null,
 		session: null,
+		history: [],
 
 		initialize: function ($cookieStore, $http, $injector, $location, $state, authorizationContextResolver) {
 			this.$injector = $injector;
@@ -26,6 +27,19 @@
 			}
 		},
 
+		back: function (state, params) {
+			if (this.history.length < 1) {
+				if (state == null) {
+					this.$location.path('/');
+				} else {
+					this.$state.go(state, params);
+				}
+				return;
+			}
+			var to = this.history.pop();
+			this.$state.go(to.state, to.params);
+		},
+
 		onStateChangeStart: function (event, toState, toParams, fromState, fromParams) {
 			if (event.defaultPrevented) {
 				return;
@@ -37,6 +51,20 @@
 				this.$location.path('/login');
 				event.preventDefault();
 			}
+		},
+
+		onStateChangeSuccess: function (event, toState, toParams, fromState, fromParams) {
+			var historyMode = fromState.data.history;
+			if (historyMode == 'exclude') {
+				return;
+			}
+			if (historyMode == 'reset') {
+				this.history = [];
+			}
+			this.history.push({
+				state: fromState,
+				params: fromParams
+			});
 		}
 	});
 

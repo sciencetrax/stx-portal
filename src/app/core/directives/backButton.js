@@ -5,7 +5,7 @@
 
 			link: function (scope, element, attrs) {
 				element.bind('click', function () {
-					$window.history.back();
+					scope.back();
 				});
 			}
 		};

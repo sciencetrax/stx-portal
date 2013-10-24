@@ -2,67 +2,109 @@
     .make-sm-column(12);
 }
 
+.dataEntryPanelWrapper {
+    .container-fixed();
+}
+
 .DataEntryPanel {
     background: inherit !important;
     border: none !important;
 
-    input[type="text"],
-    input[type="password"],
-    input[type="datetime"],
-    input[type="datetime-local"],
-    input[type="date"],
-    input[type="month"],
-    input[type="time"],
-    input[type="week"],
-    input[type="number"],
-    input[type="email"],
-    input[type="url"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="color"] {
-        //height: 1.25em !important;
-        border: 1px solid #CCCCCC;
-        border-radius: 4px 4px 4px 4px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-        font-size: 14px;
-        height: 34px !important;
-        line-height: 1.42857;
-        padding: 6px 12px;
-        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-        vertical-align: middle;
-        width: 100%;
-    }
-    select {
-        //height: 1.7em;
-    }
-    .AnswerPanel label {
-        font-weight: normal;
-    }
-    .AnswerPanel input {
-        //    background-color: #FFFFFF;
-        //    border: 1px solid #CCCCCC;
-        //    border-radius: 4px 4px 4px 4px;
-        //    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-        //    color: #555555;
-        //    display: block;
-        //    font-size: 14px;
-        //    height: 34px !important;
-        //    line-height: 1.42857;
-        //    padding: 6px 12px;
-        //    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-        //    vertical-align: middle;
-        //    width: 100%;
+    .AnswerPanel {
+        label {
+            font-weight: normal;
+        }
+        input:not([type='radio']) {
+            .form-control;
+            height: @input-height-base !important;
+        }
+        span {
+            color: darken(@brand-danger, 15%) !important;
+        }
+        .RadioButtonList {
+            height: 100%;
+
+            .RadioButton {
+                display: inline;
+                float: inherit;
+                height: @input-height-base !important;
+                input {
+                    //            .form-control;
+                    //            margin-top: .9em;
+                    //            margin: .3em !important;
+                }
+                .RadioButtonLabel {
+                    float: inherit;
+                    margin: inherit !important;
+                    label {
+                        float: inherit;
+                        margin: inherit !important;
+                        padding: inherit !important;
+                        padding-left: (@grid-gutter-width / 2) !important;
+                        width: inherit;
+                        display: inline;
+                        //            margin-bottom: 0;
+                        //            font-weight: normal;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .HorizontalRadioButtonList .RadioButton {
+                //        .make-sm-column(2);
+            }
+        }
     }
     .PromptPanel {
+        margin-left: 6px;
         text-align: justify;
+    }
+    .Required {
+        input:not([type='radio']) {
+            .required-input();
+        }
+    }
+    .RequiredPanel {
+        display: none;
     }
     .HorizontalRadioButtonList .RadioButton {
         white-space: nowrap;
     }
-    .RadioButton input {
-        margin: .3em !important;
-    }
-    .RadioButton label {
-        line-height: 1.25em;
+
+    .bs-enhanced {
+        .make-sm-column-offset(2);
+        .make-sm-column(8);
+
+        .ClearBoth,
+        .IndentPanel {
+            display: none !important;
+        }
+
+        .VariablePanel {
+            .row;
+        }
+        .VariablePanelFirstContainer {
+            .make-sm-column(6);
+        }
+        .VariablePanelSecondContainer {
+            .make-sm-column(6);
+        }
+        .AnswerPanel {
+            width: 100% !important;
+            & > div {
+                width: 100% !important;
+            }
+            input:not([type='radio']) {
+                width: 100% !important;
+            }
+        }
+        .PromptPanel {
+            .form-control;
+            .make-sm-column(6);
+            .box-shadow(none);
+            border: none;
+            //            height: 100%;
+            text-align: right;
+            width: 100% !important;
+        }
     }
 }

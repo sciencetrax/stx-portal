@@ -10,6 +10,7 @@
 		},
 		_new: "New",
 		actions: "Actions",
+		back: "Back",
 		cancel: "Cancel",
 		logASubjectIn: "Log a subject in",
 		login: "Login",

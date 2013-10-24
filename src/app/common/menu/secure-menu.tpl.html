@@ -13,7 +13,7 @@
 
         <!-- BACK BUTTON -->
         <span ng-hide="$state.current.data.isHome">
-            <a href="#/home" class="navbar-btn btn visible-xs-inline-block">Home</a>
+            <a ng-click="back()" class="navbar-btn btn visible-xs-inline-block">{{ LS.common.back }}</a>
         </span>
 
         <!-- USERNAME -->

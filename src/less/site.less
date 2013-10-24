@@ -118,6 +118,7 @@ body {
 }
 
 @import 'bs-fixes.less';
+@import 'mixins.less';
 @import 'page.less';
 @import 'forms.less';
 @import 'page-specific.less';
@@ -163,14 +164,6 @@ body {
             color: black;
         }
     }
-    .compact .name {
-        .make-sm-column(8);
-        .make-md-column(9);
-    }
-    .compact .percent-complete {
-        .make-sm-column(4);
-        .make-md-column(3);
-    }
 
     // Encounter fields
     .encounter {
@@ -191,6 +184,15 @@ body {
         padding-right: 0 !important;
     }
 }
+.entity-list.compact .name {
+    .make-sm-column(8);
+    .make-md-column(9);
+}
+.entity-list.compact .percent-complete {
+    .make-sm-column(4);
+    .make-md-column(3);
+}
+
 
 .entity-list .encounter .name {
     .make-sm-column(6);

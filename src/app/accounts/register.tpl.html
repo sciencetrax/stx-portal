@@ -95,7 +95,7 @@
                 <button type="submit" class="sign-up-btn" ng-disableds="theForm.$invalid">{{ LSPage.signUp }}</button>
 
                 <!-- CANCEL BUTTON -->
-                <a href="#/login" class="cancel">{{ LS.common.cancel }}</a>
+                <a ng-click="back()" class="cancel">{{ LS.common.cancel }}</a>
             </div>
         </div>
     </fieldset>

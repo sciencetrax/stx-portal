@@ -104,6 +104,7 @@
 					controller: 'AccountsUpdateController',
 					templateUrl: 'accounts/update.tpl.html',
 					data: {
+						history: 'exclude',
 						pageTitle: 'Account Update',
 						depends: [
 							'authorizationContextResolver',

@@ -29,9 +29,9 @@
 </section>
 <section class="col-sm-6">
     <h1>{{ LSPage.personalInformation }}</h1>
-    <ul class="entity-list">
+    <ul class="entity-list compact">
         <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
-            <a href="#/variablegroups/update/{{item.id}}//" class="entity compact">
+            <a href="#/variablegroups/update/{{item.id}}//" class="entity">
                 <div class="name">{{item.name}}</div>
                 <div class="percent-complete">
                     <span ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</span>

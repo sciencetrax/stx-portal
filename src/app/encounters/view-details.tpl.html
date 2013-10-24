@@ -1,7 +1,7 @@
 <!--<div ng-include src="'common/loading.tpl.html'"/>-->
 
 
-<section class="col-sm-6">
+<section class="col-xs-12 col-sm-6">
     <ul class="attribute-table">
         <li>
             <div>{{ "Due" }}</div>
@@ -26,12 +26,12 @@
     </ul>
 </section>
 
-<div class="col-sm-6">
+<div class="col-xs-12 col-sm-6">
     <!-- VARIABLE PANEL SCRIPT -->
     <div id="variable-panel-code"></div>
 
     <!-- DATA ENTRY PANEL-->
-    <ul class="entity-list DataEntryPanel" ng-show="loaded">
+    <ul class="entity-list compact DataEntryPanel" ng-show="loaded">
         <!-- VARIABLE GROUP -->
         <li ng-repeat="item in encounter.variableGroups" variablegroupid="{{item.id}}">
             <a href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}" class="entity">
