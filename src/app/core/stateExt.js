@@ -1,6 +1,7 @@
 (function () {
 	"use strict";
 	var StateExt = Class.extend({
+		excludeNextStateChangeFromHistory: false,
 		targetParams: null,
 		targetState: null,
 		$injector: null,
@@ -28,6 +29,7 @@
 		},
 
 		back: function (state, params) {
+			this.excludeNextStateChangeFromHistory = true;
 			if (this.history.length < 1) {
 				if (state == null) {
 					this.$location.path('/');
@@ -54,8 +56,10 @@
 		},
 
 		onStateChangeSuccess: function (event, toState, toParams, fromState, fromParams) {
-			var historyMode = fromState.data.history;
-			if (historyMode == 'exclude') {
+			var historyMode = fromState.data == null ? "" : fromState.data.history;
+			if (historyMode == 'exclude'
+				|| this.excludeNextStateChangeFromHistory) {
+				this.excludeNextStateChangeFromHistory = false;
 				return;
 			}
 			if (historyMode == 'reset') {

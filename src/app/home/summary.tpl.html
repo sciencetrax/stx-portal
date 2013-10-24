@@ -14,7 +14,7 @@
 <ul class="entity-list">
     <!-- INCOMPLETE VARIABLE GROUPS -->
     <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
-        <a href="#/variablegroups/update/{{item.id}}//" class="entity">
+        <a  ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity">
             <!-- NAME -->
             <div class="name">{{ item.name }}</div>
 
@@ -27,7 +27,7 @@
 
     <!-- INCOMPLETE ENCOUNTERS -->
     <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters">
-        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}" class="entity encounter">
+        <a ng-click="$state.go('encounters.view.details', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
             <!-- NAME -->
             <div class="name">{{ item.name }}</div>
 

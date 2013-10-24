@@ -4,11 +4,7 @@
     angular.module('stx.encounters')
         .controller("EncountersViewController", ['$scope', '$stateParams', '$location', 'authorizationContextResolver', 'DataEntryForm', 'ScheduledEncounter',
             function ($scope, $stateParams, $location, authorizationContextResolver, DataEntryForm, ScheduledEncounter) {
-				var $state = $scope.$state;
 				$scope.$root.loaded = false;
-                if ($state.current.name === 'encounters.view') {
-                    $location.path('/encounters/view/{0}/{1}/details'.format($stateParams.intervalId, $stateParams.encounterId)).replace();
-                }
 
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
