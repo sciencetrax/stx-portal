@@ -14,30 +14,38 @@
                 allowAnonymousDataEntry="<%= pkg.anonymousDataEntry %>"
                 sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
             <pages>
-                <!-- CSS CONTENT -->
+                <!-- CSS -->
                 <page code="css" path="codecss" pageType="css">
                     <![CDATA[
                     <%= css %>
 					]]>
                 </page>
 
-                <!-- JS CONTENT -->
+                <!-- JS -->
                 <page code="js" path="codejs" pageType="JavaScript">
                     <![CDATA[
                     <%= js %>
 					]]>
                 </page>
 
+                <!-- INDEX -->
                 <page code="index" pageType="Login">
                     <![CDATA[
                     <%= html %>
                     ]]>
                 </page>
 
-                <page code="failedScreeningMessage" pageType="Fragment">
-                    Thank you for taking the survey. ...
+                <!-- FAILED ENROLLMENT MESSAGE -->
+                <page code="failedEnrollmentMessage" pageType="Fragment">
+                    Thank you for taking the survey. Unfortunately, you do not meet the requirements to enroll in this study.
                 </page>
 
+                <!-- ANONYMOUS SURVEY COMPLETE MESSAGE -->
+                <page code="anonymousSurveyCompleteMessage" pageType="Fragment">
+                    Thank you for taking the survey.
+                </page>
+
+                <!-- VERIFY EMAIL ADDRESS -->
                 <page code="verifyEmailAddress" pageType="VerifyEmail">
                     <![CDATA[
                         <script>
@@ -46,6 +54,7 @@
                     ]]>
                 </page>
 
+                <!-- RESET PASSWORD -->
                 <page code="resetPassword" pageType="resetPassword">
                     <![CDATA[
                         <script>

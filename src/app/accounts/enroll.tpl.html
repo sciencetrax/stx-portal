@@ -1,18 +1,9 @@
-<header class="noactions">
-    <h1 title="{{portal.name}}">{{ LSPage.heading }}</h1>
-</header>
+<div class="DataEntryPanelHolder"></div>
+
 <div class="stx-form">
-    <!-- ERROR PANEL -->
-    <div ng-include src="'common/error-panel.tpl.html'"/>
-
-    <!-- CONTENT -->
-    <span class="container">
-        <div class="DataEntryPanel"></div>
-    </span>
-
     <div class="buttons">
         <div>
-            <button ng-click="save()">{{LS.common.save}}</button>
+            <button ng-click="save()" class="save-btn">{{LS.common.save}}</button>
             <a ng-click="back()" class="cancel">{{LS.common.cancel}}</a>
         </div>
     </div>

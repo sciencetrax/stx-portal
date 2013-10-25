@@ -32,7 +32,7 @@
 			this.excludeNextStateChangeFromHistory = true;
 			if (this.history.length < 1) {
 				if (state == null) {
-					this.$location.path('/');
+					this.$injector.get('$window').history.back();
 				} else {
 					this.$state.go(state, params);
 				}
@@ -57,7 +57,8 @@
 
 		onStateChangeSuccess: function (event, toState, toParams, fromState, fromParams) {
 			var historyMode = fromState.data == null ? "" : fromState.data.history;
-			if (historyMode == 'exclude'
+			if (fromState.abstract
+				|| historyMode == 'exclude'
 				|| this.excludeNextStateChangeFromHistory) {
 				this.excludeNextStateChangeFromHistory = false;
 				return;

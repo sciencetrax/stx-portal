@@ -9,14 +9,18 @@
 .DataEntryPanel {
     background: inherit !important;
     border: none !important;
+    font-size: 13.33px;
 
+    .DateWrapper img {
+        top: -2px;
+    }
     .AnswerPanel {
+        input[type=text] {
+            border: solid 1px DarkGray;
+            height: 20px !important;
+        }
         label {
             font-weight: normal;
-        }
-        input:not([type='radio']) {
-            .form-control;
-            height: @input-height-base !important;
         }
         span {
             color: darken(@brand-danger, 15%) !important;
@@ -25,24 +29,24 @@
             height: 100%;
 
             .RadioButton {
-                display: inline;
-                float: inherit;
-                height: @input-height-base !important;
+//                display: inherit;
+//                float: inherit;
+//                height: @input-height-base !important;
                 input {
                     //            .form-control;
-                    //            margin-top: .9em;
+//                    margin-top: .5em;
                     //            margin: .3em !important;
                 }
                 .RadioButtonLabel {
-                    float: inherit;
-                    margin: inherit !important;
+//                    float: inherit;
+//                    margin: inherit !important;
                     label {
-                        float: inherit;
-                        margin: inherit !important;
-                        padding: inherit !important;
-                        padding-left: (@grid-gutter-width / 2) !important;
-                        width: inherit;
-                        display: inline;
+//                        float: inherit;
+//                        margin: inherit !important;
+//                        padding: inherit !important;
+//                        padding-left: (@grid-gutter-width / 2) !important;
+//                        width: inherit;
+//                        display: inline;
                         //            margin-bottom: 0;
                         //            font-weight: normal;
                         cursor: pointer;
@@ -58,53 +62,72 @@
         margin-left: 6px;
         text-align: justify;
     }
-    .Required {
-        input:not([type='radio']) {
-            .required-input();
-        }
-    }
-    .RequiredPanel {
-        display: none;
-    }
     .HorizontalRadioButtonList .RadioButton {
         white-space: nowrap;
     }
 
     .bs-enhanced {
+        .stx-form;
         .make-sm-column-offset(2);
         .make-sm-column(8);
+
+        .VariablePanel {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+//            margin: 0;
+            .VariablePanelFirstContainer {
+                .make-sm-column(6);
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .VariablePanelSecondContainer {
+                .make-sm-column(6);
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .AnswerPanel {
+                width: 100% !important;
+                input:not([type='radio']) {
+                    //            .form-control;
+                    height: @input-height-base !important;
+                }
+                & > div {
+                    width: 100% !important;
+                }
+                input:not([type='radio']) {
+                    width: 100% !important;
+                }
+            }
+            .PromptPanel {
+                .form-control;
+                .make-sm-column(6);
+                .box-shadow(none);
+                border: none;
+                //            height: 100%;
+                text-align: right;
+                width: 100% !important;
+            }
+            .AnswerPanel + .PromptPanel {
+                text-align: left;
+            }
+        }
+        //        input[type='checkbox'] {
+        //            width: inherit !important;
+        //        }
 
         .ClearBoth,
         .IndentPanel {
             display: none !important;
         }
-
-        .VariablePanel {
-            .row;
-        }
-        .VariablePanelFirstContainer {
-            .make-sm-column(6);
-        }
-        .VariablePanelSecondContainer {
-            .make-sm-column(6);
-        }
-        .AnswerPanel {
-            width: 100% !important;
-            & > div {
-                width: 100% !important;
-            }
+        .Required {
             input:not([type='radio']) {
-                width: 100% !important;
+                .required-input();
             }
         }
-        .PromptPanel {
-            .form-control;
-            .make-sm-column(6);
-            .box-shadow(none);
-            border: none;
-            //            height: 100%;
-            text-align: right;
-            width: 100% !important;
+        .RequiredPanel {
+            display: none;
         }
+
     }
 }

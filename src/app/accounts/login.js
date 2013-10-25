@@ -24,6 +24,14 @@
 					});
 				};
 				$scope.login = function () {
+					// This is a hack to fix the bug with angular where autocompleted fields (LastPass) do
+					// not cause angular to recognize model changes.
+					// https://github.com/angular/angular.js/issues/1460#issuecomment-15793081
+					$('input[ng-model]').each(function (index, item) {
+						if (angular.element(this).attr('type') !== 'checkbox' && angular.element(this).attr('type') !== 'radio') {
+							angular.element(this).controller('ngModel').$setViewValue($(this).val());
+						}
+					});
 					$('#loginBtn').button('loading');
 					emailRequest.username = $scope.authorization.username;
 					emailRequest.password = $scope.authorization.password;

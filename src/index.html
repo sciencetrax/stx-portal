@@ -66,12 +66,16 @@
 
     <div ui-view="menu"></div>
 
+    <!-- ERROR PANEL -->
+    <div class="container" ng-include src="'common/error-panel.tpl.html'"></div>
+
     <div ui-view="content" class="page"></div>
 
-    <div ng-include src="'common/loading.tpl.html'"/>
+    <div ng-include src="'common/loading.tpl.html'"></div>
 
-    <div id="failedScreening" class="hide">
-        #INCLUDE(failedScreeningMessage)
+    <div class="hide">
+        <div id="failedEnrollment" >#INCLUDE(failedEnrollmentMessage)</div>
+        <div id="anonymousSurveyCompleteMessage" >#INCLUDE(anonymousSurveyCompleteMessage)</div>
     </div>
 </body>
 </html>

@@ -105,7 +105,7 @@ body {
         .row;
         margin-left: 0;
         margin-right: 0;
-        padding: .25em;
+//        padding: .25em;
         div {
             .text-ellipsis;
 
@@ -114,7 +114,17 @@ body {
             .make-md-column(6);
             .make-lg-column(6);
         }
+        & > div {
+            padding-left: 0;
+        }
+        & > div + div {
+            padding-right: 0;
+        }
     }
+}
+
+.variable-group-list li a {
+    font-size: @font-size-base !important;
 }
 
 @import 'bs-fixes.less';
@@ -128,6 +138,7 @@ body {
 
     & > li {
         .list-group-item;
+        cursor: pointer;
         padding: 0px;
     }
 

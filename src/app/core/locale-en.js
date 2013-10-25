@@ -27,6 +27,7 @@
 
 	errorMessages: {
 		AccountLocked: "Your account has been locked.",
+		AnonymousDataEntryNotAllowed: "Anonymous data entry is not allowed.",
 		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		EnrollmentFull: "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		EnrollmentIntervalNotConfigured: "The enrollment interval has not been setup",
@@ -57,6 +58,9 @@
 			},
 			enroll: {
 				heading: "Enroll"
+			},
+			failedEnrollment: {
+				heading: "Failed Enrollment"
 			},
 			register: {
 				heading: "Register",

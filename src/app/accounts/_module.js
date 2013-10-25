@@ -51,7 +51,21 @@
 						'': {
 							controller: 'AccountsEnrollController',
 							templateUrl: 'accounts/enroll.tpl.html',
-							data: { pageTitle: 'Enroll' }
+							data: {
+								history: 'exclude',
+								pageTitle: 'Enroll'
+							}
+						}
+					}
+				})
+				.state('accounts.failedEnrollment', {
+					url: '/failedEnrollment',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsFailedEnrollmentController',
+							templateUrl: 'accounts/failedEnrollment.tpl.html',
+							data: { pageTitle: LS.pages.accounts.failedEnrollment }
 						}
 					}
 				})
