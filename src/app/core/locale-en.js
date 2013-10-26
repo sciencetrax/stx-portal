@@ -159,12 +159,6 @@
 			view: {
 				pdf: "PDF"
 			}
-		},
-		variableGroups: {
-			update: {
-				cancel: "Cancel",
-				save: "Save"
-			}
 		}
 	}
 };

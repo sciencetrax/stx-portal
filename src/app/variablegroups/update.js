@@ -32,6 +32,10 @@
 								stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
 								dataEntryPanel.html(data);
 								$(document).trigger('pageLoad');
+								if ($(".DataEntryPanel.ReadOnly").length == 1) {
+									$scope.readOnly = true;
+								}
+								$scope.ready = true;
 							});
 					});
 

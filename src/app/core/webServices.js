@@ -72,19 +72,6 @@ angular.module('stx.core.webService', [
 						}
 					);
 				},
-				enrollScript: function (customerId, projectId, siteId, intervalId) {
-					var _this = this;
-					VariablePanelScript.get({
-						customerId: customerId,
-						projectId: projectId,
-						siteId: siteId,
-						intervalId: intervalId,
-						encounterId: encounterId,
-						includeProjectVariableGroups: includeProjectVariableGroups
-					}, function (data) {
-						_this.loadScript2(data);
-					});
-				},
 				loadEnrollmentScript: function (customerId, projectId, siteId, intervalId, successCallback) {
 					var _this = this;
 					EnrollmentVariablePanelScript.get({
@@ -121,7 +108,7 @@ angular.module('stx.core.webService', [
 					dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
 					for (var index = 0; index < scriptToLoad.dependentVariables.length; index++) {
 						var variable = scriptToLoad.dependentVariables[index];
-						dataEntryPanel.append("<input type='hidden' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
+						dataEntryPanel.append("<input type='hidden' class='VariablePanel' id='vcid" + variable.variableId + "' isHiddenVariable='true' VariableGroupId='" + variable.variableGroupId + "' variableId='" + variable.variableId + "' value='" + variable.value + "' />");
 					}
 
 					var scriptDiv = $('#variable-panel-code');

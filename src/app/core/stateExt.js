@@ -52,6 +52,8 @@
 				this.targetParams = toParams;
 				this.$location.path('/login');
 				event.preventDefault();
+			} else {
+//				this.$injector.get('$rootScope').pageReady = false;
 			}
 		},
 

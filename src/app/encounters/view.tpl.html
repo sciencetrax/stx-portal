@@ -1,18 +1,20 @@
-<header class="noactions">
-    <h1>{{ encounter.name }}</h1>
-</header>
-<div class="variable-panel-scripts"></div>
+<div ng-show="pageReady">
+    <header class="noactions">
+        <h1>{{ encounter.name }}</h1>
+    </header>
+    <div class="variable-panel-scripts"></div>
 
-<div ui-view></div>
+    <div ui-view></div>
 
-<!-- FOOTER NAVBAR -->
-<div class="navbar-inverse navbar-fixed-bottom footer" ng-class="{hide: encounter.reports.length == 0}">
-    <div class="btn-group btn-group-justified">
-        <a class="btn"
-           href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/details"
-           ng-class="{active:$state.includes('encounters.view.details')}">{{ LS.pages.encounters.view.details }}</a>
-        <a class="btn"
-           href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/reports"
-           ng-class="{active:$state.includes('encounters.view.reports')}">Reports</a>
+    <!-- FOOTER NAVBAR -->
+    <div class="navbar-inverse navbar-fixed-bottom footer" ng-class="{hide: encounter.reports.length == 0}">
+        <div class="btn-group btn-group-justified">
+            <a class="btn"
+               href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/details"
+               ng-class="{active:$state.includes('encounters.view.details')}">{{ LS.pages.encounters.view.details }}</a>
+            <a class="btn"
+               href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/reports"
+               ng-class="{active:$state.includes('encounters.view.reports')}">Reports</a>
+        </div>
     </div>
 </div>

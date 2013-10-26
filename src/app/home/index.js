@@ -13,11 +13,18 @@
 				};
 
 				$scope.LSPage = LS.pages.home.index;
+				$scope.$root.pageReady = false;
 				$scope.projectVariableGroups = SubjectVariableGroupSummary.query(securityProfile,
 					function (data) {
 						$scope.incompleteSummaries = $filter('incompleteVariableGroupSummaries')(data);
+						$scope.incompleteSummaries.ready = true;
+						$scope.$root.pageReady = $scope.incompleteSummaries.ready && $scope.encounters.ready;
 					});
-				$scope.encounters = ScheduledEncounterList.query(securityProfile);
+				$scope.encounters = ScheduledEncounterList.query(securityProfile,
+					function () {
+						$scope.encounters.ready = true;
+						$scope.$root.pageReady = $scope.incompleteSummaries.ready && $scope.encounters.ready;
+					});
 			}])
 	;
 }());

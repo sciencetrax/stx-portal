@@ -1,10 +1,15 @@
-<div class="DataEntryPanelHolder"></div>
+<div ng-show="ready">
+    <div class="DataEntryPanelHolder"></div>
 
-<div class="stx-form">
-    <div class="buttons">
-        <div>
-            <button class="save-btn" ng-click="save()">{{LS.pages.variableGroups.update.save}}</button>
-            <a ng-click="back('home.index.summary')">{{LS.pages.variableGroups.update.cancel}}</a>
+    <div class="stx-form">
+        <div class="buttons">
+            <div ng-show="readOnly">
+                <button class="primary-btn" ng-click="back()">{{LS.common.back}}</button>
+            </div>
+            <div ng-hide="readOnly">
+                <button class="save-btn" ng-click="save()">{{LS.common.save}}</button>
+                <a ng-click="back('home.index.summary')">{{LS.common.cancel}}</a>
+            </div>
         </div>
     </div>
 </div>

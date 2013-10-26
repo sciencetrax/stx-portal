@@ -22,6 +22,7 @@
                     }
                 })
                 .state('encounters.view', {
+					abstract: true,
                     url: '/view/{intervalId}/{encounterId}',
                     controller: 'EncountersViewController',
                     templateUrl: 'encounters/view.tpl.html',

@@ -12,11 +12,11 @@
 
 <ul class="entity-list">
     <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true ">
-        <a href="#/encounters/view/{{item.intervalId}}/{{item.encounterId}}" class="entity encounter">
+        <a ng-click="$state.go('encounters.view.details', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
             <div class="name">{{item.name}}</div>
             <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
             <div class="percent-complete">
-                <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                <div class="{{ item.createDate == null ? 'incomplete' : item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
             </div>
         </a>
     </li>

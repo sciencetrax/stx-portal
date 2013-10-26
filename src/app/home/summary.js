@@ -19,7 +19,7 @@
 					encounter.subjectId = authorizationContext.subject.id;
 					encounter.intervalId = intervalId;
 					ScheduledEncounter.save(encounter, function(encounter) {
-						$scope.$state.go('encounters.view', {
+						$scope.$state.go('encounters.view.details', {
 							intervalId: intervalId,
 							encounterId: encounter.id
 						});

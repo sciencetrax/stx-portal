@@ -38,7 +38,7 @@ angular.module('stx')
 			});
 
 			$scope.$root.session = session;
-			$scope.$root.loaded = true;
+			$scope.$root.pageReady = true;
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
 			$scope.stateExt = stateExt;
