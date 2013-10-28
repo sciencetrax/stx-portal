@@ -1,5 +1,7 @@
 <header ng-class="{ noactions: encounterActions.length == 0 }">
+    <!-- HEADING -->
     <h1 title="{{ LSPage.heading }}">{{ LSPage.heading }}</h1>
+
     <!-- NEW ENCOUNTER BUTTON -->
     <div class="actions" ng-show="encounterActions.length > 0">
         <button type="button" data-toggle="dropdown">{{ LS.common.actions }} <span class="caret"></span></button>
@@ -10,14 +12,17 @@
         </ul>
     </div>
 </header>
+
 <section class="col-xs-12 col-sm-8">
     <ul class="entity-list">
         <h1>Incomplete</h1>
         <!-- INCOMPLETE VARIABLE GROUPS -->
         <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
-            <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity">
+            <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
+
+                <div class="due-date hidden-xs">due now</div>
 
                 <!-- PERCENT COMPLETE -->
                 <div class="percent-complete">
@@ -42,7 +47,11 @@
         </li>
     </ul>
 
-    <!-- RECENTLY COMPLETED -->
+    <!-- RECENTLY COMPLETED
+        show complete
+        order by due date
+        select top 5
+    -->
     <h1>Recently Completed</h1>
     <ul class="entity-list">
         <li ng-repeat="item in recentlyCompletedEncounters">
@@ -64,7 +73,7 @@
     <h1>Reports</h1>
     <ul class="entity-list">
         <li ng-repeat="item in reports">
-            <a class="entity"><div class="name">{{ item.name }}</div></a>
+            <a ng-click="$state.go('reports.view', { reportId: item.id })" class="entity"><div class="name">{{ item.name }}</div></a>
         </li>
     </ul>
 </section>

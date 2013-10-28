@@ -37,7 +37,9 @@
 					});
 				$scope.reports = ProjectReport.query({
 					customerId: authorizationContext.customerId,
-					projectId: subject.projects[0].projectId
+					projectId: subject.projects[0].projectId,
+					subjectId: subject.id,
+					siteId: subject.projects[0].siteId
 				});
 
 
