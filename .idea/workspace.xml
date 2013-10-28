@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.js" afterPath="$PROJECT_DIR$/src/app/home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.js" afterPath="$PROJECT_DIR$/src/app/reports/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -848,12 +844,16 @@
       <created>1382980697832</created>
       <updated>1382980697832</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Implementing new home page">
+      <created>1382983922162</created>
+      <updated>1382983922162</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="8" side_tool="false" content_ui="tabs" />
@@ -883,7 +883,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fixed bug where dependency injection was being inferred that was breaking the minification." />
     <MESSAGE value="Adding support for updating encounters" />
     <MESSAGE value="Working on the login page" />
     <MESSAGE value="Adding e2e tests" />
@@ -908,7 +907,8 @@
     <MESSAGE value="Implemented the back feature" />
     <MESSAGE value="Cleaning up code" />
     <MESSAGE value="Finishing up screening process screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishing up screening process screens" />
+    <MESSAGE value="Implementing new home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing new home page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
