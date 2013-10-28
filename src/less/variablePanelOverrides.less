@@ -6,6 +6,23 @@
     .container-fixed();
 }
 
+.validation-summary-errors {
+    display: block;
+    background: lighten(@brand-danger, 35%) !important;
+    border-color: lighten(@brand-danger, 15%) !important;
+    padding: (@grid-gutter-width / 2);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: block;
+            color: darken(@brand-danger, 15%) !important;
+            list-style: none;
+            }
+    }
+}
+
 .DataEntryPanel {
     background: inherit !important;
     border: none !important;
@@ -29,24 +46,24 @@
             height: 100%;
 
             .RadioButton {
-//                display: inherit;
-//                float: inherit;
-//                height: @input-height-base !important;
+                //                display: inherit;
+                //                float: inherit;
+                //                height: @input-height-base !important;
                 input {
                     //            .form-control;
-//                    margin-top: .5em;
+                    //                    margin-top: .5em;
                     //            margin: .3em !important;
                 }
                 .RadioButtonLabel {
-//                    float: inherit;
-//                    margin: inherit !important;
+                    //                    float: inherit;
+                    //                    margin: inherit !important;
                     label {
-//                        float: inherit;
-//                        margin: inherit !important;
-//                        padding: inherit !important;
-//                        padding-left: (@grid-gutter-width / 2) !important;
-//                        width: inherit;
-//                        display: inline;
+                        //                        float: inherit;
+                        //                        margin: inherit !important;
+                        //                        padding: inherit !important;
+                        //                        padding-left: (@grid-gutter-width / 2) !important;
+                        //                        width: inherit;
+                        //                        display: inline;
                         //            margin-bottom: 0;
                         //            font-weight: normal;
                         cursor: pointer;
@@ -75,7 +92,7 @@
             padding-left: 0;
             padding-right: 0;
             width: 100%;
-//            margin: 0;
+            //            margin: 0;
             .VariablePanelFirstContainer {
                 .make-sm-column(6);
                 padding-left: 0;
@@ -130,4 +147,7 @@
         }
 
     }
+}
+.entity-list.DataEntryPanel {
+    font-size: inherit;
 }

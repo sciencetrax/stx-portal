@@ -13,9 +13,9 @@
     </div>
 </header>
 
-<section class="col-xs-12 col-sm-8">
+<section class="col-xs-12" ng-class="{'col-sm-8': reports.length > 0}">
     <ul class="entity-list">
-        <h1>Incomplete</h1>
+        <h1>{{ LSPage.incomplete }}</h1>
         <!-- INCOMPLETE VARIABLE GROUPS -->
         <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
             <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity encounter">
@@ -32,7 +32,7 @@
         </li>
 
         <!-- INCOMPLETE ENCOUNTERS -->
-        <li ng-repeat="item in incompleteEncounters | orderBy:'dueDate':true">
+        <li ng-repeat="item in incompleteEncounters | readOnlyEncounter:false | orderBy:'dueDate':true">
             <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
@@ -52,28 +52,30 @@
         order by due date
         select top 5
     -->
-    <h1>Recently Completed</h1>
+    <h1>{{ LSPage.recentlyCompleted }}</h1>
     <ul class="entity-list">
-        <li ng-repeat="item in recentlyCompletedEncounters">
+        <li ng-repeat="item in recentlyCompletedEncounters | top: 5 | orderBy:'encounterDate':true">
             <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
 
-                <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
+                <div class="due-date hidden-xs">{{ item.encounterDate | moment:'format':'LL' }}</div>
 
-                <!-- PERCENT COMPLETE -->
-                <div class="percent-complete">
-                    <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
-                </div>
+                <!--&lt;!&ndash; PERCENT COMPLETE &ndash;&gt;-->
+                <!--<div class="percent-complete">-->
+                <!--<div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>-->
+                <!--</div>-->
             </a>
         </li>
     </ul>
 </section>
-<section class="col-xs-12 col-sm-4">
-    <h1>Reports</h1>
+<section class="col-xs-12 col-sm-4" ng-show="reports.length > 0">
+    <h1>{{ LSPage.reports }}</h1>
     <ul class="entity-list">
         <li ng-repeat="item in reports">
-            <a ng-click="$state.go('reports.view', { reportId: item.id })" class="entity"><div class="name">{{ item.name }}</div></a>
+            <a ng-click="$state.go('reports.view', { reportId: item.id })" class="entity">
+                <div class="name">{{ item.name }}</div>
+            </a>
         </li>
     </ul>
 </section>

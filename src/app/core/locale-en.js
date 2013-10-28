@@ -122,7 +122,10 @@
 		},
 		home: {
 			index: {
-				heading: "Home"
+				heading: "Home",
+				incomplete: "Incomplete",
+				recentlyCompleted: "Recently Completed",
+				reports: "Reports"
 			}
 		},
 		login: {

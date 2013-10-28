@@ -1,20 +1,25 @@
 (function () {
 	"use strict";
 	angular.module('stx.home')
-		.filter('recentlyCompletedEncounters', function () {
+		.filter('recentlyCompletedEncounters', ['$filter',
+			function ($filter) {
 			return function (array) {
 				var result = [];
+				var incompleteFilter = $filter('incomplete');
+				var readOnlyEncounter = $filter('readOnlyEncounter');
+
 				for (var index = 0; index < array.length; index++) {
 					var item = array[index];
-					if (item.percentComplete > 0.9999) {
+					if (!incompleteFilter(item)
+						|| readOnlyEncounter(item)) {
 						result.push(item);
 					}
 				}
 				return result;
 			};
-		})
-		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
-			function ($scope, $filter, authorizationContextResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounterList) {
+		}])
+		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
+			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounterList) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -42,11 +47,14 @@
 					siteId: subject.projects[0].siteId
 				});
 
-
+				$scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;
+				$scope.incompleteEncounters =[];
+				$scope.recentlyCompletedEncounters =[];
 				ScheduledEncounterList.query(securityProfile,
 					function (encounters) {
 						encounters = $filter('orderBy')(encounters, 'dueDate', true);
 						$scope.incompleteEncounters = $filter('incomplete')(encounters);
+						$scope.incompleteEncounters = $filter('incomplete')($scope.incompleteEncounters);
 						$scope.recentlyCompletedEncounters = $filter('recentlyCompletedEncounters')(encounters);
 
 						encountersReady = true;
