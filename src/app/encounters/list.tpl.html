@@ -4,15 +4,15 @@
     <div class="actions">
         <button type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-filter"></span><span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
-            <li ng-class="{active: encounterFilter == 'all'}"><a ng-click="setFilter('all')">All</a></li>
-            <li ng-class="{active: encounterFilter == 'incomplete'}"><a ng-click="setFilter('incomplete')">Incomplete</a></li>
+            <li ng-class="{active: encounterFilter == 'all'}"><a ng-click="setFilter('all')">{{ LSPage.all }}</a></li>
+            <li ng-class="{active: encounterFilter == 'incomplete'}"><a ng-click="setFilter('incomplete')">{{ LSPage.incomplete }}</a></li>
         </ul>
     </div>
 </header>
 
 <ul class="entity-list">
     <li ng-repeat="item in encounters | filter:byCompletness | orderBy:'dueDate':true ">
-        <a ng-click="$state.go('encounters.view.details', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
+        <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
             <div class="name">{{item.name}}</div>
             <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
             <div class="percent-complete">

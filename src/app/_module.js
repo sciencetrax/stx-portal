@@ -26,12 +26,12 @@ var StudyTraxConfig = {
 				$httpProvider.interceptors.push('errorInterceptor');
 				$urlRouterProvider
 					.when('', '/')
-					.when('/', '/home/index/summary')
+					.when('/', '/home/index')
 					.when('/about', '/about/index')
 					.when('/accounts', '/accounts/view')
 					.when('/enroll', '/accounts/enroll')
 					.when('/forgot', '/accounts/forgot')
-					.when('/home', '/home/index/summary')
+					.when('/home', '/home/index')
 					.when('/login', '/accounts/login')
 					.when('/register', '/accounts/register')
 					.when('/subjectLogin', '/login/subjectLogin')

@@ -1,4 +1,4 @@
-﻿<header ng-class="{ noactions: encounterActions.length == 0 }" >
+﻿<header ng-class="{ noactions: encounterActions.length == 0 }">
     <h1 title="{{ LSPage.heading }}">{{ LSPage.heading }}</h1>
     <!-- NEW ENCOUNTER BUTTON -->
     <div class="actions" ng-show="encounterActions.length > 0">
@@ -10,33 +10,67 @@
         </ul>
     </div>
 </header>
+<section class="col-xs-12 col-sm-8">
+    <ul class="entity-list">
+        <h1>Incomplete</h1>
+        <!-- INCOMPLETE VARIABLE GROUPS -->
+        <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
+            <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity">
+                <!-- NAME -->
+                <div class="name">{{ item.name }}</div>
 
-<ul class="entity-list">
-    <!-- INCOMPLETE VARIABLE GROUPS -->
-    <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
-        <a  ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity">
-            <!-- NAME -->
-            <div class="name">{{ item.name }}</div>
+                <!-- PERCENT COMPLETE -->
+                <div class="percent-complete">
+                    <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
+                </div>
+            </a>
+        </li>
 
-            <!-- PERCENT COMPLETE -->
-            <div class="percent-complete">
-                <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
-            </div>
-        </a>
-    </li>
+        <!-- INCOMPLETE ENCOUNTERS -->
+        <li ng-repeat="item in incompleteEncounters | orderBy:'dueDate':true">
+            <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
+                <!-- NAME -->
+                <div class="name">{{ item.name }}</div>
 
-    <!-- INCOMPLETE ENCOUNTERS -->
-    <li ng-repeat="item in encounters | orderBy:'dueDate':true | filter: incompleteSubjectEncounters">
-        <a ng-click="$state.go('encounters.view.details', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
-            <!-- NAME -->
-            <div class="name">{{ item.name }}</div>
+                <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
 
-            <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
+                <!-- PERCENT COMPLETE -->
+                <div class="percent-complete">
+                    <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <h1>Recent Completed</h1>
+    <ul class="entity-list">
+        <li ng-repeat="item in incompleteEncounters">
+            <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
+                <!-- NAME -->
+                <div class="name">{{ item.name }}</div>
 
-            <!-- PERCENT COMPLETE -->
-            <div class="percent-complete">
-                <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
-            </div>
-        </a>
-    </li>
-</ul>
+                <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
+
+                <!-- PERCENT COMPLETE -->
+                <div class="percent-complete">
+                    <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="col-xs-12 col-sm-4">
+    <h1>Reports</h1>
+    <ul class="entity-list">
+        <li>
+            <a class="entity">
+                <div class="name">Baseline</div>
+            </a>
+            <a class="entity">
+                <div class="name">Baseline</div>
+            </a>
+            <a class="entity">
+                <div class="name">Baseline</div>
+            </a>
+        </li>
+    </ul>
+</section>

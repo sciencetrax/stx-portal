@@ -21,7 +21,7 @@
 					$scope.encounter = data[0];
 					$scope.encounter.ready = true;
 					$scope.$broadcast("encounterReady");
-/*
+
 
 					DataEntryForm.loadScript(
 						authorizationContext.customerId,
@@ -32,13 +32,10 @@
 						$stateParams.encounterId,
 						false, function () {
 						});
-					/**/
 				});
 
-//				$scope.encounterFilter = 'all';
-            }])
-        .controller("EncountersReportController", [
-            function () {
+				$scope.LSPage = LS.pages.encounters.view;
+				$scope.encounterFilter = 'all';
             }])
     ;
 }());

@@ -21,8 +21,16 @@
                         'content': { template: '<div ui-view></div>' }
                     }
                 })
+                .state('encounters.list', {
+                    url: '/list',
+                    controller: 'EncountersListController',
+                    templateUrl: 'encounters/list.tpl.html',
+                    data: {
+						navigation: 'updateTop',
+						pageTitle: 'History'
+					}
+                })
                 .state('encounters.view', {
-					abstract: true,
                     url: '/view/{intervalId}/{encounterId}',
                     controller: 'EncountersViewController',
                     templateUrl: 'encounters/view.tpl.html',
@@ -30,16 +38,6 @@
 						navigation: 'updateTop',
 						pageTitle: 'Encounter'
 					}
-                })
-                .state('encounters.view.details', {
-                    url: '/details',
-					controller: 'EncountersViewDetailsController',
-                    templateUrl: 'encounters/view-details.tpl.html'
-                })
-                .state('encounters.view.reports', {
-                    url: '/reports',
-					controller: 'EncountersReportController',
-                    templateUrl: 'encounters/view-reports.tpl.html'
                 })
             ;
         }])

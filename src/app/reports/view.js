@@ -1,8 +1,8 @@
 (function () {
 	"use strict";
 	angular.module('stx.reports')
-		.controller("ReportsViewController", ['$scope', '$stateParams', 'stateExt', 'authorizationContextResolver', 'Account', 'EncounterReport', 'WebServiceConfig',
-			function ($scope, $stateParams, stateExt, authorizationContextResolver, Account, EncounterReport, WebServiceConfig) {
+		.controller("ReportsViewController", ['$scope', '$stateParams', 'session', 'authorizationContextResolver', 'Account', 'EncounterReport', 'WebServiceConfig',
+			function ($scope, $stateParams, session, authorizationContextResolver, Account, EncounterReport, WebServiceConfig) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -27,7 +27,7 @@
 						securityProfile.encounterId,
 						securityProfile.reportId
 					);
-				$scope.pdfUrl = stateExt.authorizeUrl(pdfUrl);
+				$scope.pdfUrl = session.authorizeUrl(pdfUrl);
 			}])
 	;
 }());

@@ -108,23 +108,21 @@
 			}
 		},
 		encounters: {
+			list: {
+				heading: "Encounters",
+
+				all: "All",
+				incomplete: "Incomplete"
+			},
 			view: {
-				details: "Details",
+				attributes: "Attributes",
+				forms: "Forms",
 				reports: "Reports"
 			}
 		},
 		home: {
 			index: {
-				summaryTab: "Action Items",
-				detailsTab: "Timeline",
-				summary: {
-					heading: "Action Items"
-				},
-				timeline: {
-					heading: "Timeline",
-					schedule: "Schedule",
-					addEncounter: "Add {0}"
-				}
+				heading: "Home"
 			}
 		},
 		login: {

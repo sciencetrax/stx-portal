@@ -1,13 +1,13 @@
-﻿<div class="col-xs-12 col-sm-offset-3 col-sm-6">
+﻿<header>
+    <!-- REPORT NAME -->
+    <h1>{{report.name}}</h1>
+
     <!-- DOWNLOAD PDF BUTTON -->
     <a href="{{ pdfUrl }}" class="btn btn-default pull-right">{{ LSPage.pdf }}</a>
+</header>
 
-    <!-- REPORT NAME -->
-    <h3>{{report.name}}</h3>
-
-    <!--
-        HTML REPORT
-        We use the st-append directive so that the HTML in the report does not get escaped.
-    -->
-    <div st-append="report.html" class="well"></div>
-</div>
+<!--
+    HTML REPORT
+    We use the st-append directive so that the HTML in the report does not get escaped.
+-->
+<div st-append="report.html" class="well"></div>

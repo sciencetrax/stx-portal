@@ -1,20 +1,59 @@
 <div ng-show="pageReady">
     <header class="noactions">
-        <h1>{{ encounter.name }}</h1>
+        <h1>{{ encounter.name }} ({{ encounter.percentComplete * 100 | number:1 }}%)</h1>
     </header>
     <div class="variable-panel-scripts"></div>
 
-    <div ui-view></div>
+    <!-- ATTRIBUTES  -->
+    <section class="col-xs-12 col-sm-6">
+        <h1>{{ LSPage.attributes }}</h1>
+        <ul class="attribute-table">
+            <li>
+                <div>{{ "Due" }}</div>
+                <div>{{ encounter.dueDate | moment:'fromNow' }}</div>
+            </li>
+            <li>
+                <div>{{ "Created" }}</div>
+                <div>{{ encounter.createDate | moment:'format':"LL" }}</div>
+            </li>
+            <li ng-show="encounter.lastEditTime != null">
+                <div>{{ "Edit Until" }}</div>
+                <div>{{ encounter.lastEditTime | moment:'LL' }}</div>
+            </li>
+        </ul>
+    </section>
 
-    <!-- FOOTER NAVBAR -->
-    <div class="navbar-inverse navbar-fixed-bottom footer" ng-class="{hide: encounter.reports.length == 0}">
-        <div class="btn-group btn-group-justified">
-            <a class="btn"
-               href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/details"
-               ng-class="{active:$state.includes('encounters.view.details')}">{{ LS.pages.encounters.view.details }}</a>
-            <a class="btn"
-               href="#/encounters/view/{{$stateParams.intervalId}}/{{$stateParams.encounterId}}/reports"
-               ng-class="{active:$state.includes('encounters.view.reports')}">Reports</a>
-        </div>
-    </div>
+    <!-- FORMS -->
+    <section class="col-xs-12 col-sm-6">
+        <h1>{{ LSPage.forms }}</h1>
+        <!-- VARIABLE PANEL SCRIPT -->
+        <div id="variable-panel-code"></div>
+
+        <!-- DATA ENTRY PANEL-->
+        <ul class="entity-list compact DataEntryPanel" ng-show="encounter.ready">
+            <!-- VARIABLE GROUP -->
+            <li ng-repeat="item in encounter.variableGroups" variablegroupid="{{item.id}}">
+                <a href="#/variablegroups/update/{{item.id}}/{{encounter.intervalId}}/{{encounter.encounterId}}" class="entity">
+                    <!-- NAME -->
+                    <div class="name">{{item.name}}</div>
+
+                    <!-- PERCENT COMPLETE -->
+                    <div class="percent-complete">
+                        <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{(item.percentComplete*100) | number:1}}%</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        <!-- REPORTS -->
+        <h1>{{ LSPage.reports }}</h1>
+        <ul class="entity-list">
+            <li ng-repeat="item in encounter.reports" reportid="{{item.id}}">
+                <a class="entity" href="#/reports/view/{{ encounter.encounterId }}/{{ item.id }}">
+                    {{item.name}}
+                </a>
+            </li>
+        </ul>
+
+    </section>
 </div>

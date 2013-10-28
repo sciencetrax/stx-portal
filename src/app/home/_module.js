@@ -30,16 +30,6 @@
 						pageTitle: 'Home', isHome: true
 					}
                 })
-                .state('home.index.summary', {
-                    url: '/summary',
-                    templateUrl: 'home/summary.tpl.html',
-                    controller: 'HomeSummaryController'
-                })
-                .state('home.index.details', {
-                    url: '/details',
-                    templateUrl: 'home/details.tpl.html',
-                    controller: 'HomeDetailsController'
-                })
             ;
         }])
     ;

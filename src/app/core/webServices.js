@@ -177,6 +177,12 @@ angular.module('stx.core.webService', [
 	.factory('Portal', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:code'));
 	}])
+	.factory('ProjectReport', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/reports/:reportId'), {
+			customerId: "@customerId",
+			projectId: "@projectId"
+		});
+	}])
 	.factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
 	}])
