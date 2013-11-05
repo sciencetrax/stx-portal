@@ -94,7 +94,7 @@ module.exports = {
 			'vendor/bootstrap/assets/js/respond.min.js',
             'vendor/bootstrap/dist/js/bootstrap.js',
 
-            'vendor/moment/min/moment-with-langs.js',
+            'vendor/moment/min/moment-with-langs-min.js',
             'vendor/toastr/toastr.js',
 
             'vendor/stx/Class.js',

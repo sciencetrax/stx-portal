@@ -14,24 +14,122 @@
                 allowAnonymousDataEntry="<%= pkg.anonymousDataEntry %>"
                 sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
             <pages>
-                <!-- CSS -->
-                <page code="css" path="codecss" pageType="css">
+                <!-- ************************************************************************* -->
+                <!-- CUSTOMIZABLE PAGES -->
+                <!-- ************************************************************************* -->
+                <page code="masterPage">
+                    <html>
+                        <head>
+                            <title>#Page.Name</title>
+                            <link href="#URL(portal_site_css)" rel="stylesheet"/>
+                        </head>
+                        <body>
+                            <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+                                <div class="container">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="../" class="navbar-brand">#Portal.Name</a>
+                                    </div>
+                                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#URL(index)">Home</a></li>
+                                            <li><a href="#URL(faq)">FAQ</a></li>
+                                            <li><a href="#URL(contact)">Contact Us</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#URL(portal_index)">Login</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </header>
+
+                            <div class="content">
+                                <div class="container">
+                                    <img src="http://fpoimg.com/1140x200?text=SITE IMAGE" style="width: 100%"/>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                #Body
+                            </div>
+                            <!-- JQUERY -->
+                            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+                            <!-- TWITTER BOOTSTRAP SCRIPT -->
+                            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+                        </body>
+                    </html>
+                </page>
+                <!-- INDEX
+                    - Add META redirect to the login page and comment it out.
+                    - Add base page to get formatting that uses CSS
+                -->
+                <page code="index" parent="masterPage">
                     <![CDATA[
-                    <%= css %>
+                        <!--
+                            This is sample code to show how to redirect to the portal if no landing page is desired.
+                            <script>window.location.href = "#URL(portal_index)";</script>
+                        -->
+                        <h1 class="text-center">Welcome to #Portal.Name</h1>
+
+                        <div class="col-sm-9">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies augue eget leo ornare fringilla. Donec elit ante, laoreet vitae purus quis, ultrices iaculis turpis. Suspendisse eu accumsan nulla. Nunc vestibulum metus molestie neque pulvinar, a tristique tortor blandit. Phasellus sit amet mattis arcu. Donec scelerisque dignissim odio, sit amet sollicitudin lacus convallis non. Praesent pharetra iaculis metus, non tristique sem blandit vel. Duis porttitor felis porttitor, elementum est at, sagittis sapien. In eleifend ut ligula vitae sodales. Quisque porta diam ut ipsum iaculis, et varius metus lobortis. Nam vulputate, nunc id pellentesque elementum, diam lacus varius metus, et ornare nibh neque vel libero. In sed nisi eget leo ultrices laoreet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a dignissim purus. Pellentesque et bibendum nibh. Nam ultricies turpis nibh. Suspendisse potenti. Ut at mollis purus, quis molestie nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla at gravida ligula. Nam pulvinar sagittis dapibus. Phasellus bibendum, lacus id adipiscing condimentum, justo leo blandit odio, non tincidunt dolor elit ac augue. Donec dapibus mollis pulvinar. Nullam volutpat diam sed urna viverra rutrum. Aliquam auctor bibendum erat, vitae ullamcorper mi luctus vel.</p>
+                            <p>Morbi adipiscing nisi mi, in lobortis turpis mollis nec. Vivamus tincidunt mi lorem, a aliquet magna elementum sed. Aliquam sapien lorem, placerat eu dapibus et, iaculis et metus. Aenean suscipit justo leo. Suspendisse imperdiet dapibus erat in sodales. Nam pellentesque dictum lorem sit amet ornare. Nunc et augue a mauris auctor faucibus. Nam malesuada gravida justo, nec viverra lorem porttitor ut.</p>
+                            <p>Pellentesque et scelerisque est. Etiam adipiscing, odio et hendrerit scelerisque, dolor nibh auctor lectus, ut consectetur dui elit lobortis eros. Proin laoreet elementum nisi vel tincidunt. Curabitur vitae velit vel neque dictum porttitor. Phasellus turpis justo, venenatis ac condimentum quis, consectetur sit amet quam. Nulla ut sagittis diam. In tempus condimentum bibendum. Etiam ut sapien ac neque commodo commodo sit amet sit amet massa. Aenean sollicitudin viverra auctor. Aliquam nec aliquet arcu. Vestibulum mollis turpis vitae vulputate tristique. Sed erat leo, accumsan in nisi ac, sollicitudin vestibulum felis.</p>
+                            <p>Morbi vitae ipsum vel orci ultrices accumsan vitae in turpis. Vestibulum elementum accumsan lacinia. Duis a diam ante. Mauris eu quam non arcu varius pharetra eu eu risus. Maecenas rutrum ipsum vel suscipit mattis. Ut sed sollicitudin ipsum, quis tempor turpis. Cras libero lacus, rutrum at pulvinar quis, mattis eget elit. Etiam ullamcorper enim at porta molestie. Integer condimentum nibh id nulla pharetra, sed aliquam leo rutrum. Donec volutpat faucibus lectus, at auctor lacus. Etiam vitae leo ullamcorper tortor vestibulum consequat. Vivamus eu quam eu turpis tincidunt egestas id ut augue. Aenean vitae elit gravida, tempus justo in, lobortis sem. Donec est leo, sagittis et est quis, tristique scelerisque lectus. In venenatis ligula vitae neque pharetra hendrerit.</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="http://fpoimg.com/690x690?text=SITE IMAGE" style="width: 100%"/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies augue eget leo ornare fringilla. Donec elit ante, laoreet vitae purus quis, ultrices iaculis turpis. Suspendisse eu accumsan nulla. Nunc vestibulum metus molestie neque pulvinar, a tristique tortor blandit. Phasellus sit amet mattis arcu. Donec scelerisque dignissim odio, sit amet sollicitudin lacus convallis non. Praesent pharetra iaculis metus, non tristique sem blandit vel. Duis porttitor felis porttitor, elementum est at, sagittis sapien. In eleifend ut ligula vitae sodales. Quisque porta diam ut ipsum iaculis, et varius metus lobortis. Nam vulputate, nunc id pellentesque elementum, diam lacus varius metus, et ornare nibh neque vel libero. In sed nisi eget leo ultrices laoreet.</p>
+                            <p>Morbi vitae ipsum vel orci ultrices accumsan vitae in turpis. Vestibulum elementum accumsan lacinia. Duis a diam ante. Mauris eu quam non arcu varius pharetra eu eu risus. Maecenas rutrum ipsum vel suscipit mattis. Ut sed sollicitudin ipsum, quis tempor turpis. Cras libero lacus, rutrum at pulvinar quis, mattis eget elit. Etiam ullamcorper enim at porta molestie. Integer condimentum nibh id nulla pharetra, sed aliquam leo rutrum. Donec volutpat faucibus lectus, at auctor lacus. Etiam vitae leo ullamcorper tortor vestibulum consequat. Vivamus eu quam eu turpis tincidunt egestas id ut augue. Aenean vitae elit gravida, tempus justo in, lobortis sem. Donec est leo, sagittis et est quis, tristique scelerisque lectus. In venenatis ligula vitae neque pharetra hendrerit.</p>
+                        </div>
+                    ]]>
+                </page>
+
+                <!-- FAQ -->
+                <page code="faq" parent="masterPage">
+                    <![CDATA[
+                        <h1 class="text-center">Frequently Asked Questions</h1>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h1>Question 1</h1>
+                                <p>Answer 1</p>
+                            </li>
+                        </ul>
+                    ]]>
+                </page>
+
+                <!-- CONTACT -->
+                <page code="contact" parent="masterPage">
+                    <![CDATA[
+                        <h1 class="text-center">Contact Us</h1>
+
+                    ]]>
+                </page>
+
+                <!-- CSS OVERRIDES -->
+                <page code="css_overrides" pageType="css">
+                    <![CDATA[
+                    /*
+                     * Enter overrides here to change the look and feel for the portal.
+                     */
 					]]>
                 </page>
 
-                <!-- JS -->
-                <page code="js" path="codejs" pageType="JavaScript">
+                <!-- ERROR PAGE -->
+                <page code="error" parent="masterPage">
                     <![CDATA[
-                    <%= js %>
-					]]>
-                </page>
-
-                <!-- INDEX -->
-                <page code="index" pageType="Login">
-                    <![CDATA[
-                    <%= html %>
+                        <h1>An error has occurred</h1>
+                        <h3>#ErrorMessage</h3>
+                        <div>
+                            #StackTrace
+                        </div>
                     ]]>
                 </page>
 
@@ -45,23 +143,48 @@
                     Thank you for taking the survey.
                 </page>
 
+                <!-- ************************************************************************* -->
+                <!-- PORTAL PAGES -->
+                <!-- ************************************************************************* -->
+                <!-- CSS -->
+                <page code="portal_site_css" path="portal/site_css" pageType="css">
+                    <![CDATA[
+                    <%= css %>
+                    #INCLUDE(css_overrides)
+					]]>
+                </page>
+
+                <!-- JS -->
+                <page code="portal_site_js" path="portal/site_js" pageType="JavaScript">
+                    <![CDATA[
+                    <%= js %>
+					]]>
+                </page>
+
+                <!-- PORTAL INDEX -->
+                <page code="portal_index" path="portal/index" pageType="Login">
+                    <![CDATA[
+                    <%= html %>
+                    ]]>
+                </page>
+
                 <!-- VERIFY EMAIL ADDRESS -->
-                <page code="verifyEmailAddress" pageType="VerifyEmail">
+                <page code="portal_verifyEmailAddress" path="portal/verifyEmailAddress" pageType="VerifyEmail" description="DO NOT CHANGE.  This is the landing page for when a user verifies their email address.">
                     <![CDATA[
                         <script>
-                            window.location.href = "index#/accounts/emailAddressVerified";
+                            window.location.href = "#URL(portal_index)#/accounts/emailAddressVerified";
                         </script>
                     ]]>
                 </page>
 
                 <!-- RESET PASSWORD -->
-                <page code="resetPassword" pageType="resetPassword">
+                <page code="portal_resetPassword" path="portal/resetPassword" pageType="resetPassword">
                     <![CDATA[
                         <script>
                             function getQueryStringParameter (sVar) {
                                 return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
                             }
-                            window.location.href = "index#/accounts/resetPassword/" + getQueryStringParameter("P");
+                            window.location.href = "#URL(portal_index)#/accounts/resetPassword/" + getQueryStringParameter("P");
                         </script>
                     ]]>
                 </page>

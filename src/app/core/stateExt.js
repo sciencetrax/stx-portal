@@ -20,7 +20,7 @@
 		authorizeAndNavigate: function (authorization, sessionTimeoutSeconds) {
 			this.session.authorize(authorization, sessionTimeoutSeconds);
 			if (this.targetState == null) {
-				this.$location.path('/');
+				this.$location.path('/home/index');
 			} else {
 				this.$state.transitionTo(this.targetState, this.targetParams);
 				this.targetState = null;

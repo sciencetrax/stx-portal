@@ -60,7 +60,6 @@
 				heading: "Enroll"
 			},
 			failedEnrollment: {
-				heading: "Failed Enrollment"
 			},
 			register: {
 				heading: "Register",
