@@ -24,7 +24,7 @@
                             <link href="#URL(portal_site_css)" rel="stylesheet"/>
                         </head>
                         <body>
-                            <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+                            <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
                                 <div class="container">
                                     <div class="navbar-header">
                                         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -42,6 +42,8 @@
                                             <li><a href="#URL(contact)">Contact Us</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
+                                            <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
                                             <li><a href="#URL(portal_index)">Login</a></li>
                                         </ul>
                                     </nav>
@@ -68,6 +70,7 @@
                 <!-- INDEX
                     - Add META redirect to the login page and comment it out.
                     - Add base page to get formatting that uses CSS
+                    - Use the same menu for login page and landing page.
                 -->
                 <page code="index" parent="masterPage">
                     <![CDATA[
@@ -85,7 +88,7 @@
                             <p>Morbi vitae ipsum vel orci ultrices accumsan vitae in turpis. Vestibulum elementum accumsan lacinia. Duis a diam ante. Mauris eu quam non arcu varius pharetra eu eu risus. Maecenas rutrum ipsum vel suscipit mattis. Ut sed sollicitudin ipsum, quis tempor turpis. Cras libero lacus, rutrum at pulvinar quis, mattis eget elit. Etiam ullamcorper enim at porta molestie. Integer condimentum nibh id nulla pharetra, sed aliquam leo rutrum. Donec volutpat faucibus lectus, at auctor lacus. Etiam vitae leo ullamcorper tortor vestibulum consequat. Vivamus eu quam eu turpis tincidunt egestas id ut augue. Aenean vitae elit gravida, tempus justo in, lobortis sem. Donec est leo, sagittis et est quis, tristique scelerisque lectus. In venenatis ligula vitae neque pharetra hendrerit.</p>
                         </div>
                         <div class="col-sm-3">
-                            <img src="http://fpoimg.com/690x690?text=SITE IMAGE" style="width: 100%"/>
+                            <img src="http://fpoimg.com/690x690?text=SIDEBAR IMAGE" style="width: 100%"/>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies augue eget leo ornare fringilla. Donec elit ante, laoreet vitae purus quis, ultrices iaculis turpis. Suspendisse eu accumsan nulla. Nunc vestibulum metus molestie neque pulvinar, a tristique tortor blandit. Phasellus sit amet mattis arcu. Donec scelerisque dignissim odio, sit amet sollicitudin lacus convallis non. Praesent pharetra iaculis metus, non tristique sem blandit vel. Duis porttitor felis porttitor, elementum est at, sagittis sapien. In eleifend ut ligula vitae sodales. Quisque porta diam ut ipsum iaculis, et varius metus lobortis. Nam vulputate, nunc id pellentesque elementum, diam lacus varius metus, et ornare nibh neque vel libero. In sed nisi eget leo ultrices laoreet.</p>
                             <p>Morbi vitae ipsum vel orci ultrices accumsan vitae in turpis. Vestibulum elementum accumsan lacinia. Duis a diam ante. Mauris eu quam non arcu varius pharetra eu eu risus. Maecenas rutrum ipsum vel suscipit mattis. Ut sed sollicitudin ipsum, quis tempor turpis. Cras libero lacus, rutrum at pulvinar quis, mattis eget elit. Etiam ullamcorper enim at porta molestie. Integer condimentum nibh id nulla pharetra, sed aliquam leo rutrum. Donec volutpat faucibus lectus, at auctor lacus. Etiam vitae leo ullamcorper tortor vestibulum consequat. Vivamus eu quam eu turpis tincidunt egestas id ut augue. Aenean vitae elit gravida, tempus justo in, lobortis sem. Donec est leo, sagittis et est quis, tristique scelerisque lectus. In venenatis ligula vitae neque pharetra hendrerit.</p>
                         </div>

@@ -1,4 +1,4 @@
-var WEB_SERVICES_URL = 'http://localhost/StudyTrax';
+var APPLICATION_PATH = 'http://localhost/StudyTrax';
 
 describe('ApplicationController', function () {
 		beforeEach(function () {

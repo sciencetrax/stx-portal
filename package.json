@@ -1,13 +1,13 @@
 {
-  "applicationPath": "/StudyTrax",
+  "applicationPath": "/StudyTrax/",
   "portalCode": "std",
 
   "author": "Leslie Hanks",
-  "name": "stx-portal",
+  "name": "Williams Syndrome Portal",
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
   "portalType": "Subject",
   "registration": "True",
-  "anonymousDataEntry": "False",
+  "anonymousDataEntry": "True",
   "sendEncounterDueNotifications": "False",
   "version": "0.0.1",
   "homepage": "https://github.com/bpstoxin/stx-portal",

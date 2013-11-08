@@ -24,7 +24,7 @@
 						account.portalId = $scope.portal.id;
 						account.projectId = $scope.portal.project.id;
 
-						if (!stateExt.isAuthorized()) {
+						if (!session.isAuthorized()) {
 							Account.save(account, function (response) {
 								$location.path('/login/emailSent/register');
 							});

@@ -1,8 +1,8 @@
 ﻿<header class="noactions">
-    <h1 title="{{portal.name}}">{{portal.name}}</h1>
+    <h1>{{ LSPage.heading }}</h1>
 </header>
 <!-- ERROR PANEL -->
-<div ng-include src="'common/error-panel.tpl.html'"/>
+<!--<div ng-include src="'common/error-panel.tpl.html'"/>-->
 
 <form name="theForm" class="stx-form compact" novalidate="">
     <!-- USERNAME -->
@@ -17,6 +17,13 @@
         <label for="password">{{LSPage.password}}</label>
 
         <div><input id="password" ng-model="authorization.password" type='password' required='true'/></div>
+    </div>
+
+    <!-- REFERENCE ID -->
+    <div ng-show="logASubjectIn">
+        <label for="referenceId">{{LSPage.referenceId}}</label>
+
+        <div><input id="referenceId" ng-model="authorization.referenceId" type="text" required='true' st-autofocus/></div>
     </div>
 
     <div class="buttons">
@@ -38,6 +45,18 @@
         <!-- FORGOT USERNAME/PASSWORD BUTTON-->
         <div>
             <a id="forgotBtn" href="#/forgot">{{LSPage.forgotUsernameOrPassword}}</a>
+        </div>
+
+        <!-- LOG A SUBJECT IN BUTTON-->
+        <div ng-show="!logASubjectIn">
+            <a id="forgotBtn" ng-click="setLogASubjectIn(true)">Log a subject in</a>
+            <!--<a id="forgotBtn" href="#/forgot">{{LSPage.forgotUsernameOrPassword}}</a>-->
+        </div>
+
+        <!-- DO NOT LOG A SUBJECT IN BUTTON-->
+        <div ng-show="logASubjectIn">
+            <a id="forgotBtn" ng-click="setLogASubjectIn(false)">Do not log a subject in</a>
+            <!--<a id="forgotBtn" href="#/forgot">{{LSPage.forgotUsernameOrPassword}}</a>-->
         </div>
     </div>
 </form>

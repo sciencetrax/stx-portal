@@ -61,8 +61,19 @@
 			},
 			failedEnrollment: {
 			},
+			login: {
+				heading: "Login",
+				enroll: "Enroll",
+				forgotUsernameOrPassword: "Forgot username / password",
+				loggingIn: "Logging In...",
+				login: "Login",
+				password: "Password",
+				referenceId: "Reference ID",
+				register: "Sign up",
+				username: "Username"
+			},
 			register: {
-				heading: "Register",
+				heading: "Sign Up",
 				confirmEmailAddress: "Confirm Email Address",
 				confirmPassword: "Confirm Password",
 				emailAddress: "Email Address",
@@ -102,10 +113,6 @@
 				username: "Username"
 			}
 		},
-		common: {
-			waiting: {
-			}
-		},
 		encounters: {
 			list: {
 				heading: "Encounters",
@@ -143,16 +150,6 @@
 				errors: {
 					emailAddressEmail: "Invalid email address."
 				}
-			},
-			login: {
-				heading: "Login",
-				enroll: "Enroll",
-				forgotUsernameOrPassword: "Forgot username / password",
-				loggingIn: "Logging In...",
-				login: "Login",
-				password: "Password",
-				register: "Sign up",
-				username: "Username"
 			}
 		},
 		reports: {

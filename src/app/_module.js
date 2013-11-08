@@ -1,6 +1,3 @@
-var StudyTraxConfig = {
-	datePattern: 'M/d/yyyy'
-};
 (function () {
 	"use strict";
 
@@ -36,7 +33,7 @@ var StudyTraxConfig = {
 					.when('/register', '/accounts/register')
 					.when('/subjectLogin', '/login/subjectLogin')
 				;
-				WebServiceConfigProvider.configure('/StudyTrax', "api/");
+				WebServiceConfigProvider.configure(APPLICATION_PATH, "api/");
 			}]
 		)
 		.config(['$stateProvider', function ($stateProvider) {

@@ -227,7 +227,9 @@ module.exports = function (grunt) {
 		uglify: {
 			compile: {
 				options: {
-					banner: '<%= meta.banner %>'
+					banner: '<%= meta.banner %>',
+					beautify: true,
+					compress: false
 				},
 				files: {
 					'<%= concat.compile_js.dest %>': '<%= concat.compile_js.dest %>'
@@ -656,7 +658,7 @@ module.exports = function (grunt) {
 					data: {
 						scripts: ['#URL(portal_site_js)'],
 						styles: ['#URL(portal_site_css)'],
-						applicationPath: '#ApplicationPath',
+						applicationPath: '#ApplicationPath()',
 						portalCode: '#Portal.Code',
 						version: grunt.config('pkg.version')
 					}

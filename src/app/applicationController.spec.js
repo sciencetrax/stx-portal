@@ -1,3 +1,4 @@
+var APPLICATION_PATH = "/StudyTrax";
 (function () {
     var controllerName = 'ApplicationController';
     var moduleName = 'stx';

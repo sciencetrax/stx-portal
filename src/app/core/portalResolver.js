@@ -2,7 +2,7 @@
 	"use strict";
 	angular.module('stx.core')
 		.service('portalResolver',
-			['$q', 'Portal', function ($q, Portal) {
+			['$rootScope', '$q', 'Portal', function ($rootScope, $q, Portal) {
 				return {
 					data: null,
 					resolved: false,
@@ -12,7 +12,8 @@
 
 						var deferred = $q.defer();
 						if (_this.data == null) {
-							_this.data = Portal.get({ code: PORTAL_CODE, includeProject: true }, function () {
+							_this.data = Portal.get({ code: PORTAL_CODE, includeProject: true }, function (data) {
+								$rootScope.portal = data;
 								_this.resolved = true;
 								deferred.resolve();
 							});

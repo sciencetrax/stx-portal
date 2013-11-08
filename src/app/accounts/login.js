@@ -7,15 +7,18 @@
         ])
         .controller("LoginController", ['$scope', '$state', '$stateParams', '$location', 'session', 'stateExt', 'Authorization', 'EmailRequest', 'portalResolver',
             function ($scope, $state, $stateParams, $location, session, stateExt, Authorization, EmailRequest, portalResolver) {
+				$scope.LSPage = LS.pages.accounts.login;
                 session.removeAuthorization();
-				var portal = portalResolver.data;
+				var portal = $scope.portal;
 
 				var emailRequest = new EmailRequest();
 				emailRequest.emailType = "AccountVerification";
 
-				$scope.LSPage = LS.pages.login.login;
-                $scope.portal = portal;
                 $scope.authorization = new Authorization();
+                $scope.logASubjectIn = false;
+                $scope.setLogASubjectIn = function(logASubjectIn) {
+					$scope.logASubjectIn = logASubjectIn;
+				};
 				$scope.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
 					emailRequest.emailType = "EmailAddressVerification";
