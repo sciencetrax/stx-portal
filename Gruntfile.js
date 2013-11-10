@@ -658,13 +658,25 @@ module.exports = function (grunt) {
 					data: {
 						scripts: ['#URL(portal_site_js)'],
 						styles: ['#URL(portal_site_css)'],
-						applicationPath: '#ApplicationPath()',
+						applicationPath: '#ApplicationPath/',
 						portalCode: '#Portal.Code',
 						version: grunt.config('pkg.version')
 					}
 				});
 			}
 		});
+
+		function htmlEscape(str) {
+			return String(str)
+				.replace(/&/g, '&amp;')
+				.replace(/"/g, '&quot;')
+				.replace(/'/g, '&#39;')
+				.replace(/</g, '&lt;')
+				.replace(/>/g, '&gt;');
+		}
+
+
+		js = htmlEscape(js);
 
 		var index = grunt.file.read(this.data.dir + '/index.html');
 		// Run the portal.xml template
@@ -674,7 +686,7 @@ module.exports = function (grunt) {
 					data: {
 						html: index,
 						css: css,
-						js: js,
+						js:  js,
 						created: new Date(),
 						pkg: grunt.config('pkg')
 					}

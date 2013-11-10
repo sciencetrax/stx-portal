@@ -86,6 +86,7 @@ module.exports = {
             'vendor/angular-bootstrap/ui-bootstrap.js',
             'vendor/angular-cookies/angular-cookies.js',
             'vendor/angular-resource/angular-resource.js',
+            'vendor/angular-sanitize/angular-sanitize.js',
             'vendor/angular-ui-router/release/angular-ui-router.js',
 			'vendor/angular-ui-utils/modules/validate/validate.js',
             'vendor/bootbox/bootbox.js',

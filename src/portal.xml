@@ -6,7 +6,7 @@
 -->
 <studyTrax type="Portal" created="<%= created %>" version="330">
     <portals>
-        <portal name="<%= pkg.name %>"
+        <portal name="<%= pkg.portalName %>"
                 description="<%= pkg.description %>"
                 code="<%= pkg.name %>"
                 userType="<%= pkg.portalType %>"
@@ -20,7 +20,7 @@
                 <page code="masterPage">
                     <html>
                         <head>
-                            <title>#Page.Name</title>
+                            <title>#Page.Title</title>
                             <link href="#URL(portal_site_css)" rel="stylesheet"/>
                         </head>
                         <body>
@@ -72,7 +72,7 @@
                     - Add base page to get formatting that uses CSS
                     - Use the same menu for login page and landing page.
                 -->
-                <page code="index" parent="masterPage">
+                <page code="index" title="<%= pkg.name %>" parent="masterPage">
                     <![CDATA[
                         <!--
                             This is sample code to show how to redirect to the portal if no landing page is desired.
@@ -159,9 +159,7 @@
 
                 <!-- JS -->
                 <page code="portal_site_js" path="portal/site_js" pageType="JavaScript">
-                    <![CDATA[
                     <%= js %>
-					]]>
                 </page>
 
                 <!-- PORTAL INDEX -->

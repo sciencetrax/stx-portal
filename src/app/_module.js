@@ -4,6 +4,7 @@
 	angular.module('stx', [
 			'ngResource',
 			'ngCookies',
+			'ngSanitize',
 			'ui.router',
 			'templates-app',
 			'templates-common',

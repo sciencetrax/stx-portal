@@ -26,13 +26,12 @@
             <li><a href="#/home">Home</a></li>
             <li><a href="#/encounters/list">History</a></li>
             <li><a href="#/accounts">Account</a></li>
-            <!--<li><a href="#/about">About</a></li>-->
         </ul>
         <!-- SYSTEM MENU -->
         <ul class="nav navbar-nav navbar-right">
             <!--<li><div class="navbar-heading hidden-xs">user: {{ authorizationContext.username }}</div></li>-->
             <li class="hidden-xs"><a>Session: {{ $root.session.remainingSeconds | timeInterval }}</a></li>
-            <li><a href="#/login">Logout</a></li>
+            <li><a ng-click="$state.go('accounts.login', { byReferenceId: $root.session.loginByReferenceId })">Logout</a></li>
         </ul>
     </div>
 </nav>

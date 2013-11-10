@@ -2,6 +2,7 @@
 	"use strict";
 	var SessionService = Class.extend({
 		authorization: null,
+		loginByReferenceId: false,
 		sessionTimeoutMilliseconds: null,
 		lastActivityTime: null,
 		lastServerUpdateTime: null,
@@ -35,19 +36,22 @@
 			this._stopMonitor();
 
 			var authorization = this.$cookieStore.get(Constants.AuthHeader);
+			var loginByReferenceId = this.$cookieStore.get(Constants.LoginByReferenceId);
 			var sessionTimeoutMilliseconds = this.$cookieStore.get(Constants.SessionTimeoutMilliseconds);
 			if (!String.isNullEmptyOrUndefined(authorization)
 				&& sessionTimeoutMilliseconds != null) {
-				this.authorize(authorization, sessionTimeoutMilliseconds);
+				this.authorize(authorization, sessionTimeoutMilliseconds, loginByReferenceId);
 			}
 		},
 
-		authorize: function (authorization, sessionTimeoutMilliseconds) {
+		authorize: function (authorization, sessionTimeoutMilliseconds, loginByReferenceId) {
 			this.setUpdateServerMilliseconds(sessionTimeoutMilliseconds);
 			this.authorization = authorization;
+			this.loginByReferenceId = loginByReferenceId;
 			this.sessionTimeoutMilliseconds = sessionTimeoutMilliseconds;
 			this.$http.defaults.headers.common[Constants.AuthHeader] = authorization;
 			this.$cookieStore.put(Constants.AuthHeader, authorization);
+			this.$cookieStore.put(Constants.LoginByReferenceId, loginByReferenceId);
 			this.$cookieStore.put(Constants.SessionTimeoutMilliseconds, sessionTimeoutMilliseconds);
 			this._startMonitor();
 		},
@@ -73,6 +77,7 @@
 			this.authorization = null;
 			this.$http.defaults.headers.common[Constants.AuthHeader] = null;
 			this.$cookieStore.remove(Constants.AuthHeader);
+			this.$cookieStore.remove(Constants.LoginByReferenceId);
 			this.$cookieStore.remove(Constants.SessionTimeoutMilliseconds);
 		},
 

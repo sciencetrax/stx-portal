@@ -18,7 +18,7 @@
         <h1>{{ LSPage.incomplete }}</h1>
         <!-- INCOMPLETE VARIABLE GROUPS -->
         <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
-            <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.variableGroupId })" class="entity encounter">
+            <a ng-click="$state.go('variablegroups.update', { variableGroupId: item.id })" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
 

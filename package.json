@@ -4,6 +4,7 @@
 
   "author": "Leslie Hanks",
   "name": "Williams Syndrome Portal",
+  "portalName": "The &lt;span class='registry-text'&gt;Registry&lt;/span&gt;",
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
   "portalType": "Subject",
   "registration": "True",

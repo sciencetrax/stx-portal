@@ -10,15 +10,12 @@
 				$scope.LSPage = LS.pages.accounts.login;
                 session.removeAuthorization();
 				var portal = $scope.portal;
+				$scope.byReferenceId = $scope.$stateParams.byReferenceId == 'true';
 
 				var emailRequest = new EmailRequest();
 				emailRequest.emailType = "AccountVerification";
 
                 $scope.authorization = new Authorization();
-                $scope.logASubjectIn = false;
-                $scope.setLogASubjectIn = function(logASubjectIn) {
-					$scope.logASubjectIn = logASubjectIn;
-				};
 				$scope.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
 					emailRequest.emailType = "EmailAddressVerification";
@@ -44,7 +41,7 @@
 					// prior to navigating away.
 					var authorization = angular.copy($scope.authorization);
                     Authorization.save(authorization, function (data) {
-                        stateExt.authorizeAndNavigate(data.authorization, portal.sessionTimeoutSeconds * 1000);
+                        stateExt.authorizeAndNavigate(data.authorization, portal.sessionTimeoutSeconds * 1000, $scope.byReferenceId);
                     }, function (data) {
 						$scope.loggingIn = false;
 						$('#loginBtn').button('reset');

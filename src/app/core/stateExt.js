@@ -17,8 +17,8 @@
 			this.session = $injector.get('session');
 		},
 
-		authorizeAndNavigate: function (authorization, sessionTimeoutSeconds) {
-			this.session.authorize(authorization, sessionTimeoutSeconds);
+		authorizeAndNavigate: function (authorization, sessionTimeoutSeconds, byReferenceId) {
+			this.session.authorize(authorization, sessionTimeoutSeconds, byReferenceId);
 			if (this.targetState == null) {
 				this.$location.path('/home/index');
 			} else {
