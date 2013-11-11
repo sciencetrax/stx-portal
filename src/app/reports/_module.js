@@ -12,7 +12,8 @@
                     url: '/reports',
 					data: {
 						depends: [
-							'authorizationContextResolver'
+							'authorizationContextResolver',
+							'portalResolver'
 						]
 					},
                     views: {

@@ -8,12 +8,12 @@
 			emailAddressEmail: "Invalid email address.",
 			emailAddressValueMatches: "Does not match Email Address."
 		},
-		_new: "New",
 		actions: "Actions",
 		back: "Back",
 		cancel: "Cancel",
 		logASubjectIn: "Log a subject in",
 		login: "Login",
+		newText: "New",
 		no: "No",
 		renew: "Renew",
 		resendVerificationEmail: "Resend Email",
