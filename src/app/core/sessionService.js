@@ -11,10 +11,11 @@
 		_updateServerMilliseconds: 60 * 1000,
 		_warningMilliseconds: 50 * 1000,
 
-		$injector: null,
 		authorizationContextResolver: null,
+		$cacheFactory: null,
 		$cookieStore: null,
 		$http: null,
+		$injector: null,
 		$rootScope: null,
 		$timeout: null,
 
@@ -27,17 +28,19 @@
 
 			this.$injector = $injector;
 
+			this.$cacheFactory = this.$injector.get('$cacheFactory');
 			this.$cookieStore = this.$injector.get('$cookieStore');
 			this.$http = this.$injector.get('$http');
 			this.$rootScope = this.$injector.get('$rootScope');
 			this.$timeout = this.$injector.get('$timeout');
+
 			this.authorizationContextResolver = this.$injector.get('authorizationContextResolver');
 
 			this._stopMonitor();
 
-			var authorization = this.$cookieStore.get(Constants.AuthHeader);
-			var loginByReferenceId = this.$cookieStore.get(Constants.LoginByReferenceId);
-			var sessionTimeoutMilliseconds = this.$cookieStore.get(Constants.SessionTimeoutMilliseconds);
+			var authorization = this.getValue(Constants.AuthHeader);
+			var loginByReferenceId = this.getValue(Constants.LoginByReferenceId);
+			var sessionTimeoutMilliseconds = this.getValue(Constants.SessionTimeoutMilliseconds);
 			if (!String.isNullEmptyOrUndefined(authorization)
 				&& sessionTimeoutMilliseconds != null) {
 				this.authorize(authorization, sessionTimeoutMilliseconds, loginByReferenceId);
@@ -50,9 +53,9 @@
 			this.loginByReferenceId = loginByReferenceId;
 			this.sessionTimeoutMilliseconds = sessionTimeoutMilliseconds;
 			this.$http.defaults.headers.common[Constants.AuthHeader] = authorization;
-			this.$cookieStore.put(Constants.AuthHeader, authorization);
-			this.$cookieStore.put(Constants.LoginByReferenceId, loginByReferenceId);
-			this.$cookieStore.put(Constants.SessionTimeoutMilliseconds, sessionTimeoutMilliseconds);
+			this.setValue(Constants.AuthHeader, authorization);
+			this.setValue(Constants.LoginByReferenceId, loginByReferenceId);
+			this.setValue(Constants.SessionTimeoutMilliseconds, sessionTimeoutMilliseconds);
 			this._startMonitor();
 		},
 		authorizeUrl: function (url) {
@@ -60,6 +63,18 @@
 				return url;
 			}
 			return UrlUtils.addParameter(url, Constants.AuthHeader, this.authorization);
+		},
+
+		getValue: function (key) {
+			return this.$cookieStore.get(key);
+		},
+
+		removeValue: function (key) {
+			this.$cookieStore.remove(key);
+		},
+
+		setValue: function (key, value) {
+			this.$cookieStore.put(key, value);
 		},
 
 		isAuthorized: function () {
@@ -76,9 +91,9 @@
 			this.authorizationContextResolver.reset();
 			this.authorization = null;
 			this.$http.defaults.headers.common[Constants.AuthHeader] = null;
-			this.$cookieStore.remove(Constants.AuthHeader);
-			this.$cookieStore.remove(Constants.LoginByReferenceId);
-			this.$cookieStore.remove(Constants.SessionTimeoutMilliseconds);
+			this.removeValue(Constants.AuthHeader);
+			this.removeValue(Constants.LoginByReferenceId);
+			this.removeValue(Constants.SessionTimeoutMilliseconds);
 		},
 
 		setUpdateServerMilliseconds: function (sessionTimeoutMilliseconds) {
