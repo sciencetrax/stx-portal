@@ -19,56 +19,57 @@
 /**/
 
 .page {
-  .container;
-  header {
-    border: none;
-//    margin-bottom: (@grid-gutter-width / 2);
-    h1 {
-      .h3;
-      .text-center;
-      .text-ellipsis;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      padding: @padding-base-vertical @padding-base-horizontal;
-      @media (max-width: @screen-xs-max) {
-        width: 65%;
-      }
-      @media (min-width: @screen-xs) {
-          margin-left: 25%;
-          width: 50%;
-      }
-      @media (min-width: @screen-sm) {
-          margin-left: 15%;
-          width: 70%;
-      }
-      @media (min-width: @screen-md) {
-          margin-left: 15%;
-          width: 70%;
-      }
-      @media (min-width: @screen-lg) {
-      }
-    }
-    &.noactions h1 {
-        margin-left: 0;
-        width: 100%;
-    }
-    .actions {
-      .btn-group;
-      .pull-right;
+    min-height: 300px;
+    .container;
+    header {
+        border: none;
+        //    margin-bottom: (@grid-gutter-width / 2);
+        h1 {
+            .h3;
+            .text-center;
+            .text-ellipsis;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: @padding-base-vertical @padding-base-horizontal;
+            @media (max-width: @screen-xs-max) {
+                width: 65%;
+            }
+            @media (min-width: @screen-xs) {
+                margin-left: 25%;
+                width: 50%;
+            }
+            @media (min-width: @screen-sm) {
+                margin-left: 15%;
+                width: 70%;
+            }
+            @media (min-width: @screen-md) {
+                margin-left: 15%;
+                width: 70%;
+            }
+            @media (min-width: @screen-lg) {
+            }
+        }
+        &.noactions h1 {
+            margin-left: 0;
+            width: 100%;
+        }
+        .actions {
+            .btn-group;
+            .pull-right;
 
-      .dropdown-menu {
-        right: 0;
-        left: auto;
-      }
+            .dropdown-menu {
+                right: 0;
+                left: auto;
+            }
+        }
+        .actions > button {
+            .btn;
+            .btn-default;
+        }
     }
-    .actions > button {
-      .btn;
-      .btn-default;
+    section h1 {
+        .h4;
     }
-  }
-  section h1 {
-    .h4;
-  }
 }
 
 #page-instructions {

@@ -116,7 +116,7 @@
 		},
 		encounters: {
 			list: {
-				heading: "Encounters",
+				heading: "History",
 
 				all: "All",
 				incomplete: "Incomplete"

@@ -56,15 +56,38 @@ body {
 /*****************************************************************/
 // FOOTER
 /*****************************************************************/
-.footer {
-    .btn {
-        background: @footer-bg;
-        color: @footer-color;
-    }
+footer {
+    .container;
+//    border-top: solid 1px lighten(@footer-color, 10%);
+    color: @footer-color;
+    margin-top: 40px;
+//    vertical-align: middle;
 
-    .btn.active {
-        background: @footer-btn-active-bg;
-        color: @footer-btn-active-color;
+    .powered-by {
+        .container;
+//        margin-top: 5px;
+        font-size: .75em;
+        text-align: right;
+        .powered-by-logo {
+            .opacity(.75);
+            margin-top: -5px;
+            width: 150px;
+        }
+    }
+    .powered-by:hover {
+        color: darken(@footer-color, 25%);
+        .powered-by-logo:hover {
+            .opacity(1);
+        }
+    }
+    @media (max-width: @screen-xs-max) {
+        .powered-by {
+            font-size: .65em;
+            .powered-by-logo {
+                margin-top: -2px;
+                width: 100px;
+            }
+        }
     }
 }
 
@@ -155,6 +178,8 @@ body {
         & > div,
         & > span {
             .badge;
+            min-width: 75px;
+            text-align: right;
         }
         .complete {
             background: lighten(@brand-success, 30%) !important;
@@ -202,3 +227,4 @@ body {
 .entity-list .encounter .name {
     .make-sm-column(6);
 }
+

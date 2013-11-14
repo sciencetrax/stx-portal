@@ -84,6 +84,10 @@
     }
 
     .bs-enhanced {
+        font-size: @font-size-base;
+        .Variables > span > span {
+            font-size: @font-size-base !important;
+        }
         .stx-form;
         .make-sm-column-offset(2);
         .make-sm-column(8);
@@ -92,11 +96,11 @@
             border: none;
             .VariableGroupName {
                 text-align: center;
+                width: 100%;
             }
         }
 
         .VariablePanel {
-
             padding-left: 0;
             padding-right: 0;
             width: 100%;
@@ -120,6 +124,10 @@
                 input:not([type='radio']) {
                     //            .form-control;
                     height: @input-height-base !important;
+                    width: 100% !important;
+                }
+                textarea {
+                    .form-control();
                     width: 100% !important;
                 }
                 input[type='checkbox'] {
@@ -147,9 +155,13 @@
                 .RadioButtonLabel {
                     padding: 0;
                     height: auto;
+                    label {
+                        width: inherit;
+                    }
                 }
                 .RadioButton {
                     .form-control();
+                    box-shadow: none;
                     border: none;
                     width: auto;
                     input {
@@ -169,7 +181,7 @@
                 .make-sm-column(6);
                 .box-shadow(none);
                 border: none;
-                //            height: 100%;
+                height: inherit;
                 text-align: right;
                 width: 100% !important;
             }
@@ -227,6 +239,20 @@
             display: none;
         }
 
+        .PromptPanel b {
+            font-size: 1.25em;
+        }
+        .PromptPanel i {
+            font-size: .75em;
+        }
+        .Heading {
+            background: inherit;
+            color: inherit;
+            font-size: 2em;
+            i {
+                font-style: normal;
+            }
+        }
     }
 }
 

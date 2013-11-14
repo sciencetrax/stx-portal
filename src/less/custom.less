@@ -1,65 +1,78 @@
-@ws-brand-color: #00ACE6;
+/* Defaults */
+
+@page-header-height: (@navbar-height + (@grid-gutter-width/2));
+@page-header-background: @navbar-inverse-bg;
+@custom-brand-color: @navbar-inverse-link-hover-bg;
+@custom-brand-font-size: 1em;
+@custom-brand-font-weight: bold;
+@custom-navbar-inverse-color: @navbar-inverse-color;
+@tagline: "";
+@taglineSmall: @tagline;
+
+/* Overrided */
+@page-header-height: 90px;
+@page-header-background: white;
+@custom-brand-color: #00ACE6;
+@custom-brand-font-size: 1.75em;
+@custom-navbar-inverse-color: #999;
+@tagline: "Families & Researchers Working Together to Advance Understanding of Williams Syndrome";
+@taglineSmall: "Families & Researchers Working Together";
 
 /*******************************************************************/
 /* Custom CSS Start  */
 /*******************************************************************/
-.siteCustomCssBegin {
-    background: red;
-}
-
-body {
-    margin-top: 90px;
-}
-
-.navbar-inverse {
-    background: white;
-    border-color: lighten(@ws-brand-color, 10%);
-    color: black;
+#page-instructions {
+    text-align: center;
 }
 
 .navbar-inverse:after {
-    content: "Families & Researchers Working Together to Advance Understanding of Williams Syndrome";
+    content: @tagline;
     @media (max-width: @screen-xs-max) {
-        content: "Families & Researchers Working Together";
+        content: @taglineSmall;
     }
 
-    color: @navbar-inverse-link-color;
+    color: @custom-navbar-inverse-color;
     font-size: .75em;
     margin-bottom: 10px;
     margin-left: 20px;
-    //    width: 200px;
 }
+.hideTagline(@tagline) when (@tagline = "") {
+    .navbar-inverse:after {
+        display: none;
+    }
+}
+.hideTagline(@tagline);
 
+body {
+    margin-top: @page-header-height;
+}
+.navbar-inverse {
+    background: @page-header-background;
+    border-color: lighten(@custom-brand-color, 10%);
+    color: @custom-brand-color;
+}
+.navbar-inverse .navbar-brand:active,
+.navbar-inverse .navbar-brand:focus,
 .navbar-inverse .navbar-brand:hover {
-    color: #999999;
+    color: @custom-navbar-inverse-color;
 }
 
 .navbar-inverse li > a:active,
 .navbar-inverse li > a:hover,
 .navbar-inverse li > a:visited {
-    background: @ws-brand-color !important;
+    background: @custom-brand-color !important;
 }
 
 .navbar-brand {
-    font-size: 1.75em;
-    font-weight: bold;
+    font-size: @custom-brand-font-size;
+    font-weight: @custom-brand-font-weight;
 }
-
 .registry-text {
-    color: @ws-brand-color;
+    color: @custom-brand-color;
 }
-
 a,
 a:hover {
-    color: @ws-brand-color;
-}
-
-#page-instructions {
-    text-align: center;
-}
-
-.siteCustomCssEnd {
-    background: red;
+    color: @custom-brand-color;
 }
 /*******************************************************************/
 /* Custom CSS End  */
