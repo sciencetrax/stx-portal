@@ -10,8 +10,10 @@
     </div>
 </header>
 
+<section id="page-instructions"></section>
+
 <section class="col-sm-6">
-    <h1>{{ "Profile" }}</h1>
+    <h1>{{ LSPage.attributes }}</h1>
     <ul class="attribute-table">
         <li>
             <div>{{ LSPage.username }}</div>
@@ -28,7 +30,7 @@
     </ul>
 </section>
 <section class="col-sm-6">
-    <h1>{{ LSPage.personalInformation }}</h1>
+    <h1>{{ LSPage.background }}</h1>
     <ul class="entity-list compact">
         <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
             <a href="#/variablegroups/update/{{item.id}}//" class="entity">

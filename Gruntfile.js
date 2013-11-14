@@ -618,6 +618,8 @@ module.exports = function (grunt) {
 			process: function (contents, path) {
 				return grunt.template.process(contents, {
 					data: {
+						config: grunt.config('pkg'),
+						debug: true,
 						scripts: jsFiles,
 						styles: cssFiles,
 						applicationPath: grunt.config('pkg.applicationPath'),
@@ -656,9 +658,10 @@ module.exports = function (grunt) {
 			process: function (contents, path) {
 				return grunt.template.process(contents, {
 					data: {
+						config: grunt.config('pkg'),
 						scripts: ['#URL(portal_site_js)'],
 						styles: ['#URL(portal_site_css)'],
-						applicationPath: '#ApplicationPath/',
+						applicationPath: '#ApplicationPath()',
 						portalCode: '#Portal.Code',
 						version: grunt.config('pkg.version')
 					}
@@ -699,6 +702,7 @@ module.exports = function (grunt) {
 			process: function (contents, path) {
 				return grunt.template.process(contents, {
 					data: {
+						config: grunt.config('pkg'),
 						scripts: jsFiles,
 						styles: cssFiles,
 						applicationPath: grunt.config('pkg.applicationPath'),

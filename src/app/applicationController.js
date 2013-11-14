@@ -2,7 +2,7 @@ angular.module('stx')
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
 		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, session, stateExt) {
 			if (typeof(stx) != 'undefined') {
-				stx.Constants.ApplicationPath = APPLICATION_PATH;
+				stx.Constants.ApplicationPath = APPLICATION_PATH.replace("//", "/");
 			}
 
 			$scope.safeApply = function (fn) {
@@ -35,6 +35,8 @@ angular.module('stx')
 
 			$scope.$root.session = session;
 			$scope.$root.pageReady = true;
+			$scope.$root.LS = LS;
+
 			$scope.$state = $state;
 			$scope.$stateParams = $stateParams;
 			$scope.stateExt = stateExt;

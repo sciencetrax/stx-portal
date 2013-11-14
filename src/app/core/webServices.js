@@ -8,7 +8,7 @@ angular.module('stx.core.webService', [
 		this.apiBase = 'api/';
 
 		this.configure = function (applicationPath, apiBase) {
-			this.applicationPath = applicationPath;
+			this.applicationPath = applicationPath.replace("//", "/");
 			this.apiBase = apiBase;
 		};
 

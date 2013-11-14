@@ -7,10 +7,12 @@
 				var subject = authorizationContext.subject;
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
-					projectId: subject.projects[0].projectId,
+					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: subject.projects[0].siteId
+					siteId: $scope.portal.siteId
 				};
+
+				$('#page-instructions').html($('#message_accountInstructions').clone());
 
                 $scope.LSPage = LS.pages.accounts.view;
 				$scope.portal = portalResolver.data;

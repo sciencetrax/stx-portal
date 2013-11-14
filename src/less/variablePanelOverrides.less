@@ -19,7 +19,7 @@
             display: block;
             color: darken(@brand-danger, 15%) !important;
             list-style: none;
-            }
+        }
     }
 }
 
@@ -88,7 +88,15 @@
         .make-sm-column-offset(2);
         .make-sm-column(8);
 
+        .VariableGroupHeading {
+            border: none;
+            .VariableGroupName {
+                text-align: center;
+            }
+        }
+
         .VariablePanel {
+
             padding-left: 0;
             padding-right: 0;
             width: 100%;
@@ -105,14 +113,54 @@
             }
             .AnswerPanel {
                 width: 100% !important;
-                input:not([type='radio']) {
-                    //            .form-control;
-                    height: @input-height-base !important;
-                }
-                & > div {
+                select {
+                    .form-control();
                     width: 100% !important;
                 }
                 input:not([type='radio']) {
+                    //            .form-control;
+                    height: @input-height-base !important;
+                    width: 100% !important;
+                }
+                input[type='checkbox'] {
+                    margin: 0;
+                    width: auto !important;
+                }
+                .AnswerSuffixTable {
+                    width: 100% !important;
+                }
+                .DateWrapper {
+                    position: relative;
+                    width: 100% !important;
+                    input {
+                        margin-right: 40px;
+                    }
+                    img {
+                        left: inherit;
+                        top: 4px;
+                        right: -5px;
+                        position: absolute;
+                        height: 32px;
+                        width: 32px;
+                    }
+                }
+                .RadioButtonLabel {
+                    padding: 0;
+                    height: auto;
+                }
+                .RadioButton {
+                    .form-control();
+                    border: none;
+                    width: auto;
+                    input {
+                        margin-top: 6px;
+                    }
+                    label {
+                        padding: 0;
+                        text-align: left;
+                    }
+                }
+                & > div {
                     width: 100% !important;
                 }
             }
@@ -125,13 +173,46 @@
                 text-align: right;
                 width: 100% !important;
             }
-            .AnswerPanel + .PromptPanel {
+            .VariablePanelFirstContainer .AnswerPanel {
+                text-align: right;
+            }
+            .VariablePanelSecondContainer .PromptPanel {
                 text-align: left;
             }
         }
-        //        input[type='checkbox'] {
-        //            width: inherit !important;
-        //        }
+
+        .Vertical {
+            .VariablePanelFirstContainer {
+                .make-sm-column(12);
+                padding: 0 !important;
+            }
+            .VariablePanelSecondContainer {
+                .make-sm-column(12);
+                padding: 0 !important;
+            }
+            .PromptPanel {
+                text-align: left;
+                margin: 0 !important;
+                padding: 0 !important;
+                padding-top: 15px !important;
+                margin-top: 20 !important;
+            }
+            .VariablePanelSecondContainer .PromptPanel {
+                padding: 8px !important;
+            }
+            .AnswerPanel {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+            .DateWrapper img {
+                right: 10px !important;
+            }
+        }
+        @media (max-width: @screen-xs-max) {
+            .VariablePanel {
+                .Vertical();
+            }
+        }
 
         .ClearBoth,
         .IndentPanel {
@@ -148,6 +229,7 @@
 
     }
 }
+
 .entity-list.DataEntryPanel {
     font-size: inherit;
 }

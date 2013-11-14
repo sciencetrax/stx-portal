@@ -24,13 +24,15 @@
 				var subject = authorizationContext.subject;
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
-					projectId: subject.projects[0].projectId,
+					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: subject.projects[0].siteId
+					siteId: $scope.portal.siteId
 				};
 
 				var summariesReady = false;
 				var encountersReady = false;
+
+				$('#page-instructions').html($('#message_homeInstructions').clone());
 
 				$scope.LSPage = LS.pages.home.index;
 				$scope.$root.pageReady = false;
@@ -42,9 +44,9 @@
 					});
 				$scope.reports = ProjectReport.query({
 					customerId: authorizationContext.customerId,
-					projectId: subject.projects[0].projectId,
+					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: subject.projects[0].siteId
+					siteId: $scope.portal.siteId
 				});
 
 				$scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;

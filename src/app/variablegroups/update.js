@@ -14,8 +14,8 @@
 
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
-					subject.projects[0].projectId,
-					subject.projects[0].siteId,
+					$scope.portal.projectId,
+					$scope.portal.siteId,
 					subject.id,
 					$stateParams.intervalId,
 					$stateParams.encounterId,

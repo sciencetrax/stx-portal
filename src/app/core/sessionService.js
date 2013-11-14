@@ -41,6 +41,7 @@
 			var authorization = this.getValue(Constants.AuthHeader);
 			var loginByReferenceId = this.getValue(Constants.LoginByReferenceId);
 			var sessionTimeoutMilliseconds = this.getValue(Constants.SessionTimeoutMilliseconds);
+			delete this.$http.defaults.headers.common[Constants.AuthHeader];
 			if (!String.isNullEmptyOrUndefined(authorization)
 				&& sessionTimeoutMilliseconds != null) {
 				this.authorize(authorization, sessionTimeoutMilliseconds, loginByReferenceId);
@@ -90,7 +91,7 @@
 			}
 			this.authorizationContextResolver.reset();
 			this.authorization = null;
-			this.$http.defaults.headers.common[Constants.AuthHeader] = null;
+			delete this.$http.defaults.headers.common[Constants.AuthHeader];
 			this.removeValue(Constants.AuthHeader);
 			this.removeValue(Constants.LoginByReferenceId);
 			this.removeValue(Constants.SessionTimeoutMilliseconds);

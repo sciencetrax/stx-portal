@@ -14,6 +14,9 @@
 						if (_this.data == null) {
 							_this.data = Portal.get({ code: PORTAL_CODE, includeProject: true }, function (data) {
 								$rootScope.portal = data;
+								if (String.isNullEmptyOrUndefined($rootScope.LS.portalName)) {
+									$rootScope.LS.portalName = data.name;
+								}
 								_this.resolved = true;
 								deferred.resolve();
 							});

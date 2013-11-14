@@ -105,11 +105,12 @@
 			},
 			view: {
 				heading: "Account",
+				attributes: "Attributes",
+				background: "Background",
 				changePassword: "Change Password",
 				edit: "Edit",
 				emailAddress: "Email Address",
 				name: "Name",
-				personalInformation: "Background",
 				username: "Username"
 			}
 		},
@@ -161,3 +162,4 @@
 };
 
 var LS = new NavigableHash(LOCALE);
+String.LS = LS;

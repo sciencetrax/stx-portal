@@ -34,19 +34,23 @@
         width: 65%;
       }
       @media (min-width: @screen-xs) {
-        width: 75%;
+          margin-left: 25%;
+          width: 50%;
       }
       @media (min-width: @screen-sm) {
-        width: 85%;
+          margin-left: 15%;
+          width: 70%;
       }
       @media (min-width: @screen-md) {
-        width: 85%;
+          margin-left: 15%;
+          width: 70%;
       }
       @media (min-width: @screen-lg) {
       }
     }
     &.noactions h1 {
-      width: 100%;
+        margin-left: 0;
+        width: 100%;
     }
     .actions {
       .btn-group;
@@ -65,4 +69,8 @@
   section h1 {
     .h4;
   }
+}
+
+#page-instructions {
+    .make-sm-column(12)
 }

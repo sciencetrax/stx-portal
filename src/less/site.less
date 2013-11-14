@@ -30,16 +30,6 @@
     }
 }
 
-//
-//.badge.complete {
-//  background: @brand-success !important;
-//}
-//
-//.badge.incomplete {
-//  background: @brand-warning !important;
-//  color: black;
-//}
-
 body {
     min-width: 320px;
     overflow-x: hidden;
@@ -105,7 +95,7 @@ body {
         .row;
         margin-left: 0;
         margin-right: 0;
-//        padding: .25em;
+        //        padding: .25em;
         div {
             .text-ellipsis;
 
@@ -198,89 +188,17 @@ body {
         padding-right: 0 !important;
     }
 }
+
 .entity-list.compact .name {
     .make-sm-column(8);
     .make-md-column(9);
 }
+
 .entity-list.compact .percent-complete {
     .make-sm-column(4);
     .make-md-column(3);
 }
 
-
 .entity-list .encounter .name {
     .make-sm-column(6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*******************************************************************/
-@ws-brand-color:        #00ACE6;
-
-body {
-    margin-top: 90px;
-}
-.navbar-inverse {
-    background: white;
-    border-color: lighten(@ws-brand-color, 10%);
-    color: black;
-}
-.navbar-inverse:after {
-    content: "Families & Researchers Working Together to Advance Understanding of Williams Syndrome";
-    @media (max-width: @screen-xs-max) {
-        content: "Families & Researchers Working Together";
-    }
-
-    color: @navbar-inverse-link-color;
-    font-size: .75em;
-    margin-bottom: 10px;
-    margin-left: 20px;
-//    width: 200px;
-}
-.navbar-inverse .navbar-brand:hover {
-    color: #999999;
-}
-.navbar-inverse li > a:active,
-.navbar-inverse li > a:hover,
-.navbar-inverse li > a:visited {
-    background: @ws-brand-color !important;
-}
-.navbar-brand {
-    font-size: 1.75em;
-    font-weight: bold;
-}
-.registry-text {
-    color: @ws-brand-color;
-}
-
-a,
-a:hover {
-    color: @ws-brand-color;
-}
-
-.entity-list .percent-complete .complete {
-//    background: @brand-success !important;
-}
-.entity-list .percent-complete .nodataandincomplete,
-.entity-list .percent-complete .incomplete {
-//    background: lighten(@ws-brand-color, 25%) !important;
-//    color: black;
-}
-
-
-
-
-
-

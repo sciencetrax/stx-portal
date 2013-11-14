@@ -11,7 +11,8 @@
                     url: "/variablegroups",
 					data: {
 						depends: [
-							'authorizationContextResolver'
+							'authorizationContextResolver',
+							'portalResolver'
 						]
 					},
 					views: {

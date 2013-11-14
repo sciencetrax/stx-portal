@@ -28,22 +28,22 @@
 
     <div class="buttons">
         <!-- LOGIN BUTTON -->
-        <div>
+        <div class="login-button">
             <button id="loginBtn" ng-click="login()" class="login-btn" data-loading-text="{{ LSPage.loggingIn }}">{{LSPage.login}}</button>
         </div>
 
         <!-- ENROLL BUTTON -->
-        <div ng-show="portal.anonymousInterval">
+        <div class="enroll-button" ng-show="portal.anonymousInterval">
             <button ng-click="$state.go('accounts.enroll')" class="enroll-btn">{{LSPage.enroll}}</button>
         </div>
 
         <!-- REGISTER BUTTON -->
-        <div ng-show="!portal.anonymousInterval && portal.registration">
+        <div class="register-button" ng-show="!portal.anonymousInterval && portal.registration">
             <button ng-click="$state.go('accounts.register')" class="register-btn">{{LSPage.register}}</button>
         </div>
 
         <!-- FORGOT USERNAME/PASSWORD BUTTON-->
-        <div>
+        <div class="forgot-username-password-button">
             <a id="forgotBtn" href="#/forgot">{{LSPage.forgotUsernameOrPassword}}</a>
         </div>
     </div>

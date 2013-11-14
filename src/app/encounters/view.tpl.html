@@ -4,21 +4,21 @@
     </header>
     <div class="variable-panel-scripts"></div>
 
-    <div class="col-xs-12">{{ encounter.instructions }}</div>
+    <section id="page-instructions">{{ encounter.instructions }}</section>
 
     <!-- ATTRIBUTES  -->
     <section class="col-xs-12 col-sm-6">
         <h1>{{ LSPage.attributes }}</h1>
         <ul class="attribute-table">
-            <li>
+            <li id="attributeDue">
                 <div>{{ "Due" }}</div>
                 <div>{{ encounter.dueDate | moment:'fromNow' }}</div>
             </li>
-            <li>
+            <li id="attributeCreated">
                 <div>{{ "Created" }}</div>
                 <div>{{ encounter.createDate | moment:'format':"LL" }}</div>
             </li>
-            <li ng-show="encounter.lastEditTime != null">
+            <li id="attributeEditUntil" ng-show="encounter.lastEditTime != null">
                 <div>{{ "Edit Until" }}</div>
                 <div>{{ encounter.lastEditTime | moment:'LL' }}</div>
             </li>
@@ -48,14 +48,16 @@
         </ul>
 
         <!-- REPORTS -->
-        <h1>{{ LSPage.reports }}</h1>
-        <ul class="entity-list">
-            <li ng-repeat="item in encounter.reports" reportid="{{item.id}}">
-                <a class="entity" href="#/reports/view/{{ encounter.encounterId }}/{{ item.id }}">
-                    {{item.name}}
-                </a>
-            </li>
-        </ul>
+        <div ng-show="encounter.reports.length > 0">
+            <h1>{{ LSPage.reports }}</h1>
+            <ul class="entity-list">
+                <li ng-repeat="item in encounter.reports" reportid="{{item.id}}">
+                    <a class="entity" href="#/reports/view/{{ encounter.encounterId }}/{{ item.id }}">
+                        {{item.name}}
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </section>
 </div>

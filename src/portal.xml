@@ -6,7 +6,7 @@
 -->
 <studyTrax type="Portal" created="<%= created %>" version="330">
     <portals>
-        <portal name="<%= pkg.portalName %>"
+        <portal name="<%= pkg.name %>"
                 description="<%= pkg.description %>"
                 code="<%= pkg.name %>"
                 userType="<%= pkg.portalType %>"
@@ -119,9 +119,36 @@
                 <!-- CSS OVERRIDES -->
                 <page code="css_overrides" pageType="css">
                     <![CDATA[
-                    /*
-                     * Enter overrides here to change the look and feel for the portal.
-                     */
+                        /*
+                         * Enter overrides here to change the look and feel for the portal.
+                         */
+                        .register-button,
+                        .enroll-button,
+                        \#attributeCreated,
+                        \#attributeEditUntil {
+                            display: none;
+                        }
+					]]>
+                </page>
+
+                <!-- JS OVERRIDES -->
+                <page code="js_overrides" pageType="JavaScript">
+                    <![CDATA[
+                        /*
+                         * Enter overrides here to change the behavior for the portal.
+                         */
+                        LS.portalName = "The <span class='registry-text'>Registry</span>";
+                        LS.pages.home.index.heading = "Your Homepage";
+                        LS.pages.home.index.incomplete = "Share Info";
+                        LS.pages.home.index.reports = "For your Review";
+                        LS.pages.home.index.recentlyCompleted = "Prior Surveys";
+
+                        LS.pages.encounters.view.attributes = "Survey Info";
+                        LS.pages.encounters.view.forms = "Sections to Complete";
+                        LS.pages.encounters.view.reports = "For your Review";
+
+                        LS.pages.accounts.view.attributes = "Registry Account Details";
+                        LS.pages.accounts.view.background = "Key Info & Milestones";
 					]]>
                 </page>
 
@@ -144,6 +171,21 @@
                 <!-- ANONYMOUS SURVEY COMPLETE MESSAGE -->
                 <page code="anonymousSurveyCompleteMessage" pageType="Fragment">
                     Thank you for taking the survey.
+                </page>
+
+                <!-- ACCOUNT INSTRUCTIONS MESSAGE -->
+                <page code="message_accountInstructions" pageType="Fragment">
+                    You can update your Registry Account Details here.  Also, you can update medical/surgical information as well as new developmental milestones.
+                </page>
+
+                <!-- HOME INSTRUCTIONS MESSAGE -->
+                <page code="message_homeInstructions" pageType="Fragment">
+                    Thank you for being a member of the Williams Syndrome Registry!  Follow the links to share updates with the Registry and to learn about new studies.
+                </page>
+
+                <!-- REGISTER INSTRUCTIONS MESSAGE -->
+                <page code="message_registerInstructions" pageType="Fragment">
+                    <!-- ENTER INSTRUCTIONS HERE -->
                 </page>
 
                 <!-- ************************************************************************* -->
