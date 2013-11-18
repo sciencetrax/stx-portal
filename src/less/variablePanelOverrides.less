@@ -89,8 +89,8 @@
             font-size: @font-size-base !important;
         }
         .stx-form;
-        .make-sm-column-offset(2);
-        .make-sm-column(8);
+        .make-lg-column-offset(2);
+        .make-lg-column(8);
 
         .VariableGroupHeading {
             border: none;
@@ -196,10 +196,12 @@
         .Vertical {
             .VariablePanelFirstContainer {
                 .make-sm-column(12);
+                .make-md-column(12);
                 padding: 0 !important;
             }
             .VariablePanelSecondContainer {
                 .make-sm-column(12);
+                .make-md-column(12);
                 padding: 0 !important;
             }
             .PromptPanel {
@@ -220,11 +222,6 @@
                 right: 10px !important;
             }
         }
-        @media (max-width: @screen-xs-max) {
-            .VariablePanel {
-                .Vertical();
-            }
-        }
 
         .ClearBoth,
         .IndentPanel {
@@ -239,6 +236,14 @@
             display: none;
         }
 
+        .VariableGroupHeading {
+            border: none;
+            .VariableGroupName {
+                font-size: 2em;
+                text-align: center;
+                width: 100%;
+            }
+        }
         .PromptPanel b {
             font-size: 1.25em;
         }
@@ -248,11 +253,26 @@
         .Heading {
             background: inherit;
             color: inherit;
-            font-size: 2em;
+            font-size: 1.75em;
             i {
                 font-style: normal;
             }
         }
+        @media (max-width: @screen-xs-max) {
+            .VariablePanel {
+                .Vertical();
+            }
+            .VariableGroupHeading .VariableGroupName {
+                font-size: 1.5em;
+            }
+            .Heading {
+                font-size: 1.25em;
+            }
+            .PromptPanel b {
+                font-size: 1em;
+            }
+        }
+
     }
 }
 

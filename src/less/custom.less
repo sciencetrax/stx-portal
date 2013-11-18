@@ -28,7 +28,7 @@
 .navbar-inverse:after {
     content: @tagline;
     @media (max-width: @screen-xs-max) {
-        content: @taglineSmall;
+        content: none;
     }
 
     color: @custom-navbar-inverse-color;
@@ -65,6 +65,9 @@ body {
 
 .navbar-brand {
     font-size: @custom-brand-font-size;
+    @media (max-width: @screen-xs-max) {
+        font-size: (@custom-brand-font-size * .7);
+    }
     font-weight: @custom-brand-font-weight;
 }
 .registry-text {
