@@ -4,7 +4,7 @@
     </header>
     <div class="variable-panel-scripts"></div>
 
-    <section id="page-instructions">{{ encounter.instructions }}</section>
+    <section id="page-instructions" ng-bind-html="encounter.instructions"></section>
 
     <!-- ATTRIBUTES  -->
     <section class="col-xs-12 col-sm-6">

@@ -122,12 +122,14 @@
                         /*
                          * Enter overrides here to change the look and feel for the portal.
                          */
+                         /*
                         .register-button,
                         .enroll-button,
                         \#attributeCreated,
                         \#attributeEditUntil {
                             display: none;
                         }
+                        /**/
 					]]>
                 </page>
 
@@ -137,6 +139,7 @@
                         /*
                          * Enter overrides here to change the behavior for the portal.
                          */
+                         /*
                         LS.portalName = "The <span class='registry-text'>Registry</span>";
                         LS.pages.home.index.heading = "Your Homepage";
                         LS.pages.home.index.incomplete = "Share Info";
@@ -149,6 +152,7 @@
 
                         LS.pages.accounts.view.attributes = "Registry Account Details";
                         LS.pages.accounts.view.background = "Key Info & Milestones";
+                        /**/
 					]]>
                 </page>
 
