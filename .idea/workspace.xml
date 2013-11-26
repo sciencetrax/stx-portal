@@ -110,7 +110,7 @@
       <file leaf-file-name="bower.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="95" selection-end="95" vertical-scroll-proportion="0.122522525" vertical-offset="0" max-vertical-offset="555">
+            <state line="16" column="31" selection-start="465" selection-end="465" vertical-scroll-proportion="0.4900901" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -796,7 +796,11 @@
       <created>1385485115733</created>
       <updated>1385485115733</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Trying to fix build">
+      <created>1385486223959</created>
+      <updated>1385486223960</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -971,7 +975,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="95" selection-end="95" vertical-scroll-proportion="0.122522525" vertical-offset="0" max-vertical-offset="555">
+        <state line="16" column="31" selection-start="465" selection-end="465" vertical-scroll-proportion="0.4900901" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
