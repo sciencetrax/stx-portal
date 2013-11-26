@@ -55,7 +55,7 @@
 						if (md.length !== null) {
 							var valid = text.length <= md.length;
 							controller.$setValidity('maxlength', valid);
-							remainingChars.html("({0} / {1}}".format(text.length, md.length));
+							remainingChars.html("({0} / {1})".format(text.length, md.length));
 							if (md.length - text.length < 0) {
 								remainingChars.addClass('negative');
 							} else {

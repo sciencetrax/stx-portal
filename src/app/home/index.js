@@ -19,7 +19,7 @@
 			};
 		}])
 		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
-			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounterList) {
+			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -52,7 +52,21 @@
 				$scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;
 				$scope.incompleteEncounters =[];
 				$scope.recentlyCompletedEncounters =[];
-				ScheduledEncounterList.query(securityProfile,
+				$scope.createEncounter = function(intervalId) {
+					var encounter = new ScheduledEncounter();
+					encounter.customerId = authorizationContext.customerId;
+					encounter.projectId = $scope.portal.projectId;
+					encounter.subjectId = subject.id;
+					encounter.siteId = $scope.portal.siteId;
+					encounter.intervalId = intervalId;
+					ScheduledEncounter.save(encounter, function(encounter) {
+						$scope.$state.go('encounters.view', {
+							intervalId: intervalId,
+							encounterId: encounter.id
+						});
+					});
+				};
+				ScheduledEncounter.query(securityProfile,
 					function (encounters) {
 						encounters = $filter('orderBy')(encounters, 'dueDate', true);
 						$scope.incompleteEncounters = $filter('incomplete')(encounters);

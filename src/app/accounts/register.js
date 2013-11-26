@@ -5,6 +5,9 @@
 			['$scope', '$location', 'portalResolver', 'session', 'stateExt', 'AuthorizationContext', 'EmailRequest', 'Metadata', 'Account',
 				function ($scope, $location, portalResolver, session, stateExt, AuthorizationContext, EmailRequest, Metadata, Account) {
 					$scope.LSPage = LS.pages.accounts.register;
+
+					$('#page-instructions').html($('#message_registerInstructions').clone());
+
 					$scope.metadata = Metadata.get({ entityType: 'account'});
 					$scope.portal = portalResolver.data;
 					if (!session.isAuthorized()) {

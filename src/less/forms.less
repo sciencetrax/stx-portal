@@ -111,21 +111,13 @@ input.ng-dirty.ng-invalid {
         color: @input-color-placeholder;
         display: block;
         float: right;
-        font-size: .8em;
+        line-height: @line-height-base;
         position: absolute;
-        @media (max-width: @screen-sm-max) {
-            top: -25px;
-            right: (@grid-gutter-width / 2);
-        }
-        @media (min-width: @screen-sm) {
-            top: @padding-base-vertical + 2;
-            right: (@grid-gutter-width);
-        }
+        top: @padding-base-vertical;
+        right: (@grid-gutter-width);
     }
-    @media (min-width: @screen-sm) {
-        input {
-            padding-right: (@grid-gutter-width * 3);
-        }
+    input:not([type='radio']) {
+        padding-right: (@grid-gutter-width * 3);
     }
 
     .password-strength {

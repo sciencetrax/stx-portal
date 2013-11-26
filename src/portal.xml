@@ -122,7 +122,7 @@
                         /*
                          * Enter overrides here to change the look and feel for the portal.
                          */
-                         /*
+                         /**/
                         .register-button,
                         .enroll-button,
                         \#attributeCreated,
@@ -190,6 +190,7 @@
                 <!-- REGISTER INSTRUCTIONS MESSAGE -->
                 <page code="message_registerInstructions" pageType="Fragment">
                     <!-- ENTER INSTRUCTIONS HERE -->
+                    <b>Thank you for registering <span style="color: red">your family member</span> with Williams syndrome.  <span style="color: red">Below, share information for his or her</span> primary caregiver <span style="color: red">(i.e. the main user of this account). You can share other information once you log on.</span>  We appreciate your participation!</b>
                 </page>
 
                 <!-- ************************************************************************* -->

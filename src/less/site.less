@@ -1,3 +1,11 @@
+// This prevents IE from auto-hiding the scrollbar.  On desktops, this is very
+// problematic as the scrollbar never seems to go away making the page look
+// clipped by the scrollbar.  On Windows Phone, this must be set via
+// JavaScript which is why the windows-phone-8-fix.js file adds this style
+// to the document via script.
+// http://stackoverflow.com/questions/17045132/scrollbar-overlay-in-ie10-how-do-you-stop-that-might-be-bootstrap
+@-ms-viewport{ width: auto !important; }
+
 #sessionExpirationDialog .modal-dialog {
     margin-top: (@navbar-height + (@grid-gutter-width/2));
 }
