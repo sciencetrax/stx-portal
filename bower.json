@@ -16,7 +16,10 @@
     "jquery-form": "~3.37.0",
     "angular-scenario": "~1.2.2",
     "moment": "~2.3.1",
-    "angular-sanitize": "~1.2.0"
+    "angular-sanitize": "~1.2.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "angular": "1.2.2"
+  }
 }
