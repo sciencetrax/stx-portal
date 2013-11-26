@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -110,7 +109,7 @@
       <file leaf-file-name="bower.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="326" selection-end="326" vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
+            <state line="5" column="34" selection-start="134" selection-end="167" vertical-scroll-proportion="0.15315315" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -804,7 +803,11 @@
       <created>1385487812553</created>
       <updated>1385487812553</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Trying to fix build">
+      <created>1385488123397</created>
+      <updated>1385488123397</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -979,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="326" selection-end="326" vertical-scroll-proportion="0.33693695" vertical-offset="0" max-vertical-offset="555">
+        <state line="5" column="34" selection-start="134" selection-end="167" vertical-scroll-proportion="0.15315315" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
