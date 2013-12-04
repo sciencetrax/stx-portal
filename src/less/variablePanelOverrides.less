@@ -46,32 +46,11 @@
             height: 100%;
 
             .RadioButton {
-                //                display: inherit;
-                //                float: inherit;
-                //                height: @input-height-base !important;
-                input {
-                    //            .form-control;
-                    //                    margin-top: .5em;
-                    //            margin: .3em !important;
-                }
                 .RadioButtonLabel {
-                    //                    float: inherit;
-                    //                    margin: inherit !important;
                     label {
-                        //                        float: inherit;
-                        //                        margin: inherit !important;
-                        //                        padding: inherit !important;
-                        //                        padding-left: (@grid-gutter-width / 2) !important;
-                        //                        width: inherit;
-                        //                        display: inline;
-                        //            margin-bottom: 0;
-                        //            font-weight: normal;
                         cursor: pointer;
                     }
                 }
-            }
-            .HorizontalRadioButtonList .RadioButton {
-                //        .make-sm-column(2);
             }
         }
     }
@@ -100,6 +79,10 @@
             }
         }
 
+        .Document span {
+            display: inline !important;
+        }
+
         .VariablePanel {
             padding-left: 0;
             padding-right: 0;
@@ -109,11 +92,26 @@
                 .make-sm-column(6);
                 padding-left: 0;
                 padding-right: 0;
+                .AnswerPanel {
+                    .form-control;
+                    .box-shadow(none);
+                    border: none;
+                    height: inherit;
+                    padding-bottom: 0;
+                    padding-top: 0;
+                    text-align: right;
+                    width: 100% !important;
+                }
             }
             .VariablePanelSecondContainer {
                 .make-sm-column(6);
                 padding-left: 0;
                 padding-right: 0;
+                .PromptPanel {
+                    margin-left: 0;
+                    padding-left: 0;
+                    text-align: left;
+                }
             }
             .AnswerPanel {
                 width: 100% !important;
@@ -128,11 +126,16 @@
                 }
                 textarea {
                     .form-control();
+                    height: (@input-height-base * 3) !important;
                     width: 100% !important;
                 }
                 input[type='checkbox'] {
+                    height: inherit !important;
                     margin: 0;
                     width: auto !important;
+                }
+                input[type='file'] {
+                    height: inherit !important;
                 }
                 .AnswerSuffixTable {
                     width: 100% !important;
@@ -163,9 +166,10 @@
                     .form-control();
                     box-shadow: none;
                     border: none;
+                    padding-left: 0;
                     width: auto;
                     input {
-                        margin-top: 6px;
+                        margin-top: 10px;
                     }
                     label {
                         padding: 0;
@@ -185,15 +189,10 @@
                 text-align: right;
                 width: 100% !important;
             }
-            .VariablePanelFirstContainer .AnswerPanel {
-                text-align: right;
-            }
-            .VariablePanelSecondContainer .PromptPanel {
-                text-align: left;
-            }
         }
 
         .Vertical {
+            clear: both;
             .VariablePanelFirstContainer {
                 .make-sm-column(12);
                 .make-md-column(12);
@@ -202,17 +201,22 @@
             .VariablePanelSecondContainer {
                 .make-sm-column(12);
                 .make-md-column(12);
+                margin-bottom: (@grid-gutter-width / 2);
                 padding: 0 !important;
             }
             .PromptPanel {
                 text-align: left;
                 margin: 0 !important;
                 padding: 0 !important;
-                padding-top: 15px !important;
+//                padding-top: 15px !important;
                 margin-top: 20 !important;
             }
+            .RadioButton {
+                height: inherit !important;
+                padding: 0 !important;
+            }
             .VariablePanelSecondContainer .PromptPanel {
-                padding: 8px !important;
+//                padding: 8px !important;
             }
             .AnswerPanel {
                 margin: 0 !important;
@@ -261,6 +265,13 @@
         @media (max-width: @screen-xs-max) {
             .VariablePanel {
                 .Vertical();
+                .VariablePanelFirstContainer,
+                .VariablePanelSecondContainer {
+                    width: 100%;
+                    .AnswerPanel {
+                        text-align: left;
+                    }
+                }
             }
             .VariableGroupHeading .VariableGroupName {
                 font-size: 1.5em;
