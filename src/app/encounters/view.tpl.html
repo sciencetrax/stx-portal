@@ -11,15 +11,15 @@
         <h1>{{ LSPage.attributes }}</h1>
         <ul class="attribute-table">
             <li id="attributeDue">
-                <div>{{ "Due" }}</div>
-                <div>{{ encounter.dueDate | moment:'fromNow' }}</div>
+                <div>{{ LSPage.due }}</div>
+                <div>{{ encounter.dueDate | encounterDueDescription:'fromNow' }}</div>
             </li>
             <li id="attributeCreated">
-                <div>{{ "Created" }}</div>
+                <div>{{ LSPage.created }}</div>
                 <div>{{ encounter.createDate | moment:'format':"LL" }}</div>
             </li>
             <li id="attributeEditUntil" ng-show="encounter.lastEditTime != null">
-                <div>{{ "Edit Until" }}</div>
+                <div>{{ LSPage.editUntil }}</div>
                 <div>{{ encounter.lastEditTime | moment:'LL' }}</div>
             </li>
         </ul>

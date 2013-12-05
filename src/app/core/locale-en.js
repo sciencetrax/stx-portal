@@ -123,6 +123,9 @@
 			},
 			view: {
 				attributes: "Attributes",
+				created: "Created",
+				due: "Due",
+				editUntil: "Edit Until",
 				forms: "Forms",
 				reports: "Reports"
 			}

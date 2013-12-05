@@ -79,11 +79,27 @@
             }
         }
 
+        .Checkbox .AnswerSuffixTable {
+            table-layout: fixed;
+            tr {
+                vertical-align: middle;
+                td {
+                    color: inherit !important;
+                    span {
+                        display: inline !important;
+                    }
+                }
+                td:first-child {
+                    width: 20px;
+                }
+            }
+        }
         .Document span {
             display: inline !important;
         }
 
         .VariablePanel {
+            min-height: 60px;
             padding-left: 0;
             padding-right: 0;
             width: 100%;
@@ -117,6 +133,7 @@
                 width: 100% !important;
                 select {
                     .form-control();
+                    padding-top: 9px;
                     width: 100% !important;
                 }
                 input:not([type='radio']) {
@@ -130,7 +147,6 @@
                     width: 100% !important;
                 }
                 input[type='checkbox'] {
-                    height: inherit !important;
                     margin: 0;
                     width: auto !important;
                 }
@@ -138,6 +154,9 @@
                     height: inherit !important;
                 }
                 .AnswerSuffixTable {
+                    tr td span {
+                        color: inherit !important;
+                    }
                     width: 100% !important;
                 }
                 .DateWrapper {
@@ -148,8 +167,8 @@
                     }
                     img {
                         left: inherit;
-                        top: 4px;
-                        right: -5px;
+                        top: 6px;
+                        right: 10px;
                         position: absolute;
                         height: 32px;
                         width: 32px;
@@ -180,14 +199,26 @@
                     width: 100% !important;
                 }
             }
+            .NumberPanel {
+                .form-control;
+                .box-shadow(none);
+                border: none;
+                height: inherit;
+                text-align: left;
+                width: 40px !important;
+            }
             .PromptPanel {
                 .form-control;
-                .make-sm-column(6);
+                //                .make-sm-column(6);
                 .box-shadow(none);
                 border: none;
                 height: inherit;
                 text-align: right;
                 width: 100% !important;
+            }
+            .NumberPanel + .AnswerPanel,
+            .NumberPanel + .PromptPanel {
+                width: 82% !important;
             }
         }
 
@@ -204,26 +235,20 @@
                 margin-bottom: (@grid-gutter-width / 2);
                 padding: 0 !important;
             }
+            .NumberPanel,
             .PromptPanel {
                 text-align: left;
                 margin: 0 !important;
                 padding: 0 !important;
-//                padding-top: 15px !important;
                 margin-top: 20 !important;
             }
             .RadioButton {
                 height: inherit !important;
                 padding: 0 !important;
             }
-            .VariablePanelSecondContainer .PromptPanel {
-//                padding: 8px !important;
-            }
             .AnswerPanel {
                 margin: 0 !important;
                 padding: 0 !important;
-            }
-            .DateWrapper img {
-                right: 10px !important;
             }
         }
 
@@ -262,6 +287,11 @@
                 font-style: normal;
             }
         }
+        //        .Vertical {
+        //            input[type='checkbox'] {
+        //                height: inherit !important;
+        //            }
+        //        }
         @media (max-width: @screen-xs-max) {
             .VariablePanel {
                 .Vertical();
@@ -273,17 +303,83 @@
                     }
                 }
             }
+
             .VariableGroupHeading .VariableGroupName {
                 font-size: 1.5em;
             }
+
             .Heading {
                 font-size: 1.25em;
             }
+
             .PromptPanel b {
                 font-size: 1em;
             }
         }
 
+        .MatrixTable {
+            table-layout: fixed;
+            width: 100%;
+            .RequiredFieldHeader,
+            .RequiredPanel {
+                display: none;
+            }
+
+            thead {
+                tr {
+                    th {
+                        background: lighten(@custom-brand-color, 35%);
+                        padding: @padding-base-vertical @padding-base-horizontal;
+                        width: auto;
+                    }
+                    .NumberHeader {
+                        width: 60px;
+                    }
+                    .PromptHeader {
+                        width: 250px !important;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        //                .form-control;
+                        float: none;
+                        padding: @padding-base-vertical @padding-base-horizontal;
+                        text-align: center;
+                    }
+                    .NumberPanel {
+                        background: inherit;
+                        display: table-cell;
+                        padding: @padding-base-vertical @padding-base-horizontal !important;
+                    }
+                    .PromptPanel {
+                        min-height: @input-height-base;
+                        background: inherit;
+                        padding: @padding-base-vertical @padding-base-horizontal !important;
+                        text-align: justify;
+                        width: 100% !important;
+                    }
+                }
+                tr.Even {
+                    background: lighten(@custom-brand-color, 40%);
+                }
+            }
+        }
+        .MatrixTable + .VariablePanel {
+            .NumberPanel {
+                margin-left: 3px;
+                margin-right: 2px;
+                padding: @padding-base-vertical @padding-base-horizontal !important;
+                width: 60px !important;
+            }
+            .PromptPanel {
+                text-align: justify !important;
+            }
+        }
+        .MatrixTable + .MatrixTable {
+            margin-top: (@grid-gutter-width / 2);
+        }
     }
 }
 

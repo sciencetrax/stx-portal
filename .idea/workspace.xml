@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/custom.less" afterPath="$PROJECT_DIR$/src/less/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="Working on bs-enhanced formatting">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/page.less" afterPath="$PROJECT_DIR$/src/less/page.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -30,46 +32,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
+      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="2.6153846" vertical-offset="408" max-vertical-offset="2261">
+            <state line="14" column="76" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/custom.less">
+      <file leaf-file-name="moment.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="69" selection-start="777" selection-end="777" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="1496">
+            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="encounterDueDescription.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="36" selection-start="849" selection-end="849" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="816">
+            <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.36707154" vertical-offset="0" max-vertical-offset="741">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="variablePanelOverrides.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="125" column="35" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2941">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="variablePanelOverrides.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="58" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.357971" vertical-offset="1844" max-vertical-offset="5049">
+            <state line="157" column="0" selection-start="4232" selection-end="4283" vertical-scroll-proportion="-5.1764708" vertical-offset="2405" max-vertical-offset="6681">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/page.less">
+      <file leaf-file-name="login.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="412" selection-end="412" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1445">
+            <state line="32" column="14" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-11.807693" vertical-offset="237" max-vertical-offset="952">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portal.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/portal.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="55" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5814">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="93" selection-start="2014" selection-end="2014" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="1564">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeAgo.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/filters/timeAgo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/forms.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="8" selection-start="2537" selection-end="2597" vertical-scroll-proportion="-12.115385" vertical-offset="1725" max-vertical-offset="6103">
               <folding />
             </state>
           </provider>
@@ -93,22 +140,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/portal.xml" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
         <option value="$PROJECT_DIR$/src/less/forms.less" />
         <option value="$PROJECT_DIR$/src/less/main.less" />
         <option value="$PROJECT_DIR$/src/less/site.less" />
-        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/home/index.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
         <option value="$PROJECT_DIR$/src/less/custom.less" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/less/page.less" />
         <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
+        <option value="$PROJECT_DIR$/src/portal.xml" />
+        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js" />
       </list>
     </option>
   </component>
@@ -173,24 +220,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -322,11 +351,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="accounts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="directives" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,8 +414,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\temp\stx-portal\src\less" />
       <recent name="C:\temp\stx-portal\src\app\core\filters" />
+      <recent name="C:\temp\stx-portal\src\less" />
       <recent name="C:\temp\stx-portal\src\app" />
       <recent name="C:\temp\stx-portal\src\app\common\menu" />
       <recent name="C:\temp\stx-portal\src\app\accounts" />
@@ -863,13 +910,18 @@
       <created>1385491484586</created>
       <updated>1385491484586</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Working on bs-enhanced formatting">
+      <created>1386172314566</created>
+      <updated>1386172314566</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -885,7 +937,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -898,7 +949,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Working on responsive design" />
     <MESSAGE value="Working on login pages" />
     <MESSAGE value="Redesigning pages" />
     <MESSAGE value="Updating README.md" />
@@ -923,7 +973,8 @@
     <MESSAGE value="Tweaking portal for williams syndrome portal." />
     <MESSAGE value="Fixed bug where non-fixed encounters could not be created" />
     <MESSAGE value="Trying to fix build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to fix build" />
+    <MESSAGE value="Working on bs-enhanced formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on bs-enhanced formatting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,90 +982,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2548" selection-end="2548" vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="1343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/stx/windows-phone-8-fix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="31" selection-end="503" vertical-scroll-proportion="0.52667814" vertical-offset="0" max-vertical-offset="581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/directives/append.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26333907" vertical-offset="153" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/site.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="4148">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="10" selection-start="615" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="51" selection-start="2497" selection-end="2497" vertical-scroll-proportion="0.8192771" vertical-offset="595" max-vertical-offset="1479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="134" selection-end="167" vertical-scroll-proportion="0.15315315" vertical-offset="0" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2693662" vertical-offset="153" max-vertical-offset="3808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="69" selection-start="777" selection-end="777" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="1496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="36" selection-start="849" selection-end="849" vertical-scroll-proportion="-17.0" vertical-offset="0" max-vertical-offset="816">
@@ -1029,16 +996,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/mixins.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12393">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/less/page.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="412" selection-end="412" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1445">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.6666667" vertical-offset="0" max-vertical-offset="10642">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/forms.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="8" selection-start="2537" selection-end="2597" vertical-scroll-proportion="-12.115385" vertical-offset="1725" max-vertical-offset="6103">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="58" selection-start="3179" selection-end="3179" vertical-scroll-proportion="0.357971" vertical-offset="1844" max-vertical-offset="5049">
+        <state line="157" column="0" selection-start="4232" selection-end="4283" vertical-scroll-proportion="-5.1764708" vertical-offset="2405" max-vertical-offset="6681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="14" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-11.807693" vertical-offset="237" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="55" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5814">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="35" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="76" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="93" selection-start="2014" selection-end="2014" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/filters/timeAgo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.36707154" vertical-offset="0" max-vertical-offset="741">
           <folding />
         </state>
       </provider>
