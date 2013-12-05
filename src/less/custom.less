@@ -37,6 +37,9 @@
     margin-bottom: 10px;
     margin-left: 20px;
 }
+
+// This is a trick to hide the tagline when it is left blank.  If
+// we don't do this, then it will leave the blank space below the menu.
 .hideTagline(@tagline) when (@tagline = "") {
     .navbar-inverse:after {
         display: none;

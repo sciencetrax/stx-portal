@@ -48,7 +48,7 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </header>
+                           </header>
 
                             <div class="content">
                                 <div class="container">
@@ -59,6 +59,10 @@
                             <div class="container">
                                 #Body
                             </div>
+                            <footer>
+                                <hr />
+                                <a href="#URL(portal_index)#/accounts/login?byReferenceId=true">Reference ID Login</a>
+                            </footer>
                             <!-- JQUERY -->
                             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
