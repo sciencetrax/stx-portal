@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -76,10 +74,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tpl.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.tpl.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="46" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.307971" vertical-offset="374" max-vertical-offset="1615">
+            <state line="42" column="55" selection-start="2236" selection-end="2236" vertical-scroll-proportion="-13.076923" vertical-offset="374" max-vertical-offset="1615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webServices.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="107" selection-start="5045" selection-end="5045" vertical-scroll-proportion="0.8910035" vertical-offset="1712" max-vertical-offset="3842">
               <folding />
             </state>
           </provider>
@@ -130,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
         <option value="$PROJECT_DIR$/src/less/forms.less" />
         <option value="$PROJECT_DIR$/src/less/main.less" />
         <option value="$PROJECT_DIR$/src/less/site.less" />
@@ -146,6 +152,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
         <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
       </list>
     </option>
   </component>
@@ -872,7 +879,11 @@
       <created>1386259112683</created>
       <updated>1386259112683</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="DE578: Entering data in the subject portal using Chrome cuts off some letters">
+      <created>1386260820990</created>
+      <updated>1386260820990</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -907,7 +918,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Implementing the reset password page" />
     <MESSAGE value="Implementing default error handling and email address verification" />
     <MESSAGE value="Tweaking css for generating the portal.xml." />
     <MESSAGE value="Refactored how navigation is handled" />
@@ -932,7 +942,8 @@
     <MESSAGE value="Added Reference ID login link to the main page" />
     <MESSAGE value="DE573: Encounter Variable Groups have a green background on the Home page when they are not complete" />
     <MESSAGE value="DE577: &quot;Incomplete&quot; displays on the Home page of a subject portal when the subject's Data Completion Status is complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="DE577: &quot;Incomplete&quot; displays on the Home page of a subject portal when the subject's Data Completion Status is complete" />
+    <MESSAGE value="DE578: Entering data in the subject portal using Chrome cuts off some letters" />
+    <option name="LAST_COMMIT_MESSAGE" value="DE578: Entering data in the subject portal using Chrome cuts off some letters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,13 +951,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.6666667" vertical-offset="0" max-vertical-offset="10642">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.022941971" vertical-offset="0" max-vertical-offset="741">
@@ -1059,7 +1063,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="46" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.307971" vertical-offset="374" max-vertical-offset="1615">
+        <state line="42" column="55" selection-start="2236" selection-end="2236" vertical-scroll-proportion="-13.076923" vertical-offset="374" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="107" selection-start="5045" selection-end="5045" vertical-scroll-proportion="0.8910035" vertical-offset="1712" max-vertical-offset="3842">
           <folding />
         </state>
       </provider>

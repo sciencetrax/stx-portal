@@ -1,4 +1,5 @@
 ﻿var serviceActions = { update: { method: "PUT" } };
+var serviceActions = { update: { method: "PUT" } };
 
 angular.module('stx.core.webService', [
 		'ngResource'
@@ -128,7 +129,8 @@ angular.module('stx.core.webService', [
 					}
 				},
 				getUrl: function () {
-					return UrlUtils.combine(WebServiceConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx');
+					// We add the timestamp to this request because IE caches this request for some reason.
+					return UrlUtils.combine(WebServiceConfig.getApplicationPath(), 'Areas/app/WebForms/SubjectHome/DataEntry.aspx?_ts=' + new Date().getTime());
 				}
 			};
 		}])
