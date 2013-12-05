@@ -40,11 +40,12 @@
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
 
-                <div class="due-date hidden-xs">due {{ item.dueDate | encounterDueDescription }}</div>
+                <div class="due-date hidden-xs">due {{ item.dueDate | timeAgo }}</div>
 
                 <!-- PERCENT COMPLETE -->
                 <div class="percent-complete">
-                    <div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                    <div ng-show="item.percentComplete > 0" class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                    <div ng-show="item.percentComplete == 0">{{item.percentComplete*100 | number:1}}%</div>
                 </div>
             </a>
         </li>

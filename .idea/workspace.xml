@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="Working on bs-enhanced formatting">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/page.less" afterPath="$PROJECT_DIR$/src/less/page.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -32,91 +26,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="view.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="76" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1173">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moment.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="encounterDueDescription.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.36707154" vertical-offset="0" max-vertical-offset="741">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="35" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2941">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variablePanelOverrides.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="0" selection-start="4232" selection-end="4283" vertical-scroll-proportion="-5.1764708" vertical-offset="2405" max-vertical-offset="6681">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="14" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-11.807693" vertical-offset="237" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="portal.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/portal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="55" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5814">
+            <state line="71" column="27" selection-start="4175" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="5882">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tpl.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/page.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="-4.3333335" vertical-offset="0" max-vertical-offset="1581">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/custom.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="12" selection-start="1590" selection-end="1608" vertical-scroll-proportion="-5.5921054" vertical-offset="510" max-vertical-offset="1547">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="93" selection-start="2014" selection-end="2014" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="1564">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeAgo.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/filters/timeAgo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/forms.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="8" selection-start="2537" selection-end="2597" vertical-scroll-proportion="-12.115385" vertical-offset="1725" max-vertical-offset="6103">
+            <state line="39" column="29" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.4993007" vertical-offset="306" max-vertical-offset="1581">
               <folding />
             </state>
           </provider>
@@ -146,16 +86,16 @@
         <option value="$PROJECT_DIR$/src/less/site.less" />
         <option value="$PROJECT_DIR$/src/app/home/index.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/src/less/custom.less" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/less/page.less" />
         <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-        <option value="$PROJECT_DIR$/src/portal.xml" />
         <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js" />
+        <option value="$PROJECT_DIR$/src/less/custom.less" />
+        <option value="$PROJECT_DIR$/src/less/page.less" />
+        <option value="$PROJECT_DIR$/src/portal.xml" />
+        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
       </list>
     </option>
   </component>
@@ -219,7 +159,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,120 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="encounters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -914,7 +812,15 @@
       <created>1386172314566</created>
       <updated>1386172314566</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Working on bs-enhanced formatting">
+      <created>1386255680978</created>
+      <updated>1386255680979</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Added Reference ID login link to the main page">
+      <created>1386256420732</created>
+      <updated>1386256420732</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -949,7 +855,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Working on login pages" />
     <MESSAGE value="Redesigning pages" />
     <MESSAGE value="Updating README.md" />
     <MESSAGE value="Implementing the reset password page" />
@@ -974,7 +879,8 @@
     <MESSAGE value="Fixed bug where non-fixed encounters could not be created" />
     <MESSAGE value="Trying to fix build" />
     <MESSAGE value="Working on bs-enhanced formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on bs-enhanced formatting" />
+    <MESSAGE value="Added Reference ID login link to the main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Reference ID login link to the main page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,20 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/page.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="25" selection-start="208" selection-end="208" vertical-scroll-proportion="-3.6666667" vertical-offset="0" max-vertical-offset="10642">
@@ -1024,58 +916,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/forms.less">
+    <entry file="file://$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="8" selection-start="2537" selection-end="2597" vertical-scroll-proportion="-12.115385" vertical-offset="1725" max-vertical-offset="6103">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="4232" selection-end="4283" vertical-scroll-proportion="-5.1764708" vertical-offset="2405" max-vertical-offset="6681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="1138" selection-end="1138" vertical-scroll-proportion="-11.807693" vertical-offset="237" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/portal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="55" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="5814">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="35" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2941">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="76" selection-start="594" selection-end="594" vertical-scroll-proportion="-7.1923075" vertical-offset="51" max-vertical-offset="1173">
+        <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.36707154" vertical-offset="0" max-vertical-offset="741">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/filters/moment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="1" column="0" selection-start="15" selection-end="15" vertical-scroll-proportion="0.022941971" vertical-offset="0" max-vertical-offset="741">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/encounters/view.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="93" selection-start="2014" selection-end="2014" vertical-scroll-proportion="-15.692307" vertical-offset="306" max-vertical-offset="1564">
+        <state line="14" column="76" selection-start="594" selection-end="594" vertical-scroll-proportion="0.26153848" vertical-offset="51" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="35" selection-start="3979" selection-end="3979" vertical-scroll-proportion="0.8488529" vertical-offset="1496" max-vertical-offset="2941">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="0" selection-start="4232" selection-end="4283" vertical-scroll-proportion="0.38260868" vertical-offset="2405" max-vertical-offset="6681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="14" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.42937064" vertical-offset="237" max-vertical-offset="952">
           <folding />
         </state>
       </provider>
@@ -1087,9 +965,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/filters/encounterDueDescription.js">
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/forms.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.36707154" vertical-offset="0" max-vertical-offset="741">
+        <state line="120" column="8" selection-start="2537" selection-end="2597" vertical-scroll-proportion="0.44055945" vertical-offset="1725" max-vertical-offset="6103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="12" selection-start="1590" selection-end="1608" vertical-scroll-proportion="-5.5921054" vertical-offset="510" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/page.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="32" selection-start="332" selection-end="332" vertical-scroll-proportion="-4.3333335" vertical-offset="0" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="27" selection-start="4175" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="5882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="29" selection-start="1863" selection-end="1863" vertical-scroll-proportion="0.4993007" vertical-offset="306" max-vertical-offset="1581">
           <folding />
         </state>
       </provider>
