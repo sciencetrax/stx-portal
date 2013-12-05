@@ -33,6 +33,7 @@
 				var encountersReady = false;
 
 				$('#page-instructions').html($('#message_homeInstructions').clone());
+				$('#no-incomplete-data').html($('#message_homeNoIncompleteData').clone());
 
 				$scope.LSPage = LS.pages.home.index;
 				$scope.$root.pageReady = false;

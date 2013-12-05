@@ -15,7 +15,9 @@
 
 <section id="page-instructions"></section>
 
-<section class="col-xs-12" ng-class="{'col-sm-8': reports.length > 0}">
+<section id="no-incomplete-data" class="col-xs-12" ng-class="{'col-sm-8': reports.length > 0}" ng-show="incompleteSummaries.length == 0 && (incompleteEncounters | readOnlyEncounter:false).length == 0"></section>
+
+<section class="col-xs-12" ng-class="{'col-sm-8': reports.length > 0}" ng-show="incompleteSummaries.length > 0 || (incompleteEncounters | readOnlyEncounter:false).length > 0">
     <ul class="entity-list">
 
         <h1>{{ LSPage.incomplete }}</h1>

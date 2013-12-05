@@ -191,6 +191,11 @@
                     Thank you for being a member of the Williams Syndrome Registry!  Follow the links to share updates with the Registry and to learn about new studies.
                 </page>
 
+                <!-- HOME INSTRUCTIONS MESSAGE -->
+                <page code="message_homeNoIncompleteData" pageType="Fragment">
+                    There doesn't appear to be any incomplete data that needs to be collected.
+                </page>
+
                 <!-- REGISTER INSTRUCTIONS MESSAGE -->
                 <page code="message_registerInstructions" pageType="Fragment">
                     <!-- ENTER INSTRUCTIONS HERE -->
