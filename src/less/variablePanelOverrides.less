@@ -60,7 +60,7 @@
         }
     }
     .PromptPanel {
-        margin-left: 6px;
+//        margin-left: 6px;
         text-align: justify;
     }
     .HorizontalRadioButtonList .RadioButton {
@@ -84,6 +84,9 @@
             }
         }
 
+        .Checkbox .AnswerControlSuffix {
+            margin-left: 5px;
+        }
         .Checkbox .AnswerSuffixTable {
             table-layout: fixed;
             tr {
@@ -104,7 +107,7 @@
         }
 
         .VariablePanel {
-            min-height: 60px;
+//            min-height: 60px;
             padding-left: 0;
             padding-right: 0;
             width: 100%;
@@ -143,7 +146,8 @@
                 }
                 input:not([type='radio']) {
                     //            .form-control;
-                    height: @input-height-base !important;
+                    // For some reason we need to add 1px to the height to fix the checkbox alignment.
+                    height: (@input-height-base + 1px) !important;
                     width: 100% !important;
                 }
                 textarea {
@@ -190,6 +194,8 @@
                     .form-control();
                     box-shadow: none;
                     border: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
                     padding-left: 0;
                     width: auto;
                     input {
@@ -384,6 +390,35 @@
         }
         .MatrixTable + .MatrixTable {
             margin-top: (@grid-gutter-width / 2);
+        }
+
+        .cb-group-start,
+        .cb-group {
+            .VariablePanelSecondContainer {
+                margin-bottom: 0 !important;
+            }
+        }
+        .cb-group + .cb-group:last-child {
+            .VariablePanelSecondContainer {
+                margin-bottom: inherit !important;
+            }
+        }
+
+        .cb-group-start {
+            height: 40px !important;
+            input {
+                height: 35px !important;
+            }
+        }
+        .cb-group {
+            height: 35px !important;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-bottom: 0;
+            padding-top: 0;
+            input {
+                height: 35px !important;
+            }
         }
     }
 }
