@@ -378,6 +378,7 @@
             }
         }
         .MatrixTable + .VariablePanel {
+            height: 57px;
             .NumberPanel {
                 margin-left: 3px;
                 margin-right: 2px;
@@ -391,6 +392,10 @@
         .MatrixTable + .MatrixTable {
             margin-top: (@grid-gutter-width / 2);
         }
+
+        /*
+            This code was attempting to fix the spacing for checkboxes that are a part of the same
+            group.  We took this out because we couldn't get the spacing correct in the vertical layout.
 
         .cb-group-start,
         .cb-group {
@@ -420,6 +425,7 @@
                 height: 35px !important;
             }
         }
+        /**/
     }
 }
 
