@@ -9,6 +9,20 @@
         var StudyTraxConfig = {
             datePattern: 'M/d/yyyy'
         };
+        var browser = (function(){
+            var N= navigator.appName, ua= navigator.userAgent, tem;
+            var M= ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+            if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+            M= M? [M[1], M[2]]: [N, navigator.appVersion,'-?'];
+            return M;
+        })();
+        if (browser[0] == 'MSIE' && browser[1] < 10) {
+            <% if (typeof debug != 'undefined' && debug && false) { %>
+                alert("IE 10+ is required.  This alert will be replaced with a redirect to page message_ieVersionNotSupported in production")
+            <% } else { %>
+                window.location.href = '#URL(ieVersionNotSupported)';
+            <% } %>
+        }
     </script>
 
     <!-- font awesome from BootstrapCDN -->
