@@ -58,8 +58,12 @@ body {
 }
 
 .navbar-inverse li > a:active,
-.navbar-inverse li > a:hover,
+.navbar-inverse li > a:focus,
 .navbar-inverse li > a:visited {
+    background: inherit !important;
+}
+
+.navbar-inverse li > a:hover {
     background: @custom-brand-color !important;
 }
 
