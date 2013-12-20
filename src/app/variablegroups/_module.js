@@ -22,7 +22,7 @@
                 })
                 .state('variablegroups.update', {
                     url: '/update/{variableGroupId}/{intervalId}/{encounterId}',
-                    controller: 'VariableGroupUpdate',
+                    controller: 'VariableGroupsUpdateController',
                     templateUrl: 'variablegroups/update.tpl.html',
                     data: {
 						history: 'exclude',

@@ -47,7 +47,7 @@
                 <!-- PERCENT COMPLETE -->
                 <div class="percent-complete">
                     <div ng-show="item.percentComplete > 0" class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
-                    <div ng-show="item.percentComplete == 0">{{item.percentComplete*100 | number:1}}%</div>
+                    <div ng-show="item.percentComplete == 0" class="incomplete">{{item.percentComplete*100 | number:1}}%</div>
                 </div>
             </a>
         </li>

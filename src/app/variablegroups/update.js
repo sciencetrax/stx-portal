@@ -5,13 +5,15 @@
 			'stx.core',
 			'ui.router'
 		])
-		.controller("VariableGroupUpdate", ['$scope', '$http', '$window', '$location', 'session', 'authorizationContextResolver', 'DataEntryForm',
+		.controller("VariableGroupsUpdateController", ['$scope', '$http', '$window', '$location', 'session', 'authorizationContextResolver', 'DataEntryForm',
 			function ($scope, $http, $window, $location, session, authorizationContextResolver, DataEntryForm) {
 				var $stateParams = $scope.$stateParams;
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var dataEntryPanel = $('.DataEntryPanelHolder');
 
+				console.log("VariableGroupsUpdateController");
+				/**/
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
@@ -36,9 +38,11 @@
 									$scope.readOnly = true;
 								}
 								$scope.ready = true;
-							});
+							}
+						);
 					});
 
+				/*
 				$scope.save = function () {
 					var form = $('form', dataEntryPanel);
 					var action = form.attr('action');
@@ -58,6 +62,7 @@
 						}
 					});
 				};
+				/**/
 			}])
 	;
 }());

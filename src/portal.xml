@@ -18,12 +18,12 @@
                 <!-- CUSTOMIZABLE PAGES -->
                 <!-- ************************************************************************* -->
                 <page code="masterPage">
-                    <![CDATA[
-                        <html>
-                            <head>
-                                <title>#Page.Title</title>
-                                <link href="#URL(portal_site_css)" rel="stylesheet"/>
-                                <script>
+                    <html>
+                        <head>
+                            <title>#Page.Title</title>
+                            <link href="#URL(portal_site_css)" rel="stylesheet"/>
+                            <script>
+                                <![CDATA[
                                     var browser = (function(){
                                         var N= navigator.appName, ua= navigator.userAgent, tem;
                                         var M= ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
@@ -34,56 +34,56 @@
                                     if (browser[0] == 'MSIE' && browser[1] < 10) {
                                         window.location.href = '#URL(ieVersionNotSupported)';
                                     }
-                                </script>
-                            </head>
-                            <body>
-                                <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-                                    <div class="container">
-                                        <div class="navbar-header">
-                                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
-                                            <a href="#URL(index)" class="navbar-brand">#Portal.Name</a>
-                                        </div>
-                                        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                                            <ul class="nav navbar-nav">
-                                                <li><a href="#URL(index)">Home</a></li>
-                                                <li><a href="#URL(faq)">FAQ</a></li>
-                                                <li><a href="#URL(contact)">Contact Us</a></li>
-                                            </ul>
-                                            <ul class="nav navbar-nav navbar-right">
-                                                <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
-                                                <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
-                                                <li><a href="#URL(portal_index)">Login</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                               </header>
-
-                                <div class="content">
-                                    <div class="container">
-                                        <img src="http://fpoimg.com/1140x200?text=SITE IMAGE" style="width: 100%"/>
-                                    </div>
-                                </div>
-
+                                ]]>
+                            </script>
+                        </head>
+                        <body>
+                            <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
                                 <div class="container">
-                                    #Body
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="#URL(index)" class="navbar-brand">#Portal.Name</a>
+                                    </div>
+                                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#URL(index)">Home</a></li>
+                                            <li><a href="#URL(faq)">FAQ</a></li>
+                                            <li><a href="#URL(contact)">Contact Us</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
+                                            <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
+                                            <li><a href="#URL(portal_index)">Login</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
-                                <footer>
-                                    <hr />
-                                    <a href="#URL(portal_index)#/accounts/login?byReferenceId=true">Reference ID Login</a>
-                                </footer>
-                                <!-- JQUERY -->
-                                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                           </header>
 
-                                <!-- TWITTER BOOTSTRAP SCRIPT -->
-                                <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
-                            </body>
-                        </html>
-                    ]]>
+                            <div class="content">
+                                <div class="container">
+                                    <img src="http://fpoimg.com/1140x200?text=SITE IMAGE" style="width: 100%"/>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                #Body
+                            </div>
+                            <footer>
+                                <hr />
+                                <a href="#URL(portal_index)#/accounts/login?byReferenceId=true">Reference ID Login</a>
+                            </footer>
+                            <!-- JQUERY -->
+                            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+                            <!-- TWITTER BOOTSTRAP SCRIPT -->
+                            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+                        </body>
+                    </html>
                 </page>
                 <!-- INDEX
                     - Add META redirect to the login page and comment it out.
@@ -136,13 +136,13 @@
 
                 <!-- IE VERSION NOT SUPPORTED -->
                 <page code="ieVersionNotSupported">
-                    <![CDATA[
-                        <html>
-                            <head>
-                                <title>Internet Explorer 10+ Required</title>
-                                <link href="#URL(portal_site_css)" rel="stylesheet"/>
-                            </head>
-                            <body>
+                    <html>
+                        <head>
+                            <title>Internet Explorer 10+ Required</title>
+                            <link href="#URL(portal_site_css)" rel="stylesheet"/>
+                        </head>
+                        <body>
+                            <![CDATA[
                                 <h1 class="text-center">Internet Explorer 10 or newer is required</h1>
                                 <p>This site is not compatible with versions of Internet Explorer older than version 10.  We recommend that you upgrade to one of the following browsers:</p>
                                 <ul>
@@ -150,9 +150,9 @@
                                     <li><a href="https://www.google.com/intl/en/chrome/browser/">Chrome (Latest Version)</a></li>
                                     <li><a href="http://www.mozilla.org/en-US/firefox/all/">Firefox (Latest Version)</a></li>
                                 </ul>
-                            </body>
-                        </html>
-                    ]]>
+                            ]]>
+                        </body>
+                    </html>
                 </page>
 
                 <!-- CSS OVERRIDES -->
@@ -178,7 +178,7 @@
                         /*
                          * Enter overrides here to change the behavior for the portal.
                          */
-                         /*
+                         /**/
                         LS.portalName = "The <span class='registry-text'>Registry</span>";
                         LS.pages.home.index.heading = "Your Homepage";
                         LS.pages.home.index.incomplete = "Share Info";
@@ -280,13 +280,22 @@
                         </script>
                     ]]>
                 </page>
+
+                <!-- UNLOCK ACCOUNT -->
+                <page code="unlockAccount" path="portal/unlockAccount" pageType="unlockAccount">
+                    <![CDATA[
+                        <script>
+                            window.location.href = "#URL(portal_index)#/accounts/unlocked";
+                        </script>
+                    ]]>
+                </page>
             </pages>
             <!-- **********************************************************************
                              EMAIL TEMPLATES
                  ********************************************************************** -->
             <emailTemplates>
                 <!-- ACCOUNT VERIFICATION-->
-                <emailTemplate type="Account Verification" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%">
+                <emailTemplate type="Verify Email" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%">
                     <p>Welcome!  Your %PortalName% account has been set up.  To begin using your account, you must first verify your email address by clicking the following link (or copying and pasting it into your browser). After verifying your email address, you will be prompted to create a password.</p>
 
                     <p>%EmailAddressVerificationUrl%</p>
@@ -374,6 +383,19 @@
                         Sincerely,<br/>
                         The %PortalName% Team
                     </p>
+                </emailTemplate>
+
+                <!-- UNLOCK ACCOUNT -->
+                <emailTemplate name="Unlock Account" type="Unlock Account" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Locked %PortalName% Account">
+                    <p>Your %PortalName% account (%UserName%) has been locked due to too many failed login attempts. To unlock your account, please click the following link (or copy and paste it into your browser):</p>
+
+                    <p>%UnlockAccountUrl%</p>
+
+                    <p>You can request this email again from %LoginUrl%. You will need to attempt to login for the Unlock Account link to appear.</p>
+
+                    <p>
+                        Sincerely,<br/>
+                        The %PortalName% Team</p>
                 </emailTemplate>
             </emailTemplates>
         </portal>

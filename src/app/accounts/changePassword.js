@@ -14,7 +14,8 @@
 				$scope.update = function () {
 					var entity = angular.copy($scope.entity);
 					Password.save(entity, function () {
-						$location.path("/accounts/view");
+						$scope.back('accounts.view');
+//						$location.path("/accounts/view");
 					});
 				};
 			}])

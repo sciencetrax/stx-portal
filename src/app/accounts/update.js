@@ -15,7 +15,7 @@
 				$scope.update = function () {
 					var account = this.account;
 					Account.update(account, function (response) {
-						back('accounts.view');
+						$scope.back('accounts.view');
 					});
 				};
 			}])

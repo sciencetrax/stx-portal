@@ -20,6 +20,7 @@
 		}])
 		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
 			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter) {
+				console.log("HomeIndexController");
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {

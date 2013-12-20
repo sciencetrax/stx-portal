@@ -1,3 +1,4 @@
+/*
 (function () {
 	"use strict";
 	var NavigationService = Class.extend({
@@ -29,3 +30,4 @@
 		}))
 	;
 }());
+/**/

@@ -16,6 +16,7 @@
 		newText: "New",
 		no: "No",
 		renew: "Renew",
+		resendUnlockAccountEmail: "Resend Unlock Email",
 		resendVerificationEmail: "Resend Email",
 		returnToLoginPage: "Return To Login Page",
 		save: "Save",
@@ -51,6 +52,10 @@
 				confirmPassword: "Confirm Password",
 				newPassword: "New Password",
 				password: "Password"
+			},
+			accountUnlocked: {
+				heading: "Account Unlocked",
+				message: "Your account has been unlocked."
 			},
 			emailAddressVerified: {
 				heading: "Email Address Verified",

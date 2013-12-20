@@ -16,9 +16,16 @@
 				emailRequest.emailType = "AccountVerification";
 
                 $scope.authorization = new Authorization();
-				$scope.resendVerificationEmail = function () {
+				$scope.$root.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
 					emailRequest.emailType = "EmailAddressVerification";
+					EmailRequest.save(emailRequest, function () {
+						$scope.successMessage = $scope.LS.common.verificationEmailSent;
+					});
+				};
+				$scope.$root.resendUnlockAccountEmail = function () {
+					emailRequest.portalId = portal.id;
+					emailRequest.emailType = "UnlockAccount";
 					EmailRequest.save(emailRequest, function () {
 						$scope.successMessage = $scope.LS.common.verificationEmailSent;
 					});

@@ -1,7 +1,6 @@
 angular.module('stx')
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
 		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, session, stateExt) {
-
 			if (typeof(stx) != 'undefined') {
 				stx.Constants.ApplicationPath = APPLICATION_PATH.replace("//", "/");
 			}

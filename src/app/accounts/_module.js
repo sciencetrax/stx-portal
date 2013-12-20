@@ -21,6 +21,17 @@
 						'content': { template: '<div ui-view></div>' }
 					}
 				})
+				.state('accounts.unlocked', {
+					url: '/unlocked',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsUnlockedController',
+							templateUrl: 'accounts/unlocked.tpl.html',
+							data: { pageTitle: 'Account Unlocked' }
+						}
+					}
+				})
 				.state('accounts.changePassword', {
 					url: '/changePassword',
 					controller: 'AccountsChangePasswordController',
@@ -40,7 +51,7 @@
 						'': {
 							controller: 'AccountsEmailAddressVerifiedController',
 							templateUrl: 'accounts/emailAddressVerified.tpl.html',
-							data: { pageTitle: 'Register' }
+							data: { pageTitle: 'Email Address Verified' }
 						}
 					}
 				})
