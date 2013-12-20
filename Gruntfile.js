@@ -578,7 +578,8 @@ module.exports = function (grunt) {
 		'concat:compile_js',
 		'uglify',
 		'index:compile',
-		'portal:compile'
+		'portal:compile',
+		'bump'
 	]);
 
 	/**
