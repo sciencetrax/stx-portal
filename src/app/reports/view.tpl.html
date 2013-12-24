@@ -1,13 +1,23 @@
-﻿<header>
-    <!-- REPORT NAME -->
-    <h1>{{report.name}}</h1>
+﻿<div>
+    <header>
+        <!-- REPORT NAME -->
+        <h1>{{report.name}}</h1>
 
-    <!-- DOWNLOAD PDF BUTTON -->
-    <a href="{{ pdfUrl }}" class="btn btn-default pull-right">{{ LSPage.pdf }}</a>
-</header>
+        <!-- DOWNLOAD PDF BUTTON -->
+        <a href="{{ pdfUrl }}" class="btn btn-default pull-right">{{ LSPage.pdf }}</a>
+    </header>
 
-<!--
-    HTML REPORT
-    We use the st-append directive so that the HTML in the report does not get escaped.
--->
-<div st-append="report.html" class="well"></div>
+    <!--
+        HTML REPORT
+        We use the st-append directive so that the HTML in the report does not get escaped.
+    -->
+    <div st-append="report.html" class="well"></div>
+
+    <div class="stx-form">
+        <div class="buttons">
+            <div>
+                <a ng-click="back()" class="primary-btn">{{ LS.common.back }}</a>
+            </div>
+        </div>
+    </div>
+</div>

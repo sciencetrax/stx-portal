@@ -89,7 +89,6 @@ angular.module('stx.core.webService', [
 				loadScript: function (customerId, projectId, siteId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {
 					var _this = this;
 
-					/*
 					VariablePanelScript.get({
 						customerId: customerId,
 						projectId: projectId,
@@ -101,7 +100,6 @@ angular.module('stx.core.webService', [
 					}, function (data) {
 						_this.loadScript2(data, successCallback);
 					});
-					/**/
 				},
 				loadScript2: function (scriptToLoad, successCallback) {
 					$('#VariableToolsMenu').remove();

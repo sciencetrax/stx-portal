@@ -684,7 +684,7 @@ module.exports = function (grunt) {
 
 		var index = grunt.file.read(this.data.dir + '/index.html');
 		// Run the portal.xml template
-		grunt.file.copy('src/portal.xml', this.data.dir + '/portal.xml', {
+		grunt.file.copy('src/portal.xml', this.data.dir + '/portal-' + grunt.config('pkg.version') + '.xml', {
 			process: function (contents, path) {
 				return grunt.template.process(contents, {
 					data: {

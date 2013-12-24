@@ -233,7 +233,15 @@
             }
         }
 
+        .Vertical.Indent1 { margin-left: 40px; }
+        .Vertical.Indent2 { margin-left: 80px; }
+        .Vertical.Indent3 { margin-left: 120px; }
+        .Vertical.Indent4 { margin-left: 1600px; }
+        .Vertical.Indent1, .Vertical.Indent2, .Vertical.Indent3, .Vertical.Indent4 {
+            width: inherit;
+        }
         .Vertical {
+
             clear: both;
             .VariablePanelFirstContainer {
                 .make-sm-column(12);
@@ -304,6 +312,13 @@
         //            }
         //        }
         @media (max-width: @screen-xs-max) {
+            .Indent1 { margin-left: 20px; }
+            .Indent2 { margin-left: 40px; }
+            .Indent3 { margin-left: 60px; }
+            .Indent4 { margin-left: 80px; }
+            .Indent1, .Indent2, .Indent3, .Indent4 {
+                width: inherit;
+            }
             .VariablePanel {
                 .Vertical();
                 .VariablePanelFirstContainer,
