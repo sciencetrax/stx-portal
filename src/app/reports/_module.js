@@ -24,7 +24,10 @@
 				.state('reports.view', {
 					url: '/view/:encounterId/:reportId',
 					controller: 'ReportsViewController',
-					templateUrl: 'reports/view.tpl.html'
+					templateUrl: 'reports/view.tpl.html',
+					data: {
+						history: 'exclude'
+					}
 				})
             ;
         }])
