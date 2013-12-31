@@ -229,6 +229,7 @@ module.exports = function (grunt) {
 				options: {
 					banner: '<%= meta.banner %>',
 					beautify: true,
+					mangle: false,
 					compress: false
 				},
 				files: {
