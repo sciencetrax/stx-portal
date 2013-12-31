@@ -67,6 +67,9 @@
         white-space: nowrap;
     }
 
+    & > span {
+        .row();
+    }
     .bs-enhanced {
         font-size: @font-size-base;
         .Variables > span > span {
@@ -98,6 +101,11 @@
                     }
                 }
                 td:first-child {
+                    // For some reason, in IE 10, the checkbox has left padding on it that is
+                    // messing up the alignment
+                    input {
+                        padding-left: 0px;
+                    }
                     width: 20px;
                 }
             }
@@ -157,6 +165,7 @@
                 }
                 input[type='checkbox'] {
                     margin: 0;
+                    border: none;
                     width: auto !important;
                 }
                 input[type='file'] {
@@ -304,7 +313,8 @@
             color: inherit;
             font-size: 1.75em;
             i {
-                font-style: normal;
+                font-size: .6em;
+                font-weight: normal;
             }
         }
         //        .Vertical {
@@ -384,7 +394,7 @@
                         min-height: @input-height-base;
                         background: inherit;
                         padding: @padding-base-vertical @padding-base-horizontal !important;
-                        text-align: justify;
+                        text-align: left;
                         width: 100% !important;
                     }
                 }
