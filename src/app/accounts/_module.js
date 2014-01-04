@@ -124,6 +124,17 @@
 						}
 					}
 				})
+				.state('accounts.setPasswordAfterVerify', {
+					url: '/setPasswordAfterVerify/{token}',
+					views: {
+						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
+						'': {
+							controller: 'AccountsSetPasswordAfterVerifyController',
+							templateUrl: 'accounts/setPasswordAfterVerify.tpl.html',
+							data: { pageTitle: 'Set Password' }
+						}
+					}
+				})
 				.state('accounts.update', {
 					url: '/update',
 					controller: 'AccountsUpdateController',

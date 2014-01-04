@@ -100,6 +100,18 @@
 					confirmPasswordValueMatches: "Does not match password."
 				}
 			},
+			setPasswordAfterVerify: {
+				heading: "Set Password",
+				addPassword: "Add Password",
+				confirmPassword: "Confirm Password",
+				message: "Your email address has been verified but you still need to add a password.  Please enter your password below",
+				password: "Password",
+				passwordChangedMessage: "Your password has been changed.  Please return to the login page to login.",
+				username: "Username",
+				errors: {
+					confirmPasswordValueMatches: "Does not match password."
+				}
+			},
 			update: {
 				heading: "Update Account",
 				emailAddress: "Email Address",

@@ -135,7 +135,7 @@
                 </page>
 
                 <!-- IE VERSION NOT SUPPORTED -->
-                <page code="ieVersionNotSupported">
+                <page code="ieVersionNotSupported" importAction="noUpdate">
                     <![CDATA[
                         <html>
                             <head>
@@ -278,6 +278,18 @@
                                 return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
                             }
                             window.location.href = "#URL(portal_index)#/accounts/resetPassword/" + getQueryStringParameter("P");
+                        </script>
+                    ]]>
+                </page>
+
+                <!-- RESET PASSWORD -->
+                <page code="portal_verifyEmailAndSetPassword" path="portal/verifyEmailAndSetPassword" pageType="SetVerifiedEmailAccountPassword">
+                    <![CDATA[
+                        <script>
+                            function getQueryStringParameter (sVar) {
+                                return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+                            }
+                            window.location.href = "#URL(portal_index)#/accounts/setPasswordAfterVerify/" + getQueryStringParameter("P");
                         </script>
                     ]]>
                 </page>
