@@ -17,7 +17,7 @@
                 <!-- ************************************************************************* -->
                 <!-- CUSTOMIZABLE PAGES -->
                 <!-- ************************************************************************* -->
-                <page code="masterPage">
+                <page code="masterPage" importAddOnly="true">
                     <html>
                         <head>
                             <title>#Page.Title</title>
@@ -358,7 +358,7 @@
 
                 <!-- WELCOME -->
                 <emailTemplate type="Welcome" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Welcome To %PortalName%">
-                    <p>Welcome!  Thank you for your participation.  Your %PortalName% account is ready for use.  Please keep the following information for your records:</p>
+                    <p>Welcome!  Thank you for your participation.  Your %PortalName% account has been set up.  Please keep the following information for your records:</p>
 
                     <table>
                         <tr>

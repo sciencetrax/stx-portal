@@ -96,7 +96,7 @@
 							if (error.errorCode != null) {
 								$rootScope.error = {
 									code: error.errorCode,
-									message: LS.errorMessages.get(error.errorCode)
+									message: $rootScope.getErrorMessage(error)
 								};
 								if ($('#errors').length === 0) {
 									bootbox.alert($rootScope.error.message);

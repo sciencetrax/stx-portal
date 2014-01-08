@@ -122,7 +122,6 @@ angular.module('stx.core.webService', [
 					script.append(scriptToLoad.initialize);
 					script.append("$(document).trigger('pageLoad');");
 					scriptDiv.html(script);
-
 					$('.DataEntryPanel li.hide').removeClass('hide');
 
 					if (successCallback !== undefined) {

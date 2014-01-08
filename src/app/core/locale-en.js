@@ -40,7 +40,7 @@
 		PasswordNotDifferent: "The new password must be different from the old password.",
 		RemainingSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
 		RequiredFieldMissing: "A required field was not specified.",
-		UsernameExist: "Please enter a different username.  That username is taken."
+		UsernameExist: "Please enter a different username.  That username ({username}) is taken."
 	},
 	menu: {
 		logASubjectIn: "Log a subject in"

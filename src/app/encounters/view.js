@@ -4,6 +4,7 @@
     angular.module('stx.encounters')
         .controller("EncountersViewController", ['$scope', '$stateParams', '$location', 'authorizationContextResolver', 'DataEntryForm', 'ScheduledEncounter',
             function ($scope, $stateParams, $location, authorizationContextResolver, DataEntryForm, ScheduledEncounter) {
+				$scope.$root.pageReady = false;
 				$('#VariableToolsMenu').remove();
 
 				var authorizationContext = authorizationContextResolver.data;
@@ -31,6 +32,7 @@
 						$stateParams.intervalId,
 						$stateParams.encounterId,
 						false, function () {
+							$scope.$root.pageReady = true;
 						});
 				});
 

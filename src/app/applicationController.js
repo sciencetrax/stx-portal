@@ -53,6 +53,15 @@ angular.module('stx')
 			$scope.$root.back = function(state, params) {
 				$scope.stateExt.back(state, params);
 			};
+			$scope.$root.getErrorMessage = function(error) {
+				var message = LS.errorMessages.get(error.errorCode);
+
+				for (var name in error.details) {
+					message = message.replace('{' + name + '}', error.details[name]);
+				}
+
+				return message;
+			};
 		}
 	])
 ;
