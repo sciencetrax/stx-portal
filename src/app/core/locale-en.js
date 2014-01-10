@@ -37,6 +37,7 @@
 		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
 		PasswordCannotReuse: "That password cannot be reused yet.",
 		PasswordExpired: "Your password has expired.",
+		PasswordMinLength: "Your password must be at least {minimumPasswordLength} characters long.",
 		PasswordNotDifferent: "The new password must be different from the old password.",
 		RemainingSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
 		RequiredFieldMissing: "A required field was not specified.",

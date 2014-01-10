@@ -1,10 +1,14 @@
 ﻿<!-- ERROR MESSAGES -->
-<div id="errors" class="alert alert-danger" ng-class="{hide: error == null}">
-    {{error.message}}
-    <div class="text-center">
-        <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
-        <div ng-click="resendUnlockAccountEmail()" class="btn btn-danger" ng-class="{hide: error.code !== 'AccountLocked'}">{{LS.common.resendUnlockAccountEmail}}</div>
-    </div>
+<div id="errors" class="alert alert-danger" ng-class="{hide: errors == null}">
+    <ul>
+        <li ng-repeat="item in errors">
+            {{ item.message }}
+            <div class="text-center">
+                <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: item.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
+                <div ng-click="resendUnlockAccountEmail()" class="btn btn-danger" ng-class="{hide: item.code !== 'AccountLocked'}">{{LS.common.resendUnlockAccountEmail}}</div>
+            </div>
+        </li>
+    </ul>
 </div>
 
 <!-- SUCCESS MESSAGES -->

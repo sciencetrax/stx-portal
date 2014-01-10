@@ -115,12 +115,12 @@ angular.module('stx.core.webService', [
 					}
 
 					var scriptDiv = $('#variable-panel-code');
-					var script = $('<script/>');
-					script.append(scriptToLoad.project);
-					script.append(scriptToLoad.interval);
-					script.append(scriptToLoad.encounter);
-					script.append(scriptToLoad.initialize);
-					script.append("$(document).trigger('pageLoad');");
+					var script = $('<div/>');
+					script.append("<script>" + scriptToLoad.project + "</scr" + "ipt>");
+					script.append("<script>" + scriptToLoad.interval + "</scr" + "ipt>");
+					script.append("<script>" + scriptToLoad.encounter + "</scr" + "ipt>");
+					script.append("<script>" + scriptToLoad.initialize + "</scr" + "ipt>");
+					script.append("<script>" + "$(document).trigger('pageLoad');" + "</scr" + "ipt>");
 					scriptDiv.html(script);
 					$('.DataEntryPanel li.hide').removeClass('hide');
 

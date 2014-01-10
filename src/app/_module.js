@@ -86,21 +86,27 @@
 				function ($q, $rootScope, $location) {
 					return {
 						response: function (response) {
-							$rootScope.error = null;
+							$rootScope.errors = null;
 							$rootScope.success = null;
 							return response || $q.when(response);
 						},
 						responseError: function (rejection) {
 							$(window).scrollTop(0);
 							var error = rejection.data;
-							if (error.errorCode != null) {
-								$rootScope.error = {
-									code: error.errorCode,
-									message: $rootScope.getErrorMessage(error)
-								};
+							if (error instanceof Array) {
+								var errors = error;
+								$rootScope.errors = [];
+								for(var index = 0; index < errors.length; index++) {
+									$rootScope.errors[index] = {
+										code: errors[index].errorCode,
+										message: $rootScope.getErrorMessage(errors[index])
+									};
+								}
+								/*
 								if ($('#errors').length === 0) {
 									bootbox.alert($rootScope.error.message);
 								}
+								*/
 							} else if (!String.isNullEmptyOrUndefined(error)) {
 								bootbox.alert(error);
 							} else {
