@@ -20,7 +20,7 @@
             <% if (typeof debug != 'undefined' && debug && false) { %>
                 alert("IE 10+ is required.  This alert will be replaced with a redirect to page message_ieVersionNotSupported in production")
             <% } else { %>
-                window.location.href = '#URL(ieVersionNotSupported)';
+                window.location.href = '#URL(portal_ieVersionNotSupported)';
             <% } %>
         }
     </script>
@@ -99,12 +99,10 @@
 
     <!-- SCREENING PANES -->
     <div class="hide">
-        <div id="failedEnrollment" >#INCLUDE(failedEnrollmentMessage)</div>
-        <div id="anonymousSurveyCompleteMessage" >#INCLUDE(anonymousSurveyCompleteMessage)</div>
         <div id="message_accountInstructions" >#INCLUDE(message_accountInstructions)</div>
         <div id="message_homeInstructions" >#INCLUDE(message_homeInstructions)</div>
-        <div id="message_homeNoIncompleteData" >#INCLUDE(message_homeNoIncompleteData)</div>
         <div id="message_registerInstructions">#INCLUDE(message_registerInstructions)</div>
+        <div id="menu_brand">#INCLUDE(menu_brand)</div>
     </div>
     <style>
         <% if (typeof debug != 'undefined' && debug) { %>
@@ -122,20 +120,8 @@
         LS = String.LS;
         <% if (typeof debug != 'undefined' && debug) { %>
             // PLACE CUSTOM JS NOT TO BE DISTRIBUTED AS PART OF THE PORTAL HERE
-            LS.portalName = "The <span class='registry-text'>Registry</span>";
-            LS.pages.home.index.heading = "Your Homepage";
-            LS.pages.home.index.incomplete = "Share Info";
-            LS.pages.home.index.reports = "For your Review";
-            LS.pages.home.index.recentlyCompleted = "Prior Surveys";
-
-            LS.pages.encounters.view.attributes = "Survey Info";
-            LS.pages.encounters.view.forms = "Sections to Complete";
-            LS.pages.encounters.view.reports = "For your Review";
-
-            LS.pages.accounts.view.attributes = "Registry Account Details";
-            LS.pages.accounts.view.background = "Key Info & Milestones";
         <% } else { %>
-            #INCLUDE(js_overrides)
+            #INCLUDE(custom_js)
         <% } %>
     </script>
 </body>
