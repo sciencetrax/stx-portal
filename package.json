@@ -1,6 +1,6 @@
 {
   "applicationPath": "/StudyTrax/",
-  "portalCode": "de622",
+  "portalCode": "os",
   "author": "Leslie Hanks",
   "name": "Standard_Portal",
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
@@ -8,7 +8,7 @@
   "registration": "True",
   "anonymousDataEntry": "True",
   "sendEncounterDueNotifications": "False",
-  "version": "0.0.34",
+  "version": "0.0.68",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {
     "type": "MIT",

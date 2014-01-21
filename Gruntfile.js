@@ -661,8 +661,8 @@ module.exports = function (grunt) {
 				return grunt.template.process(contents, {
 					data: {
 						config: grunt.config('pkg'),
-						scripts: ['#URL(portal_site_js)'],
-						styles: ['#URL(portal_site_css)'],
+						scripts: ['#URL(portal_js)'],
+						styles: ['#URL(portal_css)'],
 						applicationPath: '#ApplicationPath()',
 						portalCode: '#Portal.Code',
 						version: grunt.config('pkg.version')

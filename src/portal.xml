@@ -15,16 +15,18 @@
                 sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
             <pages>
                 <!-- ************************************************************************* -->
-                <!-- CUSTOMIZABLE PAGES -->
+                <!-- MASTER PAGE -->
                 <!-- ************************************************************************* -->
-                <page code="masterPage" importAddOnly="true">
+                <page code="masterPage">
                     <html>
                         <head>
                             <title>#Page.Title</title>
                             <meta name="std_portal_version" value="<%= pkg.version %>"/>
-                            <link href="#URL(portal_site_css)" rel="stylesheet"/>
+                            <link href="#URL(portal_css)" rel="stylesheet"/>
                             <script>
                                 <![CDATA[
+                                    // Redirect Internet Explorer versions < 10 to an error page explaining
+                                    // that it is not supported.
                                     var browser = (function(){
                                         var N= navigator.appName, ua= navigator.userAgent, tem;
                                         var M= ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
@@ -33,7 +35,7 @@
                                             return M;
                                         })();
                                     if (browser[0] == 'MSIE' && browser[1] < 10) {
-                                        window.location.href = '#URL(ieVersionNotSupported)';
+                                        window.location.href = '#URL(portal_ieVersionNotSupported)';
                                     }
                                 ]]>
                             </script>
@@ -48,7 +50,8 @@
                                             <span class="icon-bar"></span>
                                             <span class="icon-bar"></span>
                                         </button>
-                                        <a href="#URL(index)" class="navbar-brand">#Portal.Name</a>
+                                        <a href="#URL(index)" class="navbar-brand">#INCLUDE(menu_brand)
+                                        </a>
                                     </div>
                                     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                                         <ul class="nav navbar-nav">
@@ -63,11 +66,11 @@
                                         </ul>
                                     </nav>
                                 </div>
-                           </header>
+                            </header>
 
                             <div class="content">
                                 <div class="container">
-                                    <img src="http://fpoimg.com/1140x200?text=SITE IMAGE" style="width: 100%"/>
+                                    #INCLUDE(logo_page_header)
                                 </div>
                             </div>
 
@@ -78,20 +81,49 @@
                                 <hr />
                                 <a href="#URL(portal_index)#/accounts/login?byReferenceId=true">Reference ID Login</a>
                             </footer>
-                            <!-- JQUERY -->
-                            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-                            <!-- TWITTER BOOTSTRAP SCRIPT -->
-                            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
                         </body>
                     </html>
                 </page>
+
+                <!-- ************************************************************************* -->
+                <!-- OVERRIDABLE PAGES -->
+                <!-- ************************************************************************* -->
+                <!-- PAGE LOGO -->
+                <page code="logo_page_header" pageType="Fragment" importAction="add">
+                    <img src="http://fpoimg.com/1140x200?text=SITE IMAGE" style="width: 100%"/>
+                </page>
+
+                <!-- MENU BRAND -->
+                <page code="menu_brand" pageType="Fragment" importAction="add">
+                    #Portal.Name
+                </page>
+
+                <!-- CONTACT -->
+                <page code="contact" parent="masterPage" importAction="add">
+                    <![CDATA[
+                        <h1 class="text-center">Contact Us</h1>
+                    ]]>
+                </page>
+
+                <!-- FAQ -->
+                <page code="faq" parent="masterPage" importAction="add">
+                    <![CDATA[
+                        <h1 class="text-center">Frequently Asked Questions</h1>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h1>Question 1</h1>
+                                <p>Answer 1</p>
+                            </li>
+                        </ul>
+                    ]]>
+                </page>
+
                 <!-- INDEX
                     - Add META redirect to the login page and comment it out.
                     - Add base page to get formatting that uses CSS
                     - Use the same menu for login page and landing page.
                 -->
-                <page code="index" title="<%= pkg.name %>" parent="masterPage">
+                <page code="index" title="<%= pkg.name %>" parent="masterPage" importAction="add">
                     <![CDATA[
                         <!--
                             This is sample code to show how to redirect to the portal if no landing page is desired.
@@ -114,34 +146,66 @@
                     ]]>
                 </page>
 
-                <!-- FAQ -->
-                <page code="faq" parent="masterPage">
+                <!-- CUSTOM CSS -->
+                <page code="custom_css" pageType="css" importAction="addOrUpdate">
                     <![CDATA[
-                        <h1 class="text-center">Frequently Asked Questions</h1>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <h1>Question 1</h1>
-                                <p>Answer 1</p>
-                            </li>
-                        </ul>
-                    ]]>
+                        /*
+                         * Enter overrides here to change the look and feel for the portal.
+                         */
+                         */
+					]]>
                 </page>
 
-                <!-- CONTACT -->
-                <page code="contact" parent="masterPage">
+                <!-- CUSTOM JS -->
+                <page code="custom_js" pageType="JavaScript" importAction="add">
                     <![CDATA[
-                        <h1 class="text-center">Contact Us</h1>
+                        /*
+                         * Enter overrides here to change the behavior for the portal.
+                         */
+					]]>
+                </page>
+
+                <!-- ************************************************************************* -->
+                <!-- MESSAGES PAGES -->
+                <!-- ************************************************************************* -->
+
+                <!-- REGISTER INSTRUCTIONS MESSAGE -->
+                <page code="message_registerInstructions" pageType="Fragment" importAction="add">
+                    <!-- Insert content here -->
+                </page>
+
+                <!-- ACCOUNT INSTRUCTIONS MESSAGE -->
+                <page code="message_accountInstructions" pageType="Fragment" importAction="add">
+                    <!-- Insert content here -->
+                </page>
+
+                <!-- HOME INSTRUCTIONS MESSAGE -->
+                <page code="message_homeInstructions" pageType="Fragment" importAction="add">
+                    <!-- Insert content here -->
+                </page>
+
+                <!-- ************************************************************************* -->
+                <!-- PORTAL PAGES -->
+                <!-- ************************************************************************* -->
+                <!-- ERROR PAGE -->
+                <page code="portal_error" parent="masterPage" pageType="error">
+                    <![CDATA[
+                        <h1>An error has occurred</h1>
+                        <h3>#ErrorMessage</h3>
+                        <div>
+                            #StackTrace
+                        </div>
                     ]]>
                 </page>
 
                 <!-- IE VERSION NOT SUPPORTED -->
-                <page code="ieVersionNotSupported" importAction="noUpdate">
+                <page code="portal_ieVersionNotSupported">
                     <![CDATA[
                         <html>
                             <head>
                                 <title>Internet Explorer 10+ Required</title>
                                 <meta name="std_portal_version" value="<%= pkg.version %>"/>
-                                <link href="#URL(portal_site_css)" rel="stylesheet"/>
+                                <link href="#URL(portal_css)" rel="stylesheet"/>
                             </head>
                             <body>
                                 <h1 class="text-center">Internet Explorer 10 or newer is required</h1>
@@ -156,106 +220,21 @@
                     ]]>
                 </page>
 
-                <!-- CSS OVERRIDES -->
-                <page code="css_overrides" pageType="css">
-                    <![CDATA[
-                        /*
-                         * Enter overrides here to change the look and feel for the portal.
-                         */
-                         /**/
-                        .register-button,
-                        .enroll-button,
-                        \#attributeCreated,
-                        \#attributeEditUntil {
-                            display: none;
-                        }
-                        /**/
-					]]>
-                </page>
-
-                <!-- JS OVERRIDES -->
-                <page code="js_overrides" pageType="JavaScript">
-                    <![CDATA[
-                        /*
-                         * Enter overrides here to change the behavior for the portal.
-                         */
-                         /**/
-                        LS.portalName = "The <span class='registry-text'>Registry</span>";
-                        LS.pages.home.index.heading = "Your Homepage";
-                        LS.pages.home.index.incomplete = "Share Info";
-                        LS.pages.home.index.reports = "For your Review";
-                        LS.pages.home.index.recentlyCompleted = "Prior Surveys";
-
-                        LS.pages.encounters.view.attributes = "Survey Info";
-                        LS.pages.encounters.view.forms = "Sections to Complete";
-                        LS.pages.encounters.view.reports = "For your Review";
-
-                        LS.pages.accounts.view.attributes = "Registry Account Details";
-                        LS.pages.accounts.view.background = "Key Info & Milestones";
-                        /**/
-					]]>
-                </page>
-
-                <!-- ERROR PAGE -->
-                <page code="error" parent="masterPage">
-                    <![CDATA[
-                        <h1>An error has occurred</h1>
-                        <h3>#ErrorMessage</h3>
-                        <div>
-                            #StackTrace
-                        </div>
-                    ]]>
-                </page>
-
-                <!-- FAILED ENROLLMENT MESSAGE -->
-                <page code="failedEnrollmentMessage" pageType="Fragment">
-                    Thank you for taking the survey. Unfortunately, you do not meet the requirements to enroll in this study.
-                </page>
-
-                <!-- ANONYMOUS SURVEY COMPLETE MESSAGE -->
-                <page code="anonymousSurveyCompleteMessage" pageType="Fragment">
-                    Thank you for taking the survey.
-                </page>
-
-                <!-- ACCOUNT INSTRUCTIONS MESSAGE -->
-                <page code="message_accountInstructions" pageType="Fragment">
-                    You can update your Registry Account Details here.  Also, you can update medical/surgical information as well as new developmental milestones.
-                </page>
-
-                <!-- HOME INSTRUCTIONS MESSAGE -->
-                <page code="message_homeInstructions" pageType="Fragment">
-                    Thank you for being a member of the Williams Syndrome Registry!  Follow the links to share updates with the Registry and to learn about new studies.
-                </page>
-
-                <!-- HOME INSTRUCTIONS MESSAGE -->
-                <page code="message_homeNoIncompleteData" pageType="Fragment">
-                    There doesn't appear to be any incomplete data that needs to be collected.
-                </page>
-
-                <!-- REGISTER INSTRUCTIONS MESSAGE -->
-                <page code="message_registerInstructions" pageType="Fragment">
-                    <!-- ENTER INSTRUCTIONS HERE -->
-                    <b>Thank you for registering <span style="color: red">your family member</span> with Williams syndrome.  <span style="color: red">Below, share information for his or her</span> primary caregiver <span style="color: red">(i.e. the main user of this account). You can share other information once you log on.</span>  We appreciate your participation!</b>
-                </page>
-
-                <!-- ************************************************************************* -->
-                <!-- PORTAL PAGES -->
-                <!-- ************************************************************************* -->
                 <!-- CSS -->
-                <page code="portal_site_css" path="portal/site_css" pageType="css">
+                <page code="portal_css" path="portal/css" pageType="css" description="DO NOT CHANGE.">
                     <![CDATA[
                     <%= css %>
-                    #INCLUDE(css_overrides)
+                    #INCLUDE(custom_css)
 					]]>
                 </page>
 
                 <!-- JS -->
-                <page code="portal_site_js" path="portal/site_js" pageType="JavaScript">
+                <page code="portal_js" path="portal/js" pageType="JavaScript" description="DO NOT CHANGE.">
                     <%= js %>
                 </page>
 
                 <!-- PORTAL INDEX -->
-                <page code="portal_index" path="portal/index" pageType="Login">
+                <page code="portal_index" path="portal/index" pageType="Login" description="DO NOT CHANGE.">
                     <![CDATA[
                     <%= html %>
                     ]]>
@@ -271,7 +250,7 @@
                 </page>
 
                 <!-- RESET PASSWORD -->
-                <page code="portal_resetPassword" path="portal/resetPassword" pageType="resetPassword">
+                <page code="portal_resetPassword" path="portal/resetPassword" pageType="resetPassword" description="DO NOT CHANGE.">
                     <![CDATA[
                         <script>
                             function getQueryStringParameter (sVar) {
@@ -282,8 +261,8 @@
                     ]]>
                 </page>
 
-                <!-- RESET PASSWORD -->
-                <page code="portal_verifyEmailAndSetPassword" path="portal/verifyEmailAndSetPassword" pageType="SetVerifiedEmailAccountPassword">
+                <!-- VERIFY EMAIL AND SET PASSWORD -->
+                <page code="portal_verifyEmailAndSetPassword" path="portal/verifyEmailAndSetPassword" pageType="SetVerifiedEmailAccountPassword" description="DO NOT CHANGE.">
                     <![CDATA[
                         <script>
                             function getQueryStringParameter (sVar) {
@@ -295,7 +274,7 @@
                 </page>
 
                 <!-- UNLOCK ACCOUNT -->
-                <page code="unlockAccount" path="portal/unlockAccount" pageType="unlockAccount">
+                <page code="portal_unlockAccount" path="portal/unlockAccount" pageType="unlockAccount" description="DO NOT CHANGE.">
                     <![CDATA[
                         <script>
                             window.location.href = "#URL(portal_index)#/accounts/unlocked";
@@ -308,7 +287,7 @@
                  ********************************************************************** -->
             <emailTemplates>
                 <!-- ACCOUNT VERIFICATION-->
-                <emailTemplate type="Verify Email" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%">
+                <emailTemplate type="Verify Email" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%" importAction="add">
                     <p>Welcome!  Your %PortalName% account has been set up.  To begin using your account, you must first verify your email address by clicking the following link (or copying and pasting it into your browser). After verifying your email address, you will be prompted to create a password.</p>
 
                     <p>%EmailAddressVerificationUrl%</p>
@@ -320,7 +299,7 @@
                 </emailTemplate>
 
                 <!-- FORGOT PASSWORD -->
-                <emailTemplate type="Forgot Password" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Password Reset for %PortalName%">
+                <emailTemplate type="Forgot Password" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Password Reset for %PortalName%" importAction="add">
                     <p>We received a request to reset the password for your %PortalName% account (%UserName%).  To reset your password, please click the following link (or copy and paste it into your browser):</p>
 
                     <p>%ResetPasswordUrl:ExpirationHours=2%</p>
@@ -336,7 +315,7 @@
                 </emailTemplate>
 
                 <!-- FORGOT USER NAME -->
-                <emailTemplate type="Forgot User Name" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Username Request for %PortalName%">
+                <emailTemplate type="Forgot User Name" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Username Request for %PortalName%" importAction="add">
                     <p>We received a request to send you your %PortalName% username.  If you have multiple accounts attached to this email address, they will be listed below separated by commas.</p>
 
                     <table>
@@ -357,7 +336,7 @@
                 </emailTemplate>
 
                 <!-- WELCOME -->
-                <emailTemplate type="Welcome" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Welcome To %PortalName%">
+                <emailTemplate type="Welcome" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Welcome To %PortalName%" importAction="add">
                     <p>Welcome!  Thank you for your participation.  Your %PortalName% account has been set up.  Please keep the following information for your records:</p>
 
                     <table>
@@ -378,7 +357,7 @@
                 </emailTemplate>
 
                 <!-- ENCOUNTER DUE -->
-                <emailTemplate type="Encounter Due" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Encounter Due Notification for %IntervalName%">
+                <emailTemplate type="Encounter Due" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Encounter Due Notification for %IntervalName%" importAction="add">
                     <p>This is a reminder that your %IntervalName% encounter is due on %ExpectedDueDate%.  Please log in using the following information:</p>
 
                     <table>
@@ -399,7 +378,7 @@
                 </emailTemplate>
 
                 <!-- UNLOCK ACCOUNT -->
-                <emailTemplate name="Unlock Account" type="Unlock Account" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Locked %PortalName% Account">
+                <emailTemplate name="Unlock Account" type="Unlock Account" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Locked %PortalName% Account" importAction="add">
                     <p>Your %PortalName% account (%UserName%) has been locked due to too many failed login attempts. To unlock your account, please click the following link (or copy and paste it into your browser):</p>
 
                     <p>%UnlockAccountUrl%</p>

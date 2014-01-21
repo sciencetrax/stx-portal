@@ -66,6 +66,7 @@
 				heading: "Enroll"
 			},
 			failedEnrollment: {
+				message: "Thank you for taking the survey. Unfortunately, you do not meet the requirements to enroll in this study."
 			},
 			login: {
 				heading: "Login",
@@ -79,7 +80,7 @@
 				username: "Username"
 			},
 			register: {
-				heading: "Sign Up",
+				heading: "Account Information",
 				confirmEmailAddress: "Confirm Email Address",
 				confirmPassword: "Confirm Password",
 				emailAddress: "Email Address",
@@ -148,10 +149,14 @@
 				reports: "Reports"
 			}
 		},
+		finished: {
+			message: "Thank you for taking the survey."
+		},
 		home: {
 			index: {
 				heading: "Home",
 				incomplete: "Incomplete",
+				noIncompleteData: "There doesn't appear to be any incomplete data that needs to be collected.",
 				recentlyCompleted: "Recently Completed",
 				reports: "Reports"
 			}

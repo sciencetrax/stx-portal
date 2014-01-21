@@ -16,6 +16,8 @@ angular.module('stx')
 				}
 			};
 
+			LS.portalName = $('#menu_brand').html();
+
 			$scope.$on('$stateChangeError ', function (event, toState, toParams, fromState, fromParams) {
 				bootbox.alert("State Not Found:" + unfoundState.to);
 			});

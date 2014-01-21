@@ -23,8 +23,15 @@
 								$(document).trigger('pageLoad');
 
 								if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
+									/*
+										InScreening = 1,
+										FailedScreening = 2,
+										PassedScreening = 3,
+										Enrolled = 4,
+										Unknown = 99
+									*/
 									var authorization = $('#Form_Authorization').val();
-									var isEnrolled = $('#Form_IsEnrolled').val() == "true";
+									var isEnrolled = $('#Form_EnrollmentStatusId').val() != 2;
 									if (isEnrolled && portal.registration) {
 										session.authorize(authorization, portal.sessionTimeoutSeconds * 1000);
 										$state.go('accounts.register');
