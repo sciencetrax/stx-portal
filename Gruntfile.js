@@ -5,6 +5,7 @@ module.exports = function (grunt) {
 	 * in `package.json` when you do `npm install` in this directory.
 	 */
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-compress');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
@@ -162,6 +163,16 @@ module.exports = function (grunt) {
 						expand: true
 					}
 				]
+			},
+			phonegap_assets: {
+				files: [
+					{
+						src: [ 'config.xml'],
+						dest: '<%= compile_dir %>',
+						cwd: '.',
+						expand: true
+					}
+				]
 			}
 		},
 
@@ -198,6 +209,22 @@ module.exports = function (grunt) {
 					'module.suffix'
 				],
 				dest: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js'
+			}
+		},
+
+		compress: {
+			main: {
+				options: {
+					archive: 'dist/phonegap.zip',
+					mode: 'zip'
+				},
+				files: [
+					{
+						expand: true,
+						cwd: 'dist/',
+						src: ['**/*']
+					}
+				]
 			}
 		},
 
@@ -575,11 +602,13 @@ module.exports = function (grunt) {
 	grunt.registerTask('compile', [
 		'recess:compile',
 		'copy:compile_assets',
+		'copy:phonegap_assets',
 		'ngmin',
 		'concat:compile_js',
 		'uglify',
 		'index:compile',
 		'portal:compile',
+		'compress',
 		'bump'
 	]);
 

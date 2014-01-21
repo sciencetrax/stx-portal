@@ -1,6 +1,6 @@
 {
   "applicationPath": "/StudyTrax/",
-  "portalCode": "os",
+  "portalCode": "std",
   "author": "Leslie Hanks",
   "name": "Standard_Portal",
   "description": "This is the standard portal designed for all StudyTRAX subject portals to replace the old portal.",
@@ -8,7 +8,7 @@
   "registration": "True",
   "anonymousDataEntry": "True",
   "sendEncounterDueNotifications": "False",
-  "version": "0.0.68",
+  "version": "0.0.91",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {
     "type": "MIT",
@@ -20,7 +20,6 @@
     "url": "git@github.com:bpstoxin/stx-portal.git"
   },
   "dependencies": {},
-
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-recess": "~0.3.0",
@@ -37,6 +36,7 @@
     "grunt-coffeelint": "0.0.6",
     "grunt-conventional-changelog": "~0.1.1",
     "grunt-bump": "0.0.13",
-    "karma-ng-scenario": "~0.1.0"
+    "karma-ng-scenario": "~0.1.0",
+    "grunt-contrib-compress": "~0.6.0"
   }
 }

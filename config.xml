@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>PhoneGap Example</name>
+    <name>StudyTRAX</name>
 
     <description>
         Standard StudyTRAX portal application.
@@ -16,4 +16,15 @@
     <author href="https://www.sciencetrax.com" email="support@sciencetrax.com">
         Leslie Hanks
     </author>
+
+    <access origin="http://127.0.0.1*" />
+    <access origin="http://192.168.1.70" />
+    <access origin="http://lhstx.com" />
+
+    <gap:platform name="ios" />
+
+    <content src="index.html" />
+
+    <preference name="DisallowOverscroll" value="true" />
+    <icon src="assets\studytrax-logo-compact-72x31.png" gap:platform="ios"/>
 </widget>

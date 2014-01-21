@@ -49,15 +49,19 @@
 					// http://lhstx.com/StudyTrax/api/
 					// customers/projects/7354/sites/105/intervals/5678/variablePanelScript?includeProjectVariableGroups=false
 					if (!portal.anonymousInterval) {
-						$scope.$root.error = {
-							errorCode: "AnonymousDataEntryNotAllowed",
-							message: $scope.LS.errorMessages.get('AnonymousDataEntryNotAllowed')
-						};
+						$scope.$root.errors = [
+							{
+								errorCode: "AnonymousDataEntryNotAllowed",
+								message: $scope.LS.errorMessages.get('AnonymousDataEntryNotAllowed')
+							}
+						];
 					} else if (portal.enrollmentIntervalId == null) {
-						$scope.$root.error = {
-							errorCode: "EnrollmentIntervalNotConfigured",
-							message: $scope.LS.errorMessages.get('EnrollmentIntervalNotConfigured')
-						};
+						$scope.$root.errors = [
+							{
+								errorCode: "EnrollmentIntervalNotConfigured",
+								message: $scope.LS.errorMessages.get('EnrollmentIntervalNotConfigured')
+							}
+						];
 					} else {
 						DataEntryForm.loadEnrollmentScript(
 							portal.project.customerId,

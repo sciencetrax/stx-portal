@@ -9,7 +9,10 @@ angular.module('stx.core.webService', [
 		this.apiBase = 'api/';
 
 		this.configure = function (applicationPath, apiBase) {
-			this.applicationPath = applicationPath.replace("//", "/");
+			if (!applicationPath.startsWith("http")) {
+				applicationPath = applicationPath.replace("//", "/");
+			}
+			this.applicationPath = applicationPath;
 			this.apiBase = apiBase;
 		};
 

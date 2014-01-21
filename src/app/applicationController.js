@@ -2,7 +2,11 @@ angular.module('stx')
 	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
 		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, session, stateExt) {
 			if (typeof(stx) != 'undefined') {
-				stx.Constants.ApplicationPath = APPLICATION_PATH.replace("//", "/");
+				var applicationPath = APPLICATION_PATH;
+				if (!applicationPath.startsWith("http")) {
+					applicationPath = applicationPath.replace("//", "/");
+				}
+				stx.Constants.ApplicationPath = applicationPath;
 			}
 
 			$scope.safeApply = function (fn) {
