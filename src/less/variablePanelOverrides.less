@@ -186,7 +186,7 @@
                     }
                     img {
                         left: inherit;
-                        top: 6px;
+                        top: 4px;
                         right: 10px;
                         position: absolute;
                         height: 32px;
@@ -306,12 +306,6 @@
                 width: 100%;
             }
         }
-        .PromptPanel b {
-            font-size: 1.25em;
-        }
-        .PromptPanel i {
-            font-size: .75em;
-        }
         .Heading {
             background: inherit;
             color: inherit;
@@ -333,6 +327,9 @@
             .Indent4 { margin-left: 80px; }
             .Indent1, .Indent2, .Indent3, .Indent4 {
                 width: inherit;
+            }
+            .MatrixTable + .VariablePanel .PromptPanel {
+                text-align: left !important;
             }
             .VariablePanel {
                 .Vertical();
@@ -416,63 +413,29 @@
                 width: 60px !important;
             }
             .PromptPanel {
-                text-align: justify !important;
+                text-align: right !important;
             }
         }
         .MatrixTable + .MatrixTable {
             margin-top: (@grid-gutter-width / 2);
         }
 
-        /*
-            This code was attempting to fix the spacing for checkboxes that are a part of the same
-            group.  We took this out because we couldn't get the spacing correct in the vertical layout.
-
-        .cb-group-start,
-        .cb-group {
-            .VariablePanelSecondContainer {
-                margin-bottom: 0 !important;
-            }
-        }
-        .cb-group + .cb-group:last-child {
-            .VariablePanelSecondContainer {
-                margin-bottom: inherit !important;
-            }
-        }
-
-        .cb-group-start {
-            height: 40px !important;
-            input {
-                height: 35px !important;
-            }
-        }
-        .cb-group {
-            height: 35px !important;
-            margin-bottom: 0;
-            margin-top: 0;
-            padding-bottom: 0;
-            padding-top: 0;
-            input {
-                height: 35px !important;
-            }
-        }
-        /**/
-
-        .width-col-1 {
+        .bs-width-col-1 {
             .make-sm-column(1);
         }
-        .width-col-2 {
+        .bs-width-col-2 {
             .make-sm-column(2);
         }
-        .width-col-3 {
+        .bs-width-col-3 {
             .make-sm-column(3);
         }
-        .width-col-4 {
+        .bs-width-col-4 {
             .make-sm-column(4);
         }
-        .width-col-1,
-        .width-col-2,
-        .width-col-3,
-        .width-col-4 {
+        .bs-width-col-1,
+        .bs-width-col-2,
+        .bs-width-col-3,
+        .bs-width-col-4 {
             padding-left: 5px;
             padding-right: 5px;
             input[type=text] {
@@ -488,7 +451,7 @@
                 width: 100% !important;
             }
         }
-        .width-col-first {
+        .bs-enhanced .bs-width-col-first {
             clear: both;
         }
     }

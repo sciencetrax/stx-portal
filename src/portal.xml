@@ -55,14 +55,10 @@
                                     </div>
                                     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="#URL(index)">Home</a></li>
-                                            <li><a href="#URL(faq)">FAQ</a></li>
-                                            <li><a href="#URL(contact)">Contact Us</a></li>
+                                            #INCLUDE(menu_main)
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
-                                            <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
-                                            <li><a href="#URL(portal_index)">Login</a></li>
+                                            #INCLUDE(menu_login)
                                         </ul>
                                     </nav>
                                 </div>
@@ -98,10 +94,43 @@
                     #Portal.Name
                 </page>
 
+                <!-- MENU MAIN -->
+                <page code="menu_main" pageType="Fragment" importAction="add">
+                    <li><a href="#URL(index)">Home</a></li>
+                    <li><a href="#URL(faq)">FAQ</a></li>
+                    <li><a href="#URL(contact)">Contact Us</a></li>
+                </page>
+
+                <!-- MENU LOGIN -->
+                <page code="menu_login" pageType="Fragment" importAction="add">
+                    <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
+                    <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
+                    <li><a href="#URL(portal_index)">Login</a></li>
+                </page>
+
                 <!-- CONTACT -->
                 <page code="contact" parent="masterPage" importAction="add">
                     <![CDATA[
                         <h1 class="text-center">Contact Us</h1>
+                        <img src="https://stxmedia.blob.core.windows.net/content/images/ScienceTraxLogo-1600x262.png" style="width: 400px"/><br/>
+                        <h3>Headquarters</h3>
+                        103 Plantation Oaks Drive<br/>
+                        Macon, GA 31220<br/>
+                        USA<br/>
+                        <br/>
+
+                        Phone:(800) 620-1179<br/>
+                        Fax:(866) 473-9397<br/>
+                        <br/>
+
+                        <h3>Sales:</h3>
+                        Phone:(800) 620-1179 option 1<br/>
+                        Email: sales@sciencetrax.com<br/>
+                        <br/>
+
+                        <h3>Support</h3>
+                        Phone:(800) 620-1179 option 2<br/>
+                        Email: support@sciencetrax.com<br/>
                     ]]>
                 </page>
 
@@ -147,7 +176,7 @@
                 </page>
 
                 <!-- CUSTOM CSS -->
-                <page code="custom_css" pageType="css" importAction="addOrUpdate">
+                <page code="custom_css" pageType="css" importAction="add">
                     <![CDATA[
                         /*
                          * Enter overrides here to change the look and feel for the portal.
