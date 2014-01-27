@@ -18,8 +18,8 @@
 				return result;
 			};
 		}])
-		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter',
-			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter) {
+		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter', 'DataEntryForm',
+			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter, DataEntryForm) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -66,15 +66,43 @@
 						});
 					});
 				};
-				ScheduledEncounter.query(securityProfile,
-					function (encounters) {
-						encounters = $filter('orderBy')(encounters, 'dueDate', true);
-						$scope.incompleteEncounters = $filter('incomplete')(encounters);
-						$scope.incompleteEncounters = $filter('incomplete')($scope.incompleteEncounters);
-						$scope.recentlyCompletedEncounters = $filter('recentlyCompletedEncounters')(encounters);
+				/*
+				ScheduledEncounter.query(securityProfile, function (data) {
+					$scope.encounter = data[0];
+					$scope.encounter.ready = true;
+					$scope.$broadcast("encounterReady");
 
-						encountersReady = true;
-						$scope.$root.pageReady = summariesReady && encountersReady;
+
+					DataEntryForm.loadScript(
+						authorizationContext.customerId,
+						$scope.portal.projectId,
+						$scope.portal.siteId,
+						subject.id,
+						$stateParams.intervalId,
+						$stateParams.encounterId,
+						false, function () {
+							$scope.$root.pageReady = true;
+						});
+				});
+				/**/
+				ScheduledEncounter.query(securityProfile, function (encounters) {
+					encounters = $filter('orderBy')(encounters, 'dueDate', true);
+					$scope.incompleteEncounters = $filter('incomplete')(encounters);
+					$scope.incompleteEncounters = $filter('incomplete')($scope.incompleteEncounters);
+					$scope.recentlyCompletedEncounters = $filter('recentlyCompletedEncounters')(encounters);
+
+					encountersReady = true;
+					$scope.$root.pageReady = summariesReady && encountersReady;
+				});
+				DataEntryForm.loadScript(
+					authorizationContext.customerId,
+					$scope.portal.projectId,
+					$scope.portal.siteId,
+					subject.id,
+					null,
+					null,
+					true, function () {
+						$scope.$root.pageReady = true;
 					});
 			}])
 	;

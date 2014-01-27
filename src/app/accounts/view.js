@@ -1,8 +1,8 @@
 (function () {
     "use strict";
     angular.module('stx.accounts')
-        .controller("AccountsViewController", ['$scope', 'authorizationContextResolver', 'portalResolver', 'Account', 'SubjectVariableGroupSummary',
-            function ($scope, authorizationContextResolver, portalResolver, Account, SubjectVariableGroupSummary) {
+        .controller("AccountsViewController", ['$scope', 'authorizationContextResolver', 'portalResolver', 'Account', 'SubjectVariableGroupSummary', 'DataEntryForm',
+            function ($scope, authorizationContextResolver, portalResolver, Account, SubjectVariableGroupSummary, DataEntryForm) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
 				var securityProfile = {
@@ -21,6 +21,16 @@
                     id: authorizationContext.userId
                 });
 				$scope.projectVariableGroups = SubjectVariableGroupSummary.query(securityProfile);
+				DataEntryForm.loadScript(
+					authorizationContext.customerId,
+					$scope.portal.projectId,
+					$scope.portal.siteId,
+					subject.id,
+					null,
+					null,
+					true, function () {
+						$scope.$root.pageReady = true;
+					});
             }])
     ;
 }());

@@ -108,7 +108,7 @@ angular.module('stx.core.webService', [
 					$('#VariableToolsMenu').remove();
 					stx.VariablePanel.Utils.notCollectedVariablesId = null;
 					stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
-					var dataEntryPanel = $('.DataEntryPanel');
+					var dataEntryPanel = $('.DataEntryPanel,.data-entry-panel');
 
 					dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableGroupIds' />");
 					dataEntryPanel.append("<input type='hidden' id='NotCollectedVariableIds' />");
@@ -125,7 +125,7 @@ angular.module('stx.core.webService', [
 					script.append("<script>" + scriptToLoad.initialize + "</scr" + "ipt>");
 					script.append("<script>" + "$(document).trigger('pageLoad');" + "</scr" + "ipt>");
 					scriptDiv.html(script);
-					$('.DataEntryPanel li.hide').removeClass('hide');
+					$('.DataEntryPanel li.hide,.data-entry-panel li.hide').removeClass('hide');
 
 					if (successCallback !== undefined) {
 						successCallback();

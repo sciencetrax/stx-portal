@@ -31,8 +31,8 @@
 </section>
 <section class="col-sm-6">
     <h1>{{ LSPage.background }}</h1>
-    <ul class="entity-list compact">
-        <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.variableGroupId}}">
+    <ul class="entity-list compact data-entry-panel">
+        <li ng-repeat="item in projectVariableGroups | orderBy:'name'" variablegroupid="{{item.id}}">
             <a href="#/variablegroups/update/{{item.id}}//" class="entity">
                 <div class="name">{{item.name}}</div>
                 <div class="percent-complete">
@@ -42,3 +42,5 @@
         </li>
     </ul>
 </section>
+<!-- VARIABLE PANEL SCRIPT -->
+<div id="variable-panel-code"></div>

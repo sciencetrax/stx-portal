@@ -20,11 +20,11 @@
 </section>
 
 <section class="col-xs-12" ng-class="{'col-sm-8': reports.length > 0}" ng-show="incompleteSummaries.length > 0 || (incompleteEncounters | readOnlyEncounter:false).length > 0">
-    <ul class="entity-list">
+    <ul class="entity-list data-entry-panel">
 
         <h1>{{ LSPage.incomplete }}</h1>
         <!-- INCOMPLETE VARIABLE GROUPS -->
-        <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.variableGroupIdNumber}}">
+        <li ng-repeat="item in incompleteSummaries" variablegroupid="{{item.id}}">
             <a href="#/variablegroups/update/{{item.id}}//" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
@@ -89,3 +89,5 @@
         </li>
     </ul>
 </section>
+<!-- VARIABLE PANEL SCRIPT -->
+<div id="variable-panel-code"></div>
