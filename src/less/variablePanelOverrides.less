@@ -33,6 +33,12 @@
         line-height: 1;
     }
 
+    & > span {
+        .row();
+        td {
+            padding: 0;
+        }
+    }
     .DateWrapper img {
         top: -2px;
     }
@@ -68,9 +74,6 @@
         white-space: nowrap;
     }
 
-    & > span {
-        .row();
-    }
     .bs-enhanced {
         font-size: @font-size-base;
         .Variables > span > span {
