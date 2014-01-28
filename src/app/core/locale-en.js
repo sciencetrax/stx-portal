@@ -183,6 +183,12 @@
 			view: {
 				pdf: "PDF"
 			}
+		},
+		variableGroups: {
+			update: {
+				clearAnswer: "Clear Answer",
+				variablePanelOptionsHeading: "Options for"
+			}
 		}
 	}
 };

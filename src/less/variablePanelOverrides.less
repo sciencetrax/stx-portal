@@ -456,7 +456,45 @@
         }
     }
 }
-
 .entity-list.DataEntryPanel {
     font-size: inherit;
+}
+#variablePanelMenu {
+    border: solid 1px darkgray;
+    background: #F0592B;;
+    padding: 2px;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 200px;
+    z-index: 1000;
+}
+#variablePanelMenu a {
+    cursor: pointer;
+    color: white;
+}
+#variablePanelMenu > a {
+    margin: 3px;
+}
+#variablePanelMenu > a:hover {
+    text-decoration: none;
+}
+#variablePanelMenu .options {
+    background: #FAC7B8;
+    color: #F0592B;
+    text-align: center;
+}
+#variablePanelMenu .options a {
+    color: #F0592B;
+}
+#variablePanelMenu .heading {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.VariablePanel.highlight,
+.VariablePanel .highlight {
+    border: solid 3px red;
 }

@@ -1,5 +1,11 @@
 <div ng-show="ready">
     <div class="DataEntryPanelHolder"></div>
+    <div id="variablePanelMenu" ng-class="{ expanded: expanded }" ng-show="activeVariable">
+        <a ng-click="showOptions()" class="heading">{{ LSPage.variablePanelOptionsHeading }} "{{ !activeVariable.variableData.prompt ? activeVariable.variableData.name : activeVariable.variableData.prompt }}"</a>
+        <div ng-show="expanded" class="options">
+            <a ng-click="clearVariable()">{{ LSPage.clearAnswer }}</a>
+        </div>
+    </div>
 
     <div class="stx-form">
         <div class="buttons">

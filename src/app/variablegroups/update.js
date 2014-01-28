@@ -12,6 +12,48 @@
 				var subject = authorizationContext.subject;
 				var dataEntryPanel = $('.DataEntryPanelHolder');
 
+				$scope.LSPage = LS.pages.variableGroups.update;
+
+				$(document).click(function(evt) {
+					if ($(evt.target).closest('#variablePanelMenu').length > 0
+						|| $(evt.target).closest('.VariablePanel').length > 0
+						) {
+						return;
+					}
+					$scope.clearOptionsMenu();
+				});
+				$(document).on('focus', '.VariablePanel', function() {
+					$scope.clearOptionsMenu();
+					var variablePanel = $('[variableId]', this);
+					if (variablePanel.length === 0) {
+						// The matrix puts the variableId on the variablePanel itself.
+						variablePanel = $(this);
+					}
+					$scope.activeVariable = stx.VariablePanel.Controller.getVariable(variablePanel.attr('variableId'));
+					$scope.activeVariablePanel = variablePanel;
+					variablePanel.removeClass('highlight');
+				});
+				$scope.clearOptionsMenu = function() {
+					if ($scope.activeVariablePanel) {
+						$scope.activeVariablePanel.removeClass('highlight');
+					}
+					$scope.expanded = false;
+					$scope.activeVariable = null;
+					$scope.activeVariablePanel = null;
+				};
+				$scope.clearVariable = function() {
+					stx.VariablePanel.ControlFunctions.setVariableValue($scope.activeVariable.variableId, null);
+				};
+				$scope.showOptions = function() {
+					$scope.expanded = !$scope.expanded;
+					if ($scope.expanded) {
+						$scope.activeVariablePanel.addClass('highlight');
+						$scope.activeVariablePanel[0].scrollIntoView(false);
+					} else {
+						$scope.activeVariablePanel.removeClass('highlight');
+					}
+				};
+
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
@@ -81,6 +123,7 @@
 									$scope.readOnly = true;
 								}
 								$scope.ready = true;
+								$('.validation-summary-errors')[0].scrollIntoView(false);
 							}
 						}
 					});
