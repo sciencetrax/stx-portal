@@ -7,6 +7,8 @@
 		])
 		.controller("VariableGroupsUpdateController", ['$scope', '$http', '$window', '$location', 'session', 'authorizationContextResolver', 'DataEntryForm',
 			function ($scope, $http, $window, $location, session, authorizationContextResolver, DataEntryForm) {
+				$.dirtyState = $.oldDirtyState;
+
 				var $stateParams = $scope.$stateParams;
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
@@ -43,6 +45,7 @@
 				};
 				$scope.clearVariable = function() {
 					stx.VariablePanel.ControlFunctions.setVariableValue($scope.activeVariable.variableId, null);
+					stx.VariablePanel.Calculator.run();
 				};
 				$scope.showOptions = function() {
 					$scope.expanded = !$scope.expanded;
@@ -87,7 +90,7 @@
 						);
 					});
 				$scope.cancel = function () {
-					if($.dirtyState.isDirty()) {
+					if($.dirtyState && $.dirtyState.isDirty()) {
 						bootbox.confirm("Page is dirty, are you sure you want to cancel?", function(success) {
 							if (success) {
 								$scope.back('home.index');

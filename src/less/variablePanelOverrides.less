@@ -80,6 +80,9 @@
             font-size: @font-size-base !important;
         }
         .stx-form;
+        input:not([type="radio"]) {
+            padding-right: inherit;
+        }
         .make-lg-column-offset(2);
         .make-lg-column(8);
 
@@ -130,6 +133,7 @@
                 padding-right: 0;
                 .AnswerPanel {
                     .form-control;
+                    background-color: inherit;
                     .box-shadow(none);
                     border: none;
                     height: inherit;
@@ -205,6 +209,7 @@
                 }
                 .RadioButton {
                     .form-control();
+                    background-color: inherit;
                     box-shadow: none;
                     border: none;
                     margin-bottom: 0;
@@ -233,6 +238,7 @@
             }
             .PromptPanel {
                 .form-control;
+                background-color: inherit;
                 //                .make-sm-column(6);
                 .box-shadow(none);
                 border: none;
@@ -419,32 +425,93 @@
                 text-align: right !important;
             }
         }
+        .MatrixTable + .NoAnswer {
+            .PromptPanel {
+                text-align: left !important;
+            }
+        }
         .MatrixTable + .MatrixTable {
             margin-top: (@grid-gutter-width / 2);
         }
 
-        .bs-width-col-1 {
-            .make-sm-column(1);
+        /*
+        .bs-prompt {
+            .make-sm-column(6);
+            .PromptPanel {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: right !important;
+//                width: 100% !important;
+            }
+            .VariablePanelFirstContainer {
+                width: 100% !important;
+                .PromptPanel {
+                    padding-right: 0;
+                }
+            }
+            .VariablePanelSecondContainer {
+                display: none;
+            }
         }
-        .bs-width-col-2 {
-            .make-sm-column(2);
+        .bs-answer-col-1 { .make-sm-column(1); }
+        .bs-answer-col-2 { .make-sm-column(2); }
+        .bs-answer-col-3 { .make-sm-column(3); }
+        .bs-answer-col-4 { .make-sm-column(4); }
+        .bs-answer-col-5 { .make-sm-column(5); }
+        .bs-answer-col-6 { .make-sm-column(6); }
+        .bs-answer-col-1,
+        .bs-answer-col-2,
+        .bs-answer-col-3,
+        .bs-answer-col-4,
+        .bs-answer-col-5,
+        .bs-answer-col-6 {
+            .PromptPanel {
+                display: none;
+            }
+            .VariablePanelFirstContainer {
+                display: none;
+            }
+            .VariablePanelSecondContainer {
+                width: 100% !important;
+            }
         }
-        .bs-width-col-3 {
-            .make-sm-column(3);
-        }
-        .bs-width-col-4 {
-            .make-sm-column(4);
-        }
+        */
+
+        .bs-width-col-1 { .make-sm-column(1); }
+        .bs-width-col-2 { .make-sm-column(2); }
+        .bs-width-col-3 { .make-sm-column(3); }
+        .bs-width-col-4 { .make-sm-column(4); }
+        .bs-width-col-5 { .make-sm-column(5); }
+        .bs-width-col-6 { .make-sm-column(6); }
+        .bs-width-col-7 { .make-sm-column(7); }
+        .bs-width-col-8 { .make-sm-column(8); }
+        .bs-width-col-9 { .make-sm-column(9); }
+        .bs-width-col-10 { .make-sm-column(10); }
+        .bs-width-col-11 { .make-sm-column(11); }
+        .bs-width-col-12 { .make-sm-column(12); }
+
         .bs-width-col-1,
         .bs-width-col-2,
         .bs-width-col-3,
-        .bs-width-col-4 {
+        .bs-width-col-4,
+        .bs-width-col-5,
+        .bs-width-col-6,
+        .bs-width-col-7,
+        .bs-width-col-8,
+        .bs-width-col-9,
+        .bs-width-col-10,
+        .bs-width-col-11,
+        .bs-width-col-12 {
             padding-left: 5px;
             padding-right: 5px;
+            padding-top: 0;
+            padding-bottom: 0;
             input[type=text] {
                 padding-right: 12px;
             }
             .PromptPanel {
+                padding-top: 0;
+                padding-bottom: 0;
                 text-align: left;
             }
             .VariablePanelFirstContainer {

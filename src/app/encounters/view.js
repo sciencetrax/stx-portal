@@ -5,6 +5,10 @@
         .controller("EncountersViewController", ['$scope', '$stateParams', '$location', 'authorizationContextResolver', 'DataEntryForm', 'ScheduledEncounter',
             function ($scope, $stateParams, $location, authorizationContextResolver, DataEntryForm, ScheduledEncounter) {
 				$scope.$root.pageReady = false;
+				if ($.dirtyState != null) {
+					$.oldDirtyState = $.dirtyState;
+					$.dirtyState = null;
+				}
 				$('#VariableToolsMenu').remove();
 
 				var authorizationContext = authorizationContextResolver.data;
