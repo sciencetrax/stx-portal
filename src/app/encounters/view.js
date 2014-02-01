@@ -16,7 +16,7 @@
 				var params = {
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					siteId: $scope.portal.siteId,
+					siteId: $scope.getSubjectSite(subject),
 					subjectId: subject.id,
 					intervalId: $stateParams.intervalId,
 					id: $stateParams.encounterId
@@ -31,7 +31,7 @@
 					DataEntryForm.loadScript(
 						authorizationContext.customerId,
 						$scope.portal.projectId,
-						$scope.portal.siteId,
+						$scope.getSubjectSite(subject),
 						subject.id,
 						$stateParams.intervalId,
 						$stateParams.encounterId,

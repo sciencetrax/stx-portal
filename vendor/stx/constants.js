@@ -1,5 +1,6 @@
 ﻿var Constants = {
 	AuthHeader: "X-Authorization",
+	VersionHeader: "X-Version",
 	LoginByReferenceId: "LoginByReferenceId",
 	millis: {
 		minutes1: 60*1000,

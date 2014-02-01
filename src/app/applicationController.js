@@ -1,6 +1,7 @@
 angular.module('stx')
-	.controller('ApplicationController', ['$scope', '$window', '$location', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
-		function ($scope, $window, $location, $state, $stateParams, dependencyResolver, session, stateExt) {
+	.controller('ApplicationController', ['$scope', '$window', '$location', '$http', '$state', '$stateParams', 'dependencyResolver', 'session', 'stateExt',
+		function ($scope, $window, $location, $http, $state, $stateParams, dependencyResolver, session, stateExt) {
+			$http.defaults.headers.common[Constants.VersionHeader] = "1.00";
 			if (typeof(stx) != 'undefined') {
 				var applicationPath = APPLICATION_PATH;
 				if (!applicationPath.startsWith("http")) {
@@ -52,6 +53,16 @@ angular.module('stx')
 				$('#sessionExpirationDialog').modal('show');
 			});
 
+			$scope.$root.getSubjectSite = function(subject, projectId) {
+				projectId = projectId == null ? $scope.portal.projectId : projectId;
+				for(var index = 0; index < subject.projects.length; index++) {
+					var project = subject.projects[index];
+					if (project.projectId == projectId) {
+						return project.siteId;
+					}
+				}
+				return null;
+			};
 			$scope.$root.$on("sessionExpired", function() {
 				$('#sessionExpirationDialog').modal('hide');
 				$location.path("/login");

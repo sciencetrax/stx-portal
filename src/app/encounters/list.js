@@ -24,7 +24,7 @@
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.portal.siteId
+					siteId: $scope.getSubjectSite(subject)
 				});
 			}])
 	;

@@ -9,7 +9,7 @@
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.portal.siteId
+					siteId: $scope.getSubjectSite(subject)
 				};
 
 				$('#page-instructions').html($('#message_accountInstructions').clone());
@@ -24,7 +24,7 @@
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
-					$scope.portal.siteId,
+					$scope.getSubjectSite(subject),
 					subject.id,
 					null,
 					null,

@@ -60,7 +60,7 @@
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
-					$scope.portal.siteId,
+					$scope.getSubjectSite(subject),
 					subject.id,
 					$stateParams.intervalId,
 					$stateParams.encounterId,

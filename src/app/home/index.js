@@ -26,7 +26,7 @@
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.portal.siteId
+					siteId: $scope.getSubjectSite(subject)
 				};
 
 				var summariesReady = false;
@@ -46,9 +46,12 @@
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.portal.siteId
+					siteId: $scope.getSubjectSite(subject)
 				});
 
+				// TODO: We need to filter the list of creatable encounters to check for the ones
+				// that match their screening/follow-up status.
+				// - Where do we get the subjects screening status?
 				$scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;
 				$scope.incompleteEncounters =[];
 				$scope.recentlyCompletedEncounters =[];
@@ -57,7 +60,7 @@
 					encounter.customerId = authorizationContext.customerId;
 					encounter.projectId = $scope.portal.projectId;
 					encounter.subjectId = subject.id;
-					encounter.siteId = $scope.portal.siteId;
+					encounter.siteId = $scope.getSubjectSite(subject);
 					encounter.intervalId = intervalId;
 					ScheduledEncounter.save(encounter, function(encounter) {
 						$scope.$state.go('encounters.view', {
@@ -76,7 +79,7 @@
 					DataEntryForm.loadScript(
 						authorizationContext.customerId,
 						$scope.portal.projectId,
-						$scope.portal.siteId,
+						$scope.getSubjectSite(subject),
 						subject.id,
 						$stateParams.intervalId,
 						$stateParams.encounterId,
@@ -97,7 +100,7 @@
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
-					$scope.portal.siteId,
+					$scope.getSubjectSite(subject),
 					subject.id,
 					null,
 					null,

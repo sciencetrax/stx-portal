@@ -5,11 +5,12 @@
 			function ($scope, $stateParams, session, authorizationContextResolver, Account, ProjectReport, EncounterReport, WebServiceConfig) {
 				var authorizationContext = authorizationContextResolver.data;
 				var subject = authorizationContext.subject;
+
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.portal.siteId,
+					siteId: $scope.getSubjectSite(subject),
 					encounterId: $stateParams.encounterId,
 					reportId: $stateParams.reportId
 				};
