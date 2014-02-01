@@ -8,8 +8,7 @@
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
-					siteId: $scope.getSubjectSite(subject)
+					subjectId: subject.id
 				};
 
 				$('#page-instructions').html($('#message_accountInstructions').clone());
@@ -24,7 +23,6 @@
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
-					$scope.getSubjectSite(subject),
 					subject.id,
 					null,
 					null,

@@ -10,15 +10,14 @@
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
 					subjectId: subject.id,
-					siteId: $scope.getSubjectSite(subject),
 					encounterId: $stateParams.encounterId,
 					reportId: $stateParams.reportId
 				};
 
 				$scope.LSPage = LS.pages.reports.view;
-				var url = 'customers/{0}/projects/{1}/sites/{2}/subjects/{3}/encounters/{4}/reports/{5}?pdfContentsOnly=true';
+				var url = 'customers/{0}/projects/{1}/subjects/{2}/encounters/{3}/reports/{4}?pdfContentsOnly=true';
 				if (String.isNullEmptyOrUndefined($stateParams.encounterId)) {
-					url = 'customers/{0}/projects/{1}/sites/{2}/subjects/{3}/reports/{5}?pdfContentsOnly=true';//&encounterId=';
+					url = 'customers/{0}/projects/{1}/subjects/{2}/reports/{4}?pdfContentsOnly=true';//&encounterId=';
 					$scope.report = ProjectReport.get(securityProfile);
 				} else {
 					$scope.report = EncounterReport.get(securityProfile);
@@ -28,7 +27,6 @@
 					.format(
 						securityProfile.customerId,
 						securityProfile.projectId,
-						securityProfile.siteId,
 						securityProfile.subjectId,
 						securityProfile.encounterId,
 						securityProfile.reportId

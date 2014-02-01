@@ -23,8 +23,7 @@
 				$scope.encounters = ScheduledEncounterList.query({
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
-					siteId: $scope.getSubjectSite(subject)
+					subjectId: subject.id
 				});
 			}])
 	;

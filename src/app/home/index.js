@@ -25,8 +25,7 @@
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
-					siteId: $scope.getSubjectSite(subject)
+					subjectId: subject.id
 				};
 
 				var summariesReady = false;
@@ -45,8 +44,7 @@
 				$scope.reports = ProjectReport.query({
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
-					siteId: $scope.getSubjectSite(subject)
+					subjectId: subject.id
 				});
 
 				// TODO: We need to filter the list of creatable encounters to check for the ones
@@ -60,7 +58,6 @@
 					encounter.customerId = authorizationContext.customerId;
 					encounter.projectId = $scope.portal.projectId;
 					encounter.subjectId = subject.id;
-					encounter.siteId = $scope.getSubjectSite(subject);
 					encounter.intervalId = intervalId;
 					ScheduledEncounter.save(encounter, function(encounter) {
 						$scope.$state.go('encounters.view', {
@@ -79,7 +76,6 @@
 					DataEntryForm.loadScript(
 						authorizationContext.customerId,
 						$scope.portal.projectId,
-						$scope.getSubjectSite(subject),
 						subject.id,
 						$stateParams.intervalId,
 						$stateParams.encounterId,
@@ -100,7 +96,6 @@
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
 					$scope.portal.projectId,
-					$scope.getSubjectSite(subject),
 					subject.id,
 					null,
 					null,

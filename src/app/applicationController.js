@@ -53,16 +53,6 @@ angular.module('stx')
 				$('#sessionExpirationDialog').modal('show');
 			});
 
-			$scope.$root.getSubjectSite = function(subject, projectId) {
-				projectId = projectId == null ? $scope.portal.projectId : projectId;
-				for(var index = 0; index < subject.projects.length; index++) {
-					var project = subject.projects[index];
-					if (project.projectId == projectId) {
-						return project.siteId;
-					}
-				}
-				return null;
-			};
 			$scope.$root.$on("sessionExpired", function() {
 				$('#sessionExpirationDialog').modal('hide');
 				$location.path("/login");

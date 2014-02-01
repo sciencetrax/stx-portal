@@ -89,13 +89,12 @@ angular.module('stx.core.webService', [
 						_this.loadScript2(data, successCallback);
 					});
 				},
-				loadScript: function (customerId, projectId, siteId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {
+				loadScript: function (customerId, projectId, subjectId, intervalId, encounterId, includeProjectVariableGroups, successCallback) {
 					var _this = this;
 
 					VariablePanelScript.get({
 						customerId: customerId,
 						projectId: projectId,
-						siteId: siteId,
 						subjectId: subjectId,
 						intervalId: intervalId,
 						encounterId: encounterId,
@@ -150,10 +149,9 @@ angular.module('stx.core.webService', [
 		});
 	}])
 	.factory('EncounterReport', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/encounters/:encounterId/reports/:reportId'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/encounters/:encounterId/reports/:reportId'), {
 			customerId: "@customerId",
 			projectId: "@projectId",
-			siteId: '@siteId',
 			subjectId: '@subjectId',
 			encounterId: '@encounterId',
 			reportId: '@reportId'
@@ -184,31 +182,28 @@ angular.module('stx.core.webService', [
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:code'));
 	}])
 	.factory('ProjectReport', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/reports/:reportId'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/reports/:reportId'), {
 			customerId: "@customerId",
 			projectId: "@projectId",
-			siteId: "@siteId",
 			subjectId: "@subjectId"
 		});
 	}])
 	.factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablegroupsummaries'));
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/variablegroupsummaries'));
 	}])
 	.factory('ScheduledEncounter', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/intervals/:intervalId/scheduledencounters/:id'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/intervals/:intervalId/scheduledencounters/:id'), {
 			customerId: '@customerId',
 			projectId: '@projectId',
-			siteId: '@siteId',
 			subjectId: '@subjectId',
 			intervalId: '@intervalId',
 			id: '@id'
 		});
 	}])
 	.factory('ScheduledEncounterList', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/scheduledencounters'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/scheduledencounters'), {
 			customerId: '@customerId',
 			projectId: '@projectId',
-			siteId: '@siteId',
 			intervalId: '@intervalId'
 		});
 	}])
@@ -218,6 +213,6 @@ angular.module('stx.core.webService', [
 		});
 	}])
 	.factory('VariablePanelScript', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/sites/:siteId/subjects/:subjectId/variablePanelScript'));
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/variablePanelScript'));
 	}])
 ;
