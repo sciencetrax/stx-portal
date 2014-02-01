@@ -5,14 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/applicationController.js" afterPath="$PROJECT_DIR$/src/app/applicationController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.js" afterPath="$PROJECT_DIR$/src/app/home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/list.js" afterPath="$PROJECT_DIR$/src/app/encounters/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.js" afterPath="$PROJECT_DIR$/src/app/reports/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -1154,7 +1146,11 @@
       <created>1391279380768</created>
       <updated>1391279380768</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="UI Tweaks">
+      <created>1391283417000</created>
+      <updated>1391283417000</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="ToolWindowManager">
