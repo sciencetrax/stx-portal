@@ -188,6 +188,9 @@ angular.module('stx.core.webService', [
 			subjectId: "@subjectId"
 		});
 	}])
+	.factory('Subject', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), '/customers/:customerId/projects/:projectId/subjects/:subjectId'));
+	}])
 	.factory('SubjectVariableGroupSummary', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
 		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/subjects/:subjectId/variablegroupsummaries'));
 	}])

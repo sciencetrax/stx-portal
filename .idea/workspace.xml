@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/applicationController.js" afterPath="$PROJECT_DIR$/src/app/applicationController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/common/error-panel.tpl.html" afterPath="$PROJECT_DIR$/src/app/common/error-panel.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.js" afterPath="$PROJECT_DIR$/src/app/home/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/home/index.tpl.html" afterPath="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/list.js" afterPath="$PROJECT_DIR$/src/app/encounters/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/list.tpl.html" afterPath="$PROJECT_DIR$/src/app/encounters/list.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/encounters/view.js" afterPath="$PROJECT_DIR$/src/app/encounters/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/reports/view.js" afterPath="$PROJECT_DIR$/src/app/reports/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -40,7 +31,26 @@
     <favorites_list name="stx-portal" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="42" selection-start="2679" selection-end="2679" vertical-scroll-proportion="0.30101302" vertical-offset="982" max-vertical-offset="1904">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="7" selection-start="8279" selection-end="8279" vertical-scroll-proportion="0.0" vertical-offset="2737" max-vertical-offset="3859">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -61,19 +71,19 @@
         <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/vendor/stx/constants.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/view.js" />
         <option value="$PROJECT_DIR$/src/app/reports/view.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/list.js" />
         <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
-        <option value="$PROJECT_DIR$/src/app/home/index.js" />
         <option value="$PROJECT_DIR$/src/app/common/error-panel.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/applicationController.js" />
         <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
         <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/encounters/list.tpl.html" />
         <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
+        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
+        <option value="$PROJECT_DIR$/src/app/home/index.js" />
       </list>
     </option>
   </component>
@@ -290,29 +300,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="encounters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -980,7 +968,11 @@
       <created>1391283441455</created>
       <updated>1391283441455</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="general site restructuring">
+      <created>1391323078997</created>
+      <updated>1391323078997</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -997,7 +989,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583778" sideWeight="0.8021978" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19583778" sideWeight="0.8021978" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
@@ -1016,7 +1008,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Added session timeout code" />
     <MESSAGE value="Working on tablet views" />
     <MESSAGE value="Finished up session timeout functionality" />
     <MESSAGE value="Cleaning up UI" />
@@ -1041,7 +1032,8 @@
     <MESSAGE value="Added code to increment the build number when building the dist target." />
     <MESSAGE value="UI Tweaks" />
     <MESSAGE value="Removed siteId from the web services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed siteId from the web services" />
+    <MESSAGE value="general site restructuring" />
+    <option name="LAST_COMMIT_MESSAGE" value="general site restructuring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1049,13 +1041,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="16" selection-start="2443" selection-end="2443" vertical-scroll-proportion="0.0" vertical-offset="843" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="12" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
@@ -1094,13 +1079,6 @@
     <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="106" selection-start="783" selection-end="783" vertical-scroll-proportion="0.35103244" vertical-offset="51" max-vertical-offset="1598">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2670" selection-end="2670" vertical-scroll-proportion="0.7542614" vertical-offset="608" max-vertical-offset="1598">
           <folding />
         </state>
       </provider>
@@ -1160,6 +1138,20 @@
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="71" selection-start="897" selection-end="897" vertical-scroll-proportion="0.47640118" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="7" selection-start="8279" selection-end="8279" vertical-scroll-proportion="0.0" vertical-offset="2737" max-vertical-offset="3859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="42" selection-start="2679" selection-end="2679" vertical-scroll-proportion="0.30101302" vertical-offset="982" max-vertical-offset="1904">
           <folding />
         </state>
       </provider>

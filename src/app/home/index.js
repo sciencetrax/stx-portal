@@ -18,8 +18,8 @@
 				return result;
 			};
 		}])
-		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter', 'DataEntryForm',
-			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter, DataEntryForm) {
+		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'Subject', 'SubjectVariableGroupSummary', 'ScheduledEncounter', 'DataEntryForm',
+			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, Subject, SubjectVariableGroupSummary, ScheduledEncounter, DataEntryForm) {
 				var authorizationContext = authorizationContextResolver.data;
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
@@ -46,10 +46,6 @@
 					subjectId: securityProfile.subjectId
 				});
 
-				// TODO: We need to filter the list of creatable encounters to check for the ones
-				// that match their screening/follow-up status.
-				// - Where do we get the subjects screening status?
-				$scope.encounterActions = portalResolver.data.creatableNonFixedIntervals;
 				$scope.incompleteEncounters =[];
 				$scope.recentlyCompletedEncounters =[];
 				$scope.createEncounter = function(intervalId) {
@@ -65,6 +61,28 @@
 						});
 					});
 				};
+				Subject.get(securityProfile, function (subject) {
+					var creatableIntervals = portalResolver.data.creatableNonFixedIntervals;
+					/*
+						InScreening = 1,
+						FailedScreening = 2,
+						PassedScreening = 3,
+						Enrolled = 4,
+						NotInProject = 90,
+						UnknownInformational = 98,
+						Unknown = 99
+					 */
+
+					var includeScreeningIntervals = subject.enrollmentStatus < 4;
+					var allowedIntervals = [];
+					for(var index = 0; index < creatableIntervals.length; index++) {
+						var interval = creatableIntervals[index];
+						if (interval.screening == includeScreeningIntervals) {
+							allowedIntervals.push(interval);
+						}
+					}
+					$scope.encounterActions = allowedIntervals;
+				});
 				ScheduledEncounter.query(securityProfile, function (encounters) {
 					encounters = $filter('orderBy')(encounters, 'dueDate', true);
 					$scope.incompleteEncounters = $filter('incomplete')(encounters);
