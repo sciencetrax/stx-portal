@@ -21,11 +21,10 @@
 		.controller("HomeIndexController", ['$scope', '$filter', 'authorizationContextResolver', 'portalResolver', 'ProjectReport', 'SubjectVariableGroupSummary', 'ScheduledEncounter', 'DataEntryForm',
 			function ($scope, $filter, authorizationContextResolver, portalResolver, ProjectReport, SubjectVariableGroupSummary, ScheduledEncounter, DataEntryForm) {
 				var authorizationContext = authorizationContextResolver.data;
-				var subject = authorizationContext.subject;
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
-					projectId: $scope.portal.projectId,
-					subjectId: subject.id
+					projectId: authorizationContext.projectId,
+					subjectId: authorizationContext.subjectId
 				};
 
 				var summariesReady = false;
@@ -42,9 +41,9 @@
 						$scope.$root.pageReady = summariesReady && encountersReady;
 					});
 				$scope.reports = ProjectReport.query({
-					customerId: authorizationContext.customerId,
-					projectId: $scope.portal.projectId,
-					subjectId: subject.id
+					customerId: securityProfile.customerId,
+					projectId: securityProfile.projectId,
+					subjectId: securityProfile.subjectId
 				});
 
 				// TODO: We need to filter the list of creatable encounters to check for the ones
@@ -55,9 +54,9 @@
 				$scope.recentlyCompletedEncounters =[];
 				$scope.createEncounter = function(intervalId) {
 					var encounter = new ScheduledEncounter();
-					encounter.customerId = authorizationContext.customerId;
-					encounter.projectId = $scope.portal.projectId;
-					encounter.subjectId = subject.id;
+					encounter.customerId = securityProfile.customerId;
+					encounter.projectId = securityProfile.projectId;
+					encounter.subjectId = securityProfile.subjectId;
 					encounter.intervalId = intervalId;
 					ScheduledEncounter.save(encounter, function(encounter) {
 						$scope.$state.go('encounters.view', {
@@ -66,24 +65,6 @@
 						});
 					});
 				};
-				/*
-				ScheduledEncounter.query(securityProfile, function (data) {
-					$scope.encounter = data[0];
-					$scope.encounter.ready = true;
-					$scope.$broadcast("encounterReady");
-
-
-					DataEntryForm.loadScript(
-						authorizationContext.customerId,
-						$scope.portal.projectId,
-						subject.id,
-						$stateParams.intervalId,
-						$stateParams.encounterId,
-						false, function () {
-							$scope.$root.pageReady = true;
-						});
-				});
-				/**/
 				ScheduledEncounter.query(securityProfile, function (encounters) {
 					encounters = $filter('orderBy')(encounters, 'dueDate', true);
 					$scope.incompleteEncounters = $filter('incomplete')(encounters);
@@ -94,9 +75,9 @@
 					$scope.$root.pageReady = summariesReady && encountersReady;
 				});
 				DataEntryForm.loadScript(
-					authorizationContext.customerId,
-					$scope.portal.projectId,
-					subject.id,
+					securityProfile.customerId,
+					securityProfile.projectId,
+					securityProfile.subjectId,
 					null,
 					null,
 					true, function () {

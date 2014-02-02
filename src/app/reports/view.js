@@ -4,12 +4,10 @@
 		.controller("ReportsViewController", ['$scope', '$stateParams', 'session', 'authorizationContextResolver', 'Account', 'ProjectReport', 'EncounterReport', 'WebServiceConfig',
 			function ($scope, $stateParams, session, authorizationContextResolver, Account, ProjectReport, EncounterReport, WebServiceConfig) {
 				var authorizationContext = authorizationContextResolver.data;
-				var subject = authorizationContext.subject;
-
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
-					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
+					projectId: authorizationContext.projectId,
+					subjectId: authorizationContext.subjectId,
 					encounterId: $stateParams.encounterId,
 					reportId: $stateParams.reportId
 				};

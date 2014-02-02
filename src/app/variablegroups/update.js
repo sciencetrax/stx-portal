@@ -11,7 +11,6 @@
 
 				var $stateParams = $scope.$stateParams;
 				var authorizationContext = authorizationContextResolver.data;
-				var subject = authorizationContext.subject;
 				var dataEntryPanel = $('.DataEntryPanelHolder');
 
 				$scope.LSPage = LS.pages.variableGroups.update;
@@ -59,8 +58,8 @@
 
 				DataEntryForm.loadScript(
 					authorizationContext.customerId,
-					$scope.portal.projectId,
-					subject.id,
+					authorizationContext.projectId,
+					authorizationContext.subjectId,
 					$stateParams.intervalId,
 					$stateParams.encounterId,
 					false, function () {

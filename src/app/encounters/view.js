@@ -12,11 +12,10 @@
 				$('#VariableToolsMenu').remove();
 
 				var authorizationContext = authorizationContextResolver.data;
-				var subject = authorizationContext.subject;
 				var params = {
 					customerId: authorizationContext.customerId,
-					projectId: $scope.portal.projectId,
-					subjectId: subject.id,
+					projectId: authorizationContext.projectId,
+					subjectId: authorizationContext.subjectId,
 					intervalId: $stateParams.intervalId,
 					id: $stateParams.encounterId
 				};
@@ -28,9 +27,9 @@
 
 
 					DataEntryForm.loadScript(
-						authorizationContext.customerId,
-						$scope.portal.projectId,
-						subject.id,
+						params.customerId,
+						params.projectId,
+						params.subjectId,
 						$stateParams.intervalId,
 						$stateParams.encounterId,
 						false, function () {

@@ -70,7 +70,8 @@ angular.module('stx')
 
 					return message;
 				} catch (e) {
-					return e;
+					var body = "Error Message: " + angular.toJson(error).replace('{"', '{ "');
+					return "Unhandled Error: " + error.errorCode + ". <a href='mailto: support@sciencetrax.com?subject=Unhandled Error: " + error.errorCode + "&body=" + body + "'>Email</a> this error to ScienceTRAX." ;
 				}
 			};
 		}

@@ -44,12 +44,12 @@
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
 
+                <!-- DUE DATE -->
                 <div class="due-date hidden-xs">due {{ item.dueDate | encounterDueDescription }}</div>
 
                 <!-- PERCENT COMPLETE -->
                 <div class="percent-complete">
-                    <div ng-show="item.percentComplete > 0" class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
-                    <div ng-show="item.percentComplete == 0" class="incomplete">{{item.percentComplete*100 | number:1}}%</div>
+                    <div ng-class="{complete: item.percentComplete == 1, incomplete: item.percentComplete != 1}">{{item.percentComplete*100 | number:1}}%</div>
                 </div>
             </a>
         </li>
@@ -69,11 +69,6 @@
                     <div class="name">{{ item.name }}</div>
 
                     <div class="due-date hidden-xs">{{ item.encounterDate | moment:'format':'LL' }}</div>
-
-                    <!--&lt;!&ndash; PERCENT COMPLETE &ndash;&gt;-->
-                    <!--<div class="percent-complete">-->
-                    <!--<div class="{{item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>-->
-                    <!--</div>-->
                 </a>
             </li>
         </ul>

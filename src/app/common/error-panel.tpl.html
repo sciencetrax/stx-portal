@@ -2,7 +2,7 @@
 <div id="errors" class="alert alert-danger" ng-class="{hide: errors == null}">
     <ul>
         <li ng-repeat="item in errors">
-            {{ item.message }}
+            <div ng-bind-html="item.message"></div>
             <div class="text-center">
                 <div ng-click="resendVerificationEmail()" class="btn btn-danger" ng-class="{hide: item.code !== 'EmailAddressNotVerified'}">{{LS.common.resendVerificationEmail}}</div>
                 <div ng-click="resendUnlockAccountEmail()" class="btn btn-danger" ng-class="{hide: item.code !== 'AccountLocked'}">{{LS.common.resendUnlockAccountEmail}}</div>
@@ -13,6 +13,6 @@
 
 <!-- SUCCESS MESSAGES -->
 <div class="alert alert-success" ng-class="{hide: success == null}">
-    {{ success.message }}
+    <div ng-bind-html="success.message"></div>
 </div>
 

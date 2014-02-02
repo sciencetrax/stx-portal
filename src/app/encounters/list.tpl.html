@@ -16,7 +16,7 @@
             <div class="name">{{item.name}}</div>
             <div class="due-date hidden-xs">due {{ item.dueDate | encounterDueDescription }}</div>
             <div class="percent-complete">
-                <div class="{{ item.createDate == null ? 'incomplete' : item.dataCompletionStatus.toLowerCase()}}">{{item.percentComplete*100 | number:1}}%</div>
+                <div ng-class="{ incomplete: item.percentComplete < .9999, complete: item.percentComplete > .9999 }">{{item.percentComplete*100 | number:1}}%</div>
             </div>
         </a>
     </li>

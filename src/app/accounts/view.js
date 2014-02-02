@@ -4,11 +4,10 @@
         .controller("AccountsViewController", ['$scope', 'authorizationContextResolver', 'portalResolver', 'Account', 'SubjectVariableGroupSummary', 'DataEntryForm',
             function ($scope, authorizationContextResolver, portalResolver, Account, SubjectVariableGroupSummary, DataEntryForm) {
 				var authorizationContext = authorizationContextResolver.data;
-				var subject = authorizationContext.subject;
 				var securityProfile = {
 					customerId: authorizationContext.customerId,
 					projectId: $scope.portal.projectId,
-					subjectId: subject.id
+					subjectId: authorizationContext.subjectId
 				};
 
 				$('#page-instructions').html($('#message_accountInstructions').clone());
@@ -21,9 +20,9 @@
                 });
 				$scope.projectVariableGroups = SubjectVariableGroupSummary.query(securityProfile);
 				DataEntryForm.loadScript(
-					authorizationContext.customerId,
-					$scope.portal.projectId,
-					subject.id,
+					securityProfile.customerId,
+					securityProfile.projectId,
+					securityProfile.subjectId,
 					null,
 					null,
 					true, function () {
