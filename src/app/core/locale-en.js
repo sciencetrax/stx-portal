@@ -29,6 +29,7 @@
 	errorMessages: {
 		AccountLocked: "Your account has been locked.",
 		AnonymousDataEntryNotAllowed: "Anonymous data entry is not allowed.",
+		ConcurrencyError: "Concurrency Error: The most likely reason for this is that another user changed data since the time you queried this record.",
 		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		EnrollmentFull: "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		EnrollmentIntervalNotConfigured: "The enrollment interval has not been setup",
@@ -42,7 +43,16 @@
 		RemainingSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
 		RequiredFieldMissing: "A required field was not specified.",
 		UsernameExist: "Please enter a different username.  That username ({username}) is taken.",
-		SqlForeignKeyDeleteViolation: "This record ({table}) cannot be deleted because it is referenced by a ({foreignKeyTable}) record."
+		SqlCheckConstraint: "The value for field ({column}) in table ({table}) fails constraint ({value}).",
+		SqlDataInUse: "This record cannot be deleted because it is referenced by another record in the system.",
+		SqlDuplicateKey: "The value ({value}) for ({column,}) in entity ({table}) must be unique.",
+		SqlDuplicatePrimaryKey: "Concurrency Error: The most likely reason for this is that another user added data since the time you queried this record (table: ({table}), value: ({value}).",
+		SqlForeignKeyDeleteViolation: "This record ({table}) cannot be deleted because it is referenced by a ({foreignKeyTable}) record.",
+		SqlForeignKeyViolation: "This record ({table}) must have a corresponding reference to a ({foreignKeyTable}) record.",
+		SqlGenericError: "Unexpected database error.",
+		SqlInvalidData: "The data was invalid.",
+		SqlInvalidDataForType: "The value ({value}) is not in the correct form for its data type.",
+		SqlNullInNotNullField: "This record ({table}) must have a value for ({column})."
 	},
 	menu: {
 		logASubjectIn: "Log a subject in"
