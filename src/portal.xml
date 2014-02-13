@@ -221,7 +221,7 @@
                     <![CDATA[
                         <h1>An error has occurred</h1>
                         <h3>#ErrorMessage</h3>
-                        <div>
+                        <div id="StackTrace" style="display: none">
                             #StackTrace
                         </div>
                     ]]>
@@ -315,7 +315,7 @@
                              EMAIL TEMPLATES
                  ********************************************************************** -->
             <emailTemplates>
-                <!-- ACCOUNT VERIFICATION-->
+                <!-- EMAIL VERIFICATION-->
                 <emailTemplate type="Verify Email" from="%PortalName% &lt;no-reply@sciencetrax.com&gt;" subject="Email Address Verification for %PortalName%" importAction="add">
                     <p>Welcome!  Your %PortalName% account has been set up.  To begin using your account, you must first verify your email address by clicking the following link (or copying and pasting it into your browser). After verifying your email address, you will be prompted to create a password.</p>
 

@@ -98,7 +98,7 @@
 								$rootScope.errors = [];
 								for(var index = 0; index < errors.length; index++) {
 									$rootScope.errors[index] = {
-										code: errors[index].errorCode,
+										code: errors[index].code,
 										message: $rootScope.getErrorMessage(errors[index])
 									};
 								}

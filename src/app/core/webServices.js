@@ -1,5 +1,4 @@
 ﻿var serviceActions = { update: { method: "PUT" } };
-var serviceActions = { update: { method: "PUT" } };
 
 angular.module('stx.core.webService', [
 		'ngResource'
@@ -38,8 +37,10 @@ angular.module('stx.core.webService', [
 	})
 
 	.factory('Account', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/accounts/:userId'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/portals/:portalId/accounts/:id'), {
 			customerId: '@customerId',
+			projectId: '@projectId',
+			portalId: '@portalId',
 			id: '@id'
 		}, serviceActions);
 	}])
@@ -172,7 +173,9 @@ angular.module('stx.core.webService', [
 		});
 	}])
 	.factory('PasswordReset', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'portals/:portalId/passwordReset/:token?password=:password'), {
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'customers/:customerId/projects/:projectId/portals/:portalId/passwordReset/:token?password=:password'), {
+			customerId: "@customerId",
+			projectId: "@projectId",
 			portalId: "@portalId",
 			token: "@token",
 			password: "@password"

@@ -62,7 +62,12 @@ angular.module('stx')
 			};
 			$scope.$root.getErrorMessage = function(error) {
 				try {
-					var message = LS.errorMessages.get(error.errorCode);
+					var messaage;
+					try {
+						message = LS.errorMessages.get(error.error);
+					} catch (e) {
+						message = LS.errorMessages.get("" + error.code);
+					}
 
 					for (var name in error.details) {
 						message = message.replace('{' + name + '}', error.details[name]);
@@ -71,7 +76,7 @@ angular.module('stx')
 					return message;
 				} catch (e) {
 					var body = "Error Message: " + angular.toJson(error).replace('{"', '{ "');
-					return "Unhandled Error: " + error.errorCode + ". <a href='mailto: support@sciencetrax.com?subject=Unhandled Error: " + error.errorCode + "&body=" + body + "'>Email</a> this error to ScienceTRAX." ;
+					return "Unhandled Error: " + error.error + ". <a href='mailto: support@sciencetrax.com?subject=Unhandled Error: " + error.error + "&body=" + body + "'>Email</a> this error to ScienceTRAX." ;
 				}
 			};
 		}

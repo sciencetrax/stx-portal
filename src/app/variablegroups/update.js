@@ -74,6 +74,19 @@
 								stx.VariablePanel.Utils.notCollectedVariablesId = null;
 								stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
 								dataEntryPanel.html(data);
+								$('[class*=matrix-prompt-width-]').each(function() {
+									var variablePanel = $(this);
+									var classNames = variablePanel.attr('class').split(/\s+/);
+									var className = "";
+									for (var i=0; i<classNames.length; ++i) {
+										if (classNames[i].startsWith('matrix-prompt-width')) {
+											className = classNames[i];
+										}
+									}
+									variablePanel.closest('.MatrixTable').addClass(className);
+									variablePanel.removeClass(className);
+								});
+
 								$('.IndentLevel1').parent().parent().addClass("Indent1").addClass("Indent");
 								$('.IndentLevel2').parent().parent().addClass("Indent2").addClass("Indent");
 								$('.IndentLevel3').parent().parent().addClass("Indent3").addClass("Indent");

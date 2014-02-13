@@ -10,7 +10,12 @@
 				$scope.metadata = Metadata.get({ entityType: 'account'});
 				$scope.account = Account.get({
 					customerId: authorizationContextResolver.data.customerId,
+					projectId: $scope.portal.projectId,
+					portalId: $scope.portal.id,
 					id: authorizationContextResolver.data.userId
+				}, function(data) {
+					data.projectId = $scope.portal.projectId;
+					data.portalId = $scope.portal.id;
 				});
 				$scope.update = function () {
 					var account = this.account;

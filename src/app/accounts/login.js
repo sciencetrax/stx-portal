@@ -13,8 +13,6 @@
 				$scope.byReferenceId = $scope.$stateParams.byReferenceId == 'true';
 
 				var emailRequest = new EmailRequest();
-				emailRequest.emailType = "AccountVerification";
-
                 $scope.authorization = new Authorization();
 				$scope.$root.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
@@ -24,6 +22,7 @@
 					});
 				};
 				$scope.$root.resendUnlockAccountEmail = function () {
+					var emailRequest = new EmailRequest();
 					emailRequest.portalId = portal.id;
 					emailRequest.emailType = "UnlockAccount";
 					EmailRequest.save(emailRequest, function () {

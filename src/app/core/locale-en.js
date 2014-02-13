@@ -27,32 +27,76 @@
 	},
 
 	errorMessages: {
-		AccountLocked: "Your account has been locked.",
+		/*
+			Unused errors:
+
+			InvalidToken = 1002,
+			KeyNotFound = 1003,
+			ResourceNotFound = 1004,
+			Unauthorized = 1006,
+			UnsupportedMediaType = 1005,
+			NoAuthorizationDefined = 99010,
+			ServerConfigurationError = 99020,
+		*/
 		AnonymousDataEntryNotAllowed: "Anonymous data entry is not allowed.",
-		ConcurrencyError: "Concurrency Error: The most likely reason for this is that another user changed data since the time you queried this record.",
-		EmailAddressNotVerified: "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
-		EnrollmentFull: "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		EnrollmentIntervalNotConfigured: "The enrollment interval has not been setup",
-		InvalidPassword: "Invalid password.",
-		InvalidUsernameOrPassword: "Invalid username or password.",
-		NotAuthorizedToLoginSubject: "You are not authorized to log subjects in.",
-		PasswordCannotReuse: "That password cannot be reused yet.",
-		PasswordExpired: "Your password has expired.",
-		PasswordMinLength: "Your password must be at least {minimumPasswordLength} characters long.",
-		PasswordNotDifferent: "The new password must be different from the old password.",
-		RemainingSecondsTooLong: "The value you entered for remaining seconds exceeds the session length.",
-		RequiredFieldMissing: "A required field was not specified.",
-		UsernameExist: "Please enter a different username.  That username ({username}) is taken.",
-		SqlCheckConstraint: "The value for field ({column}) in table ({table}) fails constraint ({value}).",
-		SqlDataInUse: "This record cannot be deleted because it is referenced by another record in the system.",
-		SqlDuplicateKey: "The value ({value}) for ({column,}) in entity ({table}) must be unique.",
-		SqlDuplicatePrimaryKey: "Concurrency Error: The most likely reason for this is that another user added data since the time you queried this record (table: ({table}), value: ({value}).",
-		SqlForeignKeyDeleteViolation: "This record ({table}) cannot be deleted because it is referenced by a ({foreignKeyTable}) record.",
-		SqlForeignKeyViolation: "This record ({table}) must have a corresponding reference to a ({foreignKeyTable}) record.",
-		SqlGenericError: "Unexpected database error.",
-		SqlInvalidData: "The data was invalid.",
-		SqlInvalidDataForType: "The value ({value}) is not in the correct form for its data type.",
-		SqlNullInNotNullField: "This record ({table}) must have a value for ({column})."
+
+		// ConcurrencyError
+		"1001": "Concurrency Error: The most likely reason for this is that another user changed data since the time you queried this record.",
+		// SqlCheckConstraint
+		"2010": "The value for field ({column}) in table ({table}) fails constraint ({value}).",
+		// SqlDataInUse
+		"2020": "This record cannot be deleted because it is referenced by another record in the system.",
+		// SqlDuplicateKey
+		"2030": "The value ({value}) for ({column,}) in entity ({table}) must be unique.",
+		// SqlDuplicatePrimaryKey
+		"2040": "Concurrency Error: The most likely reason for this is that another user added data since the time you queried this record (table: ({table}), value: ({value}).",
+		// SqlForeignKeyDeleteViolation
+		"2050": "This record ({table}) cannot be deleted because it is referenced by a ({foreignKeyTable}) record.",
+		// SqlForeignKeyViolation
+		"2051": "This record ({table}) must have a corresponding reference to a ({foreignKeyTable}) record.",
+		// SqlGenericError
+		"2060": "Unexpected database error.",
+		// SqlInvalidData
+		"2070": "The data was invalid.",
+		// SqlInvalidDataForType
+		"2071": "The value ({value}) is not in the correct form for its data type.",
+		// SqlNullInNotNullField
+		"2080": "This record ({table}) must have a value for ({column}).",
+		// PasswordCannotReuse
+		"3010" : "That password cannot be reused yet.",
+		// PasswordExpired
+		"3011" : "Your password has expired.",
+		// PasswordMinLength
+		"3012" : "Your password must be at least {minimumPasswordLength} characters long.",
+		// PasswordNotDifferent
+		"3013" : "The new password must be different from the old password.",
+		// PasswordRequired
+		"3014" : "The password is required.",
+		// RemainingSecondsTooLong
+		"7010" : "The value you entered for remaining seconds exceeds the session length.",
+		// RequiredFieldMissing
+		"3020" : "A required field was not specified.",
+		// UsernameExist
+		"3030": "Please enter a different username.  That username ({username}) is taken.",
+		// AccountLocked
+		"4010": "Your account has been locked.",
+		//EmailAddressNotVerified
+		"4020": "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
+		// InvalidPassword
+		"4030" : "Invalid password.",
+		// InvalidUsernameOrPassword
+		"4040": "Invalid username or password.",
+		// NotAuthorizedToLoginSubject
+		"4050": "You are not authorized to log subjects in.",
+		// EnrollmentFull
+		"5010": "Sorry, but the project is full.  No more subjects can sign up at this time.",
+		// PortalAccountCreationNotAllowed
+		"6010": "Registration is not allowed in this portal.",
+		// ServerConfigurationError
+		"99020": "There appears to be a problem with the server.  Please contact the system administrator if this problem persists.",
+		// Unknown
+		"999999": "An unknown error has occurred."
 	},
 	menu: {
 		logASubjectIn: "Log a subject in"
@@ -117,7 +161,7 @@
 				heading: "Set Password",
 				addPassword: "Add Password",
 				confirmPassword: "Confirm Password",
-				message: "Your email address has been verified but you still need to add a password.  Please enter your password below",
+				message: "Your email address has been verified but you still need to add a password.  Please enter your password below.",
 				password: "Password",
 				passwordChangedMessage: "Your password has been changed.  Please return to the login page to login.",
 				username: "Username",

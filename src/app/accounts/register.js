@@ -16,6 +16,8 @@
 						AuthorizationContext.get({}, function (context) {
 							$scope.account = Account.get({
 								customerId: context.customerId,
+								projectId: context.projectId,
+								portalId: context.portalId,
 								id: context.userId
 							}, function(data) {
 								// This should be removed if we decide to auto-generate a good looking username

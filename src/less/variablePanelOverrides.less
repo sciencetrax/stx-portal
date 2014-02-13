@@ -117,6 +117,7 @@
                 }
             }
         }
+
         .Document span {
             display: inline !important;
         }
@@ -412,6 +413,10 @@
                     background: lighten(@custom-brand-color, 40%);
                 }
             }
+            .NumberPanel + .AnswerPanel,
+            .NumberPanel + .PromptPanel {
+                width: inherit !important;
+            }
         }
         .MatrixTable + .VariablePanel {
             height: 57px;
@@ -495,6 +500,19 @@
         .bs-width-col-11 { .make-sm-column(11); }
         .bs-width-col-12 { .make-sm-column(12); }
 
+        .bs-prompt-width-col-1 .VariablePanelFirstContainer { .make-sm-column(1); }
+        .bs-prompt-width-col-2 .VariablePanelFirstContainer { .make-sm-column(2); }
+        .bs-prompt-width-col-3 .VariablePanelFirstContainer { .make-sm-column(3); }
+        .bs-prompt-width-col-4 .VariablePanelFirstContainer { .make-sm-column(4); }
+        .bs-prompt-width-col-5 .VariablePanelFirstContainer { .make-sm-column(5); }
+        .bs-prompt-width-col-6 .VariablePanelFirstContainer { .make-sm-column(6); }
+        .bs-prompt-width-col-7 .VariablePanelFirstContainer { .make-sm-column(7); }
+        .bs-prompt-width-col-8 .VariablePanelFirstContainer { .make-sm-column(8); }
+        .bs-prompt-width-col-9 .VariablePanelFirstContainer { .make-sm-column(9); }
+        .bs-prompt-width-col-10 .VariablePanelFirstContainer { .make-sm-column(10); }
+        .bs-prompt-width-col-11 .VariablePanelFirstContainer { .make-sm-column(11); }
+        .bs-prompt-width-col-12 .VariablePanelFirstContainer { .make-sm-column(12); }
+
         .bs-answer-width-col-1 .VariablePanelSecondContainer { .make-sm-column(1); }
         .bs-answer-width-col-2 .VariablePanelSecondContainer { .make-sm-column(2); }
         .bs-answer-width-col-3 .VariablePanelSecondContainer { .make-sm-column(3); }
@@ -548,6 +566,11 @@
         .make-md-column(6);
     }
 }
+/*
+.DataEntryPanel .bs-enhanced .matrix-prompt-width-450 thead > tr > .PromptHeader {
+    width: 450px !important;
+}
+/**/
 .entity-list.DataEntryPanel {
     font-size: inherit;
 }
@@ -589,4 +612,10 @@
 .VariablePanel.highlight,
 .VariablePanel .highlight {
     border: solid 3px red;
+}
+.align-top tr {
+    vertical-align: top !important;
+}
+.DataEntryPanel .bs-enhanced .align-top .AnswerPanel input:not([type="radio"]) {
+    height: 28px !important;
 }
