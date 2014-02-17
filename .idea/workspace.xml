@@ -4,22 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/app/variablegroups/update.js" line="52" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/_module.js" afterPath="$PROJECT_DIR$/src/app/_module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/applicationController.js" afterPath="$PROJECT_DIR$/src/app/applicationController.js" />
+    <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="Refactoring web services">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/login.js" afterPath="$PROJECT_DIR$/src/app/accounts/login.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.js" afterPath="$PROJECT_DIR$/src/app/accounts/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/resetPassword.js" afterPath="$PROJECT_DIR$/src/app/accounts/resetPassword.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/setPasswordAfterVerify.js" afterPath="$PROJECT_DIR$/src/app/accounts/setPasswordAfterVerify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/update.js" afterPath="$PROJECT_DIR$/src/app/accounts/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/variablegroups/update.js" afterPath="$PROJECT_DIR$/src/app/variablegroups/update.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" afterPath="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/view.js" afterPath="$PROJECT_DIR$/src/app/accounts/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/webServices.js" afterPath="$PROJECT_DIR$/src/app/core/webServices.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
@@ -43,91 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="webServices.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <file leaf-file-name="variablePanelOverrides.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="40" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0" vertical-offset="1138" max-vertical-offset="3910">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resetPassword.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="44" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="833">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/applicationController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="57" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="1513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_module.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_module.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="36" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.0" vertical-offset="1463" max-vertical-offset="2244">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setPasswordAfterVerify.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/setPasswordAfterVerify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="686" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="-0.13828239" vertical-offset="622" max-vertical-offset="4369">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enroll.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="28" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1632">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error-panel.tpl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/common/error-panel.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="620" selection-end="620" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10659">
               <folding />
             </state>
           </provider>
@@ -151,15 +59,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/app/core/directives/autofocus.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
         <option value="$PROJECT_DIR$/src/app/core/sessionService.spec.js" />
         <option value="$PROJECT_DIR$/src/portal.xml" />
         <option value="$PROJECT_DIR$/src/app/home/index.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/view.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/update.js" />
-        <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/login.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/setPasswordAfterVerify.js" />
         <option value="$PROJECT_DIR$/src/app/accounts/resetPassword.js" />
@@ -167,14 +71,18 @@
         <option value="$PROJECT_DIR$/src/app/_module.js" />
         <option value="$PROJECT_DIR$/src/app/applicationController.js" />
         <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
+        <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
+        <option value="$PROJECT_DIR$/src/app/accounts/register.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/dist/portal-0.0.133.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1918" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -202,7 +110,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -218,38 +125,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,28 +196,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="variablegroups" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -391,47 +244,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stx-portal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="281" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="299" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="279" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="297" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="303" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="301" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../stx-portal-app" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="307" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="980" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="973" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="299" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="305" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="973" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="966" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="297" />
     <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="292" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="290" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
@@ -1089,28 +921,32 @@
       <created>1391491790226</created>
       <updated>1391491790227</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Refactoring web services">
+      <created>1392305329149</created>
+      <updated>1392305329149</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="1048" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20067264" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19744545" sideWeight="0.71748877" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19557196" sideWeight="0.88901097" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19744545" sideWeight="0.08183856" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18161435" sideWeight="0.5002636" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19557196" sideWeight="0.10989011" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1967033" sideWeight="0.5002636" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12307692" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27032968" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1967033" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1125,7 +961,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Finished up session timeout functionality" />
     <MESSAGE value="Cleaning up UI" />
     <MESSAGE value="Implemented the back feature" />
     <MESSAGE value="Cleaning up code" />
@@ -1150,7 +985,8 @@
     <MESSAGE value="Removed siteId from the web services" />
     <MESSAGE value="general site restructuring" />
     <MESSAGE value="Added logic to prevent the subject from creating follow-up encounters when they are still in screening" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logic to prevent the subject from creating follow-up encounters when they are still in screening" />
+    <MESSAGE value="Refactoring web services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring web services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1158,116 +994,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/core/sessionService.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="35" selection-start="4869" selection-end="4872" vertical-scroll-proportion="0.31955484" vertical-offset="2077" max-vertical-offset="3298">
+        <state line="35" column="0" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="19" selection-start="4517" selection-end="4517" vertical-scroll-proportion="0.33227345" vertical-offset="1814" max-vertical-offset="6545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="36" selection-start="850" selection-end="850" vertical-scroll-proportion="0.35157546" vertical-offset="213" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.9230769" vertical-offset="102" max-vertical-offset="901">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/portal.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="40" selection-start="22361" selection-end="22377" vertical-scroll-proportion="0.0" vertical-offset="5270" max-vertical-offset="7140">
-          <folding>
-            <element signature="tag#emailTemplate#0;tag#emailTemplates#0;tag#portal#0;tag#portals#0;tag#studyTrax#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/setPasswordAfterVerify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="686" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+        <state line="308" column="91" selection-start="20706" selection-end="20797" vertical-scroll-proportion="0.0" vertical-offset="4981" max-vertical-offset="7140">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/resetPassword.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="833">
+        <state line="14" column="77" selection-start="491" selection-end="557" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/changePassword.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="40" selection-start="3125" selection-end="3125" vertical-scroll-proportion="0.0" vertical-offset="1138" max-vertical-offset="3910">
+        <state line="23" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/login.js">
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
+        <state line="321" column="0" selection-start="7075" selection-end="7075" vertical-scroll-proportion="-10.08" vertical-offset="5205" max-vertical-offset="13141">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+        <state line="17" column="13" selection-start="758" selection-end="758" vertical-scroll-proportion="0.33682984" vertical-offset="0" max-vertical-offset="2074">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/error-panel.tpl.html">
+    <entry file="file://$PROJECT_DIR$/src/app/accounts/emailAddressVerified.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="18" selection-start="620" selection-end="620" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="408">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_module.js">
+    <entry file="file://$PROJECT_DIR$/dist/portal-0.0.133.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="36" selection-start="3064" selection-end="3064" vertical-scroll-proportion="0.0" vertical-offset="1463" max-vertical-offset="2244">
+        <state line="47962" column="59" selection-start="1950090" selection-end="1950090" vertical-scroll-proportion="0.0" vertical-offset="814929" max-vertical-offset="825333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
+    <entry file="file://$PROJECT_DIR$/src/app/core/sessionService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="28" selection-start="2382" selection-end="2382" vertical-scroll-proportion="0.0" vertical-offset="777" max-vertical-offset="1632">
+        <state line="188" column="0" selection-start="6069" selection-end="6069" vertical-scroll-proportion="0.0" vertical-offset="2414" max-vertical-offset="3298">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/stateExt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/applicationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="57" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.0" vertical-offset="728" max-vertical-offset="1513">
+        <state line="1" column="54" selection-start="73" selection-end="73" vertical-scroll-proportion="0.019517796" vertical-offset="0" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
+    <entry file="file://$PROJECT_DIR$/src/app/_module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="-0.13828239" vertical-offset="622" max-vertical-offset="4369">
+        <state line="13" column="23" selection-start="231" selection-end="231" vertical-scroll-proportion="0.17873304" vertical-offset="63" max-vertical-offset="2244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="23" selection-start="2304" selection-end="2309" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="23" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.4489093" vertical-offset="306" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10659">
           <folding />
         </state>
       </provider>

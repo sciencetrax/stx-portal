@@ -48,7 +48,7 @@
 		// SqlDataInUse
 		"2020": "This record cannot be deleted because it is referenced by another record in the system.",
 		// SqlDuplicateKey
-		"2030": "The value ({value}) for ({column,}) in entity ({table}) must be unique.",
+		"2030": "The value ({value}) for ({column}) in entity ({table}) must be unique.",
 		// SqlDuplicatePrimaryKey
 		"2040": "Concurrency Error: The most likely reason for this is that another user added data since the time you queried this record (table: ({table}), value: ({value}).",
 		// SqlForeignKeyDeleteViolation
