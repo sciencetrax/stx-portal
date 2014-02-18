@@ -7,7 +7,9 @@
 		])
 		.controller("VariableGroupsUpdateController", ['$scope', '$http', '$window', '$location', 'session', 'authorizationContextResolver', 'DataEntryForm',
 			function ($scope, $http, $window, $location, session, authorizationContextResolver, DataEntryForm) {
-				$.dirtyState = $.oldDirtyState;
+				if ($.oldDirtyState) {
+					$.dirtyState = $.oldDirtyState;
+				}
 
 				var $stateParams = $scope.$stateParams;
 				var authorizationContext = authorizationContextResolver.data;
@@ -93,6 +95,8 @@
 								$('.IndentLevel4').parent().parent().addClass("Indent4").addClass("Indent");
 
 								$(document).trigger('pageLoad');
+								var form = $('form', dataEntryPanel);
+								$scope.$root.dirtyState = new stx.DirtyState(form);
 								if ($(".DataEntryPanel.ReadOnly").length == 1) {
 									$scope.readOnly = true;
 								}
@@ -101,10 +105,22 @@
 						);
 					});
 				$scope.cancel = function () {
-					if($.dirtyState && $.dirtyState.isDirty()) {
-						bootbox.confirm("Page is dirty, are you sure you want to cancel?", function(success) {
-							if (success) {
-								$scope.back('home.index');
+					if ($scope.$root.dirtyState && $scope.$root.dirtyState.isDirty()) {
+						bootbox.dialog({
+							message: LS.common.dirtyPageWarning,
+							buttons: {
+								yes: {
+									label: LS.common.yes,
+									className: "btn-primary",
+									callback: function () {
+										$scope.$root.dirtyState = null;
+										$scope.back('home.index');
+									}
+								},
+								no: {
+									label: LS.common.no,
+									className: "btn-default"
+								}
 							}
 						});
 						return;

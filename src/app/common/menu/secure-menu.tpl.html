@@ -1,5 +1,5 @@
 ﻿<!-- MENU NAVBAR -->
-<nav class="navbar-top navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar-top navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="SecureMenuController">
     <div class="navbar-header">
         <!-- MENU BUTTON -->
         <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
@@ -9,11 +9,11 @@
             <span class="icon-bar"></span>
         </button>
         <!-- LOGO -->
-        <a href="#/home/index" class="navbar-brand" ng-bind-html="LS.portalName"></a>
+        <a href="" ng-click="ifNotDirty('/home/index')" class="navbar-brand" ng-bind-html="LS.portalName"></a>
 
         <!-- BACK BUTTON -->
         <span ng-hide="$state.current.data.isHome">
-            <a ng-click="back()" class="navbar-btn btn visible-xs-inline-block">{{ LS.common.back }}</a>
+            <a ng-click="goback()" class="navbar-btn btn visible-xs-inline-block">{{ LS.common.back }}</a>
         </span>
 
         <!-- USERNAME -->
@@ -23,15 +23,15 @@
     <div class="navbar-collapse collapse">
         <!-- APPLICATION MENU -->
         <ul class="nav navbar-nav">
-            <li><a href="#/home">Home</a></li>
-            <li><a href="#/encounters/list">History</a></li>
-            <li><a href="#/accounts">Account</a></li>
+            <li><a href="" ng-click="ifNotDirty('/home')">Home</a></li>
+            <li><a href="" ng-click="ifNotDirty('/encounters/list')">History</a></li>
+            <li><a href="" ng-click="ifNotDirty('/accounts')">Account</a></li>
         </ul>
         <!-- SYSTEM MENU -->
         <ul class="nav navbar-nav navbar-right">
             <!--<li><div class="navbar-heading hidden-xs">user: {{ authorizationContext.username }}</div></li>-->
             <li class="hidden-xs"><a>Session: {{ $root.session.remainingSeconds | timeInterval }}</a></li>
-            <li><a ng-click="$state.go('accounts.login', { byReferenceId: $root.session.loginByReferenceId })">Logout</a></li>
+            <li><a href="" ng-click="logout()">Logout</a></li>
         </ul>
     </div>
 </nav>

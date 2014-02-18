@@ -11,6 +11,7 @@
 		actions: "Actions",
 		back: "Back",
 		cancel: "Cancel",
+		dirtyPageWarning: "Are you sure you want to leave?  Your changes will be lost.",
 		logASubjectIn: "Log a subject in",
 		login: "Login",
 		newText: "New",
