@@ -111,7 +111,7 @@
 							buttons: {
 								yes: {
 									label: LS.common.yes,
-									className: "btn-primary",
+									className: "btn-default",
 									callback: function () {
 										$scope.$root.dirtyState = null;
 										$scope.back('home.index');
@@ -119,7 +119,7 @@
 								},
 								no: {
 									label: LS.common.no,
-									className: "btn-default"
+									className: "btn-primary"
 								}
 							}
 						});

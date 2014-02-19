@@ -14,7 +14,7 @@
 							buttons: {
 								yes: {
 									label: LS.common.yes,
-									className: "btn-primary",
+									className: "btn-default",
 									callback: function () {
 										$scope.$root.dirtyState = null;
 										$location.path(url);
@@ -22,7 +22,7 @@
 								},
 								no: {
 									label: LS.common.no,
-									className: "btn-default"
+									className: "btn-primary"
 								}
 							}
 						});
@@ -37,7 +37,7 @@
 							buttons: {
 								yes: {
 									label: LS.common.yes,
-									className: "btn-primary",
+									className: "btn-default",
 									callback: function () {
 										$scope.$root.dirtyState = null;
 										$scope.$state.go('accounts.login', { byReferenceId: $root.session.loginByReferenceId });
@@ -45,7 +45,7 @@
 								},
 								no: {
 									label: LS.common.no,
-									className: "btn-default"
+									className: "btn-primary"
 								}
 							}
 						});
@@ -60,7 +60,7 @@
 							buttons: {
 								yes: {
 									label: LS.common.yes,
-									className: "btn-primary",
+									className: "btn-default",
 									callback: function () {
 										$scope.$root.dirtyState = null;
 										$scope.back();
@@ -68,7 +68,7 @@
 								},
 								no: {
 									label: LS.common.no,
-									className: "btn-default"
+									className: "btn-primary"
 								}
 							}
 						});
