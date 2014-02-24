@@ -30,7 +30,7 @@
 					}
 					$location.path(url);
 				};
-				$scope.logout = function (url) {
+				$scope.logout = function () {
 					if ($scope.$root.dirtyState && $scope.$root.dirtyState.isDirty()) {
 						bootbox.dialog({
 							message: LS.common.dirtyPageWarning,
@@ -40,7 +40,7 @@
 									className: "btn-default",
 									callback: function () {
 										$scope.$root.dirtyState = null;
-										$scope.$state.go('accounts.login', { byReferenceId: $root.session.loginByReferenceId });
+										$scope.$state.go('accounts.login', { byReferenceId: $scope.$root.session.loginByReferenceId });
 									}
 								},
 								no: {
@@ -51,7 +51,7 @@
 						});
 						return;
 					}
-					$location.path(url);
+					$scope.$state.go('accounts.login', { byReferenceId: $scope.$root.session.loginByReferenceId });
 				};
 				$scope.goback = function (url) {
 					if ($scope.$root.dirtyState && $scope.$root.dirtyState.isDirty()) {
