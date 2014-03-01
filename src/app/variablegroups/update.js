@@ -125,6 +125,7 @@
 						});
 						return;
 					}
+					$scope.$root.dirtyState = null;
 					$scope.back('home.index');
 				};
 				$scope.save = function () {

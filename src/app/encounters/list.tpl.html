@@ -20,5 +20,5 @@
             </div>
         </a>
     </li>
-    <li ng-show="(encounters | filter:byCompletness).length == 0">No items to display.</li>
+    <li ng-show="(encounters | filter:byCompletness).length == 0 && loaded">No items to display.</li>
 </ul>

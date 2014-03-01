@@ -590,31 +590,32 @@
     top: 50px;
     width: 200px;
     z-index: 1000;
-}
-#variablePanelMenu a {
-    cursor: pointer;
-    color: white;
-}
-#variablePanelMenu > a {
-    margin: 3px;
-}
-#variablePanelMenu > a:hover {
-    text-decoration: none;
-}
-#variablePanelMenu .options {
-    background: #FAC7B8;
-    color: #F0592B;
-    text-align: center;
-}
-#variablePanelMenu .options a {
-    color: #F0592B;
-}
-#variablePanelMenu .heading {
-    display: inline-block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%;
+
+    a {
+        cursor: pointer;
+        color: white;
+    }
+    & > a {
+        margin: 3px;
+    }
+    & > a:hover {
+        text-decoration: none;
+    }
+    .options {
+        background: #FAC7B8;
+        color: #F0592B;
+        text-align: center;
+        a {
+            color: #F0592B;
+        }
+    }
+    .heading {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
 }
 .VariablePanel.highlight,
 .VariablePanel .highlight {

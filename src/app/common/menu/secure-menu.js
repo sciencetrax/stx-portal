@@ -5,8 +5,8 @@
 			'stx.core',
 			'ui.router'
 		])
-		.controller("SecureMenuController", ['$scope', '$location',
-			function ($scope, $location) {
+		.controller("SecureMenuController", ['$scope', '$location', '$window',
+			function ($scope, $location, $window) {
 				$scope.ifNotDirty = function (url) {
 					if ($scope.$root.dirtyState && $scope.$root.dirtyState.isDirty()) {
 						bootbox.dialog({
@@ -28,6 +28,7 @@
 						});
 						return;
 					}
+					$scope.$root.dirtyState = null;
 					$location.path(url);
 				};
 				$scope.logout = function () {
@@ -51,7 +52,8 @@
 						});
 						return;
 					}
-					$scope.$state.go('accounts.login', { byReferenceId: $scope.$root.session.loginByReferenceId });
+					$scope.$root.dirtyState = null;
+					$window.location.href = $window.location.pathname;// + logoutUrl;
 				};
 				$scope.goback = function (url) {
 					if ($scope.$root.dirtyState && $scope.$root.dirtyState.isDirty()) {
@@ -74,6 +76,7 @@
 						});
 						return;
 					}
+					$scope.$root.dirtyState = null;
 					$location.path(url);
 				};
 			}])

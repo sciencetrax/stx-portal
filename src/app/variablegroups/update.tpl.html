@@ -1,7 +1,10 @@
 <div ng-show="ready">
     <div class="DataEntryPanelHolder"></div>
     <div id="variablePanelMenu" ng-class="{ expanded: expanded }" ng-show="activeVariable">
-        <a ng-click="showOptions()" class="heading">{{ LSPage.variablePanelOptionsHeading }} "{{ !activeVariable.variableData.prompt ? activeVariable.variableData.name : activeVariable.variableData.prompt }}"</a>
+        <a ng-click="showOptions()" class="heading">
+            {{ LSPage.variablePanelOptionsHeading }}
+            "<span ng-bind-html='!activeVariable.variableData.prompt ? activeVariable.variableData.name : activeVariable.variableData.prompt'></span>"
+        </a>
         <div ng-show="expanded" class="options">
             <a ng-click="clearVariable()">{{ LSPage.clearAnswer }}</a>
         </div>

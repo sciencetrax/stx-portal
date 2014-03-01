@@ -244,6 +244,9 @@
                                     <li><a href="https://www.google.com/intl/en/chrome/browser/">Chrome (Latest Version)</a></li>
                                     <li><a href="http://www.mozilla.org/en-US/firefox/all/">Firefox (Latest Version)</a></li>
                                 </ul>
+                                <h1 class="text-center">Change Browser Mode</h1>
+                                <p>You may be using IE 10 and just using the wrong browser mode.  See the image below to see how to change your browser mode to IE 10</p>
+                                <img src="https://az416809.vo.msecnd.net/studytrax/images/IE10.PNG"/>
                             </body>
                         </html>
                     ]]>

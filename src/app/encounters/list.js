@@ -22,6 +22,8 @@
 					customerId: authorizationContext.customerId,
 					projectId: authorizationContext.projectId,
 					subjectId: authorizationContext.subjectId
+				}, function() {
+					$scope.loaded = true;
 				});
 			}])
 	;
