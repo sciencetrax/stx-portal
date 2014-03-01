@@ -127,6 +127,7 @@
         }
 
         .VariablePanel {
+            clear: both;
 //            min-height: 60px;
             padding-left: 0;
             padding-right: 0;
@@ -332,11 +333,6 @@
                 font-weight: normal;
             }
         }
-        //        .Vertical {
-        //            input[type='checkbox'] {
-        //                height: inherit !important;
-        //            }
-        //        }
         @media (max-width: @screen-xs-max) {
             .Indent1 { margin-left: 20px; }
             .Indent2 { margin-left: 40px; }
@@ -450,49 +446,6 @@
         .MatrixTable + .MatrixTable {
             margin-top: (@grid-gutter-width / 2);
         }
-
-        /*
-        .bs-prompt {
-            .make-sm-column(6);
-            .PromptPanel {
-                padding-top: 12px;
-                padding-bottom: 12px;
-                text-align: right !important;
-//                width: 100% !important;
-            }
-            .VariablePanelFirstContainer {
-                width: 100% !important;
-                .PromptPanel {
-                    padding-right: 0;
-                }
-            }
-            .VariablePanelSecondContainer {
-                display: none;
-            }
-        }
-        .bs-answer-col-1 { .make-sm-column(1); }
-        .bs-answer-col-2 { .make-sm-column(2); }
-        .bs-answer-col-3 { .make-sm-column(3); }
-        .bs-answer-col-4 { .make-sm-column(4); }
-        .bs-answer-col-5 { .make-sm-column(5); }
-        .bs-answer-col-6 { .make-sm-column(6); }
-        .bs-answer-col-1,
-        .bs-answer-col-2,
-        .bs-answer-col-3,
-        .bs-answer-col-4,
-        .bs-answer-col-5,
-        .bs-answer-col-6 {
-            .PromptPanel {
-                display: none;
-            }
-            .VariablePanelFirstContainer {
-                display: none;
-            }
-            .VariablePanelSecondContainer {
-                width: 100% !important;
-            }
-        }
-        */
 
         .bs-width-col-1 { .make-sm-column(1); }
         .bs-width-col-2 { .make-sm-column(2); }
