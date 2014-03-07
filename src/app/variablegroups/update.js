@@ -133,6 +133,7 @@
 					var action = form.attr('action');
 					var queryString = action.substring(action.indexOf("?") + 1);
 					form.attr('action', DataEntryForm.getUrl() + "?" + queryString);
+					$(':disabled', form).prop('disabled', false);
 					form.ajaxSubmit({
 						headers: { "X-Authorization": session.authorization },
 						success: function (data) {
