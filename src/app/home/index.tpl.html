@@ -40,7 +40,7 @@
 
         <!-- INCOMPLETE ENCOUNTERS -->
         <li ng-repeat="item in incompleteEncounters | readOnlyEncounter:false | orderBy:'dueDate':true">
-            <a ng-click="$state.go('encounters.view', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
+            <a ng-click="$state.go(item.encounterId ? 'encounters.view' : 'encounters.viewNullEncounter', {intervalId: item.intervalId, encounterId: item.encounterId})" class="entity encounter">
                 <!-- NAME -->
                 <div class="name">{{ item.name }}</div>
 
@@ -84,5 +84,3 @@
         </li>
     </ul>
 </section>
-<!-- VARIABLE PANEL SCRIPT -->
-<div id="variable-panel-code"></div>

@@ -63,16 +63,6 @@
 				};
 				Subject.get(securityProfile, function (subject) {
 					var creatableIntervals = portalResolver.data.creatableNonFixedIntervals;
-					/*
-						InScreening = 1,
-						FailedScreening = 2,
-						PassedScreening = 3,
-						Enrolled = 4,
-						NotInProject = 90,
-						UnknownInformational = 98,
-						Unknown = 99
-					 */
-
 					var includeScreeningIntervals = subject.enrollmentStatus < 4;
 					var allowedIntervals = [];
 					for(var index = 0; index < creatableIntervals.length; index++) {

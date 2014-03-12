@@ -40,6 +40,15 @@
 						pageTitle: 'Encounter'
 					}
                 })
+                .state('encounters.viewNullEncounter', {
+                    url: '/view/{intervalId}',
+                    controller: 'EncountersViewController',
+                    templateUrl: 'encounters/view.tpl.html',
+                    data: {
+						navigation: 'updateTop',
+						pageTitle: 'Encounter'
+					}
+                })
             ;
         }])
     ;

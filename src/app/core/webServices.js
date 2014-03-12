@@ -123,8 +123,9 @@ angular.module('stx.core.webService', [
 					script.append("<script>" + scriptToLoad.interval + "</scr" + "ipt>");
 					script.append("<script>" + scriptToLoad.encounter + "</scr" + "ipt>");
 					script.append("<script>" + scriptToLoad.initialize + "</scr" + "ipt>");
-					script.append("<script>" + "$(document).trigger('pageLoad');" + "</scr" + "ipt>");
 					scriptDiv.html(script);
+					$(document).trigger('pageLoad');
+
 					$('.DataEntryPanel li.hide,.data-entry-panel li.hide').removeClass('hide');
 
 					if (successCallback !== undefined) {
