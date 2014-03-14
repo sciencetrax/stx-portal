@@ -16,8 +16,8 @@
                 <button class="primary-btn" ng-click="back()">{{LS.common.back}}</button>
             </div>
             <div ng-hide="readOnly">
-                <button class="save-btn" ng-click="save()">{{LS.common.save}}</button>
-                <a ng-click="cancel()">{{LS.common.cancel}}</a>
+                <button id="saveButton" class="save-btn" ng-click="save()" data-loading-text="Saving">{{LS.common.save}}</button>
+                <a id="cancelButton" ng-click="cancel()">{{LS.common.cancel}}</a>
             </div>
         </div>
     </div>

@@ -7,6 +7,11 @@
 		])
 		.controller("VariableGroupsUpdateController", ['$scope', '$http', '$window', '$location', 'session', 'authorizationContextResolver', 'DataEntryForm',
 			function ($scope, $http, $window, $location, session, authorizationContextResolver, DataEntryForm) {
+				function showLoading(show) {
+					$scope.ready = show;
+					$scope.$root.pageReady = show;
+				}
+				showLoading(false);
 				if ($.oldDirtyState) {
 					$.dirtyState = $.oldDirtyState;
 				}
@@ -93,7 +98,7 @@
 						if ($(".DataEntryPanel.ReadOnly").length == 1) {
 							$scope.readOnly = true;
 						}
-						$scope.ready = true;
+						showLoading(true);
 					}
 				);
 //				DataEntryForm.loadScript(
@@ -134,29 +139,43 @@
 					var queryString = action.substring(action.indexOf("?") + 1);
 					form.attr('action', DataEntryForm.getUrl() + "?" + queryString);
 					$(':disabled', form).prop('disabled', false);
+					$('#saveButton').button('loading');
+					showLoading(false);
+
 					form.ajaxSubmit({
 						headers: { "X-Authorization": session.authorization },
 						success: function (data) {
 							stx.VariablePanel.Utils.notCollectedVariablesId = null;
 							stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
 
-							dataEntryPanel.html(data);
-							if ($('.validation-summary-errors li', dataEntryPanel).length === 0) {
+							function hasError(text) {
+								var indexOfSummary = text.indexOf('class="validation-summary-errors"');
+								if (indexOfSummary == -1) {
+									return false;
+								}
+								var indexOfListItem = text.indexOf('<li>', indexOfSummary);
+								var indexOfListEnd = text.indexOf('</ul>', indexOfSummary);
+								return indexOfListItem < indexOfListEnd;
+							}
+							if (!hasError(data)) {
 								$window.history.back();
 								$scope.$apply();
-							} else {
-								$('.IndentLevel1').parent().parent().addClass("Indent1").addClass("Indent");
-								$('.IndentLevel2').parent().parent().addClass("Indent2").addClass("Indent");
-								$('.IndentLevel3').parent().parent().addClass("Indent3").addClass("Indent");
-								$('.IndentLevel4').parent().parent().addClass("Indent4").addClass("Indent");
-
-								$(document).trigger('pageLoad');
-								if ($(".DataEntryPanel.ReadOnly").length == 1) {
-									$scope.readOnly = true;
-								}
-								$scope.ready = true;
-								$('.validation-summary-errors')[0].scrollIntoView(false);
+								return;
 							}
+
+							dataEntryPanel.html(data);
+							$('.IndentLevel1').parent().parent().addClass("Indent1").addClass("Indent");
+							$('.IndentLevel2').parent().parent().addClass("Indent2").addClass("Indent");
+							$('.IndentLevel3').parent().parent().addClass("Indent3").addClass("Indent");
+							$('.IndentLevel4').parent().parent().addClass("Indent4").addClass("Indent");
+
+							$(document).trigger('pageLoad');
+							if ($(".DataEntryPanel.ReadOnly").length == 1) {
+								$scope.readOnly = true;
+							}
+							$('.validation-summary-errors')[0].scrollIntoView(false);
+							$('#saveButton').button('reset');
+							showLoading(true);
 						}
 					});
 				};
