@@ -153,9 +153,10 @@
 								if (indexOfSummary == -1) {
 									return false;
 								}
+								var indexOfClosingDiv = text.indexOf('</div>', indexOfSummary);
 								var indexOfListItem = text.indexOf('<li>', indexOfSummary);
 								var indexOfListEnd = text.indexOf('</ul>', indexOfSummary);
-								return indexOfListItem < indexOfListEnd;
+								return indexOfListEnd < indexOfClosingDiv && indexOfListItem < indexOfListEnd;
 							}
 							if (!hasError(data)) {
 								$window.history.back();
