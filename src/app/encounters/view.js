@@ -31,7 +31,7 @@
 						params.projectId,
 						params.subjectId,
 						$stateParams.intervalId,
-						$stateParams.encounterId,
+						$scope.encounter.encounterId,
 						false, function () {
 							$scope.$root.pageReady = true;
 						});

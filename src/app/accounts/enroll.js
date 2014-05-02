@@ -35,7 +35,7 @@
 									if (isEnrolled && portal.registration) {
 										session.authorize(authorization, portal.sessionTimeoutSeconds * 1000);
 										$state.go('accounts.register');
-									} else if (!isEnrolled && portal.registration) {
+									} else if (!isEnrolled) {
 										$state.go('accounts.failedEnrollment');
 									} else {
 										$state.go('finished');

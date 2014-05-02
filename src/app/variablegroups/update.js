@@ -159,6 +159,7 @@
 								return indexOfListEnd < indexOfClosingDiv && indexOfListItem < indexOfListEnd;
 							}
 							if (!hasError(data)) {
+								$scope.$root.dirtyState = null;
 								$window.history.back();
 								$scope.$apply();
 								return;
