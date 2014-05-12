@@ -89,7 +89,7 @@
 					null,
 					null,
 					true, function () {
-						$scope.$root.pageReady = true;
+						$scope.$root.pageReady = summariesReady && encountersReady;
 					});
 			}])
 	;
