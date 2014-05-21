@@ -61,6 +61,8 @@
     <script src='<%= applicationPath %>Areas/app/Scripts/stx/core.js' type='text/javascript'></script>
     <script src='<%= applicationPath %>Areas/app/Scripts/stx/stx.constants.js' type='text/javascript'></script>
     <script src='<%= applicationPath %>Areas/app/Scripts/stx/stx.DirtyState.js' type='text/javascript'></script>
+
+    <!-- HEAD EXT--><%= headExt %>
 </head>
 <body class="studytrax">
     <!-- SESSION EXPIRATION DIALOG -->
@@ -124,6 +126,7 @@
         LS = String.LS;
         <% if (typeof debug != 'undefined' && debug) { %>
             // PLACE CUSTOM JS NOT TO BE DISTRIBUTED AS PART OF THE PORTAL HERE
+            LS.common.save = "Complete Survey";
         <% } else { %>
             #INCLUDE(custom_js)
         <% } %>

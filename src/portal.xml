@@ -40,7 +40,7 @@
                                 </script>
                             </head>
                             <body>
-                                <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+                                <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav menu-public" role="banner">
                                     <div class="container">
                                         <div class="navbar-header">
                                             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -53,10 +53,10 @@
                                             </a>
                                         </div>
                                         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-                                            <ul class="nav navbar-nav">
+                                            <ul class="nav navbar-nav menu-main">
                                                 #INCLUDE(menu_main)
                                             </ul>
-                                            <ul class="nav navbar-nav navbar-right">
+                                            <ul class="nav navbar-nav navbar-right menu-login">
                                                 #INCLUDE(menu_login)
                                             </ul>
                                         </nav>
@@ -96,16 +96,16 @@
 
                 <!-- MENU MAIN -->
                 <page code="menu_main" pageType="Fragment" importAction="add">
-                    <li><a href="#URL(index)">Home</a></li>
-                    <li><a href="#URL(faq)">FAQ</a></li>
-                    <li><a href="#URL(contact)">Contact Us</a></li>
+                    <li><a id="homeBtn" href="#URL(index)">Home</a></li>
+                    <li><a id="faqBtn" href="#URL(faq)">FAQ</a></li>
+                    <li><a id="contactUsBtn" href="#URL(contact)">Contact Us</a></li>
                 </page>
 
                 <!-- MENU LOGIN -->
                 <page code="menu_login" pageType="Fragment" importAction="add">
-                    <li><a href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
-                    <li><a href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
-                    <li><a href="#URL(portal_index)">Login</a></li>
+                    <li><a id="enrollBtn" href="#URL(portal_index)#/accounts/enroll">Enroll</a></li>
+                    <li><a id="signUpBtn" href="#URL(portal_index)#/accounts/register">Sign Up</a></li>
+                    <li><a id="loginBtn" href="#URL(portal_index)">Login</a></li>
                 </page>
 
                 <!-- CONTACT -->
@@ -193,6 +193,12 @@
                          */
 					]]>
                 </page>
+
+                <!-- PORTAL HEAD EXT-->
+                <page code="portal_head_ext" pageType="fragment">
+                    <!-- PLACEHOLDER -->
+                </page>
+
 
                 <!-- ************************************************************************* -->
                 <!-- MESSAGES PAGES -->

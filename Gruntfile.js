@@ -651,6 +651,7 @@ module.exports = function (grunt) {
 					data: {
 						config: grunt.config('pkg'),
 						debug: true,
+                        headExt: '',
 						scripts: jsFiles,
 						styles: cssFiles,
 						applicationPath: grunt.config('pkg.applicationPath'),
@@ -690,6 +691,7 @@ module.exports = function (grunt) {
 				return grunt.template.process(contents, {
 					data: {
 						config: grunt.config('pkg'),
+						headExt: '#INCLUDE(portal_head_ext)',
 						scripts: ['#URL(portal_js)'],
 						styles: ['#URL(portal_css)'],
 						applicationPath: '#ApplicationPath()',
@@ -734,6 +736,7 @@ module.exports = function (grunt) {
 				return grunt.template.process(contents, {
 					data: {
 						config: grunt.config('pkg'),
+						headExt: '',
 						scripts: jsFiles,
 						styles: cssFiles,
 						applicationPath: grunt.config('pkg.applicationPath'),

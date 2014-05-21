@@ -1,5 +1,5 @@
 ﻿<!-- MENU NAVBAR -->
-<nav class="navbar-top navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="SecureMenuController">
+<nav class="navbar-top navbar navbar-inverse navbar-fixed-top menu-secure" role="navigation" ng-controller="SecureMenuController">
     <div class="navbar-header">
         <!-- MENU BUTTON -->
         <button type="button" class="navbar-toggle navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,16 +22,16 @@
 
     <div class="navbar-collapse collapse">
         <!-- APPLICATION MENU -->
-        <ul class="nav navbar-nav">
-            <li><a href="" ng-click="ifNotDirty('/home')">Home</a></li>
-            <li><a href="" ng-click="ifNotDirty('/encounters/list')">History</a></li>
-            <li><a href="" ng-click="ifNotDirty('/accounts')">Account</a></li>
+        <ul class="nav navbar-nav menu-application">
+            <li><a id="homeBtn" href="" ng-click="ifNotDirty('/home')">Home</a></li>
+            <li><a id="historyBtn" href="" ng-click="ifNotDirty('/encounters/list')">History</a></li>
+            <li><a id="accountBtn" href="" ng-click="ifNotDirty('/accounts')">Account</a></li>
         </ul>
         <!-- SYSTEM MENU -->
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right menu-system">
             <!--<li><div class="navbar-heading hidden-xs">user: {{ authorizationContext.username }}</div></li>-->
-            <li class="hidden-xs"><a>Session: {{ $root.session.remainingSeconds | timeInterval }}</a></li>
-            <li><a href="" ng-click="logout('/accounts/login')">Logout</a></li>
+            <li class="hidden-xs"><a id="sessionBtn">Session: {{ $root.session.remainingSeconds | timeInterval }}</a></li>
+            <li><a id="logoutBtn" href="" ng-click="logout('/accounts/login')">Logout</a></li>
         </ul>
     </div>
 </nav>
