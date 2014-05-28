@@ -91,6 +91,7 @@
 							return response || $q.when(response);
 						},
 						responseError: function (rejection) {
+                            $rootScope.pageReady = true;
 							$(window).scrollTop(0);
 							var error = rejection.data;
 							if (error instanceof Array) {

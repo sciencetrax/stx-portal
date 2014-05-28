@@ -70,6 +70,16 @@
 						$stateParams.encounterId,
 						$stateParams.variableGroupId
 					)
+                    .error(function(data) {
+                        showLoading(false);
+                        /*
+                        bootbox.alert(data.responseText, function() {
+                            $scope.$root.dirtyState = null;
+                            $window.history.back();
+                            $scope.$apply();
+                        });
+                        */
+                    })
 					.success(function (data) {
 						stx.VariablePanel.Utils.notCollectedVariablesId = null;
 						stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
@@ -144,6 +154,14 @@
 
 					form.ajaxSubmit({
 						headers: { "X-Authorization": session.authorization },
+                        error: function(data) {
+                            showLoading(false);
+                            bootbox.alert(data.responseText, function() {
+                                $scope.$root.dirtyState = null;
+                                $window.history.back();
+                                $scope.$apply();
+                            });
+                        },
 						success: function (data) {
 							stx.VariablePanel.Utils.notCollectedVariablesId = null;
 							stx.VariablePanel.Utils.notCollectedVariablesGroupId = null;
