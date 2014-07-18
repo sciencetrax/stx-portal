@@ -92,7 +92,7 @@
 					}
 				})
 				.state('accounts.login', {
-					url: '/login?byReferenceId',
+					url: '/login?byReferenceId&username&password',
 					views: {
 						'menu@': { templateUrl: 'common/menu/login-menu.tpl.html' },
 						'': {

@@ -14,6 +14,7 @@
 
 				var emailRequest = new EmailRequest();
                 $scope.authorization = new Authorization();
+
 				$scope.$root.resendVerificationEmail = function () {
 					emailRequest.portalId = portal.id;
 					emailRequest.emailType = "EmailAddressVerification";
@@ -29,6 +30,21 @@
 						$scope.successMessage = $scope.LS.common.verificationEmailSent;
 					});
 				};
+                function performLogin(username, password) {
+                    emailRequest.username = username;
+                    emailRequest.password = password;
+
+                    $scope.authorization.portalCode = PORTAL_CODE;
+                    // we make a copy to save so that the form doesn't show invalid
+                    // prior to navigating away.
+                    var authorization = angular.copy($scope.authorization);
+                    Authorization.save(authorization, function (data) {
+                        stateExt.authorizeAndNavigate(data.authorization, portal.sessionTimeoutSeconds * 1000, $scope.byReferenceId);
+                    }, function (data) {
+                        $scope.loggingIn = false;
+                        $('#loginBtn').button('reset');
+                    });
+                }
 				$scope.login = function () {
 					// This is a hack to fix the bug with angular where autocompleted fields (LastPass) do
 					// not cause angular to recognize model changes.
@@ -53,6 +69,11 @@
 						$('#loginBtn').button('reset');
                    });
                 };
+                if ($stateParams.username) {
+                    $scope.authorization.username = $stateParams.username;
+                    $scope.authorization.password = $stateParams.password;
+                    performLogin($stateParams.username, $stateParams.password);
+                }
             }])
     ;
 }());
