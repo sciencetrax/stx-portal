@@ -74,6 +74,12 @@
 		"3013" : "The new password must be different from the old password.",
 		// PasswordRequired
 		"3014" : "The password is required.",
+		// PasswordRequiresMixedCase
+		"3015" : "Password must have at least one lower case letter and one upper case letter.",
+		// PasswordRequiresNumber
+		"3016" : "Password must have at least one number.",
+		// PasswordRequiresSymbol
+		"3017" : "Password must have at least one of the following symbols: @#_*%",
 		// RemainingSecondsTooLong
 		"7010" : "The value you entered for remaining seconds exceeds the session length.",
 		// RequiredFieldMissing
