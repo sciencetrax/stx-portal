@@ -69,7 +69,7 @@
 		// PasswordExpired
 		"3011" : "Your password has expired.",
 		// PasswordMinLength
-		"3012" : "Your password must be at least {minimumPasswordLength} characters long.",
+		"3012" : "Password must be at least {minimumPasswordLength} characters long.",
 		// PasswordNotDifferent
 		"3013" : "The new password must be different from the old password.",
 		// PasswordRequired

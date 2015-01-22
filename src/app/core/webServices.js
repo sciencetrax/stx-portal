@@ -45,11 +45,11 @@ angular.module('stx.core.webService', [
 		}, serviceActions);
 	}])
 	.factory('Authorization', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
-		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorization?portalCode=:portalCode&username=:username&password=:password&referenceId=:referenceId'), {
-			portalCode: '@portalCode',
-			username: '@username',
-			password: '@password',
-			referenceId: '@referenceId'
+		return $resource(UrlUtils.combine(WebServiceConfig.getBaseUrl(), 'authorization'), {
+//			portalCode: '@portalCode',
+//			username: '@username',
+//			password: '@password',
+//			referenceId: '@referenceId'
 		}, serviceActions);
 	}])
 	.factory('AuthorizationUpdate', ['$resource', 'WebServiceConfig', function ($resource, WebServiceConfig) {
