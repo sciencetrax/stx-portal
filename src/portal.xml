@@ -6,9 +6,7 @@
 -->
 <studyTrax type="Portal" created="<%= created %>" version="330">
     <portals>
-        <portal name="<%= pkg.name %>"
-                description="version: <%= pkg.version %>. <%= pkg.description %>"
-                code="<%= pkg.name %>"
+        <portal description="version: <%= pkg.version %>. <%= pkg.description %>"
                 userType="<%= pkg.portalType %>"
                 allowRegistration="<%= pkg.registration %>"
                 allowAnonymousDataEntry="<%= pkg.anonymousDataEntry %>"

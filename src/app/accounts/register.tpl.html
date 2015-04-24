@@ -19,7 +19,7 @@
         </div>
 
         <!-- FIRST NAME -->
-        <div ng-class="{hide: !portal.project.showSubjectName}">
+        <div ng-if="portal.project.showSubjectName">
             <label for="firstName">{{ LSPage.firstName }}</label>
 
             <div>
@@ -29,14 +29,14 @@
         </div>
 
         <!-- MIDDLE INITIAL -->
-        <div ng-class="{hide: !portal.project.showSubjectName}">
+        <div ng-if="portal.project.showSubjectName">
             <label for="middleInitial">{{ LSPage.middleInitial }}</label>
 
             <div><input id="middleInitial" ng-model="account.middleInitial" st-meta-validate="metadata.middleInitial"/></div>
         </div>
 
         <!-- LAST NAME -->
-        <div ng-class="{hide: !portal.project.showSubjectName}">
+        <div ng-if="portal.project.showSubjectName">
             <label for="lastName">{{ LSPage.lastName }}</label>
 
             <div>

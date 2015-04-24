@@ -99,7 +99,7 @@
 		// EnrollmentFull
 		"5010": "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		// PortalAccountCreationNotAllowed
-		"6010": "Registration is not allowed in this portal.",
+		"6010": "Registration is not allowed in this portal.  This is either do to the fact that registration has not been enabled or because both registration and anonymous data entry are enabled (if this error is on the sign-up page).",
 		// ServerConfigurationError
 		"99020": "There appears to be a problem with the server.  Please contact the system administrator if this problem persists.",
 		// Unknown
