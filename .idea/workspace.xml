@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/core/locale-en.js" afterPath="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/portal.xml" afterPath="$PROJECT_DIR$/src/portal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" afterPath="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stx-portal.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/bin/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/node_modules/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,79 +25,66 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DaemonCodeAnalyzer">
-    <disable_hints />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="stx-portal" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="webServices-temp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/core/webServices-temp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1649">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="portal.xml" pinned="false" current="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="portal.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/portal.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="7412">
+            <state relative-caret-position="153">
               <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enroll.tpl.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="enroll.tpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+            <state relative-caret-position="170">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.tpl.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="register.tpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.923077" vertical-offset="950" max-vertical-offset="1853">
+            <state relative-caret-position="1598">
               <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locale-en.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="locale-en.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8220524" vertical-offset="1389" max-vertical-offset="4488">
-              <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="submit.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="submit.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/core/directives/submit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+            <state relative-caret-position="476">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1207">
+            <state relative-caret-position="527">
               <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
               <folding />
             </state>
@@ -119,36 +106,10 @@
       <MyDateState />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/app/encounters/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/view.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/encounters/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/directives/metaValidate.js" />
-        <option value="$PROJECT_DIR$/src/app/encounters/view.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/enroll.js" />
-        <option value="$PROJECT_DIR$/src/app/home/index.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/home/index.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/src/less/variablePanelOverrides.less" />
-        <option value="$PROJECT_DIR$/src/app/variablegroups/update.js" />
-        <option value="$PROJECT_DIR$/src/app/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/accounts/_module.js" />
-        <option value="$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/accounts/login.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices.js" />
-        <option value="$PROJECT_DIR$/src/app/core/webServices-temp.js" />
-        <option value="$PROJECT_DIR$/src/portal.xml" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/app/accounts/register.tpl.html" />
-        <option value="$PROJECT_DIR$/src/app/core/locale-en.js" />
-      </list>
-    </option>
+  <component name="JsBuildToolGruntFileManager" detection-done="true">
+    <gruntfile path="$PROJECT_DIR$/Gruntfile.js" />
   </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGruntFileManager">
     <gruntfiles>
       <GruntfileState>
@@ -156,6 +117,9 @@
       </GruntfileState>
     </gruntfiles>
     <initial>false</initial>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -187,6 +151,8 @@
       <autoscrollToSource ProjectPane="false" />
       <autoscrollFromSource ProjectPane="true" />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
@@ -257,12 +223,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stx-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="accounts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -274,7 +263,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stx-portal-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="307" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="962" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="969" />
@@ -296,6 +285,10 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
     <property name="LayoutCode.rearrangeEntriesLESS" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -315,44 +308,50 @@
   </component>
   <component name="RunManager" selected="JavaScript Debug.Firefox">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
     <configuration default="false" name="Firefox" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" engineId="firefox" uri="file://$PROJECT_DIR$/build/index.html">
@@ -364,7 +363,9 @@
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Firefox" />
     </list>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration" myUseAcceleration="nothing">
     <configuration />
   </component>
@@ -372,695 +373,385 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="13797414-dc01-4665-bb16-2135688abd4d" name="Default" comment="" />
       <created>1379827167587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1379827167587</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Fixing build issues">
-      <created>1379829134635</created>
-      <updated>1379829134635</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixing build issues">
-      <created>1379829356147</created>
-      <updated>1379829356147</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixing build issues">
-      <created>1379829511030</created>
-      <updated>1379829511030</updated>
-    </task>
-    <task id="LOCAL-00004" summary="importing more code from old project">
-      <created>1379830506854</created>
-      <updated>1379830506854</updated>
-    </task>
-    <task id="LOCAL-00005" summary="importing more code from old project">
-      <created>1379830652110</created>
-      <updated>1379830652110</updated>
-    </task>
-    <task id="LOCAL-00006" summary="importing more code from old project">
-      <created>1379883065312</created>
-      <updated>1379883065312</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Adding unit tests">
-      <created>1379958336259</created>
-      <updated>1379958336259</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Adding unit tests to home.spec.js">
-      <created>1379959257233</created>
-      <updated>1379959257233</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Adding more unit tests">
-      <created>1379982852820</created>
-      <updated>1379982852820</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Adding more unit tests">
-      <created>1379984335064</created>
-      <updated>1379984335064</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding more unit tests">
-      <created>1379993385138</created>
-      <updated>1379993385138</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding more unit tests">
-      <created>1380002100917</created>
-      <updated>1380002100917</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Importing more code from old source">
-      <created>1380004510263</created>
-      <updated>1380004510263</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Importing more code from old source">
-      <created>1380006527788</created>
-      <updated>1380006527788</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Added code to generate the portal XML file.">
-      <created>1380012895282</created>
-      <updated>1380012895282</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Added code to generate the portal XML file.">
-      <created>1380051042400</created>
-      <updated>1380051042400</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Added code to generate the portal XML file.">
-      <created>1380074781450</created>
-      <updated>1380074781450</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added code to generate the portal XML file.">
-      <created>1380080969740</created>
-      <updated>1380080969740</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added code to generate the portal XML file.">
-      <created>1380081598051</created>
-      <updated>1380081598051</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Refactoring the code to make it more modular">
-      <created>1380084818183</created>
-      <updated>1380084818183</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Refactoring the code to make it more modular">
-      <created>1380085595843</created>
-      <updated>1380085595843</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Fixed bug where dependency injection was being inferred that was breaking the minification.">
-      <created>1380086931304</created>
-      <updated>1380086931304</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Fixed bug where dependency injection was being inferred that was breaking the minification.">
-      <created>1380125681489</created>
-      <updated>1380125681489</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Adding support for updating encounters">
-      <created>1380259118416</created>
-      <updated>1380259118417</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Adding support for updating encounters">
-      <created>1380302616592</created>
-      <updated>1380302616593</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Adding support for updating encounters">
-      <created>1380411132610</created>
-      <updated>1380411132610</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Adding support for updating encounters">
-      <created>1380412306163</created>
-      <updated>1380412306163</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Adding support for updating encounters">
-      <created>1380431642416</created>
-      <updated>1380431642416</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Adding support for updating encounters">
-      <created>1380432132082</created>
-      <updated>1380432132082</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Adding support for updating encounters">
-      <created>1380434116714</created>
-      <updated>1380434116714</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Adding support for updating encounters">
-      <created>1380437250564</created>
-      <updated>1380437250564</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Adding support for updating encounters">
-      <created>1380438609801</created>
-      <updated>1380438609801</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Adding support for updating encounters">
-      <created>1380482140735</created>
-      <updated>1380482140735</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Working on the login page">
-      <created>1380525140601</created>
-      <updated>1380525140601</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Working on the login page">
-      <created>1380527716858</created>
-      <updated>1380527716858</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Working on the login page">
-      <created>1380537575407</created>
-      <updated>1380537575407</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Working on the login page">
-      <created>1380585107139</created>
-      <updated>1380585107139</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Working on the login page">
-      <created>1380613474243</created>
-      <updated>1380613474243</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Working on the login page">
-      <created>1380651129100</created>
-      <updated>1380651129100</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Adding e2e tests">
-      <created>1380664675524</created>
-      <updated>1380664675524</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Adding e2e tests">
-      <created>1380675963637</created>
-      <updated>1380675963637</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Adding e2e tests">
-      <created>1380677514283</created>
-      <updated>1380677514283</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Adding e2e tests">
-      <created>1380677607580</created>
-      <updated>1380677607580</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Adding e2e tests">
-      <created>1380679339608</created>
-      <updated>1380679339608</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Working on validation directives">
-      <created>1380703081204</created>
-      <updated>1380703081204</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Working on validation directives">
-      <created>1380713220404</created>
-      <updated>1380713220404</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Working on validation directives">
-      <created>1380795591586</created>
-      <updated>1380795591586</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Working on validation directives">
-      <created>1380795958330</created>
-      <updated>1380795958330</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Working on responsive design">
-      <created>1380837490984</created>
-      <updated>1380837490984</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Working on login pages">
-      <created>1380838393804</created>
-      <updated>1380838393804</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Working on login pages">
-      <created>1380839010669</created>
-      <updated>1380839010669</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Redesigning pages">
-      <created>1380860086239</created>
-      <updated>1380860086239</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Redesigning pages">
-      <created>1380879908011</created>
-      <updated>1380879908011</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Redesigning pages">
-      <created>1381048879613</created>
-      <updated>1381048879613</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Updating README.md">
-      <created>1381049626846</created>
-      <updated>1381049626846</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Updating README.md">
-      <created>1381049677220</created>
-      <updated>1381049677220</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Implementing the reset password page">
-      <created>1381166705531</created>
-      <updated>1381166705531</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Implementing the reset password page">
-      <created>1381172233933</created>
-      <updated>1381172233933</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Implementing default error handling and email address verification">
-      <created>1381212199659</created>
-      <updated>1381212199659</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Tweaking css for generating the portal.xml.">
-      <created>1381215951307</created>
-      <updated>1381215951307</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Tweaking css for generating the portal.xml.">
-      <created>1381217225454</created>
-      <updated>1381217225454</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Refactored how navigation is handled">
-      <created>1381306958153</created>
-      <updated>1381306958153</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Minor refactoring">
-      <created>1381307588845</created>
-      <updated>1381307588845</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Minor refactoring">
-      <created>1381350552244</created>
-      <updated>1381350552244</updated>
-    </task>
-    <task id="LOCAL-00065" summary="added loading indicator">
-      <created>1381865590795</created>
-      <updated>1381865590795</updated>
-    </task>
-    <task id="LOCAL-00066" summary="working on enrollment page">
-      <created>1381983069304</created>
-      <updated>1381983069304</updated>
-    </task>
-    <task id="LOCAL-00067" summary="working on enrollment page">
-      <created>1382022486740</created>
-      <updated>1382022486740</updated>
-    </task>
-    <task id="LOCAL-00068" summary="working on enrollment page">
-      <created>1382040909203</created>
-      <updated>1382040909203</updated>
-    </task>
-    <task id="LOCAL-00069" summary="General cleanup">
-      <created>1382142827900</created>
-      <updated>1382142827900</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Building out tablet views">
-      <created>1382288905032</created>
-      <updated>1382288905032</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Building out tablet views">
-      <created>1382288938851</created>
-      <updated>1382288938851</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Building out tablet views">
-      <created>1382306113760</created>
-      <updated>1382306113760</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Added session timeout code">
-      <created>1382344810912</created>
-      <updated>1382344810912</updated>
-    </task>
-    <task id="LOCAL-00074" summary="Working on tablet views">
-      <created>1382389027148</created>
-      <updated>1382389027148</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Finished up session timeout functionality">
-      <created>1382429665876</created>
-      <updated>1382429665876</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Finished up session timeout functionality">
-      <created>1382465602134</created>
-      <updated>1382465602134</updated>
-    </task>
-    <task id="LOCAL-00077" summary="Cleaning up UI">
-      <created>1382511021922</created>
-      <updated>1382511021922</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Implemented the back feature">
-      <created>1382612107100</created>
-      <updated>1382612107100</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Cleaning up code">
-      <created>1382614335633</created>
-      <updated>1382614335634</updated>
-    </task>
-    <task id="LOCAL-00080" summary="Finishing up screening process screens">
-      <created>1382698222347</created>
-      <updated>1382698222347</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Finishing up screening process screens">
-      <created>1382775637559</created>
-      <updated>1382775637559</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Finishing up screening process screens">
-      <created>1382980697832</created>
-      <updated>1382980697832</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Implementing new home page">
-      <created>1382983922162</created>
-      <updated>1382983922162</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Implementing new home page">
-      <created>1382988598151</created>
-      <updated>1382988598151</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Implementing new home page">
-      <created>1382998537256</created>
-      <updated>1382998537256</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Implementing new home page">
-      <created>1383002639236</created>
-      <updated>1383002639236</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Implementing default public pages">
-      <created>1383641429677</created>
-      <updated>1383641429677</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Tweaking portal for williams syndrome portal.">
-      <created>1383945034071</created>
-      <updated>1383945034072</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384107925852</created>
-      <updated>1384107925852</updated>
-    </task>
-    <task id="LOCAL-00090" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384191800768</created>
-      <updated>1384191800768</updated>
-    </task>
-    <task id="LOCAL-00091" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384196995724</created>
-      <updated>1384196995724</updated>
-    </task>
-    <task id="LOCAL-00092" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384444653376</created>
-      <updated>1384444653376</updated>
-    </task>
-    <task id="LOCAL-00093" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384462554138</created>
-      <updated>1384462554138</updated>
-    </task>
-    <task id="LOCAL-00094" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384796176366</created>
-      <updated>1384796176366</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384797151260</created>
-      <updated>1384797151260</updated>
-    </task>
-    <task id="LOCAL-00096" summary="Tweaking portal for williams syndrome portal.">
-      <created>1384797159142</created>
-      <updated>1384797159143</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Tweaking portal for williams syndrome portal.">
-      <created>1385076239900</created>
-      <updated>1385076239900</updated>
-    </task>
-    <task id="LOCAL-00098" summary="Fixed bug where non-fixed encounters could not be created">
-      <created>1385484916697</created>
-      <updated>1385484916697</updated>
-    </task>
-    <task id="LOCAL-00099" summary="Trying to fix build">
-      <created>1385485115733</created>
-      <updated>1385485115733</updated>
-    </task>
-    <task id="LOCAL-00100" summary="Trying to fix build">
-      <created>1385486223959</created>
-      <updated>1385486223960</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Trying to fix build">
-      <created>1385487812553</created>
-      <updated>1385487812553</updated>
-    </task>
-    <task id="LOCAL-00102" summary="Trying to fix build">
-      <created>1385488123397</created>
-      <updated>1385488123397</updated>
-    </task>
-    <task id="LOCAL-00103" summary="Trying to fix build">
-      <created>1385491484586</created>
-      <updated>1385491484586</updated>
-    </task>
-    <task id="LOCAL-00104" summary="Working on bs-enhanced formatting">
-      <created>1386172314566</created>
-      <updated>1386172314566</updated>
-    </task>
-    <task id="LOCAL-00105" summary="Working on bs-enhanced formatting">
-      <created>1386255680978</created>
-      <updated>1386255680979</updated>
-    </task>
-    <task id="LOCAL-00106" summary="Added Reference ID login link to the main page">
-      <created>1386256420732</created>
-      <updated>1386256420732</updated>
-    </task>
-    <task id="LOCAL-00107" summary="DE573: Encounter Variable Groups have a green background on the Home page when they are not complete">
-      <created>1386257331007</created>
-      <updated>1386257331007</updated>
-    </task>
-    <task id="LOCAL-00108" summary="DE577: &quot;Incomplete&quot; displays on the Home page of a subject portal when the subject's Data Completion Status is complete">
-      <created>1386259112683</created>
-      <updated>1386259112683</updated>
-    </task>
-    <task id="LOCAL-00109" summary="DE578: Entering data in the subject portal using Chrome cuts off some letters">
-      <created>1386260820990</created>
-      <updated>1386260820990</updated>
-    </task>
-    <task id="LOCAL-00110" summary="DE572: Data entered in a project variable group through the subject portal is not displayed when the variable group is viewed after entry">
-      <created>1386264555625</created>
-      <updated>1386264555625</updated>
-    </task>
-    <task id="LOCAL-00111" summary="DE572: Data entered in a project variable group through the subject portal is not displayed when the variable group is viewed after entry">
-      <created>1386380088493</created>
-      <updated>1386380088493</updated>
-    </task>
-    <task id="LOCAL-00112" summary="DE552: Standard portal pages do not display in IE8">
-      <created>1386598080224</created>
-      <updated>1386598080224</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Fixed minor UI problems with IE">
-      <created>1386599115640</created>
-      <updated>1386599115640</updated>
-    </task>
-    <task id="LOCAL-00114" summary="DE561: bs-enhanced css for documents and checkbox on left need tweaking">
-      <created>1386610190266</created>
-      <updated>1386610190266</updated>
-    </task>
-    <task id="LOCAL-00115" summary="local">
-      <created>1387557054284</created>
-      <updated>1387557054284</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Added code to increment the build number when building the dist target.">
-      <created>1387557782003</created>
-      <updated>1387557782004</updated>
+      <workItem from="1458578093359" duration="92000" />
     </task>
     <task id="LOCAL-00117" summary="UI Tweaks">
       <created>1387898695425</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
       <updated>1387898695425</updated>
     </task>
     <task id="LOCAL-00118" summary="UI Tweaks">
       <created>1388447201867</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
       <updated>1388447201867</updated>
     </task>
     <task id="LOCAL-00119" summary="UI Tweaks">
       <created>1388516148484</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
       <updated>1388516148484</updated>
     </task>
     <task id="LOCAL-00120" summary="UI Tweaks">
       <created>1388521228315</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
       <updated>1388521228315</updated>
     </task>
     <task id="LOCAL-00121" summary="UI Tweaks">
       <created>1388847187528</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
       <updated>1388847187528</updated>
     </task>
     <task id="LOCAL-00122" summary="UI Tweaks">
       <created>1389206531420</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
       <updated>1389206531420</updated>
     </task>
     <task id="LOCAL-00123" summary="UI Tweaks">
       <created>1389373851313</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
       <updated>1389373851313</updated>
     </task>
     <task id="LOCAL-00124" summary="UI Tweaks">
       <created>1390002603350</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
       <updated>1390002603350</updated>
     </task>
     <task id="LOCAL-00125" summary="UI Tweaks">
       <created>1390287775880</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
       <updated>1390287775880</updated>
     </task>
     <task id="LOCAL-00126" summary="UI Tweaks">
       <created>1390333198977</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
       <updated>1390333198977</updated>
     </task>
     <task id="LOCAL-00127" summary="UI Tweaks">
       <created>1390592363116</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
       <updated>1390592363116</updated>
     </task>
     <task id="LOCAL-00128" summary="UI Tweaks">
       <created>1390608379391</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
       <updated>1390608379391</updated>
     </task>
     <task id="LOCAL-00129" summary="UI Tweaks">
       <created>1390842767633</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
       <updated>1390842767633</updated>
     </task>
     <task id="LOCAL-00130" summary="UI Tweaks">
       <created>1390938232807</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
       <updated>1390938232807</updated>
     </task>
     <task id="LOCAL-00131" summary="UI Tweaks">
       <created>1390946599665</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
       <updated>1390946599665</updated>
     </task>
     <task id="LOCAL-00132" summary="UI Tweaks">
       <created>1391113813485</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
       <updated>1391113813485</updated>
     </task>
     <task id="LOCAL-00133" summary="UI Tweaks">
       <created>1391115120499</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
       <updated>1391115120499</updated>
     </task>
     <task id="LOCAL-00134" summary="UI Tweaks">
       <created>1391279380768</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
       <updated>1391279380768</updated>
     </task>
     <task id="LOCAL-00135" summary="UI Tweaks">
       <created>1391283417000</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
       <updated>1391283417000</updated>
     </task>
     <task id="LOCAL-00136" summary="Removed siteId from the web services">
       <created>1391283441455</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
       <updated>1391283441455</updated>
     </task>
     <task id="LOCAL-00137" summary="general site restructuring">
       <created>1391323078997</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
       <updated>1391323078997</updated>
     </task>
     <task id="LOCAL-00138" summary="Added logic to prevent the subject from creating follow-up encounters when they are still in screening">
       <created>1391325098756</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
       <updated>1391325098756</updated>
     </task>
     <task id="LOCAL-00139" summary="Added logic to prevent the subject from creating follow-up encounters when they are still in screening">
       <created>1391491790226</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
       <updated>1391491790227</updated>
     </task>
     <task id="LOCAL-00140" summary="Refactoring web services">
       <created>1392305329149</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
       <updated>1392305329149</updated>
     </task>
     <task id="LOCAL-00141" summary="Refactoring web services">
       <created>1392671860421</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
       <updated>1392671860422</updated>
     </task>
     <task id="LOCAL-00142" summary="Added dirty state checking">
       <created>1392686921682</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
       <updated>1392686921683</updated>
     </task>
     <task id="LOCAL-00143" summary="Added dirty state checking">
       <created>1392827162641</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
       <updated>1392827162641</updated>
     </task>
     <task id="LOCAL-00144" summary="minor changes to bs-enhanced">
       <created>1393037682417</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
       <updated>1393037682417</updated>
     </task>
     <task id="LOCAL-00145" summary="minor changes to bs-enhanced">
       <created>1393266922316</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
       <updated>1393266922316</updated>
     </task>
     <task id="LOCAL-00146" summary="minor changes to bs-enhanced">
       <created>1393691013557</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
       <updated>1393691013557</updated>
     </task>
     <task id="LOCAL-00147" summary="minor changes to bs-enhanced">
       <created>1393704550947</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
       <updated>1393704550947</updated>
     </task>
     <task id="LOCAL-00148" summary="minor changes to bs-enhanced">
       <created>1394221827949</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
       <updated>1394221827950</updated>
     </task>
     <task id="LOCAL-00149" summary="performance improvements">
       <created>1394664266346</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
       <updated>1394664266346</updated>
     </task>
     <task id="LOCAL-00150" summary="performance improvements">
       <created>1394823854322</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
       <updated>1394823854322</updated>
     </task>
     <task id="LOCAL-00151" summary="performance improvements">
       <created>1394862562608</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
       <updated>1394862562608</updated>
     </task>
     <task id="LOCAL-00152" summary="DE723">
       <created>1399047059013</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
       <updated>1399047059013</updated>
     </task>
     <task id="LOCAL-00153" summary="DE745">
       <created>1399047739862</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
       <updated>1399047739862</updated>
     </task>
     <task id="LOCAL-00154" summary="DE744">
       <created>1399052189186</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
       <updated>1399052189186</updated>
     </task>
     <task id="LOCAL-00155" summary="Fixed various bugs">
       <created>1399902337586</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
       <updated>1399902337586</updated>
     </task>
     <task id="LOCAL-00156" summary="Fixed various bugs">
       <created>1400684993613</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
       <updated>1400684993613</updated>
     </task>
     <task id="LOCAL-00157" summary="DE757">
       <created>1401290420081</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
       <updated>1401290420081</updated>
     </task>
     <task id="LOCAL-00158" summary="Added ability to specify username and password on the command line and have that log the subject in.">
       <created>1405649198854</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
       <updated>1405649198854</updated>
     </task>
     <task id="LOCAL-00159" summary="US241: &#9;Standard Portal should give nice error message when user try to set their passwords to an invalid password">
       <created>1407169956515</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
       <updated>1407169956515</updated>
     </task>
     <task id="LOCAL-00160" summary="DE826">
       <created>1421943136288</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
       <updated>1421943136288</updated>
     </task>
     <task id="LOCAL-00161" summary="DE826">
       <created>1421943217849</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
       <updated>1421943217849</updated>
     </task>
     <task id="LOCAL-00162" summary="DE826">
       <created>1421943408140</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
       <updated>1421943408140</updated>
     </task>
     <task id="LOCAL-00163" summary="DE826">
       <created>1421943507367</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
       <updated>1421943507367</updated>
     </task>
     <task id="LOCAL-00164" summary="DE826">
       <created>1423153168642</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
       <updated>1423153168642</updated>
     </task>
     <task id="LOCAL-00165" summary="DE826">
       <created>1423153181332</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
       <updated>1423153181332</updated>
     </task>
     <option name="localTasksCounter" value="166" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="92000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21758242" sideWeight="0.49973643" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19791667" sideWeight="0.82340646" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19791667" sideWeight="0.17554858" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1967033" sideWeight="0.5002636" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27032968" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11807732" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.8179916" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1967033" sideWeight="0.5002636" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27032968" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19791667" sideWeight="0.18200837" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21758242" sideWeight="0.49973643" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="93" y="186" width="1736" height="866" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11807732" sideWeight="0.49973643" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2555066" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1076,9 +767,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
-    </option>
     <MESSAGE value="DE573: Encounter Variable Groups have a green background on the Home page when they are not complete" />
     <MESSAGE value="DE577: &quot;Incomplete&quot; displays on the Home page of a subject portal when the subject's Data Completion Status is complete" />
     <MESSAGE value="DE578: Entering data in the subject portal using Chrome cuts off some letters" />
@@ -1111,186 +799,175 @@
     <breakpoint-manager>
       <option name="time" value="6" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="816">
+        <state relative-caret-position="0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2842" max-vertical-offset="10013">
+        <state relative-caret-position="0">
           <caret line="212" column="39" selection-start-line="212" selection-start-column="39" selection-end-line="212" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+        <state relative-caret-position="0">
           <caret line="17" column="113" selection-start-line="17" selection-start-column="113" selection-end-line="17" selection-end-column="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="863" max-vertical-offset="1734">
+        <state relative-caret-position="0">
           <caret line="68" column="65" selection-start-line="68" selection-start-column="65" selection-end-line="68" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="884">
+        <state relative-caret-position="0">
           <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1410" max-vertical-offset="3927">
+        <state relative-caret-position="0">
           <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/anonymous-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state relative-caret-position="0">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="816">
+        <state relative-caret-position="0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2842" max-vertical-offset="10013">
+        <state relative-caret-position="0">
           <caret line="212" column="39" selection-start-line="212" selection-start-column="39" selection-end-line="212" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1207">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+        <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/encounters/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5489774" vertical-offset="0" max-vertical-offset="929">
+        <state relative-caret-position="0">
           <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9028384" vertical-offset="805" max-vertical-offset="1734">
+        <state relative-caret-position="0">
           <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/home/index.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1564">
+        <state relative-caret-position="0">
           <caret line="17" column="113" selection-start-line="17" selection-start-column="113" selection-end-line="17" selection-end-column="113" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/finished.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="911">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1632">
+        <state relative-caret-position="0">
           <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/glyphicons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8042328" vertical-offset="106" max-vertical-offset="4046">
-          <caret line="42" column="68" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/getting-started.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18880208" vertical-offset="1232" max-vertical-offset="14824">
-          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/less/glyphicons.less" />
+    <entry file="file://$PROJECT_DIR$/vendor/bootstrap/getting-started.html" />
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/anonymous-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="781">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/login-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/variablePanelOverrides.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9257" max-vertical-offset="10013">
+        <state relative-caret-position="0">
           <caret line="583" column="0" selection-start-line="583" selection-start-column="0" selection-end-line="583" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/loading.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="929">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/variablegroups/update.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="3604">
+        <state relative-caret-position="0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
@@ -1298,109 +975,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/_module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1284" max-vertical-offset="2958">
+        <state relative-caret-position="0">
           <caret line="107" column="76" selection-start-line="107" selection-start-column="76" selection-end-line="107" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/login.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="952">
+        <state relative-caret-position="0">
           <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="2261">
+        <state relative-caret-position="0">
           <caret line="102" column="66" selection-start-line="102" selection-start-column="65" selection-end-line="102" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/applicationController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1513">
+        <state relative-caret-position="0">
           <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/emailAddressVerified.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state relative-caret-position="0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/directives/backButton.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+        <state relative-caret-position="0">
           <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/menu/secure-menu.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+        <state relative-caret-position="0">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1445">
+        <state relative-caret-position="0">
           <caret line="50" column="94" selection-start-line="50" selection-start-column="94" selection-end-line="50" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="343740">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/angular/angular.js" />
     <entry file="file://$PROJECT_DIR$/src/app/core/webServices.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3927">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/webServices-temp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/core/webServices-temp.js" />
     <entry file="file://$PROJECT_DIR$/.jshintrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2635659" vertical-offset="0" max-vertical-offset="903">
+        <state relative-caret-position="0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2125">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/portal.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="7412">
+        <state relative-caret-position="153">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
@@ -1408,31 +1069,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49169436" vertical-offset="627" max-vertical-offset="2397">
+        <state relative-caret-position="0">
           <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38428417" vertical-offset="7650" max-vertical-offset="13192">
+        <state relative-caret-position="0">
           <caret line="471" column="4" selection-start-line="471" selection-start-column="4" selection-end-line="471" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2635659" vertical-offset="0" max-vertical-offset="903">
+        <state relative-caret-position="0">
           <caret line="14" column="77" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36598492" vertical-offset="0" max-vertical-offset="929">
+        <state relative-caret-position="0">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
@@ -1440,7 +1098,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/enroll.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+        <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
@@ -1448,15 +1106,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26327434" vertical-offset="0" max-vertical-offset="904">
+        <state relative-caret-position="0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1207">
+        <state relative-caret-position="527">
           <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
           <folding />
         </state>
@@ -1464,7 +1121,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/directives/submit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
+        <state relative-caret-position="476">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -1472,7 +1129,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/accounts/register.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.923077" vertical-offset="950" max-vertical-offset="1853">
+        <state relative-caret-position="1598">
           <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
         </state>
@@ -1480,12 +1137,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/core/locale-en.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8220524" vertical-offset="1389" max-vertical-offset="4488">
-          <caret line="126" column="21" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="136" column="43" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-
