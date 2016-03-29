@@ -8,6 +8,7 @@
     <portals>
         <portal description="version: <%= pkg.version %>. <%= pkg.description %>"
                 userType="<%= pkg.portalType %>"
+                default="<%= pkg.default%>"
                 allowRegistration="<%= pkg.registration %>"
                 allowAnonymousDataEntry="<%= pkg.anonymousDataEntry %>"
                 sendEncounterDueNotifications="<%= pkg.sendEncounterDueNotifications %>">
