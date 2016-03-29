@@ -1,6 +1,6 @@
 {
   "name": "Standard_Portal",
-  "version": "0.0.181",
+  "version": "0.0.182",
   "devDependencies": {
     "angular": "~1.2.2",
     "angular-bootstrap": "~0.3.0",
