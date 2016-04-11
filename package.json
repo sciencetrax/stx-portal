@@ -9,7 +9,7 @@
   "registration": "True",
   "anonymousDataEntry": "True",
   "sendEncounterDueNotifications": "True",
-  "version": "0.0.191",
+  "version": "0.0.199",
   "homepage": "https://github.com/bpstoxin/stx-portal",
   "licenses": {
     "type": "MIT",

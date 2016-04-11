@@ -79,7 +79,7 @@
 		// PasswordRequiresNumber
 		"3016" : "Password must have at least one number.",
 		// PasswordRequiresSymbol
-		"3017" : "Password must have at least one of the following symbols: @#_*%",
+		"3017" : "Password must have at least one symbol such as !@#_*%",
 		// RemainingSecondsTooLong
 		"7010" : "The value you entered for remaining seconds exceeds the session length.",
 		// RequiredFieldMissing
@@ -87,7 +87,7 @@
 		// UsernameExist
 		"3030": "Please enter a different username.  That username ({username}) is taken.",
 		// AccountLocked
-		"4010": "Your account has been locked.",
+		"4010": "Your account has been locked. We have emailed you a link to unlock your account to the address we have on file.",
 		//EmailAddressNotVerified
 		"4020": "Your email address has not been verified.  You should have received an email with a link to click to verify your address.",
 		// InvalidPassword
@@ -99,7 +99,7 @@
 		// EnrollmentFull
 		"5010": "Sorry, but the project is full.  No more subjects can sign up at this time.",
 		// PortalAccountCreationNotAllowed
-		"6010": "Registration is not allowed in this portal.  This is either do to the fact that registration has not been enabled or because both registration and anonymous data entry are enabled (if this error is on the sign-up page).",
+		"6010": "Registration is not allowed in this portal.  This is either due to the fact that registration has not been enabled or because both registration and anonymous data entry are enabled (if this error is on the sign-up page).",
 		// ServerConfigurationError
 		"99020": "There appears to be a problem with the server.  Please contact the system administrator if this problem persists.",
 		// Unknown
@@ -234,7 +234,7 @@
 				forgotPassword: "Forgot Password",
 				forgotPasswordMessage: "Please enter the username and a link will be emailed to the address on file that will allow you to reset your password.",
 				forgotUsername: "Forgot Username",
-				forgotUsernameMessage: "Please enter the email address and a your username will be emailed to the specified address.",
+				forgotUsernameMessage: "Please enter the email address and your username will be emailed to the specified address.",
 				username: "Username",
 				errors: {
 					emailAddressEmail: "Invalid email address."

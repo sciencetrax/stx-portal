@@ -251,7 +251,7 @@
                                 </ul>
                                 <h1 class="text-center">Change Browser Mode</h1>
                                 <p>You may be using IE 10 and just using the wrong browser mode.  See the image below to see how to change your browser mode to IE 10</p>
-                                <img src="https://az416809.vo.msecnd.net/studytrax/images/IE10.PNG"/>
+                                <img src="https://az416809.vo.msecnd.net/studytrax/images/IE10.png"/>
                             </body>
                         </html>
                     ]]>
@@ -419,8 +419,6 @@
                     <p>Your %PortalName% account (%UserName%) has been locked due to too many failed login attempts. To unlock your account, please click the following link (or copy and paste it into your browser):</p>
 
                     <p>%UnlockAccountUrl%</p>
-
-                    <p>You can request this email again from %LoginUrl%. You will need to attempt to login for the Unlock Account link to appear.</p>
 
                     <p>
                         Sincerely,<br/>
